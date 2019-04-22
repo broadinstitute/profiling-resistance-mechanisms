@@ -10,3 +10,10 @@ jupyter nbconvert --to=script --FilesWriter.build_directory=scripts/nbconverted 
 
 # Step 1 - Merge two batches of data together into one dataset
 Rscript --vanilla scripts/nbconverted/merge-batch-data.r
+
+# Step 2 - Visualize merged batches with UMAP
+jupyter nbconvert --to=html \
+        --FilesWriter.build_directory=scripts/html \
+        --ExecutePreprocessor.kernel_name=python3 \
+        --ExecutePreprocessor.timeout=10000000 \
+        --execute umap-visualize.ipynb
