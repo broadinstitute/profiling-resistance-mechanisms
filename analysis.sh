@@ -17,3 +17,6 @@ jupyter nbconvert --to=html \
         --ExecutePreprocessor.kernel_name=python3 \
         --ExecutePreprocessor.timeout=10000000 \
         --execute umap-visualize.ipynb
+
+# Step 3 - Observe feature differences between doses
+Rscript --vanilla scripts/nbconverted/discover-feature-differences.r
