@@ -19,3 +19,4 @@ dependencies:
 - conda-forge::r-ggrepel=0.8.0
 - conda-forge::r-irkernel=0.8.12
 - conda-forge::r-optparse=1.6.0
+- conda-forge::r-curl=3.2
