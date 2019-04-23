@@ -9,7 +9,7 @@ doses <- c(0.7, 7)
 axis_title_size <- 12
 axis_text_size <- 10
 strip_text_size <- 8
-ggrepel_label_size <- 3
+ggrepel_label_size <- 2.4
 
 # Set column types for reading in data
 batch_cols = readr::cols(
@@ -64,7 +64,8 @@ alpha_correction <- -log10(0.05 / dim(result_df)[1])
 repel_logic <- result_df$neglog10p > alpha_correction * 1.5
 
 ttest_gg <- ggplot(result_df, aes(x = tstat, y = neglog10p)) +
-    geom_point(alpha = 0.5) +
+    geom_point(alpha = 0.5,
+               color = ifelse(repel_logic, "red", "grey50")) +
     geom_hline(yintercept = alpha_correction,
                color = 'red',
                linetype = 'dashed') +
@@ -75,7 +76,7 @@ ttest_gg <- ggplot(result_df, aes(x = tstat, y = neglog10p)) +
                      size = ggrepel_label_size,
                      segment.size = 0.1,
                      segment.alpha = 0.8,
-                     force = 10,
+                     force = 20,
                      aes(x = tstat, y = neglog10p, label = feature)) +
     theme_bw() +
     theme(axis.text = element_text(size = axis_text_size),
@@ -83,16 +84,31 @@ ttest_gg <- ggplot(result_df, aes(x = tstat, y = neglog10p)) +
 
 ttest_gg
 
+# The top feature is something to do with nuclear area
 top_feature <- paste(result_df$feature[1])
+
+# top_feature <- paste(result_df$feature[3])
+
 append_batch <- function(string) paste("Batch:", string)
 append_dose <- function(string) paste("Dose:", string)
 
 distrib_gg <- ggplot(data_df, aes_string(x = `top_feature`)) +
     geom_density(aes(fill = Metadata_CellLine),
                  alpha = 0.6) +
+    geom_rug(aes(color = Metadata_CellLine),
+             alpha = 0.8,
+             size = 0.5) +
     facet_grid(Metadata_Dosage ~ Metadata_Batch_Number,
+               scales = "free_y",
                labeller = labeller(Metadata_Batch_Number = as_labeller(append_batch),
                                    Metadata_Dosage = as_labeller(append_dose))) +
+    scale_color_manual(name = "Cell Line",
+                      labels = c("CloneA" = "Clone A",
+                                 "CloneE" = "Clone E",
+                                 "WT" = "Wild type"),
+                      values = c("CloneA" = "#1b9e77",
+                                 "CloneE" = "#d95f02",
+                                 "WT" = "#7570b3")) +
     scale_fill_manual(name = "Cell Line",
                       labels = c("CloneA" = "Clone A",
                                  "CloneE" = "Clone E",
@@ -108,6 +124,8 @@ distrib_gg <- ggplot(data_df, aes_string(x = `top_feature`)) +
                                           fill = "#fdfff4"))
 
 distrib_gg
+
+table(data_df$Metadata_CellLine, data_df$Metadata_Dosage, data_df$Metadata_Batch_Number)
 
 main_plot <- (
     cowplot::plot_grid(
