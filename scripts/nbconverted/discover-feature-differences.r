@@ -8,7 +8,7 @@ suppressPackageStartupMessages(library(cowplot))
 ttest_volcano <- function(df, x_string, title, yintercept,
                           repel_logic, ggrepel_label_size,
                           title_text_size, axis_text_size,
-                          axis_title_size) {
+                          axis_title_size, ymax = 10) {
     # Plot the results of a t-test on various samples for common features
     #
     # Arguments:
@@ -21,6 +21,7 @@ ttest_volcano <- function(df, x_string, title, yintercept,
     # title_text_size - int of the size of the title text
     # axis_text_size - int of the size of the text on the ggplot axes
     # axis_title_size - int of the size of the titles on the ggplot axes
+    # ymax - int indicating the maximum height of the y axis
     #
     # Output:
     # The ggplot2 object for downstream saving
@@ -35,6 +36,7 @@ ttest_volcano <- function(df, x_string, title, yintercept,
                    linetype = "dashed") +
         xlab("t Statistic") +
         ylab("-log10 P") +
+        ylim(c(0, ymax)) +
         geom_text_repel(data = subset(df, repel_logic),
                         arrow = arrow(length = unit(0.01, "npc")),
                         size = ggrepel_label_size,
@@ -60,6 +62,7 @@ axis_text_size <- 9
 strip_text_size <- 8
 ggrepel_label_size <- 1.9
 title_text_size <- 10
+ymax <- 9
 
 # Set column types for reading in data
 batch_cols = readr::cols(
@@ -155,7 +158,8 @@ ttest_dose_gg <- ttest_volcano(
     repel_logic = repel_logic,
     ggrepel_label_size = ggrepel_label_size,
     axis_text_size = axis_text_size,
-    axis_title_size = axis_title_size
+    axis_title_size = axis_title_size,
+    ymax = ymax
 )
 
 ttest_dose_gg
@@ -172,7 +176,8 @@ ttest_cell_gg <- ttest_volcano(
     repel_logic = repel_logic,
     ggrepel_label_size = ggrepel_label_size,
     axis_text_size = axis_text_size,
-    axis_title_size = axis_title_size
+    axis_title_size = axis_title_size,
+    ymax = ymax
 )
 
 ttest_cell_gg
@@ -190,7 +195,7 @@ distrib_gg <- ggplot(data_df, aes_string(x = `top_feature`)) +
              alpha = 0.8,
              size = 0.5) +
     facet_grid(Metadata_Dosage ~ Metadata_Batch_Number,
-               scales = "free_y",
+               scales = "fixed",
                labeller = labeller(Metadata_Batch_Number = as_labeller(append_batch),
                                    Metadata_Dosage = as_labeller(append_dose))) +
     scale_color_manual(name = "Cell Line",
