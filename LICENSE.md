@@ -1,6 +1,6 @@
 # BSD 3-Clause License
 
-_Copyright (c) 2019_, **The Broad Institute of MIT and Harvard**
+_Copyright (c) 2019_, **The Broad Institute of MIT and Harvard** and **The Rockefeller University**
 
 All rights reserved.
 
