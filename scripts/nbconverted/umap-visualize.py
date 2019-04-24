@@ -92,6 +92,6 @@ p
 
 
 file = os.path.join("figures", "merged_umap")
-for extension in ['.png', '.pdf']:
+for extension in ['.png', '.pdf', '.svg']:
     gg.ggsave(p, filename='{}{}'.format(file, extension), height=6, width=7)
 
