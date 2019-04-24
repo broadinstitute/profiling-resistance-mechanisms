@@ -35,11 +35,11 @@ Using the triplicate measurements, and two batches, we perform the following pil
 
 #### UMAP Batch Analysis
 
-[UMAP](https://raw.githubusercontent.com/broadinstitute/2018_05_30_ResistanceMechanisms_Kapoor/master/figures/merged_umap.png)
+![UMAP](https://raw.githubusercontent.com/broadinstitute/2018_05_30_ResistanceMechanisms_Kapoor/master/figures/merged_umap.png)
 
 #### T-test to Determine Morphological Differences
 
-[ttest](https://raw.githubusercontent.com/broadinstitute/2018_05_30_ResistanceMechanisms_Kapoor/master/figures/dosage_feature_figure.png)
+![ttest](https://raw.githubusercontent.com/broadinstitute/2018_05_30_ResistanceMechanisms_Kapoor/master/figures/dosage_feature_figure.png)
 
 ## Reproducibility
 
