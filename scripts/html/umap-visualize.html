@@ -13564,7 +13564,7 @@ These variables include <code>batch</code>, <code>dosage</code>, and <code>cell 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;ggplot: (-9223372036547396534)&gt;</pre>
+<pre>&lt;ggplot: (-9223372036541892976)&gt;</pre>
 </div>
 
 </div>
@@ -13579,7 +13579,7 @@ These variables include <code>batch</code>, <code>dosage</code>, and <code>cell 
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;figures&quot;</span><span class="p">,</span> <span class="s2">&quot;merged_umap&quot;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">extension</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.pdf&#39;</span><span class="p">]:</span>
+<span class="k">for</span> <span class="n">extension</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.pdf&#39;</span><span class="p">,</span> <span class="s1">&#39;.svg&#39;</span><span class="p">]:</span>
     <span class="n">gg</span><span class="o">.</span><span class="n">ggsave</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">{}{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">extension</span><span class="p">),</span> <span class="n">height</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
 </pre></div>
 
@@ -13604,6 +13604,10 @@ These variables include <code>batch</code>, <code>dosage</code>, and <code>cell 
 /Users/gway/miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/plotnine/ggplot.py:706: UserWarning: Saving 7 x 6 in image.
   from_inches(height, units), units))
 /Users/gway/miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/plotnine/ggplot.py:707: UserWarning: Filename: figures/merged_umap.pdf
+  warn(&#39;Filename: {}&#39;.format(filename))
+/Users/gway/miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/plotnine/ggplot.py:706: UserWarning: Saving 7 x 6 in image.
+  from_inches(height, units), units))
+/Users/gway/miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/plotnine/ggplot.py:707: UserWarning: Filename: figures/merged_umap.svg
   warn(&#39;Filename: {}&#39;.format(filename))
 </pre>
 </div>
