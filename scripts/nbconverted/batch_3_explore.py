@@ -77,13 +77,16 @@ def plot_individual_replicate_corr(x_df):
 
 
 batch = "2019_06_25_Batch3"
-backend_dir = os.path.join("..", "backend", batch)
+backend_dir = os.path.join("..", "..", "backend", batch)
 
 backend_folders = os.listdir(backend_dir)
 mut_file, wt_file = [
     os.path.join(backend_dir, x, "{}_normalized_variable_selected.csv".format(x))
     for x in backend_folders
 ]
+
+print(mut_file)
+print(wt_file)
 
 
 # ## Read in Files
@@ -184,4 +187,31 @@ file = os.path.join("figures", "mut_correlation_individual_{}.png".format(batch)
 mut_cor_individual_gg.save(filename=file, height=4, width=5, dpi=300)
 
 mut_cor_individual_gg
+
+
+# ## Output Median Replicate Correlation
+
+# In[14]:
+
+
+wt_median_cor_df = (
+    wt_cor_df
+    .groupby(["Metadata_clone_number", "replicate"])
+    .median()
+    .reset_index()
+)
+
+mut_median_cor_df = (
+    mut_cor_df
+    .groupby(["Metadata_clone_number", "replicate"])
+    .median()
+    .reset_index()
+)
+
+# Save Files
+file = os.path.join("results", "WT_median_replicate_correlation.tsv")
+wt_median_cor_df.to_csv(file, sep='\t', index=False)
+
+file = os.path.join("results", "MUT_median_replicate_correlation.tsv")
+mut_median_cor_df.to_csv(file, sep='\t', index=False)
 
