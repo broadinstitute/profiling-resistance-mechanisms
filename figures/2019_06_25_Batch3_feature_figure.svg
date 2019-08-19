@@ -231,28 +231,18 @@
 <circle cx='143.73' cy='383.00' r='1.21pt' style='stroke-width: 0.71; stroke: #7F7F7F; stroke-opacity: 0.50; fill: #7F7F7F; fill-opacity: 0.50;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
 <circle cx='143.32' cy='383.02' r='1.21pt' style='stroke-width: 0.71; stroke: #7F7F7F; stroke-opacity: 0.50; fill: #7F7F7F; fill-opacity: 0.50;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
 <line x1='35.02' y1='240.51' x2='300.52' y2='240.51' style='stroke-width: 1.07; stroke: #FF0000; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<line x1='268.50' y1='264.33' x2='288.45' y2='225.13' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<polyline points='288.59,227.78 288.45,225.13 286.23,226.58 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='218.78' y='270.00' style='font-size: 5.41px; font-family: Arial;' textLength='78.14px' lengthAdjust='spacingAndGlyphs'>Nuclei_AreaShape_Zernike_4_4</text></g>
-<line x1='249.95' y1='226.31' x2='243.79' y2='295.54' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<polyline points='242.67,293.13 243.79,295.54 245.32,293.36 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='210.94' y='224.51' style='font-size: 5.41px; font-family: Arial;' textLength='78.14px' lengthAdjust='spacingAndGlyphs'>Nuclei_AreaShape_Zernike_8_6</text></g>
-<line x1='236.85' y1='286.97' x2='242.52' y2='298.61' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<polyline points='240.32,297.13 242.52,298.61 242.71,295.97 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='171.61' y='285.17' style='font-size: 5.41px; font-family: Arial;' textLength='125.31px' lengthAdjust='spacingAndGlyphs'>Nuclei_Texture_AngularSecondMoment_DNA_5_03</text></g>
-<line x1='234.19' y1='310.32' x2='240.63' y2='299.96' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<polyline points='240.54,302.61 240.63,299.96 238.29,301.21 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='174.48' y='315.99' style='font-size: 5.41px; font-family: Arial;' textLength='98.27px' lengthAdjust='spacingAndGlyphs'>Nuclei_Texture_Correlation_AGP_20_00</text></g>
-<line x1='244.76' y1='328.16' x2='242.38' y2='300.13' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<polyline points='243.90,302.31 242.38,300.13 241.26,302.53 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='192.95' y='333.82' style='font-size: 5.41px; font-family: Arial;' textLength='103.66px' lengthAdjust='spacingAndGlyphs'>Cytoplasm_Correlation_Costes_RNA_DNA</text></g>
-<line x1='59.93' y1='280.37' x2='47.09' y2='301.44' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<polyline points='47.15,298.79 47.09,301.44 49.42,300.17 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='38.62' y='278.57' style='font-size: 5.41px; font-family: Arial;' textLength='78.14px' lengthAdjust='spacingAndGlyphs'>Nuclei_AreaShape_Zernike_0_0</text></g>
-<line x1='62.72' y1='292.34' x2='52.14' y2='309.12' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<polyline points='52.24,306.47 52.14,309.12 54.49,307.88 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
-<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='38.62' y='290.54' style='font-size: 5.41px; font-family: Arial;' textLength='89.24px' lengthAdjust='spacingAndGlyphs'>Nuclei_Correlation_Costes_DNA_ER</text></g>
-<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='38.62' y='321.06' style='font-size: 5.41px; font-family: Arial;' textLength='107.27px' lengthAdjust='spacingAndGlyphs'>Nuclei_RadialDistribution_FracAtD_ER_1of4</text></g>
+<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='218.78' y='232.43' style='font-size: 5.41px; font-family: Arial;' textLength='78.14px' lengthAdjust='spacingAndGlyphs'>Nuclei_AreaShape_Zernike_4_4</text></g>
+<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='218.78' y='291.44' style='font-size: 5.41px; font-family: Arial;' textLength='78.14px' lengthAdjust='spacingAndGlyphs'>Nuclei_AreaShape_Zernike_8_6</text></g>
+<line x1='231.96' y1='282.64' x2='242.52' y2='298.61' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
+<polyline points='240.15,297.43 242.52,298.61 242.36,295.96 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
+<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='117.26' y='280.84' style='font-size: 5.41px; font-family: Arial;' textLength='125.31px' lengthAdjust='spacingAndGlyphs'>Nuclei_Texture_AngularSecondMoment_DNA_5_03</text></g>
+<line x1='218.11' y1='295.00' x2='240.63' y2='299.96' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
+<polyline points='238.10,300.76 240.63,299.96 238.67,298.17 ' style='stroke-width: 0.21; stroke: #000000; stroke-opacity: 0.80;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
+<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='118.05' y='296.90' style='font-size: 5.41px; font-family: Arial;' textLength='98.27px' lengthAdjust='spacingAndGlyphs'>Nuclei_Texture_Correlation_AGP_20_00</text></g>
+<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='191.80' y='310.98' style='font-size: 5.41px; font-family: Arial;' textLength='103.66px' lengthAdjust='spacingAndGlyphs'>Cytoplasm_Correlation_Costes_RNA_DNA</text></g>
+<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='38.62' y='294.42' style='font-size: 5.41px; font-family: Arial;' textLength='78.14px' lengthAdjust='spacingAndGlyphs'>Nuclei_AreaShape_Zernike_0_0</text></g>
+<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='54.19' y='308.05' style='font-size: 5.41px; font-family: Arial;' textLength='89.24px' lengthAdjust='spacingAndGlyphs'>Nuclei_Correlation_Costes_DNA_ER</text></g>
+<g clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)'><text x='39.17' y='319.72' style='font-size: 5.41px; font-family: Arial;' textLength='107.27px' lengthAdjust='spacingAndGlyphs'>Nuclei_RadialDistribution_FracAtD_ER_1of4</text></g>
 <rect x='35.02' y='5.48' width='265.50' height='395.59' style='stroke-width: 1.07; stroke: #333333;' clip-path='url(#cpMzUuMDJ8MzAwLjUyfDQwMS4wN3w1LjQ4)' />
 <defs>
   <clipPath id='cpMC4wMHw2MTIuMDB8NDMyLjAwfDAuMDA='>

@@ -13017,45 +13017,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
 
 
 <style type="text/css">
@@ -13400,6 +13361,53 @@ These variables include <code>batch</code>, <code>dosage</code>, and <code>cell 
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/Users/gway/miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/umap/umap_.py:328: NumbaWarning: 
+Compilation is falling back to object mode WITH looplifting enabled because Function &#34;fuzzy_simplicial_set&#34; failed type inference due to: Untyped global name &#39;nearest_neighbors&#39;: cannot determine Numba type of &lt;class &#39;function&#39;&gt;
+
+File &#34;../../../../../../miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/umap/umap_.py&#34;, line 446:
+def fuzzy_simplicial_set(
+    &lt;source elided&gt;
+    if knn_indices is None or knn_dists is None:
+        knn_indices, knn_dists, _ = nearest_neighbors(
+        ^
+
+  @numba.jit()
+/Users/gway/miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/numba/compiler.py:742: NumbaWarning: Function &#34;fuzzy_simplicial_set&#34; was compiled in object mode without forceobj=True.
+
+File &#34;../../../../../../miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/umap/umap_.py&#34;, line 329:
+@numba.jit()
+def fuzzy_simplicial_set(
+^
+
+  self.func_ir.loc))
+/Users/gway/miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/numba/compiler.py:751: NumbaDeprecationWarning: 
+Fall-back from the nopython compilation path to the object mode compilation path has been detected, this is deprecated behaviour.
+
+For more information visit http://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit
+
+File &#34;../../../../../../miniconda3/envs/resistance-mechanisms/lib/python3.7/site-packages/umap/umap_.py&#34;, line 329:
+@numba.jit()
+def fuzzy_simplicial_set(
+^
+
+  warnings.warn(errors.NumbaDeprecationWarning(msg, self.func_ir.loc))
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13564,7 +13572,7 @@ These variables include <code>batch</code>, <code>dosage</code>, and <code>cell 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;ggplot: (310304127)&gt;</pre>
+<pre>&lt;ggplot: (-9223372036546198938)&gt;</pre>
 </div>
 
 </div>
