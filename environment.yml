@@ -26,3 +26,4 @@ dependencies:
 - conda-forge::r-optparse=1.6.2
 - conda-forge::r-curl=4.0
 - conda-forge::r-platetools=0.1.2
+- conda-forge::r-pwr=1.2_2
