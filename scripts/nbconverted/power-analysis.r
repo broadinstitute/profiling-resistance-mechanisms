@@ -29,7 +29,7 @@ wt_df <- full_df %>% dplyr::filter(Metadata_Assay_Plate_Barcode == "WTClones")
 cp_features <- colnames(full_df %>% dplyr::select(-starts_with("Metadata_")))
 
 testing_ns <- c(10, 25, 50, 75, 100, 250, 500, 750, 1000, 2000, 5000, 10000)
-alpha <- 0.5 / length(cp_features)
+alpha <- 0.05 / length(cp_features)
 current_n <- dim(full_df)[1] / 2
 
 all_effect_size_results <- list()
@@ -68,7 +68,7 @@ summary_df <- full_results_df %>% dplyr::group_by(n) %>%
     dplyr::distinct(n, mean_power, stderr_power)
 summary_df
 
-rect <- data.frame(xmin=250, xmax=1000, ymin=-Inf, ymax=Inf)
+rect <- data.frame(xmin = 500, xmax = 1000, ymin = -Inf, ymax = Inf)
 
 power_gg <- ggplot(full_results_df) +
     geom_line(aes(x = n, y = power, group = feature),
@@ -101,7 +101,7 @@ power_gg <- ggplot(full_results_df) +
     geom_vline(xintercept = current_n,
                linetype = "dashed",
                color = "blue") +
-    geom_vline(xintercept = 250,
+    geom_vline(xintercept = 500,
                linetype = "dashed",
                color = "green") +
     geom_vline(xintercept = 1000,
