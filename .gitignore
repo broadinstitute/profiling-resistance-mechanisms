@@ -2,3 +2,6 @@ data/
 .ipynb_checkpoints/
 .DS_Store
 Rplots.pdf
+.Rproj.user
+*.Rproj
+.Rhistory
