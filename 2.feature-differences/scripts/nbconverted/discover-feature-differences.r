@@ -3,10 +3,10 @@ suppressPackageStartupMessages(library(ggplot2))
 suppressPackageStartupMessages(library(ggrepel))
 suppressPackageStartupMessages(library(cowplot))
 
-viz_file <- file.path("scripts", "visualization_utils.R")
+viz_file <- file.path("..", "scripts", "visualization_utils.R")
 source(viz_file)
 
-util_file <- file.path("scripts", "processing_utils.R")
+util_file <- file.path("..", "scripts", "processing_utils.R")
 source(util_file)
 
 doses <- c(0.7, 7)
@@ -18,7 +18,7 @@ ggrepel_label_size <- 1.9
 title_text_size <- 10
 ymax <- 9
 
-file <- file.path("data", "merged_intersected_variable_selected.csv")
+file <- file.path("..", "data", "merged_intersected_variable_selected.csv")
 data_df <- load_data(file)
 
 print(dim(data_df))
@@ -188,7 +188,7 @@ file_base <- file.path("figures", "dosage_feature_figure")
 save_figure(main_plot, file_base, height = 6, width = 8)
 
 batch <- "2019_06_25_Batch3"
-file <- file.path("data", paste0(batch, "_merged_intersected_variable_selected.csv"))
+file <- file.path("..", "data", paste0(batch, "_merged_intersected_variable_selected.csv"))
 
 data_df <- load_data(file)
 
