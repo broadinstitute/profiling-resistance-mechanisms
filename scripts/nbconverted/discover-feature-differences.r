@@ -3,56 +3,11 @@ suppressPackageStartupMessages(library(ggplot2))
 suppressPackageStartupMessages(library(ggrepel))
 suppressPackageStartupMessages(library(cowplot))
 
-# Load Plotting Function for ttest Volcano Plots
-ttest_volcano <- function(df, x_string, title, yintercept,
-                          repel_logic, ggrepel_label_size,
-                          title_text_size, axis_text_size,
-                          axis_title_size, ymax = 10) {
-    # Plot the results of a t-test on various samples for common features
-    #
-    # Arguments:
-    # df - the dataframe storing the t-test results
-    # x_string - string indicating what variable to plot on x axis
-    # title - string indicating the title of the plot
-    # yintercept - an alpha corrected value to plot a red dotted line
-    # repel_logic - which features to highlight and name
-    # ggrepel_label_size - int of the size of the feature names
-    # title_text_size - int of the size of the title text
-    # axis_text_size - int of the size of the text on the ggplot axes
-    # axis_title_size - int of the size of the titles on the ggplot axes
-    # ymax - int indicating the maximum height of the y axis
-    #
-    # Output:
-    # The ggplot2 object for downstream saving
-    ttest_gg <- ggplot(df,
-                       aes_string(x = x_string,
-                                  y = "neglog10p")) +
-        geom_point(alpha = 0.5,
-                   size = 0.8,
-                   color = ifelse(repel_logic, "red", "grey50")) +
-        geom_hline(yintercept = yintercept,
-                   color = "red",
-                   linetype = "dashed") +
-        xlab("t Statistic") +
-        ylab("-log10 P") +
-        ylim(c(0, ymax)) +
-        geom_text_repel(data = subset(df, repel_logic),
-                        arrow = arrow(length = unit(0.01, "npc")),
-                        size = ggrepel_label_size,
-                        segment.size = 0.1,
-                        segment.alpha = 0.8,
-                        force = 20,
-                        aes_string(x = x_string,
-                                   y = "neglog10p",
-                                   label = "feature")) +
-        ggtitle(title) +
-        theme_bw() +
-        theme(plot.title = element_text(size = title_text_size),
-              axis.text = element_text(size = axis_text_size),
-              axis.title = element_text(size = axis_title_size))
+viz_file <- file.path("scripts", "visualization_utils.R")
+source(viz_file)
 
-    return(ttest_gg)
-}
+util_file <- file.path("scripts", "processing_utils.R")
+source(util_file)
 
 doses <- c(0.7, 7)
 
@@ -63,20 +18,8 @@ ggrepel_label_size <- 1.9
 title_text_size <- 10
 ymax <- 9
 
-# Set column types for reading in data
-batch_cols = readr::cols(
-    .default = readr::col_double(),
-    Metadata_Plate = readr::col_character(),
-    Metadata_Well = readr::col_character(),
-    Metadata_Assay_Plate_Barcode = readr::col_character(),
-    Metadata_Plate_Map_Name = readr::col_character(),
-    Metadata_Batch_Number = readr::col_integer(),
-    Metadata_well_position = readr::col_character(),
-    Metadata_CellLine = readr::col_character()
-)
-
 file <- file.path("data", "merged_intersected_variable_selected.csv")
-data_df <- readr::read_csv(file, col_types = batch_cols) 
+data_df <- load_data(file)
 
 print(dim(data_df))
 head(data_df, 3)
@@ -161,8 +104,6 @@ ttest_dose_gg <- ttest_volcano(
     ymax = ymax
 )
 
-ttest_dose_gg
-
 alpha_correction <- -log10(0.05 / dim(result_cell_df)[1])
 repel_logic <- result_cell_df$neglog10p > alpha_correction * 1.1
 
@@ -178,8 +119,6 @@ ttest_cell_gg <- ttest_volcano(
     axis_title_size = axis_title_size,
     ymax = ymax
 )
-
-ttest_cell_gg
 
 # The top feature is something to do with nuclear area
 top_feature <- paste(result_dose_df$feature[1])
@@ -218,9 +157,9 @@ distrib_gg <- ggplot(data_df, aes_string(x = `top_feature`)) +
           strip.background = element_rect(colour = "black",
                                           fill = "#fdfff4"))
 
-distrib_gg
-
-table(data_df$Metadata_CellLine, data_df$Metadata_Dosage, data_df$Metadata_Batch_Number)
+table(data_df$Metadata_CellLine,
+      data_df$Metadata_Dosage,
+      data_df$Metadata_Batch_Number)
 
 feature_plot <- (
     cowplot::plot_grid(
@@ -246,9 +185,149 @@ main_plot <- (
 main_plot
 
 file_base <- file.path("figures", "dosage_feature_figure")
-for (extension in c('.png', '.pdf', '.svg')) {
-    ggsave(main_plot,
-           filename = paste0(file_base, extension),
-           height = 6,
-           width = 8)
+save_figure(main_plot, file_base, height = 6, width = 8)
+
+batch <- "2019_06_25_Batch3"
+file <- file.path("data", paste0(batch, "_merged_intersected_variable_selected.csv"))
+
+data_df <- load_data(file)
+
+print(dim(data_df))
+head(data_df, 3)
+
+tstat_cell <- c()
+pval_cell <- c()
+
+all_features <- c()
+for (feature in colnames(data_df)) {
+    if (!grepl("Metadata_", feature)) {
+        
+        # Perform Cell Line Experiment at 0.7uM Dose
+        resistant_clones <- data_df %>%
+            dplyr::filter(Metadata_Plate == "MutClones") %>%
+            dplyr::pull(!!feature)
+        
+        wt_cells <- data_df %>%
+            dplyr::filter(Metadata_Plate == "WTClones") %>%
+            dplyr::pull(!!feature)
+        
+        result <- t.test(resistant_clones, wt_cells, var.equal = FALSE)
+        
+        tstat_cell <- c(tstat_cell, as.numeric(paste(result$statistic)))
+        pval_cell <- c(pval_cell, result$p.value)
+        
+        # Track which feature is being tested
+        all_features <- c(all_features, feature)
+    }
 }
+
+# Obtain Results for Cell Line Differences
+result_cell_df <- as.data.frame(cbind(tstat_cell, pval_cell))
+result_cell_df$neglog10p <- -log10(result_cell_df$pval_cell)
+result_cell_df$feature <- all_features
+result_cell_df <- result_cell_df %>% dplyr::arrange(desc(neglog10p))
+
+dim(result_cell_df)
+head(result_cell_df, 3)
+
+alpha_correction <- -log10(0.05 / dim(result_cell_df)[1])
+repel_logic <- (
+    result_cell_df$neglog10p > alpha_correction | 
+    result_cell_df$tstat_cell > 2.65 |
+    result_cell_df$tstat_cell < -2.4
+    )
+
+ttest_cell_gg <- ttest_volcano(
+    df = result_cell_df,
+    x_string = "tstat_cell",
+    title = "Resistant vs. Wildtype Cells",
+    title_text_size = title_text_size,
+    yintercept = alpha_correction,
+    repel_logic = repel_logic,
+    ggrepel_label_size = ggrepel_label_size,
+    axis_text_size = axis_text_size,
+    axis_title_size = axis_title_size,
+    ymax = ymax
+)
+
+# The top feature is something to do with nuclear area
+top_feature <- paste(result_cell_df$feature[1])
+
+distrib_gg <- ggplot(data_df,
+                     aes_string(x = `top_feature`)) +
+    geom_density(aes(fill = Metadata_Plate_Map_Name),
+                 alpha = 0.6) +
+    geom_rug(aes(color = Metadata_Plate_Map_Name),
+             alpha = 0.8,
+             size = 0.5) +
+    scale_color_manual(name = "Cell Line",
+                      labels = c("MutClones" = "Mutant",
+                                 "WTClones" = "Wild-type"),
+                      values = c("MutClones" = "#1b9e77",
+                                 "WTClones" = "#d95f02")) +
+    scale_fill_manual(name = "Cell Line",
+                      labels = c("MutClones" = "Mutant",
+                                 "WTClones" = "Wild-type"),
+                      values = c("MutClones" = "#1b9e77",
+                                 "WTClones" = "#d95f02")) +
+    theme_bw() +
+    theme(axis.text = element_text(size = axis_text_size),
+          axis.title = element_text(size = axis_title_size),
+          strip.text = element_text(size = strip_text_size),
+          strip.background = element_rect(colour = "black",
+                                          fill = "#fdfff4"))
+
+top_neg <- result_cell_df %>%
+    dplyr::arrange(tstat_cell) %>%
+    select(feature)
+
+top_feature = top_neg$feature[1]
+
+distrib_neg_gg <- ggplot(data_df,
+                         aes_string(x = `top_feature`)) +
+    geom_density(aes(fill = Metadata_Plate_Map_Name),
+                 alpha = 0.6) +
+    geom_rug(aes(color = Metadata_Plate_Map_Name),
+             alpha = 0.8,
+             size = 0.5) +
+    scale_color_manual(name = "Cell Line",
+                      labels = c("MutClones" = "Mutant",
+                                 "WTClones" = "Wild-type"),
+                      values = c("MutClones" = "#1b9e77",
+                                 "WTClones" = "#d95f02")) +
+    scale_fill_manual(name = "Cell Line",
+                      labels = c("MutClones" = "Mutant",
+                                 "WTClones" = "Wild-type"),
+                      values = c("MutClones" = "#1b9e77",
+                                 "WTClones" = "#d95f02")) +
+    theme_bw() +
+    theme(axis.text = element_text(size = axis_text_size),
+          axis.title = element_text(size = axis_title_size),
+          strip.text = element_text(size = strip_text_size),
+          strip.background = element_rect(colour = "black",
+                                          fill = "#fdfff4"))
+
+full_distrib_gg <- (
+    cowplot::plot_grid(
+        distrib_gg,
+        distrib_neg_gg,
+        labels = c("b", "c"),
+        nrow = 2
+    )
+)
+
+main_plot <- (
+    cowplot::plot_grid(
+        ttest_cell_gg,
+        full_distrib_gg,
+        labels = c("a", ""),
+        ncol = 2,
+        nrow = 1,
+        rel_widths = c(1, 1)
+    )
+)
+
+main_plot
+
+file_base <- file.path("figures", paste0(batch, "_feature_figure"))
+save_figure(main_plot, file_base, height = 6, width = 8.5)
