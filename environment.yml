@@ -26,3 +26,5 @@ dependencies:
 - conda-forge::r-optparse=1.6.2
 - conda-forge::r-curl=4.0
 - conda-forge::r-platetools=0.1.2
+- pip:
+  - git+https://github.com/cytomining/pycytominer@1cee79753df108cc1d2731c53cc6b6f2fbf49aed
