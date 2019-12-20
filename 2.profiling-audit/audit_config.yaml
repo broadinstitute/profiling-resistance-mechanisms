@@ -1,0 +1,67 @@
+---
+batch: 2019_02_15_Batch1_20X
+plates:
+  - HCT116bortezomib
+auditcols:
+  - Metadata_CellLine
+  - Metadata_Dosage
+auditlevel: normalized_variable_selected
+---
+batch: 2019_02_15_Batch1_40X
+plates:
+  - HCT116bortezomib
+auditcols:
+  - Metadata_CellLine
+  - Metadata_Dosage
+auditlevel: normalized_variable_selected
+---
+batch: 2019_03_20_Batch2
+plates:
+  - 207106_exposure320
+auditcols:
+  - Metadata_CellLine
+  - Metadata_Dosage
+auditlevel: normalized_variable_selected
+---
+batch: 2019_06_25_Batch3
+plates:
+  - WTClones
+  - MutClones
+auditcols:
+  - Metadata_clone_number
+auditlevel: normalized_variable_selected
+---
+batch: 2019_11_11_Batch4
+plates:
+  - WTmut04hWed
+  - WTmut04hTh
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_variable_selected
+---
+batch: 2019_11_19_Batch5
+plates:
+  - 217755
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_variable_selected
+---
+batch: 2019_11_20_Batch6
+plates:
+  - 217760
+  - 217762
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_variable_selected
+---
+batch: 2019_11_22_Batch7
+plates:
+  - 217766
+  - 217768
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_variable_selected
