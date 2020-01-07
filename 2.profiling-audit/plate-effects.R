@@ -13,12 +13,12 @@ option_list <- list(
   optparse::make_option(c("-c", "--config"), help = "the location of the config yaml")
 )
 
-opt <- optparse::parse_arge(optparse::OptionParser(option_list = option_list))
-directory <- opt$directory
+opt <- optparse::parse_args(optparse::OptionParser(option_list = option_list))
+sql_directory <- opt$directory
 config <- opt$config
 metadata_directory <- file.path("..", "1.process-profiles", "metadata")
 
-yaml_info <- load_config_yaml(yaml_file=config)
+yaml_list <- load_config_yaml(yaml_file=config)
 
 #sql_directory <- "/home/ubuntu/bucket/projects/2018_05_30_ResistanceMechanisms_Kapoor/workspace/backend"
 
