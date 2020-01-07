@@ -64,3 +64,36 @@ load_config_yaml <- function(yaml_file) {
 
     return(yaml_list)
 }
+
+
+visualize_platemaps <- function(platemap_info_df, batch, plate) {
+
+    require(platetools)
+    require(ggplot2)
+
+    title_base <- paste0(batch, ": ", plate)
+    figure_directory <- file.path("figures", "plate_effects")
+
+    plate_replicate_gg <-
+        platetools::raw_map(data = platemap_info_df$Metadata_plate_replicate,
+                            well = platemap_info_df$Metadata_Well,
+                            plate = 96) +
+          ggplot2::ggtitle(paste0(title_base, "\nReplicate Info")) +
+          ggplot2::theme_dark() +
+          ggplot2::scale_fill_discrete() +
+          ggplot2::theme(legend.position = "none")
+
+    replicate_file <- file.path(figure_directory, paste0(batch, plate, "_plate_effects_replicates.png"))
+    ggplot2::ggsave(plot = plate_replicate_gg, filename = replicate_file, height = 4, width = 6)
+
+    cell_count_gg <-
+        platetools::raw_map(data = platemap_info_df$n,
+                            well = platemap_info_df$Metadata_Well,
+                            plate = 96) +
+          ggplot2::ggtitle(paste0(title_base, "\nCell Count")) +
+          ggplot2::theme_dark() +
+          ggplot2::scale_fill_continuous(name = "Cells")
+
+    count_file <- file.path(figure_directory, paste0(batch, plate, "_plate_effects_cell_count.png"))
+    ggplot2::ggsave(plot = cell_count_gg, filename = count_file, height = 4, width = 6)
+}
