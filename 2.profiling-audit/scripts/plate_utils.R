@@ -43,7 +43,7 @@ load_config_yaml <- function(yaml_file) {
     require(yaml)
 
     # Read in yaml config file
-    con <- file(config_file, "r")
+    con <- file(yaml_file, "r")
     yaml_result <- readLines(con, n = -1)
     unlink(con)
 
