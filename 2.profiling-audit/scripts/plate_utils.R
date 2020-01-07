@@ -30,7 +30,7 @@ count_cells <- function(plate_name, batch_id, project_directory) {
                           by = c("TableNumber", "ImageNumber")) %>%
         dplyr::group_by(Metadata_Plate, Metadata_Well) %>%
         dplyr::count()
-
+    RSQLite::dbDisconnect(con)
     return(count_df)
 }
 
