@@ -29,7 +29,9 @@ count_cells <- function(plate_name, batch_id, project_directory) {
         dplyr::inner_join(image_df,
                           by = c("TableNumber", "ImageNumber")) %>%
         dplyr::group_by(Metadata_Plate, Metadata_Well) %>%
-        dplyr::count()
+        dplyr::count() %>%
+        dplyr::as_tibble()
+
     RSQLite::dbDisconnect(con)
     return(count_df)
 }
