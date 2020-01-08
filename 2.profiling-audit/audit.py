@@ -87,7 +87,7 @@ for batch in audit_config:
             replicate_info=audit_df.replicate_info,
             pairwise_correlation=audit_df.pairwise_correlation,
         )
-        full_audit_df = pd.concat([pair_a_df, pair_b_df], axis="rows")
+        full_audit_df = pd.concat([pair_a_df, pair_b_df], axis="rows").drop_duplicates()
 
         grid_string = "~{}".format("+".join(audit_cols))
 
