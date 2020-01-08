@@ -50,7 +50,7 @@ for (batch_idx in seq(1, length(yaml_list))) {
         colnames(platemap_df) <- paste0("Metadata_", colnames(platemap_df))
 
         platemap_info_df <- cell_count_df %>%
-            dplyr::full_join(platemap_df, by = c("Metadata_Well" = "Metadata_well_position"))
+            dplyr::right_join(platemap_df, by = c("Metadata_Well" = "Metadata_well_position"))
 
         if (length(audit_cols) == 2) {
             replicate_info <- paste(
