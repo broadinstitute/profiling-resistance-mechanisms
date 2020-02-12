@@ -24,6 +24,9 @@ with open(config, "r") as stream:
         if "pipeline" in data.keys():
             pipeline = data
         else:
+            process = data["process"]
+            if not process:
+                continue
             batch = data["batch"]
             plates = [str(x) for x in data["plates"]]
             profile_config[batch] = {}
