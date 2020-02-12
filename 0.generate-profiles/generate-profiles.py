@@ -48,5 +48,4 @@ for batch in profile_config:
     for plate in profile_config[batch]["plates"]:
         sql_file = profile_config[batch]["plates"][plate]
         print("Now processing... batch: {}, plate: {}".format(batch, plate))
-        print(sql_file)
         process_profile(sql_file=sql_file, batch=batch, plate=plate, pipeline=pipeline)
