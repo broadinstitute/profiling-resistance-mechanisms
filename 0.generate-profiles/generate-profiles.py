@@ -33,7 +33,11 @@ with open(config, "r") as stream:
             profile_config[batch]["plates"] = {
                 x: "sqlite:////{}".format(
                     os.path.join(
-                        pipeline_steps["workspace_dir"], batch, x, "{}.sqlite".format(x)
+                        pipeline["workspace_dir"],
+                        "backend",
+                        batch,
+                        x,
+                        "{}.sqlite".format(x),
                     )
                 )
                 for x in plates
@@ -43,5 +47,6 @@ with open(config, "r") as stream:
 for batch in profile_config:
     for plate in profile_config[batch]["plates"]:
         sql_file = profile_config[batch]["plates"][plate]
-        print("Now processing... plate: {} in batch: {}".format(plate, batch))
+        print("Now processing... batch: {}, plate: {}".format(batch, plate))
+        print(sql_file)
         process_profile(sql_file=sql_file, batch=batch, plate=plate, pipeline=pipeline)
