@@ -5,6 +5,7 @@ dependencies:
 - conda-forge::python=3.7.1
 - conda-forge::pandas=0.25.0
 - conda-forge::xlrd=1.2.0
+- conda-forge::pyyaml=5.2
 - conda-forge::numpy=1.16.2
 - conda-forge::scikit-learn=0.20.3
 - conda-forge::umap-learn=0.3.8
@@ -26,5 +27,6 @@ dependencies:
 - conda-forge::r-optparse=1.6.2
 - conda-forge::r-curl=4.0
 - conda-forge::r-platetools=0.1.2
+- conda-forge::r-yaml=2.2.0
 - pip:
-  - git+https://github.com/cytomining/pycytominer@3138f3bb0eb19a4cab5bd93e2faf47fce953d82f
+  - git+https://github.com/cytomining/pycytominer@a51c76e3eb871a71ac91f86f9a99494c6ab1e4e4
