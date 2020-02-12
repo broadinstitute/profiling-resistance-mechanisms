@@ -27,6 +27,7 @@ feature_select:
     - correlation_threshold
     - drop_na_columns
     - blacklist
+    - drop_outliers
 options:
   compression: gzip
   samples: all
