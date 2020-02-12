@@ -39,31 +39,38 @@ process: true
 batch: 2019_02_15_Batch1_40X
 plates:
   - HCT116bortezomib
+process: true
 ---
 batch: 2019_03_20_Batch2
 plates:
   - 207106_exposure320
+process: true
 ---
 batch: 2019_06_25_Batch3
 plates:
   - WTClones
   - MutClones
+process: true
 ---
 batch: 2019_11_11_Batch4
 plates:
   - WTmut04hWed
   - WTmut04hTh
+process: true
 ---
 batch: 2019_11_19_Batch5
 plates:
   - 217755
+process: true
 ---
 batch: 2019_11_20_Batch6
 plates:
   - 217760
   - 217762
+process: true
 ---
 batch: 2019_11_22_Batch7
 plates:
   - 217766
   - 217768
+process: true
