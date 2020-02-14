@@ -100,6 +100,7 @@ def process_profile(sql_file, batch, plate, pipeline):
 
         if pipeline["count"]["perform"]:
             count_dir = pipeline["count"]["output_dir"]
+            os.makedirs(count_dir, exist_ok=True)
 
             cell_count_file = os.path.join(
                 count_dir, "{}_{}_cell_count.tsv".format(batch, plate)
