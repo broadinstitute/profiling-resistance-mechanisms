@@ -1,0 +1,77 @@
+---
+pipeline: 2018_05_30_ResistanceMechanisms_Kapoor
+workspace_dir: /home/ubuntu/bucket/projects/2018_05_30_ResistanceMechanisms_Kapoor/workspace
+output_dir: profiles
+platemap_well_column: Metadata_well_position
+aggregate:
+  perform: true
+  plate_column: Metadata_Plate
+  well_column: Metadata_Well
+  method: median
+  features: infer
+count:
+  perform: true
+  output_dir: cell_counts
+annotate:
+  perform: true
+  well_column: Metadata_Well
+normalize:
+  perform: true
+  method: standardize
+  features: infer
+feature_select:
+  perform: true
+  features: infer
+  operations:
+    - variance_threshold
+    - correlation_threshold
+    - drop_na_columns
+    - blacklist
+    - drop_outliers
+options:
+  compression: gzip
+  samples: all
+---
+batch: 2019_02_15_Batch1_20X
+plates:
+  - HCT116bortezomib
+process: true
+---
+batch: 2019_02_15_Batch1_40X
+plates:
+  - HCT116bortezomib
+process: true
+---
+batch: 2019_03_20_Batch2
+plates:
+  - 207106_exposure320
+process: true
+---
+batch: 2019_06_25_Batch3
+plates:
+  - WTClones
+  - MutClones
+process: true
+---
+batch: 2019_11_11_Batch4
+plates:
+  - WTmut04hWed
+  - WTmut04hTh
+process: true
+---
+batch: 2019_11_19_Batch5
+plates:
+  - 217755
+process: true
+---
+batch: 2019_11_20_Batch6
+plates:
+  - 217760
+  - 217762
+process: true
+---
+batch: 2019_11_22_Batch7
+plates:
+  - 217766
+  - 217768
+process: true
