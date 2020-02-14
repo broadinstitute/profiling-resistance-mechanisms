@@ -96,7 +96,7 @@ def process_profile(sql_file, batch, plate, pipeline):
             operation=aggregate_operation,
         )
 
-        ap.aggregate_profiles(output_file=aggregate_out_file, compression=compression)
+#        ap.aggregate_profiles(output_file=aggregate_out_file, compression=compression)
 
         if pipeline["count"]["perform"]:
             count_dir = pipeline["count"]["output_dir"]
@@ -112,6 +112,8 @@ def process_profile(sql_file, batch, plate, pipeline):
                 left_on=aggregate_well_column,
                 right_on=platemap_well_column,
             ).drop(platemap_well_column, axis="columns")
+
+            cell_count_df.to_csv(cell_count_file, sep="\t", index=False)
 
     # Annotate Profiles
     annotate_steps = pipeline["annotate"]
