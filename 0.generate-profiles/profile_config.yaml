@@ -11,7 +11,7 @@ aggregate:
   features: infer
 count:
   perform: true
-  output_dir: cell_count
+  output_dir: cell_counts
 annotate:
   perform: true
   well_column: Metadata_Well
