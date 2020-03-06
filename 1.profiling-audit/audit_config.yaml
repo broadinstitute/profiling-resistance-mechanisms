@@ -5,7 +5,7 @@ plates:
 auditcols:
   - Metadata_CellLine
   - Metadata_Dosage
-auditlevel: normalized_variable_selected
+auditlevel: normalized_feature_selected
 ---
 batch: 2019_02_15_Batch1_40X
 plates:
@@ -13,7 +13,7 @@ plates:
 auditcols:
   - Metadata_CellLine
   - Metadata_Dosage
-auditlevel: normalized_variable_selected
+auditlevel: normalized_feature_selected
 ---
 batch: 2019_03_20_Batch2
 plates:
@@ -21,7 +21,7 @@ plates:
 auditcols:
   - Metadata_CellLine
   - Metadata_Dosage
-auditlevel: normalized_variable_selected
+auditlevel: normalized_feature_selected
 ---
 batch: 2019_06_25_Batch3
 plates:
@@ -29,7 +29,7 @@ plates:
   - MutClones
 auditcols:
   - Metadata_clone_number
-auditlevel: normalized_variable_selected
+auditlevel: normalized_feature_selected
 ---
 batch: 2019_11_11_Batch4
 plates:
@@ -38,7 +38,7 @@ plates:
 auditcols:
   - Metadata_clone_number
   - Metadata_treatment
-auditlevel: normalized_variable_selected
+auditlevel: normalized_feature_selected
 ---
 batch: 2019_11_19_Batch5
 plates:
@@ -46,7 +46,7 @@ plates:
 auditcols:
   - Metadata_clone_number
   - Metadata_treatment
-auditlevel: normalized_variable_selected
+auditlevel: normalized_feature_selected
 ---
 batch: 2019_11_20_Batch6
 plates:
@@ -55,7 +55,7 @@ plates:
 auditcols:
   - Metadata_clone_number
   - Metadata_treatment
-auditlevel: normalized_variable_selected
+auditlevel: normalized_feature_selected
 ---
 batch: 2019_11_22_Batch7
 plates:
@@ -64,4 +64,4 @@ plates:
 auditcols:
   - Metadata_clone_number
   - Metadata_treatment
-auditlevel: normalized_variable_selected
+auditlevel: normalized_feature_selected
