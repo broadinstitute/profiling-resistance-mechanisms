@@ -3,10 +3,10 @@ import yaml
 import argparse
 import numpy as np
 import pandas as pd
-from scripts.viz_utils import plot_replicate_correlation, plot_replicate_density
 
 from pycytominer import audit
-from pycytominer.cyto_utils import drop_outlier_features
+
+from scripts.viz_utils import plot_replicate_correlation, plot_replicate_density
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", help="configuration yaml file for batch information")
@@ -27,8 +27,6 @@ config = args.config
 profile_dir = args.profile_dir
 output_dir = args.output_dir
 figure_dir = args.figure_dir
-figure_correlation_dir = os.path.join(figure_dir, "correlation")
-os.makedirs(figure_correlation_dir, exist_ok=True)
 
 np.random.seed(1234)
 
@@ -56,11 +54,11 @@ for batch in audit_config:
         audit_output_dir = os.path.join(output_dir, batch, plate)
         os.makedirs(audit_output_dir, exist_ok=True)
 
+        figure_output_dir = os.path.join(figure_dir, batch, plate)
+        os.makedirs(figure_output_dir, exist_ok=True)
+
         audit_output_file = os.path.join(audit_output_dir, "{}_audit.csv".format(plate))
         df = pd.read_csv(plate_files[plate])
-        drop_columns = drop_outlier_features(population_df=df)
-
-        df = df.drop(drop_columns, axis="columns")
 
         audit(
             df,
@@ -93,7 +91,7 @@ for batch in audit_config:
 
         # Visualize the audit - output two plots for each plate
         output_base = os.path.join(
-            figure_correlation_dir, "{}_{}_replicate_correlation".format(batch, plate)
+            figure_output_dir, "{}_{}_replicate_correlation".format(batch, plate)
         )
         _ = plot_replicate_correlation(
             full_audit_df,
@@ -106,7 +104,7 @@ for batch in audit_config:
         )
 
         output_base = os.path.join(
-            figure_correlation_dir, "{}_{}_density".format(batch, plate)
+            figure_output_dir, "{}_{}_density".format(batch, plate)
         )
         _ = plot_replicate_density(
             audit_df, batch, plate, dpi=400, output_file_base=output_base
