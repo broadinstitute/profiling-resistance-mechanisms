@@ -1,12 +1,26 @@
 # Utility functions to facilitate platemap layout analysis and visualization
 
+platemap_theme <- ggplot2::theme(
+    title = element_text(size = 9),
+    legend.position = "bottom",
+    legend.text = element_text(size = 5),
+    legend.title = element_blank(),
+    legend.key.size = unit(0.5, "line")
+)
+
+
 count_cells <- function(plate_name, batch_id, project_directory) {
 
     require(RSQLite)
     require(dplyr)
 
     # Determine SQL file name
-    sqlite_file <- file.path(project_directory, batch_id, plate_name, paste0(plate_name, ".sqlite"))
+    sqlite_file <- file.path(
+      project_directory,
+      batch_id,
+      plate_name,
+      paste0(plate_name, ".sqlite")
+    )
 
     # Setup a connection
     con <- RSQLite::dbConnect(drv = RSQLite::SQLite(),
@@ -68,34 +82,58 @@ load_config_yaml <- function(yaml_file) {
 }
 
 
-visualize_platemaps <- function(platemap_info_df, batch, plate) {
+visualize_platemaps <- function(platemap_info_df, batch, plate, output_dir) {
 
     require(platetools)
     require(ggplot2)
 
-    title_base <- paste0(batch, ": ", plate)
-    figure_directory <- file.path("figures", "plate_effects")
+    title_base <- paste0(batch, "\nPlate: ", plate)
 
     plate_replicate_gg <-
-        platetools::raw_map(data = platemap_info_df$Metadata_plate_replicate,
-                            well = platemap_info_df$Metadata_Well,
-                            plate = 96) +
-          ggplot2::ggtitle(paste0(title_base, "\nReplicate Info")) +
-          ggplot2::theme_dark() +
-          ggplot2::scale_fill_discrete() +
-          ggplot2::theme(legend.position = "none")
+        platetools::raw_map(
+            data = platemap_info_df$Metadata_plate_replicate,
+            well = platemap_info_df$Metadata_Well,
+            plate = 96,
+            size = 4
+        ) +
+        ggplot2::ggtitle(paste0(title_base, "\nReplicate Info")) +
+        ggplot2::theme_dark() +
+        ggplot2::scale_fill_discrete() +
+        platemap_theme +
+        ggplot2::guides(fill = guide_legend(ncol = 5))
 
-    replicate_file <- file.path(figure_directory, paste0(batch, plate, "_plate_effects_replicates.png"))
-    ggplot2::ggsave(plot = plate_replicate_gg, filename = replicate_file, height = 4, width = 6)
+    replicate_file <- file.path(
+      output_dir,
+      paste0(batch, plate, "_plate_effects_replicates.png")
+    )
+    ggplot2::ggsave(
+      plot = plate_replicate_gg,
+      filename = replicate_file,
+      height = 4,
+      width = 3
+    )
 
     cell_count_gg <-
-        platetools::raw_map(data = platemap_info_df$n,
-                            well = platemap_info_df$Metadata_Well,
-                            plate = 96) +
-          ggplot2::ggtitle(paste0(title_base, "\nCell Count")) +
-          ggplot2::theme_dark() +
-          ggplot2::scale_fill_continuous(name = "Cells")
+        platetools::raw_map(
+            data = platemap_info_df$n,
+            well = platemap_info_df$Metadata_Well,
+            plate = 96,
+            size = 4
+        ) +
+        ggplot2::ggtitle(paste0(title_base, "\nCell Count")) +
+        ggplot2::theme_dark() +
+        ggplot2::scale_fill_continuous(name = "Cells") +
+        platemap_theme +
+        ggplot2::guides(fill = guide_legend(ncol = 5))
 
-    count_file <- file.path(figure_directory, paste0(batch, plate, "_plate_effects_cell_count.png"))
-    ggplot2::ggsave(plot = cell_count_gg, filename = count_file, height = 4, width = 6)
+    count_file <- file.path(
+      output_dir,
+      paste0(batch, plate, "_plate_effects_cell_count.png")
+    )
+    ggplot2::ggsave(
+      plot = cell_count_gg,
+      filename = count_file,
+      height = 4,
+      width = 3
+    )
 }
