@@ -13,13 +13,13 @@ parser.add_argument("--config", help="configuration yaml file for batch informat
 parser.add_argument(
     "--profile_dir",
     help="directory storing profiles",
-    default="../1.process-profiles/profiles",
+    default="../0.generate-profiles/profiles",
 )
 parser.add_argument(
     "--output_dir", help="directory where to save audit results", default="results"
 )
 parser.add_argument(
-    "--figure_dir", help="directory where to save audit figures", default="figures/"
+    "--figure_dir", help="directory where to save audit figures", default="figures"
 )
 args = parser.parse_args()
 
@@ -42,7 +42,7 @@ for data in yaml.load_all(stream, Loader=yaml.FullLoader):
     audit_config[batch]["plates"] = plates
     audit_config[batch]["auditcols"] = data["auditcols"]
     audit_config[batch]["plate_files"] = {
-        x: os.path.join(profile_dir, batch, x, "{}_{}.csv".format(x, audit_level))
+        x: os.path.join(profile_dir, batch, x, "{}_{}.csv.gz".format(x, audit_level))
         for x in plates
     }
 
