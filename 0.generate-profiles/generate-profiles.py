@@ -8,7 +8,7 @@ import argparse
 import numpy as np
 import pandas as pd
 
-from profile_util import process_profile
+from scripts.profile_util import process_profile
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
