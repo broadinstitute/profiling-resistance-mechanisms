@@ -13,31 +13,11 @@ import plotnine as gg
 
 from pycytominer.cyto_utils import infer_cp_features
 
+from scripts.processing_utils import load_data
+
 
 # In[2]:
 
-
-batches = [x for x in os.listdir("profiles") if x != ".DS_Store"]
-batches
-
-
-# In[3]:
-
-
-def load_data(batch, profile_dir="profiles"):
-    batch_dir = os.path.join(profile_dir, batch)
-
-    backend_folders = os.listdir(batch_dir)
-    plate_files = [
-        os.path.join(batch_dir, x, "{}_normalized_variable_selected.csv".format(x))
-        for x in backend_folders if ".DS_Store" not in x
-    ]
-    
-    plate_dfs = []
-    for plate_file in plate_files:
-        plate_dfs.append(pd.read_csv(plate_file))
-
-    return pd.concat(plate_dfs, axis="rows")
 
 def get_count_per_batch(df, batch_name):
     result = (
@@ -70,31 +50,44 @@ def count_treatments_per_plate(df, batch_name):
         .reset_index()
         .rename({
             "Metadata_Well": "profile_count",
+            group_cols[0]: "Metadata_clone"
         }, axis="columns")
         .assign(batch=batch_name)
     )
+    
+    if batch_name not in ["2019_06_25_Batch3"]:
+        result = (
+            result.rename({
+                group_cols[1]: "Metadata_treatment"
+            }, axis="columns")
+        )
     return result
 
 def process_counts(batch_name, profile_dir="profiles"):
-    df = load_data(batch_name, profile_dir)
+    df = load_data(batch_name, profile_dir, combine_dfs=True)
     batch_count = get_count_per_batch(df, batch_name)
     treatment_count = count_treatments_per_plate(df, batch_name)
     return df, batch_count, treatment_count
 
 
+# In[3]:
+
+
+profile_dir = os.path.join("..", "0.generate-profiles", "profiles")
+batches = [x for x in os.listdir(profile_dir) if x != ".DS_Store"]
+
+batches
+
+
 # In[4]:
 
 
-#load_data("2019_06_25_Batch3")
-
-
-# In[5]:
-
-
 batch_data = {}
+all_clones = list()
+profile_count_list = list()
 for batch in batches:
-    print(batch)
-    df, batch_count, treatment_count = process_counts(batch)
+    print("Now processing... {}".format(batch))
+    df, batch_count, treatment_count = process_counts(batch, profile_dir=profile_dir)
     
     batch_data[batch] = {
             "dataframe": df,
@@ -102,9 +95,52 @@ for batch in batches:
             "batch_count": batch_count,
             "treatment_count": treatment_count
         }
+    
+    all_clones += treatment_count.Metadata_clone.unique().tolist()
+    profile_count_list.append(
+        treatment_count.loc[:, ["Metadata_clone", "Metadata_treatment", "profile_count"]]
+    )
+
+
+# In[5]:
+
+
+sample_count_df = (
+    pd.DataFrame(
+        pd.concat(profile_count_list, axis="rows")
+        .fillna("DMSO")
+        .reset_index(drop=True)
+        .groupby(["Metadata_clone", "Metadata_treatment"])
+        ["profile_count"]
+        .sum()
+    )
+    .sort_values("profile_count", ascending=False)
+    .reset_index()
+)
+
+sample_count_df
 
 
 # In[6]:
+
+
+sample_treatment_count_df = (
+    sample_count_df
+    .pivot_table(values="profile_count", index="Metadata_clone", columns="Metadata_treatment")
+    .fillna(0)
+    .astype(int)
+)
+
+sample_treatment_count_df
+
+
+# In[7]:
+
+
+len(set(all_clones))
+
+
+# In[8]:
 
 
 all_profile_counts = []
@@ -115,7 +151,7 @@ profile_counts_df = pd.concat(all_profile_counts, axis="rows")
 profile_counts_df
 
 
-# In[7]:
+# In[9]:
 
 
 all_treatment_counts = []
@@ -126,9 +162,26 @@ treatment_counts_df = pd.concat(all_treatment_counts, axis="rows", sort=True)
 treatment_counts_df.head()
 
 
+# In[10]:
+
+
+clone_counts_df = (
+    treatment_counts_df
+    .groupby(["Metadata_clone", "Metadata_treatment"])
+    ["profile_count"]
+    .sum()
+    .reset_index()
+)
+
+output_file = os.path.join("tables", "clone_counts_bortezomib.csv")
+clone_counts_df.to_csv(output_file, sep=',', index=False)
+
+clone_counts_df
+
+
 # ## Visualize Counts
 
-# In[8]:
+# In[11]:
 
 
 total_count = profile_counts_df.profile_count.sum()
@@ -150,58 +203,60 @@ batch_count_gg.save(output_figure, height=4, width=5.5, dpi=400, verbose=False)
 batch_count_gg
 
 
-# ## Describe Metadata Counts for Each Batch
+# ## Output Metadata Counts for Each Batch
+# 
+# For quick description
 
-# In[9]:
+# In[12]:
 
 
 batch1_40x_df = treatment_counts_df.query("batch == '2019_02_15_Batch1_40X'").dropna(axis="columns")
 batch1_40x_df
 
 
-# In[10]:
+# In[13]:
 
 
 batch1_20x_df = treatment_counts_df.query("batch == '2019_02_15_Batch1_20X'").dropna(axis="columns")
 batch1_20x_df
 
 
-# In[11]:
+# In[14]:
 
 
 batch2_df = treatment_counts_df.query("batch == '2019_03_20_Batch2'").dropna(axis="columns")
 batch2_df
 
 
-# In[12]:
+# In[15]:
 
 
 batch3_df = treatment_counts_df.query("batch == '2019_06_25_Batch3'").dropna(axis="columns")
 batch3_df
 
 
-# In[13]:
+# In[16]:
 
 
 batch4_df = treatment_counts_df.query("batch == '2019_11_11_Batch4'").dropna(axis="columns")
 batch4_df
 
 
-# In[14]:
+# In[17]:
 
 
 batch5_df = treatment_counts_df.query("batch == '2019_11_19_Batch5'").dropna(axis="columns")
 batch5_df
 
 
-# In[15]:
+# In[18]:
 
 
 batch6_df = treatment_counts_df.query("batch == '2019_11_20_Batch6'").dropna(axis="columns")
 batch6_df
 
 
-# In[16]:
+# In[19]:
 
 
 batch7_df = treatment_counts_df.query("batch == '2019_11_22_Batch7'").dropna(axis="columns")
