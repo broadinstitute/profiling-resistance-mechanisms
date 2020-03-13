@@ -100,12 +100,15 @@ dataset_a_name = "combined_cloneAcloneE_dataset"
 # In[8]:
 
 
+output_file = os.path.join(output_dir, "{}.csv".format(dataset_a_name))
+dataset_a_df.to_csv(output_file, index=False)
+
 dataset_a_featureselect_df = feature_select(dataset_a_df, operation=feature_select_ops)
 
-output_file = os.path.join(output_dir, "{}.csv".format(dataset_a_name))
+output_file = os.path.join(output_dir, "{}_feature_select.csv".format(dataset_a_name))
 dataset_a_featureselect_df.to_csv(output_file, index=False)
 
-output_gct_file = os.path.join(gct_dir, "{}.gct".format(dataset_a_name))
+output_gct_file = os.path.join(gct_dir, "{}_feature_select.gct".format(dataset_a_name))
 write_gct(profiles=dataset_a_featureselect_df, output_file=output_gct_file)
 
 print(dataset_a_featureselect_df.shape)
@@ -146,12 +149,15 @@ dataset_b_name = "combined_four_clone_dataset"
 # In[12]:
 
 
+output_file = os.path.join(output_dir, "{}.csv".format(dataset_b_name))
+dataset_b_df.to_csv(output_file, index=False)
+
 dataset_b_featureselect_df = feature_select(dataset_b_df, operation=feature_select_ops)
 
-output_file = os.path.join(output_dir, "{}.csv".format(dataset_b_name))
+output_file = os.path.join(output_dir, "{}_feature_select.csv".format(dataset_b_name))
 dataset_b_featureselect_df.to_csv(output_file, index=False)
 
-output_gct_file = os.path.join(gct_dir, "{}.gct".format(dataset_b_name))
+output_gct_file = os.path.join(gct_dir, "{}_feature_select.gct".format(dataset_b_name))
 write_gct(profiles=dataset_b_featureselect_df, output_file=output_gct_file)
 
 print(dataset_b_featureselect_df.shape)
