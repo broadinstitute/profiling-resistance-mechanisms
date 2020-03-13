@@ -13,6 +13,7 @@ ttest_volcano <- function(df,
                           title_text_size,
                           axis_text_size,
                           axis_title_size,
+  
                           ymax = 10) {
   # Plot the results of a t-test on various samples for common features
   #
@@ -41,6 +42,7 @@ ttest_volcano <- function(df,
                linetype = "dashed") +
     xlab("t Statistic") +
     ylab("-log10 P") +
+    ggtitle(title) +
     ylim(c(0, ymax)) +
     geom_text_repel(data = subset(df, repel_logic),
                     arrow = arrow(length = unit(0.01, "npc")),
@@ -55,7 +57,7 @@ ttest_volcano <- function(df,
     theme(plot.title = element_text(size = title_text_size),
           axis.text = element_text(size = axis_text_size),
           axis.title = element_text(size = axis_title_size))
-  
+
   return(ttest_gg)
 }
 
@@ -66,7 +68,7 @@ save_figure <- function(main_figure,
                         height = 6,
                         width = 8) {
   # Save figure given extensions
-  # 
+  #
   # Arguments:
   # main_figure - the cowplot or ggplot object
   # file_base - the name of the file without extensions
@@ -76,7 +78,7 @@ save_figure <- function(main_figure,
   #
   # Output:
   # Will save plots to file
-  
+
   for (extension in extensions) {
     ggsave(main_figure,
            filename = paste0(file_base, extension),
