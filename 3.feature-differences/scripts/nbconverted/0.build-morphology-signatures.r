@@ -289,7 +289,7 @@ feature_interpret_gg <- ggplot(feature_focus_df,
     theme(axis.text = element_text(size = 6),
           axis.title = element_text(size = 7))
 
-out_file <- file.path("figures", "anova_effect_term_features_clone_vs_treatment.png")
+out_file <- file.path("figures", "fourclone_anova_effect_term_features_clone_vs_treatment.png")
 ggsave(out_file, dpi = 400, height = 5, width = 5)
 
 feature_interpret_gg
