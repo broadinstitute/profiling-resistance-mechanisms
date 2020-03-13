@@ -13,6 +13,7 @@ import os
 import pandas as pd
 
 from pycytominer import feature_select, write_gct
+from pycytominer.cyto_utils import infer_cp_features
 
 from scripts.processing_utils import load_data
 
@@ -69,6 +70,13 @@ for batch in batches:
 
 
 dataset_a_df = pd.concat(dataset_a_dict.values()).reset_index(drop=True)
+dataset_a_df = dataset_a_df.assign(Metadata_clone_type="resistant")
+dataset_a_df.loc[dataset_a_df.Metadata_CellLine.str.contains("WT"), "Metadata_clone_type"] = "wildtype"
+
+meta_cols = infer_cp_features(dataset_a_df, metadata=True)
+cp_cols = infer_cp_features(dataset_a_df)
+
+dataset_a_df = dataset_a_df.reindex(meta_cols + cp_cols, axis="columns")
 
 print(dataset_a_df.shape)
 dataset_a_df.head()
@@ -110,6 +118,14 @@ dataset_a_featureselect_df.head()
 
 
 dataset_b_df = pd.concat(dataset_b_dict.values()).reset_index(drop=True)
+
+dataset_b_df = dataset_b_df.assign(Metadata_clone_type="resistant")
+dataset_b_df.loc[dataset_b_df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type"] = "wildtype"
+
+meta_cols = infer_cp_features(dataset_b_df, metadata=True)
+cp_cols = infer_cp_features(dataset_b_df)
+
+dataset_b_df = dataset_b_df.reindex(meta_cols + cp_cols, axis="columns")
 
 print(dataset_b_df.shape)
 dataset_b_df.head()
