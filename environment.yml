@@ -17,6 +17,7 @@ dependencies:
 - conda-forge::nb_conda_kernels=2.2.1
 - conda-forge::r-dplyr=0.8.3
 - conda-forge::r-tidyr=0.8.3
+- conda-forge::r-broom=0.5.5
 - conda-forge::r-readr=1.1.1
 - conda-forge::r-readxl=1.1.0
 - conda-forge::r-ggplot2=3.2.1
