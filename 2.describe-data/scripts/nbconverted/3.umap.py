@@ -279,15 +279,15 @@ merged_umap_gg = (
         embedding_df,
         gg.aes(
             'x', 'y',
-            color="Metadata_treatment",
-            shape='Metadata_Dataset'
+            shape="Metadata_treatment",
+            color='Metadata_Dataset'
         )
     )
     + gg.geom_point()
     + gg.theme_bw()
     + gg.xlab("x")
     + gg.ylab("y")
-    + gg.scale_shape_manual(name="Plate", values=[".", "+"])
+    + gg.scale_shape_manual(name="Treatment", values=[".", "+"])
     + gg.ggtitle("Cell Painting Merged (UMAP)")
     + gg.theme(legend_key=gg.element_rect(color="black", fill = "white"))
 )
