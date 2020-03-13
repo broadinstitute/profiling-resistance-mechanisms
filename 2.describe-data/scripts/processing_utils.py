@@ -30,7 +30,9 @@ def load_data(
     plate_data = {}
     for plate_idx in range(0, len(plate_files)):
         plate = plate_folders[plate_idx]
-        plate_data[plate] = pd.read_csv(plate_files[plate_idx])
+        plate_data[plate] = pd.read_csv(plate_files[plate_idx]).assign(
+            Metadata_batch=batch
+        )
 
     if combine_dfs:
         plate_data = convert_data(plate_data)
