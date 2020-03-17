@@ -86,6 +86,25 @@ ggsave(out_file, dpi = 500, height = 5, width = 4)
 
 difference_contribution_gg
 
+difference_contribution_gg <- ggplot(cloneAE_full_results_df %>% dplyr::filter(neg_log_p < 200),
+                                     aes(x = neg_log_p)) +
+    geom_density(aes(fill = term), alpha = 0.4) +
+    theme_bw() +
+    xlab("-log10 p value") +
+    ylab("") +
+    ggtitle(
+        paste("Comparing Clone A, E, and Wildtype\nANOVA effects for all", 
+               num_cp_features,
+              "CP features")) +
+    theme(axis.text = element_text(size = 6),
+          axis.title = element_text(size = 7),
+          title = element_text(size = 8))
+
+out_file <- file.path("figures", "cloneAE_anova_effect_term_distributions_cutoff.png")
+ggsave(out_file, dpi = 500, height = 5, width = 4)
+
+difference_contribution_gg
+
 signif_line <- -log10(0.05 / nrow(full_tukey_results_df))
 
 tukey_volcano_gg <- ggplot(full_tukey_results_df, aes(x = estimate, y = neg_log_p)) +
@@ -99,7 +118,7 @@ tukey_volcano_gg <- ggplot(full_tukey_results_df, aes(x = estimate, y = neg_log_
           strip.background = element_rect(colour = "black", fill = "#fdfff4"))
 
 out_file <- file.path("figures", "cloneAE_tukey_volcano.png")
-ggsave(out_file, dpi = 500, height = 5, width = 8)
+ggsave(out_file, dpi = 500, height = 5, width = 6)
 
 tukey_volcano_gg
 
@@ -207,7 +226,7 @@ difference_contribution_gg <- ggplot(full_results_df,
           title = element_text(size = 8))
 
 out_file <- file.path("figures", "fourclone_anova_effect_term_distributions.png")
-ggsave(out_file, dpi = 500, height = 5, width = 4)
+ggsave(out_file, dpi = 500, height = 3.5, width = 4)
 
 difference_contribution_gg
 
