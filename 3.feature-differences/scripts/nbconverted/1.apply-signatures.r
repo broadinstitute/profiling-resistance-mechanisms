@@ -283,4 +283,31 @@ output_fig <- file.path("figures", "signature", "generic_resistance_signature_ap
 ggsave(output_fig, dpi = 500, height = 5, width = 5)
 apply_res_signature_gg
 
+full_res_result_df$Metadata_Dosage <- factor(
+    full_res_result_df$Metadata_Dosage, levels = unique(sort(full_res_result_df$Metadata_Dosage))
+)
+full_res_result_df <- full_res_result_df %>%
+    dplyr::mutate(Metadata_group = paste0(Metadata_batch, Metadata_CellLine))
 
+ggplot(full_res_result_df, aes(x = Metadata_Dosage, y = TotalScore, color = Metadata_CellLine, group = Metadata_group)) +
+    geom_point(size = 1) +
+    geom_smooth(aes(fill = Metadata_clone_type), method = "loess", lwd = 0.5) +
+    facet_wrap("~Metadata_batch", nrow = 2) +
+    theme_bw() +
+    scale_fill_manual(name = "Clone Type",
+                          labels = c("resistant" = "Resistant", "wildtype" = "WildType"),
+                          values = c("resistant" = "#f5b222", "wildtype" = "#4287f5")) +
+    ylab("Generic Resistance Signature Score") +
+    annotate("rect", ymin = min_val,
+                      ymax = max_val,
+                      xmin = 0,
+                      xmax = length(unique(full_res_result_df$Metadata_CellLine)) + 2,
+                      alpha = 0.2,
+                      color = "red",
+                      linetype = "dashed",
+                      fill = "grey") +
+    theme(strip.text = element_text(size = 8, color = "black"),
+          strip.background = element_rect(colour = "black", fill = "#fdfff4"))
+
+output_fig <- file.path("figures", "signature", "generic_resistance_signature_apply_cloneAE_xaxis_dosage.png")
+ggsave(output_fig, dpi = 500, height = 5, width = 5)
