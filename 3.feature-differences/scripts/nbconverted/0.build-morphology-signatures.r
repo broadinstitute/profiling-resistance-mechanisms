@@ -248,12 +248,30 @@ ggsave(out_file, dpi = 500, height = 5, width = 4)
 
 tukey_volcano_gg
 
+# We want to exclude same clone-type comparisons, but not different clone type comparisons
+clone_comparisons <- unique(
+    full_tukey_results_df %>%
+        dplyr::filter(term == "Metadata_clone_number") %>%
+        dplyr::pull(comparison)
+    )
+
+same_clonetype_compare <- c(
+    'BZ008-BZ001', 'BZ017-BZ001', 'BZ018-BZ001', 'BZ017-BZ008',
+    'BZ018-BZ008', 'BZ018-BZ017', 'WT002-WT_parental', 'WT008-WT_parental',
+    'WT009-WT_parental', 'WT011-WT_parental', 'WT008-WT002', 'WT009-WT002',
+    'WT011-WT002', 'WT009-WT008', 'WT011-WT008', 'WT011-WT009'
+)
+
+setdiff(clone_comparisons, same_clonetype_compare)
+
 feature_exclude_batch <- full_tukey_results_df %>%
     dplyr::filter(term == "Metadata_batch", neg_log_p > !!signif_line) %>%
     dplyr::pull(feature)
 
 feature_exclude_cellline <- full_tukey_results_df %>%
-    dplyr::filter(term == "Metadata_clone_number", neg_log_p > !!signif_line) %>%
+    dplyr::filter(term == "Metadata_clone_number",
+                  comparison %in% same_clonetype_compare,
+                  neg_log_p > !!signif_line) %>%
     dplyr::pull(feature)
 
 signature_features <- full_tukey_results_df %>%
@@ -314,7 +332,7 @@ ggsave(out_file, dpi = 400, height = 5, width = 5)
 feature_interpret_gg
 
 combined_gg <- process_signature_features(
-    signature_df, plot_title = "Four Clone Resistance Signature"
+    signature_df, plot_title = "Four Clone Resistance Signature", visualize_metric="Max"
 )
 
 output_file <- file.path("figures", "fourclone_signature_feature_interpret.png")
@@ -323,7 +341,7 @@ cowplot::save_plot(output_file, combined_gg, base_height = 5, base_width = 6, dp
 combined_gg
 
 combined_gg <- process_signature_features(
-    cloneAE_signature_df, plot_title = "Clone A and E Resistance Signature"
+    cloneAE_signature_df, plot_title = "Clone A and E Resistance Signature", visualize_metric="Max"
 )
 
 output_file <- file.path("figures", "cloneAE_signature_feature_interpret.png")
