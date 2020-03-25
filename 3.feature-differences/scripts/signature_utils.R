@@ -57,7 +57,7 @@ process_tukey <- function(aov_list, features) {
 }
 
 
-process_signature_features <- function(signature_df, plot_title) {
+process_signature_features <- function(signature_df, plot_title, visualize_metric="sum") {
   split_feature_df <- signature_df %>%
         tidyr::separate(feature,
                         into=c("compartment",
@@ -69,30 +69,42 @@ process_signature_features <- function(signature_df, plot_title) {
 
   area_split_df <- split_feature_df %>%
       dplyr::filter(feature_group  == "AreaShape") %>%
-      dplyr::group_by(term, compartment, feature_group) %>%
-      dplyr::mutate(sum_abs_estim = sum(abs(estimate)))
+      dplyr::group_by(term, compartment, feature_group)
 
   not_area_split_df <- split_feature_df %>%
       dplyr::filter(
           feature_group %in% c("Texture", "Intensity", "RadialDistribution", "Correlation", "Granularity")) %>%
-      dplyr::group_by(term, compartment, feature_group, channel) %>%
-      dplyr::mutate(sum_abs_estim = sum(abs(estimate)))
+      dplyr::group_by(term, compartment, feature_group, channel)
+
+  if (visualize_metric == "sum") {
+    area_split_df <- area_split_df %>%
+      dplyr::mutate(metric_fill = max(abs(estimate)))
+
+    not_area_split_df <- not_area_split_df %>%
+      dplyr::mutate(metric_fill = max(abs(estimate)))
+  } else {
+    area_split_df <- area_split_df %>%
+      dplyr::mutate(metric_fill = max(abs(estimate)))
+
+    not_area_split_df <- not_area_split_df %>%
+      dplyr::mutate(metric_fill = max(abs(estimate)))
+  }
 
   # Visualize
   area_gg <- ggplot(area_split_df,
              aes(x = compartment, y = feature_group)) +
-      geom_point(aes(fill = sum_abs_estim), size = 5, pch = 21) +
+      geom_point(aes(fill = metric_fill), size = 5, pch = 21) +
       ggtitle(plot_title) +
       ylab("") +
       theme_bw() +
-      scale_fill_continuous(name = "Sum")
+      scale_fill_continuous(name = visualize_metric)
 
   other_feature_gg <- ggplot(not_area_split_df,
          aes(x = channel, y = feature_group)) +
-      geom_point(aes(fill = sum_abs_estim), size = 5, pch = 21) +
+      geom_point(aes(fill = metric_fill), size = 5, pch = 21) +
       facet_grid(rows = vars(compartment)) +
       theme_bw() +
-      scale_fill_continuous(name = "Sum") +
+      scale_fill_continuous(name = visualize_metric) +
       ylab("") +
       xlab("") +
       theme(strip.text = element_text(size = 8, color = "black"),
