@@ -5,6 +5,8 @@ suppressPackageStartupMessages(library(ggplot2))
 seed <- 1234
 num_permutations <- 1000
 
+set.seed(seed)
+
 sig_cols <- readr::cols(
   feature = readr::col_character(),
   estimate = readr::col_double(),
@@ -143,13 +145,53 @@ apply_psmb_signature_gg <- ggplot(full_result_df,
     xlab("") +
     ylab("PSMB5 Signature Score") +
     theme(axis.text.x = element_text(angle=90)) +
-    facet_wrap("~Metadata_batch", nrow=3) +
+    facet_wrap("Metadata_batch~Metadata_plate_ID", nrow=3) +
     theme(strip.text = element_text(size = 8, color = "black"),
           strip.background = element_rect(colour = "black", fill = "#fdfff4"))
 
 output_fig <- file.path("figures", "signature", "psmb5_signature_apply_fourclone.png")
-ggsave(output_fig, dpi = 500, height = 5, width = 7)
+ggsave(output_fig, dpi = 500, height = 5, width = 10)
 apply_psmb_signature_gg
+
+summarized_mean_result_df <- full_result_df %>%
+    dplyr::group_by(
+        Metadata_batch, Metadata_plate_map_name, Metadata_clone_number, Metadata_treatment, Metadata_clone_type
+    ) %>%
+    dplyr::mutate(mean_score = mean(TotalScore)) %>%
+    dplyr::select(
+        Metadata_batch, Metadata_plate_map_name, Metadata_clone_number, Metadata_clone_type, Metadata_treatment, mean_score
+    ) %>%
+    dplyr::distinct() %>%
+    tidyr::spread(key = "Metadata_treatment", value = "mean_score") %>%
+    dplyr::mutate(treatment_score_diff = DMSO - bortezomib)
+
+head(summarized_mean_result_df)
+
+apply_psmb_signature_diff_gg <- ggplot(summarized_mean_result_df,
+       aes(y = treatment_score_diff,
+           x = Metadata_clone_number,
+           fill = Metadata_clone_type)) +
+    geom_boxplot(outlier.alpha = 0) +
+    geom_jitter(
+        width = 0.2,
+        size = 2,
+        alpha = 0.7,
+        shape = 21) +
+
+    scale_fill_manual(name = "Clone Type",
+                      labels = c("resistant" = "Resistant", "wildtype" = "Wildtype"),
+                      values = c("resistant" = "#9e0ba3", "wildtype" = "#fcba03")) +
+    theme_bw() +
+    xlab("") +
+    ylab("Difference PSMB5 Signature Score\nDMSO - Bortezomib") +
+    theme(axis.text.x = element_text(angle=90)) +
+    theme(strip.text = element_text(size = 8, color = "black"),
+          strip.background = element_rect(colour = "black", fill = "#fdfff4"))
+
+output_fig <- file.path("figures", "signature", "psmb5_signature_apply_fourclone_difference.png")
+ggsave(output_fig, dpi = 500, height = 4.5, width = 6)
+
+apply_psmb_signature_diff_gg
 
 sig_file <- file.path("results", "fourclone_signature_tukey.tsv")
 resistance_signature_scores <- readr::read_tsv(sig_file, col_types=sig_cols)
