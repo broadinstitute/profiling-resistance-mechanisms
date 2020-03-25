@@ -1,8 +1,10 @@
 term	comparison	estimate	conf.low	conf.high	adj.p.value	feature	neg_log_p
+Metadata_clone_type	wildtype-resistant	-1.5268150798277793	-1.7395648665367314	-1.3140652931188272	0	Nuclei_RadialDistribution_RadialCV_Mito_2of4	Inf
 Metadata_clone_type	wildtype-resistant	-1.4081449736943417	-1.6432854107771395	-1.1730045366115438	0	Nuclei_RadialDistribution_RadialCV_ER_1of4	Inf
 Metadata_clone_type	wildtype-resistant	-1.3355248384262093	-1.563095609786041	-1.1079540670663777	0	Nuclei_RadialDistribution_RadialCV_AGP_1of4	Inf
 Metadata_clone_type	wildtype-resistant	-1.2903798145686087	-1.5155295479511999	-1.0652300811860176	0	Nuclei_RadialDistribution_RadialCV_Mito_1of4	Inf
 Metadata_clone_type	wildtype-resistant	-1.1044088866936894	-1.2994732120855927	-0.9093445613017861	0	Nuclei_RadialDistribution_MeanFrac_ER_1of4	Inf
+Metadata_clone_type	wildtype-resistant	1.0443417405352162	0.8257036699270603	1.262979811143372	0	Nuclei_RadialDistribution_MeanFrac_ER_4of4	Inf
 Metadata_clone_type	wildtype-resistant	-0.9039249392797766	-1.107582095229764	-0.7002677833297892	0	Cytoplasm_Granularity_3_ER	Inf
 Metadata_clone_type	wildtype-resistant	-1.0493952720402289	-1.2899589021240385	-0.8088316419564192	1.4432899320127035e-15	Cytoplasm_Granularity_3_AGP	14.840646417884166
 Metadata_clone_type	wildtype-resistant	-0.8345836311850721	-1.038379964341647	-0.6307872980284972	1.6187051699034782e-13	Nuclei_AreaShape_Zernike_6_2	12.790832246209048
