@@ -1,37 +1,325 @@
-Metadata_Well	HCT116bortezomib	Metadata_plate_map_name	Metadata_CellLine	Metadata_Dosage
-B03	16508	PlateMap_HCT116bortezomib	WT	0.0
-B04	15536	PlateMap_HCT116bortezomib	WT	0.0
-B05	13969	PlateMap_HCT116bortezomib	WT	0.0
-B06	13101	PlateMap_HCT116bortezomib	CloneA	0.0
-B07	13867	PlateMap_HCT116bortezomib	CloneA	0.0
-B08	12395	PlateMap_HCT116bortezomib	CloneA	0.0
-B09	11901	PlateMap_HCT116bortezomib	CloneE	0.0
-B10	10276	PlateMap_HCT116bortezomib	CloneE	0.0
-B11	10591	PlateMap_HCT116bortezomib	CloneE	0.0
-C03	17014	PlateMap_HCT116bortezomib	WT	0.7
-C04	14893	PlateMap_HCT116bortezomib	WT	0.7
-C05	12894	PlateMap_HCT116bortezomib	WT	0.7
-C06	14885	PlateMap_HCT116bortezomib	CloneA	0.7
-C07	14078	PlateMap_HCT116bortezomib	CloneA	0.7
-C09	11173	PlateMap_HCT116bortezomib	CloneE	0.7
-C10	13288	PlateMap_HCT116bortezomib	CloneE	0.7
-C11	10331	PlateMap_HCT116bortezomib	CloneE	0.7
-D03	10525	PlateMap_HCT116bortezomib	WT	7.0
-D04	9360	PlateMap_HCT116bortezomib	WT	7.0
-D05	9414	PlateMap_HCT116bortezomib	WT	7.0
-D06	9891	PlateMap_HCT116bortezomib	CloneA	7.0
-D07	8504	PlateMap_HCT116bortezomib	CloneA	7.0
-D08	9399	PlateMap_HCT116bortezomib	CloneA	7.0
-D09	8341	PlateMap_HCT116bortezomib	CloneE	7.0
-D10	7555	PlateMap_HCT116bortezomib	CloneE	7.0
-D11	7202	PlateMap_HCT116bortezomib	CloneE	7.0
-E03	8550	PlateMap_HCT116bortezomib	WT	70.0
-E04	10117	PlateMap_HCT116bortezomib	WT	70.0
-E05	8118	PlateMap_HCT116bortezomib	WT	70.0
-E06	7804	PlateMap_HCT116bortezomib	CloneA	70.0
-E07	8071	PlateMap_HCT116bortezomib	CloneA	70.0
-E08	8427	PlateMap_HCT116bortezomib	CloneA	70.0
-E09	6121	PlateMap_HCT116bortezomib	CloneE	70.0
-E10	5804	PlateMap_HCT116bortezomib	CloneE	70.0
-E11	4842	PlateMap_HCT116bortezomib	CloneE	70.0
-F08	8639	PlateMap_HCT116bortezomib	CloneA	0.7
+Metadata_Plate	Metadata_Well	Metadata_Site	cell_count	Metadata_plate_map_name	Metadata_CellLine	Metadata_Dosage
+HCT116bortezomib	B03	1	1828	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B03	2	1856	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B03	3	1815	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B03	4	1906	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B03	5	1811	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B03	6	1837	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B03	7	1820	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B03	8	1839	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B03	9	1796	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	1	1818	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	2	1541	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	3	1720	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	4	1993	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	5	1877	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	6	1641	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	7	1741	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	8	1634	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B04	9	1571	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	1	1555	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	2	1610	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	3	1633	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	4	1333	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	5	1455	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	6	1611	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	7	1408	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	8	1592	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B05	9	1772	PlateMap_HCT116bortezomib	WT	0.0
+HCT116bortezomib	B06	1	1685	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B06	2	1612	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B06	3	1436	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B06	4	1587	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B06	5	1364	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B06	6	1329	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B06	7	1492	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B06	8	1356	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B06	9	1240	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	1	1603	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	2	1684	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	3	1722	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	4	1498	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	5	1611	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	6	1557	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	7	1328	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	8	1468	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B07	9	1396	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	1	1427	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	2	1250	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	3	1427	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	4	1361	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	5	1512	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	6	1391	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	7	1295	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	8	1413	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B08	9	1319	PlateMap_HCT116bortezomib	CloneA	0.0
+HCT116bortezomib	B09	1	1401	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B09	2	1337	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B09	3	1384	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B09	4	1241	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B09	5	1306	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B09	6	1559	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B09	7	1211	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B09	8	998	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B09	9	1464	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	1	1301	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	2	1143	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	3	1201	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	4	970	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	5	1341	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	6	1134	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	7	1001	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	8	1161	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B10	9	1024	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	1	986	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	2	1190	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	3	1050	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	4	1252	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	5	1296	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	6	1005	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	7	1152	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	8	1241	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	B11	9	1419	PlateMap_HCT116bortezomib	CloneE	0.0
+HCT116bortezomib	C03	1	1821	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C03	2	2064	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C03	3	1872	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C03	4	1907	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C03	5	1931	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C03	6	1867	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C03	7	1811	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C03	8	1891	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C03	9	1850	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	1	1781	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	2	1783	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	3	1601	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	4	1759	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	5	1596	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	6	1498	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	7	1712	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	8	1566	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C04	9	1597	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	1	1327	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	2	1535	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	3	1649	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	4	1277	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	5	1362	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	6	1507	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	7	1238	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	8	1338	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C05	9	1661	PlateMap_HCT116bortezomib	WT	0.7
+HCT116bortezomib	C06	1	1767	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C06	2	1652	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C06	3	1757	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C06	4	1587	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C06	5	1545	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C06	6	1748	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C06	7	1521	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C06	8	1638	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C06	9	1670	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	1	1619	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	2	1559	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	3	1610	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	4	1344	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	5	1657	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	6	1601	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	7	1445	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	8	1539	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C07	9	1704	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	C09	1	1101	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C09	2	1295	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C09	3	1249	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C09	4	1160	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C09	5	1233	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C09	6	1197	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C09	7	1444	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C09	8	1332	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C09	9	1162	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	1	1359	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	2	1510	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	3	1496	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	4	1386	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	5	1532	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	6	1508	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	7	1491	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	8	1506	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C10	9	1500	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	1	1114	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	2	1222	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	3	1299	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	4	1111	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	5	1038	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	6	1145	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	7	1127	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	8	1163	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	C11	9	1112	PlateMap_HCT116bortezomib	CloneE	0.7
+HCT116bortezomib	D03	1	1104	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D03	2	1199	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D03	3	1195	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D03	4	1362	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D03	5	1080	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D03	6	1260	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D03	7	1055	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D03	8	1058	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D03	9	1212	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	1	995	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	2	1001	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	3	999	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	4	1132	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	5	1126	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	6	1250	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	7	1054	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	8	839	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D04	9	964	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	1	1128	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	2	1069	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	3	1184	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	4	885	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	5	1071	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	6	1129	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	7	961	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	8	1001	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D05	9	986	PlateMap_HCT116bortezomib	WT	7.0
+HCT116bortezomib	D06	1	1189	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D06	2	1174	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D06	3	1057	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D06	4	1022	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D06	5	1039	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D06	6	1086	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D06	7	1165	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D06	8	1115	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D06	9	1044	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	1	1263	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	2	4	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	3	1334	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	4	1230	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	5	8	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	6	1247	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	7	1036	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	8	1065	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D07	9	1317	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	1	1098	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	2	992	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	3	1047	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	4	976	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	5	991	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	6	1170	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	7	960	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	8	1003	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D08	9	1162	PlateMap_HCT116bortezomib	CloneA	7.0
+HCT116bortezomib	D09	1	987	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D09	2	1064	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D09	3	905	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D09	4	848	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D09	5	1023	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D09	6	925	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D09	7	735	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D09	8	901	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D09	9	953	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	1	845	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	2	823	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	3	865	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	4	888	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	5	929	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	6	868	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	7	823	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	8	762	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D10	9	752	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	1	734	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	2	815	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	3	876	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	4	878	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	5	769	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	6	822	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	7	717	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	8	721	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	D11	9	870	PlateMap_HCT116bortezomib	CloneE	7.0
+HCT116bortezomib	E03	1	1009	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E03	2	866	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E03	3	1096	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E03	4	918	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E03	5	883	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E03	6	1048	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E03	7	965	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E03	8	850	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E03	9	915	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	1	1038	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	2	1059	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	3	973	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	4	1332	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	5	1109	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	6	1079	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	7	1265	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	8	1110	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E04	9	1152	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	1	870	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	2	881	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	3	880	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	4	945	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	5	921	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	6	946	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	7	842	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	8	903	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E05	9	930	PlateMap_HCT116bortezomib	WT	70.0
+HCT116bortezomib	E06	1	691	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E06	2	776	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E06	3	815	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E06	4	859	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E06	5	846	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E06	6	781	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E06	7	1131	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E06	8	1042	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E06	9	863	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	1	940	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	2	753	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	3	823	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	4	896	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	5	977	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	6	912	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	7	757	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	8	985	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E07	9	1028	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	1	864	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	2	946	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	3	836	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	4	937	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	5	1030	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	6	902	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	7	949	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	8	939	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E08	9	1024	PlateMap_HCT116bortezomib	CloneA	70.0
+HCT116bortezomib	E09	1	743	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E09	2	699	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E09	3	666	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E09	4	768	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E09	5	641	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E09	6	672	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E09	7	638	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E09	8	660	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E09	9	634	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	1	719	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	2	733	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	3	581	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	4	702	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	5	588	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	6	566	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	7	669	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	8	661	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E10	9	585	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	1	548	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	2	561	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	3	530	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	4	542	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	5	536	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	6	629	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	7	468	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	8	459	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	E11	9	569	PlateMap_HCT116bortezomib	CloneE	70.0
+HCT116bortezomib	F08	1	1088	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	F08	2	917	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	F08	3	876	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	F08	4	959	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	F08	5	911	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	F08	6	840	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	F08	7	963	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	F08	8	1069	PlateMap_HCT116bortezomib	CloneA	0.7
+HCT116bortezomib	F08	9	1016	PlateMap_HCT116bortezomib	CloneA	0.7
