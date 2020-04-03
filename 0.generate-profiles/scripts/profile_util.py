@@ -89,14 +89,20 @@ def process_profile(sql_file, batch, plate, pipeline):
         aggregate_plate_column = aggregate_steps["plate_column"]
         aggregate_well_column = aggregate_steps["well_column"]
 
+        strata = [aggregate_plate_column, aggregate_well_column]
+
+        if "site_column" in aggregate_steps:
+            aggregate_site_column = aggregate_steps["site_column"]
+            strata += [aggregate_site_column]
+
         ap = AggregateProfiles(
             sql_file,
-            strata=[aggregate_plate_column, aggregate_well_column],
+            strata=strata,
             features=aggregate_features,
             operation=aggregate_operation,
         )
 
-#        ap.aggregate_profiles(output_file=aggregate_out_file, compression=compression)
+        ap.aggregate_profiles(output_file=aggregate_out_file, compression=compression)
 
         if pipeline["count"]["perform"]:
             count_dir = pipeline["count"]["output_dir"]

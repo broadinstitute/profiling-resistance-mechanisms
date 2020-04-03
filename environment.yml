@@ -30,4 +30,4 @@ dependencies:
 - conda-forge::r-platetools=0.1.2
 - conda-forge::r-yaml=2.2.0
 - pip:
-  - git+https://github.com/cytomining/pycytominer@a51c76e3eb871a71ac91f86f9a99494c6ab1e4e4
+  - git+https://github.com/cytomining/pycytominer@88fcf65b4a1fd4342aeef6da21fc9b68639a8e68
