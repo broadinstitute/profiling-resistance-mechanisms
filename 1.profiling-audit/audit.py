@@ -101,8 +101,8 @@ for batch in audit_config:
             grid_string,
             dpi=300,
             split_samples=True,
-            output_file_extensions=output_file_extensions,
             output_file_base=output_base,
+            output_file_extensions=output_file_extensions,
         )
 
         output_base = os.path.join(
