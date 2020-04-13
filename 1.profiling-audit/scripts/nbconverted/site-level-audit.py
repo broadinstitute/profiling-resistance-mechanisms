@@ -130,6 +130,7 @@ def audit_site(df, audit_cols, batch, plate, resolution="full"):
 
 profile_dir = os.path.join("..", "0.generate-profiles", "profiles")
 config = "audit_config.yaml"
+output_file_extensions=[".png"]
 
 
 # In[5]:
@@ -192,8 +193,9 @@ for batch in audit_config:
             save_figure(
                 audit_gg,
                 output_file,
-                dpi=600,
+                dpi=300,
                 height=3,
                 width=4,
+                extensions=output_file_extensions,
             )
 
