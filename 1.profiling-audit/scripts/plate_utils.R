@@ -175,6 +175,4 @@ visualize_site_counts <- function(platemap_info_df, batch, plate, output_dir) {
     height = 4.5,
     width = 6
   )
-
-
 }
