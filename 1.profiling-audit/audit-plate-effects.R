@@ -74,12 +74,19 @@ for (batch_idx in seq(1, length(yaml_list))) {
             )
         }
 
-        platemap_info_df <- cell_count_df %>%
-            dplyr::select(Metadata_Well, !!plate) %>%
+       if ("Metadata_Site" %in% colnames(cell_count_df)) {
+           cell_merge_count_df <- cell_count_df %>%
+               dplyr::select(Metadata_Well, Metadata_Site, cell_count)
+       } else {
+           cell_merge_count_df <- cell_count_df %>%
+               dplyr::select(Metadata_Well, !!plate) %>%
+               dplyr::rename(cell_count = !!plate)
+       }
+
+        platemap_info_df <- cell_merge_count_df %>%
             dplyr::right_join(
               platemap_df, by = c("Metadata_Well" = "Metadata_well_position")
-            ) %>%
-            dplyr::rename(n = !!plate)
+            )
 
         if (length(audit_cols) == 2) {
             replicate_info <- paste(
@@ -93,11 +100,28 @@ for (batch_idx in seq(1, length(yaml_list))) {
         platemap_info_df <- platemap_info_df %>%
             dplyr::mutate(Metadata_plate_replicate = replicate_info)
 
+        if ("Metadata_Site" %in% colnames(cell_count_df)) {
+
+          visualize_site_counts(
+            platemap_info_df = platemap_info_df,
+            batch = batch,
+            plate = plate,
+            output_dir = output_figure_dir
+          )
+
+          platemap_info_df <- platemap_info_df %>%
+            dplyr::group_by(Metadata_Well) %>%
+            dplyr::mutate(cell_count = sum(cell_count)) %>%
+            dplyr::select(!Metadata_Site) %>%
+            dplyr::distinct()
+        }
+
         visualize_platemaps(
             platemap_info_df = platemap_info_df,
             batch = batch,
             plate = plate,
             output_dir = output_figure_dir
         )
+
     }
 }
