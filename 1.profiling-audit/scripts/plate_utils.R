@@ -115,7 +115,7 @@ visualize_platemaps <- function(platemap_info_df, batch, plate, output_dir) {
 
     cell_count_gg <-
         platetools::raw_map(
-            data = platemap_info_df$n,
+            data = platemap_info_df$cell_count,
             well = platemap_info_df$Metadata_Well,
             plate = 96,
             size = 4
@@ -136,4 +136,43 @@ visualize_platemaps <- function(platemap_info_df, batch, plate, output_dir) {
       height = 4,
       width = 3
     )
+}
+
+
+visualize_site_counts <- function(platemap_info_df, batch, plate, output_dir) {
+  require(platetools)
+  require(ggplot2)
+
+  plate_title <- paste0(batch, "\nPlate: ", plate)
+
+  site_count_gg <- ggplot2::ggplot(platemap_info_df,
+                                   aes(x = factor(Metadata_Site), y = cell_count)) +
+      ggplot2::geom_bar(stat = "identity", aes_string(fill = audit_cols[1])) +
+      ggplot2::facet_wrap("~Metadata_Well") +
+      ggplot2::scale_fill_discrete(name = audit_cols[1]) +
+      ggplot2::theme_bw() +
+      ggplot2::theme(strip.text = element_text(size = 5, color = "black"),
+                     strip.background = element_rect(colour = "black", fill = "#fdfff4")) +
+      ggplot2::ylab("Cell Count") +
+      ggplot2::xlab("Site") +
+      ggplot2::ggtitle(plate_title) +
+      ggplot2::theme(
+        axis.text = element_text(size = 5),
+        axis.title = element_text(size = 9),
+        legend.text = element_text(size = 5),
+        legend.title = element_text(size = 7),
+        title = element_text(size = 10)
+      )
+
+  site_count_file <- file.path(
+        output_dir,
+        paste0(batch, plate, "_plate_effects_cell_count_by_site.png")
+      )
+
+  ggplot2::ggsave(
+    plot = site_count_gg,
+    filename = site_count_file,
+    height = 4.5,
+    width = 6
+  )
 }

@@ -29,6 +29,7 @@ output_dir = args.output_dir
 figure_dir = args.figure_dir
 
 np.random.seed(1234)
+output_file_extensions = [".png"]
 
 audit_config = {}
 stream = open(config, "r")
@@ -98,14 +99,20 @@ for batch in audit_config:
             batch,
             plate,
             grid_string,
-            dpi=400,
+            dpi=300,
             split_samples=True,
             output_file_base=output_base,
+            output_file_extensions=output_file_extensions,
         )
 
         output_base = os.path.join(
             figure_output_dir, "{}_{}_density".format(batch, plate)
         )
         _ = plot_replicate_density(
-            audit_df, batch, plate, dpi=400, output_file_base=output_base
+            audit_df,
+            batch,
+            plate,
+            dpi=300,
+            output_file_base=output_base,
+            output_file_extensions=output_file_extensions,
         )
