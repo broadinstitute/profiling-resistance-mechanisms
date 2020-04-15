@@ -53,8 +53,11 @@ def audit_site(df, audit_cols, batch, plate, resolution="full"):
     same_plate = site_df.Metadata_Plate_pair_a == site_df.Metadata_Plate_pair_b
     
     if "Metadata_clone_number" in audit_cols:
-        same_treatment = site_df.Metadata_treatment_pair_a == site_df.Metadata_treatment_pair_b
         same_clone = site_df.Metadata_clone_number_pair_a == site_df.Metadata_clone_number_pair_b
+        if "Metadata_treatment" in audit_cols:
+            same_treatment = site_df.Metadata_treatment_pair_a == site_df.Metadata_treatment_pair_b
+        else:
+            same_treatment = same_clone
     else:
         same_treatment = site_df.Metadata_Dosage_pair_a == site_df.Metadata_Dosage_pair_b
         same_clone = site_df.Metadata_CellLine_pair_a == site_df.Metadata_CellLine_pair_b
@@ -136,18 +139,6 @@ output_file_extensions=[".png"]
 # In[5]:
 
 
-site_batches = [
-    "2019_02_15_Batch1_20X",
-    "2019_03_20_Batch2",
-    "2019_11_19_Batch5",
-    "2019_11_20_Batch6",
-    "2019_11_22_Batch7"
-]
-
-
-# In[6]:
-
-
 audit_config = {}
 stream = open(config, "r")
 for data in yaml.load_all(stream, Loader=yaml.FullLoader):
@@ -163,39 +154,38 @@ for data in yaml.load_all(stream, Loader=yaml.FullLoader):
     }
 
 
-# In[7]:
+# In[6]:
 
 
 general_audit_cols = ["Metadata_Well", "Metadata_Site", "Metadata_Plate"]
 
 
-# In[8]:
+# In[7]:
 
 
 for batch in audit_config:
-    if batch in site_batches:
-        batch_dict = audit_config[batch]
-        audit_cols = batch_dict["auditcols"]
-        site_audit_cols = audit_cols + general_audit_cols
-        plate_files = batch_dict["plate_files"]
-        plates = batch_dict["plates"]
-        for plate in plates:
-            figure_dir = os.path.join("figures", batch, plate)
-            output_file = os.path.join(
-                figure_dir, "{}_{}_site_correlation".format(batch, plate)
-            )
-            print("Now auditing... Batch: {}; Plate: {}".format(batch, plate))
-            df = pd.read_csv(plate_files[plate])
-            audit_gg = audit_site(df, site_audit_cols, batch, plate)
-            
-            print(audit_gg)
-            
-            save_figure(
-                audit_gg,
-                output_file,
-                dpi=300,
-                height=3,
-                width=4,
-                extensions=output_file_extensions,
-            )
+    batch_dict = audit_config[batch]
+    audit_cols = batch_dict["auditcols"]
+    site_audit_cols = audit_cols + general_audit_cols
+    plate_files = batch_dict["plate_files"]
+    plates = batch_dict["plates"]
+    for plate in plates:
+        figure_dir = os.path.join("figures", batch, plate)
+        output_file = os.path.join(
+            figure_dir, "{}_{}_site_correlation".format(batch, plate)
+        )
+        print("Now auditing... Batch: {}; Plate: {}".format(batch, plate))
+        df = pd.read_csv(plate_files[plate])
+        audit_gg = audit_site(df, site_audit_cols, batch, plate)
+
+        print(audit_gg)
+
+        save_figure(
+            audit_gg,
+            output_file,
+            dpi=300,
+            height=3,
+            width=4,
+            extensions=output_file_extensions,
+        )
 
