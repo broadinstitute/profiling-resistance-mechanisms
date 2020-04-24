@@ -27,8 +27,8 @@ MutClones	B10	BZ009
 MutClones	C10	BZ009
 MutClones	D10	BZ009
 MutClones	B11	BZ010
-MutClones	C10	BZ010
-MutClones	D10	BZ010
+MutClones	C11	BZ010
+MutClones	D11	BZ010
 MutClones	E02	BZ011
 MutClones	F02	BZ011
 MutClones	G02	BZ011
