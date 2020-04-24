@@ -107,8 +107,8 @@ all_profiles_df.head()
 # In[6]:
 
 
-output_file = os.path.join(output_dir, "all_merged_profiles.csv")
-all_profiles_df.to_csv(output_file, index=False)
+output_file = os.path.join(output_dir, "all_merged_profiles.csv.gz")
+all_profiles_df.to_csv(output_file, index=False, compression="gzip")
 
 
 # ## Generate Consensus Signatures
@@ -136,12 +136,19 @@ for batch in profile_batches:
 # In[8]:
 
 
-full_consensus_df = pd.concat(consensus_data.values(), sort=True).reset_index(drop=True)
+full_consensus_df = (
+    pd.concat(consensus_data.values(), sort=True)
+    .reset_index(drop=True)
+)
 
 meta_features = infer_cp_features(full_consensus_df, metadata=True)
 cp_cols = infer_cp_features(full_consensus_df, metadata=False)
 
-full_consensus_df = full_consensus_df.reindex(meta_features + cp_cols, axis="columns")
+full_consensus_df = (
+    full_consensus_df
+    .reindex(meta_features + cp_cols, axis="columns")
+    .drop("Metadata_cell_count", axis="columns")
+)
 
 print(full_consensus_df.shape)
 full_consensus_df.head()
