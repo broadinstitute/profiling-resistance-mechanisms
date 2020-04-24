@@ -67,7 +67,7 @@ save_file_extensions = ['.png']
 
 
 # Load and process data
-file = os.path.join("data", "merged", "combined_four_clone_dataset.csv")
+file = os.path.join("data", "merged", "combined_four_clone_dataset_feature_select.csv.gz")
 fourclone_data_df = pd.read_csv(file)
 
 embedding_df = process_umap(fourclone_data_df)
@@ -193,7 +193,8 @@ umap_batch_facet_gg
 clone_facet_gg = (
     gg.ggplot(embedding_df, gg.aes('x', 'y'))
     + gg.geom_point(
-        gg.aes(fill='factor(Metadata_Plate)', shape="Metadata_treatment", alpha=0.6)
+        gg.aes(fill='factor(Metadata_Plate)', shape="Metadata_treatment"),
+        alpha=0.6
     )
     + gg.theme_bw()
     + gg.xlab("UMAP X")
@@ -246,7 +247,7 @@ umap_well_embedding_gg
 
 
 # Load and process data
-file = os.path.join("data", "merged", "combined_cloneAcloneE_dataset.csv")
+file = os.path.join("data", "merged", "combined_cloneAcloneE_dataset_feature_select.csv.gz")
 cloneAE_data_df = pd.read_csv(file)
 
 embedding_cloneAE_df = process_umap(cloneAE_data_df)
@@ -281,7 +282,9 @@ clone_ae_umap_gg = (
 
 file = os.path.join("figures", "umap", "cloneAE_umap")
 for extension in save_file_extensions:
-    clone_ae_umap_gg.save(filename='{}{}'.format(file, extension), height=3, width=3.5, dpi=400)
+    clone_ae_umap_gg.save(
+        filename='{}{}'.format(file, extension), height=3, width=3.5, dpi=400
+    )
 
 clone_ae_umap_gg
 
@@ -304,7 +307,9 @@ clone_ae_umap_cell_count_gg = (
 
 file = os.path.join("figures", "umap", "cloneAE_umap_cell_count")
 for extension in save_file_extensions:
-    clone_ae_umap_cell_count_gg.save(filename='{}{}'.format(file, extension), height=3, width=3.5, dpi=400)
+    clone_ae_umap_cell_count_gg.save(
+        filename='{}{}'.format(file, extension), height=3, width=3.5, dpi=400
+    )
     
 clone_ae_umap_cell_count_gg
 
