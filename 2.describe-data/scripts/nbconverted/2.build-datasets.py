@@ -30,6 +30,7 @@ feature_select_ops = [
     "drop_outliers"
 ]
 profile_dir = os.path.join("..", "0.generate-profiles", "profiles")
+cell_count_dir = os.path.join("..", "0.generate-profiles", "cell_counts")
 gct_dir = os.path.join("data", "gct_files")
 output_dir = os.path.join("data", "merged")
 
@@ -53,15 +54,19 @@ dataset_a_dict = {}
 dataset_b_dict = {}
 for batch in batches:    
 
+    df = load_data(
+        batch=batch,
+        suffix=suffix,
+        profile_dir=profile_dir,
+        combine_dfs=True,
+        add_cell_count=True,
+        cell_count_dir=cell_count_dir
+    )
+
     if batch in dataset_a:
-        dataset_a_dict[batch] = load_data(
-            batch=batch, suffix=suffix, profile_dir=profile_dir, combine_dfs=True
-        )
-        
+        dataset_a_dict[batch] = df
     if batch in dataset_b:
-        dataset_b_dict[batch] = load_data(
-            batch=batch, suffix=suffix, profile_dir=profile_dir, combine_dfs=True
-        )
+        dataset_b_dict[batch] = df
 
 
 # ## Process and Output Dataset A
@@ -100,13 +105,13 @@ dataset_a_name = "combined_cloneAcloneE_dataset"
 # In[8]:
 
 
-output_file = os.path.join(output_dir, "{}.csv".format(dataset_a_name))
-dataset_a_df.to_csv(output_file, index=False)
+output_file = os.path.join(output_dir, "{}.csv.gz".format(dataset_a_name))
+dataset_a_df.to_csv(output_file, index=False, compression="gzip")
 
 dataset_a_featureselect_df = feature_select(dataset_a_df, operation=feature_select_ops)
 
-output_file = os.path.join(output_dir, "{}_feature_select.csv".format(dataset_a_name))
-dataset_a_featureselect_df.to_csv(output_file, index=False)
+output_file = os.path.join(output_dir, "{}_feature_select.csv.gz".format(dataset_a_name))
+dataset_a_featureselect_df.to_csv(output_file, index=False, compression="gzip")
 
 output_gct_file = os.path.join(gct_dir, "{}_feature_select.gct".format(dataset_a_name))
 write_gct(profiles=dataset_a_featureselect_df, output_file=output_gct_file)
@@ -149,13 +154,13 @@ dataset_b_name = "combined_four_clone_dataset"
 # In[12]:
 
 
-output_file = os.path.join(output_dir, "{}.csv".format(dataset_b_name))
-dataset_b_df.to_csv(output_file, index=False)
+output_file = os.path.join(output_dir, "{}.csv.gz".format(dataset_b_name))
+dataset_b_df.to_csv(output_file, index=False, compression="gzip")
 
 dataset_b_featureselect_df = feature_select(dataset_b_df, operation=feature_select_ops)
 
-output_file = os.path.join(output_dir, "{}_feature_select.csv".format(dataset_b_name))
-dataset_b_featureselect_df.to_csv(output_file, index=False)
+output_file = os.path.join(output_dir, "{}_feature_select.csv.gz".format(dataset_b_name))
+dataset_b_featureselect_df.to_csv(output_file, index=False, compression="gzip")
 
 output_gct_file = os.path.join(gct_dir, "{}_feature_select.gct".format(dataset_b_name))
 write_gct(profiles=dataset_b_featureselect_df, output_file=output_gct_file)
