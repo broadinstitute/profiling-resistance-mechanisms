@@ -148,6 +148,7 @@ for data in yaml.load_all(stream, Loader=yaml.FullLoader):
     audit_config[batch] = {}
     audit_config[batch]["plates"] = plates
     audit_config[batch]["auditcols"] = data["auditcols"]
+    audit_config[batch]["process"] = data["process"]
     audit_config[batch]["plate_files"] = {
         x: os.path.join(profile_dir, batch, x, "{}_{}.csv.gz".format(x, audit_level))
         for x in plates
@@ -165,6 +166,9 @@ general_audit_cols = ["Metadata_Well", "Metadata_Site", "Metadata_Plate"]
 
 for batch in audit_config:
     batch_dict = audit_config[batch]
+    process = batch_dict["process"]
+    if not process:
+        continue
     audit_cols = batch_dict["auditcols"]
     site_audit_cols = audit_cols + general_audit_cols
     plate_files = batch_dict["plate_files"]
@@ -177,8 +181,6 @@ for batch in audit_config:
         print("Now auditing... Batch: {}; Plate: {}".format(batch, plate))
         df = pd.read_csv(plate_files[plate])
         audit_gg = audit_site(df, site_audit_cols, batch, plate)
-
-        print(audit_gg)
 
         save_figure(
             audit_gg,
