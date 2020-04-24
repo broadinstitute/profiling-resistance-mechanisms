@@ -58,9 +58,14 @@ for batch in batches:
         output_gct_dir, "{}_feature_select.gct".format(batch)
     )
     
-    # Load the profile data
+    # Load the profile data and add cell counts
     df = load_data(
-        batch=batch, suffix=suffix, profile_dir=profile_dir, combine_dfs=True
+        batch=batch,
+        suffix=suffix,
+        profile_dir=profile_dir,
+        combine_dfs=True,
+        add_cell_count=True,
+        cell_count_dir=cell_count_dir
     )
     
     # Save normalized and non-feature selected data
@@ -69,36 +74,6 @@ for batch in batches:
     # Apply feature selection again - this is particularly important for batches
     # with multiple plates
     df = feature_select(df, operation=feature_select_ops)
-    
-    # Load cell counts for the specific plates
-    count_files = [
-        os.path.join(cell_count_dir, x) for x in os.listdir(cell_count_dir) if batch in x
-    ]   
-    all_plate_dfs = []
-    for count_file in count_files:
-        plate = os.path.basename(count_file)
-        plate = plate.replace(batch, "").replace("cell_count.tsv", "").strip("_")
-
-        plate_df = (
-            pd.read_csv(count_file, sep='\t')
-            .rename(
-                {
-                    plate: "Metadata_cell_count"
-                },
-                axis="columns"
-            )
-        )
-        all_plate_dfs.append(plate_df)
-
-    # Merge all plates and append cell count information as a metadata feature
-    plate_df = pd.concat(all_plate_dfs, sort=True)
-    df = (
-        plate_df
-        .merge(
-            df,
-            on=plate_df.drop("Metadata_cell_count", axis="columns").columns.tolist()
-        )
-    )
     
     # Write the dataframe as a gct file for input into Morpheus
     write_gct(profiles=df, output_file=output_gct_file)
@@ -145,10 +120,14 @@ consensus_data = {}
 for batch in profile_batches:
     meta_features = infer_cp_features(profile_batches[batch], metadata=True)
     meta_features = [x for x in meta_features if "well" not in x.lower()]
+    meta_features = [x for x in meta_features if "site" not in x.lower()]
     
-    consensus_df = modz(
-        profile_batches[batch],
-        replicate_columns = meta_features,
+    consensus_df = (
+        profile_batches[batch]
+        .groupby(meta_features)
+        .median()
+        .drop("Metadata_Site", axis="columns")
+        .reset_index(drop=False)
     )
     
     consensus_data[batch] = consensus_df.reset_index()
