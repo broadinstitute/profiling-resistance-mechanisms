@@ -40,6 +40,7 @@ for data in yaml.load_all(stream, Loader=yaml.FullLoader):
     audit_config[batch] = {}
     audit_config[batch]["plates"] = plates
     audit_config[batch]["auditcols"] = data["auditcols"]
+    audit_config[batch]["process"] = data["process"]
     audit_config[batch]["plate_files"] = {
         x: os.path.join(profile_dir, batch, x, "{}_{}.csv.gz".format(x, audit_level))
         for x in plates
@@ -47,6 +48,9 @@ for data in yaml.load_all(stream, Loader=yaml.FullLoader):
 
 for batch in audit_config:
     batch_dict = audit_config[batch]
+    process = batch_dict["process"]
+    if not process:
+        continue
     audit_cols = batch_dict["auditcols"]
     plate_files = batch_dict["plate_files"]
     plates = batch_dict["plates"]
