@@ -79,34 +79,6 @@ embedding_df.head()
 # In[7]:
 
 
-umap_site_differences_gg = (
-    gg.ggplot(embedding_df, gg.aes(x="x", y="y"))
-    + gg.geom_point(
-        gg.aes(fill="Metadata_clone_type", shape="Metadata_treatment"),
-        color='black', alpha=0.6)
-    + gg.theme_bw()
-    + gg.xlab("UMAP (X)")
-    + gg.ylab("UMAP (Y)")
-    + gg.ggtitle("Four Clone Dataset - Merged")
-    + gg.scale_shape_manual(name="Treatment", values=[".", "+"])
-    + gg.scale_fill_manual(name="Clone Type", values=["#1F8AA5", "#E98831"])
-    + gg.facet_wrap("~Metadata_Site")
-    + gg.theme(
-        strip_text=gg.element_text(size=6, color="black"),
-        strip_background=gg.element_rect(colour="black", fill="#fdfff4"),
-    )
-)
-
-file = os.path.join("figures", "umap", "four_clone_umap_site_effect")
-for extension in save_file_extensions:
-    umap_site_differences_gg.save(filename='{}{}'.format(file, extension), height=5, width=5.5, dpi=400)
-
-umap_site_differences_gg
-
-
-# In[8]:
-
-
 umap_resistant_type_gg = (
     gg.ggplot(embedding_df, gg.aes(x="x", y="y"))
     + gg.geom_point(
@@ -127,7 +99,7 @@ for extension in save_file_extensions:
 umap_resistant_type_gg
 
 
-# In[9]:
+# In[8]:
 
 
 umap_cell_count_gg = (
@@ -150,7 +122,7 @@ for extension in save_file_extensions:
 umap_cell_count_gg
 
 
-# In[10]:
+# In[9]:
 
 
 umap_batch_gg = (
@@ -179,7 +151,7 @@ for extension in save_file_extensions:
 umap_batch_gg
 
 
-# In[11]:
+# In[10]:
 
 
 umap_batch_facet_gg = (
@@ -214,7 +186,7 @@ for extension in save_file_extensions:
 umap_batch_facet_gg
 
 
-# In[12]:
+# In[11]:
 
 
 # Visualize UMAP results
@@ -245,7 +217,7 @@ for extension in save_file_extensions:
 clone_facet_gg
 
 
-# In[13]:
+# In[12]:
 
 
 umap_well_embedding_gg = (
@@ -271,7 +243,7 @@ umap_well_embedding_gg
 
 # ## For Clone A and E Data
 
-# In[14]:
+# In[13]:
 
 
 # Load and process data
@@ -282,7 +254,7 @@ embedding_cloneAE_df = process_umap(cloneAE_data_df)
 embedding_cloneAE_df.head()
 
 
-# In[15]:
+# In[14]:
 
 
 # Visualize UMAP results
@@ -317,40 +289,7 @@ for extension in save_file_extensions:
 clone_ae_umap_gg
 
 
-# In[16]:
-
-
-clone_ae_umap_site_differences_gg = (
-    gg.ggplot(embedding_cloneAE_df, gg.aes(x="x", y="y"))
-    + gg.geom_point(
-        gg.aes('x', 'y',
-               shape="Metadata_Plate", 
-               size='factor(Metadata_Dosage)',
-               color="Metadata_CellLine"),
-        alpha=0.8
-    )
-    + gg.theme_bw()
-    + gg.xlab("UMAP (X)")
-    + gg.ylab("UMAP (Y)")
-    + gg.ggtitle("Clone A and E - Merged")
-    + gg.scale_shape_manual(name="Treatment", values=[".", "+"])
-    + gg.scale_fill_manual(name="Clone Type", values=["#1F8AA5", "#E98831"])
-    + gg.facet_wrap("~Metadata_Site")
-    + gg.scale_size_manual(name="Dosage", values=[1, 3, 5, 7])
-    + gg.theme(
-        strip_text=gg.element_text(size=6, color="black"),
-        strip_background=gg.element_rect(colour="black", fill="#fdfff4"),
-    )
-)
-
-file = os.path.join("figures", "umap", "cloneAE_umap_site_effect")
-for extension in save_file_extensions:
-    clone_ae_umap_site_differences_gg.save(filename='{}{}'.format(file, extension), height=5, width=5.5, dpi=400)
-
-clone_ae_umap_site_differences_gg
-
-
-# In[17]:
+# In[15]:
 
 
 clone_ae_umap_cell_count_gg = (
@@ -377,7 +316,7 @@ clone_ae_umap_cell_count_gg
 
 # ## Merged Data
 
-# In[18]:
+# In[16]:
 
 
 drop_cols = ["Metadata_plate_ID", "Metadata_plate_filename"]
@@ -402,7 +341,7 @@ cloneAE_data_recode_df = (
 cloneAE_data_recode_df.loc[cloneAE_data_recode_df.Metadata_Dosage == 0, "Metadata_treatment"] = "DMSO"
 
 
-# In[19]:
+# In[17]:
 
 
 combined_df = pd.concat([fourclone_data_recode_df, cloneAE_data_recode_df], sort=True).reset_index(drop=True)
@@ -412,14 +351,14 @@ print(combined_df.shape)
 combined_df.head()
 
 
-# In[20]:
+# In[18]:
 
 
 embedding_combined_df = process_umap(combined_df)
 embedding_combined_df.head()
 
 
-# In[21]:
+# In[19]:
 
 
 # Visualize UMAP results

@@ -126,7 +126,6 @@ for batch in profile_batches:
         profile_batches[batch]
         .groupby(meta_features)
         .median()
-        .drop("Metadata_Site", axis="columns")
         .reset_index(drop=False)
     )
     
