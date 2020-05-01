@@ -79,8 +79,7 @@ for (batch_idx in seq(1, length(yaml_list))) {
                dplyr::select(Metadata_Well, Metadata_Site, cell_count)
        } else {
            cell_merge_count_df <- cell_count_df %>%
-               dplyr::select(Metadata_Well, !!plate) %>%
-               dplyr::rename(cell_count = !!plate)
+               dplyr::select(Metadata_Well, cell_count) 
        }
 
         platemap_info_df <- cell_merge_count_df %>%
