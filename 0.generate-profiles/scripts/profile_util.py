@@ -15,6 +15,42 @@ from pycytominer import (
 )
 
 
+def load_config(config_file, append_sql_prefix=True):
+    # Load configuration file info
+    if append_sql_prefix:
+        sql_prefix = "sqlite:////"
+    else:
+        sql_prefix = "/"
+    profile_config = {}
+    with open(config_file, "r") as stream:
+        for data in yaml.load_all(stream, Loader=yaml.FullLoader):
+            if "pipeline" in data.keys():
+                pipeline = data
+            else:
+                process = data["process"]
+                if not process:
+                    continue
+                batch = data["batch"]
+                plates = [str(x) for x in data["plates"]]
+                profile_config[batch] = {}
+                profile_config[batch]["plates"] = {
+                    x: "{}{}".format(
+                        sql_prefix,
+                        os.path.join(
+                            pipeline["workspace_dir"],
+                            "backend",
+                            batch,
+                            x,
+                            "{}.sqlite".format(x),
+                        )
+                    )
+                    for x in plates
+                }
+
+    return pipeline, profile_config
+               
+
+
 def process_pipeline(pipeline, option):
     if option == "compression":
         if option in pipeline.keys():
