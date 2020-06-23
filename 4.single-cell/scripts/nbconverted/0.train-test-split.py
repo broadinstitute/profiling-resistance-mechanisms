@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from pycytominer import feature_select
 from pycytominer.cyto_utils import infer_cp_features
 
-from utils.single_cell_utils import process_sites
+from utils.single_cell_utils import process_sites, normalize_sc
 sys.path.append("../0.generate-profiles")
 from scripts.profile_util import load_config
 
@@ -22,7 +22,7 @@ from scripts.profile_util import load_config
 # In[2]:
 
 
-pd.np.random.seed(123)
+pd.np.random.seed(1234)
 
 
 # In[3]:
@@ -178,11 +178,11 @@ imagenumber_dict
 # In[15]:
 
 
-train_df = {}
-test_df = {}
+train_dict_df = {}
+test_dict_df = {}
 for clone_type, clone_imagenumbers in imagenumber_dict.items():
     print(f"Now processing clone: {clone_type}")
-    train_df[clone_type], test_df[clone_type] = process_sites(
+    train_df, test_df = process_sites(
         connection=conn,
         imagenumbers=clone_imagenumbers,
         image_df=image_df,
@@ -190,17 +190,29 @@ for clone_type, clone_imagenumbers in imagenumber_dict.items():
         scaler_method=scaler_method,
         seed=seed,
         test_split_prop=test_split_prop,
-        normalize=True 
+        normalize=False 
     )
+    print(train_df.shape)
+    print(test_df.shape)
     
-# Output and shuffle rows from training and testing sets
-train_df = pd.concat(train_df).sample(frac=1).reset_index(drop=True)
-test_df = pd.concat(test_df).sample(frac=1).reset_index(drop=True)
+    train_dict_df[clone_type] = train_df.reset_index(drop=True)
+    test_dict_df[clone_type] = test_df.reset_index(drop=True)
+
+
+# In[16]:
+
+
+# Normalize and shuffle row order
+train_df = normalize_sc(pd.concat(train_dict_df).reset_index(drop=True), scaler_method=scaler_method)
+test_df = normalize_sc(pd.concat(test_dict_df).reset_index(drop=True), scaler_method=scaler_method)
+
+train_df = train_df.sample(frac=1).reset_index(drop=True)
+test_df = test_df.sample(frac=1).reset_index(drop=True)
 
 
 # ## Apply Feature Selection
 
-# In[16]:
+# In[17]:
 
 
 # Original shapes
@@ -208,14 +220,14 @@ print(train_df.shape)
 print(test_df.shape)
 
 
-# In[17]:
+# In[18]:
 
 
 meta_features = infer_cp_features(train_df, metadata=True)
 meta_features
 
 
-# In[18]:
+# In[19]:
 
 
 train_df = feature_select(
@@ -232,7 +244,7 @@ test_df = test_df.reindex(reindex_features, axis="columns")
 train_df = train_df.reindex(reindex_features, axis="columns")
 
 
-# In[19]:
+# In[20]:
 
 
 # Shapes after feature selection
@@ -242,7 +254,7 @@ print(test_df.shape)
 
 # ## Output Files
 
-# In[20]:
+# In[21]:
 
 
 out_file = pathlib.Path("data", "example_train.tsv.gz")
