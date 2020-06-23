@@ -28,6 +28,7 @@ def filter_cells(df, drop_prop=0.1):
 
 
 def normalize_sc(sc_df, scaler_method="standard"):
+    sc_df = sc_df.reset_index(drop=True)
     cp_features = infer_cp_features(sc_df)
     meta_df = sc_df.drop(cp_features, axis="columns")
     meta_df.columns = [
@@ -86,6 +87,9 @@ def process_data(
     train_df, test_df = train_test_split(
         merged_df, test_size=test_split_prop, random_state=seed
     )
+
+    train_df = train_df.reset_index(drop=True)
+    test_df = test_df.reset_index(drop=True)
 
     # Normalize training and testing separately
     if normalize:
