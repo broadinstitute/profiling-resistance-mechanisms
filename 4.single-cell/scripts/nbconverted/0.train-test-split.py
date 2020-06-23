@@ -38,11 +38,11 @@ scaler_method = "standard"
 seed = 123
 
 feature_select_opts = [
-        "variance_threshold",
-        "drop_na_columns",
-        "blacklist",
-        "drop_outliers",
-    ]
+    "variance_threshold",
+    "drop_na_columns",
+    "blacklist",
+    "drop_outliers",
+]
 corr_threshold = 0.8
 na_cutoff = 0
 
@@ -125,17 +125,40 @@ image_df.head()
 # In[10]:
 
 
-image_df.Metadata_CellLine.value_counts()
+# Assert that image number is unique
+assert len(image_df.ImageNumber.unique()) == image_df.shape[0]
 
 
 # In[11]:
 
 
+image_df.Metadata_CellLine.value_counts()
+
+
+# In[12]:
+
+
+image_df.Metadata_Well.value_counts()
+
+
+# In[13]:
+
+
 clone_e_wells = pd.np.random.choice(
-    image_df.query("Metadata_CellLine == 'CloneE'").Metadata_Well.unique(), size=2, replace=False
+    (
+        image_df
+        .query("Metadata_CellLine == 'CloneE'")
+        .query("Metadata_Dosage == 0")
+    )
+    .Metadata_Well.unique(), size=2, replace=False
 )
+
 wt_wells = pd.np.random.choice(
-    image_df.query("Metadata_CellLine == 'WT'").Metadata_Well.unique(), size=2, replace=False
+    (
+        image_df
+        .query("Metadata_CellLine == 'WT'")
+        .query("Metadata_Dosage == 0")
+    ).Metadata_Well.unique(), size=2, replace=False
 )
 
 print(f"Clone E Well: {clone_e_wells}", f"\nWT Well: {wt_wells}")
@@ -143,7 +166,7 @@ print(f"Clone E Well: {clone_e_wells}", f"\nWT Well: {wt_wells}")
 
 # # Load Cells
 
-# In[12]:
+# In[14]:
 
 
 imagenumber_dict = {}
@@ -152,7 +175,7 @@ imagenumber_dict["wt"] = image_df.query("Metadata_Well in @wt_wells").ImageNumbe
 imagenumber_dict
 
 
-# In[13]:
+# In[15]:
 
 
 train_df = {}
@@ -170,13 +193,14 @@ for clone_type, clone_imagenumbers in imagenumber_dict.items():
         normalize=True 
     )
     
-train_df = pd.concat(train_df).reset_index(drop=True)
-test_df = pd.concat(test_df).reset_index(drop=True)
+# Output and shuffle rows from training and testing sets
+train_df = pd.concat(train_df).sample(frac=1).reset_index(drop=True)
+test_df = pd.concat(test_df).sample(frac=1).reset_index(drop=True)
 
 
 # ## Apply Feature Selection
 
-# In[14]:
+# In[16]:
 
 
 # Original shapes
@@ -184,14 +208,14 @@ print(train_df.shape)
 print(test_df.shape)
 
 
-# In[15]:
+# In[17]:
 
 
 meta_features = infer_cp_features(train_df, metadata=True)
 meta_features
 
 
-# In[16]:
+# In[18]:
 
 
 train_df = feature_select(
@@ -205,9 +229,10 @@ selected_features = infer_cp_features(train_df)
 reindex_features = meta_features + selected_features
 
 test_df = test_df.reindex(reindex_features, axis="columns")
+train_df = train_df.reindex(reindex_features, axis="columns")
 
 
-# In[17]:
+# In[19]:
 
 
 # Shapes after feature selection
@@ -217,7 +242,7 @@ print(test_df.shape)
 
 # ## Output Files
 
-# In[18]:
+# In[20]:
 
 
 out_file = pathlib.Path("data", "example_train.tsv.gz")
