@@ -161,7 +161,41 @@ wt_wells = pd.np.random.choice(
     ).Metadata_Well.unique(), size=2, replace=False
 )
 
-print(f"Clone E Well: {clone_e_wells}", f"\nWT Well: {wt_wells}")
+clone_e_holdout_wells = pd.np.random.choice(
+    (
+        image_df
+        .query("Metadata_CellLine == 'CloneE'")
+        .query("Metadata_Dosage == 0")
+        .query("Metadata_Well not in @clone_e_wells")
+    )
+    .Metadata_Well.unique(), size=1, replace=False
+)
+
+wt_holdout_wells = pd.np.random.choice(
+    (
+        image_df
+        .query("Metadata_CellLine == 'WT'")
+        .query("Metadata_Dosage == 0")
+        .query("Metadata_Well not in @wt_wells")
+    ).Metadata_Well.unique(), size=1, replace=False
+)
+
+clone_a_wells = pd.np.random.choice(
+    (
+        image_df
+        .query("Metadata_CellLine == 'CloneA'")
+        .query("Metadata_Dosage == 0")
+    )
+    .Metadata_Well.unique(), size=1, replace=False
+)
+
+print(
+    f"Clone E Wells: {clone_e_wells}",
+    f"\nWT Wells: {wt_wells}",
+    f"Clone E Holdout Wells: {clone_e_holdout_wells}",
+    f"\nWT Holdout Wells: {wt_holdout_wells}",
+    f"\nClone A Wells: {clone_a_wells}"
+)
 
 
 # # Load Cells
@@ -172,6 +206,10 @@ print(f"Clone E Well: {clone_e_wells}", f"\nWT Well: {wt_wells}")
 imagenumber_dict = {}
 imagenumber_dict["clone_e"] = image_df.query("Metadata_Well in @clone_e_wells").ImageNumber.tolist()
 imagenumber_dict["wt"] = image_df.query("Metadata_Well in @wt_wells").ImageNumber.tolist()
+imagenumber_dict["clone_a"] = image_df.query("Metadata_Well in @clone_a_wells").ImageNumber.tolist()
+imagenumber_dict["clone_e_holdout"] = image_df.query("Metadata_Well in @clone_e_holdout_wells").ImageNumber.tolist()
+imagenumber_dict["wt_holdout"] = image_df.query("Metadata_Well in @wt_holdout_wells").ImageNumber.tolist()
+
 imagenumber_dict
 
 
@@ -180,6 +218,7 @@ imagenumber_dict
 
 train_dict_df = {}
 test_dict_df = {}
+holdout_dict_df = {}
 for clone_type, clone_imagenumbers in imagenumber_dict.items():
     print(f"Now processing clone: {clone_type}")
     train_df, test_df = process_sites(
@@ -195,8 +234,11 @@ for clone_type, clone_imagenumbers in imagenumber_dict.items():
     print(train_df.shape)
     print(test_df.shape)
     
-    train_dict_df[clone_type] = train_df.reset_index(drop=True)
-    test_dict_df[clone_type] = test_df.reset_index(drop=True)
+    if clone_type in ["clone_e", "wt"]:
+        train_dict_df[clone_type] = train_df.reset_index(drop=True)
+        test_dict_df[clone_type] = test_df.reset_index(drop=True)
+    else:
+        holdout_dict_df[clone_type] = train_df
 
 
 # In[16]:
@@ -262,4 +304,17 @@ train_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
 
 out_file = pathlib.Path("data", "example_test.tsv.gz")
 test_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
+
+
+# In[22]:
+
+
+# Normalize, shuffle row order, and output for holdout sets
+for clone_type in holdout_dict_df:
+    df = normalize_sc(holdout_dict_df[clone_type].reset_index(drop=True), scaler_method=scaler_method)
+    df = df.sample(frac=1).reset_index(drop=True).reindex(reindex_features, axis="columns")
+    print(clone_type)
+    print(df.shape)
+    out_file = pathlib.Path("data", f"example_holdout_{clone_type}.tsv.gz")
+    df.to_csv(out_file, sep="\t", compression="gzip", index=False)
 
