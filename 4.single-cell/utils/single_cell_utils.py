@@ -83,6 +83,10 @@ def process_data(
         merged_df, on=["TableNumber", "ImageNumber"], how="right"
     )
 
+    # Normalize data
+    if normalize:
+        merged_df = normalize_sc(merged_df, scaler_method=scaler_method)
+
     # Split training and testing
     train_df, test_df = train_test_split(
         merged_df, test_size=test_split_prop, random_state=seed
@@ -90,11 +94,6 @@ def process_data(
 
     train_df = train_df.reset_index(drop=True)
     test_df = test_df.reset_index(drop=True)
-
-    # Normalize training and testing separately
-    if normalize:
-        train_df = normalize_sc(train_df, scaler_method=scaler_method)
-        test_df = normalize_sc(test_df, scaler_method=scaler_method)
 
     return train_df, test_df
 
@@ -107,8 +106,14 @@ def process_sites(
     scaler_method="standard",
     seed=123,
     test_split_prop=0.15,
-    normalize=True,
+    normalize_before_split=True,
+    normalize_after_split=False
 ):
+    if normalize_before_split:
+        assert not normalize_after_split, "Do not normalize twice!"
+
+    if normalize_after_split:
+        assert not normalize_before_split, "Do not normalize twice!"
 
     train_df = {}
     test_df = {}
@@ -123,13 +128,13 @@ def process_sites(
             scaler_method=scaler_method,
             seed=seed,
             test_split_prop=test_split_prop,
-            normalize=False,
+            normalize=normalize_before_split,
         )
 
     train_df = pd.concat(train_df).reset_index(drop=True)
     test_df = pd.concat(test_df).reset_index(drop=True)
 
-    if normalize:
+    if normalize_after_split:
         train_df = normalize_sc(train_df, scaler_method=scaler_method)
         test_df = normalize_sc(test_df, scaler_method=scaler_method)
 
