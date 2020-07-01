@@ -92,12 +92,6 @@ def process_sites(
     scaler_method="standard",
     normalize=True
 ):
-    if normalize_before_split:
-        assert not normalize_after_split, "Do not normalize twice!"
-
-    if normalize_after_split:
-        assert not normalize_before_split, "Do not normalize twice!"
-
     data_df = {}
     for imagenumber in imagenumbers:
         print(f"ImageNumber: {imagenumber}")
@@ -106,7 +100,6 @@ def process_sites(
             imagenumber=imagenumber,
             image_df=image_df,
             feature_filter=feature_filter,
-            scaler_method=scaler_method,
             seed=seed
         )
 

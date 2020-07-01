@@ -141,7 +141,7 @@ image_df.Metadata_CellLine.value_counts()
 image_df.Metadata_Well.value_counts()
 
 
-# In[20]:
+# In[13]:
 
 
 clone_e_wells = pd.np.random.choice(
@@ -203,7 +203,7 @@ print(
 
 # # Load Cells
 
-# In[21]:
+# In[14]:
 
 
 imagenumber_dict = {}
@@ -217,51 +217,48 @@ imagenumber_dict
 # In[15]:
 
 
-train_dict_df = {}
-test_dict_df = {}
+training_dict_df = {}
 holdout_dict_df = {}
 for clone_type, clone_imagenumbers in imagenumber_dict.items():
     print(f"Now processing clone: {clone_type}")
-    train_df, test_df = process_sites(
+    train_df = process_sites(
         connection=conn,
         imagenumbers=clone_imagenumbers,
         image_df=image_df,
         feature_filter=feature_filter,
-        scaler_method=scaler_method,
         seed=seed,
-        test_split_prop=test_split_prop,
-        normalize=False 
+        normalize=False
     )
     print(train_df.shape)
-    print(test_df.shape)
     
     if clone_type in ["clone_e", "wt"]:
-        train_dict_df[clone_type] = train_df.reset_index(drop=True)
-        test_dict_df[clone_type] = test_df.reset_index(drop=True)
+        training_dict_df[clone_type] = train_df.reset_index(drop=True)
     else:
-        holdout_dict_df[clone_type] = train_df
+        holdout_dict_df[clone_type] = train_df.reset_index(drop=True)
 
 
 # In[16]:
 
 
-# Normalize and shuffle row order
-train_df = normalize_sc(pd.concat(train_dict_df).reset_index(drop=True), scaler_method=scaler_method)
-test_df = normalize_sc(pd.concat(test_dict_df).reset_index(drop=True), scaler_method=scaler_method)
+# Normalize, split, and shuffle row order
+train_df = pd.concat(training_dict_df).sample(frac=1).reset_index(drop=True)
+train_df = normalize_sc(train_df, scaler_method=scaler_method)
 
-train_df = train_df.sample(frac=1).reset_index(drop=True)
-test_df = test_df.sample(frac=1).reset_index(drop=True)
+train_df, test_df = train_test_split(train_df, test_size=test_split_prop, random_state=seed)
 
+print(train_df.shape)
+print(test_df.shape)
 
-# ## Apply Feature Selection
 
 # In[17]:
 
 
-# Original shapes
-print(train_df.shape)
-print(test_df.shape)
+holdout_df = pd.concat(holdout_dict_df).sample(frac=1).reset_index(drop=True)
+holdout_df = normalize_sc(holdout_df, scaler_method=scaler_method)
+print(holdout_df.shape)
 
+
+# ## Apply Feature Selection
 
 # In[18]:
 
@@ -285,6 +282,7 @@ reindex_features = meta_features + selected_features
 
 test_df = test_df.reindex(reindex_features, axis="columns")
 train_df = train_df.reindex(reindex_features, axis="columns")
+holdout_df = holdout_df.reindex(reindex_features, axis="columns")
 
 
 # In[20]:
@@ -293,6 +291,7 @@ train_df = train_df.reindex(reindex_features, axis="columns")
 # Shapes after feature selection
 print(train_df.shape)
 print(test_df.shape)
+print(holdout_df.shape)
 
 
 # ## Output Files
@@ -306,16 +305,6 @@ train_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
 out_file = pathlib.Path("data", "example_test.tsv.gz")
 test_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
 
-
-# In[22]:
-
-
-# Normalize, shuffle row order, and output for holdout sets
-for clone_type in holdout_dict_df:
-    df = normalize_sc(holdout_dict_df[clone_type].reset_index(drop=True), scaler_method=scaler_method)
-    df = df.sample(frac=1).reset_index(drop=True).reindex(reindex_features, axis="columns")
-    print(clone_type)
-    print(df.shape)
-    out_file = pathlib.Path("data", f"example_holdout_{clone_type}.tsv.gz")
-    df.to_csv(out_file, sep="\t", compression="gzip", index=False)
+out_file = pathlib.Path("data", "example_holdout.tsv.gz")
+holdout_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
 
