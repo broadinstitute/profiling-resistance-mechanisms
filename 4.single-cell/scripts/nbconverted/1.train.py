@@ -6,6 +6,7 @@
 
 import warnings
 import pathlib
+import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -84,6 +85,7 @@ def get_threshold_metrics(y_true, y_pred, drop_intermediate=False):
 alphas = [0.001, 0.2, 0.3, 0.4, 0.5, 0.6, 1]
 l1_ratios = [0.1, 0.2, 0.3, 0.4, 1]
 n_folds = 5
+np.random.seed(12345)
 
 
 # ## Load Data
@@ -117,11 +119,11 @@ embedding_df = embedding_df.merge(meta_train_df, left_index=True, right_index=Tr
 
 cell_line_gg = (
     gg.ggplot(embedding_df, gg.aes(x="x", y="y")) +
-    gg.geom_point(gg.aes(color="Metadata_CellLine"), size = 0.1, shape = ".", alpha = 0.1) +
+    gg.geom_point(gg.aes(color="Metadata_CellLine"), size = 0.1, shape = ".", alpha = 0.2) +
     gg.theme_bw() +
     gg.scale_color_manual(name="Cell Line",
                           labels={"CloneE": "CloneE", "WT": "WT"},
-                          values={"CloneE": "#223C3A", "WT": "#E7822B"})
+                          values={"CloneE": "#3B596B", "WT": "#E49665"})
 )
 
 fig_file = pathlib.Path("figures", "umap", "example_cell_line_train.png")
@@ -135,7 +137,7 @@ cell_line_gg
 
 well_gg = (
     gg.ggplot(embedding_df, gg.aes(x="x", y="y")) +
-    gg.geom_point(gg.aes(color="Metadata_Well"), size = 0.1, shape = ".", alpha = 0.1) +
+    gg.geom_point(gg.aes(color="Metadata_Well"), size = 0.1, shape = ".", alpha = 0.2) +
     gg.theme_bw() +
     gg.scale_color_manual(name="Well",
                           labels={"B03": "B03", "B04": "B04", "B08": "B08", "B09": "B09"},
@@ -202,19 +204,14 @@ cv_pipeline.fit(X=x_train_df, y=y_train_df.status.tolist())
 # In[11]:
 
 
-x_train_shuffled_df = x_train_df.apply(shuffle_columns, axis=0, result_type="broadcast")
-
-
-# In[12]:
-
-
 # Fit Shuffled Data Pipeline
+x_train_shuffled_df = x_train_df.apply(shuffle_columns, axis=0, result_type="broadcast")
 shuffle_cv_pipeline.fit(X=x_train_shuffled_df, y=y_train_df.status.tolist())
 
 
 # ## Visualize Cross Validation Results
 
-# In[13]:
+# In[12]:
 
 
 cv_heatmap_file = pathlib.Path("figures", "cross_validation", "cv_example_heatmap.png")
@@ -236,7 +233,7 @@ plt.tight_layout()
 plt.savefig(cv_heatmap_file, dpi=600, bbox_inches='tight')
 
 
-# In[14]:
+# In[13]:
 
 
 cv_heatmap_file = pathlib.Path("figures", "cross_validation", "cv_example_heatmap_shuffled.png")
@@ -260,7 +257,7 @@ plt.savefig(cv_heatmap_file, dpi=600, bbox_inches='tight')
 
 # ## Generate Predictions
 
-# In[15]:
+# In[14]:
 
 
 y_predict_train = cv_pipeline.decision_function(x_train_df)
@@ -270,7 +267,7 @@ y_predict_shuffled_train = shuffle_cv_pipeline.decision_function(x_train_shuffle
 y_predict_shuffled_test = shuffle_cv_pipeline.decision_function(x_test_df)
 
 
-# In[16]:
+# In[15]:
 
 
 y_test_meta_df = (
@@ -287,7 +284,7 @@ y_train_meta_df = (
 )
 
 
-# In[17]:
+# In[16]:
 
 
 y_train_meta_df.head()
@@ -295,7 +292,7 @@ y_train_meta_df.head()
 
 # ## Obtain Performance Metrics
 
-# In[18]:
+# In[17]:
 
 
 y_train_metrics = get_threshold_metrics(
@@ -321,7 +318,7 @@ y_test_shuffle_metrics = get_threshold_metrics(
 
 # ## Inspect Classifier Coefficients
 
-# In[19]:
+# In[18]:
 
 
 # Save classifier coefficients
@@ -338,7 +335,7 @@ print(nonzero_model_coef_df.shape)
 nonzero_model_coef_df.head()
 
 
-# In[20]:
+# In[19]:
 
 
 # Save classifier coefficients
@@ -355,7 +352,7 @@ print(nonzero_model_coef_df.shape)
 nonzero_model_coef_df
 
 
-# In[21]:
+# In[20]:
 
 
 metrics_list = [
@@ -366,7 +363,7 @@ metrics_list = [
 ]
 
 
-# In[22]:
+# In[21]:
 
 
 # Plot ROC
@@ -403,7 +400,7 @@ plt.savefig(roc_file, dpi=600, bbox_extra_artists=(lgd,),
             bbox_inches='tight')
 
 
-# In[23]:
+# In[22]:
 
 
 # Plot PR
@@ -442,59 +439,88 @@ plt.savefig(pr_file,
 
 # ## Apply Models to Holdout Data
 
+# In[23]:
+
+
+holdout_file = pathlib.Path("data", "example_holdout.tsv.gz")
+holdout_df = pd.read_csv(holdout_file, sep="\t")
+
+holdout_predict = cv_pipeline.decision_function(holdout_df.reindex(x_train_df.columns, axis="columns"))
+
+
 # In[24]:
 
 
-clone_a_file = pathlib.Path("data", "example_holdout_clone_a.tsv.gz")
-clone_a_holdout_df = pd.read_csv(clone_a_file, sep="\t")
+holdout_meta_features = infer_cp_features(holdout_df, metadata=True)
 
-clone_e_holdout_file = pathlib.Path("data", "example_holdout_clone_e_holdout.tsv.gz")
-clone_e_holdout_df = pd.read_csv(clone_e_holdout_file, sep="\t")
+holdout_pred_df = holdout_df.loc[:, holdout_meta_features]
+holdout_pred_df = holdout_pred_df.assign(pred=holdout_predict)
 
-wt_holdout_file = pathlib.Path("data", "example_holdout_wt_holdout.tsv.gz")
-wt_holdout_df = pd.read_csv(wt_holdout_file, sep="\t")
+print(holdout_pred_df.shape)
+holdout_pred_df.head()
 
 
 # In[25]:
 
 
-clone_a_predict = cv_pipeline.decision_function(clone_a_holdout_df.reindex(x_train_df.columns, axis="columns"))
-clone_e_holdout_predict = cv_pipeline.decision_function(clone_e_holdout_df.reindex(x_train_df.columns, axis="columns"))
-wt_holdout_predict = cv_pipeline.decision_function(wt_holdout_df.reindex(x_train_df.columns, axis="columns"))
+# Apply UMAP
+reducer = umap.UMAP(random_state=123)
+holdout_embedding = reducer.fit_transform(holdout_df.drop(holdout_meta_features, axis="columns"))
+
+# Setup plotting logic
+holdout_embedding_df = pd.DataFrame(holdout_embedding, columns=['x', 'y'])
+holdout_embedding_df = holdout_embedding_df.merge(holdout_pred_df, left_index=True, right_index=True)
 
 
 # In[26]:
 
 
-clone_a_pred_df = pd.DataFrame().assign(
-    pred=clone_a_predict,
-    clone="clone_a"
-)
-clone_e_pred_df = pd.DataFrame().assign(
-    pred=clone_e_holdout_predict,
-    clone="clone_e"
-)
-wt_pred_df = pd.DataFrame().assign(
-    pred=wt_holdout_predict,
-    clone="wt"
+cell_line_gg = (
+    gg.ggplot(holdout_embedding_df, gg.aes(x="x", y="y")) +
+    gg.geom_point(gg.aes(color="Metadata_CellLine"), size = 0.1, shape = ".", alpha = 0.1) +
+    gg.theme_bw() +
+    gg.scale_color_manual(name="Cell Line",
+                          labels={"CloneE": "CloneE", "WT": "WT", "CloneA": "CloneA"},
+                          values={"CloneE": "#3B596B", "CloneA": "#70B562", "WT": "#E49665"})
 )
 
-holdout_df = pd.concat([clone_a_pred_df, clone_e_pred_df, wt_pred_df])
-holdout_df.head()
+fig_file = pathlib.Path("figures", "umap", "example_cell_line_holdout.png")
+cell_line_gg.save(filename=fig_file, height=4, width=5, dpi=500)
+
+cell_line_gg
 
 
 # In[27]:
 
 
-(
-    gg.ggplot(holdout_df, gg.aes(y="pred", x="clone")) +
-    gg.geom_violin(gg.aes(fill="clone"), alpha=0.5) +
+pred_umap_gg = (
+    gg.ggplot(holdout_embedding_df, gg.aes(x="x", y="y")) +
+    gg.geom_point(gg.aes(color="pred"), size = 0.1, shape = ".", alpha = 0.2) +
     gg.theme_bw()
 )
+
+fig_file = pathlib.Path("figures", "umap", "example_cell_line_holdout_predictions.png")
+pred_umap_gg.save(filename=fig_file, height=4, width=5, dpi=500)
+
+pred_umap_gg
 
 
 # In[28]:
 
 
-holdout_df.groupby("clone").describe()
+holdout_gg = (
+    gg.ggplot(holdout_pred_df, gg.aes(y="pred", x="Metadata_CellLine")) +
+    gg.geom_violin(gg.aes(fill="Metadata_CellLine"), alpha=0.5) +
+    gg.theme_bw() +
+    gg.ylab("Predictions") +
+    gg.xlab("") +
+    gg.scale_fill_manual(name="Cell Line",
+                         values={"CloneE": "#3B596B", "CloneA": "#70B562", "WT": "#E49665"},
+                         labels={"CloneE": "CloneE", "CloneA": "CloneA", "WT": "WT"})
+)
+
+fig_file = pathlib.Path("figures", "predictions", "holdout_cell_line.png")
+holdout_gg.save(filename=fig_file, height=4, width=5, dpi=500)
+
+holdout_gg
 
