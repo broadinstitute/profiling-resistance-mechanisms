@@ -141,7 +141,7 @@ image_df.Metadata_CellLine.value_counts()
 image_df.Metadata_Well.value_counts()
 
 
-# In[13]:
+# In[20]:
 
 
 clone_e_wells = pd.np.random.choice(
@@ -189,26 +189,27 @@ clone_a_wells = pd.np.random.choice(
     .Metadata_Well.unique(), size=1, replace=False
 )
 
+holdout_wells = list(clone_e_holdout_wells) + list(wt_holdout_wells) + list(clone_a_wells)
+
 print(
     f"Clone E Wells: {clone_e_wells}",
     f"\nWT Wells: {wt_wells}",
-    f"Clone E Holdout Wells: {clone_e_holdout_wells}",
-    f"\nWT Holdout Wells: {wt_holdout_wells}",
-    f"\nClone A Wells: {clone_a_wells}"
+    f"\nAll Holdout Wells: {holdout_wells}"
+    f"\nHoldout: Clone E Wells: {clone_e_holdout_wells}",
+    f"\nHoldout: WT Wells: {wt_holdout_wells}",
+    f"\nHoldout: Clone A Wells: {clone_a_wells}",
 )
 
 
 # # Load Cells
 
-# In[14]:
+# In[21]:
 
 
 imagenumber_dict = {}
 imagenumber_dict["clone_e"] = image_df.query("Metadata_Well in @clone_e_wells").ImageNumber.tolist()
 imagenumber_dict["wt"] = image_df.query("Metadata_Well in @wt_wells").ImageNumber.tolist()
-imagenumber_dict["clone_a"] = image_df.query("Metadata_Well in @clone_a_wells").ImageNumber.tolist()
-imagenumber_dict["clone_e_holdout"] = image_df.query("Metadata_Well in @clone_e_holdout_wells").ImageNumber.tolist()
-imagenumber_dict["wt_holdout"] = image_df.query("Metadata_Well in @wt_holdout_wells").ImageNumber.tolist()
+imagenumber_dict["holdout"] = image_df.query("Metadata_Well in @holdout_wells").ImageNumber.tolist()
 
 imagenumber_dict
 
