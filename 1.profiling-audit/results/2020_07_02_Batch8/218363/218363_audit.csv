@@ -1,0 +1,1771 @@
+column_match_pair_a,Metadata_clone_number_pair_a,Metadata_treatment_pair_a,row_match,pairwise_correlation,column_match_pair_b,Metadata_clone_number_pair_b,Metadata_treatment_pair_b
+1,WT parental,2.1 nM bortezomib,0,0.6251787857782554,0,WT parental,0.1% DMSO
+2,WT parental,21 nM bortezomib,0,0.17958678716167006,0,WT parental,0.1% DMSO
+3,WT parental,210 nM bortezomib,0,-0.10949305701781718,0,WT parental,0.1% DMSO
+4,WT parental,0.1% DMSO,0,0.7793319429058506,0,WT parental,0.1% DMSO
+5,WT parental,21 nM bortezomib,0,0.003692869138819945,0,WT parental,0.1% DMSO
+6,WT parental,0.1% DMSO,0,0.4509452470517839,0,WT parental,0.1% DMSO
+7,WT parental,2.1 nM bortezomib,0,0.23891226813606373,0,WT parental,0.1% DMSO
+8,WT parental,21 nM bortezomib,0,-0.3086878086094479,0,WT parental,0.1% DMSO
+9,WT parental,210 nM bortezomib,0,-0.12834302473200035,0,WT parental,0.1% DMSO
+10,Clone A,0.1% DMSO,0,0.31295698445842574,0,WT parental,0.1% DMSO
+11,Clone A,2.1 nM bortezomib,0,0.4065244103377598,0,WT parental,0.1% DMSO
+12,Clone A,21 nM bortezomib,0,-0.009855073995786834,0,WT parental,0.1% DMSO
+13,Clone A,210 nM bortezomib,0,-0.15987631170019814,0,WT parental,0.1% DMSO
+14,Clone A,0.1% DMSO,0,0.32059406689850045,0,WT parental,0.1% DMSO
+15,Clone A,21 nM bortezomib,0,-0.14729955370587333,0,WT parental,0.1% DMSO
+16,Clone A,0.1% DMSO,0,0.12008473787650165,0,WT parental,0.1% DMSO
+17,Clone A,2.1 nM bortezomib,0,0.16003598182404138,0,WT parental,0.1% DMSO
+18,Clone A,21 nM bortezomib,0,-0.23173997936746005,0,WT parental,0.1% DMSO
+19,Clone A,210 nM bortezomib,0,-0.3921560170394982,0,WT parental,0.1% DMSO
+20,Clone E,0.1% DMSO,0,-0.11946238993111008,0,WT parental,0.1% DMSO
+21,Clone E,2.1 nM bortezomib,0,0.2070713797244491,0,WT parental,0.1% DMSO
+22,Clone E,21 nM bortezomib,0,0.12408803315411597,0,WT parental,0.1% DMSO
+23,Clone E,210 nM bortezomib,0,0.06300249868382515,0,WT parental,0.1% DMSO
+24,Clone E,0.1% DMSO,0,-0.00867644227104194,0,WT parental,0.1% DMSO
+25,Clone E,21 nM bortezomib,0,0.11277044111669252,0,WT parental,0.1% DMSO
+26,Clone E,0.1% DMSO,0,-0.06891225977588629,0,WT parental,0.1% DMSO
+27,Clone E,2.1 nM bortezomib,0,0.1819141248563065,0,WT parental,0.1% DMSO
+28,Clone E,21 nM bortezomib,0,-0.05280061349003988,0,WT parental,0.1% DMSO
+29,Clone E,210 nM bortezomib,0,-0.08664689118495986,0,WT parental,0.1% DMSO
+30,WT parental,0.1% DMSO,0,0.6172066062909687,0,WT parental,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,0,-0.0314164068995023,0,WT parental,0.1% DMSO
+32,WT parental,21 nM bortezomib,0,-0.14332721533246987,0,WT parental,0.1% DMSO
+33,WT parental,210 nM bortezomib,0,-0.33756786711356496,0,WT parental,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,0,-0.07439493630951272,0,WT parental,0.1% DMSO
+35,WT parental,210 nM bortezomib,0,-0.391145258251905,0,WT parental,0.1% DMSO
+36,WT parental,0.1% DMSO,0,0.3544904484078447,0,WT parental,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,0,-0.13829609023748468,0,WT parental,0.1% DMSO
+38,WT parental,21 nM bortezomib,0,-0.3472471887724976,0,WT parental,0.1% DMSO
+39,WT parental,210 nM bortezomib,0,-0.4176494831488793,0,WT parental,0.1% DMSO
+40,Clone A,0.1% DMSO,0,0.29353752916544534,0,WT parental,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,0,0.2734740729984835,0,WT parental,0.1% DMSO
+42,Clone A,21 nM bortezomib,0,-0.21804836886180837,0,WT parental,0.1% DMSO
+43,Clone A,210 nM bortezomib,0,-0.3721973855270054,0,WT parental,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,0,-0.09828812387852195,0,WT parental,0.1% DMSO
+45,Clone A,210 nM bortezomib,0,-0.4904576075304078,0,WT parental,0.1% DMSO
+46,Clone A,0.1% DMSO,0,-0.17972007766518486,0,WT parental,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,0,-0.14150324774345846,0,WT parental,0.1% DMSO
+48,Clone A,21 nM bortezomib,0,-0.44970845495236583,0,WT parental,0.1% DMSO
+49,Clone A,210 nM bortezomib,0,-0.4309925913717967,0,WT parental,0.1% DMSO
+50,Clone E,0.1% DMSO,0,0.17100692982899088,0,WT parental,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,0,0.042812127317565965,0,WT parental,0.1% DMSO
+52,Clone E,21 nM bortezomib,0,0.1134456272247465,0,WT parental,0.1% DMSO
+53,Clone E,210 nM bortezomib,0,-0.14542914198615012,0,WT parental,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,0,0.008692656476346322,0,WT parental,0.1% DMSO
+55,Clone E,210 nM bortezomib,0,-0.15918239840949105,0,WT parental,0.1% DMSO
+56,Clone E,0.1% DMSO,0,-0.22424972797234388,0,WT parental,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,0,-0.038132243925469496,0,WT parental,0.1% DMSO
+58,Clone E,21 nM bortezomib,0,-0.05215433292294346,0,WT parental,0.1% DMSO
+59,Clone E,210 nM bortezomib,0,-0.1275720443034424,0,WT parental,0.1% DMSO
+2,WT parental,21 nM bortezomib,1,0.2380916648087257,1,WT parental,2.1 nM bortezomib
+3,WT parental,210 nM bortezomib,1,0.2074740706615101,1,WT parental,2.1 nM bortezomib
+4,WT parental,0.1% DMSO,1,0.5464919291388959,1,WT parental,2.1 nM bortezomib
+5,WT parental,21 nM bortezomib,1,0.45752408191184374,1,WT parental,2.1 nM bortezomib
+6,WT parental,0.1% DMSO,1,0.25933606489645733,1,WT parental,2.1 nM bortezomib
+7,WT parental,2.1 nM bortezomib,1,0.5798246154138574,1,WT parental,2.1 nM bortezomib
+8,WT parental,21 nM bortezomib,1,0.08280651550575867,1,WT parental,2.1 nM bortezomib
+9,WT parental,210 nM bortezomib,1,0.19569267656123837,1,WT parental,2.1 nM bortezomib
+10,Clone A,0.1% DMSO,1,0.135387517454198,1,WT parental,2.1 nM bortezomib
+11,Clone A,2.1 nM bortezomib,1,0.43426501185031646,1,WT parental,2.1 nM bortezomib
+12,Clone A,21 nM bortezomib,1,0.29454975802129396,1,WT parental,2.1 nM bortezomib
+13,Clone A,210 nM bortezomib,1,-0.2641604544281064,1,WT parental,2.1 nM bortezomib
+14,Clone A,0.1% DMSO,1,0.14029649043349718,1,WT parental,2.1 nM bortezomib
+15,Clone A,21 nM bortezomib,1,0.13212104802304134,1,WT parental,2.1 nM bortezomib
+16,Clone A,0.1% DMSO,1,0.006480906532111439,1,WT parental,2.1 nM bortezomib
+17,Clone A,2.1 nM bortezomib,1,0.12313786440908432,1,WT parental,2.1 nM bortezomib
+18,Clone A,21 nM bortezomib,1,0.0183239494775117,1,WT parental,2.1 nM bortezomib
+19,Clone A,210 nM bortezomib,1,-0.49419443243213657,1,WT parental,2.1 nM bortezomib
+20,Clone E,0.1% DMSO,1,-0.2642039918843628,1,WT parental,2.1 nM bortezomib
+21,Clone E,2.1 nM bortezomib,1,-0.03183674057076993,1,WT parental,2.1 nM bortezomib
+22,Clone E,21 nM bortezomib,1,0.18230311047974732,1,WT parental,2.1 nM bortezomib
+23,Clone E,210 nM bortezomib,1,-0.24863507202565163,1,WT parental,2.1 nM bortezomib
+24,Clone E,0.1% DMSO,1,-0.2659858772458492,1,WT parental,2.1 nM bortezomib
+25,Clone E,21 nM bortezomib,1,0.037419850844667576,1,WT parental,2.1 nM bortezomib
+26,Clone E,0.1% DMSO,1,-0.2939618385272078,1,WT parental,2.1 nM bortezomib
+27,Clone E,2.1 nM bortezomib,1,-0.12122284530576742,1,WT parental,2.1 nM bortezomib
+28,Clone E,21 nM bortezomib,1,-0.10610174743638534,1,WT parental,2.1 nM bortezomib
+29,Clone E,210 nM bortezomib,1,-0.40424368168275593,1,WT parental,2.1 nM bortezomib
+30,WT parental,0.1% DMSO,1,0.3902750416188041,1,WT parental,2.1 nM bortezomib
+31,WT parental,2.1 nM bortezomib,1,0.4655935407324569,1,WT parental,2.1 nM bortezomib
+32,WT parental,21 nM bortezomib,1,0.19664079830668077,1,WT parental,2.1 nM bortezomib
+33,WT parental,210 nM bortezomib,1,-0.05961446157998657,1,WT parental,2.1 nM bortezomib
+34,WT parental,2.1 nM bortezomib,1,0.41740926325291994,1,WT parental,2.1 nM bortezomib
+35,WT parental,210 nM bortezomib,1,-0.1675044646376338,1,WT parental,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,1,0.17341382370679287,1,WT parental,2.1 nM bortezomib
+37,WT parental,2.1 nM bortezomib,1,0.2916251421337431,1,WT parental,2.1 nM bortezomib
+38,WT parental,21 nM bortezomib,1,0.07252620441029045,1,WT parental,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,1,-0.1357251174546634,1,WT parental,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,1,0.10548721366138772,1,WT parental,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,1,0.21454532058261186,1,WT parental,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,1,0.0127900282410558,1,WT parental,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,1,-0.4556710787532075,1,WT parental,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,1,0.06458400217395666,1,WT parental,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,1,-0.5172700895128769,1,WT parental,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,1,-0.33304730654548886,1,WT parental,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,1,-0.05208358004303718,1,WT parental,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,1,-0.10447904955959975,1,WT parental,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,1,-0.517169810344075,1,WT parental,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,1,-0.06361538112524376,1,WT parental,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,1,-0.23730335487200163,1,WT parental,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,1,-0.010891547922878482,1,WT parental,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,1,-0.5471643513408808,1,WT parental,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,1,-0.1656143471712825,1,WT parental,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,1,-0.5501673424910326,1,WT parental,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,1,-0.4702717521069089,1,WT parental,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,1,-0.30400042252841414,1,WT parental,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,1,-0.1479534081819445,1,WT parental,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,1,-0.3955825580747594,1,WT parental,2.1 nM bortezomib
+3,WT parental,210 nM bortezomib,2,0.24808919541661256,2,WT parental,21 nM bortezomib
+4,WT parental,0.1% DMSO,2,0.06166513194439513,2,WT parental,21 nM bortezomib
+5,WT parental,21 nM bortezomib,2,0.4282384499449928,2,WT parental,21 nM bortezomib
+6,WT parental,0.1% DMSO,2,-0.0023818047299186537,2,WT parental,21 nM bortezomib
+7,WT parental,2.1 nM bortezomib,2,0.2799310710044313,2,WT parental,21 nM bortezomib
+8,WT parental,21 nM bortezomib,2,0.22915888095136766,2,WT parental,21 nM bortezomib
+9,WT parental,210 nM bortezomib,2,0.1259999394106038,2,WT parental,21 nM bortezomib
+10,Clone A,0.1% DMSO,2,-0.22629307465840912,2,WT parental,21 nM bortezomib
+11,Clone A,2.1 nM bortezomib,2,-0.2592528642624788,2,WT parental,21 nM bortezomib
+12,Clone A,21 nM bortezomib,2,-0.3086374043359133,2,WT parental,21 nM bortezomib
+13,Clone A,210 nM bortezomib,2,0.20925270924970632,2,WT parental,21 nM bortezomib
+14,Clone A,0.1% DMSO,2,-0.43893912517307637,2,WT parental,21 nM bortezomib
+15,Clone A,21 nM bortezomib,2,-0.42075653474102154,2,WT parental,21 nM bortezomib
+16,Clone A,0.1% DMSO,2,-0.4849167038833403,2,WT parental,21 nM bortezomib
+17,Clone A,2.1 nM bortezomib,2,-0.5503814085562537,2,WT parental,21 nM bortezomib
+18,Clone A,21 nM bortezomib,2,-0.29576601078553943,2,WT parental,21 nM bortezomib
+19,Clone A,210 nM bortezomib,2,0.02581044329292731,2,WT parental,21 nM bortezomib
+20,Clone E,0.1% DMSO,2,0.14105075679270443,2,WT parental,21 nM bortezomib
+21,Clone E,2.1 nM bortezomib,2,-0.028396538450158253,2,WT parental,21 nM bortezomib
+22,Clone E,21 nM bortezomib,2,0.15958267656500813,2,WT parental,21 nM bortezomib
+23,Clone E,210 nM bortezomib,2,0.3449496825791036,2,WT parental,21 nM bortezomib
+24,Clone E,0.1% DMSO,2,-0.3234101873694123,2,WT parental,21 nM bortezomib
+25,Clone E,21 nM bortezomib,2,0.10594752213235804,2,WT parental,21 nM bortezomib
+26,Clone E,0.1% DMSO,2,-0.19958307900594147,2,WT parental,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,2,-0.15232422990590647,2,WT parental,21 nM bortezomib
+28,Clone E,21 nM bortezomib,2,-0.02206015168128215,2,WT parental,21 nM bortezomib
+29,Clone E,210 nM bortezomib,2,0.27320928822592244,2,WT parental,21 nM bortezomib
+30,WT parental,0.1% DMSO,2,0.20562555706389107,2,WT parental,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,2,0.14901284759493627,2,WT parental,21 nM bortezomib
+32,WT parental,21 nM bortezomib,2,0.3584686243458778,2,WT parental,21 nM bortezomib
+33,WT parental,210 nM bortezomib,2,0.2050944302105441,2,WT parental,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,2,0.03624013265223287,2,WT parental,21 nM bortezomib
+35,WT parental,210 nM bortezomib,2,0.3107033536028015,2,WT parental,21 nM bortezomib
+36,WT parental,0.1% DMSO,2,0.006119968628637128,2,WT parental,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,2,0.09014040797532864,2,WT parental,21 nM bortezomib
+38,WT parental,21 nM bortezomib,2,0.24399538406309812,2,WT parental,21 nM bortezomib
+39,WT parental,210 nM bortezomib,2,0.18221235304428762,2,WT parental,21 nM bortezomib
+40,Clone A,0.1% DMSO,2,-0.2822459156209039,2,WT parental,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,2,-0.45566033364004754,2,WT parental,21 nM bortezomib
+42,Clone A,21 nM bortezomib,2,-0.3084992186624173,2,WT parental,21 nM bortezomib
+43,Clone A,210 nM bortezomib,2,-0.011480595382455864,2,WT parental,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,2,-0.6291458602009062,2,WT parental,21 nM bortezomib
+45,Clone A,210 nM bortezomib,2,-0.07408222113025882,2,WT parental,21 nM bortezomib
+46,Clone A,0.1% DMSO,2,-0.6041953033527376,2,WT parental,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,2,-0.6529452937165444,2,WT parental,21 nM bortezomib
+48,Clone A,21 nM bortezomib,2,-0.45283076770627284,2,WT parental,21 nM bortezomib
+49,Clone A,210 nM bortezomib,2,-0.06724599899023093,2,WT parental,21 nM bortezomib
+50,Clone E,0.1% DMSO,2,0.0032074424898353984,2,WT parental,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,2,-0.04023503800625809,2,WT parental,21 nM bortezomib
+52,Clone E,21 nM bortezomib,2,0.17469862675522452,2,WT parental,21 nM bortezomib
+53,Clone E,210 nM bortezomib,2,0.3041439474678798,2,WT parental,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,2,-0.28779768757212204,2,WT parental,21 nM bortezomib
+55,Clone E,210 nM bortezomib,2,0.30165946240343045,2,WT parental,21 nM bortezomib
+56,Clone E,0.1% DMSO,2,-0.363611063509515,2,WT parental,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,2,-0.3052211870926805,2,WT parental,21 nM bortezomib
+58,Clone E,21 nM bortezomib,2,-0.07202080786975956,2,WT parental,21 nM bortezomib
+59,Clone E,210 nM bortezomib,2,-0.037947894434799866,2,WT parental,21 nM bortezomib
+4,WT parental,0.1% DMSO,3,-0.11579476934582529,3,WT parental,210 nM bortezomib
+5,WT parental,21 nM bortezomib,3,0.680143474693492,3,WT parental,210 nM bortezomib
+6,WT parental,0.1% DMSO,3,-0.24615585458261838,3,WT parental,210 nM bortezomib
+7,WT parental,2.1 nM bortezomib,3,0.17664565255678755,3,WT parental,210 nM bortezomib
+8,WT parental,21 nM bortezomib,3,0.4655098105084381,3,WT parental,210 nM bortezomib
+9,WT parental,210 nM bortezomib,3,0.6049810099083737,3,WT parental,210 nM bortezomib
+10,Clone A,0.1% DMSO,3,-0.2947477306366959,3,WT parental,210 nM bortezomib
+11,Clone A,2.1 nM bortezomib,3,-0.15034078800864642,3,WT parental,210 nM bortezomib
+12,Clone A,21 nM bortezomib,3,0.03548709910086909,3,WT parental,210 nM bortezomib
+13,Clone A,210 nM bortezomib,3,0.22758189373260568,3,WT parental,210 nM bortezomib
+14,Clone A,0.1% DMSO,3,-0.2901820318059753,3,WT parental,210 nM bortezomib
+15,Clone A,21 nM bortezomib,3,0.027850305141486054,3,WT parental,210 nM bortezomib
+16,Clone A,0.1% DMSO,3,-0.277160055971926,3,WT parental,210 nM bortezomib
+17,Clone A,2.1 nM bortezomib,3,-0.2626137100571697,3,WT parental,210 nM bortezomib
+18,Clone A,21 nM bortezomib,3,-0.11383315476505061,3,WT parental,210 nM bortezomib
+19,Clone A,210 nM bortezomib,3,0.07270475356883993,3,WT parental,210 nM bortezomib
+20,Clone E,0.1% DMSO,3,-0.3532665041551538,3,WT parental,210 nM bortezomib
+21,Clone E,2.1 nM bortezomib,3,-0.43267405912410206,3,WT parental,210 nM bortezomib
+22,Clone E,21 nM bortezomib,3,-0.10096761815876923,3,WT parental,210 nM bortezomib
+23,Clone E,210 nM bortezomib,3,0.055393332123481305,3,WT parental,210 nM bortezomib
+24,Clone E,0.1% DMSO,3,-0.5156117745389128,3,WT parental,210 nM bortezomib
+25,Clone E,21 nM bortezomib,3,-0.3098387741021242,3,WT parental,210 nM bortezomib
+26,Clone E,0.1% DMSO,3,-0.4760058480421635,3,WT parental,210 nM bortezomib
+27,Clone E,2.1 nM bortezomib,3,-0.5536936863914895,3,WT parental,210 nM bortezomib
+28,Clone E,21 nM bortezomib,3,-0.29070489152352175,3,WT parental,210 nM bortezomib
+29,Clone E,210 nM bortezomib,3,-0.1901886388419757,3,WT parental,210 nM bortezomib
+30,WT parental,0.1% DMSO,3,-0.132001757198087,3,WT parental,210 nM bortezomib
+31,WT parental,2.1 nM bortezomib,3,0.2341764738841701,3,WT parental,210 nM bortezomib
+32,WT parental,21 nM bortezomib,3,0.5691282793075848,3,WT parental,210 nM bortezomib
+33,WT parental,210 nM bortezomib,3,0.7158799793051546,3,WT parental,210 nM bortezomib
+34,WT parental,2.1 nM bortezomib,3,0.20348167332555195,3,WT parental,210 nM bortezomib
+35,WT parental,210 nM bortezomib,3,0.49076924956715656,3,WT parental,210 nM bortezomib
+36,WT parental,0.1% DMSO,3,-0.2625559398942112,3,WT parental,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,3,0.12930758219443295,3,WT parental,210 nM bortezomib
+38,WT parental,21 nM bortezomib,3,0.5309614480585615,3,WT parental,210 nM bortezomib
+39,WT parental,210 nM bortezomib,3,0.63207034587515,3,WT parental,210 nM bortezomib
+40,Clone A,0.1% DMSO,3,-0.22926025927421764,3,WT parental,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,3,-0.2701439307418255,3,WT parental,210 nM bortezomib
+42,Clone A,21 nM bortezomib,3,0.10782388280608467,3,WT parental,210 nM bortezomib
+43,Clone A,210 nM bortezomib,3,0.26403820446245785,3,WT parental,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,3,-0.24476362906019428,3,WT parental,210 nM bortezomib
+45,Clone A,210 nM bortezomib,3,0.18100719917955302,3,WT parental,210 nM bortezomib
+46,Clone A,0.1% DMSO,3,-0.42552157353719783,3,WT parental,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,3,-0.2603944544646883,3,WT parental,210 nM bortezomib
+48,Clone A,21 nM bortezomib,3,0.01785874660170478,3,WT parental,210 nM bortezomib
+49,Clone A,210 nM bortezomib,3,0.17055489992620962,3,WT parental,210 nM bortezomib
+50,Clone E,0.1% DMSO,3,-0.25133884512832605,3,WT parental,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,3,-0.5916659586211493,3,WT parental,210 nM bortezomib
+52,Clone E,21 nM bortezomib,3,-0.22533474246794197,3,WT parental,210 nM bortezomib
+53,Clone E,210 nM bortezomib,3,-0.03680784903367782,3,WT parental,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,3,-0.5410975612053979,3,WT parental,210 nM bortezomib
+55,Clone E,210 nM bortezomib,3,-0.08281858018030197,3,WT parental,210 nM bortezomib
+56,Clone E,0.1% DMSO,3,-0.5047674813981349,3,WT parental,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,3,-0.4453156364314957,3,WT parental,210 nM bortezomib
+58,Clone E,21 nM bortezomib,3,-0.08496834603257274,3,WT parental,210 nM bortezomib
+59,Clone E,210 nM bortezomib,3,0.08801053880036964,3,WT parental,210 nM bortezomib
+5,WT parental,21 nM bortezomib,4,0.09117641046209782,4,WT parental,0.1% DMSO
+6,WT parental,0.1% DMSO,4,0.7668777339067557,4,WT parental,0.1% DMSO
+7,WT parental,2.1 nM bortezomib,4,0.5229376125253588,4,WT parental,0.1% DMSO
+8,WT parental,21 nM bortezomib,4,-0.07099279206424201,4,WT parental,0.1% DMSO
+9,WT parental,210 nM bortezomib,4,0.0066647093805199354,4,WT parental,0.1% DMSO
+10,Clone A,0.1% DMSO,4,-0.024554626528585363,4,WT parental,0.1% DMSO
+11,Clone A,2.1 nM bortezomib,4,0.2366371590772259,4,WT parental,0.1% DMSO
+12,Clone A,21 nM bortezomib,4,-0.054972338853032425,4,WT parental,0.1% DMSO
+13,Clone A,210 nM bortezomib,4,-0.41130756987579353,4,WT parental,0.1% DMSO
+14,Clone A,0.1% DMSO,4,0.3381468828928649,4,WT parental,0.1% DMSO
+15,Clone A,21 nM bortezomib,4,-0.03613399036549887,4,WT parental,0.1% DMSO
+16,Clone A,0.1% DMSO,4,0.23228407893607106,4,WT parental,0.1% DMSO
+17,Clone A,2.1 nM bortezomib,4,0.25593595071303216,4,WT parental,0.1% DMSO
+18,Clone A,21 nM bortezomib,4,-0.008834995617648346,4,WT parental,0.1% DMSO
+19,Clone A,210 nM bortezomib,4,-0.3778874807592059,4,WT parental,0.1% DMSO
+20,Clone E,0.1% DMSO,4,-0.24821049690110272,4,WT parental,0.1% DMSO
+21,Clone E,2.1 nM bortezomib,4,-0.04334344215303685,4,WT parental,0.1% DMSO
+22,Clone E,21 nM bortezomib,4,0.06992073277708517,4,WT parental,0.1% DMSO
+23,Clone E,210 nM bortezomib,4,-0.08827192119515957,4,WT parental,0.1% DMSO
+24,Clone E,0.1% DMSO,4,-0.050712600741114174,4,WT parental,0.1% DMSO
+25,Clone E,21 nM bortezomib,4,0.23040932756396332,4,WT parental,0.1% DMSO
+26,Clone E,0.1% DMSO,4,-0.056591325920143445,4,WT parental,0.1% DMSO
+27,Clone E,2.1 nM bortezomib,4,0.32860537497654446,4,WT parental,0.1% DMSO
+28,Clone E,21 nM bortezomib,4,0.12041359348942449,4,WT parental,0.1% DMSO
+29,Clone E,210 nM bortezomib,4,-0.1630646084636793,4,WT parental,0.1% DMSO
+30,WT parental,0.1% DMSO,4,0.46675815921117514,4,WT parental,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,4,-0.08238325762097164,4,WT parental,0.1% DMSO
+32,WT parental,21 nM bortezomib,4,-0.2301872077011868,4,WT parental,0.1% DMSO
+33,WT parental,210 nM bortezomib,4,-0.32871351311118535,4,WT parental,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,4,0.04784215338696687,4,WT parental,0.1% DMSO
+35,WT parental,210 nM bortezomib,4,-0.32691707095834954,4,WT parental,0.1% DMSO
+36,WT parental,0.1% DMSO,4,0.5438861212828102,4,WT parental,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,4,0.049102457874910264,4,WT parental,0.1% DMSO
+38,WT parental,21 nM bortezomib,4,-0.24111454392122308,4,WT parental,0.1% DMSO
+39,WT parental,210 nM bortezomib,4,-0.33459804174205243,4,WT parental,0.1% DMSO
+40,Clone A,0.1% DMSO,4,-0.058155517921149244,4,WT parental,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,4,0.1447297350265213,4,WT parental,0.1% DMSO
+42,Clone A,21 nM bortezomib,4,-0.30010581123210267,4,WT parental,0.1% DMSO
+43,Clone A,210 nM bortezomib,4,-0.5221395129837312,4,WT parental,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,4,0.006701683688546443,4,WT parental,0.1% DMSO
+45,Clone A,210 nM bortezomib,4,-0.5003522131532304,4,WT parental,0.1% DMSO
+46,Clone A,0.1% DMSO,4,-0.10407167976979126,4,WT parental,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,4,0.0903907294483009,4,WT parental,0.1% DMSO
+48,Clone A,21 nM bortezomib,4,-0.23271536833702536,4,WT parental,0.1% DMSO
+49,Clone A,210 nM bortezomib,4,-0.3890259692913551,4,WT parental,0.1% DMSO
+50,Clone E,0.1% DMSO,4,-0.17841803020082536,4,WT parental,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,4,-0.04107248471943897,4,WT parental,0.1% DMSO
+52,Clone E,21 nM bortezomib,4,0.060079252265588114,4,WT parental,0.1% DMSO
+53,Clone E,210 nM bortezomib,4,-0.3287553703144568,4,WT parental,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,4,0.13196990304116712,4,WT parental,0.1% DMSO
+55,Clone E,210 nM bortezomib,4,-0.2258192627280821,4,WT parental,0.1% DMSO
+56,Clone E,0.1% DMSO,4,-0.17790706922588684,4,WT parental,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,4,0.16164703851470258,4,WT parental,0.1% DMSO
+58,Clone E,21 nM bortezomib,4,0.07505231562823994,4,WT parental,0.1% DMSO
+59,Clone E,210 nM bortezomib,4,-0.2236360755214849,4,WT parental,0.1% DMSO
+6,WT parental,0.1% DMSO,5,-0.05556015605002113,5,WT parental,21 nM bortezomib
+7,WT parental,2.1 nM bortezomib,5,0.5673674670936122,5,WT parental,21 nM bortezomib
+8,WT parental,21 nM bortezomib,5,0.6941753753390847,5,WT parental,21 nM bortezomib
+9,WT parental,210 nM bortezomib,5,0.6561538051951421,5,WT parental,21 nM bortezomib
+10,Clone A,0.1% DMSO,5,-0.3987166912430232,5,WT parental,21 nM bortezomib
+11,Clone A,2.1 nM bortezomib,5,-0.13765858204117074,5,WT parental,21 nM bortezomib
+12,Clone A,21 nM bortezomib,5,0.02384904486527295,5,WT parental,21 nM bortezomib
+13,Clone A,210 nM bortezomib,5,0.015500546818121184,5,WT parental,21 nM bortezomib
+14,Clone A,0.1% DMSO,5,-0.29610852770654433,5,WT parental,21 nM bortezomib
+15,Clone A,21 nM bortezomib,5,-0.004020182648737525,5,WT parental,21 nM bortezomib
+16,Clone A,0.1% DMSO,5,-0.3146255557463797,5,WT parental,21 nM bortezomib
+17,Clone A,2.1 nM bortezomib,5,-0.2655695761880203,5,WT parental,21 nM bortezomib
+18,Clone A,21 nM bortezomib,5,-0.08954928285367604,5,WT parental,21 nM bortezomib
+19,Clone A,210 nM bortezomib,5,-0.0019186127764683717,5,WT parental,21 nM bortezomib
+20,Clone E,0.1% DMSO,5,-0.30035717390266564,5,WT parental,21 nM bortezomib
+21,Clone E,2.1 nM bortezomib,5,-0.4861264918153147,5,WT parental,21 nM bortezomib
+22,Clone E,21 nM bortezomib,5,-0.0872314772229769,5,WT parental,21 nM bortezomib
+23,Clone E,210 nM bortezomib,5,-0.14325809519287128,5,WT parental,21 nM bortezomib
+24,Clone E,0.1% DMSO,5,-0.5535428571807918,5,WT parental,21 nM bortezomib
+25,Clone E,21 nM bortezomib,5,-0.21229246178918582,5,WT parental,21 nM bortezomib
+26,Clone E,0.1% DMSO,5,-0.47069768311818677,5,WT parental,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,5,-0.46872585116047844,5,WT parental,21 nM bortezomib
+28,Clone E,21 nM bortezomib,5,-0.21157381734599406,5,WT parental,21 nM bortezomib
+29,Clone E,210 nM bortezomib,5,-0.2345975938356846,5,WT parental,21 nM bortezomib
+30,WT parental,0.1% DMSO,5,-0.14349274099837775,5,WT parental,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,5,0.4215424055141218,5,WT parental,21 nM bortezomib
+32,WT parental,21 nM bortezomib,5,0.5757031901317816,5,WT parental,21 nM bortezomib
+33,WT parental,210 nM bortezomib,5,0.5695807618823743,5,WT parental,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,5,0.45435679179078015,5,WT parental,21 nM bortezomib
+35,WT parental,210 nM bortezomib,5,0.46442917375337045,5,WT parental,21 nM bortezomib
+36,WT parental,0.1% DMSO,5,-0.12213143997081087,5,WT parental,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,5,0.37651229336496506,5,WT parental,21 nM bortezomib
+38,WT parental,21 nM bortezomib,5,0.6667584850814067,5,WT parental,21 nM bortezomib
+39,WT parental,210 nM bortezomib,5,0.5801047026349399,5,WT parental,21 nM bortezomib
+40,Clone A,0.1% DMSO,5,-0.4693480043181702,5,WT parental,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,5,-0.35823759514182624,5,WT parental,21 nM bortezomib
+42,Clone A,21 nM bortezomib,5,-0.08995984626975514,5,WT parental,21 nM bortezomib
+43,Clone A,210 nM bortezomib,5,-0.05114708292291975,5,WT parental,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,5,-0.18538387116191457,5,WT parental,21 nM bortezomib
+45,Clone A,210 nM bortezomib,5,0.00823900973606762,5,WT parental,21 nM bortezomib
+46,Clone A,0.1% DMSO,5,-0.5001157649256648,5,WT parental,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,5,-0.1970583190004087,5,WT parental,21 nM bortezomib
+48,Clone A,21 nM bortezomib,5,0.02252855362667593,5,WT parental,21 nM bortezomib
+49,Clone A,210 nM bortezomib,5,0.009731162738906174,5,WT parental,21 nM bortezomib
+50,Clone E,0.1% DMSO,5,-0.4429866895663892,5,WT parental,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,5,-0.5901344102198076,5,WT parental,21 nM bortezomib
+52,Clone E,21 nM bortezomib,5,-0.29138896501216777,5,WT parental,21 nM bortezomib
+53,Clone E,210 nM bortezomib,5,-0.18241359182691663,5,WT parental,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,5,-0.45455787840962353,5,WT parental,21 nM bortezomib
+55,Clone E,210 nM bortezomib,5,-0.1823840955361915,5,WT parental,21 nM bortezomib
+56,Clone E,0.1% DMSO,5,-0.558499220333035,5,WT parental,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,5,-0.40543832579189937,5,WT parental,21 nM bortezomib
+58,Clone E,21 nM bortezomib,5,-0.10650537752833213,5,WT parental,21 nM bortezomib
+59,Clone E,210 nM bortezomib,5,-0.061319973220539774,5,WT parental,21 nM bortezomib
+7,WT parental,2.1 nM bortezomib,6,0.48288450328110016,6,WT parental,0.1% DMSO
+8,WT parental,21 nM bortezomib,6,0.019412989058825332,6,WT parental,0.1% DMSO
+9,WT parental,210 nM bortezomib,6,0.031037801878807003,6,WT parental,0.1% DMSO
+10,Clone A,0.1% DMSO,6,-0.1335943296773024,6,WT parental,0.1% DMSO
+11,Clone A,2.1 nM bortezomib,6,0.07062503660875263,6,WT parental,0.1% DMSO
+12,Clone A,21 nM bortezomib,6,-0.1946346869287964,6,WT parental,0.1% DMSO
+13,Clone A,210 nM bortezomib,6,-0.6136219821500722,6,WT parental,0.1% DMSO
+14,Clone A,0.1% DMSO,6,0.3543048226664846,6,WT parental,0.1% DMSO
+15,Clone A,21 nM bortezomib,6,-0.10608767949044877,6,WT parental,0.1% DMSO
+16,Clone A,0.1% DMSO,6,0.358025000479388,6,WT parental,0.1% DMSO
+17,Clone A,2.1 nM bortezomib,6,0.34435498167633577,6,WT parental,0.1% DMSO
+18,Clone A,21 nM bortezomib,6,0.019051322439132396,6,WT parental,0.1% DMSO
+19,Clone A,210 nM bortezomib,6,-0.35505196059174327,6,WT parental,0.1% DMSO
+20,Clone E,0.1% DMSO,6,-0.15666787333654145,6,WT parental,0.1% DMSO
+21,Clone E,2.1 nM bortezomib,6,-0.05035588852933716,6,WT parental,0.1% DMSO
+22,Clone E,21 nM bortezomib,6,0.024908161495809468,6,WT parental,0.1% DMSO
+23,Clone E,210 nM bortezomib,6,-0.15692856307748868,6,WT parental,0.1% DMSO
+24,Clone E,0.1% DMSO,6,0.04550647727237084,6,WT parental,0.1% DMSO
+25,Clone E,21 nM bortezomib,6,0.31217662134934276,6,WT parental,0.1% DMSO
+26,Clone E,0.1% DMSO,6,0.14978648098912292,6,WT parental,0.1% DMSO
+27,Clone E,2.1 nM bortezomib,6,0.3895026765241555,6,WT parental,0.1% DMSO
+28,Clone E,21 nM bortezomib,6,0.26237069545783,6,WT parental,0.1% DMSO
+29,Clone E,210 nM bortezomib,6,-0.050772759713220435,6,WT parental,0.1% DMSO
+30,WT parental,0.1% DMSO,6,0.2640260067857596,6,WT parental,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,6,-0.1314960741261131,6,WT parental,0.1% DMSO
+32,WT parental,21 nM bortezomib,6,-0.3822586573309239,6,WT parental,0.1% DMSO
+33,WT parental,210 nM bortezomib,6,-0.32883736578051515,6,WT parental,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,6,-0.02286684410937908,6,WT parental,0.1% DMSO
+35,WT parental,210 nM bortezomib,6,-0.261250216317063,6,WT parental,0.1% DMSO
+36,WT parental,0.1% DMSO,6,0.5648313224800988,6,WT parental,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,6,0.10492631867596347,6,WT parental,0.1% DMSO
+38,WT parental,21 nM bortezomib,6,-0.21669904223706268,6,WT parental,0.1% DMSO
+39,WT parental,210 nM bortezomib,6,-0.23714485009513042,6,WT parental,0.1% DMSO
+40,Clone A,0.1% DMSO,6,-0.17636962077802681,6,WT parental,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,6,0.06491045110784983,6,WT parental,0.1% DMSO
+42,Clone A,21 nM bortezomib,6,-0.42874308215258666,6,WT parental,0.1% DMSO
+43,Clone A,210 nM bortezomib,6,-0.6097157512368536,6,WT parental,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,6,0.06899553032206619,6,WT parental,0.1% DMSO
+45,Clone A,210 nM bortezomib,6,-0.48710366222200924,6,WT parental,0.1% DMSO
+46,Clone A,0.1% DMSO,6,0.1566364844472634,6,WT parental,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,6,0.23915800320553396,6,WT parental,0.1% DMSO
+48,Clone A,21 nM bortezomib,6,-0.13831658541753636,6,WT parental,0.1% DMSO
+49,Clone A,210 nM bortezomib,6,-0.34660165567355744,6,WT parental,0.1% DMSO
+50,Clone E,0.1% DMSO,6,-0.29207459527249297,6,WT parental,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,6,0.06992036329247672,6,WT parental,0.1% DMSO
+52,Clone E,21 nM bortezomib,6,0.06238398941743794,6,WT parental,0.1% DMSO
+53,Clone E,210 nM bortezomib,6,-0.27588886025309645,6,WT parental,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,6,0.25426000322301906,6,WT parental,0.1% DMSO
+55,Clone E,210 nM bortezomib,6,-0.13971036258040678,6,WT parental,0.1% DMSO
+56,Clone E,0.1% DMSO,6,0.0907156619115722,6,WT parental,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,6,0.30131634848691635,6,WT parental,0.1% DMSO
+58,Clone E,21 nM bortezomib,6,0.16054517294696938,6,WT parental,0.1% DMSO
+59,Clone E,210 nM bortezomib,6,-0.19311431867556955,6,WT parental,0.1% DMSO
+8,WT parental,21 nM bortezomib,7,0.5025492663568633,7,WT parental,2.1 nM bortezomib
+9,WT parental,210 nM bortezomib,7,0.3497073840497803,7,WT parental,2.1 nM bortezomib
+10,Clone A,0.1% DMSO,7,-0.337474314776301,7,WT parental,2.1 nM bortezomib
+11,Clone A,2.1 nM bortezomib,7,0.013499122190594362,7,WT parental,2.1 nM bortezomib
+12,Clone A,21 nM bortezomib,7,-0.09465579106690024,7,WT parental,2.1 nM bortezomib
+13,Clone A,210 nM bortezomib,7,-0.4211119069770525,7,WT parental,2.1 nM bortezomib
+14,Clone A,0.1% DMSO,7,-0.05558568180546139,7,WT parental,2.1 nM bortezomib
+15,Clone A,21 nM bortezomib,7,-0.008025413999183918,7,WT parental,2.1 nM bortezomib
+16,Clone A,0.1% DMSO,7,-0.017767113734078094,7,WT parental,2.1 nM bortezomib
+17,Clone A,2.1 nM bortezomib,7,0.07184452815647105,7,WT parental,2.1 nM bortezomib
+18,Clone A,21 nM bortezomib,7,0.056437668582563605,7,WT parental,2.1 nM bortezomib
+19,Clone A,210 nM bortezomib,7,-0.24376072756588144,7,WT parental,2.1 nM bortezomib
+20,Clone E,0.1% DMSO,7,-0.1989699465146049,7,WT parental,2.1 nM bortezomib
+21,Clone E,2.1 nM bortezomib,7,-0.273361750592155,7,WT parental,2.1 nM bortezomib
+22,Clone E,21 nM bortezomib,7,-0.11497803970940937,7,WT parental,2.1 nM bortezomib
+23,Clone E,210 nM bortezomib,7,-0.3359430998496058,7,WT parental,2.1 nM bortezomib
+24,Clone E,0.1% DMSO,7,-0.2844859175608901,7,WT parental,2.1 nM bortezomib
+25,Clone E,21 nM bortezomib,7,0.004388667139913588,7,WT parental,2.1 nM bortezomib
+26,Clone E,0.1% DMSO,7,-0.20645886804897226,7,WT parental,2.1 nM bortezomib
+27,Clone E,2.1 nM bortezomib,7,0.0684793574971432,7,WT parental,2.1 nM bortezomib
+28,Clone E,21 nM bortezomib,7,-0.044546631369384304,7,WT parental,2.1 nM bortezomib
+29,Clone E,210 nM bortezomib,7,-0.26959857910535556,7,WT parental,2.1 nM bortezomib
+30,WT parental,0.1% DMSO,7,0.03742881055887008,7,WT parental,2.1 nM bortezomib
+31,WT parental,2.1 nM bortezomib,7,0.34170938889084496,7,WT parental,2.1 nM bortezomib
+32,WT parental,21 nM bortezomib,7,0.16099284375810524,7,WT parental,2.1 nM bortezomib
+33,WT parental,210 nM bortezomib,7,0.12809699050272866,7,WT parental,2.1 nM bortezomib
+34,WT parental,2.1 nM bortezomib,7,0.5015424786951973,7,WT parental,2.1 nM bortezomib
+35,WT parental,210 nM bortezomib,7,0.2385501296675876,7,WT parental,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,7,0.2458521805055142,7,WT parental,2.1 nM bortezomib
+37,WT parental,2.1 nM bortezomib,7,0.4715688266272326,7,WT parental,2.1 nM bortezomib
+38,WT parental,21 nM bortezomib,7,0.2887472316752406,7,WT parental,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,7,0.18947139422688794,7,WT parental,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,7,-0.4326618916268483,7,WT parental,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,7,-0.1651457641501574,7,WT parental,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,7,-0.2882821079564263,7,WT parental,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,7,-0.4902818062033691,7,WT parental,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,7,0.046016131061702804,7,WT parental,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,7,-0.33269209950528306,7,WT parental,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,7,-0.2877995323196468,7,WT parental,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,7,0.13142549224269984,7,WT parental,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,7,0.09663448765958277,7,WT parental,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,7,-0.31596545045777197,7,WT parental,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,7,-0.47573277056564844,7,WT parental,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,7,-0.312082025450882,7,WT parental,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,7,-0.2529601649315723,7,WT parental,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,7,-0.49544026592696305,7,WT parental,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,7,0.030504422645619606,7,WT parental,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,7,-0.27780070866403467,7,WT parental,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,7,-0.3190672515746475,7,WT parental,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,7,0.01525122820255167,7,WT parental,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,7,-0.15866950248709227,7,WT parental,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,7,-0.38171273211801626,7,WT parental,2.1 nM bortezomib
+9,WT parental,210 nM bortezomib,8,0.7186080668817334,8,WT parental,21 nM bortezomib
+10,Clone A,0.1% DMSO,8,-0.5009137643960173,8,WT parental,21 nM bortezomib
+11,Clone A,2.1 nM bortezomib,8,-0.33309199264993405,8,WT parental,21 nM bortezomib
+12,Clone A,21 nM bortezomib,8,-0.030139446646998417,8,WT parental,21 nM bortezomib
+13,Clone A,210 nM bortezomib,8,-0.11733111856527263,8,WT parental,21 nM bortezomib
+14,Clone A,0.1% DMSO,8,-0.20063573957648081,8,WT parental,21 nM bortezomib
+15,Clone A,21 nM bortezomib,8,-0.08619403959696928,8,WT parental,21 nM bortezomib
+16,Clone A,0.1% DMSO,8,-0.029161135093137256,8,WT parental,21 nM bortezomib
+17,Clone A,2.1 nM bortezomib,8,-0.06887331846006324,8,WT parental,21 nM bortezomib
+18,Clone A,21 nM bortezomib,8,0.06689496868924663,8,WT parental,21 nM bortezomib
+19,Clone A,210 nM bortezomib,8,0.30287400063800024,8,WT parental,21 nM bortezomib
+20,Clone E,0.1% DMSO,8,-0.20882489474208987,8,WT parental,21 nM bortezomib
+21,Clone E,2.1 nM bortezomib,8,-0.6562410173451431,8,WT parental,21 nM bortezomib
+22,Clone E,21 nM bortezomib,8,-0.3337233035910872,8,WT parental,21 nM bortezomib
+23,Clone E,210 nM bortezomib,8,-0.3587233388316556,8,WT parental,21 nM bortezomib
+24,Clone E,0.1% DMSO,8,-0.36678765372505134,8,WT parental,21 nM bortezomib
+25,Clone E,21 nM bortezomib,8,-0.23047416972628973,8,WT parental,21 nM bortezomib
+26,Clone E,0.1% DMSO,8,-0.18351034227481333,8,WT parental,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,8,-0.32296009914226914,8,WT parental,21 nM bortezomib
+28,Clone E,21 nM bortezomib,8,-0.16922869784776112,8,WT parental,21 nM bortezomib
+29,Clone E,210 nM bortezomib,8,-0.08879212992694652,8,WT parental,21 nM bortezomib
+30,WT parental,0.1% DMSO,8,-0.4814266723596846,8,WT parental,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,8,0.13939810313464995,8,WT parental,21 nM bortezomib
+32,WT parental,21 nM bortezomib,8,0.3055371647625099,8,WT parental,21 nM bortezomib
+33,WT parental,210 nM bortezomib,8,0.42426005966914543,8,WT parental,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,8,0.2540193556494116,8,WT parental,21 nM bortezomib
+35,WT parental,210 nM bortezomib,8,0.4625123111023024,8,WT parental,21 nM bortezomib
+36,WT parental,0.1% DMSO,8,-0.11915633933426735,8,WT parental,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,8,0.3512752673309743,8,WT parental,21 nM bortezomib
+38,WT parental,21 nM bortezomib,8,0.6661659671539868,8,WT parental,21 nM bortezomib
+39,WT parental,210 nM bortezomib,8,0.6772021879127005,8,WT parental,21 nM bortezomib
+40,Clone A,0.1% DMSO,8,-0.6056170314126973,8,WT parental,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,8,-0.5506557841391853,8,WT parental,21 nM bortezomib
+42,Clone A,21 nM bortezomib,8,-0.28650895865725334,8,WT parental,21 nM bortezomib
+43,Clone A,210 nM bortezomib,8,-0.07671154082978245,8,WT parental,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,8,-0.09256004513089319,8,WT parental,21 nM bortezomib
+45,Clone A,210 nM bortezomib,8,0.13522397059190847,8,WT parental,21 nM bortezomib
+46,Clone A,0.1% DMSO,8,-0.07765903985985141,8,WT parental,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,8,-0.009150746201590416,8,WT parental,21 nM bortezomib
+48,Clone A,21 nM bortezomib,8,0.2591690588882624,8,WT parental,21 nM bortezomib
+49,Clone A,210 nM bortezomib,8,0.19775811204220753,8,WT parental,21 nM bortezomib
+50,Clone E,0.1% DMSO,8,-0.5512626034537543,8,WT parental,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,8,-0.6130146917654092,8,WT parental,21 nM bortezomib
+52,Clone E,21 nM bortezomib,8,-0.3964132432623099,8,WT parental,21 nM bortezomib
+53,Clone E,210 nM bortezomib,8,-0.09972781391773473,8,WT parental,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,8,-0.30787997381794246,8,WT parental,21 nM bortezomib
+55,Clone E,210 nM bortezomib,8,-0.09989101766251869,8,WT parental,21 nM bortezomib
+56,Clone E,0.1% DMSO,8,-0.21108922587126802,8,WT parental,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,8,-0.06732591832382898,8,WT parental,21 nM bortezomib
+58,Clone E,21 nM bortezomib,8,0.04329422269056939,8,WT parental,21 nM bortezomib
+59,Clone E,210 nM bortezomib,8,0.18073672390919718,8,WT parental,21 nM bortezomib
+10,Clone A,0.1% DMSO,9,-0.29369635233367297,9,WT parental,210 nM bortezomib
+11,Clone A,2.1 nM bortezomib,9,-0.05303586225793258,9,WT parental,210 nM bortezomib
+12,Clone A,21 nM bortezomib,9,0.03144702095833563,9,WT parental,210 nM bortezomib
+13,Clone A,210 nM bortezomib,9,-0.1374301848082557,9,WT parental,210 nM bortezomib
+14,Clone A,0.1% DMSO,9,0.09453164671401075,9,WT parental,210 nM bortezomib
+15,Clone A,21 nM bortezomib,9,-0.052408387885546276,9,WT parental,210 nM bortezomib
+16,Clone A,0.1% DMSO,9,0.13841335636186333,9,WT parental,210 nM bortezomib
+17,Clone A,2.1 nM bortezomib,9,0.08769949518719974,9,WT parental,210 nM bortezomib
+18,Clone A,21 nM bortezomib,9,0.02215199005119553,9,WT parental,210 nM bortezomib
+19,Clone A,210 nM bortezomib,9,0.18097781374547,9,WT parental,210 nM bortezomib
+20,Clone E,0.1% DMSO,9,-0.29892299246793314,9,WT parental,210 nM bortezomib
+21,Clone E,2.1 nM bortezomib,9,-0.530535090190379,9,WT parental,210 nM bortezomib
+22,Clone E,21 nM bortezomib,9,-0.33008796570630317,9,WT parental,210 nM bortezomib
+23,Clone E,210 nM bortezomib,9,-0.2266686272226125,9,WT parental,210 nM bortezomib
+24,Clone E,0.1% DMSO,9,-0.2344163557758267,9,WT parental,210 nM bortezomib
+25,Clone E,21 nM bortezomib,9,-0.28651813667602793,9,WT parental,210 nM bortezomib
+26,Clone E,0.1% DMSO,9,-0.09380528384414744,9,WT parental,210 nM bortezomib
+27,Clone E,2.1 nM bortezomib,9,-0.2880305398500364,9,WT parental,210 nM bortezomib
+28,Clone E,21 nM bortezomib,9,-0.20901956563416,9,WT parental,210 nM bortezomib
+29,Clone E,210 nM bortezomib,9,-0.08061390149898585,9,WT parental,210 nM bortezomib
+30,WT parental,0.1% DMSO,9,-0.53198226206684,9,WT parental,210 nM bortezomib
+31,WT parental,2.1 nM bortezomib,9,-0.075741798990924,9,WT parental,210 nM bortezomib
+32,WT parental,21 nM bortezomib,9,0.1183142798446932,9,WT parental,210 nM bortezomib
+33,WT parental,210 nM bortezomib,9,0.3535611442837246,9,WT parental,210 nM bortezomib
+34,WT parental,2.1 nM bortezomib,9,-0.023143420210710863,9,WT parental,210 nM bortezomib
+35,WT parental,210 nM bortezomib,9,0.23377709400633767,9,WT parental,210 nM bortezomib
+36,WT parental,0.1% DMSO,9,-0.3232959000240293,9,WT parental,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,9,0.07536908034999487,9,WT parental,210 nM bortezomib
+38,WT parental,21 nM bortezomib,9,0.44530119265048407,9,WT parental,210 nM bortezomib
+39,WT parental,210 nM bortezomib,9,0.5762523350543145,9,WT parental,210 nM bortezomib
+40,Clone A,0.1% DMSO,9,-0.42160755328340266,9,WT parental,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,9,-0.3610904558948103,9,WT parental,210 nM bortezomib
+42,Clone A,21 nM bortezomib,9,-0.3138958313500915,9,WT parental,210 nM bortezomib
+43,Clone A,210 nM bortezomib,9,-0.05869363382030946,9,WT parental,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,9,-0.0436978568278991,9,WT parental,210 nM bortezomib
+45,Clone A,210 nM bortezomib,9,-0.03527244356782618,9,WT parental,210 nM bortezomib
+46,Clone A,0.1% DMSO,9,-0.05465402475270364,9,WT parental,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,9,0.007567609643078992,9,WT parental,210 nM bortezomib
+48,Clone A,21 nM bortezomib,9,0.15834231031388168,9,WT parental,210 nM bortezomib
+49,Clone A,210 nM bortezomib,9,0.22694283881253063,9,WT parental,210 nM bortezomib
+50,Clone E,0.1% DMSO,9,-0.3820830511857142,9,WT parental,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,9,-0.6630610809225215,9,WT parental,210 nM bortezomib
+52,Clone E,21 nM bortezomib,9,-0.4316271650365206,9,WT parental,210 nM bortezomib
+53,Clone E,210 nM bortezomib,9,-0.11383365046851451,9,WT parental,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,9,-0.36620333124775023,9,WT parental,210 nM bortezomib
+55,Clone E,210 nM bortezomib,9,-0.15745624675199338,9,WT parental,210 nM bortezomib
+56,Clone E,0.1% DMSO,9,-0.1496220219192307,9,WT parental,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,9,-0.07779455025683625,9,WT parental,210 nM bortezomib
+58,Clone E,21 nM bortezomib,9,0.1605936631263455,9,WT parental,210 nM bortezomib
+59,Clone E,210 nM bortezomib,9,0.34496422451787934,9,WT parental,210 nM bortezomib
+11,Clone A,2.1 nM bortezomib,10,0.6244307721375147,10,Clone A,0.1% DMSO
+12,Clone A,21 nM bortezomib,10,0.13705147408531518,10,Clone A,0.1% DMSO
+13,Clone A,210 nM bortezomib,10,-0.06795252344873777,10,Clone A,0.1% DMSO
+14,Clone A,0.1% DMSO,10,0.49556096068396654,10,Clone A,0.1% DMSO
+15,Clone A,21 nM bortezomib,10,-0.04325120389559693,10,Clone A,0.1% DMSO
+16,Clone A,0.1% DMSO,10,0.35122633953954613,10,Clone A,0.1% DMSO
+17,Clone A,2.1 nM bortezomib,10,0.2745609617952111,10,Clone A,0.1% DMSO
+18,Clone A,21 nM bortezomib,10,-0.1803482887434639,10,Clone A,0.1% DMSO
+19,Clone A,210 nM bortezomib,10,-0.3485475393713288,10,Clone A,0.1% DMSO
+20,Clone E,0.1% DMSO,10,0.3818269778945971,10,Clone A,0.1% DMSO
+21,Clone E,2.1 nM bortezomib,10,0.5490053259092124,10,Clone A,0.1% DMSO
+22,Clone E,21 nM bortezomib,10,0.006012111582369473,10,Clone A,0.1% DMSO
+23,Clone E,210 nM bortezomib,10,-0.12248924440519793,10,Clone A,0.1% DMSO
+24,Clone E,0.1% DMSO,10,0.5792642706744798,10,Clone A,0.1% DMSO
+25,Clone E,21 nM bortezomib,10,-0.09453788156906026,10,Clone A,0.1% DMSO
+26,Clone E,0.1% DMSO,10,0.35038675330663854,10,Clone A,0.1% DMSO
+27,Clone E,2.1 nM bortezomib,10,0.12549352926488672,10,Clone A,0.1% DMSO
+28,Clone E,21 nM bortezomib,10,-0.2577069762454085,10,Clone A,0.1% DMSO
+29,Clone E,210 nM bortezomib,10,-0.20154958356526007,10,Clone A,0.1% DMSO
+30,WT parental,0.1% DMSO,10,0.23029422147171702,10,Clone A,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,10,-0.04688211279061253,10,Clone A,0.1% DMSO
+32,WT parental,21 nM bortezomib,10,-0.23350164540081988,10,Clone A,0.1% DMSO
+33,WT parental,210 nM bortezomib,10,-0.32138709141121186,10,Clone A,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,10,-0.21178797657491857,10,Clone A,0.1% DMSO
+35,WT parental,210 nM bortezomib,10,-0.4372624391149344,10,Clone A,0.1% DMSO
+36,WT parental,0.1% DMSO,10,-0.1995449273727134,10,Clone A,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,10,-0.31397776676118744,10,Clone A,0.1% DMSO
+38,WT parental,21 nM bortezomib,10,-0.4732336933603681,10,Clone A,0.1% DMSO
+39,WT parental,210 nM bortezomib,10,-0.47509452194328455,10,Clone A,0.1% DMSO
+40,Clone A,0.1% DMSO,10,0.804310543452275,10,Clone A,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,10,0.48494088717433165,10,Clone A,0.1% DMSO
+42,Clone A,21 nM bortezomib,10,0.04783325357724635,10,Clone A,0.1% DMSO
+43,Clone A,210 nM bortezomib,10,-0.0861351920781951,10,Clone A,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,10,0.3272970177306674,10,Clone A,0.1% DMSO
+45,Clone A,210 nM bortezomib,10,-0.24486450788679479,10,Clone A,0.1% DMSO
+46,Clone A,0.1% DMSO,10,0.2808039274308163,10,Clone A,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,10,0.021589399657585235,10,Clone A,0.1% DMSO
+48,Clone A,21 nM bortezomib,10,-0.29804151132024076,10,Clone A,0.1% DMSO
+49,Clone A,210 nM bortezomib,10,-0.3188513763811965,10,Clone A,0.1% DMSO
+50,Clone E,0.1% DMSO,10,0.7085814780888982,10,Clone A,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,10,0.333695928202143,10,Clone A,0.1% DMSO
+52,Clone E,21 nM bortezomib,10,-0.016185279284510638,10,Clone A,0.1% DMSO
+53,Clone E,210 nM bortezomib,10,-0.2039040346352426,10,Clone A,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,10,0.09634241328931148,10,Clone A,0.1% DMSO
+55,Clone E,210 nM bortezomib,10,-0.2823159112443979,10,Clone A,0.1% DMSO
+56,Clone E,0.1% DMSO,10,0.21431797932066135,10,Clone A,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,10,-0.03327268891455702,10,Clone A,0.1% DMSO
+58,Clone E,21 nM bortezomib,10,-0.22565106526375256,10,Clone A,0.1% DMSO
+59,Clone E,210 nM bortezomib,10,-0.19632639486082484,10,Clone A,0.1% DMSO
+12,Clone A,21 nM bortezomib,11,0.47630174053305097,11,Clone A,2.1 nM bortezomib
+13,Clone A,210 nM bortezomib,11,-0.11345581121767567,11,Clone A,2.1 nM bortezomib
+14,Clone A,0.1% DMSO,11,0.6416505593565945,11,Clone A,2.1 nM bortezomib
+15,Clone A,21 nM bortezomib,11,0.293249174618329,11,Clone A,2.1 nM bortezomib
+16,Clone A,0.1% DMSO,11,0.35543100575996844,11,Clone A,2.1 nM bortezomib
+17,Clone A,2.1 nM bortezomib,11,0.5210564020333189,11,Clone A,2.1 nM bortezomib
+18,Clone A,21 nM bortezomib,11,0.13509859977923377,11,Clone A,2.1 nM bortezomib
+19,Clone A,210 nM bortezomib,11,-0.3182215907793654,11,Clone A,2.1 nM bortezomib
+20,Clone E,0.1% DMSO,11,0.002232604641837582,11,Clone A,2.1 nM bortezomib
+21,Clone E,2.1 nM bortezomib,11,0.3919424591639425,11,Clone A,2.1 nM bortezomib
+22,Clone E,21 nM bortezomib,11,0.05940345380733511,11,Clone A,2.1 nM bortezomib
+23,Clone E,210 nM bortezomib,11,-0.24317486391857435,11,Clone A,2.1 nM bortezomib
+24,Clone E,0.1% DMSO,11,0.3584613530363919,11,Clone A,2.1 nM bortezomib
+25,Clone E,21 nM bortezomib,11,-0.05747279941802844,11,Clone A,2.1 nM bortezomib
+26,Clone E,0.1% DMSO,11,0.17700029486857655,11,Clone A,2.1 nM bortezomib
+27,Clone E,2.1 nM bortezomib,11,0.1974563875161209,11,Clone A,2.1 nM bortezomib
+28,Clone E,21 nM bortezomib,11,-0.15253358237904305,11,Clone A,2.1 nM bortezomib
+29,Clone E,210 nM bortezomib,11,-0.3128521781428448,11,Clone A,2.1 nM bortezomib
+30,WT parental,0.1% DMSO,11,0.11944374088854888,11,Clone A,2.1 nM bortezomib
+31,WT parental,2.1 nM bortezomib,11,-0.048161980337908215,11,Clone A,2.1 nM bortezomib
+32,WT parental,21 nM bortezomib,11,-0.343823479549581,11,Clone A,2.1 nM bortezomib
+33,WT parental,210 nM bortezomib,11,-0.37576710099576766,11,Clone A,2.1 nM bortezomib
+34,WT parental,2.1 nM bortezomib,11,-0.0963140658005523,11,Clone A,2.1 nM bortezomib
+35,WT parental,210 nM bortezomib,11,-0.46624005275830405,11,Clone A,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,11,-0.21773023005153783,11,Clone A,2.1 nM bortezomib
+37,WT parental,2.1 nM bortezomib,11,-0.2931915060915965,11,Clone A,2.1 nM bortezomib
+38,WT parental,21 nM bortezomib,11,-0.5044735414399342,11,Clone A,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,11,-0.465633218354558,11,Clone A,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,11,0.5638723951142957,11,Clone A,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,11,0.6529391425527524,11,Clone A,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,11,0.13402706036059917,11,Clone A,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,11,-0.2338350804997536,11,Clone A,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,11,0.4872632208524848,11,Clone A,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,11,-0.31284991638210147,11,Clone A,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,11,0.09658474157874679,11,Clone A,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,11,0.31173450747114617,11,Clone A,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,11,0.01209864647326629,11,Clone A,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,11,-0.28994223730391294,11,Clone A,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,11,0.29633019128975846,11,Clone A,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,11,0.08378419022926577,11,Clone A,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,11,-0.11716588157100781,11,Clone A,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,11,-0.45173677516137795,11,Clone A,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,11,0.16526669830424742,11,Clone A,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,11,-0.48105970616323696,11,Clone A,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,11,-0.034445037732905415,11,Clone A,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,11,-0.07274856905737709,11,Clone A,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,11,-0.2937919861656609,11,Clone A,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,11,-0.3352489129791503,11,Clone A,2.1 nM bortezomib
+13,Clone A,210 nM bortezomib,12,0.12213776376148618,12,Clone A,21 nM bortezomib
+14,Clone A,0.1% DMSO,12,0.2909535401009914,12,Clone A,21 nM bortezomib
+15,Clone A,21 nM bortezomib,12,0.7451109885455304,12,Clone A,21 nM bortezomib
+16,Clone A,0.1% DMSO,12,0.08281452679467627,12,Clone A,21 nM bortezomib
+17,Clone A,2.1 nM bortezomib,12,0.38274554200198385,12,Clone A,21 nM bortezomib
+18,Clone A,21 nM bortezomib,12,0.6429238592809844,12,Clone A,21 nM bortezomib
+19,Clone A,210 nM bortezomib,12,0.016681373410937974,12,Clone A,21 nM bortezomib
+20,Clone E,0.1% DMSO,12,-0.3834023005737404,12,Clone A,21 nM bortezomib
+21,Clone E,2.1 nM bortezomib,12,-0.08360043868374847,12,Clone A,21 nM bortezomib
+22,Clone E,21 nM bortezomib,12,0.2587638310407051,12,Clone A,21 nM bortezomib
+23,Clone E,210 nM bortezomib,12,-0.15965131803530305,12,Clone A,21 nM bortezomib
+24,Clone E,0.1% DMSO,12,-0.1404778881362139,12,Clone A,21 nM bortezomib
+25,Clone E,21 nM bortezomib,12,0.12973266951774295,12,Clone A,21 nM bortezomib
+26,Clone E,0.1% DMSO,12,-0.22789304160897667,12,Clone A,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,12,-0.2434076360142565,12,Clone A,21 nM bortezomib
+28,Clone E,21 nM bortezomib,12,0.1272563505410385,12,Clone A,21 nM bortezomib
+29,Clone E,210 nM bortezomib,12,-0.2240697350871623,12,Clone A,21 nM bortezomib
+30,WT parental,0.1% DMSO,12,-0.06329173843931171,12,Clone A,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,12,0.07277307649138585,12,Clone A,21 nM bortezomib
+32,WT parental,21 nM bortezomib,12,-0.13484308418998198,12,Clone A,21 nM bortezomib
+33,WT parental,210 nM bortezomib,12,-0.1918504679065826,12,Clone A,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,12,0.06865710872121815,12,Clone A,21 nM bortezomib
+35,WT parental,210 nM bortezomib,12,-0.3465736289606248,12,Clone A,21 nM bortezomib
+36,WT parental,0.1% DMSO,12,-0.29265799715328233,12,Clone A,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,12,-0.1122267606481219,12,Clone A,21 nM bortezomib
+38,WT parental,21 nM bortezomib,12,-0.1625850641915215,12,Clone A,21 nM bortezomib
+39,WT parental,210 nM bortezomib,12,-0.26523811893675575,12,Clone A,21 nM bortezomib
+40,Clone A,0.1% DMSO,12,0.2712914811998058,12,Clone A,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,12,0.42762078644397766,12,Clone A,21 nM bortezomib
+42,Clone A,21 nM bortezomib,12,0.5405604202261163,12,Clone A,21 nM bortezomib
+43,Clone A,210 nM bortezomib,12,0.037089475315496126,12,Clone A,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,12,0.31980064446029827,12,Clone A,21 nM bortezomib
+45,Clone A,210 nM bortezomib,12,-0.011548364193483382,12,Clone A,21 nM bortezomib
+46,Clone A,0.1% DMSO,12,0.010137335775314704,12,Clone A,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,12,0.21195104552976632,12,Clone A,21 nM bortezomib
+48,Clone A,21 nM bortezomib,12,0.5578584653772733,12,Clone A,21 nM bortezomib
+49,Clone A,210 nM bortezomib,12,0.004977360102987163,12,Clone A,21 nM bortezomib
+50,Clone E,0.1% DMSO,12,-0.1252166509948238,12,Clone A,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,12,-0.22966410008554705,12,Clone A,21 nM bortezomib
+52,Clone E,21 nM bortezomib,12,0.11634166121921205,12,Clone A,21 nM bortezomib
+53,Clone E,210 nM bortezomib,12,-0.28629270140908414,12,Clone A,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,12,-0.15895734278638124,12,Clone A,21 nM bortezomib
+55,Clone E,210 nM bortezomib,12,-0.44460775012968995,12,Clone A,21 nM bortezomib
+56,Clone E,0.1% DMSO,12,-0.2690335299302123,12,Clone A,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,12,-0.27754153811217236,12,Clone A,21 nM bortezomib
+58,Clone E,21 nM bortezomib,12,-0.013116330257904782,12,Clone A,21 nM bortezomib
+59,Clone E,210 nM bortezomib,12,-0.1453589867868142,12,Clone A,21 nM bortezomib
+14,Clone A,0.1% DMSO,13,-0.3737793479622088,13,Clone A,210 nM bortezomib
+15,Clone A,21 nM bortezomib,13,0.07918613705309277,13,Clone A,210 nM bortezomib
+16,Clone A,0.1% DMSO,13,-0.4815329231553943,13,Clone A,210 nM bortezomib
+17,Clone A,2.1 nM bortezomib,13,-0.3432778715975017,13,Clone A,210 nM bortezomib
+18,Clone A,21 nM bortezomib,13,-0.0048978978541818746,13,Clone A,210 nM bortezomib
+19,Clone A,210 nM bortezomib,13,0.6127999349713688,13,Clone A,210 nM bortezomib
+20,Clone E,0.1% DMSO,13,0.0004865110234928753,13,Clone A,210 nM bortezomib
+21,Clone E,2.1 nM bortezomib,13,0.030524615190746653,13,Clone A,210 nM bortezomib
+22,Clone E,21 nM bortezomib,13,-0.08257890848217006,13,Clone A,210 nM bortezomib
+23,Clone E,210 nM bortezomib,13,0.4921827983034232,13,Clone A,210 nM bortezomib
+24,Clone E,0.1% DMSO,13,-0.23675774304483954,13,Clone A,210 nM bortezomib
+25,Clone E,21 nM bortezomib,13,-0.27119868559716775,13,Clone A,210 nM bortezomib
+26,Clone E,0.1% DMSO,13,-0.32357558081196947,13,Clone A,210 nM bortezomib
+27,Clone E,2.1 nM bortezomib,13,-0.3521312096938689,13,Clone A,210 nM bortezomib
+28,Clone E,21 nM bortezomib,13,-0.2158389301899945,13,Clone A,210 nM bortezomib
+29,Clone E,210 nM bortezomib,13,0.2714488196462411,13,Clone A,210 nM bortezomib
+30,WT parental,0.1% DMSO,13,-0.06683303602761999,13,Clone A,210 nM bortezomib
+31,WT parental,2.1 nM bortezomib,13,-0.15160365684166868,13,Clone A,210 nM bortezomib
+32,WT parental,21 nM bortezomib,13,0.23641671413995077,13,Clone A,210 nM bortezomib
+33,WT parental,210 nM bortezomib,13,0.2572633081416183,13,Clone A,210 nM bortezomib
+34,WT parental,2.1 nM bortezomib,13,-0.2052625167449512,13,Clone A,210 nM bortezomib
+35,WT parental,210 nM bortezomib,13,0.27278392845077637,13,Clone A,210 nM bortezomib
+36,WT parental,0.1% DMSO,13,-0.37450388707792737,13,Clone A,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,13,-0.37252643559342885,13,Clone A,210 nM bortezomib
+38,WT parental,21 nM bortezomib,13,-0.0424774907513259,13,Clone A,210 nM bortezomib
+39,WT parental,210 nM bortezomib,13,0.1224935706934844,13,Clone A,210 nM bortezomib
+40,Clone A,0.1% DMSO,13,0.038794644527942734,13,Clone A,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,13,-0.12127291355391753,13,Clone A,210 nM bortezomib
+42,Clone A,21 nM bortezomib,13,0.33661067407684264,13,Clone A,210 nM bortezomib
+43,Clone A,210 nM bortezomib,13,0.8363137066523877,13,Clone A,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,13,-0.2694481932532478,13,Clone A,210 nM bortezomib
+45,Clone A,210 nM bortezomib,13,0.7061402911538873,13,Clone A,210 nM bortezomib
+46,Clone A,0.1% DMSO,13,-0.38772198784243844,13,Clone A,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,13,-0.23704680411537535,13,Clone A,210 nM bortezomib
+48,Clone A,21 nM bortezomib,13,-0.010574903720459817,13,Clone A,210 nM bortezomib
+49,Clone A,210 nM bortezomib,13,0.5737518451122248,13,Clone A,210 nM bortezomib
+50,Clone E,0.1% DMSO,13,0.047005318304275276,13,Clone A,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,13,-0.10023091844147851,13,Clone A,210 nM bortezomib
+52,Clone E,21 nM bortezomib,13,-0.06577576026139394,13,Clone A,210 nM bortezomib
+53,Clone E,210 nM bortezomib,13,0.5155130542077336,13,Clone A,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,13,-0.38115159786607616,13,Clone A,210 nM bortezomib
+55,Clone E,210 nM bortezomib,13,0.45492270207720165,13,Clone A,210 nM bortezomib
+56,Clone E,0.1% DMSO,13,-0.2948415018757279,13,Clone A,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,13,-0.404460765506979,13,Clone A,210 nM bortezomib
+58,Clone E,21 nM bortezomib,13,-0.2772573762127926,13,Clone A,210 nM bortezomib
+59,Clone E,210 nM bortezomib,13,0.18813478547102966,13,Clone A,210 nM bortezomib
+15,Clone A,21 nM bortezomib,14,0.1991321787789637,14,Clone A,0.1% DMSO
+16,Clone A,0.1% DMSO,14,0.6992572908795237,14,Clone A,0.1% DMSO
+17,Clone A,2.1 nM bortezomib,14,0.8100040778165766,14,Clone A,0.1% DMSO
+18,Clone A,21 nM bortezomib,14,0.1983395121029308,14,Clone A,0.1% DMSO
+19,Clone A,210 nM bortezomib,14,-0.2729299128748227,14,Clone A,0.1% DMSO
+20,Clone E,0.1% DMSO,14,-0.09361833639370055,14,Clone A,0.1% DMSO
+21,Clone E,2.1 nM bortezomib,14,0.16415405447675413,14,Clone A,0.1% DMSO
+22,Clone E,21 nM bortezomib,14,-0.14308850849782936,14,Clone A,0.1% DMSO
+23,Clone E,210 nM bortezomib,14,-0.33721477803966937,14,Clone A,0.1% DMSO
+24,Clone E,0.1% DMSO,14,0.5863322933316196,14,Clone A,0.1% DMSO
+25,Clone E,21 nM bortezomib,14,-0.02039529693852767,14,Clone A,0.1% DMSO
+26,Clone E,0.1% DMSO,14,0.4691005706210469,14,Clone A,0.1% DMSO
+27,Clone E,2.1 nM bortezomib,14,0.38359387028836583,14,Clone A,0.1% DMSO
+28,Clone E,21 nM bortezomib,14,-0.04288365955956006,14,Clone A,0.1% DMSO
+29,Clone E,210 nM bortezomib,14,-0.20128896324767348,14,Clone A,0.1% DMSO
+30,WT parental,0.1% DMSO,14,-0.13355174578952628,14,Clone A,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,14,-0.3517653947786256,14,Clone A,0.1% DMSO
+32,WT parental,21 nM bortezomib,14,-0.5954403718612291,14,Clone A,0.1% DMSO
+33,WT parental,210 nM bortezomib,14,-0.49375320343769985,14,Clone A,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,14,-0.33125077097740085,14,Clone A,0.1% DMSO
+35,WT parental,210 nM bortezomib,14,-0.6382003397863723,14,Clone A,0.1% DMSO
+36,WT parental,0.1% DMSO,14,-0.048242888142199944,14,Clone A,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,14,-0.2678954896062073,14,Clone A,0.1% DMSO
+38,WT parental,21 nM bortezomib,14,-0.47868320650943835,14,Clone A,0.1% DMSO
+39,WT parental,210 nM bortezomib,14,-0.44406551648185316,14,Clone A,0.1% DMSO
+40,Clone A,0.1% DMSO,14,0.3371566978729885,14,Clone A,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,14,0.45172902227806916,14,Clone A,0.1% DMSO
+42,Clone A,21 nM bortezomib,14,-0.19981275672308316,14,Clone A,0.1% DMSO
+43,Clone A,210 nM bortezomib,14,-0.35484360540701365,14,Clone A,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,14,0.5436145172077501,14,Clone A,0.1% DMSO
+45,Clone A,210 nM bortezomib,14,-0.47156963107489763,14,Clone A,0.1% DMSO
+46,Clone A,0.1% DMSO,14,0.5316842323061731,14,Clone A,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,14,0.4685371273899574,14,Clone A,0.1% DMSO
+48,Clone A,21 nM bortezomib,14,0.05682140077582545,14,Clone A,0.1% DMSO
+49,Clone A,210 nM bortezomib,14,-0.23441410746609376,14,Clone A,0.1% DMSO
+50,Clone E,0.1% DMSO,14,0.12473447642368954,14,Clone A,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,14,0.05121063039199678,14,Clone A,0.1% DMSO
+52,Clone E,21 nM bortezomib,14,-0.17022413627389293,14,Clone A,0.1% DMSO
+53,Clone E,210 nM bortezomib,14,-0.3246116861512812,14,Clone A,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,14,0.26372538035253357,14,Clone A,0.1% DMSO
+55,Clone E,210 nM bortezomib,14,-0.45808166842753023,14,Clone A,0.1% DMSO
+56,Clone E,0.1% DMSO,14,0.3324364501962628,14,Clone A,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,14,0.3627076160491392,14,Clone A,0.1% DMSO
+58,Clone E,21 nM bortezomib,14,0.12458101382983236,14,Clone A,0.1% DMSO
+59,Clone E,210 nM bortezomib,14,-0.012946319473260394,14,Clone A,0.1% DMSO
+16,Clone A,0.1% DMSO,15,-0.0067577751782091485,15,Clone A,21 nM bortezomib
+17,Clone A,2.1 nM bortezomib,15,0.3212847656061497,15,Clone A,21 nM bortezomib
+18,Clone A,21 nM bortezomib,15,0.7378478996223884,15,Clone A,21 nM bortezomib
+19,Clone A,210 nM bortezomib,15,0.08150309618238434,15,Clone A,21 nM bortezomib
+20,Clone E,0.1% DMSO,15,-0.48398387963065365,15,Clone A,21 nM bortezomib
+21,Clone E,2.1 nM bortezomib,15,-0.1675837780934726,15,Clone A,21 nM bortezomib
+22,Clone E,21 nM bortezomib,15,0.16675258051190692,15,Clone A,21 nM bortezomib
+23,Clone E,210 nM bortezomib,15,-0.07514370045057983,15,Clone A,21 nM bortezomib
+24,Clone E,0.1% DMSO,15,-0.180234219317935,15,Clone A,21 nM bortezomib
+25,Clone E,21 nM bortezomib,15,0.14111283663231117,15,Clone A,21 nM bortezomib
+26,Clone E,0.1% DMSO,15,-0.33499908208793955,15,Clone A,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,15,-0.18954309404020991,15,Clone A,21 nM bortezomib
+28,Clone E,21 nM bortezomib,15,0.2725809490764422,15,Clone A,21 nM bortezomib
+29,Clone E,210 nM bortezomib,15,-0.21900829697833182,15,Clone A,21 nM bortezomib
+30,WT parental,0.1% DMSO,15,-0.11970876678542734,15,Clone A,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,15,0.06120971629706003,15,Clone A,21 nM bortezomib
+32,WT parental,21 nM bortezomib,15,-0.12347850342202829,15,Clone A,21 nM bortezomib
+33,WT parental,210 nM bortezomib,15,-0.03390526769534315,15,Clone A,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,15,0.13193640785128877,15,Clone A,21 nM bortezomib
+35,WT parental,210 nM bortezomib,15,-0.2016063318042977,15,Clone A,21 nM bortezomib
+36,WT parental,0.1% DMSO,15,-0.23213888734824395,15,Clone A,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,15,-0.04526669038740822,15,Clone A,21 nM bortezomib
+38,WT parental,21 nM bortezomib,15,-0.1686693573475015,15,Clone A,21 nM bortezomib
+39,WT parental,210 nM bortezomib,15,-0.23146389705721146,15,Clone A,21 nM bortezomib
+40,Clone A,0.1% DMSO,15,0.10340995691291001,15,Clone A,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,15,0.40596501779256333,15,Clone A,21 nM bortezomib
+42,Clone A,21 nM bortezomib,15,0.6538143622302975,15,Clone A,21 nM bortezomib
+43,Clone A,210 nM bortezomib,15,0.1722999808872581,15,Clone A,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,15,0.41153895103674126,15,Clone A,21 nM bortezomib
+45,Clone A,210 nM bortezomib,15,0.07911205020582805,15,Clone A,21 nM bortezomib
+46,Clone A,0.1% DMSO,15,-0.01915736584524192,15,Clone A,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,15,0.4319018904060048,15,Clone A,21 nM bortezomib
+48,Clone A,21 nM bortezomib,15,0.7090295660700594,15,Clone A,21 nM bortezomib
+49,Clone A,210 nM bortezomib,15,0.11092929557791277,15,Clone A,21 nM bortezomib
+50,Clone E,0.1% DMSO,15,-0.33075967179519566,15,Clone A,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,15,-0.24232791621254995,15,Clone A,21 nM bortezomib
+52,Clone E,21 nM bortezomib,15,0.03916439334678535,15,Clone A,21 nM bortezomib
+53,Clone E,210 nM bortezomib,15,-0.29657857506678814,15,Clone A,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,15,-0.05686015667066622,15,Clone A,21 nM bortezomib
+55,Clone E,210 nM bortezomib,15,-0.31801360583897337,15,Clone A,21 nM bortezomib
+56,Clone E,0.1% DMSO,15,-0.25645349484308955,15,Clone A,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,15,-0.1515675915544742,15,Clone A,21 nM bortezomib
+58,Clone E,21 nM bortezomib,15,0.04100501067125584,15,Clone A,21 nM bortezomib
+59,Clone E,210 nM bortezomib,15,-0.23593717209874987,15,Clone A,21 nM bortezomib
+17,Clone A,2.1 nM bortezomib,16,0.7069007513798723,16,Clone A,0.1% DMSO
+18,Clone A,21 nM bortezomib,16,0.09472984409715145,16,Clone A,0.1% DMSO
+19,Clone A,210 nM bortezomib,16,-0.2076279339390751,16,Clone A,0.1% DMSO
+20,Clone E,0.1% DMSO,16,-0.03503800616744905,16,Clone A,0.1% DMSO
+21,Clone E,2.1 nM bortezomib,16,-0.04673334471335301,16,Clone A,0.1% DMSO
+22,Clone E,21 nM bortezomib,16,-0.353364423712262,16,Clone A,0.1% DMSO
+23,Clone E,210 nM bortezomib,16,-0.5117556252418561,16,Clone A,0.1% DMSO
+24,Clone E,0.1% DMSO,16,0.542872915701648,16,Clone A,0.1% DMSO
+25,Clone E,21 nM bortezomib,16,-0.15764604576090502,16,Clone A,0.1% DMSO
+26,Clone E,0.1% DMSO,16,0.6574732105102975,16,Clone A,0.1% DMSO
+27,Clone E,2.1 nM bortezomib,16,0.38782480949116743,16,Clone A,0.1% DMSO
+28,Clone E,21 nM bortezomib,16,-0.10938992580823685,16,Clone A,0.1% DMSO
+29,Clone E,210 nM bortezomib,16,-0.25317703623168514,16,Clone A,0.1% DMSO
+30,WT parental,0.1% DMSO,16,-0.28654165265724035,16,Clone A,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,16,-0.3319242351564275,16,Clone A,0.1% DMSO
+32,WT parental,21 nM bortezomib,16,-0.5145429938304377,16,Clone A,0.1% DMSO
+33,WT parental,210 nM bortezomib,16,-0.4748196276814073,16,Clone A,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,16,-0.23130990987624775,16,Clone A,0.1% DMSO
+35,WT parental,210 nM bortezomib,16,-0.5518077884615724,16,Clone A,0.1% DMSO
+36,WT parental,0.1% DMSO,16,0.1222682848660006,16,Clone A,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,16,-0.028497677202791186,16,Clone A,0.1% DMSO
+38,WT parental,21 nM bortezomib,16,-0.2539067558252207,16,Clone A,0.1% DMSO
+39,WT parental,210 nM bortezomib,16,-0.22418235099003364,16,Clone A,0.1% DMSO
+40,Clone A,0.1% DMSO,16,0.1675761351591361,16,Clone A,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,16,0.1800194201254194,16,Clone A,0.1% DMSO
+42,Clone A,21 nM bortezomib,16,-0.28061575108747844,16,Clone A,0.1% DMSO
+43,Clone A,210 nM bortezomib,16,-0.374643503179845,16,Clone A,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,16,0.48916865519947494,16,Clone A,0.1% DMSO
+45,Clone A,210 nM bortezomib,16,-0.37244930195614406,16,Clone A,0.1% DMSO
+46,Clone A,0.1% DMSO,16,0.7652683269884354,16,Clone A,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,16,0.47025113202265645,16,Clone A,0.1% DMSO
+48,Clone A,21 nM bortezomib,16,0.09593509315227616,16,Clone A,0.1% DMSO
+49,Clone A,210 nM bortezomib,16,-0.1580874779830627,16,Clone A,0.1% DMSO
+50,Clone E,0.1% DMSO,16,0.21011556397079623,16,Clone A,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,16,-0.06656815578402207,16,Clone A,0.1% DMSO
+52,Clone E,21 nM bortezomib,16,-0.19292268682197128,16,Clone A,0.1% DMSO
+53,Clone E,210 nM bortezomib,16,-0.3523928791871992,16,Clone A,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,16,0.2835940227613013,16,Clone A,0.1% DMSO
+55,Clone E,210 nM bortezomib,16,-0.44373055331340155,16,Clone A,0.1% DMSO
+56,Clone E,0.1% DMSO,16,0.5492697065199984,16,Clone A,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,16,0.5132357042442722,16,Clone A,0.1% DMSO
+58,Clone E,21 nM bortezomib,16,0.25703102788771776,16,Clone A,0.1% DMSO
+59,Clone E,210 nM bortezomib,16,0.09502420830071771,16,Clone A,0.1% DMSO
+18,Clone A,21 nM bortezomib,17,0.34560716750582354,17,Clone A,2.1 nM bortezomib
+19,Clone A,210 nM bortezomib,17,-0.16835589985190041,17,Clone A,2.1 nM bortezomib
+20,Clone E,0.1% DMSO,17,-0.25352024895720443,17,Clone A,2.1 nM bortezomib
+21,Clone E,2.1 nM bortezomib,17,0.0015801395467914116,17,Clone A,2.1 nM bortezomib
+22,Clone E,21 nM bortezomib,17,-0.21499849000702548,17,Clone A,2.1 nM bortezomib
+23,Clone E,210 nM bortezomib,17,-0.44551240407649584,17,Clone A,2.1 nM bortezomib
+24,Clone E,0.1% DMSO,17,0.43403335718430447,17,Clone A,2.1 nM bortezomib
+25,Clone E,21 nM bortezomib,17,-0.07865490598527555,17,Clone A,2.1 nM bortezomib
+26,Clone E,0.1% DMSO,17,0.3528599535710351,17,Clone A,2.1 nM bortezomib
+27,Clone E,2.1 nM bortezomib,17,0.36208812516569133,17,Clone A,2.1 nM bortezomib
+28,Clone E,21 nM bortezomib,17,0.003765377693391864,17,Clone A,2.1 nM bortezomib
+29,Clone E,210 nM bortezomib,17,-0.2071759864100185,17,Clone A,2.1 nM bortezomib
+30,WT parental,0.1% DMSO,17,-0.24780751718307528,17,Clone A,2.1 nM bortezomib
+31,WT parental,2.1 nM bortezomib,17,-0.2786308041367701,17,Clone A,2.1 nM bortezomib
+32,WT parental,21 nM bortezomib,17,-0.5780764241986366,17,Clone A,2.1 nM bortezomib
+33,WT parental,210 nM bortezomib,17,-0.45468682935156174,17,Clone A,2.1 nM bortezomib
+34,WT parental,2.1 nM bortezomib,17,-0.1669200324571144,17,Clone A,2.1 nM bortezomib
+35,WT parental,210 nM bortezomib,17,-0.5442237923896149,17,Clone A,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,17,-0.0009554958965086536,17,Clone A,2.1 nM bortezomib
+37,WT parental,2.1 nM bortezomib,17,-0.12402981361675641,17,Clone A,2.1 nM bortezomib
+38,WT parental,21 nM bortezomib,17,-0.3912344141455423,17,Clone A,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,17,-0.31537007852058563,17,Clone A,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,17,0.16061570695070365,17,Clone A,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,17,0.4891357108279711,17,Clone A,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,17,-0.09399663771837637,17,Clone A,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,17,-0.3087736711343449,17,Clone A,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,17,0.6601458282169805,17,Clone A,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,17,-0.3224444109025628,17,Clone A,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,17,0.569429938067591,17,Clone A,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,17,0.6986732784291971,17,Clone A,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,17,0.32715597641258803,17,Clone A,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,17,-0.17112271242628074,17,Clone A,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,17,-0.11559741468970247,17,Clone A,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,17,-0.045537442595938574,17,Clone A,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,17,-0.2139718496174611,17,Clone A,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,17,-0.4140631458742314,17,Clone A,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,17,0.32073861054012337,17,Clone A,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,17,-0.48591307693050734,17,Clone A,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,17,0.2937647978277658,17,Clone A,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,17,0.3837635043021659,17,Clone A,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,17,0.057118772235514904,17,Clone A,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,17,-0.023653460699661677,17,Clone A,2.1 nM bortezomib
+19,Clone A,210 nM bortezomib,18,0.2443911483258707,18,Clone A,21 nM bortezomib
+20,Clone E,0.1% DMSO,18,-0.40442804834913987,18,Clone A,21 nM bortezomib
+21,Clone E,2.1 nM bortezomib,18,-0.3097286510721227,18,Clone A,21 nM bortezomib
+22,Clone E,21 nM bortezomib,18,0.15847169350212276,18,Clone A,21 nM bortezomib
+23,Clone E,210 nM bortezomib,18,-0.06848856043620977,18,Clone A,21 nM bortezomib
+24,Clone E,0.1% DMSO,18,-0.13775567587900542,18,Clone A,21 nM bortezomib
+25,Clone E,21 nM bortezomib,18,0.2549716937868689,18,Clone A,21 nM bortezomib
+26,Clone E,0.1% DMSO,18,-0.16521740628023632,18,Clone A,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,18,-0.058045581481929315,18,Clone A,21 nM bortezomib
+28,Clone E,21 nM bortezomib,18,0.36814585069479616,18,Clone A,21 nM bortezomib
+29,Clone E,210 nM bortezomib,18,-0.062140976370901414,18,Clone A,21 nM bortezomib
+30,WT parental,0.1% DMSO,18,-0.22984441774644188,18,Clone A,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,18,-0.13797821753388373,18,Clone A,21 nM bortezomib
+32,WT parental,21 nM bortezomib,18,-0.25739107608841555,18,Clone A,21 nM bortezomib
+33,WT parental,210 nM bortezomib,18,-0.19535681218442802,18,Clone A,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,18,-0.04779860295713222,18,Clone A,21 nM bortezomib
+35,WT parental,210 nM bortezomib,18,-0.24837233358096258,18,Clone A,21 nM bortezomib
+36,WT parental,0.1% DMSO,18,-0.17655698160371514,18,Clone A,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,18,-0.052901856542751424,18,Clone A,21 nM bortezomib
+38,WT parental,21 nM bortezomib,18,-0.14485096502506747,18,Clone A,21 nM bortezomib
+39,WT parental,210 nM bortezomib,18,-0.18759213814468054,18,Clone A,21 nM bortezomib
+40,Clone A,0.1% DMSO,18,-0.08104209090555696,18,Clone A,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,18,0.17167602358023806,18,Clone A,21 nM bortezomib
+42,Clone A,21 nM bortezomib,18,0.39749628791469893,18,Clone A,21 nM bortezomib
+43,Clone A,210 nM bortezomib,18,0.04207492607524512,18,Clone A,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,18,0.2249094716462779,18,Clone A,21 nM bortezomib
+45,Clone A,210 nM bortezomib,18,0.03620876644669058,18,Clone A,21 nM bortezomib
+46,Clone A,0.1% DMSO,18,0.06601716381448797,18,Clone A,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,18,0.38246616223547064,18,Clone A,21 nM bortezomib
+48,Clone A,21 nM bortezomib,18,0.7448806873626967,18,Clone A,21 nM bortezomib
+49,Clone A,210 nM bortezomib,18,0.20425956683292082,18,Clone A,21 nM bortezomib
+50,Clone E,0.1% DMSO,18,-0.367516171706131,18,Clone A,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,18,-0.2533489607219404,18,Clone A,21 nM bortezomib
+52,Clone E,21 nM bortezomib,18,0.1121949476667296,18,Clone A,21 nM bortezomib
+53,Clone E,210 nM bortezomib,18,-0.22271898319103034,18,Clone A,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,18,-0.0028160783303471763,18,Clone A,21 nM bortezomib
+55,Clone E,210 nM bortezomib,18,-0.2145092028596976,18,Clone A,21 nM bortezomib
+56,Clone E,0.1% DMSO,18,-0.0997574078136726,18,Clone A,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,18,0.05599058980586413,18,Clone A,21 nM bortezomib
+58,Clone E,21 nM bortezomib,18,0.21412620098791704,18,Clone A,21 nM bortezomib
+59,Clone E,210 nM bortezomib,18,-0.08920157972211812,18,Clone A,21 nM bortezomib
+20,Clone E,0.1% DMSO,19,-0.09104020705713205,19,Clone A,210 nM bortezomib
+21,Clone E,2.1 nM bortezomib,19,-0.34392220795892003,19,Clone A,210 nM bortezomib
+22,Clone E,21 nM bortezomib,19,-0.2841672279466278,19,Clone A,210 nM bortezomib
+23,Clone E,210 nM bortezomib,19,0.3435409749379077,19,Clone A,210 nM bortezomib
+24,Clone E,0.1% DMSO,19,-0.23566889566702412,19,Clone A,210 nM bortezomib
+25,Clone E,21 nM bortezomib,19,-0.17486991944837188,19,Clone A,210 nM bortezomib
+26,Clone E,0.1% DMSO,19,-0.1619132273762409,19,Clone A,210 nM bortezomib
+27,Clone E,2.1 nM bortezomib,19,-0.2680825734836098,19,Clone A,210 nM bortezomib
+28,Clone E,21 nM bortezomib,19,0.009936872675447305,19,Clone A,210 nM bortezomib
+29,Clone E,210 nM bortezomib,19,0.4699133828434334,19,Clone A,210 nM bortezomib
+30,WT parental,0.1% DMSO,19,-0.44880649184002164,19,Clone A,210 nM bortezomib
+31,WT parental,2.1 nM bortezomib,19,-0.46446863800918925,19,Clone A,210 nM bortezomib
+32,WT parental,21 nM bortezomib,19,-0.09148342458165196,19,Clone A,210 nM bortezomib
+33,WT parental,210 nM bortezomib,19,0.12515244340971632,19,Clone A,210 nM bortezomib
+34,WT parental,2.1 nM bortezomib,19,-0.38657866136614505,19,Clone A,210 nM bortezomib
+35,WT parental,210 nM bortezomib,19,0.27073373803244505,19,Clone A,210 nM bortezomib
+36,WT parental,0.1% DMSO,19,-0.40906819119362725,19,Clone A,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,19,-0.37185660961716627,19,Clone A,210 nM bortezomib
+38,WT parental,21 nM bortezomib,19,0.043867717397535956,19,Clone A,210 nM bortezomib
+39,WT parental,210 nM bortezomib,19,0.2891110811591774,19,Clone A,210 nM bortezomib
+40,Clone A,0.1% DMSO,19,-0.26999085864796685,19,Clone A,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,19,-0.3377164914246759,19,Clone A,210 nM bortezomib
+42,Clone A,21 nM bortezomib,19,0.04355498018767908,19,Clone A,210 nM bortezomib
+43,Clone A,210 nM bortezomib,19,0.6637101710474917,19,Clone A,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,19,-0.22566896925207244,19,Clone A,210 nM bortezomib
+45,Clone A,210 nM bortezomib,19,0.7219680356501059,19,Clone A,210 nM bortezomib
+46,Clone A,0.1% DMSO,19,-0.09275979978716017,19,Clone A,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,19,-0.014913067706649123,19,Clone A,210 nM bortezomib
+48,Clone A,21 nM bortezomib,19,0.3230496178947009,19,Clone A,210 nM bortezomib
+49,Clone A,210 nM bortezomib,19,0.8130990057620232,19,Clone A,210 nM bortezomib
+50,Clone E,0.1% DMSO,19,-0.28865050968870987,19,Clone A,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,19,-0.3322799194080753,19,Clone A,210 nM bortezomib
+52,Clone E,21 nM bortezomib,19,-0.21419520289441438,19,Clone A,210 nM bortezomib
+53,Clone E,210 nM bortezomib,19,0.5141728880853093,19,Clone A,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,19,-0.28922904999592913,19,Clone A,210 nM bortezomib
+55,Clone E,210 nM bortezomib,19,0.5595866480415255,19,Clone A,210 nM bortezomib
+56,Clone E,0.1% DMSO,19,-0.05496482734566278,19,Clone A,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,19,-0.06313367849483968,19,Clone A,210 nM bortezomib
+58,Clone E,21 nM bortezomib,19,-0.0028253844037373047,19,Clone A,210 nM bortezomib
+59,Clone E,210 nM bortezomib,19,0.5099324575219496,19,Clone A,210 nM bortezomib
+21,Clone E,2.1 nM bortezomib,20,0.4646230404623921,20,Clone E,0.1% DMSO
+22,Clone E,21 nM bortezomib,20,-0.10501108192624449,20,Clone E,0.1% DMSO
+23,Clone E,210 nM bortezomib,20,-0.05996156472937103,20,Clone E,0.1% DMSO
+24,Clone E,0.1% DMSO,20,0.42247465780308624,20,Clone E,0.1% DMSO
+25,Clone E,21 nM bortezomib,20,-0.1435323480488381,20,Clone E,0.1% DMSO
+26,Clone E,0.1% DMSO,20,0.4226308038952036,20,Clone E,0.1% DMSO
+27,Clone E,2.1 nM bortezomib,20,0.2144608460885051,20,Clone E,0.1% DMSO
+28,Clone E,21 nM bortezomib,20,-0.2902545932662567,20,Clone E,0.1% DMSO
+29,Clone E,210 nM bortezomib,20,0.03336725325230321,20,Clone E,0.1% DMSO
+30,WT parental,0.1% DMSO,20,0.11749628436937334,20,Clone E,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,20,0.025869286173390526,20,Clone E,0.1% DMSO
+32,WT parental,21 nM bortezomib,20,-0.059930551832468655,20,Clone E,0.1% DMSO
+33,WT parental,210 nM bortezomib,20,-0.11272243407040983,20,Clone E,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,20,-0.0721130514898156,20,Clone E,0.1% DMSO
+35,WT parental,210 nM bortezomib,20,0.06470994454941607,20,Clone E,0.1% DMSO
+36,WT parental,0.1% DMSO,20,0.019629618606252137,20,Clone E,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,20,-0.0461256567280141,20,Clone E,0.1% DMSO
+38,WT parental,21 nM bortezomib,20,-0.10420804264406874,20,Clone E,0.1% DMSO
+39,WT parental,210 nM bortezomib,20,-0.13145287698775937,20,Clone E,0.1% DMSO
+40,Clone A,0.1% DMSO,20,0.28990146318151,20,Clone E,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,20,-0.08246454026396279,20,Clone E,0.1% DMSO
+42,Clone A,21 nM bortezomib,20,-0.19054274315832434,20,Clone E,0.1% DMSO
+43,Clone A,210 nM bortezomib,20,-0.06595373041653439,20,Clone E,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,20,-0.03819189040457335,20,Clone E,0.1% DMSO
+45,Clone A,210 nM bortezomib,20,0.03256604386534494,20,Clone E,0.1% DMSO
+46,Clone A,0.1% DMSO,20,0.16992616720909132,20,Clone E,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,20,-0.16659120840140593,20,Clone E,0.1% DMSO
+48,Clone A,21 nM bortezomib,20,-0.3861130412896508,20,Clone E,0.1% DMSO
+49,Clone A,210 nM bortezomib,20,-0.1221243974139106,20,Clone E,0.1% DMSO
+50,Clone E,0.1% DMSO,20,0.5928026670918245,20,Clone E,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,20,0.4807157082670891,20,Clone E,0.1% DMSO
+52,Clone E,21 nM bortezomib,20,-0.11738056010404231,20,Clone E,0.1% DMSO
+53,Clone E,210 nM bortezomib,20,0.09147620158065502,20,Clone E,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,20,0.12959579217297368,20,Clone E,0.1% DMSO
+55,Clone E,210 nM bortezomib,20,0.1737402568412086,20,Clone E,0.1% DMSO
+56,Clone E,0.1% DMSO,20,0.30557566596990265,20,Clone E,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,20,0.038561018575873005,20,Clone E,0.1% DMSO
+58,Clone E,21 nM bortezomib,20,-0.34428784942987195,20,Clone E,0.1% DMSO
+59,Clone E,210 nM bortezomib,20,-0.17076909634680867,20,Clone E,0.1% DMSO
+22,Clone E,21 nM bortezomib,21,0.2601747162784472,21,Clone E,2.1 nM bortezomib
+23,Clone E,210 nM bortezomib,21,0.18507137189192846,21,Clone E,2.1 nM bortezomib
+24,Clone E,0.1% DMSO,21,0.5253093002546475,21,Clone E,2.1 nM bortezomib
+25,Clone E,21 nM bortezomib,21,0.18393548460281395,21,Clone E,2.1 nM bortezomib
+26,Clone E,0.1% DMSO,21,0.32684157269611375,21,Clone E,2.1 nM bortezomib
+27,Clone E,2.1 nM bortezomib,21,0.44729885520326096,21,Clone E,2.1 nM bortezomib
+28,Clone E,21 nM bortezomib,21,0.028719813825038583,21,Clone E,2.1 nM bortezomib
+29,Clone E,210 nM bortezomib,21,0.10643639809019222,21,Clone E,2.1 nM bortezomib
+30,WT parental,0.1% DMSO,21,0.35311613662525765,21,Clone E,2.1 nM bortezomib
+31,WT parental,2.1 nM bortezomib,21,-0.031815610709673106,21,Clone E,2.1 nM bortezomib
+32,WT parental,21 nM bortezomib,21,-0.27201322923491017,21,Clone E,2.1 nM bortezomib
+33,WT parental,210 nM bortezomib,21,-0.3786911706524612,21,Clone E,2.1 nM bortezomib
+34,WT parental,2.1 nM bortezomib,21,-0.18535825252148316,21,Clone E,2.1 nM bortezomib
+35,WT parental,210 nM bortezomib,21,-0.2332658462831309,21,Clone E,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,21,-0.025792267447883873,21,Clone E,2.1 nM bortezomib
+37,WT parental,2.1 nM bortezomib,21,-0.3416684007481735,21,Clone E,2.1 nM bortezomib
+38,WT parental,21 nM bortezomib,21,-0.5765759771638052,21,Clone E,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,21,-0.5817782781755019,21,Clone E,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,21,0.546310328029196,21,Clone E,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,21,0.4940206051991719,21,Clone E,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,21,-0.02600222133142154,21,Clone E,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,21,-0.10925208035741711,21,Clone E,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,21,0.09234294275842221,21,Clone E,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,21,-0.20555520312449596,21,Clone E,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,21,-0.031564637424466704,21,Clone E,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,21,-0.11757345060394993,21,Clone E,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,21,-0.455286484878338,21,Clone E,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,21,-0.3730102985749359,21,Clone E,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,21,0.571865491378948,21,Clone E,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,21,0.7734417561820354,21,Clone E,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,21,0.22370726150325335,21,Clone E,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,21,0.009300525074667283,21,Clone E,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,21,0.49519919444061744,21,Clone E,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,21,0.07308094784892544,21,Clone E,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,21,0.2553322909580156,21,Clone E,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,21,0.09414596134986536,21,Clone E,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,21,-0.352029494151239,21,Clone E,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,21,-0.29077296055533014,21,Clone E,2.1 nM bortezomib
+23,Clone E,210 nM bortezomib,22,0.37213798270849957,22,Clone E,21 nM bortezomib
+24,Clone E,0.1% DMSO,22,-0.20946037278662516,22,Clone E,21 nM bortezomib
+25,Clone E,21 nM bortezomib,22,0.7778790396359329,22,Clone E,21 nM bortezomib
+26,Clone E,0.1% DMSO,22,-0.22945384050781564,22,Clone E,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,22,-0.008019081584567956,22,Clone E,21 nM bortezomib
+28,Clone E,21 nM bortezomib,22,0.6048503949243921,22,Clone E,21 nM bortezomib
+29,Clone E,210 nM bortezomib,22,0.07111625483362433,22,Clone E,21 nM bortezomib
+30,WT parental,0.1% DMSO,22,0.4908520209457825,22,Clone E,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,22,0.18473210203792859,22,Clone E,21 nM bortezomib
+32,WT parental,21 nM bortezomib,22,-0.00937188537526647,22,Clone E,21 nM bortezomib
+33,WT parental,210 nM bortezomib,22,-0.19737550075301355,22,Clone E,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,22,-0.009425987451530737,22,Clone E,21 nM bortezomib
+35,WT parental,210 nM bortezomib,22,-0.19303621192291498,22,Clone E,21 nM bortezomib
+36,WT parental,0.1% DMSO,22,-0.01147278335645819,22,Clone E,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,22,-0.09884781137815951,22,Clone E,21 nM bortezomib
+38,WT parental,21 nM bortezomib,22,-0.17483804927797975,22,Clone E,21 nM bortezomib
+39,WT parental,210 nM bortezomib,22,-0.3866292063057676,22,Clone E,21 nM bortezomib
+40,Clone A,0.1% DMSO,22,0.17757028881391418,22,Clone E,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,22,0.2600187037102709,22,Clone E,21 nM bortezomib
+42,Clone A,21 nM bortezomib,22,0.30503105141940007,22,Clone E,21 nM bortezomib
+43,Clone A,210 nM bortezomib,22,-0.2055453804401141,22,Clone E,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,22,-0.272725978882023,22,Clone E,21 nM bortezomib
+45,Clone A,210 nM bortezomib,22,-0.20743814250476383,22,Clone E,21 nM bortezomib
+46,Clone A,0.1% DMSO,22,-0.3405218743979635,22,Clone E,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,22,-0.3546700629754627,22,Clone E,21 nM bortezomib
+48,Clone A,21 nM bortezomib,22,-0.07164717152339091,22,Clone E,21 nM bortezomib
+49,Clone A,210 nM bortezomib,22,-0.2927456109195261,22,Clone E,21 nM bortezomib
+50,Clone E,0.1% DMSO,22,0.06597399739185997,22,Clone E,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,22,0.3487412955007952,22,Clone E,21 nM bortezomib
+52,Clone E,21 nM bortezomib,22,0.7745459290714252,22,Clone E,21 nM bortezomib
+53,Clone E,210 nM bortezomib,22,-0.04179879490804634,22,Clone E,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,22,0.06972123518359741,22,Clone E,21 nM bortezomib
+55,Clone E,210 nM bortezomib,22,-0.04175841346980483,22,Clone E,21 nM bortezomib
+56,Clone E,0.1% DMSO,22,-0.2478143160142129,22,Clone E,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,22,-0.2919358139479796,22,Clone E,21 nM bortezomib
+58,Clone E,21 nM bortezomib,22,0.1529928556555593,22,Clone E,21 nM bortezomib
+59,Clone E,210 nM bortezomib,22,-0.23077045859261053,22,Clone E,21 nM bortezomib
+24,Clone E,0.1% DMSO,23,-0.24322004796347982,23,Clone E,210 nM bortezomib
+25,Clone E,21 nM bortezomib,23,0.39838496357474645,23,Clone E,210 nM bortezomib
+26,Clone E,0.1% DMSO,23,-0.2338953658084953,23,Clone E,210 nM bortezomib
+27,Clone E,2.1 nM bortezomib,23,-0.11606088756612125,23,Clone E,210 nM bortezomib
+28,Clone E,21 nM bortezomib,23,0.35549839818583856,23,Clone E,210 nM bortezomib
+29,Clone E,210 nM bortezomib,23,0.7009153176207201,23,Clone E,210 nM bortezomib
+30,WT parental,0.1% DMSO,23,0.23813749474135532,23,Clone E,210 nM bortezomib
+31,WT parental,2.1 nM bortezomib,23,-0.34966660684613654,23,Clone E,210 nM bortezomib
+32,WT parental,21 nM bortezomib,23,-0.08408872793752906,23,Clone E,210 nM bortezomib
+33,WT parental,210 nM bortezomib,23,-0.012559942703697683,23,Clone E,210 nM bortezomib
+34,WT parental,2.1 nM bortezomib,23,-0.44683757990661244,23,Clone E,210 nM bortezomib
+35,WT parental,210 nM bortezomib,23,0.04594441527187634,23,Clone E,210 nM bortezomib
+36,WT parental,0.1% DMSO,23,-0.24967764279331134,23,Clone E,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,23,-0.4823235592846725,23,Clone E,210 nM bortezomib
+38,WT parental,21 nM bortezomib,23,-0.28197510185939545,23,Clone E,210 nM bortezomib
+39,WT parental,210 nM bortezomib,23,-0.18256177101100474,23,Clone E,210 nM bortezomib
+40,Clone A,0.1% DMSO,23,0.0059263753249476255,23,Clone E,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,23,-0.11688727496299041,23,Clone E,210 nM bortezomib
+42,Clone A,21 nM bortezomib,23,0.0009286614201724036,23,Clone E,210 nM bortezomib
+43,Clone A,210 nM bortezomib,23,0.4486849098142703,23,Clone E,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,23,-0.5881020804389071,23,Clone E,210 nM bortezomib
+45,Clone A,210 nM bortezomib,23,0.2742713230256872,23,Clone E,210 nM bortezomib
+46,Clone A,0.1% DMSO,23,-0.5140516834110699,23,Clone E,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,23,-0.51109217610314,23,Clone E,210 nM bortezomib
+48,Clone A,21 nM bortezomib,23,-0.23087307116704547,23,Clone E,210 nM bortezomib
+49,Clone A,210 nM bortezomib,23,0.3352257668220929,23,Clone E,210 nM bortezomib
+50,Clone E,0.1% DMSO,23,0.051595647074814406,23,Clone E,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,23,0.16596143550454726,23,Clone E,210 nM bortezomib
+52,Clone E,21 nM bortezomib,23,0.4389882751959952,23,Clone E,210 nM bortezomib
+53,Clone E,210 nM bortezomib,23,0.6168125854476498,23,Clone E,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,23,-0.1610067690306893,23,Clone E,210 nM bortezomib
+55,Clone E,210 nM bortezomib,23,0.7166533263286811,23,Clone E,210 nM bortezomib
+56,Clone E,0.1% DMSO,23,-0.14937255391416676,23,Clone E,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,23,-0.2575477761133059,23,Clone E,210 nM bortezomib
+58,Clone E,21 nM bortezomib,23,0.07594877612218884,23,Clone E,210 nM bortezomib
+59,Clone E,210 nM bortezomib,23,0.26598600391315064,23,Clone E,210 nM bortezomib
+25,Clone E,21 nM bortezomib,24,-0.09414568988248381,24,Clone E,0.1% DMSO
+26,Clone E,0.1% DMSO,24,0.7760100402403821,24,Clone E,0.1% DMSO
+27,Clone E,2.1 nM bortezomib,24,0.6506038550179228,24,Clone E,0.1% DMSO
+28,Clone E,21 nM bortezomib,24,-0.11536438124008744,24,Clone E,0.1% DMSO
+29,Clone E,210 nM bortezomib,24,-0.025915488121193094,24,Clone E,0.1% DMSO
+30,WT parental,0.1% DMSO,24,-0.18941256360114694,24,Clone E,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,24,-0.3474684587227624,24,Clone E,0.1% DMSO
+32,WT parental,21 nM bortezomib,24,-0.5001363357605089,24,Clone E,0.1% DMSO
+33,WT parental,210 nM bortezomib,24,-0.487319029224685,24,Clone E,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,24,-0.35298689403459954,24,Clone E,0.1% DMSO
+35,WT parental,210 nM bortezomib,24,-0.47372331590210637,24,Clone E,0.1% DMSO
+36,WT parental,0.1% DMSO,24,-0.026136801340075594,24,Clone E,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,24,-0.23679622737087647,24,Clone E,0.1% DMSO
+38,WT parental,21 nM bortezomib,24,-0.46020641199136575,24,Clone E,0.1% DMSO
+39,WT parental,210 nM bortezomib,24,-0.43812895089325293,24,Clone E,0.1% DMSO
+40,Clone A,0.1% DMSO,24,0.30702201082732405,24,Clone E,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,24,0.2940660194421344,24,Clone E,0.1% DMSO
+42,Clone A,21 nM bortezomib,24,-0.2824005136244015,24,Clone E,0.1% DMSO
+43,Clone A,210 nM bortezomib,24,-0.21052035777814057,24,Clone E,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,24,0.41646281180862826,24,Clone E,0.1% DMSO
+45,Clone A,210 nM bortezomib,24,-0.3038841489576559,24,Clone E,0.1% DMSO
+46,Clone A,0.1% DMSO,24,0.5806132086495597,24,Clone E,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,24,0.26546437550429014,24,Clone E,0.1% DMSO
+48,Clone A,21 nM bortezomib,24,-0.23292212917288738,24,Clone E,0.1% DMSO
+49,Clone A,210 nM bortezomib,24,-0.24021716327466422,24,Clone E,0.1% DMSO
+50,Clone E,0.1% DMSO,24,0.4907457228645263,24,Clone E,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,24,0.516739897636063,24,Clone E,0.1% DMSO
+52,Clone E,21 nM bortezomib,24,-0.0853540511956808,24,Clone E,0.1% DMSO
+53,Clone E,210 nM bortezomib,24,-0.08846334025546405,24,Clone E,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,24,0.5724555795866049,24,Clone E,0.1% DMSO
+55,Clone E,210 nM bortezomib,24,-0.14940562160999396,24,Clone E,0.1% DMSO
+56,Clone E,0.1% DMSO,24,0.6906426726262415,24,Clone E,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,24,0.5773984746938624,24,Clone E,0.1% DMSO
+58,Clone E,21 nM bortezomib,24,0.029898080700760638,24,Clone E,0.1% DMSO
+59,Clone E,210 nM bortezomib,24,-0.003945292137572903,24,Clone E,0.1% DMSO
+26,Clone E,0.1% DMSO,25,-0.04356710229861915,25,Clone E,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,25,0.21454756404163422,25,Clone E,21 nM bortezomib
+28,Clone E,21 nM bortezomib,25,0.789180143839361,25,Clone E,21 nM bortezomib
+29,Clone E,210 nM bortezomib,25,0.3170502686814577,25,Clone E,21 nM bortezomib
+30,WT parental,0.1% DMSO,25,0.3412054791561928,25,Clone E,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,25,-0.12726590697326715,25,Clone E,21 nM bortezomib
+32,WT parental,21 nM bortezomib,25,-0.32936198800969546,25,Clone E,21 nM bortezomib
+33,WT parental,210 nM bortezomib,25,-0.3925935876461009,25,Clone E,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,25,-0.2033004182582488,25,Clone E,21 nM bortezomib
+35,WT parental,210 nM bortezomib,25,-0.3033577794974768,25,Clone E,21 nM bortezomib
+36,WT parental,0.1% DMSO,25,0.05286751840715029,25,Clone E,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,25,-0.18560234940975628,25,Clone E,21 nM bortezomib
+38,WT parental,21 nM bortezomib,25,-0.31139884744947394,25,Clone E,21 nM bortezomib
+39,WT parental,210 nM bortezomib,25,-0.4681779143021132,25,Clone E,21 nM bortezomib
+40,Clone A,0.1% DMSO,25,-0.007317141040961315,25,Clone E,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,25,0.12157730903305025,25,Clone E,21 nM bortezomib
+42,Clone A,21 nM bortezomib,25,0.004650093927971016,25,Clone E,21 nM bortezomib
+43,Clone A,210 nM bortezomib,25,-0.30239008715690896,25,Clone E,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,25,-0.28844716403907433,25,Clone E,21 nM bortezomib
+45,Clone A,210 nM bortezomib,25,-0.2752975938599112,25,Clone E,21 nM bortezomib
+46,Clone A,0.1% DMSO,25,-0.21099346073470954,25,Clone E,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,25,-0.22905707337052317,25,Clone E,21 nM bortezomib
+48,Clone A,21 nM bortezomib,25,0.015422432637128591,25,Clone E,21 nM bortezomib
+49,Clone A,210 nM bortezomib,25,-0.19512302753247968,25,Clone E,21 nM bortezomib
+50,Clone E,0.1% DMSO,25,-0.0833189647671569,25,Clone E,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,25,0.36909111408311723,25,Clone E,21 nM bortezomib
+52,Clone E,21 nM bortezomib,25,0.7384293473026114,25,Clone E,21 nM bortezomib
+53,Clone E,210 nM bortezomib,25,0.03781813234649522,25,Clone E,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,25,0.2328563871017115,25,Clone E,21 nM bortezomib
+55,Clone E,210 nM bortezomib,25,0.12568682146201413,25,Clone E,21 nM bortezomib
+56,Clone E,0.1% DMSO,25,-0.042385249997603874,25,Clone E,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,25,0.020156336235667694,25,Clone E,21 nM bortezomib
+58,Clone E,21 nM bortezomib,25,0.3585938926142666,25,Clone E,21 nM bortezomib
+59,Clone E,210 nM bortezomib,25,-0.10115881598958389,25,Clone E,21 nM bortezomib
+27,Clone E,2.1 nM bortezomib,26,0.6064338845399486,26,Clone E,0.1% DMSO
+28,Clone E,21 nM bortezomib,26,-0.11016347611352832,26,Clone E,0.1% DMSO
+29,Clone E,210 nM bortezomib,26,0.07352145903065607,26,Clone E,0.1% DMSO
+30,WT parental,0.1% DMSO,26,-0.26797378778674386,26,Clone E,0.1% DMSO
+31,WT parental,2.1 nM bortezomib,26,-0.3423729681572176,26,Clone E,0.1% DMSO
+32,WT parental,21 nM bortezomib,26,-0.5335973937083137,26,Clone E,0.1% DMSO
+33,WT parental,210 nM bortezomib,26,-0.4989047028670925,26,Clone E,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,26,-0.3280505488469501,26,Clone E,0.1% DMSO
+35,WT parental,210 nM bortezomib,26,-0.4353090340159315,26,Clone E,0.1% DMSO
+36,WT parental,0.1% DMSO,26,0.09067122246106395,26,Clone E,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,26,-0.06396965612273522,26,Clone E,0.1% DMSO
+38,WT parental,21 nM bortezomib,26,-0.3119085157910259,26,Clone E,0.1% DMSO
+39,WT parental,210 nM bortezomib,26,-0.3019781853490849,26,Clone E,0.1% DMSO
+40,Clone A,0.1% DMSO,26,0.1119200565463974,26,Clone E,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,26,-0.013835623810733003,26,Clone E,0.1% DMSO
+42,Clone A,21 nM bortezomib,26,-0.4322573122014365,26,Clone E,0.1% DMSO
+43,Clone A,210 nM bortezomib,26,-0.3243309048713559,26,Clone E,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,26,0.2078676274451433,26,Clone E,0.1% DMSO
+45,Clone A,210 nM bortezomib,26,-0.33689795450590165,26,Clone E,0.1% DMSO
+46,Clone A,0.1% DMSO,26,0.6620300060561589,26,Clone E,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,26,0.17550152925631682,26,Clone E,0.1% DMSO
+48,Clone A,21 nM bortezomib,26,-0.19988258238467158,26,Clone E,0.1% DMSO
+49,Clone A,210 nM bortezomib,26,-0.17353704537799142,26,Clone E,0.1% DMSO
+50,Clone E,0.1% DMSO,26,0.45514425891551585,26,Clone E,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,26,0.3489048897928596,26,Clone E,0.1% DMSO
+52,Clone E,21 nM bortezomib,26,-0.07224123802673783,26,Clone E,0.1% DMSO
+53,Clone E,210 nM bortezomib,26,-0.053235678296543014,26,Clone E,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,26,0.4501401969319222,26,Clone E,0.1% DMSO
+55,Clone E,210 nM bortezomib,26,-0.09592616211427987,26,Clone E,0.1% DMSO
+56,Clone E,0.1% DMSO,26,0.7849627543565936,26,Clone E,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,26,0.5786418306240964,26,Clone E,0.1% DMSO
+58,Clone E,21 nM bortezomib,26,0.15018689600098306,26,Clone E,0.1% DMSO
+59,Clone E,210 nM bortezomib,26,0.07957725535787674,26,Clone E,0.1% DMSO
+28,Clone E,21 nM bortezomib,27,0.20898255925147843,27,Clone E,2.1 nM bortezomib
+29,Clone E,210 nM bortezomib,27,0.11099927879109911,27,Clone E,2.1 nM bortezomib
+30,WT parental,0.1% DMSO,27,0.0017979530376947776,27,Clone E,2.1 nM bortezomib
+31,WT parental,2.1 nM bortezomib,27,-0.3808943004899288,27,Clone E,2.1 nM bortezomib
+32,WT parental,21 nM bortezomib,27,-0.5567954712607959,27,Clone E,2.1 nM bortezomib
+33,WT parental,210 nM bortezomib,27,-0.5892680577548163,27,Clone E,2.1 nM bortezomib
+34,WT parental,2.1 nM bortezomib,27,-0.26860710261285553,27,Clone E,2.1 nM bortezomib
+35,WT parental,210 nM bortezomib,27,-0.41890444681706046,27,Clone E,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,27,0.28303063106754545,27,Clone E,2.1 nM bortezomib
+37,WT parental,2.1 nM bortezomib,27,-0.1336294868862173,27,Clone E,2.1 nM bortezomib
+38,WT parental,21 nM bortezomib,27,-0.49371278745776365,27,Clone E,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,27,-0.4747835149794293,27,Clone E,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,27,-0.04118114142422579,27,Clone E,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,27,0.20505668061416024,27,Clone E,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,27,-0.4000364448910005,27,Clone E,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,27,-0.4500297059343548,27,Clone E,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,27,0.15448865763461686,27,Clone E,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,27,-0.41506013143398085,27,Clone E,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,27,0.2910981665943424,27,Clone E,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,27,0.24918250371404246,27,Clone E,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,27,-0.19409516356658163,27,Clone E,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,27,-0.3205915638052506,27,Clone E,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,27,0.20429114595157377,27,Clone E,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,27,0.540257259770923,27,Clone E,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,27,0.1625736735841819,27,Clone E,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,27,-0.11018764211958194,27,Clone E,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,27,0.7745565035757692,27,Clone E,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,27,-0.02531480404042011,27,Clone E,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,27,0.5463775289641652,27,Clone E,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,27,0.6938461946458687,27,Clone E,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,27,0.13960609239947366,27,Clone E,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,27,-0.09852949782920105,27,Clone E,2.1 nM bortezomib
+29,Clone E,210 nM bortezomib,28,0.31275214545191904,28,Clone E,21 nM bortezomib
+30,WT parental,0.1% DMSO,28,0.07939568408869158,28,Clone E,21 nM bortezomib
+31,WT parental,2.1 nM bortezomib,28,-0.25817445499816033,28,Clone E,21 nM bortezomib
+32,WT parental,21 nM bortezomib,28,-0.3490031720192797,28,Clone E,21 nM bortezomib
+33,WT parental,210 nM bortezomib,28,-0.34809423680018803,28,Clone E,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,28,-0.2471811444513012,28,Clone E,21 nM bortezomib
+35,WT parental,210 nM bortezomib,28,-0.23630006818513122,28,Clone E,21 nM bortezomib
+36,WT parental,0.1% DMSO,28,-0.04531265896824064,28,Clone E,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,28,-0.19548831279762205,28,Clone E,21 nM bortezomib
+38,WT parental,21 nM bortezomib,28,-0.2500520584246496,28,Clone E,21 nM bortezomib
+39,WT parental,210 nM bortezomib,28,-0.33454884424119374,28,Clone E,21 nM bortezomib
+40,Clone A,0.1% DMSO,28,-0.16161215131447018,28,Clone E,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,28,0.14508101716085964,28,Clone E,21 nM bortezomib
+42,Clone A,21 nM bortezomib,28,0.06117985914988781,28,Clone E,21 nM bortezomib
+43,Clone A,210 nM bortezomib,28,-0.14714399072845855,28,Clone E,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,28,-0.2112108678829463,28,Clone E,21 nM bortezomib
+45,Clone A,210 nM bortezomib,28,-0.12092989498392549,28,Clone E,21 nM bortezomib
+46,Clone A,0.1% DMSO,28,-0.11612297254096555,28,Clone E,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,28,-0.04643576777279345,28,Clone E,21 nM bortezomib
+48,Clone A,21 nM bortezomib,28,0.20799178802884175,28,Clone E,21 nM bortezomib
+49,Clone A,210 nM bortezomib,28,-0.04233556104882642,28,Clone E,21 nM bortezomib
+50,Clone E,0.1% DMSO,28,-0.2537961870145277,28,Clone E,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,28,0.24820153984347396,28,Clone E,21 nM bortezomib
+52,Clone E,21 nM bortezomib,28,0.6569806166535666,28,Clone E,21 nM bortezomib
+53,Clone E,210 nM bortezomib,28,0.14587609619651976,28,Clone E,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,28,0.30978313431716886,28,Clone E,21 nM bortezomib
+55,Clone E,210 nM bortezomib,28,0.1751632395814881,28,Clone E,21 nM bortezomib
+56,Clone E,0.1% DMSO,28,0.03026852904633965,28,Clone E,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,28,0.14691475251005126,28,Clone E,21 nM bortezomib
+58,Clone E,21 nM bortezomib,28,0.47434304042084946,28,Clone E,21 nM bortezomib
+59,Clone E,210 nM bortezomib,28,0.045814386701476896,28,Clone E,21 nM bortezomib
+30,WT parental,0.1% DMSO,29,-0.12092252319686446,29,Clone E,210 nM bortezomib
+31,WT parental,2.1 nM bortezomib,29,-0.5523456883369191,29,Clone E,210 nM bortezomib
+32,WT parental,21 nM bortezomib,29,-0.35672130650909256,29,Clone E,210 nM bortezomib
+33,WT parental,210 nM bortezomib,29,-0.2467946500599344,29,Clone E,210 nM bortezomib
+34,WT parental,2.1 nM bortezomib,29,-0.5605300170276296,29,Clone E,210 nM bortezomib
+35,WT parental,210 nM bortezomib,29,-0.038699639752107814,29,Clone E,210 nM bortezomib
+36,WT parental,0.1% DMSO,29,-0.2457024107484016,29,Clone E,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,29,-0.46492804091782475,29,Clone E,210 nM bortezomib
+38,WT parental,21 nM bortezomib,29,-0.28391270693770115,29,Clone E,210 nM bortezomib
+39,WT parental,210 nM bortezomib,29,-0.11470029050946247,29,Clone E,210 nM bortezomib
+40,Clone A,0.1% DMSO,29,-0.16651615859100863,29,Clone E,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,29,-0.2667860557263783,29,Clone E,210 nM bortezomib
+42,Clone A,21 nM bortezomib,29,-0.3327170719788997,29,Clone E,210 nM bortezomib
+43,Clone A,210 nM bortezomib,29,0.27376465930822197,29,Clone E,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,29,-0.49088272583696185,29,Clone E,210 nM bortezomib
+45,Clone A,210 nM bortezomib,29,0.21241985959015147,29,Clone E,210 nM bortezomib
+46,Clone A,0.1% DMSO,29,-0.2056294675322855,29,Clone E,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,29,-0.32104103198128064,29,Clone E,210 nM bortezomib
+48,Clone A,21 nM bortezomib,29,-0.10338638525766515,29,Clone E,210 nM bortezomib
+49,Clone A,210 nM bortezomib,29,0.4360242963379119,29,Clone E,210 nM bortezomib
+50,Clone E,0.1% DMSO,29,-0.05230839226778284,29,Clone E,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,29,0.19132180801488172,29,Clone E,210 nM bortezomib
+52,Clone E,21 nM bortezomib,29,0.28788557028981493,29,Clone E,210 nM bortezomib
+53,Clone E,210 nM bortezomib,29,0.688703268947357,29,Clone E,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,29,0.04114294591333976,29,Clone E,210 nM bortezomib
+55,Clone E,210 nM bortezomib,29,0.7613185899198608,29,Clone E,210 nM bortezomib
+56,Clone E,0.1% DMSO,29,0.20753385599673704,29,Clone E,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,29,0.07626055026897305,29,Clone E,210 nM bortezomib
+58,Clone E,21 nM bortezomib,29,0.17269892725351688,29,Clone E,210 nM bortezomib
+59,Clone E,210 nM bortezomib,29,0.5269220223185396,29,Clone E,210 nM bortezomib
+31,WT parental,2.1 nM bortezomib,30,0.32069431492577416,30,WT parental,0.1% DMSO
+32,WT parental,21 nM bortezomib,30,0.1461762456930988,30,WT parental,0.1% DMSO
+33,WT parental,210 nM bortezomib,30,-0.12693406259915246,30,WT parental,0.1% DMSO
+34,WT parental,2.1 nM bortezomib,30,0.19887891848552783,30,WT parental,0.1% DMSO
+35,WT parental,210 nM bortezomib,30,-0.13345268612024452,30,WT parental,0.1% DMSO
+36,WT parental,0.1% DMSO,30,0.48699089545221724,30,WT parental,0.1% DMSO
+37,WT parental,2.1 nM bortezomib,30,0.04813238936630969,30,WT parental,0.1% DMSO
+38,WT parental,21 nM bortezomib,30,-0.24291490486150935,30,WT parental,0.1% DMSO
+39,WT parental,210 nM bortezomib,30,-0.408771342566074,30,WT parental,0.1% DMSO
+40,Clone A,0.1% DMSO,30,0.4337675837836959,30,WT parental,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,30,0.3009371424734683,30,WT parental,0.1% DMSO
+42,Clone A,21 nM bortezomib,30,0.12342183097734254,30,WT parental,0.1% DMSO
+43,Clone A,210 nM bortezomib,30,-0.25983829059602137,30,WT parental,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,30,-0.21862536866167875,30,WT parental,0.1% DMSO
+45,Clone A,210 nM bortezomib,30,-0.2756267668368045,30,WT parental,0.1% DMSO
+46,Clone A,0.1% DMSO,30,-0.3206463177035346,30,WT parental,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,30,-0.3198893252963832,30,WT parental,0.1% DMSO
+48,Clone A,21 nM bortezomib,30,-0.4613020979747221,30,WT parental,0.1% DMSO
+49,Clone A,210 nM bortezomib,30,-0.47604598878704985,30,WT parental,0.1% DMSO
+50,Clone E,0.1% DMSO,30,0.2816053957737714,30,WT parental,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,30,0.3548118233478918,30,WT parental,0.1% DMSO
+52,Clone E,21 nM bortezomib,30,0.4041760603656023,30,WT parental,0.1% DMSO
+53,Clone E,210 nM bortezomib,30,-0.1160917860387784,30,WT parental,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,30,-0.029533677143620627,30,WT parental,0.1% DMSO
+55,Clone E,210 nM bortezomib,30,-0.04545827997161565,30,WT parental,0.1% DMSO
+56,Clone E,0.1% DMSO,30,-0.32702126191575437,30,WT parental,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,30,-0.3038982802836239,30,WT parental,0.1% DMSO
+58,Clone E,21 nM bortezomib,30,-0.22168574255070625,30,WT parental,0.1% DMSO
+59,Clone E,210 nM bortezomib,30,-0.41898749327383406,30,WT parental,0.1% DMSO
+32,WT parental,21 nM bortezomib,31,0.6706698077116481,31,WT parental,2.1 nM bortezomib
+33,WT parental,210 nM bortezomib,31,0.4278198305207982,31,WT parental,2.1 nM bortezomib
+34,WT parental,2.1 nM bortezomib,31,0.8941477640221617,31,WT parental,2.1 nM bortezomib
+35,WT parental,210 nM bortezomib,31,0.32201589491315097,31,WT parental,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,31,0.28478127145826365,31,WT parental,2.1 nM bortezomib
+37,WT parental,2.1 nM bortezomib,31,0.754770197124534,31,WT parental,2.1 nM bortezomib
+38,WT parental,21 nM bortezomib,31,0.5401829497361229,31,WT parental,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,31,0.21405025147194082,31,WT parental,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,31,0.028375145121259507,31,WT parental,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,31,0.038461619748383705,31,WT parental,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,31,0.3428349983185019,31,WT parental,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,31,-0.23110755692259727,31,WT parental,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,31,0.12255257471820435,31,WT parental,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,31,-0.16177076847334687,31,WT parental,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,31,-0.2240168683111941,31,WT parental,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,31,-0.0745806500118963,31,WT parental,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,31,-0.00855721690025009,31,WT parental,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,31,-0.4485880455510843,31,WT parental,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,31,-0.05122584853636213,31,WT parental,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,31,-0.08032413325179431,31,WT parental,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,31,-0.06674303611361256,31,WT parental,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,31,-0.4585754036224225,31,WT parental,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,31,-0.19133154846048422,31,WT parental,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,31,-0.4513865924701496,31,WT parental,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,31,-0.40869549474916256,31,WT parental,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,31,-0.4400612282168903,31,WT parental,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,31,-0.3213823629925545,31,WT parental,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,31,-0.5390368735144522,31,WT parental,2.1 nM bortezomib
+33,WT parental,210 nM bortezomib,32,0.7499799906811763,32,WT parental,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,32,0.6077983559349428,32,WT parental,21 nM bortezomib
+35,WT parental,210 nM bortezomib,32,0.6306595060030235,32,WT parental,21 nM bortezomib
+36,WT parental,0.1% DMSO,32,0.09419764108502206,32,WT parental,21 nM bortezomib
+37,WT parental,2.1 nM bortezomib,32,0.48863989720414774,32,WT parental,21 nM bortezomib
+38,WT parental,21 nM bortezomib,32,0.7238733335705646,32,WT parental,21 nM bortezomib
+39,WT parental,210 nM bortezomib,32,0.5928972989006647,32,WT parental,21 nM bortezomib
+40,Clone A,0.1% DMSO,32,-0.1802065292956525,32,WT parental,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,32,-0.3264429536775241,32,WT parental,21 nM bortezomib
+42,Clone A,21 nM bortezomib,32,0.2505287466640328,32,WT parental,21 nM bortezomib
+43,Clone A,210 nM bortezomib,32,0.1989819892527492,32,WT parental,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,32,-0.22743333273918162,32,WT parental,21 nM bortezomib
+45,Clone A,210 nM bortezomib,32,0.23320992285496808,32,WT parental,21 nM bortezomib
+46,Clone A,0.1% DMSO,32,-0.4502507072685526,32,WT parental,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,32,-0.3658824661564703,32,WT parental,21 nM bortezomib
+48,Clone A,21 nM bortezomib,32,-0.1536264686192803,32,WT parental,21 nM bortezomib
+49,Clone A,210 nM bortezomib,32,-0.07617874765056577,32,WT parental,21 nM bortezomib
+50,Clone E,0.1% DMSO,32,-0.10118959285152335,32,WT parental,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,32,-0.29058909182826154,32,WT parental,21 nM bortezomib
+52,Clone E,21 nM bortezomib,32,-0.0888416476535346,32,WT parental,21 nM bortezomib
+53,Clone E,210 nM bortezomib,32,-0.026972768198472143,32,WT parental,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,32,-0.4384715480841668,32,WT parental,21 nM bortezomib
+55,Clone E,210 nM bortezomib,32,-0.10534358080326245,32,WT parental,21 nM bortezomib
+56,Clone E,0.1% DMSO,32,-0.5071072130448872,32,WT parental,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,32,-0.43495651984964023,32,WT parental,21 nM bortezomib
+58,Clone E,21 nM bortezomib,32,-0.19425269084946165,32,WT parental,21 nM bortezomib
+59,Clone E,210 nM bortezomib,32,-0.16943738681028528,32,WT parental,21 nM bortezomib
+34,WT parental,2.1 nM bortezomib,33,0.42058910946400224,33,WT parental,210 nM bortezomib
+35,WT parental,210 nM bortezomib,33,0.8034389346268583,33,WT parental,210 nM bortezomib
+36,WT parental,0.1% DMSO,33,-0.12906783867097374,33,WT parental,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,33,0.3220729315914166,33,WT parental,210 nM bortezomib
+38,WT parental,21 nM bortezomib,33,0.6608306491378595,33,WT parental,210 nM bortezomib
+39,WT parental,210 nM bortezomib,33,0.772219618861639,33,WT parental,210 nM bortezomib
+40,Clone A,0.1% DMSO,33,-0.26762308215093517,33,WT parental,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,33,-0.33176728567859654,33,WT parental,210 nM bortezomib
+42,Clone A,21 nM bortezomib,33,0.17661172417839455,33,WT parental,210 nM bortezomib
+43,Clone A,210 nM bortezomib,33,0.3680463668291587,33,WT parental,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,33,-0.13849192719186695,33,WT parental,210 nM bortezomib
+45,Clone A,210 nM bortezomib,33,0.39268959977568946,33,WT parental,210 nM bortezomib
+46,Clone A,0.1% DMSO,33,-0.3667265802821302,33,WT parental,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,33,-0.1773325612571233,33,WT parental,210 nM bortezomib
+48,Clone A,21 nM bortezomib,33,0.03475580030172353,33,WT parental,210 nM bortezomib
+49,Clone A,210 nM bortezomib,33,0.19238332406397324,33,WT parental,210 nM bortezomib
+50,Clone E,0.1% DMSO,33,-0.28279625781199125,33,WT parental,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,33,-0.4454524847567907,33,WT parental,210 nM bortezomib
+52,Clone E,21 nM bortezomib,33,-0.33295484458443825,33,WT parental,210 nM bortezomib
+53,Clone E,210 nM bortezomib,33,0.018501405253007877,33,WT parental,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,33,-0.5140971666538253,33,WT parental,210 nM bortezomib
+55,Clone E,210 nM bortezomib,33,0.04145925820060052,33,WT parental,210 nM bortezomib
+56,Clone E,0.1% DMSO,33,-0.4484986975182162,33,WT parental,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,33,-0.4195950005246715,33,WT parental,210 nM bortezomib
+58,Clone E,21 nM bortezomib,33,-0.2157633745844231,33,WT parental,210 nM bortezomib
+59,Clone E,210 nM bortezomib,33,-0.09112357065911576,33,WT parental,210 nM bortezomib
+35,WT parental,210 nM bortezomib,34,0.371473155927405,34,WT parental,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,34,0.381360381502765,34,WT parental,2.1 nM bortezomib
+37,WT parental,2.1 nM bortezomib,34,0.8363944678461712,34,WT parental,2.1 nM bortezomib
+38,WT parental,21 nM bortezomib,34,0.5594712711136759,34,WT parental,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,34,0.2757523484875449,34,WT parental,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,34,-0.15194594082616786,34,WT parental,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,34,-0.011857498913361821,34,WT parental,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,34,0.2628830930473482,34,WT parental,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,34,-0.23553759633375543,34,WT parental,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,34,0.22524207429951004,34,WT parental,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,34,-0.09440009462476492,34,WT parental,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,34,-0.16532217009302214,34,WT parental,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,34,0.10209804784053376,34,WT parental,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,34,0.12991781115382256,34,WT parental,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,34,-0.36288300764717435,34,WT parental,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,34,-0.25188727847973885,34,WT parental,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,34,-0.19553522140556484,34,WT parental,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,34,-0.19932421313665638,34,WT parental,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,34,-0.5295514698840922,34,WT parental,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,34,-0.12219744443399305,34,WT parental,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,34,-0.45480450880475026,34,WT parental,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,34,-0.3823137525857479,34,WT parental,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,34,-0.298818628767667,34,WT parental,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,34,-0.3204728238318453,34,WT parental,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,34,-0.5450945587396193,34,WT parental,2.1 nM bortezomib
+36,WT parental,0.1% DMSO,35,-0.12425718132738997,35,WT parental,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,35,0.23031050859936356,35,WT parental,210 nM bortezomib
+38,WT parental,21 nM bortezomib,35,0.5673712527190796,35,WT parental,210 nM bortezomib
+39,WT parental,210 nM bortezomib,35,0.7353790863303434,35,WT parental,210 nM bortezomib
+40,Clone A,0.1% DMSO,35,-0.35685843711482185,35,WT parental,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,35,-0.3936912294735066,35,WT parental,210 nM bortezomib
+42,Clone A,21 nM bortezomib,35,0.05145407848283372,35,WT parental,210 nM bortezomib
+43,Clone A,210 nM bortezomib,35,0.32667261543388165,35,WT parental,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,35,-0.24079531277806593,35,WT parental,210 nM bortezomib
+45,Clone A,210 nM bortezomib,35,0.5262081582349761,35,WT parental,210 nM bortezomib
+46,Clone A,0.1% DMSO,35,-0.43779816596175497,35,WT parental,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,35,-0.18908186268291688,35,WT parental,210 nM bortezomib
+48,Clone A,21 nM bortezomib,35,-0.008788298403757479,35,WT parental,210 nM bortezomib
+49,Clone A,210 nM bortezomib,35,0.24112258964880312,35,WT parental,210 nM bortezomib
+50,Clone E,0.1% DMSO,35,-0.30983957088470104,35,WT parental,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,35,-0.2515333687910759,35,WT parental,210 nM bortezomib
+52,Clone E,21 nM bortezomib,35,-0.3136163568784423,35,WT parental,210 nM bortezomib
+53,Clone E,210 nM bortezomib,35,0.1121887459548328,35,WT parental,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,35,-0.3158324560609695,35,WT parental,210 nM bortezomib
+55,Clone E,210 nM bortezomib,35,0.2897762561128563,35,WT parental,210 nM bortezomib
+56,Clone E,0.1% DMSO,35,-0.369099371848429,35,WT parental,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,35,-0.3295305851556191,35,WT parental,210 nM bortezomib
+58,Clone E,21 nM bortezomib,35,-0.3789880202662692,35,WT parental,210 nM bortezomib
+59,Clone E,210 nM bortezomib,35,-0.10723209326303339,35,WT parental,210 nM bortezomib
+37,WT parental,2.1 nM bortezomib,36,0.5343868285074532,36,WT parental,0.1% DMSO
+38,WT parental,21 nM bortezomib,36,0.08207123523256853,36,WT parental,0.1% DMSO
+39,WT parental,210 nM bortezomib,36,-0.12515964628827514,36,WT parental,0.1% DMSO
+40,Clone A,0.1% DMSO,36,-0.15790038163438136,36,WT parental,0.1% DMSO
+41,Clone A,2.1 nM bortezomib,36,-0.04241600738523907,36,WT parental,0.1% DMSO
+42,Clone A,21 nM bortezomib,36,-0.15655506566512242,36,WT parental,0.1% DMSO
+43,Clone A,210 nM bortezomib,36,-0.4573108284335512,36,WT parental,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,36,0.0158701166800209,36,WT parental,0.1% DMSO
+45,Clone A,210 nM bortezomib,36,-0.3754110327466285,36,WT parental,0.1% DMSO
+46,Clone A,0.1% DMSO,36,0.19377301748344516,36,WT parental,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,36,0.09252955879662272,36,WT parental,0.1% DMSO
+48,Clone A,21 nM bortezomib,36,-0.2677452479734878,36,WT parental,0.1% DMSO
+49,Clone A,210 nM bortezomib,36,-0.4367346722282681,36,WT parental,0.1% DMSO
+50,Clone E,0.1% DMSO,36,-0.06620497968122946,36,WT parental,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,36,0.18067198182141334,36,WT parental,0.1% DMSO
+52,Clone E,21 nM bortezomib,36,0.08898492425415579,36,WT parental,0.1% DMSO
+53,Clone E,210 nM bortezomib,36,-0.21328149152342013,36,WT parental,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,36,0.18429994819978818,36,WT parental,0.1% DMSO
+55,Clone E,210 nM bortezomib,36,-0.18963516947460876,36,WT parental,0.1% DMSO
+56,Clone E,0.1% DMSO,36,0.07476080926476804,36,WT parental,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,36,0.2428523302133023,36,WT parental,0.1% DMSO
+58,Clone E,21 nM bortezomib,36,0.08097603389667742,36,WT parental,0.1% DMSO
+59,Clone E,210 nM bortezomib,36,-0.2431957691261747,36,WT parental,0.1% DMSO
+38,WT parental,21 nM bortezomib,37,0.6575237335144025,37,WT parental,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,37,0.31859527986772446,37,WT parental,2.1 nM bortezomib
+40,Clone A,0.1% DMSO,37,-0.34628105030437617,37,WT parental,2.1 nM bortezomib
+41,Clone A,2.1 nM bortezomib,37,-0.261093158993984,37,WT parental,2.1 nM bortezomib
+42,Clone A,21 nM bortezomib,37,0.017193436384965337,37,WT parental,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,37,-0.3763480403265668,37,WT parental,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,37,0.10873353359383647,37,WT parental,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,37,-0.2846081290947162,37,WT parental,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,37,0.07942685355672065,37,WT parental,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,37,0.07181950382919176,37,WT parental,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,37,0.10806880834338063,37,WT parental,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,37,-0.37634907620620867,37,WT parental,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,37,-0.21532082575748032,37,WT parental,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,37,-0.23253082417346663,37,WT parental,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,37,-0.14971572748767234,37,WT parental,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,37,-0.42263758527280587,37,WT parental,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,37,-0.08809225826708193,37,WT parental,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,37,-0.42647327563688214,37,WT parental,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,37,-0.10569688585305313,37,WT parental,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,37,-0.05876915868620759,37,WT parental,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,37,0.008715750813683244,37,WT parental,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,37,-0.34693699543886036,37,WT parental,2.1 nM bortezomib
+39,WT parental,210 nM bortezomib,38,0.7570374987979287,38,WT parental,21 nM bortezomib
+40,Clone A,0.1% DMSO,38,-0.48337931753290125,38,WT parental,21 nM bortezomib
+41,Clone A,2.1 nM bortezomib,38,-0.5624481226464622,38,WT parental,21 nM bortezomib
+42,Clone A,21 nM bortezomib,38,-0.02851469530161486,38,WT parental,21 nM bortezomib
+43,Clone A,210 nM bortezomib,38,0.01720397567837615,38,WT parental,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,38,-0.16954538958596013,38,WT parental,21 nM bortezomib
+45,Clone A,210 nM bortezomib,38,0.1491926270766398,38,WT parental,21 nM bortezomib
+46,Clone A,0.1% DMSO,38,-0.12895431100436736,38,WT parental,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,38,-0.20026155181914151,38,WT parental,21 nM bortezomib
+48,Clone A,21 nM bortezomib,38,0.10693219715711653,38,WT parental,21 nM bortezomib
+49,Clone A,210 nM bortezomib,38,0.025248812375671625,38,WT parental,21 nM bortezomib
+50,Clone E,0.1% DMSO,38,-0.3429632564466706,38,WT parental,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,38,-0.4949541474409021,38,WT parental,21 nM bortezomib
+52,Clone E,21 nM bortezomib,38,-0.24262214674712115,38,WT parental,21 nM bortezomib
+53,Clone E,210 nM bortezomib,38,-0.06241382400614148,38,WT parental,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,38,-0.40325066389405667,38,WT parental,21 nM bortezomib
+55,Clone E,210 nM bortezomib,38,-0.13523541094004798,38,WT parental,21 nM bortezomib
+56,Clone E,0.1% DMSO,38,-0.2780003841238668,38,WT parental,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,38,-0.2488420637761878,38,WT parental,21 nM bortezomib
+58,Clone E,21 nM bortezomib,38,0.03705549050749198,38,WT parental,21 nM bortezomib
+59,Clone E,210 nM bortezomib,38,0.05347781074617998,38,WT parental,21 nM bortezomib
+40,Clone A,0.1% DMSO,39,-0.4899097018823534,39,WT parental,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,39,-0.5368695662389589,39,WT parental,210 nM bortezomib
+42,Clone A,21 nM bortezomib,39,-0.09055767602273515,39,WT parental,210 nM bortezomib
+43,Clone A,210 nM bortezomib,39,0.23889631690458493,39,WT parental,210 nM bortezomib
+44,Clone A,2.1 nM bortezomib,39,-0.17908689635112474,39,WT parental,210 nM bortezomib
+45,Clone A,210 nM bortezomib,39,0.38639908004426743,39,WT parental,210 nM bortezomib
+46,Clone A,0.1% DMSO,39,-0.14889076522654227,39,WT parental,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,39,-0.1026430615793986,39,WT parental,210 nM bortezomib
+48,Clone A,21 nM bortezomib,39,0.13311676630729377,39,WT parental,210 nM bortezomib
+49,Clone A,210 nM bortezomib,39,0.31479441951809084,39,WT parental,210 nM bortezomib
+50,Clone E,0.1% DMSO,39,-0.3673407764439572,39,WT parental,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,39,-0.5232170793365285,39,WT parental,210 nM bortezomib
+52,Clone E,21 nM bortezomib,39,-0.3947081907098926,39,WT parental,210 nM bortezomib
+53,Clone E,210 nM bortezomib,39,0.08695790016067145,39,WT parental,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,39,-0.40882016418679323,39,WT parental,210 nM bortezomib
+55,Clone E,210 nM bortezomib,39,0.09602388868113548,39,WT parental,210 nM bortezomib
+56,Clone E,0.1% DMSO,39,-0.23707532831997463,39,WT parental,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,39,-0.19081003540990607,39,WT parental,210 nM bortezomib
+58,Clone E,21 nM bortezomib,39,-0.04058016769231824,39,WT parental,210 nM bortezomib
+59,Clone E,210 nM bortezomib,39,0.20635277259519585,39,WT parental,210 nM bortezomib
+41,Clone A,2.1 nM bortezomib,40,0.6284423231707719,40,Clone A,0.1% DMSO
+42,Clone A,21 nM bortezomib,40,0.2997335301668502,40,Clone A,0.1% DMSO
+43,Clone A,210 nM bortezomib,40,0.019746546739641182,40,Clone A,0.1% DMSO
+44,Clone A,2.1 nM bortezomib,40,0.28505504243144125,40,Clone A,0.1% DMSO
+45,Clone A,210 nM bortezomib,40,-0.1046745599241841,40,Clone A,0.1% DMSO
+46,Clone A,0.1% DMSO,40,0.17516734995196495,40,Clone A,0.1% DMSO
+47,Clone A,2.1 nM bortezomib,40,-0.00433369887419523,40,Clone A,0.1% DMSO
+48,Clone A,21 nM bortezomib,40,-0.16994409776464334,40,Clone A,0.1% DMSO
+49,Clone A,210 nM bortezomib,40,-0.2586821690846936,40,Clone A,0.1% DMSO
+50,Clone E,0.1% DMSO,40,0.6399062591080664,40,Clone A,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,40,0.3265746291119583,40,Clone A,0.1% DMSO
+52,Clone E,21 nM bortezomib,40,0.08063356151418316,40,Clone A,0.1% DMSO
+53,Clone E,210 nM bortezomib,40,-0.15497578799072984,40,Clone A,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,40,0.021390564360803936,40,Clone A,0.1% DMSO
+55,Clone E,210 nM bortezomib,40,-0.19698713180875735,40,Clone A,0.1% DMSO
+56,Clone E,0.1% DMSO,40,0.03849547005060433,40,Clone A,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,40,-0.19892048909383392,40,Clone A,0.1% DMSO
+58,Clone E,21 nM bortezomib,40,-0.34978146255899634,40,Clone A,0.1% DMSO
+59,Clone E,210 nM bortezomib,40,-0.2500215552647613,40,Clone A,0.1% DMSO
+42,Clone A,21 nM bortezomib,41,0.36540870685398874,41,Clone A,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,41,-0.1560811067680643,41,Clone A,2.1 nM bortezomib
+44,Clone A,2.1 nM bortezomib,41,0.5293409821348858,41,Clone A,2.1 nM bortezomib
+45,Clone A,210 nM bortezomib,41,-0.2148202743629458,41,Clone A,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,41,0.13724915347606306,41,Clone A,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,41,0.4143984988260692,41,Clone A,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,41,0.04734678189863827,41,Clone A,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,41,-0.35170836234847536,41,Clone A,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,41,0.1896477486242916,41,Clone A,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,41,0.33721333249214047,41,Clone A,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,41,0.10329083923846424,41,Clone A,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,41,-0.3568759210433717,41,Clone A,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,41,0.33914646423944467,41,Clone A,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,41,-0.3901296511688376,41,Clone A,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,41,-0.03219066205097682,41,Clone A,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,41,-0.030482812250774035,41,Clone A,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,41,-0.2872667659990421,41,Clone A,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,41,-0.3424001887672357,41,Clone A,2.1 nM bortezomib
+43,Clone A,210 nM bortezomib,42,0.39094010643968347,42,Clone A,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,42,0.22704668295213457,42,Clone A,21 nM bortezomib
+45,Clone A,210 nM bortezomib,42,0.3347353627123202,42,Clone A,21 nM bortezomib
+46,Clone A,0.1% DMSO,42,-0.1140569450924457,42,Clone A,21 nM bortezomib
+47,Clone A,2.1 nM bortezomib,42,0.16949776107473355,42,Clone A,21 nM bortezomib
+48,Clone A,21 nM bortezomib,42,0.4388472910143701,42,Clone A,21 nM bortezomib
+49,Clone A,210 nM bortezomib,42,0.12568406294756188,42,Clone A,21 nM bortezomib
+50,Clone E,0.1% DMSO,42,0.005237585393540445,42,Clone A,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,42,-0.06447856583558248,42,Clone A,21 nM bortezomib
+52,Clone E,21 nM bortezomib,42,0.11629104998519972,42,Clone A,21 nM bortezomib
+53,Clone E,210 nM bortezomib,42,-0.16220683242960882,42,Clone A,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,42,-0.20295453900236313,42,Clone A,21 nM bortezomib
+55,Clone E,210 nM bortezomib,42,-0.17793569040763038,42,Clone A,21 nM bortezomib
+56,Clone E,0.1% DMSO,42,-0.3392655777110129,42,Clone A,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,42,-0.3959732093744266,42,Clone A,21 nM bortezomib
+58,Clone E,21 nM bortezomib,42,-0.15948780873995544,42,Clone A,21 nM bortezomib
+59,Clone E,210 nM bortezomib,42,-0.2610087887358732,42,Clone A,21 nM bortezomib
+44,Clone A,2.1 nM bortezomib,43,-0.14115432170213946,43,Clone A,210 nM bortezomib
+45,Clone A,210 nM bortezomib,43,0.808448975453896,43,Clone A,210 nM bortezomib
+46,Clone A,0.1% DMSO,43,-0.21440162689874578,43,Clone A,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,43,-0.12376956719773813,43,Clone A,210 nM bortezomib
+48,Clone A,21 nM bortezomib,43,0.14212793191373513,43,Clone A,210 nM bortezomib
+49,Clone A,210 nM bortezomib,43,0.7192692328666981,43,Clone A,210 nM bortezomib
+50,Clone E,0.1% DMSO,43,-0.039588591994812995,43,Clone A,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,43,-0.18240183072249097,43,Clone A,210 nM bortezomib
+52,Clone E,21 nM bortezomib,43,-0.15816407084726347,43,Clone A,210 nM bortezomib
+53,Clone E,210 nM bortezomib,43,0.5283870367531512,43,Clone A,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,43,-0.3868329469480038,43,Clone A,210 nM bortezomib
+55,Clone E,210 nM bortezomib,43,0.4877988861596141,43,Clone A,210 nM bortezomib
+56,Clone E,0.1% DMSO,43,-0.19504141369987338,43,Clone A,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,43,-0.3015197690678567,43,Clone A,210 nM bortezomib
+58,Clone E,21 nM bortezomib,43,-0.1367821939575444,43,Clone A,210 nM bortezomib
+59,Clone E,210 nM bortezomib,43,0.3333923187757458,43,Clone A,210 nM bortezomib
+45,Clone A,210 nM bortezomib,44,-0.10541264254189592,44,Clone A,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,44,0.5352819573003179,44,Clone A,2.1 nM bortezomib
+47,Clone A,2.1 nM bortezomib,44,0.7770887883253231,44,Clone A,2.1 nM bortezomib
+48,Clone A,21 nM bortezomib,44,0.3555555006968711,44,Clone A,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,44,-0.18740744437337023,44,Clone A,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,44,-0.04670620293988906,44,Clone A,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,44,0.0028698053943754707,44,Clone A,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,44,-0.4398480046270436,44,Clone A,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,44,-0.5514274461348595,44,Clone A,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,44,0.27287529756508166,44,Clone A,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,44,-0.580899573319783,44,Clone A,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,44,0.15245529685278186,44,Clone A,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,44,0.19603900225333257,44,Clone A,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,44,-0.2487292638152157,44,Clone A,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,44,-0.290330041459026,44,Clone A,2.1 nM bortezomib
+46,Clone A,0.1% DMSO,45,-0.17792530333585038,45,Clone A,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,45,-0.016732266197758083,45,Clone A,210 nM bortezomib
+48,Clone A,21 nM bortezomib,45,0.23827767075713382,45,Clone A,210 nM bortezomib
+49,Clone A,210 nM bortezomib,45,0.7265329193511366,45,Clone A,210 nM bortezomib
+50,Clone E,0.1% DMSO,45,-0.20128977384798338,45,Clone A,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,45,-0.18702644939077806,45,Clone A,210 nM bortezomib
+52,Clone E,21 nM bortezomib,45,-0.2073963960837733,45,Clone A,210 nM bortezomib
+53,Clone E,210 nM bortezomib,45,0.42370899322878064,45,Clone A,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,45,-0.3402148647898194,45,Clone A,210 nM bortezomib
+55,Clone E,210 nM bortezomib,45,0.482351501268064,45,Clone A,210 nM bortezomib
+56,Clone E,0.1% DMSO,45,-0.19335654705340202,45,Clone A,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,45,-0.29642659116812264,45,Clone A,210 nM bortezomib
+58,Clone E,21 nM bortezomib,45,-0.2698918889494508,45,Clone A,210 nM bortezomib
+59,Clone E,210 nM bortezomib,45,0.22622946081845338,45,Clone A,210 nM bortezomib
+47,Clone A,2.1 nM bortezomib,46,0.5197264099397707,46,Clone A,0.1% DMSO
+48,Clone A,21 nM bortezomib,46,0.17602039184067308,46,Clone A,0.1% DMSO
+49,Clone A,210 nM bortezomib,46,-0.06894788794548413,46,Clone A,0.1% DMSO
+50,Clone E,0.1% DMSO,46,0.18710884906484268,46,Clone A,0.1% DMSO
+51,Clone E,2.1 nM bortezomib,46,0.09551343308979077,46,Clone A,0.1% DMSO
+52,Clone E,21 nM bortezomib,46,-0.2171960702944912,46,Clone A,0.1% DMSO
+53,Clone E,210 nM bortezomib,46,-0.16739308080412924,46,Clone A,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,46,0.2935574918531063,46,Clone A,0.1% DMSO
+55,Clone E,210 nM bortezomib,46,-0.3157122180161225,46,Clone A,0.1% DMSO
+56,Clone E,0.1% DMSO,46,0.6944638614962642,46,Clone A,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,46,0.520272723607647,46,Clone A,0.1% DMSO
+58,Clone E,21 nM bortezomib,46,0.2265073970026485,46,Clone A,0.1% DMSO
+59,Clone E,210 nM bortezomib,46,0.17438940258595229,46,Clone A,0.1% DMSO
+48,Clone A,21 nM bortezomib,47,0.5090242636575681,47,Clone A,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,47,0.006224623891112347,47,Clone A,2.1 nM bortezomib
+50,Clone E,0.1% DMSO,47,-0.2755345602630291,47,Clone A,2.1 nM bortezomib
+51,Clone E,2.1 nM bortezomib,47,-0.09213588580434712,47,Clone A,2.1 nM bortezomib
+52,Clone E,21 nM bortezomib,47,-0.44773966038931917,47,Clone A,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,47,-0.4373249290141245,47,Clone A,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,47,0.31003932957982033,47,Clone A,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,47,-0.3737902581497052,47,Clone A,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,47,0.24331722032473496,47,Clone A,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,47,0.3690657352471977,47,Clone A,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,47,-0.11861113758828154,47,Clone A,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,47,-0.18310426836095248,47,Clone A,2.1 nM bortezomib
+49,Clone A,210 nM bortezomib,48,0.3217795561468746,48,Clone A,21 nM bortezomib
+50,Clone E,0.1% DMSO,48,-0.47146256240834944,48,Clone A,21 nM bortezomib
+51,Clone E,2.1 nM bortezomib,48,-0.3973771217904982,48,Clone A,21 nM bortezomib
+52,Clone E,21 nM bortezomib,48,-0.1515331623608971,48,Clone A,21 nM bortezomib
+53,Clone E,210 nM bortezomib,48,-0.23064371902175163,48,Clone A,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,48,-0.043146961285943426,48,Clone A,21 nM bortezomib
+55,Clone E,210 nM bortezomib,48,-0.17492336734501637,48,Clone A,21 nM bortezomib
+56,Clone E,0.1% DMSO,48,-0.060642166281140775,48,Clone A,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,48,0.01405319200054456,48,Clone A,21 nM bortezomib
+58,Clone E,21 nM bortezomib,48,0.11750446364201213,48,Clone A,21 nM bortezomib
+59,Clone E,210 nM bortezomib,48,-0.02475520516568311,48,Clone A,21 nM bortezomib
+50,Clone E,0.1% DMSO,49,-0.23942347634471947,49,Clone A,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,49,-0.34366784202394096,49,Clone A,210 nM bortezomib
+52,Clone E,21 nM bortezomib,49,-0.21316027878000318,49,Clone A,210 nM bortezomib
+53,Clone E,210 nM bortezomib,49,0.5005408811115615,49,Clone A,210 nM bortezomib
+54,Clone E,2.1 nM bortezomib,49,-0.3570809862059506,49,Clone A,210 nM bortezomib
+55,Clone E,210 nM bortezomib,49,0.5562257153775079,49,Clone A,210 nM bortezomib
+56,Clone E,0.1% DMSO,49,-0.03646131362046714,49,Clone A,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,49,-0.1299982108988865,49,Clone A,210 nM bortezomib
+58,Clone E,21 nM bortezomib,49,0.09443875849047104,49,Clone A,210 nM bortezomib
+59,Clone E,210 nM bortezomib,49,0.5187834586513708,49,Clone A,210 nM bortezomib
+51,Clone E,2.1 nM bortezomib,50,0.46567967985338693,50,Clone E,0.1% DMSO
+52,Clone E,21 nM bortezomib,50,0.17094654167047935,50,Clone E,0.1% DMSO
+53,Clone E,210 nM bortezomib,50,0.05784221959503343,50,Clone E,0.1% DMSO
+54,Clone E,2.1 nM bortezomib,50,0.11936850931462646,50,Clone E,0.1% DMSO
+55,Clone E,210 nM bortezomib,50,-0.020202503357428715,50,Clone E,0.1% DMSO
+56,Clone E,0.1% DMSO,50,0.3426634621811756,50,Clone E,0.1% DMSO
+57,Clone E,2.1 nM bortezomib,50,0.034481769021123966,50,Clone E,0.1% DMSO
+58,Clone E,21 nM bortezomib,50,-0.09269810948507522,50,Clone E,0.1% DMSO
+59,Clone E,210 nM bortezomib,50,-0.09342470041268319,50,Clone E,0.1% DMSO
+52,Clone E,21 nM bortezomib,51,0.4414656072423694,51,Clone E,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,51,0.11923724019888546,51,Clone E,2.1 nM bortezomib
+54,Clone E,2.1 nM bortezomib,51,0.6260840749445326,51,Clone E,2.1 nM bortezomib
+55,Clone E,210 nM bortezomib,51,0.16660966539844946,51,Clone E,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,51,0.3981462111586497,51,Clone E,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,51,0.2645896507833442,51,Clone E,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,51,-0.08986447535521559,51,Clone E,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,51,-0.23404881644533018,51,Clone E,2.1 nM bortezomib
+53,Clone E,210 nM bortezomib,52,0.2192929162800152,52,Clone E,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,52,0.1893264264082579,52,Clone E,21 nM bortezomib
+55,Clone E,210 nM bortezomib,52,0.12994136218106303,52,Clone E,21 nM bortezomib
+56,Clone E,0.1% DMSO,52,-0.013304943785699559,52,Clone E,21 nM bortezomib
+57,Clone E,2.1 nM bortezomib,52,-0.034951401142986595,52,Clone E,21 nM bortezomib
+58,Clone E,21 nM bortezomib,52,0.426804462350196,52,Clone E,21 nM bortezomib
+59,Clone E,210 nM bortezomib,52,-0.00792240625711073,52,Clone E,21 nM bortezomib
+54,Clone E,2.1 nM bortezomib,53,-0.13987623427548568,53,Clone E,210 nM bortezomib
+55,Clone E,210 nM bortezomib,53,0.7910509739052852,53,Clone E,210 nM bortezomib
+56,Clone E,0.1% DMSO,53,0.11894762946258411,53,Clone E,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,53,-0.008660872066477393,53,Clone E,210 nM bortezomib
+58,Clone E,21 nM bortezomib,53,0.2217459559029633,53,Clone E,210 nM bortezomib
+59,Clone E,210 nM bortezomib,53,0.6294566892227617,53,Clone E,210 nM bortezomib
+55,Clone E,210 nM bortezomib,54,-0.0523620607064339,54,Clone E,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,54,0.4971343610269586,54,Clone E,2.1 nM bortezomib
+57,Clone E,2.1 nM bortezomib,54,0.6785293889172824,54,Clone E,2.1 nM bortezomib
+58,Clone E,21 nM bortezomib,54,0.0728006304504529,54,Clone E,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,54,-0.13340374557562348,54,Clone E,2.1 nM bortezomib
+56,Clone E,0.1% DMSO,55,0.08545985790559038,55,Clone E,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,55,0.0012948972919300144,55,Clone E,210 nM bortezomib
+58,Clone E,21 nM bortezomib,55,0.02857044817145342,55,Clone E,210 nM bortezomib
+59,Clone E,210 nM bortezomib,55,0.42960730629318006,55,Clone E,210 nM bortezomib
+57,Clone E,2.1 nM bortezomib,56,0.6846158765916855,56,Clone E,0.1% DMSO
+58,Clone E,21 nM bortezomib,56,0.2675488750203475,56,Clone E,0.1% DMSO
+59,Clone E,210 nM bortezomib,56,0.23734991648315334,56,Clone E,0.1% DMSO
+58,Clone E,21 nM bortezomib,57,0.3794362564633379,57,Clone E,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,57,0.19879254448620357,57,Clone E,2.1 nM bortezomib
+59,Clone E,210 nM bortezomib,58,0.4798863125835992,58,Clone E,21 nM bortezomib
