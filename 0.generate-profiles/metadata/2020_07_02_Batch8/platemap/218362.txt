@@ -1,0 +1,61 @@
+plate_map_name	well_position	clone_number	plate_ID	plate_filename	treatment	treatment_time	cell_density
+218362	B02	WT parental	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	B03	WT parental	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	B04	WT parental	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	B05	WT parental	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	B06	WT parental	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	B07	WT parental	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	B08	WT parental	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	B09	WT parental	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	B10	WT parental	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	B11	WT parental	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	C02	Clone A	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	C03	Clone A	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	C04	Clone A	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	C05	Clone A	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	C06	Clone A	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	C07	Clone A	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	C08	Clone A	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	C09	Clone A	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	C10	Clone A	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	C11	Clone A	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	D02	Clone E	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	D03	Clone E	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	D04	Clone E	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	D05	Clone E	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	D06	Clone E	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	D07	Clone E	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	D08	Clone E	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	D09	Clone E	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	D10	Clone E	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	D11	Clone E	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	E02	WT parental	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	E03	WT parental	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	E04	WT parental	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	E05	WT parental	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	E06	WT parental	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	E07	WT parental	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	E08	WT parental	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	E09	WT parental	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	E10	WT parental	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	E11	WT parental	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	F02	Clone A	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	F03	Clone A	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	F04	Clone A	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	F05	Clone A	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	F06	Clone A	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	F07	Clone A	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	F08	Clone A	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	F09	Clone A	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	F10	Clone A	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	F11	Clone A	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	G02	Clone E	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	G03	Clone E	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	G04	Clone E	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	G05	Clone E	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	G06	Clone E	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	G07	Clone E	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
+218362	G08	Clone E	218362	20200629-20200626-WTpAE-Lo	0.1% DMSO	13 hr	5x10^3 cells/well
+218362	G09	Clone E	218362	20200629-20200626-WTpAE-Lo	2.1 nM bortezomib	13 hr	5x10^3 cells/well
+218362	G10	Clone E	218362	20200629-20200626-WTpAE-Lo	21 nM bortezomib	13 hr	5x10^3 cells/well
+218362	G11	Clone E	218362	20200629-20200626-WTpAE-Lo	210 nM bortezomib	13 hr	5x10^3 cells/well
