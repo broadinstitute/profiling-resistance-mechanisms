@@ -94,7 +94,6 @@ def process_sites(
 ):
     data_df = {}
     for imagenumber in imagenumbers:
-        print(f"ImageNumber: {imagenumber}")
         data_df[imagenumber] = process_data(
             connection=connection,
             imagenumber=imagenumber,
