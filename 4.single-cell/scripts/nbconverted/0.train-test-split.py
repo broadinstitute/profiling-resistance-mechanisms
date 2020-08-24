@@ -29,8 +29,10 @@ pd.np.random.seed(1234)
 
 
 # Set constants
-batch = "2019_03_20_Batch2"
-plate = "207106_exposure320"
+batch = "2020_07_02_Batch8"
+plate = "218360"
+cell_line_column = "Metadata_clone_number"
+cell_lines = ["Clone A", "Clone E", "WT parental"]
 
 feature_filter = ["Object", "Location", "Count", "Parent"]
 test_split_prop = 0.15
@@ -52,7 +54,7 @@ na_cutoff = 0
 
 # Load locations of single cell files
 config = pathlib.Path("../0.generate-profiles/profile_config.yaml")
-pipeline, single_cell_files = load_config(config, append_sql_prefix=False)
+pipeline, single_cell_files = load_config(config, append_sql_prefix=False, local=True)
 
 
 # In[5]:
@@ -60,7 +62,7 @@ pipeline, single_cell_files = load_config(config, append_sql_prefix=False)
 
 workspace_dir = pipeline["workspace_dir"]
 batch_dir = pathlib.Path(workspace_dir, "backend", batch)
-metadata_dir = pathlib.Path(workspace_dir, "metadata", batch)
+metadata_dir = pathlib.Path("../0.generate-profiles", "metadata", batch)
 
 barcode_plate_map_file = pathlib.Path(metadata_dir, "barcode_platemap.csv")
 barcode_plate_map_df = pd.read_csv(barcode_plate_map_file)
@@ -132,130 +134,133 @@ assert len(image_df.ImageNumber.unique()) == image_df.shape[0]
 # In[11]:
 
 
-image_df.Metadata_CellLine.value_counts()
+# How many wells were collected per treatment
+replicate_info_df = (
+    image_df.loc[:, ["Metadata_Well", cell_line_column, "Metadata_treatment"]]
+    .drop_duplicates()
+)
 
+pd.crosstab(replicate_info_df.loc[:, cell_line_column], replicate_info_df.Metadata_treatment)
+
+
+# ## Identify wells to use for training and holdout sets
+# 
+# There are three wells per replicate cell line and treatment.
+# We will select two at random to use in training and use the remaining one as a holdout set.
 
 # In[12]:
 
 
-image_df.Metadata_Well.value_counts()
+untreated_wells = []
+imagenumber_dict = {}
+for cell_line in cell_lines:
+    imagenumber_dict[cell_line] = {}
+    wells = (
+        image_df
+        .query(f"{cell_line_column} == @cell_line")
+        .query("Metadata_treatment == '0.1% DMSO'")
+    ).Metadata_Well.unique()
+    
+    train_wells = pd.np.random.choice(wells, size=3, replace=False)
+    holdout_wells = [x for x in wells if x not in train_wells]
+
+    untreated_wells.extend(train_wells)
+    untreated_wells.extend(holdout_wells)
+    
+    imagenumber_dict[cell_line]["train"] = (
+        image_df
+        .query("Metadata_Well in @train_wells")
+        .ImageNumber
+        .tolist()
+    )
+    imagenumber_dict[cell_line]["holdout"] = (
+        image_df
+        .query("Metadata_Well in @holdout_wells")
+        .ImageNumber
+        .tolist()
+    )
 
 
 # In[13]:
 
 
-clone_e_wells = pd.np.random.choice(
-    (
+other_wells = [x for x in image_df.Metadata_Well.unique() if x not in untreated_wells]
+
+for cell_line in cell_lines:
+    imagenumber_dict[cell_line]["other"] = (
         image_df
-        .query("Metadata_CellLine == 'CloneE'")
-        .query("Metadata_Dosage == 0")
+        .query("Metadata_clone_number == @cell_line")
+        .query("Metadata_Well in @other_wells")
+        .ImageNumber
+        .tolist()
     )
-    .Metadata_Well.unique(), size=2, replace=False
-)
-
-wt_wells = pd.np.random.choice(
-    (
-        image_df
-        .query("Metadata_CellLine == 'WT'")
-        .query("Metadata_Dosage == 0")
-    ).Metadata_Well.unique(), size=2, replace=False
-)
-
-clone_e_holdout_wells = pd.np.random.choice(
-    (
-        image_df
-        .query("Metadata_CellLine == 'CloneE'")
-        .query("Metadata_Dosage == 0")
-        .query("Metadata_Well not in @clone_e_wells")
-    )
-    .Metadata_Well.unique(), size=1, replace=False
-)
-
-wt_holdout_wells = pd.np.random.choice(
-    (
-        image_df
-        .query("Metadata_CellLine == 'WT'")
-        .query("Metadata_Dosage == 0")
-        .query("Metadata_Well not in @wt_wells")
-    ).Metadata_Well.unique(), size=1, replace=False
-)
-
-clone_a_wells = pd.np.random.choice(
-    (
-        image_df
-        .query("Metadata_CellLine == 'CloneA'")
-        .query("Metadata_Dosage == 0")
-    )
-    .Metadata_Well.unique(), size=1, replace=False
-)
-
-holdout_wells = list(clone_e_holdout_wells) + list(wt_holdout_wells) + list(clone_a_wells)
-
-print(
-    f"Clone E Wells: {clone_e_wells}",
-    f"\nWT Wells: {wt_wells}",
-    f"\nAll Holdout Wells: {holdout_wells}"
-    f"\nHoldout: Clone E Wells: {clone_e_holdout_wells}",
-    f"\nHoldout: WT Wells: {wt_holdout_wells}",
-    f"\nHoldout: Clone A Wells: {clone_a_wells}",
-)
 
 
-# # Load Cells
+# ## Load Single Cell Data
 
 # In[14]:
 
 
-imagenumber_dict = {}
-imagenumber_dict["clone_e"] = image_df.query("Metadata_Well in @clone_e_wells").ImageNumber.tolist()
-imagenumber_dict["wt"] = image_df.query("Metadata_Well in @wt_wells").ImageNumber.tolist()
-imagenumber_dict["holdout"] = image_df.query("Metadata_Well in @holdout_wells").ImageNumber.tolist()
+training_dict_df = {}
+holdout_dict_df = {}
+other_dict_df = {}
+for clone_type, clone_info_dict in imagenumber_dict.items():
+    for data_split, clone_imagenumbers in clone_info_dict.items():
+        print(f"Now loading... {clone_type}, {data_split}")
+        sc_df = process_sites(
+            connection=conn,
+            imagenumbers=clone_imagenumbers,
+            image_df=image_df,
+            feature_filter=feature_filter,
+            seed=seed,
+            normalize=False
+        )
+        if data_split == "holdout":
+            holdout_dict_df[clone_type] = sc_df.reset_index(drop=True)
+        elif data_split == "train":
+            training_dict_df[clone_type] = sc_df.reset_index(drop=True)
+        elif data_split == "other":
+            other_dict_df[clone_type] = sc_df.reset_index(drop=True)
 
-imagenumber_dict
 
+# ## Normalize, split, and shuffle row order
 
 # In[15]:
 
 
-training_dict_df = {}
-holdout_dict_df = {}
-for clone_type, clone_imagenumbers in imagenumber_dict.items():
-    print(f"Now processing clone: {clone_type}")
-    train_df = process_sites(
-        connection=conn,
-        imagenumbers=clone_imagenumbers,
-        image_df=image_df,
-        feature_filter=feature_filter,
-        seed=seed,
-        normalize=False
-    )
-    print(train_df.shape)
-    
-    if clone_type in ["clone_e", "wt"]:
-        training_dict_df[clone_type] = train_df.reset_index(drop=True)
-    else:
-        holdout_dict_df[clone_type] = train_df.reset_index(drop=True)
-
-
-# In[16]:
-
-
-# Normalize, split, and shuffle row order
+# Training and testing sets
 train_df = pd.concat(training_dict_df).sample(frac=1).reset_index(drop=True)
 train_df = normalize_sc(train_df, scaler_method=scaler_method)
 
-train_df, test_df = train_test_split(train_df, test_size=test_split_prop, random_state=seed)
+train_df, test_df = train_test_split(
+    train_df,
+    test_size=test_split_prop,
+    stratify=train_df.Metadata_clone_number,
+    random_state=seed
+)
 
 print(train_df.shape)
 print(test_df.shape)
 
 
+# In[16]:
+
+
+# Holdout set
+holdout_df = pd.concat(holdout_dict_df).sample(frac=1).reset_index(drop=True)
+holdout_df = normalize_sc(holdout_df, scaler_method=scaler_method)
+
+print(holdout_df.shape)
+
+
 # In[17]:
 
 
-holdout_df = pd.concat(holdout_dict_df).sample(frac=1).reset_index(drop=True)
-holdout_df = normalize_sc(holdout_df, scaler_method=scaler_method)
-print(holdout_df.shape)
+# Other data
+other_df = pd.concat(other_dict_df).sample(frac=1).reset_index(drop=True)
+other_df = normalize_sc(other_df, scaler_method=scaler_method)
+
+print(other_df.shape)
 
 
 # ## Apply Feature Selection
@@ -283,6 +288,7 @@ reindex_features = meta_features + selected_features
 test_df = test_df.reindex(reindex_features, axis="columns")
 train_df = train_df.reindex(reindex_features, axis="columns")
 holdout_df = holdout_df.reindex(reindex_features, axis="columns")
+other_df = other_df.reindex(reindex_features, axis="columns")
 
 
 # In[20]:
@@ -292,6 +298,7 @@ holdout_df = holdout_df.reindex(reindex_features, axis="columns")
 print(train_df.shape)
 print(test_df.shape)
 print(holdout_df.shape)
+print(other_df.shape)
 
 
 # ## Output Files
@@ -299,12 +306,15 @@ print(holdout_df.shape)
 # In[21]:
 
 
-out_file = pathlib.Path("data", "example_train.tsv.gz")
+out_file = pathlib.Path("data", "single_cell_train.tsv.gz")
 train_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
 
-out_file = pathlib.Path("data", "example_test.tsv.gz")
+out_file = pathlib.Path("data", "single_cell_test.tsv.gz")
 test_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
 
-out_file = pathlib.Path("data", "example_holdout.tsv.gz")
+out_file = pathlib.Path("data", "single_cell_holdout.tsv.gz")
 holdout_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
+
+out_file = pathlib.Path("data", "single_cell_othertreatment.tsv.gz")
+other_df.to_csv(out_file, sep="\t", compression="gzip", index=False)
 
