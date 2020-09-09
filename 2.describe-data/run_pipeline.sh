@@ -30,11 +30,11 @@ jupyter nbconvert --to=html \
         --FilesWriter.build_directory=scripts/html \
         --ExecutePreprocessor.kernel_name=python3 \
         --ExecutePreprocessor.timeout=10000000 \
-        --execute 3.umap-aggregate-profiles.ipynb
+        --execute 2.umap-aggregate-profiles.ipynb
 
 # Step 3 - Generate UMAP figures
 jupyter nbconvert --to=html \
         --FilesWriter.build_directory=scripts/html \
         --ExecutePreprocessor.kernel_name=ir \
         --ExecutePreprocessor.timeout=10000000 \
-        --execute 4.count-single-cells.ipynb
+        --execute 3.count-single-cells.ipynb
