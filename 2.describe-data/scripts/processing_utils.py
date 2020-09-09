@@ -11,12 +11,39 @@ import pandas as pd
 from pycytominer.cyto_utils import infer_cp_features
 
 
+def get_recode_cols():
+    return_dict = {}
+    return_dict["recode_cols"] = {
+        "Metadata_CellLine": "Metadata_clone_number",
+        "Metadata_Dosage": "Metadata_treatment",
+    }
+
+    return_dict["recode_sample"] = {
+        "Clone A": "CloneA",
+        "Clone E": "CloneE",
+        "WT": "WT_parental",
+        "WT parental": "WT_parental",
+    }
+
+    return_dict["recode_treatment"] = {
+        "0.0": "0.1% DMSO",
+        "DMSO": "0.1% DMSO",
+        "0.7": "2.1 nM bortezomib",
+        "7.0": "21 nM bortezomib",
+        "70.0": "210 nM bortezomib",
+        "bortezomib": "21 nM bortezomib",
+    }
+
+    return return_dict
+
+
 def load_data(
     batch,
     profile_dir="profiles",
     suffix="normalized_feature_selected.csv.gz",
     combine_dfs=False,
     add_cell_count=False,
+    harmonize_cols=False,
     cell_count_dir="cell_counts",
 ):
     batch_dir = os.path.join(profile_dir, batch)
@@ -24,7 +51,7 @@ def load_data(
     plate_folders = os.listdir(batch_dir)
 
     plate_files = [
-        os.path.join(batch_dir, x, "{}_{}".format(x, suffix))
+        os.path.join(batch_dir, x, f"{x}_{suffix}")
         for x in plate_folders
         if ".DS_Store" not in x
     ]
@@ -33,8 +60,28 @@ def load_data(
     for plate_idx in range(0, len(plate_files)):
         plate = plate_folders[plate_idx]
         df = pd.read_csv(plate_files[plate_idx]).assign(Metadata_batch=batch)
+
         if add_cell_count:
             df = merge_cell_count(df, batch, cell_count_dir=cell_count_dir)
+
+        if harmonize_cols:
+            recode_cols = get_recode_cols()
+
+            # Update columns and specific entries
+            if batch == "2019_06_25_Batch3":
+                df = df.assign(Metadata_treatment="Untreated")
+
+            df = df.rename(recode_cols["recode_cols"], axis="columns")
+
+            df.Metadata_clone_number = df.Metadata_clone_number.astype(str)
+            df.Metadata_treatment = df.Metadata_treatment.astype(str)
+
+            df.Metadata_clone_number = df.Metadata_clone_number.replace(
+                recode_cols["recode_sample"]
+            )
+            df.Metadata_treatment = df.Metadata_treatment.replace(
+                recode_cols["recode_treatment"]
+            )
 
         plate_data[plate] = df
 
