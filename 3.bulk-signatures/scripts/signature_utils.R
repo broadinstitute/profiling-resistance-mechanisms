@@ -51,7 +51,7 @@ process_tukey <- function(aov_list, features) {
   }
 
   full_tukey_results_df <- do.call(rbind, all_tukey_results) %>%
-    dplyr::mutate(neg_log_p = -log10(adj.p.value))
+    dplyr::mutate(neg_log_adj_p = -log10(adj.p.value))
 
   return(full_tukey_results_df)
 }
