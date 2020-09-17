@@ -6,3 +6,4 @@ Rplots.pdf
 .Rhistory
 .idea
 __pycache__/
+*.sqlite
