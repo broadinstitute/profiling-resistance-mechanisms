@@ -60,8 +60,13 @@ for batch in batches:
     )
     
     # Add important metadata features
-    df = df.assign(Metadata_batch=batch, Metadata_clone_type="resistant")
+    df = df.assign(
+        Metadata_batch=batch,
+        Metadata_clone_type="resistant",
+        Metadata_clone_type_indicator=1
+    )
     df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type"] = "sensitive"
+    df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type_indicator"] = 0
 
     # Store in dictionary
     if batch == "2020_07_02_Batch8":
@@ -77,6 +82,9 @@ for batch in batches:
 
 for dataset in dfs:
     bulk_df = pd.concat(dfs[dataset], sort=False).reset_index(drop=True)
+    bulk_df = bulk_df.assign(
+        Metadata_sample_index=[f"sample_index_{x}" for x in range(0, bulk_df.shape[0])]
+    )
     
     # Reorder features
     feat = infer_cp_features(bulk_df)
