@@ -12,6 +12,10 @@ input_data_dir = "data"
 output_fig_dir = file.path("figures", "anova")
 output_results_dir = file.path("results", "signatures")
 
+feat_file <- file.path(input_data_dir, "dataset_features_selected.tsv")
+all_selected_features_df <- readr::read_tsv(feat_file, col_types = readr::cols())
+head(all_selected_features_df, 3)
+
 bulk_col_types <- readr::cols(
     .default = readr::col_double(),
     Metadata_plate_map_name = readr::col_character(),
@@ -30,17 +34,33 @@ bulk_col_types <- readr::cols(
 bulk_data <- list()
 train_test_status <- list()
 for (dataset in datasets) {
-    bulk_file <- file.path(
-        input_data_dir,
-        paste0("bulk_profiles_", dataset, ".csv.gz")
-    )
+    bulk_file <- file.path(input_data_dir, paste0("bulk_profiles_", dataset, ".csv.gz"))
 
+    # Filter to only DMSO treated cells
     bulk_df <- readr::read_csv(bulk_file, col_types=bulk_col_types) %>%
         dplyr::filter(Metadata_treatment == "0.1% DMSO")
+    
+    # Make sure the clone type indicator is a factor
+    # Directionality matters in the ANOVA
+    bulk_df$Metadata_clone_type_indicator <- factor(bulk_df$Metadata_clone_type_indicator, levels = c(0, 1))
+    
+    # Subset to the features selected in the feature selection procedure
+    selected_features <- all_selected_features_df %>%
+        dplyr::filter(dataset == !!dataset) %>%
+        dplyr::pull(features)
+    
+    bulk_df <- bulk_df %>% dplyr::select(dplyr::starts_with("Metadata"), !!!selected_features)
 
     # Split into training and testing sets
-    test_df <- bulk_df %>%
-        dplyr::group_by(Metadata_Plate, Metadata_clone_number) %>% 
+    if (dataset == "four_clone") {
+        # The cloneAE dataset only has WT_parental lines
+        test_df <- bulk_df %>% dplyr::filter(Metadata_clone_number != "WT_parental")
+    } else {
+        test_df <- bulk_df
+    }
+
+    test_df <- test_df %>%
+        dplyr::group_by(Metadata_clone_number) %>% 
         dplyr::sample_frac(size = 0.15)
 
     # Break out training and testing splits
@@ -79,6 +99,7 @@ for (dataset in datasets) {
     if (dataset == "four_clone") {
         # The cloneAE dataset only has WT_parental lines
         bulk_df <- bulk_df %>% dplyr::filter(Metadata_clone_number != "WT_parental")
+        
         formula_terms <- paste(
             "~",
             "Metadata_clone_type_indicator", "+",
@@ -94,6 +115,7 @@ for (dataset in datasets) {
             "Metadata_clone_number"
         )
     }
+
     bulk_data[[dataset]] <- bulk_df
     
     print(dataset)

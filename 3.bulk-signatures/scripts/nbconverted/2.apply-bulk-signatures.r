@@ -16,6 +16,11 @@ figure_dir <- file.path("figures", "singscore")
 
 set.seed(seed)
 
+# Load feature selection results
+feat_file <- file.path(data_dir, "dataset_features_selected.tsv")
+all_selected_features_df <- readr::read_tsv(feat_file, col_types = readr::cols())
+head(all_selected_features_df, 3)
+
 # Load train test status
 status_file <- file.path(input_results_dir, "train_test_status.csv")
 status_df <- readr::read_csv(status_file, col_types = readr::cols()) %>%
@@ -59,7 +64,10 @@ for (dataset in datasets) {
     # Also note that I fill missing values here
     data_update_df <- data_df %>%
         dplyr::left_join(dataset_status_df, by = "Metadata_sample_index") %>%
-        tidyr::replace_na(list(Metadata_signature_train_test = "test", Metadata_dataset = dataset))
+        tidyr::replace_na(
+            list(Metadata_signature_train_test = "test",
+                 Metadata_dataset = dataset)
+        )
     
     dataset_dfs[[dataset]] <- data_update_df
 }
