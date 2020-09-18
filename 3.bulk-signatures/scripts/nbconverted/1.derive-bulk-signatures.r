@@ -5,10 +5,8 @@ suppressPackageStartupMessages(library(ggrepel))
 
 source(file.path("scripts", "signature_utils.R"))
 
+set.seed(123)
 datasets = c("four_clone", "cloneAE")
-
-# Note that TukeyHSD() p value is already adjusted for multiple tests
-signif_line <- -log10(0.05)
 
 input_data_dir = "data"
 output_fig_dir = file.path("figures", "anova")
@@ -23,33 +21,67 @@ bulk_col_types <- readr::cols(
     Metadata_Plate = readr::col_character(),
     Metadata_Well = readr::col_character(),
     Metadata_batch = readr::col_character(),
-    Metadata_clone_type = readr::col_character()
+    Metadata_clone_type = readr::col_character(),
+    Metadata_clone_type_indicator = readr::col_character(),
+    Metadata_sample_index = readr::col_character()
 )
 
+# Load the bulk dataset built in 0.compile_bulk_dataset
 bulk_data <- list()
+train_test_status <- list()
+for (dataset in datasets) {
+    bulk_file <- file.path(
+        input_data_dir,
+        paste0("bulk_profiles_", dataset, ".csv.gz")
+    )
+
+    bulk_df <- readr::read_csv(bulk_file, col_types=bulk_col_types) %>%
+        dplyr::filter(Metadata_treatment == "0.1% DMSO")
+
+    # Split into training and testing sets
+    test_df <- bulk_df %>%
+        dplyr::group_by(Metadata_Plate, Metadata_clone_number) %>% 
+        dplyr::sample_frac(size = 0.15)
+
+    # Break out training and testing splits
+    test_samples_df <- test_df %>%
+        dplyr::select(dplyr::starts_with("Metadata_")) %>%
+        dplyr::mutate(Metadata_signature_train_test = "test")
+    
+    train_df <- bulk_df %>%
+        dplyr::filter(!Metadata_sample_index %in% test_samples_df$Metadata_sample_index)
+    
+    train_samples_df <- train_df %>% dplyr::select(dplyr::starts_with("Metadata_")) %>%
+        dplyr::mutate(Metadata_signature_train_test = "train")
+
+    sample_signature_train_test_status <- test_samples_df %>%
+        dplyr::bind_rows(train_samples_df) %>%
+        dplyr::mutate(Metadata_dataset = dataset)
+
+    # Select only DMSO treated wells
+    bulk_data[[dataset]] <- train_df
+    train_test_status[[dataset]] <- sample_signature_train_test_status
+}
+
+# For plotting and assessment
+output_file <- file.path(output_results_dir, "train_test_status.csv")
+status_df <- do.call(rbind, train_test_status) %>% readr::write_csv(output_file)
+
 lm_results <- list()
 tukey_results <- list()
 anova_figures <- list()
 tukey_figures <- list()
 signatures <- list()
 for (dataset in datasets) {
-    # Load the bulk dataset built in 0.compile_bulk_dataset
-    bulk_file <- file.path(
-        input_data_dir,
-        paste0("bulk_profiles_", dataset, ".csv.gz")
-    )
-
-    bulk_df <- readr::read_csv(bulk_file, col_types=bulk_col_types)
-
-    # Select only DMSO treated wells
-    bulk_df <- bulk_df %>% dplyr::filter(Metadata_treatment == "0.1% DMSO")
+    bulk_df <- bulk_data[[dataset]]
     
     # Setup the ANOVA terms
     if (dataset == "four_clone") {
+        # The cloneAE dataset only has WT_parental lines
         bulk_df <- bulk_df %>% dplyr::filter(Metadata_clone_number != "WT_parental")
         formula_terms <- paste(
             "~",
-            "Metadata_clone_type", "+",
+            "Metadata_clone_type_indicator", "+",
             "Metadata_batch", "+",
             "Metadata_Plate", "+",
             "Metadata_clone_number"
@@ -57,7 +89,7 @@ for (dataset in datasets) {
     } else {
         formula_terms <- paste(
             "~",
-            "Metadata_clone_type", "+",
+            "Metadata_clone_type_indicator", "+",
             "Metadata_Plate", "+",
             "Metadata_clone_number"
         )
@@ -84,6 +116,10 @@ for (dataset in datasets) {
     
     num_cp_features <- length(features)
 
+    # Note that TukeyHSD() p value is already adjusted for multiple within comparisons,
+    # but not across multiple features
+    signif_line <- -log10(0.05 / num_cp_features)
+    
     fig_title <- paste0(
         "Comparing Wildtype and Resistant clones (",
         dataset,
@@ -132,7 +168,7 @@ for (dataset in datasets) {
     
     # Derive signature by systematically removing features influenced by technical differences
     signature_features <- full_tukey_results_df %>%
-        dplyr::filter(term == "Metadata_clone_type", neg_log_adj_p > !!signif_line) %>%
+        dplyr::filter(term == "Metadata_clone_type_indicator", neg_log_adj_p > !!signif_line) %>%
         dplyr::pull(feature)
 
     feature_exclude_plate <- full_tukey_results_df %>%
@@ -152,10 +188,10 @@ for (dataset in datasets) {
     
     # Compile signature output
     bulk_signature_df <- full_results_df %>%
-        dplyr::filter(feature %in% signature_features, term == "Metadata_clone_type")
+        dplyr::filter(feature %in% signature_features, term == "Metadata_clone_type_indicator")
 
     bulk_tukey_signature_df <- full_tukey_results_df %>%
-        dplyr::filter(feature %in% signature_features, term == "Metadata_clone_type")
+        dplyr::filter(feature %in% signature_features, term == "Metadata_clone_type_indicator")
     colnames(bulk_tukey_signature_df) <- paste0(colnames(bulk_tukey_signature_df), "_tukey")
 
     bulk_signature_df <- bulk_signature_df %>%
