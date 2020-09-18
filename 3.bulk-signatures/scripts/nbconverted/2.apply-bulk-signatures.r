@@ -8,12 +8,20 @@ source(file.path("utils", "singscore_utils.R"))
 
 seed <- 1234
 num_permutations <- 1000
-datasets <- c("four_clone", "cloneAE")
+datasets <- c("cloneAE", "four_clone")
 data_dir <- "data"
+input_results_dir = file.path("results", "signatures")
 output_dir <- file.path("results", "singscore")
 figure_dir <- file.path("figures", "singscore")
 
 set.seed(seed)
+
+# Load train test status
+status_file <- file.path(input_results_dir, "train_test_status.csv")
+status_df <- readr::read_csv(status_file, col_types = readr::cols()) %>%
+    dplyr::select(Metadata_sample_index, Metadata_signature_train_test, Metadata_dataset)
+
+head(status_df, 3)
 
 data_cols <- readr::cols(
   .default = readr::col_double(),
@@ -24,7 +32,8 @@ data_cols <- readr::cols(
   Metadata_plate_ID = readr::col_integer(),
   Metadata_plate_map_name = readr::col_character(),
   Metadata_treatment = readr::col_character(),
-  Metadata_clone_type = readr::col_character()
+  Metadata_clone_type = readr::col_character(),
+  Metadata_sample_index = readr::col_character()
 )
 
 dataset_dfs <- list()
@@ -44,7 +53,15 @@ for (dataset in datasets) {
     data_df <- data_df %>%
         dplyr::mutate(Metadata_unique_sample_name = sample_names)
 
-    dataset_dfs[[dataset]] <- data_df
+    # Merge with status identifiers
+    dataset_status_df <- status_df %>% dplyr::filter(Metadata_dataset == !!dataset)
+    
+    # Also note that I fill missing values here
+    data_update_df <- data_df %>%
+        dplyr::left_join(dataset_status_df, by = "Metadata_sample_index") %>%
+        tidyr::replace_na(list(Metadata_signature_train_test = "test", Metadata_dataset = dataset))
+    
+    dataset_dfs[[dataset]] <- data_update_df
 }
 
 sig_cols <- readr::cols(
@@ -128,7 +145,8 @@ for (dataset in datasets) {
         results_gg <- ggplot(result,
            aes(y = TotalScore,
                x = Metadata_clone_number,
-               group = paste(Metadata_clone_number, Metadata_treatment)))
+               group = paste(Metadata_clone_number, Metadata_treatment))) +
+            facet_wrap("~Metadata_signature_train_test")
         
         if (dataset == "cloneAE") {
             results_gg <- results_gg +
@@ -162,9 +180,11 @@ for (dataset in datasets) {
                      fill = "grey") +
             xlab("") +
             ylab("TotalScore (singscore)") +
-            ggtitle(paste("Signature:", signature))
+            ggtitle(paste("Signature:", signature)) +
+            theme(strip.text = element_text(size = 8, color = "black"),
+                  strip.background = element_rect(colour = "black", fill = "#fdfff4"))
         
         print(results_gg)
-        ggsave(output_file, height = 4, width = 6, dpi = 400)
+        ggsave(output_file, height = 4, width = 8, dpi = 400)
     }
 }
