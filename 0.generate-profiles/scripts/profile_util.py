@@ -11,7 +11,6 @@ from pycytominer import (
     annotate,
     normalize,
     feature_select,
-    audit
 )
 
 
@@ -42,13 +41,12 @@ def load_config(config_file, append_sql_prefix=True):
                             batch,
                             x,
                             "{}.sqlite".format(x),
-                        )
+                        ),
                     )
                     for x in plates
                 }
 
     return pipeline, profile_config
-               
 
 
 def process_pipeline(pipeline, option):
