@@ -190,7 +190,7 @@ def process_profile(sql_file, batch, plate, pipeline):
         feature_select(
             profiles=normalize_out_file,
             features=feature_select_features,
-            samples="none",
+            samples=samples,
             operation=feature_select_operations,
             output_file=feature_out_file,
             compression=compression,
