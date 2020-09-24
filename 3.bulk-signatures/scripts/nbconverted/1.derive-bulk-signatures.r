@@ -20,14 +20,14 @@ bulk_col_types <- readr::cols(
     .default = readr::col_double(),
     Metadata_plate_map_name = readr::col_character(),
     Metadata_clone_number = readr::col_character(),
-    Metadata_plate_ID = readr::col_character(),
     Metadata_treatment = readr::col_character(),
     Metadata_Plate = readr::col_character(),
     Metadata_Well = readr::col_character(),
     Metadata_batch = readr::col_character(),
     Metadata_clone_type = readr::col_character(),
     Metadata_clone_type_indicator = readr::col_character(),
-    Metadata_sample_index = readr::col_character()
+    Metadata_sample_index = readr::col_character(),
+    Metadata_unique_sample_name = readr::col_character()
 )
 
 # Load the bulk dataset built in 0.compile_bulk_dataset

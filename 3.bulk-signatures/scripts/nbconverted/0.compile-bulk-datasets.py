@@ -18,12 +18,14 @@ from processing_utils import load_data
 # In[2]:
 
 
-datasets = ["four_clone", "cloneAE"]
+datasets = ["four_clone", "cloneAE", "cloneAE_validation"]
 data_dir = pathlib.Path("../0.generate-profiles/profiles")
 cell_count_dir = pathlib.Path("../0.generate-profiles/cell_counts/")
 
 output_dir = pathlib.Path("data")
 batches = [
+    "2019_02_15_Batch1_20X",
+    "2019_03_20_Batch2",
     "2019_11_11_Batch4",
     "2019_11_19_Batch5",
     "2019_11_20_Batch6",
@@ -59,13 +61,29 @@ for batch in batches:
         harmonize_cols=True,
         cell_count_dir=cell_count_dir
     )
-    
+                
     # Add important metadata features
     df = df.assign(
         Metadata_batch=batch,
         Metadata_clone_type="resistant",
-        Metadata_clone_type_indicator=1
+        Metadata_clone_type_indicator=1,
+        
     )
+    
+    # Generate a unique sample ID
+    # (This will be used in singscore calculation)
+    df = df.assign(
+        Metadata_unique_sample_name=(
+            df.Metadata_clone_number.str.cat(
+                [
+                    df.Metadata_Plate.astype(str),
+                    df.Metadata_Well.astype(str),
+                    df.Metadata_batch.astype(str)
+                ], sep="_"
+            )
+        )
+    )
+
     df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type"] = "sensitive"
     df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type_indicator"] = 0
 
@@ -76,6 +94,8 @@ for batch in batches:
     # Store in dictionary
     if batch == "2020_07_02_Batch8":
         df_index = "cloneAE"
+    elif batch in ["2019_02_15_Batch1_20X", "2019_03_20_Batch2"]:
+        df_index = "cloneAE_validation"
     else:
         df_index = "four_clone"
 
@@ -150,6 +170,7 @@ all_selected_features.head()
 
 print(feature_select_dfs["four_clone"].shape)
 print(feature_select_dfs["cloneAE"].shape)
+print(feature_select_dfs["cloneAE_validation"].shape)
 
 
 # ## Output Datasets

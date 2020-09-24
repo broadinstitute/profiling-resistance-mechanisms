@@ -1,6 +1,29 @@
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(singscore))
 
+singscorePipeline <- function(df, sig_feature_list, num_permutations) {
+  # Rank the features per sample
+  rank_df <- getRankData(df = df)
+
+  # Get the scores
+  simple_score_df <- applySimpleScore(
+      df = df,
+      rank_df = rank_df,
+      sig_feature_list = sig_feature_list
+  )
+
+  # Permute the data to generate null scores
+  full_output <- getPermutedRanks(
+      df = df,
+      rank_df = rank_df,
+      simple_score_df = simple_score_df,
+      sig_feature_list = sig_feature_list,
+      num_permutations = num_permutations
+  )
+  return(full_output)
+}
+
+
 getRankData <- function(df) {
     # Convert the four clone dataset into a feature x sample matrix without metadata
     features_only_df <- t(df %>% dplyr::select(!starts_with("Metadata_")))
