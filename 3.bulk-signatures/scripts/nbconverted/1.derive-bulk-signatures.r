@@ -224,6 +224,7 @@ for (dataset in datasets) {
         )
     
     signatures[[dataset]] <- bulk_signature_df
+    print(dim(bulk_signature_df))
 
     output_file <- file.path(output_results_dir, paste0("bulk_signature_", dataset, ".tsv"))
     bulk_signature_df %>% readr::write_tsv(output_file)

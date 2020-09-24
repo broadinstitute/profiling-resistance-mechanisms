@@ -93,6 +93,12 @@ for (dataset in datasets) {
     signature_dfs[[dataset]] <- signature_df
 }
 
+for (dataset in datasets) {
+    print(dataset)
+    print(length(signature_features[[dataset]][["up"]]))
+    print(length(signature_features[[dataset]][["down"]]))
+}
+
 sing_score_results <- list()
 for (dataset in datasets) {
     data_df = dataset_dfs[[dataset]]
