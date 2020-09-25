@@ -26,7 +26,7 @@ feature_select:
     - variance_threshold
     - correlation_threshold
     - drop_na_columns
-    - blacklist
+    - blocklist
     - drop_outliers
 options:
   compression: gzip
@@ -82,4 +82,26 @@ plates:
   - 218361
   - 218362
   - 218363
+process: false 
+---
+batch: 2020_08_24_Batch9 
+plates:
+  - 218696
+  - 218697
+  - 218698
+  - 218699
+  - 218774
+  - 218775 
+process: true
+---
+batch: 2020_09_08_Batch10
+plates:
+  - 218852
+  - 218853
+  - 218854
+  - 218855
+  - 218856
+  - 218857
+  - 218858
+  - 218859
 process: true

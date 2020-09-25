@@ -1,0 +1,61 @@
+Metadata_Plate	Metadata_Well	cell_count	Metadata_plate_map_name	Metadata_date	Metadata_clone_number	Metadata_celltype_shorthand_from_plate_graph	Metadata_treatment	Metadata_treatment_shorthand_from_plate_graph	Metadata_treatment_time	Metadata_cell_density	Metadata_time_to_adhere
+218854	B02	8435	218854	20200824	WT parental	1	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B03	6572	218854	20200824	WT clone 04	2	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B04	6378	218854	20200824	WT clone 05	3	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B05	7742	218854	20200824	WT clone 06	4	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B06	5187	218854	20200824	WT clone 07	5	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B07	6511	218854	20200824	Ixazomib clone 01	6	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B08	4346	218854	20200824	Ixazomib clone 02	7	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B09	10986	218854	20200824	Ixazomib clone 03	8	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B10	7214	218854	20200824	Ixazomib clone 04	9	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	B11	4352	218854	20200824	Ixazomib clone 05	10	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C02	10685	218854	20200824	WT parental	1	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C03	5750	218854	20200824	WT clone 04	2	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C04	6806	218854	20200824	WT clone 05	3	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C05	8320	218854	20200824	WT clone 06	4	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C06	4969	218854	20200824	WT clone 07	5	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C07	8508	218854	20200824	Ixazomib clone 01	6	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C08	4591	218854	20200824	Ixazomib clone 02	7	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C09	10105	218854	20200824	Ixazomib clone 03	8	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C10	8767	218854	20200824	Ixazomib clone 04	9	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	C11	4878	218854	20200824	Ixazomib clone 05	10	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D02	9938	218854	20200824	WT parental	1	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D03	6615	218854	20200824	WT clone 04	2	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D04	5956	218854	20200824	WT clone 05	3	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D05	8403	218854	20200824	WT clone 06	4	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D06	4612	218854	20200824	WT clone 07	5	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D07	8428	218854	20200824	Ixazomib clone 01	6	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D08	3027	218854	20200824	Ixazomib clone 02	7	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D09	9754	218854	20200824	Ixazomib clone 03	8	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D10	6454	218854	20200824	Ixazomib clone 04	9	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	D11	4007	218854	20200824	Ixazomib clone 05	10	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E02	8801	218854	20200824	Ixazomib clone 01	6	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E03	4667	218854	20200824	Ixazomib clone 02	7	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E04	11788	218854	20200824	Ixazomib clone 03	8	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E05	8353	218854	20200824	Ixazomib clone 04	9	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E06	4362	218854	20200824	Ixazomib clone 05	10	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E07	7883	218854	20200824	WT parental	1	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E08	6046	218854	20200824	WT clone 04	2	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E09	4786	218854	20200824	WT clone 05	3	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E10	7163	218854	20200824	WT clone 06	4	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	E11	5599	218854	20200824	WT clone 07	5	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F02	8258	218854	20200824	Ixazomib clone 01	6	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F03	4388	218854	20200824	Ixazomib clone 02	7	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F04	13007	218854	20200824	Ixazomib clone 03	8	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F05	7730	218854	20200824	Ixazomib clone 04	9	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F06	5096	218854	20200824	Ixazomib clone 05	10	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F07	7290	218854	20200824	WT parental	1	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F08	5945	218854	20200824	WT clone 04	2	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F09	5654	218854	20200824	WT clone 05	3	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F10	8306	218854	20200824	WT clone 06	4	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	F11	4897	218854	20200824	WT clone 07	5	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G02	8460	218854	20200824	Ixazomib clone 01	6	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G03	4901	218854	20200824	Ixazomib clone 02	7	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G04	12248	218854	20200824	Ixazomib clone 03	8	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G05	7420	218854	20200824	Ixazomib clone 04	9	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G06	5317	218854	20200824	Ixazomib clone 05	10	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G07	9362	218854	20200824	WT parental	1	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G08	5468	218854	20200824	WT clone 04	2	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G09	5861	218854	20200824	WT clone 05	3	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G10	6586	218854	20200824	WT clone 06	4	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
+218854	G11	9598	218854	20200824	WT clone 07	5	0.1% DMSO	1	4 hr	5x10^3 cells/well	48 hr
