@@ -1,7 +1,9 @@
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(singscore))
 
-singscorePipeline <- function(df, sig_feature_list, num_permutations) {
+singscorePipeline <- function(
+  df, sig_feature_list, num_permutations, permute = TRUE
+) {
   # Rank the features per sample
   rank_df <- getRankData(df = df)
 
