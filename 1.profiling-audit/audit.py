@@ -68,18 +68,18 @@ for batch in audit_config:
 
         audit_output_file = os.path.join(audit_output_dir, "{}_audit.csv".format(plate))
         df = pd.read_csv(plate_files[plate])
-        
+
         # Determine feature class
         features = infer_cp_features(df)
         meta_features = infer_cp_features(df, metadata=True)
-        
+
         # Calculate and process pairwise similarity matrix
         audit_df = metric_melt(
             df=df,
             features=features,
             metadata_features=meta_features,
             similarity_metric="pearson",
-            eval_metric="percent_strong"
+            eval_metric="percent_strong",
         )
 
         audit_df = assign_replicates(
@@ -96,11 +96,11 @@ for batch in audit_config:
             replicate_groups=audit_cols,
             operation="percent_strong",
             similarity_metric="pearson",
-            percent_strong_quantile=0.95
+            percent_strong_quantile=0.95,
         )
-        
+
         grid_string = "~{}".format("+".join([f"{x}_pair_a" for x in audit_cols]))
-        
+
         # Visualize the audit - output two plots for each plate
         output_base = os.path.join(
             figure_output_dir, "{}_{}_replicate_correlation".format(batch, plate)

@@ -28,7 +28,7 @@ def plot_replicate_correlation(
     dpi=500,
     height=4,
     width=5,
-    return_plot=False
+    return_plot=False,
 ):
     correlation_gg = (
         gg.ggplot(
@@ -83,7 +83,7 @@ def plot_replicate_density(
     dpi=300,
     height=1.5,
     width=2,
-    return_plot=False
+    return_plot=False,
 ):
     density_gg = (
         gg.ggplot(df, gg.aes(x="similarity_metric", fill="group_replicate"))
@@ -96,7 +96,9 @@ def plot_replicate_density(
         + gg.xlab("Pearson Correlation")
         + gg.ylab("Density")
         + gg.geom_vline(xintercept=cutoff, color="red", linetype="dashed")
-        + gg.ggtitle(f"Batch: {batch}; Plate: {plate}\nPercent Strong: {np.round(percent_strong * 100, 2)}%")
+        + gg.ggtitle(
+            f"Batch: {batch}; Plate: {plate}\nPercent Strong: {np.round(percent_strong * 100, 2)}%"
+        )
         + gg.theme_bw()
         + gg.theme(
             title=gg.element_text(size=5),
@@ -113,6 +115,6 @@ def plot_replicate_density(
         save_figure(
             density_gg, output_file_base, output_file_extensions, dpi, height, width
         )
-    
+
     if return_plot:
         return density_gg
