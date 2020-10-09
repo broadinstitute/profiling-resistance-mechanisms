@@ -35,7 +35,7 @@ feature_select:
     - drop_outliers
 options:
   compression: gzip
-  float_format: "%.5g"
+  sc_float_format: "%.5g"
   samples: all
 ---
 batch: 2019_02_15_Batch1_20X

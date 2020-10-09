@@ -63,6 +63,12 @@ def process_pipeline(pipeline, option):
         else:
             output = "all"
 
+    if option == "sc_float_format":
+        if option in pipeline.keys():
+            output = pipeline["sc_float_format"]
+        else:
+            output = None
+
     return output
 
 
@@ -92,6 +98,7 @@ def process_profile(sql_file, batch, plate, pipeline):
 
     # Load pipeline options
     compression = process_pipeline(pipeline["options"], option="compression")
+    sc_float_format = process_pipeline(pipeline["options"], option="sc_float_format")
     samples = process_pipeline(pipeline["options"], option="samples")
 
     # Load and setup platemap info
@@ -294,5 +301,5 @@ def process_profile(sql_file, batch, plate, pipeline):
             df=sc_merged_df,
             output_filename=sc_out_file,
             compression="gzip",
-            float_format=float_format,
+            float_format=sc_float_format,
         )
