@@ -165,8 +165,8 @@ def process_profile(sql_file, batch, plate, pipeline):
 
     # Annotate Profiles
     annotate_steps = pipeline["annotate"]
+    annotate_well_column = annotate_steps["well_column"]
     if annotate_steps["perform"]:
-        annotate_well_column = annotate_steps["well_column"]
         annotate(
             profiles=aggregate_out_file,
             platemap=plate_map_df,
@@ -255,7 +255,6 @@ def process_profile(sql_file, batch, plate, pipeline):
                 cols.append(col)
             else:
                 cols.append(f"Metadata_{col}")
-
         sc_merged_df.columns = cols
 
         sc_merged_df = annotate(
