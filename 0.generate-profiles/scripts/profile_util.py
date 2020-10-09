@@ -115,22 +115,22 @@ def process_profile(sql_file, batch, plate, pipeline):
         for x in plate_map_df.columns
     ]
     platemap_well_column = pipeline["platemap_well_column"]
-    
+
     # Process Bulk profiles
     # Step 1: Aggregate
     aggregate_steps = pipeline["aggregate"]
+    aggregate_features = aggregate_steps["features"]
+    aggregate_operation = aggregate_steps["method"]
+    aggregate_plate_column = aggregate_steps["plate_column"]
+    aggregate_well_column = aggregate_steps["well_column"]
+
+    strata = [aggregate_plate_column, aggregate_well_column]
+
+    if "site_column" in aggregate_steps:
+        aggregate_site_column = aggregate_steps["site_column"]
+        strata += [aggregate_site_column]
+
     if aggregate_steps["perform"]:
-        aggregate_features = aggregate_steps["features"]
-        aggregate_operation = aggregate_steps["method"]
-        aggregate_plate_column = aggregate_steps["plate_column"]
-        aggregate_well_column = aggregate_steps["well_column"]
-
-        strata = [aggregate_plate_column, aggregate_well_column]
-
-        if "site_column" in aggregate_steps:
-            aggregate_site_column = aggregate_steps["site_column"]
-            strata += [aggregate_site_column]
-
         ap = AggregateProfiles(
             sql_file,
             strata=strata,
@@ -140,23 +140,28 @@ def process_profile(sql_file, batch, plate, pipeline):
 
         ap.aggregate_profiles(output_file=aggregate_out_file, compression=compression)
 
-        if pipeline["count"]["perform"]:
-            count_dir = pipeline["count"]["output_dir"]
-            os.makedirs(count_dir, exist_ok=True)
-
-            cell_count_file = os.path.join(
-                count_dir, "{}_{}_cell_count.tsv".format(batch, plate)
+    if pipeline["count"]["perform"]:
+        if not aggregate_steps["perform"]:
+            ap = AggregateProfiles(
+                sql_file,
+                strata=strata,
+                features=aggregate_features,
+                operation=aggregate_operation,
             )
+        count_dir = pipeline["count"]["output_dir"]
+        os.makedirs(count_dir, exist_ok=True)
 
-            cell_count_df = ap.count_cells()
+        cell_count_file = os.path.join(
+            count_dir, "{}_{}_cell_count.tsv".format(batch, plate)
+        )
 
-            cell_count_df = cell_count_df.merge(
-                plate_map_df,
-                left_on=aggregate_well_column,
-                right_on=platemap_well_column,
-            ).drop(platemap_well_column, axis="columns")
+        cell_count_df = ap.count_cells()
 
-            cell_count_df.to_csv(cell_count_file, sep="\t", index=False)
+        cell_count_df = cell_count_df.merge(
+            plate_map_df, left_on=aggregate_well_column, right_on=platemap_well_column,
+        ).drop(platemap_well_column, axis="columns")
+
+        cell_count_df.to_csv(cell_count_file, sep="\t", index=False)
 
     # Annotate Profiles
     annotate_steps = pipeline["annotate"]
@@ -199,7 +204,7 @@ def process_profile(sql_file, batch, plate, pipeline):
             corr_threshold=0.9,
             corr_method="pearson",
         )
-        
+
     sc_steps = pipeline["single_cell"]
     if sc_steps["perform"]:
         if not aggregate_steps["perform"]:
@@ -209,37 +214,39 @@ def process_profile(sql_file, batch, plate, pipeline):
                 features=aggregate_features,
                 operation=aggregate_operation,
             )
-        
+
         # Load cells
         query = "select * from cells"
         cell_df = pd.read_sql(sql=query, con=ap.conn)
-        
+
         # Load cytoplasm
         query = "select * from cytoplasm"
         cytoplasm_df = pd.read_sql(sql=query, con=ap.conn)
-        
+
         # Load nuclei
         query = "select * from nuclei"
         nuclei_df = pd.read_sql(sql=query, con=ap.conn)
-        
+
         # Merge single cells together
-        sc_merged_df = cell_df.merge(
-            cytoplasm_df.drop("ObjectNumber", axis="columns"),
-            left_on=["TableNumber", "ImageNumber", "ObjectNumber"],
-            right_on=["TableNumber", "ImageNumber", "Cytoplasm_Parent_Cells"],
-            how="inner"
-        ).drop("ObjectNumber", axis="columns").merge(
-            nuclei_df,
-            left_on=["TableNumber", "ImageNumber", "Cytoplasm_Parent_Nuclei"],
-            right_on=["TableNumber", "ImageNumber", "ObjectNumber"],
-            how="inner"
+        sc_merged_df = (
+            cell_df.merge(
+                cytoplasm_df.drop("ObjectNumber", axis="columns"),
+                left_on=["TableNumber", "ImageNumber", "ObjectNumber"],
+                right_on=["TableNumber", "ImageNumber", "Cytoplasm_Parent_Cells"],
+                how="inner",
+            )
+            .drop("ObjectNumber", axis="columns")
+            .merge(
+                nuclei_df,
+                left_on=["TableNumber", "ImageNumber", "Cytoplasm_Parent_Nuclei"],
+                right_on=["TableNumber", "ImageNumber", "ObjectNumber"],
+                how="inner",
+            )
         )
-        
+
         # Merge image data info
-        sc_merged_df = ap.image_df.merge(
-            sc_merged_df, how="right", on=ap.merge_cols
-        )
-        
+        sc_merged_df = ap.image_df.merge(sc_merged_df, how="right", on=ap.merge_cols)
+
         # Make sure column names are correctly prefixed
         prefix = ["Metadata", "Cells", "Cytoplasm", "Nuclei"]
         cols = []
@@ -250,23 +257,23 @@ def process_profile(sql_file, batch, plate, pipeline):
                 cols.append(f"Metadata_{col}")
 
         sc_merged_df.columns = cols
-        
+
         sc_merged_df = annotate(
             profiles=sc_merged_df,
             platemap=plate_map_df,
             join_on=[platemap_well_column, annotate_well_column],
-            output_file="none"
+            output_file="none",
         )
-        
+
         if sc_steps["normalize"]:
             sc_merged_df = normalize(
                 profiles=sc_merged_df,
                 features=norm_features,
                 samples=samples,
                 method=norm_method,
-                output_file="none"
+                output_file="none",
             )
-            
+
         if sc_steps["feature_select"]:
             sc_merged_df = feature_select(
                 profiles=sc_merged_df,
@@ -277,7 +284,7 @@ def process_profile(sql_file, batch, plate, pipeline):
                 corr_threshold=0.9,
                 corr_method="pearson",
             )
-           
+
         sc_pipeline_output = pipeline["sc_output_dir"]
         sc_output_dir = os.path.join(sc_pipeline_output, batch, plate)
         os.makedirs(sc_output_dir, exist_ok=True)
@@ -288,5 +295,5 @@ def process_profile(sql_file, batch, plate, pipeline):
             df=sc_merged_df,
             output_filename=sc_out_file,
             compression="gzip",
-            float_format=float_format
+            float_format=float_format,
         )
