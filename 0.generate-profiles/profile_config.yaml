@@ -98,14 +98,14 @@ plates:
 process: true
 process_single_cell: true
 ---
-batch: 2020_08_24_Batch9 
+batch: 2020_08_24_Batch9
 plates:
   - 218696
   - 218697
   - 218698
   - 218699
   - 218774
-  - 218775 
+  - 218775
 process: true
 process_single_cell: true
 ---
