@@ -12,6 +12,7 @@ from pycytominer import (
     normalize,
     feature_select,
 )
+from pycytominer.cyto_utils import output
 
 
 def load_config(config_file, append_sql_prefix=True):
@@ -114,7 +115,8 @@ def process_profile(sql_file, batch, plate, pipeline):
         for x in plate_map_df.columns
     ]
     platemap_well_column = pipeline["platemap_well_column"]
-
+    
+    # Process Bulk profiles
     # Step 1: Aggregate
     aggregate_steps = pipeline["aggregate"]
     if aggregate_steps["perform"]:
@@ -170,9 +172,9 @@ def process_profile(sql_file, batch, plate, pipeline):
 
     # Normalize Profiles
     normalize_steps = pipeline["normalize"]
+    norm_features = normalize_steps["features"]
+    norm_method = normalize_steps["method"]
     if normalize_steps["perform"]:
-        norm_features = normalize_steps["features"]
-        norm_method = normalize_steps["method"]
         normalize(
             profiles=annotate_out_file,
             features=norm_features,
@@ -184,9 +186,9 @@ def process_profile(sql_file, batch, plate, pipeline):
 
     # Apply feature selection
     feature_select_steps = pipeline["feature_select"]
+    feature_select_operations = feature_select_steps["operations"]
+    feature_select_features = feature_select_steps["features"]
     if feature_select_steps["perform"]:
-        feature_select_operations = feature_select_steps["operations"]
-        feature_select_features = feature_select_steps["features"]
         feature_select(
             profiles=normalize_out_file,
             features=feature_select_features,
@@ -196,4 +198,95 @@ def process_profile(sql_file, batch, plate, pipeline):
             compression=compression,
             corr_threshold=0.9,
             corr_method="pearson",
+        )
+        
+    sc_steps = pipeline["single_cell"]
+    if sc_steps["perform"]:
+        if not aggregate_steps["perform"]:
+            ap = AggregateProfiles(
+                sql_file,
+                strata=strata,
+                features=aggregate_features,
+                operation=aggregate_operation,
+            )
+        
+        # Load cells
+        query = "select * from cells"
+        cell_df = pd.read_sql(sql=query, con=ap.conn)
+        
+        # Load cytoplasm
+        query = "select * from cytoplasm"
+        cytoplasm_df = pd.read_sql(sql=query, con=ap.conn)
+        
+        # Load nuclei
+        query = "select * from nuclei"
+        nuclei_df = pd.read_sql(sql=query, con=ap.conn)
+        
+        # Merge single cells together
+        sc_merged_df = cell_df.merge(
+            cytoplasm_df.drop("ObjectNumber", axis="columns"),
+            left_on=["TableNumber", "ImageNumber", "ObjectNumber"],
+            right_on=["TableNumber", "ImageNumber", "Cytoplasm_Parent_Cells"],
+            how="inner"
+        ).drop("ObjectNumber", axis="columns").merge(
+            nuclei_df,
+            left_on=["TableNumber", "ImageNumber", "Cytoplasm_Parent_Nuclei"],
+            right_on=["TableNumber", "ImageNumber", "ObjectNumber"],
+            how="inner"
+        )
+        
+        # Merge image data info
+        sc_merged_df = ap.image_df.merge(
+            sc_merged_df, how="right", on=ap.merge_cols
+        )
+        
+        # Make sure column names are correctly prefixed
+        prefix = ["Metadata", "Cells", "Cytoplasm", "Nuclei"]
+        cols = []
+        for col in sc_merged_df.columns:
+            if any([col.startswith(x) for x in prefix]):
+                cols.append(col)
+            else:
+                cols.append(f"Metadata_{col}")
+
+        sc_merged_df.columns = cols
+        
+        sc_merged_df = annotate(
+            profiles=sc_merged_df,
+            platemap=plate_map_df,
+            join_on=[platemap_well_column, annotate_well_column],
+            output_file="none"
+        )
+        
+        if sc_steps["normalize"]:
+            sc_merged_df = normalize(
+                profiles=sc_merged_df,
+                features=norm_features,
+                samples=samples,
+                method=norm_method,
+                output_file="none"
+            )
+            
+        if sc_steps["feature_select"]:
+            sc_merged_df = feature_select(
+                profiles=sc_merged_df,
+                features=feature_select_features,
+                samples=samples,
+                operation=feature_select_operations,
+                output_file="none",
+                corr_threshold=0.9,
+                corr_method="pearson",
+            )
+           
+        sc_pipeline_output = pipeline["sc_output_dir"]
+        sc_output_dir = os.path.join(sc_pipeline_output, batch, plate)
+        os.makedirs(sc_output_dir, exist_ok=True)
+
+        # Set output file information
+        sc_out_file = os.path.join(sc_output_dir, "{}_single_cell.csv.gz".format(plate))
+        output(
+            df=sc_merged_df,
+            output_filename=sc_out_file,
+            compression="gzip",
+            float_format=float_format
         )
