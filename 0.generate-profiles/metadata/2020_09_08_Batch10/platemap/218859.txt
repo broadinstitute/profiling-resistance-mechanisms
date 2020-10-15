@@ -1,0 +1,61 @@
+plate_map_name	well_position	date	clone_number	celltype_shorthand_from_plate_graph	treatment	treatment_shorthand_from_plate_graph	treatment_time	cell_density	time_to_adhere
+218859	B02	20200825	WT parental	1	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B03	20200825	WT clone 04	2	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B04	20200825	WT clone 05	3	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B05	20200825	WT clone 06	4	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B06	20200825	WT clone 07	5	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B07	20200825	Ixazomib clone 01	6	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B08	20200825	Ixazomib clone 02	7	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B09	20200825	Ixazomib clone 03	8	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B10	20200825	Ixazomib clone 04	9	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	B11	20200825	Ixazomib clone 05	10	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C02	20200825	WT parental	1	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C03	20200825	WT clone 04	2	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C04	20200825	WT clone 05	3	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C05	20200825	WT clone 06	4	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C06	20200825	WT clone 07	5	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C07	20200825	Ixazomib clone 01	6	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C08	20200825	Ixazomib clone 02	7	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C09	20200825	Ixazomib clone 03	8	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C10	20200825	Ixazomib clone 04	9	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	C11	20200825	Ixazomib clone 05	10	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D02	20200825	WT parental	1	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D03	20200825	WT clone 04	2	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D04	20200825	WT clone 05	3	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D05	20200825	WT clone 06	4	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D06	20200825	WT clone 07	5	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D07	20200825	Ixazomib clone 01	6	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D08	20200825	Ixazomib clone 02	7	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D09	20200825	Ixazomib clone 03	8	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D10	20200825	Ixazomib clone 04	9	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	D11	20200825	Ixazomib clone 05	10	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E02	20200825	Ixazomib clone 01	6	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E03	20200825	Ixazomib clone 02	7	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E04	20200825	Ixazomib clone 03	8	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E05	20200825	Ixazomib clone 04	9	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E06	20200825	Ixazomib clone 05	10	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E07	20200825	WT parental	1	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E08	20200825	WT clone 04	2	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E09	20200825	WT clone 05	3	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E10	20200825	WT clone 06	4	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	E11	20200825	WT clone 07	5	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F02	20200825	Ixazomib clone 01	6	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F03	20200825	Ixazomib clone 02	7	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F04	20200825	Ixazomib clone 03	8	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F05	20200825	Ixazomib clone 04	9	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F06	20200825	Ixazomib clone 05	10	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F07	20200825	WT parental	1	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F08	20200825	WT clone 04	2	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F09	20200825	WT clone 05	3	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F10	20200825	WT clone 06	4	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	F11	20200825	WT clone 07	5	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G02	20200825	Ixazomib clone 01	6	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G03	20200825	Ixazomib clone 02	7	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G04	20200825	Ixazomib clone 03	8	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G05	20200825	Ixazomib clone 04	9	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G06	20200825	Ixazomib clone 05	10	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G07	20200825	WT parental	1	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G08	20200825	WT clone 04	2	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G09	20200825	WT clone 05	3	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G10	20200825	WT clone 06	4	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
+218859	G11	20200825	WT clone 07	5	50 nM Ixazomib	3	4 hr	2.5x10^3 cells/well	72 hr
