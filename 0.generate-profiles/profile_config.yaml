@@ -2,7 +2,12 @@
 pipeline: 2018_05_30_ResistanceMechanisms_Kapoor
 workspace_dir: /home/ubuntu/bucket/projects/2018_05_30_ResistanceMechanisms_Kapoor/workspace
 output_dir: profiles
+sc_output_dir: sc_profiles
 platemap_well_column: Metadata_well_position
+single_cell:
+  perform: true
+  normalize: true
+  feature_select: true
 aggregate:
   perform: true
   plate_column: Metadata_Plate
@@ -30,51 +35,60 @@ feature_select:
     - drop_outliers
 options:
   compression: gzip
+  sc_float_format: "%.5g"
   samples: all
 ---
 batch: 2019_02_15_Batch1_20X
 plates:
   - HCT116bortezomib
 process: false
+process_single_cell: true
 ---
 batch: 2019_02_15_Batch1_40X
 plates:
   - HCT116bortezomib
 process: false
+process_single_cell: false
 ---
 batch: 2019_03_20_Batch2
 plates:
   - 207106_exposure320
 process: false
+process_single_cell: true
 ---
 batch: 2019_06_25_Batch3
 plates:
   - WTClones
   - MutClones
 process: false
+process_single_cell: false
 ---
 batch: 2019_11_11_Batch4
 plates:
   - WTmut04hWed
   - WTmut04hTh
 process: false
+process_single_cell: false
 ---
 batch: 2019_11_19_Batch5
 plates:
   - 217755
 process: false
+process_single_cell: false
 ---
 batch: 2019_11_20_Batch6
 plates:
   - 217760
   - 217762
 process: false
+process_single_cell: false
 ---
 batch: 2019_11_22_Batch7
 plates:
   - 217766
   - 217768
 process: false
+process_single_cell: true
 ---
 batch: 2020_07_02_Batch8
 plates:
@@ -82,17 +96,19 @@ plates:
   - 218361
   - 218362
   - 218363
-process: false 
+process: true
+process_single_cell: true
 ---
-batch: 2020_08_24_Batch9 
+batch: 2020_08_24_Batch9
 plates:
   - 218696
   - 218697
   - 218698
   - 218699
   - 218774
-  - 218775 
+  - 218775
 process: true
+process_single_cell: true
 ---
 batch: 2020_09_08_Batch10
 plates:
@@ -105,3 +121,4 @@ plates:
   - 218858
   - 218859
 process: true
+process_single_cell: true

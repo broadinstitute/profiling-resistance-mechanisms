@@ -4,7 +4,11 @@ import argparse
 import numpy as np
 import pandas as pd
 
-from pycytominer import audit
+from pycytominer.cyto_utils import infer_cp_features
+
+from cytominer_eval import evaluate
+from cytominer_eval.transform import metric_melt
+from cytominer_eval.operations.util import assign_replicates
 
 from scripts.viz_utils import plot_replicate_correlation, plot_replicate_density
 
@@ -65,45 +69,48 @@ for batch in audit_config:
         audit_output_file = os.path.join(audit_output_dir, "{}_audit.csv".format(plate))
         df = pd.read_csv(plate_files[plate])
 
-        audit(
-            df,
-            audit_groups=audit_cols,
-            audit_resolution="full",
-            output_file=audit_output_file,
+        # Determine feature class
+        features = infer_cp_features(df)
+        meta_features = infer_cp_features(df, metadata=True)
+
+        # Calculate and process pairwise similarity matrix
+        audit_df = metric_melt(
+            df=df,
+            features=features,
+            metadata_features=meta_features,
+            similarity_metric="pearson",
+            eval_metric="percent_strong",
         )
 
-        audit_df = pd.read_csv(audit_output_file)
-        pair_a_df = audit_df.loc[:, ["{}_pair_a".format(x) for x in audit_cols]]
-        pair_a_df.columns = audit_cols
-        pair_b_df = audit_df.loc[:, ["{}_pair_b".format(x) for x in audit_cols]]
-        pair_b_df.columns = audit_cols
-        audit_df = audit_df.assign(
-            replicate_info=(pair_a_df == pair_b_df).all(axis="columns")
+        audit_df = assign_replicates(
+            similarity_melted_df=audit_df, replicate_groups=audit_cols
+        )
+        # What is 95% of the non replicate null distribution
+        cutoff = audit_df.query("not group_replicate").similarity_metric.quantile(0.95)
+
+        # Calculate a single number for percent strong
+        percent_strong = evaluate(
+            profiles=df,
+            features=features,
+            meta_features=meta_features,
+            replicate_groups=audit_cols,
+            operation="percent_strong",
+            similarity_metric="pearson",
+            percent_strong_quantile=0.95,
         )
 
-        # Build a dataframe that does not skip any sample combinations
-        pair_a_df = pair_a_df.assign(
-            replicate_info=audit_df.replicate_info,
-            pairwise_correlation=audit_df.pairwise_correlation,
-        )
-        pair_b_df = pair_b_df.assign(
-            replicate_info=audit_df.replicate_info,
-            pairwise_correlation=audit_df.pairwise_correlation,
-        )
-        full_audit_df = pd.concat([pair_a_df, pair_b_df], axis="rows").drop_duplicates()
-
-        grid_string = "~{}".format("+".join(audit_cols))
+        grid_string = "~{}".format("+".join([f"{x}_pair_a" for x in audit_cols]))
 
         # Visualize the audit - output two plots for each plate
         output_base = os.path.join(
             figure_output_dir, "{}_{}_replicate_correlation".format(batch, plate)
         )
-        _ = plot_replicate_correlation(
-            full_audit_df,
-            batch,
-            plate,
-            grid_string,
-            dpi=300,
+        plot_replicate_correlation(
+            df=audit_df,
+            batch=batch,
+            plate=plate,
+            facet_string=grid_string,
+            dpi=500,
             split_samples=True,
             output_file_base=output_base,
             output_file_extensions=output_file_extensions,
@@ -112,11 +119,13 @@ for batch in audit_config:
         output_base = os.path.join(
             figure_output_dir, "{}_{}_density".format(batch, plate)
         )
-        _ = plot_replicate_density(
-            audit_df,
-            batch,
-            plate,
-            dpi=300,
+        plot_replicate_density(
+            df=audit_df,
+            batch=batch,
+            plate=plate,
+            cutoff=cutoff,
+            percent_strong=percent_strong,
+            dpi=500,
             output_file_base=output_base,
             output_file_extensions=output_file_extensions,
         )

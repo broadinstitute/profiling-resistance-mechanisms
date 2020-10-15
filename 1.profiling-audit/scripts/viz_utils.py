@@ -1,3 +1,4 @@
+import numpy as np
 import plotnine as gg
 
 
@@ -5,7 +6,7 @@ def save_figure(
     main_figure,
     file_base,
     extensions=[".png", ".pdf", ".svg"],
-    dpi=300,
+    dpi=500,
     height=6,
     width=8,
 ):
@@ -24,14 +25,15 @@ def plot_replicate_correlation(
     split_samples=False,
     output_file_base=None,
     output_file_extensions=[".png", ".pdf", ".svg"],
-    dpi=300,
-    height=3,
-    width=3.5,
+    dpi=500,
+    height=4,
+    width=5,
+    return_plot=False,
 ):
     correlation_gg = (
         gg.ggplot(
             df,
-            gg.aes(x="replicate_info", y="pairwise_correlation", fill="replicate_info"),
+            gg.aes(x="group_replicate", y="similarity_metric", fill="group_replicate"),
         )
         + gg.geom_boxplot(
             alpha=0.3, outlier_alpha=0, width=0.8, notchwidth=0.25, fatten=1.5
@@ -48,11 +50,11 @@ def plot_replicate_correlation(
         + gg.theme_bw()
         + gg.theme(
             subplots_adjust={"wspace": 0.2},
-            title=gg.element_text(size=9),
-            axis_text=gg.element_text(size=5),
-            axis_title=gg.element_text(size=8),
-            legend_text=gg.element_text(size=6),
-            legend_title=gg.element_text(size=7),
+            title=gg.element_text(size=5),
+            axis_text=gg.element_text(size=4),
+            axis_title=gg.element_text(size=5),
+            legend_text=gg.element_text(size=4),
+            legend_title=gg.element_text(size=5),
             strip_text=gg.element_text(size=4, color="black"),
             strip_background=gg.element_rect(colour="black", fill="#fdfff4"),
         )
@@ -66,22 +68,25 @@ def plot_replicate_correlation(
         save_figure(
             correlation_gg, output_file_base, output_file_extensions, dpi, height, width
         )
-
-    return correlation_gg
+    if return_plot:
+        return correlation_gg
 
 
 def plot_replicate_density(
     df,
     batch,
     plate,
+    cutoff,
+    percent_strong,
     output_file_base=None,
     output_file_extensions=[".png", ".pdf", ".svg"],
     dpi=300,
     height=1.5,
     width=2,
+    return_plot=False,
 ):
     density_gg = (
-        gg.ggplot(df, gg.aes(x="pairwise_correlation", fill="replicate_info"))
+        gg.ggplot(df, gg.aes(x="similarity_metric", fill="group_replicate"))
         + gg.geom_density(alpha=0.3)
         + gg.scale_fill_manual(
             name="Replicate",
@@ -90,14 +95,17 @@ def plot_replicate_density(
         )
         + gg.xlab("Pearson Correlation")
         + gg.ylab("Density")
-        + gg.ggtitle("{}: {}".format(batch, plate))
+        + gg.geom_vline(xintercept=cutoff, color="red", linetype="dashed")
+        + gg.ggtitle(
+            f"Batch: {batch}; Plate: {plate}\nPercent Strong: {np.round(percent_strong * 100, 2)}%"
+        )
         + gg.theme_bw()
         + gg.theme(
-            title=gg.element_text(size=9),
-            axis_text=gg.element_text(size=5),
-            axis_title=gg.element_text(size=8),
-            legend_text=gg.element_text(size=6),
-            legend_title=gg.element_text(size=7),
+            title=gg.element_text(size=5),
+            axis_text=gg.element_text(size=4),
+            axis_title=gg.element_text(size=5),
+            legend_text=gg.element_text(size=4),
+            legend_title=gg.element_text(size=5),
             strip_text=gg.element_text(size=4, color="black"),
             strip_background=gg.element_rect(colour="black", fill="#fdfff4"),
         )
@@ -108,4 +116,5 @@ def plot_replicate_density(
             density_gg, output_file_base, output_file_extensions, dpi, height, width
         )
 
-    return density_gg
+    if return_plot:
+        return density_gg
