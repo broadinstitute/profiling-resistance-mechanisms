@@ -1,0 +1,61 @@
+plate_map_name	well_position	date	clone_number	celltype_shorthand_from_plate_graph	treatment	treatment_shorthand_from_plate_graph	treatment_time	cell_density	time_to_adhere
+218697	B02	20200818	WT parental	1	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B03	20200818	WT clone 04	2	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B04	20200818	WT clone 05	3	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B05	20200818	WT clone 06	4	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B06	20200818	WT clone 07	5	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B07	20200818	CB5038 clone 13	6	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B08	20200818	CB5038 clone 14	7	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B09	20200818	CB5038 clone 15	8	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B10	20200818	CB5038 clone 16	9	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	B11	20200818	CB5038 clone 17	10	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C02	20200818	WT parental	1	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C03	20200818	WT clone 04	2	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C04	20200818	WT clone 05	3	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C05	20200818	WT clone 06	4	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C06	20200818	WT clone 07	5	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C07	20200818	CB5038 clone 13	6	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C08	20200818	CB5038 clone 14	7	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C09	20200818	CB5038 clone 15	8	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C10	20200818	CB5038 clone 16	9	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	C11	20200818	CB5038 clone 17	10	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D02	20200818	WT parental	1	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D03	20200818	WT clone 04	2	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D04	20200818	WT clone 05	3	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D05	20200818	WT clone 06	4	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D06	20200818	WT clone 07	5	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D07	20200818	CB5038 clone 13	6	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D08	20200818	CB5038 clone 14	7	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D09	20200818	CB5038 clone 15	8	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D10	20200818	CB5038 clone 16	9	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	D11	20200818	CB5038 clone 17	10	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E02	20200818	CB5038 clone 13	6	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E03	20200818	CB5038 clone 14	7	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E04	20200818	CB5038 clone 15	8	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E05	20200818	CB5038 clone 16	9	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E06	20200818	CB5038 clone 17	10	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E07	20200818	WT parental	1	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E08	20200818	WT clone 04	2	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E09	20200818	WT clone 05	3	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E10	20200818	WT clone 06	4	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	E11	20200818	WT clone 07	5	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F02	20200818	CB5038 clone 13	6	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F03	20200818	CB5038 clone 14	7	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F04	20200818	CB5038 clone 15	8	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F05	20200818	CB5038 clone 16	9	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F06	20200818	CB5038 clone 17	10	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F07	20200818	WT parental	1	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F08	20200818	WT clone 04	2	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F09	20200818	WT clone 05	3	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F10	20200818	WT clone 06	4	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	F11	20200818	WT clone 07	5	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G02	20200818	CB5038 clone 13	6	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G03	20200818	CB5038 clone 14	7	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G04	20200818	CB5038 clone 15	8	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G05	20200818	CB5038 clone 16	9	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G06	20200818	CB5038 clone 17	10	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G07	20200818	WT parental	1	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G08	20200818	WT clone 04	2	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G09	20200818	WT clone 05	3	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G10	20200818	WT clone 06	4	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
+218697	G11	20200818	WT clone 07	5	700 nM CB-5083	2	4 hr	5x10^3 cells/well	48 hr
