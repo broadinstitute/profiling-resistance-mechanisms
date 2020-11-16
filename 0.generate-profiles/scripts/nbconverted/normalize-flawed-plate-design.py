@@ -118,11 +118,15 @@ for batch in profile_data:
             plate_df
             .assign(
                 Metadata_batch=batch,
+                Metadata_clone_type="Resistant",
                 Metadata_profile_number=[
                     f"profile_{plate_name}_{batch}_{x}" for x in range(0, plate_df.shape[0])
                 ]
             )
         )
+        
+        plate_df.loc[plate_df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type"] = "Sensitive"
+
         profile_data[batch]["plates"].append(plate_df)
         
 # Combine profiles
@@ -136,7 +140,7 @@ for batch in profile_data:
 # Detect the impact of batch - is it necessary to adjust?
 n_components = 20
 pca_columns = [f"pca_{x}" for x in range(0, n_components)]
-model_formula = "pca_value ~ Metadata_clone_number + Metadata_treatment + Metadata_Plate + Metadata_treatment * Metadata_Plate"
+model_formula = "pca_value ~ Metadata_clone_number + Metadata_clone_type + Metadata_treatment + Metadata_Plate + Metadata_treatment * Metadata_Plate"
 
 anova_results_full = []
 for batch in profile_data:
