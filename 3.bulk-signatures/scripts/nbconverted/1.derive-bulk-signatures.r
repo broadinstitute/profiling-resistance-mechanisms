@@ -6,230 +6,194 @@ suppressPackageStartupMessages(library(ggrepel))
 source(file.path("scripts", "signature_utils.R"))
 
 set.seed(123)
-datasets = c("four_clone", "cloneAE")
 
-input_data_dir = "data"
+datasets <- c(
+    "cloneAE",
+    "ixazomib",
+    "cb5083"
+)
+
+input_data_dir <- "data"
+data_file <- file.path(input_data_dir, "bulk_profiles_analytical_set.csv.gz")
+
 output_fig_dir = file.path("figures", "anova")
 output_results_dir = file.path("results", "signatures")
 
+# Load feature selected features
 feat_file <- file.path(input_data_dir, "dataset_features_selected.tsv")
 all_selected_features_df <- readr::read_tsv(feat_file, col_types = readr::cols())
 head(all_selected_features_df, 3)
 
+# Load profiles
 bulk_col_types <- readr::cols(
     .default = readr::col_double(),
-    Metadata_plate_map_name = readr::col_character(),
-    Metadata_clone_number = readr::col_character(),
-    Metadata_treatment = readr::col_character(),
     Metadata_Plate = readr::col_character(),
     Metadata_Well = readr::col_character(),
     Metadata_batch = readr::col_character(),
+    Metadata_clone_number = readr::col_character(),
+    Metadata_plate_map_name = readr::col_character(),
+    Metadata_treatment = readr::col_character(),
+    Metadata_dataset = readr::col_character(),
     Metadata_clone_type = readr::col_character(),
     Metadata_clone_type_indicator = readr::col_character(),
-    Metadata_sample_index = readr::col_character(),
-    Metadata_unique_sample_name = readr::col_character()
+    Metadata_model_split = readr::col_character(),
+    Metadata_cell_density = readr::col_character(),
+    Metadata_plate_filename = readr::col_character(),
+    Metadata_treatment_time = readr::col_character(),
+    Metadata_unique_sample_name = readr::col_character(),
+    Metadata_time_to_adhere = readr::col_character()
 )
 
-# Load the bulk dataset built in 0.compile_bulk_dataset
-bulk_data <- list()
-train_test_status <- list()
-for (dataset in datasets) {
-    bulk_file <- file.path(input_data_dir, paste0("bulk_profiles_", dataset, ".csv.gz"))
+bulk_df <- readr::read_csv(data_file, col_types = bulk_col_types)
 
-    # Filter to only DMSO treated cells
-    bulk_df <- readr::read_csv(bulk_file, col_types=bulk_col_types) %>%
-        dplyr::filter(Metadata_treatment == "0.1% DMSO")
+print(dim(bulk_df))
+head(bulk_df, 4)
+
+training_data <- list()
+for (dataset in datasets) {
+    # Subset dataset
+    bulk_subset_df <- bulk_df %>%
+        dplyr::filter(
+            Metadata_dataset == !!dataset,
+            Metadata_model_split == "training",
+        )
     
-    # Make sure the clone type indicator is a factor
-    # Directionality matters in the ANOVA
-    bulk_df$Metadata_clone_type_indicator <- factor(bulk_df$Metadata_clone_type_indicator, levels = c(0, 1))
-    
-    # Subset to the features selected in the feature selection procedure
+    # Apply feature selection performed in 0.compile-bulk-datasets
     selected_features <- all_selected_features_df %>%
         dplyr::filter(dataset == !!dataset) %>%
         dplyr::pull(features)
     
-    bulk_df <- bulk_df %>% dplyr::select(dplyr::starts_with("Metadata"), !!!selected_features)
-
-    # Split into training and testing sets
-    if (dataset == "four_clone") {
-        # The cloneAE dataset only has WT_parental lines
-        test_df <- bulk_df %>% dplyr::filter(Metadata_clone_number != "WT_parental")
-    } else {
-        test_df <- bulk_df
-    }
-
-    test_df <- test_df %>%
-        dplyr::group_by(Metadata_clone_number) %>% 
-        dplyr::sample_frac(size = 0.15)
-
-    # Break out training and testing splits
-    test_samples_df <- test_df %>%
-        dplyr::select(dplyr::starts_with("Metadata_")) %>%
-        dplyr::mutate(Metadata_signature_train_test = "test")
+    bulk_subset_df <- bulk_subset_df %>%
+        dplyr::select(starts_with("Metadata"), all_of(selected_features))
     
-    train_df <- bulk_df %>%
-        dplyr::filter(!Metadata_sample_index %in% test_samples_df$Metadata_sample_index)
+    # Populate the list for signature building
+    bulk_subset_df$Metadata_clone_type_indicator <- factor(
+        bulk_subset_df$Metadata_clone_type_indicator, levels = c("0", "1")
+    )
+    training_data[[dataset]] <- bulk_subset_df
     
-    train_samples_df <- train_df %>% dplyr::select(dplyr::starts_with("Metadata_")) %>%
-        dplyr::mutate(Metadata_signature_train_test = "train")
-
-    sample_signature_train_test_status <- test_samples_df %>%
-        dplyr::bind_rows(train_samples_df) %>%
-        dplyr::mutate(Metadata_dataset = dataset)
-
-    # Select only DMSO treated wells
-    bulk_data[[dataset]] <- train_df
-    train_test_status[[dataset]] <- sample_signature_train_test_status
+    # Print dataset description
+    print(paste("Training dataset:", dataset))
+    print(table(
+        bulk_subset_df$Metadata_clone_number,
+        bulk_subset_df$Metadata_batch
+    ))
 }
 
-# For plotting and assessment
-output_file <- file.path(output_results_dir, "train_test_status.csv")
-status_df <- do.call(rbind, train_test_status) %>% readr::write_csv(output_file)
+formula_terms <- paste(
+    "~",
+    "Metadata_clone_type_indicator", "+",
+    "Metadata_batch", "+",
+    "Metadata_Plate", "+",
+    "Metadata_clone_number"
+)
 
+# Fit the ANOVA model and perform Tukey HSD
 lm_results <- list()
 tukey_results <- list()
-anova_figures <- list()
-tukey_figures <- list()
-signatures <- list()
 for (dataset in datasets) {
-    bulk_df <- bulk_data[[dataset]]
+    print(paste("Now processing...", dataset))
     
-    # Setup the ANOVA terms
-    if (dataset == "four_clone") {
-        # The cloneAE dataset only has WT_parental lines
-        bulk_df <- bulk_df %>% dplyr::filter(Metadata_clone_number != "WT_parental")
-        
-        formula_terms <- paste(
-            "~",
-            "Metadata_clone_type_indicator", "+",
-            "Metadata_batch", "+",
-            "Metadata_Plate", "+",
-            "Metadata_clone_number"
-        )
-    } else {
-        formula_terms <- paste(
-            "~",
-            "Metadata_clone_type_indicator", "+",
-            "Metadata_Plate", "+",
-            "Metadata_clone_number"
-        )
-    }
-
-    bulk_data[[dataset]] <- bulk_df
-    
-    print(dataset)
-    print(dim(bulk_df))
+    # Extract the dataset used to train
+    analytical_df <- training_data[[dataset]]
     
     # Fit linear model to determine sources of variation and process results
-    lm_results[[dataset]] <- perform_anova(bulk_df, formula_terms)
+    lm_results[[dataset]] <- perform_anova(analytical_df, formula_terms)
     
+    # Order the full results data frame by significance and extract feature names
     full_results_df <- lm_results[[dataset]][["full_results_df"]] %>%
         dplyr::arrange(desc(neg_log_p))
     
     features <- unique(full_results_df$feature)
-
-    # Perform TukeyHSD
-    full_tukey_results_df <- process_tukey(
+    
+    # Perform TukeyHSD posthoc test
+    tukey_results[[dataset]] <- process_tukey(
         aov_list = lm_results[[dataset]][["aovs"]],
         features = features
     )
-    tukey_results[[dataset]] <- full_tukey_results_df
+}
+
+all_anova_results <- list()
+all_tukey_results <- list()
+all_signature_results <- list()
+for (dataset in datasets) {
+    # Process ANOVA results
+    anova_results_df <- lm_results[[dataset]][["full_results_df"]] %>%
+        dplyr::mutate(dataset = dataset)
+
+    all_anova_results[[dataset]] <- anova_results_df
     
-    num_cp_features <- length(features)
+    # Process tukey results
+    tukey_results_df <- tukey_results[[dataset]] %>%
+        dplyr::mutate(dataset = dataset)
+    
+    all_tukey_results[[dataset]] <- tukey_results_df
+    
+    # Build signature
+    features <- unique(anova_results_df$feature)
 
     # Note that TukeyHSD() p value is already adjusted for multiple within comparisons,
     # but not across multiple features
+    num_cp_features <- length(features)
     signif_line <- -log10(0.05 / num_cp_features)
-    
-    fig_title <- paste0(
-        "Comparing Wildtype and Resistant clones (",
-        dataset,
-        ")\nANOVA effects for all ",
-        num_cp_features,
-        " CP features"
-    )
-    
-    # Plot ANOVA distribution results
-    difference_contribution_gg <- ggplot(full_results_df, aes(x = neg_log_p)) +
-        geom_density(aes(fill = term), alpha = 0.4) +
-        theme_bw() +
-        xlab("-log10 p value") +
-        ylab("") +
-        ggtitle(fig_title) +
-        theme(axis.text = element_text(size = 6),
-              axis.title = element_text(size = 7),
-              title = element_text(size = 8))
 
-    out_file <- file.path(
-        output_fig_dir,
-        paste0("bulk_anova_effect_term_distributions_", dataset, ".png")
-        )
-    ggsave(out_file, dpi = 500, height = 5, width = 4)
-    anova_figures[[dataset]] <- difference_contribution_gg
-    
-    # Plot feature distributions
-    tukey_volcano_gg <- ggplot(full_tukey_results_df, aes(x = estimate, y = neg_log_adj_p)) +
-        geom_point(aes(color = comparison)) +
-        geom_hline(yintercept = signif_line, color = "red", linetype = "dashed") +
-        facet_wrap("~term", nrow=length(unique(full_tukey_results_df$term))) +
-        theme_bw() +
-        xlab("Statistic") +
-        ylab("-log10 P Value") +
-        ggtitle(fig_title) +
-        theme(
-            strip.text = element_text(size = 8, color = "black"),
-            strip.background = element_rect(colour = "black", fill = "#fdfff4"),
-            legend.position="none"
-        )
-
-    out_file <- file.path(output_fig_dir, paste0("bulk_tukey_volcano_", dataset, ".png"))
-    ggsave(out_file, dpi = 500, height = 5, width = 4)
-
-    tukey_figures[[dataset]] <- tukey_volcano_gg
-    
-    # Derive signature by systematically removing features influenced by technical differences
-    signature_features <- full_tukey_results_df %>%
+    # Derive signature by systematically removing features influenced by technical artifacts
+    signature_features <- tukey_results_df %>%
         dplyr::filter(term == "Metadata_clone_type_indicator", neg_log_adj_p > !!signif_line) %>%
         dplyr::pull(feature)
 
-    feature_exclude_plate <- full_tukey_results_df %>%
+    feature_exclude_plate <- tukey_results_df %>%
         dplyr::filter(term == "Metadata_Plate", neg_log_adj_p > !!signif_line) %>%
         dplyr::pull(feature)
-    
-    if (dataset == "four_clone") {
-        feature_exclude_batch <- full_tukey_results_df %>%
-            dplyr::filter(term == "Metadata_batch", neg_log_adj_p > !!signif_line) %>%
-            dplyr::pull(feature)
-        
-        signature_features <- setdiff(signature_features, feature_exclude_batch)
-    }
-        
-    signature_features <- setdiff(signature_features, feature_exclude_plate)
-    signature_features <- sort(signature_features)
-    
-    # Compile signature output
-    bulk_signature_df <- full_results_df %>%
-        dplyr::filter(feature %in% signature_features, term == "Metadata_clone_type_indicator")
 
-    bulk_tukey_signature_df <- full_tukey_results_df %>%
-        dplyr::filter(feature %in% signature_features, term == "Metadata_clone_type_indicator")
-    colnames(bulk_tukey_signature_df) <- paste0(colnames(bulk_tukey_signature_df), "_tukey")
+    feature_exclude_batch <- tukey_results_df %>%
+        dplyr::filter(term == "Metadata_batch", neg_log_adj_p > !!signif_line) %>%
+        dplyr::pull(feature)
 
-    bulk_signature_df <- bulk_signature_df %>%
-        dplyr::left_join(
-            bulk_tukey_signature_df,
-            by = c("term" = "term_tukey", "feature" = "feature_tukey"),
-            suffix = c("", "_tukey")
+    # Determine if the clone number comparison is between like-clones
+    wt_clone_count <- stringr::str_count(
+        tukey_results_df %>%
+        dplyr::filter(term == "Metadata_clone_number") %>%
+        dplyr::pull("comparison"), "WT"
+    )
+
+    # Exclude features with very high within sensitivity-type clones
+    feature_exclude_nonspecific_variation <- tukey_results_df %>%
+        dplyr::filter(term == "Metadata_clone_number") %>%
+        dplyr::mutate(wt_clone_count = wt_clone_count) %>%
+        dplyr::filter(neg_log_adj_p > !!signif_line * 15, wt_clone_count != 1) %>%
+        dplyr::pull(feature)
+
+    final_signature_features <- setdiff(
+        signature_features, unique(feature_exclude_plate)
+    )
+    final_signature_features <- setdiff(
+        final_signature_features, unique(feature_exclude_batch)
+    )
+    final_signature_features <- setdiff(
+        final_signature_features, unique(feature_exclude_nonspecific_variation)
+    )
+    
+    # Create a summary of the signatures
+    signature_summary_df <- tibble(signature_features)
+
+    signature_summary_df <- signature_summary_df %>%
+        dplyr::mutate(
+            plate_exclude = signature_summary_df$signature_features %in% feature_exclude_plate,
+            batch_exclude = signature_summary_df$signature_features %in% feature_exclude_batch,
+            non_specific_exclude = signature_summary_df$signature_features %in% feature_exclude_nonspecific_variation,
+            final_signature = signature_summary_df$signature_features %in% final_signature_features,
+            dataset = dataset
         )
     
-    signatures[[dataset]] <- bulk_signature_df
-    print(dim(bulk_signature_df))
-
-    output_file <- file.path(output_results_dir, paste0("bulk_signature_", dataset, ".tsv"))
-    bulk_signature_df %>% readr::write_tsv(output_file)
+    all_signature_results[[dataset]] <- signature_summary_df
 }
 
-anova_figures
+# Output files
+anova_output_file <- file.path(output_results_dir, "anova_results_full_bulk_signature.tsv.gz")
+tukey_output_file <- file.path(output_results_dir, "tukey_results_full_bulk_signature.tsv.gz")
+signature_output_file <- file.path(output_results_dir, "signature_summary_full_bulk_signature.tsv")
 
-tukey_figures
+dplyr::bind_rows(all_anova_results) %>% readr::write_tsv(anova_output_file)
+dplyr::bind_rows(all_tukey_results) %>% readr::write_tsv(tukey_output_file)
+dplyr::bind_rows(all_signature_results) %>% readr::write_tsv(signature_output_file)

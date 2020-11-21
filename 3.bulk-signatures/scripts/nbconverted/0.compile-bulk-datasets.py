@@ -103,8 +103,8 @@ feature_select_opts = [
     "drop_outliers",
 ]
 
-test_set_size = 0.15
-corr_threshold = 0.95
+test_set_size = 0.25
+corr_threshold = 0.90
 na_cutoff = 0
 
 
@@ -180,19 +180,37 @@ for dataset in datasets:
     )
     
     # Determine training/test/validation splits
-    dataset_df.loc[dataset_df.Metadata_Plate.astype(str) == validation_plate, "Metadata_model_split"] = "validation"
+    if dataset != "cloneAE":
+        dataset_df.loc[
+            dataset_df.Metadata_clone_number.astype(str) == "WT_parental", "Metadata_model_split"
+        ] = "test"
+        
+    dataset_df.loc[
+        dataset_df.Metadata_Plate.astype(str) == validation_plate, "Metadata_model_split"
+    ] = "validation"
     
-    training_df = dataset_df.query("Metadata_model_split == 'training'").query("Metadata_treatment == '0.1% DMSO'")
+    training_df = (
+        dataset_df
+        .query("Metadata_model_split == 'training'")
+        .query("Metadata_treatment == '0.1% DMSO'")
+    )
+    
+    if dataset != "cloneAE":
+        training_df = training_df.query("Metadata_clone_number != 'WT_parental'")
 
     train_samples, test_samples = train_test_split(
         training_df.Metadata_unique_sample_name,
-        random_state=987,
+        random_state=9876,
         test_size=test_set_size,
-        stratify=training_df.Metadata_clone_number
+        stratify=training_df.Metadata_clone_number.astype(str)
     )
 
-    dataset_df.loc[dataset_df.Metadata_unique_sample_name.isin(test_samples), "Metadata_model_split"] = "test"
-    dataset_df.loc[dataset_df.Metadata_treatment != '0.1% DMSO', "Metadata_model_split"] = "perturbation"
+    dataset_df.loc[
+        dataset_df.Metadata_unique_sample_name.isin(test_samples), "Metadata_model_split"
+    ] = "test"
+    dataset_df.loc[
+        dataset_df.Metadata_treatment != '0.1% DMSO', "Metadata_model_split"
+    ] = "perturbation"
 
     all_datasets_df.append(dataset_df)
 
@@ -202,10 +220,37 @@ all_datasets_df = pd.concat(all_datasets_df, axis="rows", sort=False).reset_inde
 # In[6]:
 
 
+# Remember, we are not training with WT_parental lines
 pd.crosstab(all_datasets_df.Metadata_dataset, all_datasets_df.Metadata_model_split)
 
 
 # In[7]:
+
+
+pd.crosstab(all_datasets_df.Metadata_clone_number, all_datasets_df.Metadata_model_split)
+
+
+# In[8]:
+
+
+pd.crosstab(all_datasets_df.Metadata_clone_number, all_datasets_df.Metadata_dataset)
+
+
+# In[9]:
+
+
+pd.crosstab(all_datasets_df.Metadata_treatment, all_datasets_df.Metadata_model_split)
+
+
+# In[10]:
+
+
+# Only the cloneAE (bortezomib) dataset should contain WT_parental lines for training
+parental_splits = all_datasets_df.query("Metadata_clone_number == 'WT_parental'")
+pd.crosstab(parental_splits.Metadata_dataset, parental_splits.Metadata_model_split)
+
+
+# In[11]:
 
 
 # Reorder features
@@ -223,7 +268,7 @@ all_datasets_df.head()
 # We apply feature selection per dataset using only the training set.
 # We track which features are selected per dataset and subset.
 
-# In[8]:
+# In[12]:
 
 
 selected_features = []
@@ -252,7 +297,7 @@ all_selected_features.to_csv(output_file, sep="\t", index=False)
 all_selected_features.head()
 
 
-# In[9]:
+# In[13]:
 
 
 # How many features are selected?
@@ -263,7 +308,7 @@ all_selected_features.groupby("dataset")["features"].count()
 # 
 # We output the feature selected datasets as .gct files, but the full feature set as compressed csvs.
 
-# In[10]:
+# In[14]:
 
 
 output_file = pathlib.Path(f"{output_dir}/bulk_profiles_analytical_set.csv.gz")
@@ -276,7 +321,7 @@ feature_selected_df = all_datasets_df.loc[:, common_metadata + all_selected_feat
 write_gct(profiles=feature_selected_df, output_file=output_gct_file)
 
 
-# In[11]:
+# In[15]:
 
 
 print(feature_selected_df.shape)
