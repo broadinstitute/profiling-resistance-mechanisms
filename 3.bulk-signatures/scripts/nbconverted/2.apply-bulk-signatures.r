@@ -151,7 +151,10 @@ for (dataset in datasets) {
 
 all_singscore_results_df <- dplyr::bind_rows(sing_score_results)
 
-table(all_singscore_results_df$dataset, all_singscore_results_df$signature)
+table(
+    all_singscore_results_df$dataset,
+    all_singscore_results_df$signature
+)
 
 all_singscore_results_df %>% readr::write_tsv(output_results_file)
 
