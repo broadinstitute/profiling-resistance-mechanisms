@@ -425,7 +425,7 @@ for dataset in other_treatment_summary_df.dataset.unique():
         + gg.ylab("Relative cell count (median replicate)\n (Compared to untreated)")
         + gg.ggtitle(f"Dataset: {dataset} treatment")
         + gg.geom_hline(yintercept=1, linetype="dashed", color="red")
-        + gg.facet_grid("Metadata_model_split~Metadata_treatment_perturbed")
+        + gg.facet_grid("Metadata_treatment_perturbed~Metadata_model_split")
         + gg.theme_bw()
         + gg.theme(
             strip_text=gg.element_text(size=6, color="black"),
@@ -434,7 +434,7 @@ for dataset in other_treatment_summary_df.dataset.unique():
     )
     
     fig_file = pathlib.Path(f"{output_fig_dir}/{dataset}_treatment_score_by_count.png")
-    score_count_gg.save(fig_file, width=3, height=4, dpi=500)
+    score_count_gg.save(fig_file, width=5, height=4, dpi=500)
 
     print(score_count_gg)
 
