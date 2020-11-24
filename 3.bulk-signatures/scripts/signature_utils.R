@@ -40,6 +40,42 @@ perform_anova <- function(df, formula_terms) {
 }
 
 
+perform_linear_model <- function(df, formula_terms) {
+  cp_features <- colnames(
+      df %>% dplyr::select(-starts_with("Metadata_"))
+      )
+
+  lmout_results <- list()
+  for (feature in cp_features) {
+      # Build formula call
+      formula_call = paste(
+          feature, formula_terms
+      )
+
+      lm.out <- lm(
+          formula = as.formula(formula_call),
+          data = df
+      )
+
+      lm_summary <- summary(lm.out)
+      rsquared <- lm_summary$r.squared
+
+      results <- broom::tidy(lm_summary) %>%
+          dplyr::mutate(feature = feature, rsquared = rsquared)
+
+      lmout_results[[feature]] <- results
+  }
+
+  full_results_df <- do.call(rbind, lmout_results)
+
+  full_results_df <- full_results_df %>%
+      dplyr::mutate(neg_log_p = -log10(p.value)) %>%
+      tidyr::drop_na()
+
+  return(full_results_df)
+}
+
+
 process_tukey <- function(aov_list, features) {
   all_tukey_results <- list()
   for (feature in features) {
