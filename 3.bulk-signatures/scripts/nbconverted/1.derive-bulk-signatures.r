@@ -29,6 +29,7 @@ bulk_col_types <- readr::cols(
     .default = readr::col_double(),
     Metadata_Plate = readr::col_character(),
     Metadata_Well = readr::col_character(),
+    Metadata_cell_count = readr::col_integer(),
     Metadata_batch = readr::col_character(),
     Metadata_clone_number = readr::col_character(),
     Metadata_plate_map_name = readr::col_character(),
@@ -88,8 +89,17 @@ formula_terms <- paste(
     "Metadata_clone_number"
 )
 
-# Fit the ANOVA model and perform Tukey HSD
+cell_count_formula <- paste(
+    "~",
+    "Metadata_clone_type_indicator", "+",
+    "scale(Metadata_cell_count)"
+)
+
+# Fit two models:
+# 1) ANOVA using categorical covariates followed by TukeyHSD posthoc test
+# 2) Linear model using cell count as a continuous variable
 lm_results <- list()
+cell_count_results <- list()
 tukey_results <- list()
 for (dataset in datasets) {
     print(paste("Now processing...", dataset))
@@ -111,6 +121,11 @@ for (dataset in datasets) {
         aov_list = lm_results[[dataset]][["aovs"]],
         features = features
     )
+    
+    # Fit a linear model on cell counts
+    cell_count_results[[dataset]] <- perform_linear_model(analytical_df, cell_count_formula) %>%
+        dplyr::arrange(desc(neg_log_p)) %>%
+        dplyr::mutate(dataset = dataset)
 }
 
 all_anova_results <- list()
@@ -145,7 +160,7 @@ for (dataset in datasets) {
     feature_exclude_plate <- tukey_results_df %>%
         dplyr::filter(term == "Metadata_Plate", neg_log_adj_p > !!signif_line) %>%
         dplyr::pull(feature)
-
+    
     feature_exclude_batch <- tukey_results_df %>%
         dplyr::filter(term == "Metadata_batch", neg_log_adj_p > !!signif_line) %>%
         dplyr::pull(feature)
@@ -161,11 +176,19 @@ for (dataset in datasets) {
     feature_exclude_nonspecific_variation <- tukey_results_df %>%
         dplyr::filter(term == "Metadata_clone_number") %>%
         dplyr::mutate(wt_clone_count = wt_clone_count) %>%
-        dplyr::filter(neg_log_adj_p > !!signif_line * 15, wt_clone_count != 1) %>%
+        dplyr::filter(neg_log_adj_p > !!signif_line, wt_clone_count != 1) %>%
+        dplyr::pull(feature)
+    
+    # Exclude features that are significantly impacted by cell count
+    feature_exclude_cell_count <- cell_count_results[[dataset]] %>%
+        dplyr::filter(term == "scale(Metadata_cell_count)", neg_log_p > !!signif_line) %>%
         dplyr::pull(feature)
 
     final_signature_features <- setdiff(
-        signature_features, unique(feature_exclude_plate)
+        signature_features, unique(feature_exclude_cell_count)
+    )
+    final_signature_features <- setdiff(
+        final_signature_features, unique(feature_exclude_plate)
     )
     final_signature_features <- setdiff(
         final_signature_features, unique(feature_exclude_batch)
@@ -175,16 +198,21 @@ for (dataset in datasets) {
     )
     
     # Create a summary of the signatures
-    signature_summary_df <- tibble(signature_features)
+    signature_summary_df <- tibble(features)
 
     signature_summary_df <- signature_summary_df %>%
         dplyr::mutate(
-            plate_exclude = signature_summary_df$signature_features %in% feature_exclude_plate,
-            batch_exclude = signature_summary_df$signature_features %in% feature_exclude_batch,
-            non_specific_exclude = signature_summary_df$signature_features %in% feature_exclude_nonspecific_variation,
-            final_signature = signature_summary_df$signature_features %in% final_signature_features,
+            non_status_significant_exclude = !(signature_summary_df$features %in% signature_features),
+            cell_count_exclude = signature_summary_df$features %in% feature_exclude_cell_count,
+            plate_exclude = signature_summary_df$features %in% feature_exclude_plate,
+            batch_exclude = signature_summary_df$features %in% feature_exclude_batch,
+            non_specific_exclude = signature_summary_df$features %in% feature_exclude_nonspecific_variation,
+            final_signature = signature_summary_df$features %in% final_signature_features,
             dataset = dataset
         )
+    
+    print(paste("For the dataset:", dataset))
+    print(paste("the number of features in the core signature:", sum(signature_summary_df$final_signature)))
     
     all_signature_results[[dataset]] <- signature_summary_df
 }
@@ -192,8 +220,10 @@ for (dataset in datasets) {
 # Output files
 anova_output_file <- file.path(output_results_dir, "anova_results_full_bulk_signature.tsv.gz")
 tukey_output_file <- file.path(output_results_dir, "tukey_results_full_bulk_signature.tsv.gz")
+cell_count_output_file <- file.path(output_results_dir, "lm_cell_count_results_full_bulk_signature.tsv.gz")
 signature_output_file <- file.path(output_results_dir, "signature_summary_full_bulk_signature.tsv")
 
 dplyr::bind_rows(all_anova_results) %>% readr::write_tsv(anova_output_file)
 dplyr::bind_rows(all_tukey_results) %>% readr::write_tsv(tukey_output_file)
+dplyr::bind_rows(cell_count_results) %>% readr::write_tsv(cell_count_output_file)
 dplyr::bind_rows(all_signature_results) %>% readr::write_tsv(signature_output_file)
