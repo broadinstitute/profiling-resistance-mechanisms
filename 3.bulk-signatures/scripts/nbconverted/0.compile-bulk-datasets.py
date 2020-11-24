@@ -42,13 +42,18 @@
 # | 218775 | 60 | 2020_08_24_Batch9 | cb5083_trt_validation |
 # | 218697 | 60 | 2020_08_24_Batch9 | cb5083_trt_validation |
 # 
-# We specifically selected validation sets that were collected in an entirely different batch.
+# Note that for the cb5083 and ixazomib datasets, we only compile untreated plates.
+# See https://github.com/broadinstitute/profiling-resistance-mechanisms/issues/89 for more details.
 # 
-# | Batch | Dataset | Number of Plates |
+# We specifically selected validation sets that were collected on an entirely different plate.
+# No info from this plate was included in training or testing.
+# 
+# | Plate | Dataset | Batch |
 # | :--- | :----- | :--------------: |
-# | 2019_02_15_Batch1_20X | cloneAE | 1 |
-# | 2019_03_20_Batch2 | cloneAE | 1 |
-# | 2020_08_24_Batch9 | ixazomib and CB-5083 | 6 |
+# | 218360 | cloneAE | 2020_07_02_Batch8 |
+# | 218858 | ixazomib | 2020_09_08_Batch10 |
+# | 218774 | cb5083 | 2020_08_24_Batch9 |
+# 
 # 
 # ### Other enhancements
 # 
@@ -154,6 +159,7 @@ for dataset in datasets:
             suffix=profile_suffix,
             combine_dfs=True,
             harmonize_cols=True,
+            add_cell_count=True,
             cell_count_dir=cell_count_dir
         )
         
@@ -253,6 +259,14 @@ pd.crosstab(parental_splits.Metadata_dataset, parental_splits.Metadata_model_spl
 # In[11]:
 
 
+# We see a very large difference in cell count across profiles
+# Remember that profiles were generated from averaging feature values for all single cells
+all_datasets_df.Metadata_cell_count.hist()
+
+
+# In[12]:
+
+
 # Reorder features
 common_metadata = infer_cp_features(all_datasets_df, metadata=True)
 morph_features = infer_cp_features(all_datasets_df)
@@ -268,7 +282,7 @@ all_datasets_df.head()
 # We apply feature selection per dataset using only the training set.
 # We track which features are selected per dataset and subset.
 
-# In[12]:
+# In[13]:
 
 
 selected_features = []
@@ -297,7 +311,7 @@ all_selected_features.to_csv(output_file, sep="\t", index=False)
 all_selected_features.head()
 
 
-# In[13]:
+# In[14]:
 
 
 # How many features are selected?
@@ -308,7 +322,7 @@ all_selected_features.groupby("dataset")["features"].count()
 # 
 # We output the feature selected datasets as .gct files, but the full feature set as compressed csvs.
 
-# In[14]:
+# In[15]:
 
 
 output_file = pathlib.Path(f"{output_dir}/bulk_profiles_analytical_set.csv.gz")
@@ -321,7 +335,7 @@ feature_selected_df = all_datasets_df.loc[:, common_metadata + all_selected_feat
 write_gct(profiles=feature_selected_df, output_file=output_gct_file)
 
 
-# In[15]:
+# In[16]:
 
 
 print(feature_selected_df.shape)
