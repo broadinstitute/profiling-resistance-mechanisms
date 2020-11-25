@@ -1,0 +1,135 @@
+Metadata_model_split	Metadata_clone_number	metric	metric_value	dataset	shuffle
+test	CloneA	accuracy	1.0	cloneAE	False
+test	CloneE	accuracy	1.0	cloneAE	False
+test	WT_parental	accuracy	1.0	cloneAE	False
+training	CloneA	accuracy	1.0	cloneAE	False
+training	CloneE	accuracy	1.0	cloneAE	False
+training	WT_parental	accuracy	0.875	cloneAE	False
+validation	CloneA	accuracy	1.0	cloneAE	False
+validation	CloneE	accuracy	1.0	cloneAE	False
+validation	WT_parental	accuracy	1.0	cloneAE	False
+test	CloneA	avg_precision	1.0	cloneAE	False
+test	CloneE	avg_precision	1.0	cloneAE	False
+test	WT_parental	avg_precision		cloneAE	False
+training	CloneA	avg_precision	1.0	cloneAE	False
+training	CloneE	avg_precision	1.0	cloneAE	False
+training	WT_parental	avg_precision		cloneAE	False
+validation	CloneA	avg_precision	1.0	cloneAE	False
+validation	CloneE	avg_precision	1.0	cloneAE	False
+validation	WT_parental	avg_precision		cloneAE	False
+test	CB5038 clone 13	accuracy	0.8	cb5083	False
+test	CB5038 clone 14	accuracy	1.0	cb5083	False
+test	CB5038 clone 15	accuracy	0.8	cb5083	False
+test	CB5038 clone 16	accuracy	0.8	cb5083	False
+test	CB5038 clone 17	accuracy	1.0	cb5083	False
+test	WT clone 04	accuracy	1.0	cb5083	False
+test	WT clone 05	accuracy	0.6	cb5083	False
+test	WT clone 06	accuracy	0.8	cb5083	False
+test	WT clone 07	accuracy	0.0	cb5083	False
+test	WT_parental	accuracy	1.0	cb5083	False
+training	CB5038 clone 13	accuracy	0.9230769230769231	cb5083	False
+training	CB5038 clone 14	accuracy	0.8571428571428571	cb5083	False
+training	CB5038 clone 15	accuracy	0.6923076923076923	cb5083	False
+training	CB5038 clone 16	accuracy	0.6923076923076923	cb5083	False
+training	CB5038 clone 17	accuracy	0.8571428571428571	cb5083	False
+training	WT clone 04	accuracy	0.7857142857142857	cb5083	False
+training	WT clone 05	accuracy	0.6153846153846154	cb5083	False
+training	WT clone 06	accuracy	0.8461538461538461	cb5083	False
+training	WT clone 07	accuracy	0.5	cb5083	False
+validation	CB5038 clone 13	accuracy	1.0	cb5083	False
+validation	CB5038 clone 14	accuracy	0.0	cb5083	False
+validation	CB5038 clone 15	accuracy	0.5	cb5083	False
+validation	CB5038 clone 16	accuracy	1.0	cb5083	False
+validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	False
+validation	WT clone 04	accuracy	1.0	cb5083	False
+validation	WT clone 05	accuracy	0.16666666666666666	cb5083	False
+validation	WT clone 06	accuracy	1.0	cb5083	False
+validation	WT clone 07	accuracy	0.0	cb5083	False
+validation	WT_parental	accuracy	1.0	cb5083	False
+test	CB5038 clone 13	avg_precision	1.0	cb5083	False
+test	CB5038 clone 14	avg_precision	1.0	cb5083	False
+test	CB5038 clone 15	avg_precision	1.0	cb5083	False
+test	CB5038 clone 16	avg_precision	1.0	cb5083	False
+test	CB5038 clone 17	avg_precision	1.0	cb5083	False
+test	WT clone 04	avg_precision		cb5083	False
+test	WT clone 05	avg_precision		cb5083	False
+test	WT clone 06	avg_precision		cb5083	False
+test	WT clone 07	avg_precision		cb5083	False
+test	WT_parental	avg_precision		cb5083	False
+training	CB5038 clone 13	avg_precision	1.0	cb5083	False
+training	CB5038 clone 14	avg_precision	1.0	cb5083	False
+training	CB5038 clone 15	avg_precision	1.0	cb5083	False
+training	CB5038 clone 16	avg_precision	1.0	cb5083	False
+training	CB5038 clone 17	avg_precision	1.0	cb5083	False
+training	WT clone 04	avg_precision		cb5083	False
+training	WT clone 05	avg_precision		cb5083	False
+training	WT clone 06	avg_precision		cb5083	False
+training	WT clone 07	avg_precision		cb5083	False
+validation	CB5038 clone 13	avg_precision	1.0	cb5083	False
+validation	CB5038 clone 14	avg_precision	1.0	cb5083	False
+validation	CB5038 clone 15	avg_precision	1.0	cb5083	False
+validation	CB5038 clone 16	avg_precision	1.0	cb5083	False
+validation	CB5038 clone 17	avg_precision	1.0	cb5083	False
+validation	WT clone 04	avg_precision		cb5083	False
+validation	WT clone 05	avg_precision		cb5083	False
+validation	WT clone 06	avg_precision		cb5083	False
+validation	WT clone 07	avg_precision		cb5083	False
+validation	WT_parental	avg_precision		cb5083	False
+test	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	False
+test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	False
+test	Ixazomib clone 03	accuracy	0.0	ixazomib	False
+test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	False
+test	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	False
+test	WT clone 04	accuracy	1.0	ixazomib	False
+test	WT clone 05	accuracy	1.0	ixazomib	False
+test	WT clone 06	accuracy	1.0	ixazomib	False
+test	WT clone 07	accuracy	1.0	ixazomib	False
+test	WT_parental	accuracy	0.25	ixazomib	False
+training	Ixazomib clone 01	accuracy	0.5555555555555556	ixazomib	False
+training	Ixazomib clone 02	accuracy	1.0	ixazomib	False
+training	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	False
+training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	False
+training	Ixazomib clone 05	accuracy	0.5555555555555556	ixazomib	False
+training	WT clone 04	accuracy	0.8888888888888888	ixazomib	False
+training	WT clone 05	accuracy	1.0	ixazomib	False
+training	WT clone 06	accuracy	0.8888888888888888	ixazomib	False
+training	WT clone 07	accuracy	0.6666666666666666	ixazomib	False
+validation	Ixazomib clone 01	accuracy	0.0	ixazomib	False
+validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	False
+validation	Ixazomib clone 03	accuracy	1.0	ixazomib	False
+validation	Ixazomib clone 04	accuracy	0.0	ixazomib	False
+validation	Ixazomib clone 05	accuracy	0.0	ixazomib	False
+validation	WT clone 04	accuracy	0.0	ixazomib	False
+validation	WT clone 05	accuracy	0.0	ixazomib	False
+validation	WT clone 06	accuracy	0.16666666666666666	ixazomib	False
+validation	WT clone 07	accuracy	0.16666666666666666	ixazomib	False
+validation	WT_parental	accuracy	0.0	ixazomib	False
+test	Ixazomib clone 01	avg_precision	1.0	ixazomib	False
+test	Ixazomib clone 02	avg_precision	1.0	ixazomib	False
+test	Ixazomib clone 03	avg_precision	1.0	ixazomib	False
+test	Ixazomib clone 04	avg_precision	1.0	ixazomib	False
+test	Ixazomib clone 05	avg_precision	1.0	ixazomib	False
+test	WT clone 04	avg_precision		ixazomib	False
+test	WT clone 05	avg_precision		ixazomib	False
+test	WT clone 06	avg_precision		ixazomib	False
+test	WT clone 07	avg_precision		ixazomib	False
+test	WT_parental	avg_precision		ixazomib	False
+training	Ixazomib clone 01	avg_precision	1.0	ixazomib	False
+training	Ixazomib clone 02	avg_precision	1.0	ixazomib	False
+training	Ixazomib clone 03	avg_precision	1.0	ixazomib	False
+training	Ixazomib clone 04	avg_precision	1.0	ixazomib	False
+training	Ixazomib clone 05	avg_precision	1.0	ixazomib	False
+training	WT clone 04	avg_precision		ixazomib	False
+training	WT clone 05	avg_precision		ixazomib	False
+training	WT clone 06	avg_precision		ixazomib	False
+training	WT clone 07	avg_precision		ixazomib	False
+validation	Ixazomib clone 01	avg_precision	1.0	ixazomib	False
+validation	Ixazomib clone 02	avg_precision	1.0	ixazomib	False
+validation	Ixazomib clone 03	avg_precision	1.0	ixazomib	False
+validation	Ixazomib clone 04	avg_precision	1.0	ixazomib	False
+validation	Ixazomib clone 05	avg_precision	1.0	ixazomib	False
+validation	WT clone 04	avg_precision		ixazomib	False
+validation	WT clone 05	avg_precision		ixazomib	False
+validation	WT clone 06	avg_precision		ixazomib	False
+validation	WT clone 07	avg_precision		ixazomib	False
+validation	WT_parental	avg_precision		ixazomib	False
