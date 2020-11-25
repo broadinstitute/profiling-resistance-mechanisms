@@ -1,0 +1,22 @@
+name: singscore
+channels:
+- conda-forge
+- bioconda
+dependencies:
+- conda-forge::jupyter=1.0.0
+- conda-forge::ipykernel=5.1.0
+- conda-forge::nb_conda_kernels=2.2.1
+- conda-forge::r-dplyr=0.8.3
+- conda-forge::r-tidyr=0.8.3
+- conda-forge::r-readr=1.1.1
+- conda-forge::r-ggplot2=3.2.1
+- conda-forge::r-ggridges=0.5.2
+- conda-forge::r-ggbeeswarm=0.6.0
+- conda-forge::r-cowplot=1.0.0
+- conda-forge::r-ggrepel=0.8.1
+- conda-forge::r-svglite=1.2.2
+- conda-forge::r-irkernel=1.0.2
+- conda-forge::r-optparse=1.6.2
+- conda-forge::r-curl=4.0
+- conda-forge::r-broom=0.5.5
+- bioconda::bioconductor-singscore
