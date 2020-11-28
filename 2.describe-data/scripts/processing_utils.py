@@ -39,6 +39,7 @@ def get_recode_cols():
 
 def load_data(
     batch,
+    plates="all",
     profile_dir="profiles",
     suffix="normalized_feature_selected.csv.gz",
     combine_dfs=False,
@@ -48,7 +49,7 @@ def load_data(
 ):
     batch_dir = os.path.join(profile_dir, batch)
 
-    plate_folders = os.listdir(batch_dir)
+    plate_folders = [x for x in os.listdir(batch_dir) if ".DS_Store" not in x]
 
     plate_files = [
         os.path.join(batch_dir, x, f"{x}_{suffix}")
@@ -59,6 +60,10 @@ def load_data(
     plate_data = {}
     for plate_idx in range(0, len(plate_files)):
         plate = plate_folders[plate_idx]
+        if plates != "all":
+            if plate not in plates:
+                continue
+
         df = pd.read_csv(plate_files[plate_idx]).assign(Metadata_batch=batch)
 
         if add_cell_count:

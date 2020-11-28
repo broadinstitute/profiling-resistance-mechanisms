@@ -27,6 +27,7 @@ dependencies:
 - conda-forge::r-ggplot2=3.2.1
 - conda-forge::r-cowplot=1.0.0
 - conda-forge::r-ggrepel=0.8.1
+- conda-forge::r-upsetr
 - conda-forge::r-svglite=1.2.2
 - conda-forge::r-irkernel=1.0.2
 - conda-forge::r-optparse=1.6.2
