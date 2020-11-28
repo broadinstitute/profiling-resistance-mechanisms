@@ -91,7 +91,7 @@ for (dataset in datasets) {
         dplyr::filter(
             dataset == !!dataset,
             term == "Metadata_clone_type_indicator",
-            feature %in% signature_subset_df$signature_features
+            feature %in% signature_subset_df$features
         )
     
     # Ensure that the comparison is always resistant vs. senstive
