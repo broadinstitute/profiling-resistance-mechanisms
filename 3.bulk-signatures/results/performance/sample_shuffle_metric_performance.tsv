@@ -17,25 +17,25 @@ training	WT_parental	avg_precision		cloneAE	True	0
 validation	CloneA	avg_precision	1.0	cloneAE	True	0
 validation	CloneE	avg_precision	1.0	cloneAE	True	0
 validation	WT_parental	avg_precision		cloneAE	True	0
-test	CB5038 clone 13	accuracy	0.8	cb5083	True	0
+test	CB5038 clone 13	accuracy	0.6	cb5083	True	0
 test	CB5038 clone 14	accuracy	0.5	cb5083	True	0
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	0
-test	CB5038 clone 16	accuracy	0.6	cb5083	True	0
+test	CB5038 clone 16	accuracy	0.4	cb5083	True	0
 test	CB5038 clone 17	accuracy	1.0	cb5083	True	0
-test	WT clone 04	accuracy	0.25	cb5083	True	0
+test	WT clone 04	accuracy	0.5	cb5083	True	0
 test	WT clone 05	accuracy	0.6	cb5083	True	0
 test	WT clone 06	accuracy	0.4	cb5083	True	0
 test	WT clone 07	accuracy	0.75	cb5083	True	0
 test	WT_parental	accuracy	0.4444444444444444	cb5083	True	0
-training	CB5038 clone 13	accuracy	0.6153846153846154	cb5083	True	0
-training	CB5038 clone 14	accuracy	0.21428571428571427	cb5083	True	0
-training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	0
-training	CB5038 clone 16	accuracy	0.38461538461538464	cb5083	True	0
-training	CB5038 clone 17	accuracy	0.6428571428571429	cb5083	True	0
+training	CB5038 clone 13	accuracy	0.6923076923076923	cb5083	True	0
+training	CB5038 clone 14	accuracy	0.2857142857142857	cb5083	True	0
+training	CB5038 clone 15	accuracy	0.5384615384615384	cb5083	True	0
+training	CB5038 clone 16	accuracy	0.3076923076923077	cb5083	True	0
+training	CB5038 clone 17	accuracy	0.7142857142857143	cb5083	True	0
 training	WT clone 04	accuracy	0.42857142857142855	cb5083	True	0
 training	WT clone 05	accuracy	0.6923076923076923	cb5083	True	0
-training	WT clone 06	accuracy	0.6153846153846154	cb5083	True	0
-training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	0
+training	WT clone 06	accuracy	0.5384615384615384	cb5083	True	0
+training	WT clone 07	accuracy	0.5	cb5083	True	0
 validation	CB5038 clone 13	accuracy	0.6666666666666666	cb5083	True	0
 validation	CB5038 clone 14	accuracy	0.8333333333333334	cb5083	True	0
 validation	CB5038 clone 15	accuracy	0.5	cb5083	True	0
@@ -45,7 +45,7 @@ validation	WT clone 04	accuracy	0.16666666666666666	cb5083	True	0
 validation	WT clone 05	accuracy	0.6666666666666666	cb5083	True	0
 validation	WT clone 06	accuracy	0.3333333333333333	cb5083	True	0
 validation	WT clone 07	accuracy	0.6666666666666666	cb5083	True	0
-validation	WT_parental	accuracy	0.0	cb5083	True	0
+validation	WT_parental	accuracy	0.16666666666666666	cb5083	True	0
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	0
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	0
 test	CB5038 clone 15	avg_precision	1.0	cb5083	True	0
@@ -79,29 +79,29 @@ test	Ixazomib clone 01	accuracy	1.0	ixazomib	True	0
 test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	0
 test	Ixazomib clone 03	accuracy	1.0	ixazomib	True	0
 test	Ixazomib clone 04	accuracy	0.0	ixazomib	True	0
-test	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	0
+test	Ixazomib clone 05	accuracy	1.0	ixazomib	True	0
 test	WT clone 04	accuracy	0.0	ixazomib	True	0
 test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	0
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	0
-test	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	0
+test	WT clone 07	accuracy	0.0	ixazomib	True	0
 test	WT_parental	accuracy	0.8333333333333334	ixazomib	True	0
 training	Ixazomib clone 01	accuracy	0.2222222222222222	ixazomib	True	0
-training	Ixazomib clone 02	accuracy	0.7777777777777778	ixazomib	True	0
+training	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	0
 training	Ixazomib clone 03	accuracy	0.7777777777777778	ixazomib	True	0
 training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	0
 training	Ixazomib clone 05	accuracy	0.7777777777777778	ixazomib	True	0
 training	WT clone 04	accuracy	0.5555555555555556	ixazomib	True	0
-training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	0
+training	WT clone 05	accuracy	0.4444444444444444	ixazomib	True	0
 training	WT clone 06	accuracy	0.5555555555555556	ixazomib	True	0
 training	WT clone 07	accuracy	0.5555555555555556	ixazomib	True	0
 validation	Ixazomib clone 01	accuracy	0.0	ixazomib	True	0
-validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	0
+validation	Ixazomib clone 02	accuracy	0.16666666666666666	ixazomib	True	0
 validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	0
 validation	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	0
 validation	Ixazomib clone 05	accuracy	0.5	ixazomib	True	0
-validation	WT clone 04	accuracy	0.5	ixazomib	True	0
+validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	0
 validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	0
-validation	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	0
+validation	WT clone 06	accuracy	0.5	ixazomib	True	0
 validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	0
 validation	WT_parental	accuracy	0.5	ixazomib	True	0
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	0
@@ -151,10 +151,10 @@ training	WT_parental	avg_precision		cloneAE	True	1
 validation	CloneA	avg_precision	1.0	cloneAE	True	1
 validation	CloneE	avg_precision	1.0	cloneAE	True	1
 validation	WT_parental	avg_precision		cloneAE	True	1
-test	CB5038 clone 13	accuracy	0.4	cb5083	True	1
+test	CB5038 clone 13	accuracy	0.6	cb5083	True	1
 test	CB5038 clone 14	accuracy	0.5	cb5083	True	1
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	1
-test	CB5038 clone 16	accuracy	0.6	cb5083	True	1
+test	CB5038 clone 16	accuracy	0.4	cb5083	True	1
 test	CB5038 clone 17	accuracy	0.5	cb5083	True	1
 test	WT clone 04	accuracy	0.75	cb5083	True	1
 test	WT clone 05	accuracy	0.4	cb5083	True	1
@@ -163,10 +163,10 @@ test	WT clone 07	accuracy	0.5	cb5083	True	1
 test	WT_parental	accuracy	0.5555555555555556	cb5083	True	1
 training	CB5038 clone 13	accuracy	0.6153846153846154	cb5083	True	1
 training	CB5038 clone 14	accuracy	0.7857142857142857	cb5083	True	1
-training	CB5038 clone 15	accuracy	0.46153846153846156	cb5083	True	1
+training	CB5038 clone 15	accuracy	0.38461538461538464	cb5083	True	1
 training	CB5038 clone 16	accuracy	0.6923076923076923	cb5083	True	1
-training	CB5038 clone 17	accuracy	0.5	cb5083	True	1
-training	WT clone 04	accuracy	0.42857142857142855	cb5083	True	1
+training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	1
+training	WT clone 04	accuracy	0.2857142857142857	cb5083	True	1
 training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	1
 training	WT clone 06	accuracy	0.6153846153846154	cb5083	True	1
 training	WT clone 07	accuracy	0.2857142857142857	cb5083	True	1
@@ -174,9 +174,9 @@ validation	CB5038 clone 13	accuracy	0.3333333333333333	cb5083	True	1
 validation	CB5038 clone 14	accuracy	0.5	cb5083	True	1
 validation	CB5038 clone 15	accuracy	0.3333333333333333	cb5083	True	1
 validation	CB5038 clone 16	accuracy	0.5	cb5083	True	1
-validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	1
-validation	WT clone 04	accuracy	0.3333333333333333	cb5083	True	1
-validation	WT clone 05	accuracy	0.8333333333333334	cb5083	True	1
+validation	CB5038 clone 17	accuracy	0.5	cb5083	True	1
+validation	WT clone 04	accuracy	0.5	cb5083	True	1
+validation	WT clone 05	accuracy	1.0	cb5083	True	1
 validation	WT clone 06	accuracy	0.5	cb5083	True	1
 validation	WT clone 07	accuracy	0.5	cb5083	True	1
 validation	WT_parental	accuracy	0.5	cb5083	True	1
@@ -209,7 +209,7 @@ validation	WT clone 05	avg_precision		cb5083	True	1
 validation	WT clone 06	avg_precision		cb5083	True	1
 validation	WT clone 07	avg_precision		cb5083	True	1
 validation	WT_parental	avg_precision		cb5083	True	1
-test	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	1
+test	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	1
 test	Ixazomib clone 02	accuracy	0.0	ixazomib	True	1
 test	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	1
 test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	1
@@ -218,7 +218,7 @@ test	WT clone 04	accuracy	0.0	ixazomib	True	1
 test	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	1
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	1
 test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	1
-test	WT_parental	accuracy	0.3333333333333333	ixazomib	True	1
+test	WT_parental	accuracy	0.25	ixazomib	True	1
 training	Ixazomib clone 01	accuracy	0.5555555555555556	ixazomib	True	1
 training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	1
 training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	1
@@ -227,13 +227,13 @@ training	Ixazomib clone 05	accuracy	0.5555555555555556	ixazomib	True	1
 training	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	1
 training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	1
 training	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	1
-training	WT clone 07	accuracy	0.1111111111111111	ixazomib	True	1
+training	WT clone 07	accuracy	0.0	ixazomib	True	1
 validation	Ixazomib clone 01	accuracy	0.16666666666666666	ixazomib	True	1
 validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	1
 validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	1
-validation	Ixazomib clone 04	accuracy	0.8333333333333334	ixazomib	True	1
+validation	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	1
 validation	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	1
-validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	1
+validation	WT clone 04	accuracy	0.5	ixazomib	True	1
 validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	1
 validation	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	1
 validation	WT clone 07	accuracy	1.0	ixazomib	True	1
@@ -293,14 +293,14 @@ test	CB5038 clone 17	accuracy	0.25	cb5083	True	2
 test	WT clone 04	accuracy	0.5	cb5083	True	2
 test	WT clone 05	accuracy	0.2	cb5083	True	2
 test	WT clone 06	accuracy	0.4	cb5083	True	2
-test	WT clone 07	accuracy	0.75	cb5083	True	2
+test	WT clone 07	accuracy	1.0	cb5083	True	2
 test	WT_parental	accuracy	0.6111111111111112	cb5083	True	2
 training	CB5038 clone 13	accuracy	0.6153846153846154	cb5083	True	2
 training	CB5038 clone 14	accuracy	0.42857142857142855	cb5083	True	2
 training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	2
 training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	2
 training	CB5038 clone 17	accuracy	0.6428571428571429	cb5083	True	2
-training	WT clone 04	accuracy	0.35714285714285715	cb5083	True	2
+training	WT clone 04	accuracy	0.5714285714285714	cb5083	True	2
 training	WT clone 05	accuracy	0.3076923076923077	cb5083	True	2
 training	WT clone 06	accuracy	0.6153846153846154	cb5083	True	2
 training	WT clone 07	accuracy	0.5	cb5083	True	2
@@ -311,8 +311,8 @@ validation	CB5038 clone 16	accuracy	0.5	cb5083	True	2
 validation	CB5038 clone 17	accuracy	0.5	cb5083	True	2
 validation	WT clone 04	accuracy	0.16666666666666666	cb5083	True	2
 validation	WT clone 05	accuracy	0.5	cb5083	True	2
-validation	WT clone 06	accuracy	0.6666666666666666	cb5083	True	2
-validation	WT clone 07	accuracy	0.6666666666666666	cb5083	True	2
+validation	WT clone 06	accuracy	0.3333333333333333	cb5083	True	2
+validation	WT clone 07	accuracy	0.5	cb5083	True	2
 validation	WT_parental	accuracy	0.6666666666666666	cb5083	True	2
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	2
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	2
@@ -346,7 +346,7 @@ validation	WT_parental	avg_precision		cb5083	True	2
 test	Ixazomib clone 01	accuracy	0.0	ixazomib	True	2
 test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	2
 test	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	2
-test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	2
+test	Ixazomib clone 04	accuracy	1.0	ixazomib	True	2
 test	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	2
 test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	2
 test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	2
@@ -355,18 +355,18 @@ test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	2
 test	WT_parental	accuracy	0.5833333333333334	ixazomib	True	2
 training	Ixazomib clone 01	accuracy	0.7777777777777778	ixazomib	True	2
 training	Ixazomib clone 02	accuracy	0.2222222222222222	ixazomib	True	2
-training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	2
-training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	2
+training	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	2
+training	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	2
 training	Ixazomib clone 05	accuracy	0.4444444444444444	ixazomib	True	2
 training	WT clone 04	accuracy	0.4444444444444444	ixazomib	True	2
 training	WT clone 05	accuracy	0.8888888888888888	ixazomib	True	2
 training	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	2
 training	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	2
 validation	Ixazomib clone 01	accuracy	0.5	ixazomib	True	2
-validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	2
+validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	2
 validation	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	2
 validation	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	2
-validation	Ixazomib clone 05	accuracy	0.5	ixazomib	True	2
+validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	2
 validation	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	2
 validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	2
 validation	WT clone 06	accuracy	0.16666666666666666	ixazomib	True	2
@@ -419,33 +419,33 @@ training	WT_parental	avg_precision		cloneAE	True	3
 validation	CloneA	avg_precision	1.0	cloneAE	True	3
 validation	CloneE	avg_precision	1.0	cloneAE	True	3
 validation	WT_parental	avg_precision		cloneAE	True	3
-test	CB5038 clone 13	accuracy	0.4	cb5083	True	3
+test	CB5038 clone 13	accuracy	0.6	cb5083	True	3
 test	CB5038 clone 14	accuracy	0.5	cb5083	True	3
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	3
 test	CB5038 clone 16	accuracy	0.8	cb5083	True	3
-test	CB5038 clone 17	accuracy	0.75	cb5083	True	3
+test	CB5038 clone 17	accuracy	0.5	cb5083	True	3
 test	WT clone 04	accuracy	0.75	cb5083	True	3
 test	WT clone 05	accuracy	0.6	cb5083	True	3
-test	WT clone 06	accuracy	0.8	cb5083	True	3
+test	WT clone 06	accuracy	1.0	cb5083	True	3
 test	WT clone 07	accuracy	0.5	cb5083	True	3
-test	WT_parental	accuracy	0.5555555555555556	cb5083	True	3
+test	WT_parental	accuracy	0.5	cb5083	True	3
 training	CB5038 clone 13	accuracy	0.46153846153846156	cb5083	True	3
-training	CB5038 clone 14	accuracy	0.42857142857142855	cb5083	True	3
-training	CB5038 clone 15	accuracy	0.38461538461538464	cb5083	True	3
+training	CB5038 clone 14	accuracy	0.5	cb5083	True	3
+training	CB5038 clone 15	accuracy	0.5384615384615384	cb5083	True	3
 training	CB5038 clone 16	accuracy	0.8461538461538461	cb5083	True	3
-training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	3
-training	WT clone 04	accuracy	0.6428571428571429	cb5083	True	3
+training	CB5038 clone 17	accuracy	0.5	cb5083	True	3
+training	WT clone 04	accuracy	0.7142857142857143	cb5083	True	3
 training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	3
-training	WT clone 06	accuracy	0.38461538461538464	cb5083	True	3
-training	WT clone 07	accuracy	0.5	cb5083	True	3
-validation	CB5038 clone 13	accuracy	0.6666666666666666	cb5083	True	3
+training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	3
+training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	3
+validation	CB5038 clone 13	accuracy	0.5	cb5083	True	3
 validation	CB5038 clone 14	accuracy	0.6666666666666666	cb5083	True	3
 validation	CB5038 clone 15	accuracy	0.3333333333333333	cb5083	True	3
-validation	CB5038 clone 16	accuracy	0.6666666666666666	cb5083	True	3
-validation	CB5038 clone 17	accuracy	0.5	cb5083	True	3
+validation	CB5038 clone 16	accuracy	0.5	cb5083	True	3
+validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	3
 validation	WT clone 04	accuracy	0.3333333333333333	cb5083	True	3
 validation	WT clone 05	accuracy	0.6666666666666666	cb5083	True	3
-validation	WT clone 06	accuracy	0.5	cb5083	True	3
+validation	WT clone 06	accuracy	0.3333333333333333	cb5083	True	3
 validation	WT clone 07	accuracy	0.0	cb5083	True	3
 validation	WT_parental	accuracy	0.3333333333333333	cb5083	True	3
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	3
@@ -480,31 +480,31 @@ validation	WT_parental	avg_precision		cb5083	True	3
 test	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	3
 test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	3
 test	Ixazomib clone 03	accuracy	1.0	ixazomib	True	3
-test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	3
+test	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	3
 test	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	3
-test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	3
+test	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	3
 test	WT clone 05	accuracy	0.0	ixazomib	True	3
 test	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	3
-test	WT clone 07	accuracy	1.0	ixazomib	True	3
+test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	3
 test	WT_parental	accuracy	0.5	ixazomib	True	3
-training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	3
+training	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	3
 training	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	3
 training	Ixazomib clone 03	accuracy	0.4444444444444444	ixazomib	True	3
 training	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	3
 training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	3
 training	WT clone 04	accuracy	0.5555555555555556	ixazomib	True	3
 training	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	3
-training	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	3
+training	WT clone 06	accuracy	0.5555555555555556	ixazomib	True	3
 training	WT clone 07	accuracy	0.4444444444444444	ixazomib	True	3
 validation	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	3
 validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	3
-validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	3
+validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	3
 validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	3
 validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	3
 validation	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	3
 validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	3
 validation	WT clone 06	accuracy	0.5	ixazomib	True	3
-validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	3
+validation	WT clone 07	accuracy	0.5	ixazomib	True	3
 validation	WT_parental	accuracy	0.8333333333333334	ixazomib	True	3
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	3
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	3
@@ -555,23 +555,23 @@ validation	CloneE	avg_precision	1.0	cloneAE	True	4
 validation	WT_parental	avg_precision		cloneAE	True	4
 test	CB5038 clone 13	accuracy	0.4	cb5083	True	4
 test	CB5038 clone 14	accuracy	0.5	cb5083	True	4
-test	CB5038 clone 15	accuracy	0.8	cb5083	True	4
+test	CB5038 clone 15	accuracy	0.6	cb5083	True	4
 test	CB5038 clone 16	accuracy	0.6	cb5083	True	4
-test	CB5038 clone 17	accuracy	0.25	cb5083	True	4
+test	CB5038 clone 17	accuracy	0.5	cb5083	True	4
 test	WT clone 04	accuracy	0.5	cb5083	True	4
 test	WT clone 05	accuracy	0.6	cb5083	True	4
 test	WT clone 06	accuracy	0.4	cb5083	True	4
 test	WT clone 07	accuracy	0.0	cb5083	True	4
 test	WT_parental	accuracy	0.5	cb5083	True	4
-training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	4
+training	CB5038 clone 13	accuracy	0.46153846153846156	cb5083	True	4
 training	CB5038 clone 14	accuracy	0.7857142857142857	cb5083	True	4
-training	CB5038 clone 15	accuracy	0.38461538461538464	cb5083	True	4
+training	CB5038 clone 15	accuracy	0.46153846153846156	cb5083	True	4
 training	CB5038 clone 16	accuracy	0.5384615384615384	cb5083	True	4
 training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	4
 training	WT clone 04	accuracy	0.5714285714285714	cb5083	True	4
-training	WT clone 05	accuracy	0.3076923076923077	cb5083	True	4
-training	WT clone 06	accuracy	0.5384615384615384	cb5083	True	4
-training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	4
+training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	4
+training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	4
+training	WT clone 07	accuracy	0.6428571428571429	cb5083	True	4
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	4
 validation	CB5038 clone 14	accuracy	0.6666666666666666	cb5083	True	4
 validation	CB5038 clone 15	accuracy	0.8333333333333334	cb5083	True	4
@@ -611,15 +611,15 @@ validation	WT clone 05	avg_precision		cb5083	True	4
 validation	WT clone 06	avg_precision		cb5083	True	4
 validation	WT clone 07	avg_precision		cb5083	True	4
 validation	WT_parental	avg_precision		cb5083	True	4
-test	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	4
+test	Ixazomib clone 01	accuracy	1.0	ixazomib	True	4
 test	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	4
 test	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	4
-test	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	4
+test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	4
 test	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	4
-test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	4
+test	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	4
 test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	4
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	4
-test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	4
+test	WT clone 07	accuracy	1.0	ixazomib	True	4
 test	WT_parental	accuracy	0.5833333333333334	ixazomib	True	4
 training	Ixazomib clone 01	accuracy	0.2222222222222222	ixazomib	True	4
 training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	4
@@ -633,7 +633,7 @@ training	WT clone 07	accuracy	0.4444444444444444	ixazomib	True	4
 validation	Ixazomib clone 01	accuracy	0.16666666666666666	ixazomib	True	4
 validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	4
 validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	4
-validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	4
+validation	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	4
 validation	Ixazomib clone 05	accuracy	0.5	ixazomib	True	4
 validation	WT clone 04	accuracy	0.5	ixazomib	True	4
 validation	WT clone 05	accuracy	0.5	ixazomib	True	4
@@ -692,25 +692,25 @@ test	CB5038 clone 14	accuracy	0.25	cb5083	True	5
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	5
 test	CB5038 clone 16	accuracy	0.6	cb5083	True	5
 test	CB5038 clone 17	accuracy	0.25	cb5083	True	5
-test	WT clone 04	accuracy	0.25	cb5083	True	5
+test	WT clone 04	accuracy	0.5	cb5083	True	5
 test	WT clone 05	accuracy	0.6	cb5083	True	5
-test	WT clone 06	accuracy	0.8	cb5083	True	5
-test	WT clone 07	accuracy	0.75	cb5083	True	5
+test	WT clone 06	accuracy	0.6	cb5083	True	5
+test	WT clone 07	accuracy	0.5	cb5083	True	5
 test	WT_parental	accuracy	0.5	cb5083	True	5
 training	CB5038 clone 13	accuracy	0.38461538461538464	cb5083	True	5
 training	CB5038 clone 14	accuracy	0.5714285714285714	cb5083	True	5
 training	CB5038 clone 15	accuracy	0.5384615384615384	cb5083	True	5
-training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	5
+training	CB5038 clone 16	accuracy	0.38461538461538464	cb5083	True	5
 training	CB5038 clone 17	accuracy	0.7142857142857143	cb5083	True	5
 training	WT clone 04	accuracy	0.2857142857142857	cb5083	True	5
-training	WT clone 05	accuracy	0.46153846153846156	cb5083	True	5
+training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	5
 training	WT clone 06	accuracy	0.38461538461538464	cb5083	True	5
-training	WT clone 07	accuracy	0.5	cb5083	True	5
+training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	5
 validation	CB5038 clone 13	accuracy	0.3333333333333333	cb5083	True	5
 validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	5
 validation	CB5038 clone 15	accuracy	0.5	cb5083	True	5
 validation	CB5038 clone 16	accuracy	0.5	cb5083	True	5
-validation	CB5038 clone 17	accuracy	0.8333333333333334	cb5083	True	5
+validation	CB5038 clone 17	accuracy	1.0	cb5083	True	5
 validation	WT clone 04	accuracy	0.3333333333333333	cb5083	True	5
 validation	WT clone 05	accuracy	0.5	cb5083	True	5
 validation	WT clone 06	accuracy	0.0	cb5083	True	5
@@ -745,7 +745,7 @@ validation	WT clone 05	avg_precision		cb5083	True	5
 validation	WT clone 06	avg_precision		cb5083	True	5
 validation	WT clone 07	avg_precision		cb5083	True	5
 validation	WT_parental	avg_precision		cb5083	True	5
-test	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	5
+test	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	5
 test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	5
 test	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	5
 test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	5
@@ -754,25 +754,25 @@ test	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	5
 test	WT clone 05	accuracy	1.0	ixazomib	True	5
 test	WT clone 06	accuracy	0.0	ixazomib	True	5
 test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	5
-test	WT_parental	accuracy	0.5	ixazomib	True	5
+test	WT_parental	accuracy	0.5833333333333334	ixazomib	True	5
 training	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	5
-training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	5
+training	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	5
 training	Ixazomib clone 03	accuracy	0.8888888888888888	ixazomib	True	5
 training	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	5
 training	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	5
-training	WT clone 04	accuracy	0.8888888888888888	ixazomib	True	5
+training	WT clone 04	accuracy	0.7777777777777778	ixazomib	True	5
 training	WT clone 05	accuracy	0.4444444444444444	ixazomib	True	5
 training	WT clone 06	accuracy	0.4444444444444444	ixazomib	True	5
 training	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	5
 validation	Ixazomib clone 01	accuracy	0.16666666666666666	ixazomib	True	5
 validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	5
 validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	5
-validation	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	5
+validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	5
 validation	Ixazomib clone 05	accuracy	0.16666666666666666	ixazomib	True	5
-validation	WT clone 04	accuracy	0.8333333333333334	ixazomib	True	5
+validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	5
 validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	5
 validation	WT clone 06	accuracy	0.0	ixazomib	True	5
-validation	WT clone 07	accuracy	0.5	ixazomib	True	5
+validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	5
 validation	WT_parental	accuracy	0.16666666666666666	ixazomib	True	5
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	5
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	5
@@ -821,35 +821,35 @@ training	WT_parental	avg_precision		cloneAE	True	6
 validation	CloneA	avg_precision	1.0	cloneAE	True	6
 validation	CloneE	avg_precision	1.0	cloneAE	True	6
 validation	WT_parental	avg_precision		cloneAE	True	6
-test	CB5038 clone 13	accuracy	0.6	cb5083	True	6
-test	CB5038 clone 14	accuracy	0.75	cb5083	True	6
-test	CB5038 clone 15	accuracy	0.4	cb5083	True	6
+test	CB5038 clone 13	accuracy	0.4	cb5083	True	6
+test	CB5038 clone 14	accuracy	0.5	cb5083	True	6
+test	CB5038 clone 15	accuracy	0.6	cb5083	True	6
 test	CB5038 clone 16	accuracy	0.6	cb5083	True	6
 test	CB5038 clone 17	accuracy	0.75	cb5083	True	6
 test	WT clone 04	accuracy	0.5	cb5083	True	6
-test	WT clone 05	accuracy	0.2	cb5083	True	6
+test	WT clone 05	accuracy	0.4	cb5083	True	6
 test	WT clone 06	accuracy	0.4	cb5083	True	6
 test	WT clone 07	accuracy	0.25	cb5083	True	6
-test	WT_parental	accuracy	0.4444444444444444	cb5083	True	6
+test	WT_parental	accuracy	0.3888888888888889	cb5083	True	6
 training	CB5038 clone 13	accuracy	0.6153846153846154	cb5083	True	6
 training	CB5038 clone 14	accuracy	0.5714285714285714	cb5083	True	6
 training	CB5038 clone 15	accuracy	0.6923076923076923	cb5083	True	6
 training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	6
 training	CB5038 clone 17	accuracy	0.6428571428571429	cb5083	True	6
-training	WT clone 04	accuracy	0.6428571428571429	cb5083	True	6
+training	WT clone 04	accuracy	0.7142857142857143	cb5083	True	6
 training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	6
 training	WT clone 06	accuracy	0.6923076923076923	cb5083	True	6
-training	WT clone 07	accuracy	0.5	cb5083	True	6
-validation	CB5038 clone 13	accuracy	0.3333333333333333	cb5083	True	6
+training	WT clone 07	accuracy	0.6428571428571429	cb5083	True	6
+validation	CB5038 clone 13	accuracy	0.5	cb5083	True	6
 validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	6
-validation	CB5038 clone 15	accuracy	0.6666666666666666	cb5083	True	6
-validation	CB5038 clone 16	accuracy	0.6666666666666666	cb5083	True	6
+validation	CB5038 clone 15	accuracy	0.8333333333333334	cb5083	True	6
+validation	CB5038 clone 16	accuracy	0.5	cb5083	True	6
 validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	6
 validation	WT clone 04	accuracy	0.6666666666666666	cb5083	True	6
 validation	WT clone 05	accuracy	0.5	cb5083	True	6
-validation	WT clone 06	accuracy	0.8333333333333334	cb5083	True	6
+validation	WT clone 06	accuracy	0.6666666666666666	cb5083	True	6
 validation	WT clone 07	accuracy	0.5	cb5083	True	6
-validation	WT_parental	accuracy	0.16666666666666666	cb5083	True	6
+validation	WT_parental	accuracy	0.0	cb5083	True	6
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	6
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	6
 test	CB5038 clone 15	avg_precision	1.0	cb5083	True	6
@@ -888,25 +888,25 @@ test	WT clone 04	accuracy	0.0	ixazomib	True	6
 test	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	6
 test	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	6
 test	WT clone 07	accuracy	1.0	ixazomib	True	6
-test	WT_parental	accuracy	0.6666666666666666	ixazomib	True	6
+test	WT_parental	accuracy	0.5833333333333334	ixazomib	True	6
 training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	6
 training	Ixazomib clone 02	accuracy	0.2222222222222222	ixazomib	True	6
 training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	6
-training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	6
+training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	6
 training	Ixazomib clone 05	accuracy	0.4444444444444444	ixazomib	True	6
 training	WT clone 04	accuracy	0.5555555555555556	ixazomib	True	6
-training	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	6
+training	WT clone 05	accuracy	0.7777777777777778	ixazomib	True	6
 training	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	6
 training	WT clone 07	accuracy	0.7777777777777778	ixazomib	True	6
 validation	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	6
 validation	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	6
-validation	Ixazomib clone 03	accuracy	0.16666666666666666	ixazomib	True	6
-validation	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	6
+validation	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	6
+validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	6
 validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	6
 validation	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	6
 validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	6
-validation	WT clone 06	accuracy	0.16666666666666666	ixazomib	True	6
-validation	WT clone 07	accuracy	0.5	ixazomib	True	6
+validation	WT clone 06	accuracy	0.0	ixazomib	True	6
+validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	6
 validation	WT_parental	accuracy	0.16666666666666666	ixazomib	True	6
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	6
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	6
@@ -956,27 +956,27 @@ validation	CloneA	avg_precision	1.0	cloneAE	True	7
 validation	CloneE	avg_precision	1.0	cloneAE	True	7
 validation	WT_parental	avg_precision		cloneAE	True	7
 test	CB5038 clone 13	accuracy	0.4	cb5083	True	7
-test	CB5038 clone 14	accuracy	1.0	cb5083	True	7
-test	CB5038 clone 15	accuracy	0.4	cb5083	True	7
+test	CB5038 clone 14	accuracy	0.75	cb5083	True	7
+test	CB5038 clone 15	accuracy	0.6	cb5083	True	7
 test	CB5038 clone 16	accuracy	0.4	cb5083	True	7
 test	CB5038 clone 17	accuracy	0.75	cb5083	True	7
 test	WT clone 04	accuracy	0.75	cb5083	True	7
 test	WT clone 05	accuracy	0.4	cb5083	True	7
 test	WT clone 06	accuracy	1.0	cb5083	True	7
 test	WT clone 07	accuracy	0.5	cb5083	True	7
-test	WT_parental	accuracy	0.4444444444444444	cb5083	True	7
+test	WT_parental	accuracy	0.3888888888888889	cb5083	True	7
 training	CB5038 clone 13	accuracy	0.46153846153846156	cb5083	True	7
-training	CB5038 clone 14	accuracy	0.42857142857142855	cb5083	True	7
+training	CB5038 clone 14	accuracy	0.35714285714285715	cb5083	True	7
 training	CB5038 clone 15	accuracy	0.7692307692307693	cb5083	True	7
-training	CB5038 clone 16	accuracy	0.7692307692307693	cb5083	True	7
+training	CB5038 clone 16	accuracy	0.6923076923076923	cb5083	True	7
 training	CB5038 clone 17	accuracy	0.5	cb5083	True	7
-training	WT clone 04	accuracy	0.7857142857142857	cb5083	True	7
+training	WT clone 04	accuracy	0.6428571428571429	cb5083	True	7
 training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	7
-training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	7
-training	WT clone 07	accuracy	0.42857142857142855	cb5083	True	7
+training	WT clone 06	accuracy	0.5384615384615384	cb5083	True	7
+training	WT clone 07	accuracy	0.5	cb5083	True	7
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	7
-validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	7
-validation	CB5038 clone 15	accuracy	0.5	cb5083	True	7
+validation	CB5038 clone 14	accuracy	0.5	cb5083	True	7
+validation	CB5038 clone 15	accuracy	0.3333333333333333	cb5083	True	7
 validation	CB5038 clone 16	accuracy	0.3333333333333333	cb5083	True	7
 validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	7
 validation	WT clone 04	accuracy	0.0	cb5083	True	7
@@ -1013,9 +1013,9 @@ validation	WT clone 05	avg_precision		cb5083	True	7
 validation	WT clone 06	avg_precision		cb5083	True	7
 validation	WT clone 07	avg_precision		cb5083	True	7
 validation	WT_parental	avg_precision		cb5083	True	7
-test	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	7
+test	Ixazomib clone 01	accuracy	0.0	ixazomib	True	7
 test	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	7
-test	Ixazomib clone 03	accuracy	0.0	ixazomib	True	7
+test	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	7
 test	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	7
 test	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	7
 test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	7
@@ -1027,19 +1027,19 @@ training	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	7
 training	Ixazomib clone 02	accuracy	0.5555555555555556	ixazomib	True	7
 training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	7
 training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	7
-training	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	7
+training	Ixazomib clone 05	accuracy	0.5555555555555556	ixazomib	True	7
 training	WT clone 04	accuracy	0.7777777777777778	ixazomib	True	7
 training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	7
 training	WT clone 06	accuracy	0.2222222222222222	ixazomib	True	7
 training	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	7
-validation	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	7
+validation	Ixazomib clone 01	accuracy	0.16666666666666666	ixazomib	True	7
 validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	7
-validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	7
+validation	Ixazomib clone 03	accuracy	0.8333333333333334	ixazomib	True	7
 validation	Ixazomib clone 04	accuracy	0.16666666666666666	ixazomib	True	7
 validation	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	7
 validation	WT clone 04	accuracy	0.0	ixazomib	True	7
-validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	7
-validation	WT clone 06	accuracy	0.5	ixazomib	True	7
+validation	WT clone 05	accuracy	0.5	ixazomib	True	7
+validation	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	7
 validation	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	7
 validation	WT_parental	accuracy	0.5	ixazomib	True	7
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	7
@@ -1093,20 +1093,20 @@ test	CB5038 clone 13	accuracy	0.6	cb5083	True	8
 test	CB5038 clone 14	accuracy	0.25	cb5083	True	8
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	8
 test	CB5038 clone 16	accuracy	0.8	cb5083	True	8
-test	CB5038 clone 17	accuracy	0.5	cb5083	True	8
-test	WT clone 04	accuracy	1.0	cb5083	True	8
+test	CB5038 clone 17	accuracy	0.75	cb5083	True	8
+test	WT clone 04	accuracy	0.75	cb5083	True	8
 test	WT clone 05	accuracy	0.4	cb5083	True	8
 test	WT clone 06	accuracy	0.6	cb5083	True	8
 test	WT clone 07	accuracy	0.25	cb5083	True	8
 test	WT_parental	accuracy	0.5	cb5083	True	8
 training	CB5038 clone 13	accuracy	0.6923076923076923	cb5083	True	8
-training	CB5038 clone 14	accuracy	0.5	cb5083	True	8
-training	CB5038 clone 15	accuracy	0.5384615384615384	cb5083	True	8
-training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	8
-training	CB5038 clone 17	accuracy	0.6428571428571429	cb5083	True	8
+training	CB5038 clone 14	accuracy	0.2857142857142857	cb5083	True	8
+training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	8
+training	CB5038 clone 16	accuracy	0.3076923076923077	cb5083	True	8
+training	CB5038 clone 17	accuracy	0.7142857142857143	cb5083	True	8
 training	WT clone 04	accuracy	0.5	cb5083	True	8
 training	WT clone 05	accuracy	0.46153846153846156	cb5083	True	8
-training	WT clone 06	accuracy	0.5384615384615384	cb5083	True	8
+training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	8
 training	WT clone 07	accuracy	0.42857142857142855	cb5083	True	8
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	8
 validation	CB5038 clone 14	accuracy	0.5	cb5083	True	8
@@ -1114,10 +1114,10 @@ validation	CB5038 clone 15	accuracy	0.5	cb5083	True	8
 validation	CB5038 clone 16	accuracy	0.5	cb5083	True	8
 validation	CB5038 clone 17	accuracy	0.3333333333333333	cb5083	True	8
 validation	WT clone 04	accuracy	0.16666666666666666	cb5083	True	8
-validation	WT clone 05	accuracy	0.6666666666666666	cb5083	True	8
+validation	WT clone 05	accuracy	0.8333333333333334	cb5083	True	8
 validation	WT clone 06	accuracy	0.3333333333333333	cb5083	True	8
-validation	WT clone 07	accuracy	0.3333333333333333	cb5083	True	8
-validation	WT_parental	accuracy	0.5	cb5083	True	8
+validation	WT clone 07	accuracy	0.5	cb5083	True	8
+validation	WT_parental	accuracy	0.3333333333333333	cb5083	True	8
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	8
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	8
 test	CB5038 clone 15	avg_precision	1.0	cb5083	True	8
@@ -1155,23 +1155,23 @@ test	Ixazomib clone 05	accuracy	0.0	ixazomib	True	8
 test	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	8
 test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	8
 test	WT clone 06	accuracy	0.0	ixazomib	True	8
-test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	8
+test	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	8
 test	WT_parental	accuracy	0.5	ixazomib	True	8
 training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	8
-training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	8
+training	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	8
 training	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	8
 training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	8
-training	Ixazomib clone 05	accuracy	0.1111111111111111	ixazomib	True	8
+training	Ixazomib clone 05	accuracy	0.2222222222222222	ixazomib	True	8
 training	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	8
 training	WT clone 05	accuracy	0.7777777777777778	ixazomib	True	8
 training	WT clone 06	accuracy	0.4444444444444444	ixazomib	True	8
-training	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	8
+training	WT clone 07	accuracy	0.5555555555555556	ixazomib	True	8
 validation	Ixazomib clone 01	accuracy	0.5	ixazomib	True	8
 validation	Ixazomib clone 02	accuracy	1.0	ixazomib	True	8
 validation	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	8
 validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	8
 validation	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	8
-validation	WT clone 04	accuracy	0.5	ixazomib	True	8
+validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	8
 validation	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	8
 validation	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	8
 validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	8
@@ -1224,33 +1224,33 @@ validation	CloneA	avg_precision	1.0	cloneAE	True	9
 validation	CloneE	avg_precision	1.0	cloneAE	True	9
 validation	WT_parental	avg_precision		cloneAE	True	9
 test	CB5038 clone 13	accuracy	1.0	cb5083	True	9
-test	CB5038 clone 14	accuracy	1.0	cb5083	True	9
-test	CB5038 clone 15	accuracy	0.8	cb5083	True	9
-test	CB5038 clone 16	accuracy	0.2	cb5083	True	9
-test	CB5038 clone 17	accuracy	0.5	cb5083	True	9
-test	WT clone 04	accuracy	1.0	cb5083	True	9
+test	CB5038 clone 14	accuracy	0.75	cb5083	True	9
+test	CB5038 clone 15	accuracy	0.6	cb5083	True	9
+test	CB5038 clone 16	accuracy	0.4	cb5083	True	9
+test	CB5038 clone 17	accuracy	0.25	cb5083	True	9
+test	WT clone 04	accuracy	0.75	cb5083	True	9
 test	WT clone 05	accuracy	0.4	cb5083	True	9
 test	WT clone 06	accuracy	0.6	cb5083	True	9
 test	WT clone 07	accuracy	0.75	cb5083	True	9
-test	WT_parental	accuracy	0.3333333333333333	cb5083	True	9
-training	CB5038 clone 13	accuracy	0.6153846153846154	cb5083	True	9
+test	WT_parental	accuracy	0.3888888888888889	cb5083	True	9
+training	CB5038 clone 13	accuracy	0.46153846153846156	cb5083	True	9
 training	CB5038 clone 14	accuracy	0.35714285714285715	cb5083	True	9
-training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	9
+training	CB5038 clone 15	accuracy	0.6923076923076923	cb5083	True	9
 training	CB5038 clone 16	accuracy	0.5384615384615384	cb5083	True	9
 training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	9
-training	WT clone 04	accuracy	0.5714285714285714	cb5083	True	9
+training	WT clone 04	accuracy	0.5	cb5083	True	9
 training	WT clone 05	accuracy	0.6153846153846154	cb5083	True	9
-training	WT clone 06	accuracy	0.8461538461538461	cb5083	True	9
+training	WT clone 06	accuracy	0.7692307692307693	cb5083	True	9
 training	WT clone 07	accuracy	0.42857142857142855	cb5083	True	9
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	9
 validation	CB5038 clone 14	accuracy	0.6666666666666666	cb5083	True	9
-validation	CB5038 clone 15	accuracy	0.3333333333333333	cb5083	True	9
+validation	CB5038 clone 15	accuracy	0.16666666666666666	cb5083	True	9
 validation	CB5038 clone 16	accuracy	0.8333333333333334	cb5083	True	9
-validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	9
+validation	CB5038 clone 17	accuracy	0.8333333333333334	cb5083	True	9
 validation	WT clone 04	accuracy	0.5	cb5083	True	9
-validation	WT clone 05	accuracy	0.3333333333333333	cb5083	True	9
+validation	WT clone 05	accuracy	0.16666666666666666	cb5083	True	9
 validation	WT clone 06	accuracy	0.5	cb5083	True	9
-validation	WT clone 07	accuracy	0.16666666666666666	cb5083	True	9
+validation	WT clone 07	accuracy	0.3333333333333333	cb5083	True	9
 validation	WT_parental	accuracy	0.3333333333333333	cb5083	True	9
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	9
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	9
@@ -1289,10 +1289,10 @@ test	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	9
 test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	9
 test	WT clone 05	accuracy	0.0	ixazomib	True	9
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	9
-test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	9
-test	WT_parental	accuracy	0.5	ixazomib	True	9
+test	WT clone 07	accuracy	1.0	ixazomib	True	9
+test	WT_parental	accuracy	0.3333333333333333	ixazomib	True	9
 training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	9
-training	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	9
+training	Ixazomib clone 02	accuracy	0.2222222222222222	ixazomib	True	9
 training	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	9
 training	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	9
 training	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	9
@@ -1301,15 +1301,15 @@ training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	9
 training	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	9
 training	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	9
 validation	Ixazomib clone 01	accuracy	0.8333333333333334	ixazomib	True	9
-validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	9
+validation	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	9
 validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	9
 validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	9
-validation	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	9
+validation	Ixazomib clone 05	accuracy	0.8333333333333334	ixazomib	True	9
 validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	9
 validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	9
 validation	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	9
 validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	9
-validation	WT_parental	accuracy	0.3333333333333333	ixazomib	True	9
+validation	WT_parental	accuracy	0.5	ixazomib	True	9
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	9
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	9
 test	Ixazomib clone 03	avg_precision	1.0	ixazomib	True	9
@@ -1358,34 +1358,34 @@ validation	CloneA	avg_precision	1.0	cloneAE	True	10
 validation	CloneE	avg_precision	1.0	cloneAE	True	10
 validation	WT_parental	avg_precision		cloneAE	True	10
 test	CB5038 clone 13	accuracy	0.8	cb5083	True	10
-test	CB5038 clone 14	accuracy	0.0	cb5083	True	10
+test	CB5038 clone 14	accuracy	0.25	cb5083	True	10
 test	CB5038 clone 15	accuracy	0.8	cb5083	True	10
 test	CB5038 clone 16	accuracy	0.6	cb5083	True	10
 test	CB5038 clone 17	accuracy	0.5	cb5083	True	10
 test	WT clone 04	accuracy	0.25	cb5083	True	10
-test	WT clone 05	accuracy	0.4	cb5083	True	10
+test	WT clone 05	accuracy	0.6	cb5083	True	10
 test	WT clone 06	accuracy	0.4	cb5083	True	10
 test	WT clone 07	accuracy	0.25	cb5083	True	10
 test	WT_parental	accuracy	0.5555555555555556	cb5083	True	10
 training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	10
 training	CB5038 clone 14	accuracy	0.6428571428571429	cb5083	True	10
 training	CB5038 clone 15	accuracy	0.3076923076923077	cb5083	True	10
-training	CB5038 clone 16	accuracy	0.6923076923076923	cb5083	True	10
+training	CB5038 clone 16	accuracy	0.6153846153846154	cb5083	True	10
 training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	10
 training	WT clone 04	accuracy	0.5	cb5083	True	10
 training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	10
-training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	10
+training	WT clone 06	accuracy	0.38461538461538464	cb5083	True	10
 training	WT clone 07	accuracy	0.5	cb5083	True	10
 validation	CB5038 clone 13	accuracy	0.3333333333333333	cb5083	True	10
-validation	CB5038 clone 14	accuracy	0.5	cb5083	True	10
-validation	CB5038 clone 15	accuracy	0.3333333333333333	cb5083	True	10
-validation	CB5038 clone 16	accuracy	0.5	cb5083	True	10
-validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	10
-validation	WT clone 04	accuracy	0.5	cb5083	True	10
+validation	CB5038 clone 14	accuracy	0.6666666666666666	cb5083	True	10
+validation	CB5038 clone 15	accuracy	0.16666666666666666	cb5083	True	10
+validation	CB5038 clone 16	accuracy	0.6666666666666666	cb5083	True	10
+validation	CB5038 clone 17	accuracy	0.5	cb5083	True	10
+validation	WT clone 04	accuracy	0.3333333333333333	cb5083	True	10
 validation	WT clone 05	accuracy	0.3333333333333333	cb5083	True	10
 validation	WT clone 06	accuracy	0.3333333333333333	cb5083	True	10
 validation	WT clone 07	accuracy	0.8333333333333334	cb5083	True	10
-validation	WT_parental	accuracy	0.16666666666666666	cb5083	True	10
+validation	WT_parental	accuracy	0.5	cb5083	True	10
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	10
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	10
 test	CB5038 clone 15	avg_precision	1.0	cb5083	True	10
@@ -1415,7 +1415,7 @@ validation	WT clone 05	avg_precision		cb5083	True	10
 validation	WT clone 06	avg_precision		cb5083	True	10
 validation	WT clone 07	avg_precision		cb5083	True	10
 validation	WT_parental	avg_precision		cb5083	True	10
-test	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	10
+test	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	10
 test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	10
 test	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	10
 test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	10
@@ -1425,21 +1425,21 @@ test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	10
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	10
 test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	10
 test	WT_parental	accuracy	0.4166666666666667	ixazomib	True	10
-training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	10
+training	Ixazomib clone 01	accuracy	0.5555555555555556	ixazomib	True	10
 training	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	10
-training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	10
-training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	10
-training	Ixazomib clone 05	accuracy	0.2222222222222222	ixazomib	True	10
+training	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	10
+training	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	10
+training	Ixazomib clone 05	accuracy	0.1111111111111111	ixazomib	True	10
 training	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	10
 training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	10
 training	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	10
-training	WT clone 07	accuracy	0.4444444444444444	ixazomib	True	10
+training	WT clone 07	accuracy	0.5555555555555556	ixazomib	True	10
 validation	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	10
 validation	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	10
 validation	Ixazomib clone 03	accuracy	0.0	ixazomib	True	10
 validation	Ixazomib clone 04	accuracy	0.8333333333333334	ixazomib	True	10
 validation	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	10
-validation	WT clone 04	accuracy	0.5	ixazomib	True	10
+validation	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	10
 validation	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	10
 validation	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	10
 validation	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	10
@@ -1494,31 +1494,31 @@ validation	WT_parental	avg_precision		cloneAE	True	11
 test	CB5038 clone 13	accuracy	0.8	cb5083	True	11
 test	CB5038 clone 14	accuracy	1.0	cb5083	True	11
 test	CB5038 clone 15	accuracy	0.4	cb5083	True	11
-test	CB5038 clone 16	accuracy	0.6	cb5083	True	11
-test	CB5038 clone 17	accuracy	0.5	cb5083	True	11
+test	CB5038 clone 16	accuracy	0.8	cb5083	True	11
+test	CB5038 clone 17	accuracy	0.75	cb5083	True	11
 test	WT clone 04	accuracy	0.0	cb5083	True	11
 test	WT clone 05	accuracy	0.4	cb5083	True	11
-test	WT clone 06	accuracy	0.8	cb5083	True	11
+test	WT clone 06	accuracy	0.6	cb5083	True	11
 test	WT clone 07	accuracy	0.5	cb5083	True	11
-test	WT_parental	accuracy	0.3333333333333333	cb5083	True	11
-training	CB5038 clone 13	accuracy	0.46153846153846156	cb5083	True	11
-training	CB5038 clone 14	accuracy	0.5714285714285714	cb5083	True	11
+test	WT_parental	accuracy	0.5	cb5083	True	11
+training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	11
+training	CB5038 clone 14	accuracy	0.5	cb5083	True	11
 training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	11
 training	CB5038 clone 16	accuracy	0.3076923076923077	cb5083	True	11
-training	CB5038 clone 17	accuracy	0.42857142857142855	cb5083	True	11
-training	WT clone 04	accuracy	0.5	cb5083	True	11
-training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	11
+training	CB5038 clone 17	accuracy	0.5	cb5083	True	11
+training	WT clone 04	accuracy	0.5714285714285714	cb5083	True	11
+training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	11
 training	WT clone 06	accuracy	0.5384615384615384	cb5083	True	11
 training	WT clone 07	accuracy	0.2857142857142857	cb5083	True	11
-validation	CB5038 clone 13	accuracy	0.3333333333333333	cb5083	True	11
+validation	CB5038 clone 13	accuracy	0.5	cb5083	True	11
 validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	11
 validation	CB5038 clone 15	accuracy	0.5	cb5083	True	11
 validation	CB5038 clone 16	accuracy	0.3333333333333333	cb5083	True	11
 validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	11
-validation	WT clone 04	accuracy	0.8333333333333334	cb5083	True	11
+validation	WT clone 04	accuracy	0.6666666666666666	cb5083	True	11
 validation	WT clone 05	accuracy	0.5	cb5083	True	11
 validation	WT clone 06	accuracy	0.5	cb5083	True	11
-validation	WT clone 07	accuracy	0.3333333333333333	cb5083	True	11
+validation	WT clone 07	accuracy	0.5	cb5083	True	11
 validation	WT_parental	accuracy	0.3333333333333333	cb5083	True	11
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	11
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	11
@@ -1552,20 +1552,20 @@ validation	WT_parental	avg_precision		cb5083	True	11
 test	Ixazomib clone 01	accuracy	0.0	ixazomib	True	11
 test	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	11
 test	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	11
-test	Ixazomib clone 04	accuracy	0.0	ixazomib	True	11
+test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	11
 test	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	11
 test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	11
 test	WT clone 05	accuracy	0.0	ixazomib	True	11
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	11
 test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	11
-test	WT_parental	accuracy	0.3333333333333333	ixazomib	True	11
+test	WT_parental	accuracy	0.4166666666666667	ixazomib	True	11
 training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	11
 training	Ixazomib clone 02	accuracy	0.5555555555555556	ixazomib	True	11
 training	Ixazomib clone 03	accuracy	0.2222222222222222	ixazomib	True	11
 training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	11
 training	Ixazomib clone 05	accuracy	0.5555555555555556	ixazomib	True	11
 training	WT clone 04	accuracy	0.5555555555555556	ixazomib	True	11
-training	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	11
+training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	11
 training	WT clone 06	accuracy	0.4444444444444444	ixazomib	True	11
 training	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	11
 validation	Ixazomib clone 01	accuracy	0.0	ixazomib	True	11
@@ -1574,10 +1574,10 @@ validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	11
 validation	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	11
 validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	11
 validation	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	11
-validation	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	11
+validation	WT clone 05	accuracy	0.5	ixazomib	True	11
 validation	WT clone 06	accuracy	0.5	ixazomib	True	11
-validation	WT clone 07	accuracy	0.5	ixazomib	True	11
-validation	WT_parental	accuracy	0.8333333333333334	ixazomib	True	11
+validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	11
+validation	WT_parental	accuracy	0.6666666666666666	ixazomib	True	11
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	11
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	11
 test	Ixazomib clone 03	avg_precision	1.0	ixazomib	True	11
@@ -1627,21 +1627,21 @@ validation	CloneE	avg_precision	1.0	cloneAE	True	12
 validation	WT_parental	avg_precision		cloneAE	True	12
 test	CB5038 clone 13	accuracy	0.4	cb5083	True	12
 test	CB5038 clone 14	accuracy	0.25	cb5083	True	12
-test	CB5038 clone 15	accuracy	1.0	cb5083	True	12
-test	CB5038 clone 16	accuracy	0.6	cb5083	True	12
+test	CB5038 clone 15	accuracy	0.8	cb5083	True	12
+test	CB5038 clone 16	accuracy	0.4	cb5083	True	12
 test	CB5038 clone 17	accuracy	0.75	cb5083	True	12
-test	WT clone 04	accuracy	0.25	cb5083	True	12
+test	WT clone 04	accuracy	0.5	cb5083	True	12
 test	WT clone 05	accuracy	0.2	cb5083	True	12
 test	WT clone 06	accuracy	0.6	cb5083	True	12
 test	WT clone 07	accuracy	0.0	cb5083	True	12
-test	WT_parental	accuracy	0.3888888888888889	cb5083	True	12
+test	WT_parental	accuracy	0.2777777777777778	cb5083	True	12
 training	CB5038 clone 13	accuracy	0.6923076923076923	cb5083	True	12
 training	CB5038 clone 14	accuracy	0.42857142857142855	cb5083	True	12
 training	CB5038 clone 15	accuracy	0.46153846153846156	cb5083	True	12
 training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	12
 training	CB5038 clone 17	accuracy	0.5	cb5083	True	12
 training	WT clone 04	accuracy	0.6428571428571429	cb5083	True	12
-training	WT clone 05	accuracy	0.6923076923076923	cb5083	True	12
+training	WT clone 05	accuracy	0.6153846153846154	cb5083	True	12
 training	WT clone 06	accuracy	0.3076923076923077	cb5083	True	12
 training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	12
 validation	CB5038 clone 13	accuracy	0.6666666666666666	cb5083	True	12
@@ -1649,11 +1649,11 @@ validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	12
 validation	CB5038 clone 15	accuracy	0.16666666666666666	cb5083	True	12
 validation	CB5038 clone 16	accuracy	0.8333333333333334	cb5083	True	12
 validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	12
-validation	WT clone 04	accuracy	0.6666666666666666	cb5083	True	12
-validation	WT clone 05	accuracy	0.3333333333333333	cb5083	True	12
+validation	WT clone 04	accuracy	0.8333333333333334	cb5083	True	12
+validation	WT clone 05	accuracy	0.5	cb5083	True	12
 validation	WT clone 06	accuracy	0.5	cb5083	True	12
 validation	WT clone 07	accuracy	0.3333333333333333	cb5083	True	12
-validation	WT_parental	accuracy	0.5	cb5083	True	12
+validation	WT_parental	accuracy	0.3333333333333333	cb5083	True	12
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	12
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	12
 test	CB5038 clone 15	avg_precision	1.0	cb5083	True	12
@@ -1683,7 +1683,7 @@ validation	WT clone 05	avg_precision		cb5083	True	12
 validation	WT clone 06	avg_precision		cb5083	True	12
 validation	WT clone 07	avg_precision		cb5083	True	12
 validation	WT_parental	avg_precision		cb5083	True	12
-test	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	12
+test	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	12
 test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	12
 test	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	12
 test	Ixazomib clone 04	accuracy	0.0	ixazomib	True	12
@@ -1694,10 +1694,10 @@ test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	12
 test	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	12
 test	WT_parental	accuracy	0.6666666666666666	ixazomib	True	12
 training	Ixazomib clone 01	accuracy	0.5555555555555556	ixazomib	True	12
-training	Ixazomib clone 02	accuracy	0.5555555555555556	ixazomib	True	12
+training	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	12
 training	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	12
-training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	12
-training	Ixazomib clone 05	accuracy	0.4444444444444444	ixazomib	True	12
+training	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	12
+training	Ixazomib clone 05	accuracy	0.5555555555555556	ixazomib	True	12
 training	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	12
 training	WT clone 05	accuracy	0.4444444444444444	ixazomib	True	12
 training	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	12
@@ -1711,7 +1711,7 @@ validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	12
 validation	WT clone 05	accuracy	0.5	ixazomib	True	12
 validation	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	12
 validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	12
-validation	WT_parental	accuracy	0.6666666666666666	ixazomib	True	12
+validation	WT_parental	accuracy	0.8333333333333334	ixazomib	True	12
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	12
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	12
 test	Ixazomib clone 03	avg_precision	1.0	ixazomib	True	12
@@ -1768,22 +1768,22 @@ test	WT clone 04	accuracy	0.5	cb5083	True	13
 test	WT clone 05	accuracy	0.6	cb5083	True	13
 test	WT clone 06	accuracy	0.4	cb5083	True	13
 test	WT clone 07	accuracy	0.5	cb5083	True	13
-test	WT_parental	accuracy	0.2777777777777778	cb5083	True	13
-training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	13
+test	WT_parental	accuracy	0.3333333333333333	cb5083	True	13
+training	CB5038 clone 13	accuracy	0.38461538461538464	cb5083	True	13
 training	CB5038 clone 14	accuracy	0.5	cb5083	True	13
-training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	13
-training	CB5038 clone 16	accuracy	0.6153846153846154	cb5083	True	13
+training	CB5038 clone 15	accuracy	0.6923076923076923	cb5083	True	13
+training	CB5038 clone 16	accuracy	0.6923076923076923	cb5083	True	13
 training	CB5038 clone 17	accuracy	0.5	cb5083	True	13
 training	WT clone 04	accuracy	0.35714285714285715	cb5083	True	13
-training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	13
+training	WT clone 05	accuracy	0.6153846153846154	cb5083	True	13
 training	WT clone 06	accuracy	0.38461538461538464	cb5083	True	13
 training	WT clone 07	accuracy	0.5	cb5083	True	13
 validation	CB5038 clone 13	accuracy	0.16666666666666666	cb5083	True	13
 validation	CB5038 clone 14	accuracy	0.5	cb5083	True	13
 validation	CB5038 clone 15	accuracy	0.3333333333333333	cb5083	True	13
-validation	CB5038 clone 16	accuracy	0.3333333333333333	cb5083	True	13
-validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	13
-validation	WT clone 04	accuracy	0.5	cb5083	True	13
+validation	CB5038 clone 16	accuracy	0.16666666666666666	cb5083	True	13
+validation	CB5038 clone 17	accuracy	0.8333333333333334	cb5083	True	13
+validation	WT clone 04	accuracy	0.3333333333333333	cb5083	True	13
 validation	WT clone 05	accuracy	0.8333333333333334	cb5083	True	13
 validation	WT clone 06	accuracy	0.5	cb5083	True	13
 validation	WT clone 07	accuracy	0.6666666666666666	cb5083	True	13
@@ -1828,12 +1828,12 @@ test	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	13
 test	WT clone 07	accuracy	0.0	ixazomib	True	13
 test	WT_parental	accuracy	0.5833333333333334	ixazomib	True	13
 training	Ixazomib clone 01	accuracy	0.2222222222222222	ixazomib	True	13
-training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	13
-training	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	13
+training	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	13
+training	Ixazomib clone 03	accuracy	0.7777777777777778	ixazomib	True	13
 training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	13
-training	Ixazomib clone 05	accuracy	0.2222222222222222	ixazomib	True	13
+training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	13
 training	WT clone 04	accuracy	0.7777777777777778	ixazomib	True	13
-training	WT clone 05	accuracy	0.4444444444444444	ixazomib	True	13
+training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	13
 training	WT clone 06	accuracy	0.5555555555555556	ixazomib	True	13
 training	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	13
 validation	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	13
@@ -1841,7 +1841,7 @@ validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	13
 validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	13
 validation	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	13
 validation	Ixazomib clone 05	accuracy	0.5	ixazomib	True	13
-validation	WT clone 04	accuracy	0.5	ixazomib	True	13
+validation	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	13
 validation	WT clone 05	accuracy	0.5	ixazomib	True	13
 validation	WT clone 06	accuracy	0.5	ixazomib	True	13
 validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	13
@@ -1894,34 +1894,34 @@ validation	CloneA	avg_precision	1.0	cloneAE	True	14
 validation	CloneE	avg_precision	1.0	cloneAE	True	14
 validation	WT_parental	avg_precision		cloneAE	True	14
 test	CB5038 clone 13	accuracy	0.2	cb5083	True	14
-test	CB5038 clone 14	accuracy	0.5	cb5083	True	14
+test	CB5038 clone 14	accuracy	0.25	cb5083	True	14
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	14
 test	CB5038 clone 16	accuracy	0.6	cb5083	True	14
-test	CB5038 clone 17	accuracy	0.5	cb5083	True	14
+test	CB5038 clone 17	accuracy	0.75	cb5083	True	14
 test	WT clone 04	accuracy	0.5	cb5083	True	14
 test	WT clone 05	accuracy	0.0	cb5083	True	14
 test	WT clone 06	accuracy	0.4	cb5083	True	14
 test	WT clone 07	accuracy	0.5	cb5083	True	14
 test	WT_parental	accuracy	0.3888888888888889	cb5083	True	14
 training	CB5038 clone 13	accuracy	0.46153846153846156	cb5083	True	14
-training	CB5038 clone 14	accuracy	0.6428571428571429	cb5083	True	14
+training	CB5038 clone 14	accuracy	0.5	cb5083	True	14
 training	CB5038 clone 15	accuracy	0.5384615384615384	cb5083	True	14
-training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	14
+training	CB5038 clone 16	accuracy	0.38461538461538464	cb5083	True	14
 training	CB5038 clone 17	accuracy	0.35714285714285715	cb5083	True	14
 training	WT clone 04	accuracy	0.5714285714285714	cb5083	True	14
-training	WT clone 05	accuracy	0.46153846153846156	cb5083	True	14
+training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	14
 training	WT clone 06	accuracy	0.3076923076923077	cb5083	True	14
-training	WT clone 07	accuracy	0.35714285714285715	cb5083	True	14
+training	WT clone 07	accuracy	0.2857142857142857	cb5083	True	14
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	14
-validation	CB5038 clone 14	accuracy	0.16666666666666666	cb5083	True	14
+validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	14
 validation	CB5038 clone 15	accuracy	0.5	cb5083	True	14
-validation	CB5038 clone 16	accuracy	0.3333333333333333	cb5083	True	14
-validation	CB5038 clone 17	accuracy	0.5	cb5083	True	14
+validation	CB5038 clone 16	accuracy	0.5	cb5083	True	14
+validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	14
 validation	WT clone 04	accuracy	0.3333333333333333	cb5083	True	14
 validation	WT clone 05	accuracy	0.5	cb5083	True	14
 validation	WT clone 06	accuracy	0.5	cb5083	True	14
 validation	WT clone 07	accuracy	0.5	cb5083	True	14
-validation	WT_parental	accuracy	0.16666666666666666	cb5083	True	14
+validation	WT_parental	accuracy	0.3333333333333333	cb5083	True	14
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	14
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	14
 test	CB5038 clone 15	avg_precision	1.0	cb5083	True	14
@@ -1955,7 +1955,7 @@ test	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	14
 test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	14
 test	Ixazomib clone 03	accuracy	0.0	ixazomib	True	14
 test	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	14
-test	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	14
+test	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	14
 test	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	14
 test	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	14
 test	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	14
@@ -1968,14 +1968,14 @@ training	Ixazomib clone 04	accuracy	0.2222222222222222	ixazomib	True	14
 training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	14
 training	WT clone 04	accuracy	0.4444444444444444	ixazomib	True	14
 training	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	14
-training	WT clone 06	accuracy	0.5555555555555556	ixazomib	True	14
-training	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	14
+training	WT clone 06	accuracy	0.4444444444444444	ixazomib	True	14
+training	WT clone 07	accuracy	0.5555555555555556	ixazomib	True	14
 validation	Ixazomib clone 01	accuracy	0.16666666666666666	ixazomib	True	14
 validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	14
 validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	14
 validation	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	14
-validation	Ixazomib clone 05	accuracy	0.5	ixazomib	True	14
-validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	14
+validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	14
+validation	WT clone 04	accuracy	0.8333333333333334	ixazomib	True	14
 validation	WT clone 05	accuracy	0.16666666666666666	ixazomib	True	14
 validation	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	14
 validation	WT clone 07	accuracy	0.5	ixazomib	True	14
@@ -2029,31 +2029,31 @@ validation	CloneE	avg_precision	1.0	cloneAE	True	15
 validation	WT_parental	avg_precision		cloneAE	True	15
 test	CB5038 clone 13	accuracy	0.2	cb5083	True	15
 test	CB5038 clone 14	accuracy	0.25	cb5083	True	15
-test	CB5038 clone 15	accuracy	0.8	cb5083	True	15
-test	CB5038 clone 16	accuracy	0.4	cb5083	True	15
-test	CB5038 clone 17	accuracy	1.0	cb5083	True	15
+test	CB5038 clone 15	accuracy	1.0	cb5083	True	15
+test	CB5038 clone 16	accuracy	0.6	cb5083	True	15
+test	CB5038 clone 17	accuracy	0.75	cb5083	True	15
 test	WT clone 04	accuracy	0.5	cb5083	True	15
-test	WT clone 05	accuracy	0.4	cb5083	True	15
+test	WT clone 05	accuracy	0.6	cb5083	True	15
 test	WT clone 06	accuracy	0.8	cb5083	True	15
 test	WT clone 07	accuracy	0.25	cb5083	True	15
 test	WT_parental	accuracy	0.5555555555555556	cb5083	True	15
-training	CB5038 clone 13	accuracy	0.6923076923076923	cb5083	True	15
-training	CB5038 clone 14	accuracy	0.5	cb5083	True	15
+training	CB5038 clone 13	accuracy	0.7692307692307693	cb5083	True	15
+training	CB5038 clone 14	accuracy	0.35714285714285715	cb5083	True	15
 training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	15
-training	CB5038 clone 16	accuracy	0.38461538461538464	cb5083	True	15
-training	CB5038 clone 17	accuracy	0.6428571428571429	cb5083	True	15
-training	WT clone 04	accuracy	0.42857142857142855	cb5083	True	15
-training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	15
+training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	15
+training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	15
+training	WT clone 04	accuracy	0.5	cb5083	True	15
+training	WT clone 05	accuracy	0.3076923076923077	cb5083	True	15
 training	WT clone 06	accuracy	0.38461538461538464	cb5083	True	15
-training	WT clone 07	accuracy	0.7142857142857143	cb5083	True	15
+training	WT clone 07	accuracy	0.7857142857142857	cb5083	True	15
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	15
 validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	15
-validation	CB5038 clone 15	accuracy	1.0	cb5083	True	15
+validation	CB5038 clone 15	accuracy	0.8333333333333334	cb5083	True	15
 validation	CB5038 clone 16	accuracy	0.6666666666666666	cb5083	True	15
 validation	CB5038 clone 17	accuracy	0.5	cb5083	True	15
-validation	WT clone 04	accuracy	0.5	cb5083	True	15
+validation	WT clone 04	accuracy	0.3333333333333333	cb5083	True	15
 validation	WT clone 05	accuracy	0.3333333333333333	cb5083	True	15
-validation	WT clone 06	accuracy	0.5	cb5083	True	15
+validation	WT clone 06	accuracy	0.3333333333333333	cb5083	True	15
 validation	WT clone 07	accuracy	0.6666666666666666	cb5083	True	15
 validation	WT_parental	accuracy	0.5	cb5083	True	15
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	15
@@ -2092,12 +2092,12 @@ test	Ixazomib clone 04	accuracy	1.0	ixazomib	True	15
 test	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	15
 test	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	15
 test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	15
-test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	15
-test	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	15
+test	WT clone 06	accuracy	1.0	ixazomib	True	15
+test	WT clone 07	accuracy	0.0	ixazomib	True	15
 test	WT_parental	accuracy	0.4166666666666667	ixazomib	True	15
 training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	15
-training	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	15
-training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	15
+training	Ixazomib clone 02	accuracy	0.7777777777777778	ixazomib	True	15
+training	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	15
 training	Ixazomib clone 04	accuracy	0.2222222222222222	ixazomib	True	15
 training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	15
 training	WT clone 04	accuracy	0.5555555555555556	ixazomib	True	15
@@ -2108,12 +2108,12 @@ validation	Ixazomib clone 01	accuracy	0.16666666666666666	ixazomib	True	15
 validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	15
 validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	15
 validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	15
-validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	15
+validation	Ixazomib clone 05	accuracy	0.16666666666666666	ixazomib	True	15
 validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	15
-validation	WT clone 05	accuracy	0.5	ixazomib	True	15
+validation	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	15
 validation	WT clone 06	accuracy	0.8333333333333334	ixazomib	True	15
 validation	WT clone 07	accuracy	0.5	ixazomib	True	15
-validation	WT_parental	accuracy	0.6666666666666666	ixazomib	True	15
+validation	WT_parental	accuracy	0.8333333333333334	ixazomib	True	15
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	15
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	15
 test	Ixazomib clone 03	avg_precision	1.0	ixazomib	True	15
@@ -2168,28 +2168,28 @@ test	CB5038 clone 16	accuracy	0.4	cb5083	True	16
 test	CB5038 clone 17	accuracy	0.5	cb5083	True	16
 test	WT clone 04	accuracy	0.0	cb5083	True	16
 test	WT clone 05	accuracy	0.4	cb5083	True	16
-test	WT clone 06	accuracy	0.6	cb5083	True	16
-test	WT clone 07	accuracy	0.5	cb5083	True	16
-test	WT_parental	accuracy	0.5	cb5083	True	16
-training	CB5038 clone 13	accuracy	0.3076923076923077	cb5083	True	16
+test	WT clone 06	accuracy	0.2	cb5083	True	16
+test	WT clone 07	accuracy	0.75	cb5083	True	16
+test	WT_parental	accuracy	0.5555555555555556	cb5083	True	16
+training	CB5038 clone 13	accuracy	0.38461538461538464	cb5083	True	16
 training	CB5038 clone 14	accuracy	0.35714285714285715	cb5083	True	16
 training	CB5038 clone 15	accuracy	0.38461538461538464	cb5083	True	16
-training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	16
-training	CB5038 clone 17	accuracy	0.7142857142857143	cb5083	True	16
+training	CB5038 clone 16	accuracy	0.38461538461538464	cb5083	True	16
+training	CB5038 clone 17	accuracy	0.7857142857142857	cb5083	True	16
 training	WT clone 04	accuracy	0.5	cb5083	True	16
-training	WT clone 05	accuracy	0.3076923076923077	cb5083	True	16
+training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	16
 training	WT clone 06	accuracy	0.38461538461538464	cb5083	True	16
-training	WT clone 07	accuracy	0.5	cb5083	True	16
-validation	CB5038 clone 13	accuracy	0.6666666666666666	cb5083	True	16
+training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	16
+validation	CB5038 clone 13	accuracy	0.8333333333333334	cb5083	True	16
 validation	CB5038 clone 14	accuracy	0.6666666666666666	cb5083	True	16
-validation	CB5038 clone 15	accuracy	0.5	cb5083	True	16
+validation	CB5038 clone 15	accuracy	0.3333333333333333	cb5083	True	16
 validation	CB5038 clone 16	accuracy	0.8333333333333334	cb5083	True	16
 validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	16
 validation	WT clone 04	accuracy	0.3333333333333333	cb5083	True	16
-validation	WT clone 05	accuracy	0.6666666666666666	cb5083	True	16
+validation	WT clone 05	accuracy	0.5	cb5083	True	16
 validation	WT clone 06	accuracy	0.5	cb5083	True	16
 validation	WT clone 07	accuracy	0.3333333333333333	cb5083	True	16
-validation	WT_parental	accuracy	0.5	cb5083	True	16
+validation	WT_parental	accuracy	0.6666666666666666	cb5083	True	16
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	16
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	16
 test	CB5038 clone 15	avg_precision	1.0	cb5083	True	16
@@ -2230,7 +2230,7 @@ test	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	16
 test	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	16
 test	WT_parental	accuracy	0.5	ixazomib	True	16
 training	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	16
-training	Ixazomib clone 02	accuracy	0.5555555555555556	ixazomib	True	16
+training	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	16
 training	Ixazomib clone 03	accuracy	0.4444444444444444	ixazomib	True	16
 training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	16
 training	Ixazomib clone 05	accuracy	0.7777777777777778	ixazomib	True	16
@@ -2239,11 +2239,11 @@ training	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	16
 training	WT clone 06	accuracy	0.4444444444444444	ixazomib	True	16
 training	WT clone 07	accuracy	0.4444444444444444	ixazomib	True	16
 validation	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	16
-validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	16
-validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	16
+validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	16
+validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	16
 validation	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	16
-validation	Ixazomib clone 05	accuracy	0.16666666666666666	ixazomib	True	16
-validation	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	16
+validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	16
+validation	WT clone 04	accuracy	0.5	ixazomib	True	16
 validation	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	16
 validation	WT clone 06	accuracy	0.5	ixazomib	True	16
 validation	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	16
@@ -2295,12 +2295,12 @@ training	WT_parental	avg_precision		cloneAE	True	17
 validation	CloneA	avg_precision	1.0	cloneAE	True	17
 validation	CloneE	avg_precision	1.0	cloneAE	True	17
 validation	WT_parental	avg_precision		cloneAE	True	17
-test	CB5038 clone 13	accuracy	0.8	cb5083	True	17
-test	CB5038 clone 14	accuracy	0.25	cb5083	True	17
-test	CB5038 clone 15	accuracy	0.4	cb5083	True	17
-test	CB5038 clone 16	accuracy	0.6	cb5083	True	17
-test	CB5038 clone 17	accuracy	0.75	cb5083	True	17
-test	WT clone 04	accuracy	0.75	cb5083	True	17
+test	CB5038 clone 13	accuracy	0.6	cb5083	True	17
+test	CB5038 clone 14	accuracy	0.0	cb5083	True	17
+test	CB5038 clone 15	accuracy	0.2	cb5083	True	17
+test	CB5038 clone 16	accuracy	0.8	cb5083	True	17
+test	CB5038 clone 17	accuracy	0.5	cb5083	True	17
+test	WT clone 04	accuracy	0.5	cb5083	True	17
 test	WT clone 05	accuracy	0.6	cb5083	True	17
 test	WT clone 06	accuracy	0.2	cb5083	True	17
 test	WT clone 07	accuracy	0.5	cb5083	True	17
@@ -2308,19 +2308,19 @@ test	WT_parental	accuracy	0.5555555555555556	cb5083	True	17
 training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	17
 training	CB5038 clone 14	accuracy	0.7142857142857143	cb5083	True	17
 training	CB5038 clone 15	accuracy	0.6923076923076923	cb5083	True	17
-training	CB5038 clone 16	accuracy	0.38461538461538464	cb5083	True	17
+training	CB5038 clone 16	accuracy	0.5384615384615384	cb5083	True	17
 training	CB5038 clone 17	accuracy	0.6428571428571429	cb5083	True	17
 training	WT clone 04	accuracy	0.5	cb5083	True	17
-training	WT clone 05	accuracy	0.6153846153846154	cb5083	True	17
-training	WT clone 06	accuracy	0.6153846153846154	cb5083	True	17
-training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	17
-validation	CB5038 clone 13	accuracy	0.5	cb5083	True	17
+training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	17
+training	WT clone 06	accuracy	0.5384615384615384	cb5083	True	17
+training	WT clone 07	accuracy	0.6428571428571429	cb5083	True	17
+validation	CB5038 clone 13	accuracy	0.3333333333333333	cb5083	True	17
 validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	17
 validation	CB5038 clone 15	accuracy	0.5	cb5083	True	17
 validation	CB5038 clone 16	accuracy	0.6666666666666666	cb5083	True	17
 validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	17
 validation	WT clone 04	accuracy	0.16666666666666666	cb5083	True	17
-validation	WT clone 05	accuracy	0.3333333333333333	cb5083	True	17
+validation	WT clone 05	accuracy	0.5	cb5083	True	17
 validation	WT clone 06	accuracy	0.5	cb5083	True	17
 validation	WT clone 07	accuracy	0.3333333333333333	cb5083	True	17
 validation	WT_parental	accuracy	0.5	cb5083	True	17
@@ -2355,7 +2355,7 @@ validation	WT clone 07	avg_precision		cb5083	True	17
 validation	WT_parental	avg_precision		cb5083	True	17
 test	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	17
 test	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	17
-test	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	17
+test	Ixazomib clone 03	accuracy	1.0	ixazomib	True	17
 test	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	17
 test	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	17
 test	WT clone 04	accuracy	1.0	ixazomib	True	17
@@ -2367,20 +2367,20 @@ training	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	17
 training	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	17
 training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	17
 training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	17
-training	Ixazomib clone 05	accuracy	0.5555555555555556	ixazomib	True	17
+training	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	17
 training	WT clone 04	accuracy	0.8888888888888888	ixazomib	True	17
-training	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	17
+training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	17
 training	WT clone 06	accuracy	0.2222222222222222	ixazomib	True	17
 training	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	17
-validation	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	17
-validation	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	17
+validation	Ixazomib clone 01	accuracy	0.16666666666666666	ixazomib	True	17
+validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	17
 validation	Ixazomib clone 03	accuracy	0.16666666666666666	ixazomib	True	17
 validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	17
-validation	Ixazomib clone 05	accuracy	0.5	ixazomib	True	17
+validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	17
 validation	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	17
 validation	WT clone 05	accuracy	0.5	ixazomib	True	17
 validation	WT clone 06	accuracy	1.0	ixazomib	True	17
-validation	WT clone 07	accuracy	0.8333333333333334	ixazomib	True	17
+validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	17
 validation	WT_parental	accuracy	0.8333333333333334	ixazomib	True	17
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	17
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	17
@@ -2433,28 +2433,28 @@ test	CB5038 clone 13	accuracy	0.4	cb5083	True	18
 test	CB5038 clone 14	accuracy	0.75	cb5083	True	18
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	18
 test	CB5038 clone 16	accuracy	0.8	cb5083	True	18
-test	CB5038 clone 17	accuracy	0.75	cb5083	True	18
+test	CB5038 clone 17	accuracy	0.5	cb5083	True	18
 test	WT clone 04	accuracy	0.5	cb5083	True	18
 test	WT clone 05	accuracy	0.4	cb5083	True	18
-test	WT clone 06	accuracy	0.2	cb5083	True	18
+test	WT clone 06	accuracy	0.4	cb5083	True	18
 test	WT clone 07	accuracy	0.25	cb5083	True	18
-test	WT_parental	accuracy	0.7777777777777778	cb5083	True	18
+test	WT_parental	accuracy	0.7222222222222222	cb5083	True	18
 training	CB5038 clone 13	accuracy	0.6153846153846154	cb5083	True	18
-training	CB5038 clone 14	accuracy	0.5714285714285714	cb5083	True	18
+training	CB5038 clone 14	accuracy	0.5	cb5083	True	18
 training	CB5038 clone 15	accuracy	0.46153846153846156	cb5083	True	18
 training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	18
-training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	18
-training	WT clone 04	accuracy	0.35714285714285715	cb5083	True	18
-training	WT clone 05	accuracy	0.3076923076923077	cb5083	True	18
+training	CB5038 clone 17	accuracy	0.42857142857142855	cb5083	True	18
+training	WT clone 04	accuracy	0.21428571428571427	cb5083	True	18
+training	WT clone 05	accuracy	0.23076923076923078	cb5083	True	18
 training	WT clone 06	accuracy	0.6153846153846154	cb5083	True	18
-training	WT clone 07	accuracy	0.2857142857142857	cb5083	True	18
+training	WT clone 07	accuracy	0.35714285714285715	cb5083	True	18
 validation	CB5038 clone 13	accuracy	0.3333333333333333	cb5083	True	18
 validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	18
 validation	CB5038 clone 15	accuracy	0.8333333333333334	cb5083	True	18
 validation	CB5038 clone 16	accuracy	0.5	cb5083	True	18
 validation	CB5038 clone 17	accuracy	0.5	cb5083	True	18
 validation	WT clone 04	accuracy	0.8333333333333334	cb5083	True	18
-validation	WT clone 05	accuracy	0.6666666666666666	cb5083	True	18
+validation	WT clone 05	accuracy	0.5	cb5083	True	18
 validation	WT clone 06	accuracy	0.5	cb5083	True	18
 validation	WT clone 07	accuracy	0.5	cb5083	True	18
 validation	WT_parental	accuracy	0.3333333333333333	cb5083	True	18
@@ -2501,16 +2501,16 @@ training	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	18
 training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	18
 training	Ixazomib clone 03	accuracy	0.4444444444444444	ixazomib	True	18
 training	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	18
-training	Ixazomib clone 05	accuracy	0.4444444444444444	ixazomib	True	18
+training	Ixazomib clone 05	accuracy	0.5555555555555556	ixazomib	True	18
 training	WT clone 04	accuracy	0.5555555555555556	ixazomib	True	18
-training	WT clone 05	accuracy	0.4444444444444444	ixazomib	True	18
+training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	18
 training	WT clone 06	accuracy	0.4444444444444444	ixazomib	True	18
 training	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	18
 validation	Ixazomib clone 01	accuracy	0.8333333333333334	ixazomib	True	18
-validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	18
+validation	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	18
 validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	18
 validation	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	18
-validation	Ixazomib clone 05	accuracy	0.5	ixazomib	True	18
+validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	18
 validation	WT clone 04	accuracy	0.16666666666666666	ixazomib	True	18
 validation	WT clone 05	accuracy	0.5	ixazomib	True	18
 validation	WT clone 06	accuracy	0.8333333333333334	ixazomib	True	18
@@ -2563,7 +2563,7 @@ training	WT_parental	avg_precision		cloneAE	True	19
 validation	CloneA	avg_precision	1.0	cloneAE	True	19
 validation	CloneE	avg_precision	1.0	cloneAE	True	19
 validation	WT_parental	avg_precision		cloneAE	True	19
-test	CB5038 clone 13	accuracy	0.2	cb5083	True	19
+test	CB5038 clone 13	accuracy	0.4	cb5083	True	19
 test	CB5038 clone 14	accuracy	0.75	cb5083	True	19
 test	CB5038 clone 15	accuracy	0.2	cb5083	True	19
 test	CB5038 clone 16	accuracy	0.6	cb5083	True	19
@@ -2572,25 +2572,25 @@ test	WT clone 04	accuracy	0.0	cb5083	True	19
 test	WT clone 05	accuracy	0.2	cb5083	True	19
 test	WT clone 06	accuracy	0.2	cb5083	True	19
 test	WT clone 07	accuracy	0.5	cb5083	True	19
-test	WT_parental	accuracy	0.5	cb5083	True	19
+test	WT_parental	accuracy	0.4444444444444444	cb5083	True	19
 training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	19
 training	CB5038 clone 14	accuracy	0.5	cb5083	True	19
-training	CB5038 clone 15	accuracy	0.5384615384615384	cb5083	True	19
+training	CB5038 clone 15	accuracy	0.46153846153846156	cb5083	True	19
 training	CB5038 clone 16	accuracy	0.5384615384615384	cb5083	True	19
 training	CB5038 clone 17	accuracy	0.42857142857142855	cb5083	True	19
-training	WT clone 04	accuracy	0.42857142857142855	cb5083	True	19
-training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	19
-training	WT clone 06	accuracy	0.5384615384615384	cb5083	True	19
-training	WT clone 07	accuracy	0.42857142857142855	cb5083	True	19
+training	WT clone 04	accuracy	0.5	cb5083	True	19
+training	WT clone 05	accuracy	0.6923076923076923	cb5083	True	19
+training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	19
+training	WT clone 07	accuracy	0.5	cb5083	True	19
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	19
 validation	CB5038 clone 14	accuracy	0.5	cb5083	True	19
-validation	CB5038 clone 15	accuracy	0.6666666666666666	cb5083	True	19
+validation	CB5038 clone 15	accuracy	0.8333333333333334	cb5083	True	19
 validation	CB5038 clone 16	accuracy	0.8333333333333334	cb5083	True	19
 validation	CB5038 clone 17	accuracy	0.5	cb5083	True	19
 validation	WT clone 04	accuracy	0.5	cb5083	True	19
-validation	WT clone 05	accuracy	0.16666666666666666	cb5083	True	19
+validation	WT clone 05	accuracy	0.3333333333333333	cb5083	True	19
 validation	WT clone 06	accuracy	0.8333333333333334	cb5083	True	19
-validation	WT clone 07	accuracy	0.3333333333333333	cb5083	True	19
+validation	WT clone 07	accuracy	0.16666666666666666	cb5083	True	19
 validation	WT_parental	accuracy	0.6666666666666666	cb5083	True	19
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	19
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	19
@@ -2627,19 +2627,19 @@ test	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	19
 test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	19
 test	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	19
 test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	19
-test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	19
+test	WT clone 05	accuracy	0.0	ixazomib	True	19
 test	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	19
 test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	19
 test	WT_parental	accuracy	0.4166666666666667	ixazomib	True	19
-training	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	19
+training	Ixazomib clone 01	accuracy	0.7777777777777778	ixazomib	True	19
 training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	19
 training	Ixazomib clone 03	accuracy	0.2222222222222222	ixazomib	True	19
-training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	19
+training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	19
 training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	19
-training	WT clone 04	accuracy	0.4444444444444444	ixazomib	True	19
+training	WT clone 04	accuracy	0.5555555555555556	ixazomib	True	19
 training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	19
 training	WT clone 06	accuracy	0.5555555555555556	ixazomib	True	19
-training	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	19
+training	WT clone 07	accuracy	0.7777777777777778	ixazomib	True	19
 validation	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	19
 validation	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	19
 validation	Ixazomib clone 03	accuracy	0.8333333333333334	ixazomib	True	19
@@ -2699,31 +2699,31 @@ validation	CloneE	avg_precision	1.0	cloneAE	True	20
 validation	WT_parental	avg_precision		cloneAE	True	20
 test	CB5038 clone 13	accuracy	0.6	cb5083	True	20
 test	CB5038 clone 14	accuracy	0.25	cb5083	True	20
-test	CB5038 clone 15	accuracy	0.8	cb5083	True	20
+test	CB5038 clone 15	accuracy	0.6	cb5083	True	20
 test	CB5038 clone 16	accuracy	0.8	cb5083	True	20
-test	CB5038 clone 17	accuracy	0.5	cb5083	True	20
+test	CB5038 clone 17	accuracy	0.25	cb5083	True	20
 test	WT clone 04	accuracy	0.0	cb5083	True	20
-test	WT clone 05	accuracy	0.2	cb5083	True	20
+test	WT clone 05	accuracy	0.4	cb5083	True	20
 test	WT clone 06	accuracy	0.6	cb5083	True	20
 test	WT clone 07	accuracy	0.75	cb5083	True	20
-test	WT_parental	accuracy	0.5555555555555556	cb5083	True	20
+test	WT_parental	accuracy	0.4444444444444444	cb5083	True	20
 training	CB5038 clone 13	accuracy	0.6153846153846154	cb5083	True	20
 training	CB5038 clone 14	accuracy	0.5	cb5083	True	20
-training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	20
+training	CB5038 clone 15	accuracy	0.5384615384615384	cb5083	True	20
 training	CB5038 clone 16	accuracy	0.5384615384615384	cb5083	True	20
 training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	20
-training	WT clone 04	accuracy	0.5	cb5083	True	20
+training	WT clone 04	accuracy	0.6428571428571429	cb5083	True	20
 training	WT clone 05	accuracy	0.5384615384615384	cb5083	True	20
-training	WT clone 06	accuracy	0.5384615384615384	cb5083	True	20
+training	WT clone 06	accuracy	0.6153846153846154	cb5083	True	20
 training	WT clone 07	accuracy	0.14285714285714285	cb5083	True	20
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	20
-validation	CB5038 clone 14	accuracy	0.5	cb5083	True	20
-validation	CB5038 clone 15	accuracy	0.5	cb5083	True	20
+validation	CB5038 clone 14	accuracy	0.6666666666666666	cb5083	True	20
+validation	CB5038 clone 15	accuracy	0.6666666666666666	cb5083	True	20
 validation	CB5038 clone 16	accuracy	0.16666666666666666	cb5083	True	20
-validation	CB5038 clone 17	accuracy	0.3333333333333333	cb5083	True	20
+validation	CB5038 clone 17	accuracy	0.5	cb5083	True	20
 validation	WT clone 04	accuracy	0.8333333333333334	cb5083	True	20
 validation	WT clone 05	accuracy	0.3333333333333333	cb5083	True	20
-validation	WT clone 06	accuracy	1.0	cb5083	True	20
+validation	WT clone 06	accuracy	0.8333333333333334	cb5083	True	20
 validation	WT clone 07	accuracy	0.0	cb5083	True	20
 validation	WT_parental	accuracy	0.5	cb5083	True	20
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	20
@@ -2766,24 +2766,24 @@ test	WT clone 06	accuracy	1.0	ixazomib	True	20
 test	WT clone 07	accuracy	0.0	ixazomib	True	20
 test	WT_parental	accuracy	0.5	ixazomib	True	20
 training	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	20
-training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	20
+training	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	20
 training	Ixazomib clone 03	accuracy	0.4444444444444444	ixazomib	True	20
 training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	20
 training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	20
-training	WT clone 04	accuracy	0.7777777777777778	ixazomib	True	20
+training	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	20
 training	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	20
-training	WT clone 06	accuracy	0.5555555555555556	ixazomib	True	20
-training	WT clone 07	accuracy	0.5555555555555556	ixazomib	True	20
+training	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	20
+training	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	20
 validation	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	20
 validation	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	20
 validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	20
-validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	20
+validation	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	20
 validation	Ixazomib clone 05	accuracy	0.8333333333333334	ixazomib	True	20
 validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	20
 validation	WT clone 05	accuracy	0.5	ixazomib	True	20
 validation	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	20
 validation	WT clone 07	accuracy	0.5	ixazomib	True	20
-validation	WT_parental	accuracy	0.6666666666666666	ixazomib	True	20
+validation	WT_parental	accuracy	0.5	ixazomib	True	20
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	20
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	20
 test	Ixazomib clone 03	avg_precision	1.0	ixazomib	True	20
@@ -2834,32 +2834,32 @@ validation	WT_parental	avg_precision		cloneAE	True	21
 test	CB5038 clone 13	accuracy	0.6	cb5083	True	21
 test	CB5038 clone 14	accuracy	0.75	cb5083	True	21
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	21
-test	CB5038 clone 16	accuracy	1.0	cb5083	True	21
-test	CB5038 clone 17	accuracy	0.25	cb5083	True	21
-test	WT clone 04	accuracy	0.5	cb5083	True	21
+test	CB5038 clone 16	accuracy	0.6	cb5083	True	21
+test	CB5038 clone 17	accuracy	0.5	cb5083	True	21
+test	WT clone 04	accuracy	0.75	cb5083	True	21
 test	WT clone 05	accuracy	0.4	cb5083	True	21
 test	WT clone 06	accuracy	0.6	cb5083	True	21
-test	WT clone 07	accuracy	0.5	cb5083	True	21
+test	WT clone 07	accuracy	0.75	cb5083	True	21
 test	WT_parental	accuracy	0.5555555555555556	cb5083	True	21
-training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	21
+training	CB5038 clone 13	accuracy	0.46153846153846156	cb5083	True	21
 training	CB5038 clone 14	accuracy	0.6428571428571429	cb5083	True	21
-training	CB5038 clone 15	accuracy	0.6153846153846154	cb5083	True	21
+training	CB5038 clone 15	accuracy	0.6923076923076923	cb5083	True	21
 training	CB5038 clone 16	accuracy	0.38461538461538464	cb5083	True	21
 training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	21
-training	WT clone 04	accuracy	0.42857142857142855	cb5083	True	21
-training	WT clone 05	accuracy	0.6153846153846154	cb5083	True	21
+training	WT clone 04	accuracy	0.35714285714285715	cb5083	True	21
+training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	21
 training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	21
-training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	21
+training	WT clone 07	accuracy	0.5	cb5083	True	21
 validation	CB5038 clone 13	accuracy	0.6666666666666666	cb5083	True	21
-validation	CB5038 clone 14	accuracy	0.5	cb5083	True	21
+validation	CB5038 clone 14	accuracy	0.3333333333333333	cb5083	True	21
 validation	CB5038 clone 15	accuracy	0.6666666666666666	cb5083	True	21
 validation	CB5038 clone 16	accuracy	0.5	cb5083	True	21
 validation	CB5038 clone 17	accuracy	0.6666666666666666	cb5083	True	21
 validation	WT clone 04	accuracy	0.6666666666666666	cb5083	True	21
 validation	WT clone 05	accuracy	0.3333333333333333	cb5083	True	21
-validation	WT clone 06	accuracy	0.5	cb5083	True	21
+validation	WT clone 06	accuracy	0.6666666666666666	cb5083	True	21
 validation	WT clone 07	accuracy	0.6666666666666666	cb5083	True	21
-validation	WT_parental	accuracy	0.3333333333333333	cb5083	True	21
+validation	WT_parental	accuracy	0.5	cb5083	True	21
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	21
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	21
 test	CB5038 clone 15	avg_precision	1.0	cb5083	True	21
@@ -2894,21 +2894,21 @@ test	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	21
 test	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	21
 test	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	21
 test	Ixazomib clone 05	accuracy	1.0	ixazomib	True	21
-test	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	21
+test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	21
 test	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	21
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	21
-test	WT clone 07	accuracy	1.0	ixazomib	True	21
+test	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	21
 test	WT_parental	accuracy	0.5	ixazomib	True	21
 training	Ixazomib clone 01	accuracy	0.5555555555555556	ixazomib	True	21
-training	Ixazomib clone 02	accuracy	0.5555555555555556	ixazomib	True	21
+training	Ixazomib clone 02	accuracy	0.4444444444444444	ixazomib	True	21
 training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	21
 training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	21
 training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	21
-training	WT clone 04	accuracy	0.7777777777777778	ixazomib	True	21
-training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	21
+training	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	21
+training	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	21
 training	WT clone 06	accuracy	0.5555555555555556	ixazomib	True	21
 training	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	21
-validation	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	21
+validation	Ixazomib clone 01	accuracy	0.8333333333333334	ixazomib	True	21
 validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	21
 validation	Ixazomib clone 03	accuracy	0.8333333333333334	ixazomib	True	21
 validation	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	21
@@ -2916,7 +2916,7 @@ validation	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	21
 validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	21
 validation	WT clone 05	accuracy	0.8333333333333334	ixazomib	True	21
 validation	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	21
-validation	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	21
+validation	WT clone 07	accuracy	0.5	ixazomib	True	21
 validation	WT_parental	accuracy	0.3333333333333333	ixazomib	True	21
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	21
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	21
@@ -2966,33 +2966,33 @@ validation	CloneA	avg_precision	1.0	cloneAE	True	22
 validation	CloneE	avg_precision	1.0	cloneAE	True	22
 validation	WT_parental	avg_precision		cloneAE	True	22
 test	CB5038 clone 13	accuracy	0.6	cb5083	True	22
-test	CB5038 clone 14	accuracy	0.25	cb5083	True	22
+test	CB5038 clone 14	accuracy	0.5	cb5083	True	22
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	22
 test	CB5038 clone 16	accuracy	0.6	cb5083	True	22
 test	CB5038 clone 17	accuracy	0.75	cb5083	True	22
 test	WT clone 04	accuracy	0.75	cb5083	True	22
 test	WT clone 05	accuracy	1.0	cb5083	True	22
-test	WT clone 06	accuracy	0.2	cb5083	True	22
+test	WT clone 06	accuracy	0.0	cb5083	True	22
 test	WT clone 07	accuracy	0.25	cb5083	True	22
-test	WT_parental	accuracy	0.3888888888888889	cb5083	True	22
+test	WT_parental	accuracy	0.4444444444444444	cb5083	True	22
 training	CB5038 clone 13	accuracy	0.7692307692307693	cb5083	True	22
 training	CB5038 clone 14	accuracy	0.5	cb5083	True	22
 training	CB5038 clone 15	accuracy	0.38461538461538464	cb5083	True	22
 training	CB5038 clone 16	accuracy	0.6923076923076923	cb5083	True	22
 training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	22
 training	WT clone 04	accuracy	0.21428571428571427	cb5083	True	22
-training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	22
+training	WT clone 05	accuracy	0.6153846153846154	cb5083	True	22
 training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	22
 training	WT clone 07	accuracy	0.5	cb5083	True	22
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	22
 validation	CB5038 clone 14	accuracy	0.5	cb5083	True	22
-validation	CB5038 clone 15	accuracy	0.5	cb5083	True	22
+validation	CB5038 clone 15	accuracy	0.6666666666666666	cb5083	True	22
 validation	CB5038 clone 16	accuracy	0.3333333333333333	cb5083	True	22
 validation	CB5038 clone 17	accuracy	0.5	cb5083	True	22
-validation	WT clone 04	accuracy	0.8333333333333334	cb5083	True	22
+validation	WT clone 04	accuracy	0.6666666666666666	cb5083	True	22
 validation	WT clone 05	accuracy	0.6666666666666666	cb5083	True	22
 validation	WT clone 06	accuracy	0.6666666666666666	cb5083	True	22
-validation	WT clone 07	accuracy	0.6666666666666666	cb5083	True	22
+validation	WT clone 07	accuracy	0.8333333333333334	cb5083	True	22
 validation	WT_parental	accuracy	0.5	cb5083	True	22
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	22
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	22
@@ -3023,7 +3023,7 @@ validation	WT clone 05	avg_precision		cb5083	True	22
 validation	WT clone 06	avg_precision		cb5083	True	22
 validation	WT clone 07	avg_precision		cb5083	True	22
 validation	WT_parental	avg_precision		cb5083	True	22
-test	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	22
+test	Ixazomib clone 01	accuracy	0.0	ixazomib	True	22
 test	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	22
 test	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	22
 test	Ixazomib clone 04	accuracy	0.6666666666666666	ixazomib	True	22
@@ -3033,22 +3033,22 @@ test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	22
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	22
 test	WT clone 07	accuracy	1.0	ixazomib	True	22
 test	WT_parental	accuracy	0.5833333333333334	ixazomib	True	22
-training	Ixazomib clone 01	accuracy	0.5555555555555556	ixazomib	True	22
+training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	22
 training	Ixazomib clone 02	accuracy	0.8888888888888888	ixazomib	True	22
 training	Ixazomib clone 03	accuracy	0.2222222222222222	ixazomib	True	22
-training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	22
+training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	22
 training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	22
-training	WT clone 04	accuracy	0.8888888888888888	ixazomib	True	22
-training	WT clone 05	accuracy	0.2222222222222222	ixazomib	True	22
+training	WT clone 04	accuracy	0.7777777777777778	ixazomib	True	22
+training	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	22
 training	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	22
-training	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	22
+training	WT clone 07	accuracy	0.2222222222222222	ixazomib	True	22
 validation	Ixazomib clone 01	accuracy	0.8333333333333334	ixazomib	True	22
 validation	Ixazomib clone 02	accuracy	1.0	ixazomib	True	22
 validation	Ixazomib clone 03	accuracy	0.3333333333333333	ixazomib	True	22
 validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	22
 validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	22
 validation	WT clone 04	accuracy	0.8333333333333334	ixazomib	True	22
-validation	WT clone 05	accuracy	0.5	ixazomib	True	22
+validation	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	22
 validation	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	22
 validation	WT clone 07	accuracy	0.8333333333333334	ixazomib	True	22
 validation	WT_parental	accuracy	0.5	ixazomib	True	22
@@ -3100,33 +3100,33 @@ validation	CloneA	avg_precision	1.0	cloneAE	True	23
 validation	CloneE	avg_precision	1.0	cloneAE	True	23
 validation	WT_parental	avg_precision		cloneAE	True	23
 test	CB5038 clone 13	accuracy	0.6	cb5083	True	23
-test	CB5038 clone 14	accuracy	0.75	cb5083	True	23
+test	CB5038 clone 14	accuracy	0.5	cb5083	True	23
 test	CB5038 clone 15	accuracy	0.6	cb5083	True	23
 test	CB5038 clone 16	accuracy	0.4	cb5083	True	23
 test	CB5038 clone 17	accuracy	0.5	cb5083	True	23
 test	WT clone 04	accuracy	0.5	cb5083	True	23
 test	WT clone 05	accuracy	0.8	cb5083	True	23
-test	WT clone 06	accuracy	0.8	cb5083	True	23
-test	WT clone 07	accuracy	0.5	cb5083	True	23
+test	WT clone 06	accuracy	0.6	cb5083	True	23
+test	WT clone 07	accuracy	0.75	cb5083	True	23
 test	WT_parental	accuracy	0.5	cb5083	True	23
 training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	23
-training	CB5038 clone 14	accuracy	0.42857142857142855	cb5083	True	23
-training	CB5038 clone 15	accuracy	0.38461538461538464	cb5083	True	23
+training	CB5038 clone 14	accuracy	0.5714285714285714	cb5083	True	23
+training	CB5038 clone 15	accuracy	0.46153846153846156	cb5083	True	23
 training	CB5038 clone 16	accuracy	0.46153846153846156	cb5083	True	23
 training	CB5038 clone 17	accuracy	0.7857142857142857	cb5083	True	23
 training	WT clone 04	accuracy	0.5714285714285714	cb5083	True	23
 training	WT clone 05	accuracy	0.38461538461538464	cb5083	True	23
-training	WT clone 06	accuracy	0.38461538461538464	cb5083	True	23
+training	WT clone 06	accuracy	0.3076923076923077	cb5083	True	23
 training	WT clone 07	accuracy	0.35714285714285715	cb5083	True	23
-validation	CB5038 clone 13	accuracy	0.5	cb5083	True	23
-validation	CB5038 clone 14	accuracy	0.6666666666666666	cb5083	True	23
-validation	CB5038 clone 15	accuracy	0.6666666666666666	cb5083	True	23
-validation	CB5038 clone 16	accuracy	1.0	cb5083	True	23
+validation	CB5038 clone 13	accuracy	0.6666666666666666	cb5083	True	23
+validation	CB5038 clone 14	accuracy	0.5	cb5083	True	23
+validation	CB5038 clone 15	accuracy	0.5	cb5083	True	23
+validation	CB5038 clone 16	accuracy	0.8333333333333334	cb5083	True	23
 validation	CB5038 clone 17	accuracy	0.16666666666666666	cb5083	True	23
 validation	WT clone 04	accuracy	0.5	cb5083	True	23
 validation	WT clone 05	accuracy	0.5	cb5083	True	23
-validation	WT clone 06	accuracy	0.16666666666666666	cb5083	True	23
-validation	WT clone 07	accuracy	0.5	cb5083	True	23
+validation	WT clone 06	accuracy	0.3333333333333333	cb5083	True	23
+validation	WT clone 07	accuracy	0.6666666666666666	cb5083	True	23
 validation	WT_parental	accuracy	0.6666666666666666	cb5083	True	23
 test	CB5038 clone 13	avg_precision	1.0	cb5083	True	23
 test	CB5038 clone 14	avg_precision	1.0	cb5083	True	23
@@ -3164,28 +3164,28 @@ test	Ixazomib clone 04	accuracy	0.3333333333333333	ixazomib	True	23
 test	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	23
 test	WT clone 04	accuracy	0.3333333333333333	ixazomib	True	23
 test	WT clone 05	accuracy	0.3333333333333333	ixazomib	True	23
-test	WT clone 06	accuracy	0.3333333333333333	ixazomib	True	23
+test	WT clone 06	accuracy	0.0	ixazomib	True	23
 test	WT clone 07	accuracy	1.0	ixazomib	True	23
 test	WT_parental	accuracy	0.25	ixazomib	True	23
 training	Ixazomib clone 01	accuracy	0.2222222222222222	ixazomib	True	23
-training	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	23
+training	Ixazomib clone 02	accuracy	0.7777777777777778	ixazomib	True	23
 training	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	23
 training	Ixazomib clone 04	accuracy	0.4444444444444444	ixazomib	True	23
 training	Ixazomib clone 05	accuracy	0.5555555555555556	ixazomib	True	23
 training	WT clone 04	accuracy	0.5555555555555556	ixazomib	True	23
-training	WT clone 05	accuracy	0.4444444444444444	ixazomib	True	23
+training	WT clone 05	accuracy	0.5555555555555556	ixazomib	True	23
 training	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	23
-training	WT clone 07	accuracy	0.7777777777777778	ixazomib	True	23
-validation	Ixazomib clone 01	accuracy	0.8333333333333334	ixazomib	True	23
+training	WT clone 07	accuracy	0.8888888888888888	ixazomib	True	23
+validation	Ixazomib clone 01	accuracy	0.6666666666666666	ixazomib	True	23
 validation	Ixazomib clone 02	accuracy	0.5	ixazomib	True	23
 validation	Ixazomib clone 03	accuracy	0.5	ixazomib	True	23
 validation	Ixazomib clone 04	accuracy	0.8333333333333334	ixazomib	True	23
 validation	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	23
 validation	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	23
 validation	WT clone 05	accuracy	0.5	ixazomib	True	23
-validation	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	23
+validation	WT clone 06	accuracy	0.5	ixazomib	True	23
 validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	23
-validation	WT_parental	accuracy	0.8333333333333334	ixazomib	True	23
+validation	WT_parental	accuracy	0.6666666666666666	ixazomib	True	23
 test	Ixazomib clone 01	avg_precision	1.0	ixazomib	True	23
 test	Ixazomib clone 02	avg_precision	1.0	ixazomib	True	23
 test	Ixazomib clone 03	avg_precision	1.0	ixazomib	True	23
@@ -3235,30 +3235,30 @@ validation	CloneE	avg_precision	1.0	cloneAE	True	24
 validation	WT_parental	avg_precision		cloneAE	True	24
 test	CB5038 clone 13	accuracy	0.4	cb5083	True	24
 test	CB5038 clone 14	accuracy	0.5	cb5083	True	24
-test	CB5038 clone 15	accuracy	0.6	cb5083	True	24
+test	CB5038 clone 15	accuracy	0.2	cb5083	True	24
 test	CB5038 clone 16	accuracy	0.4	cb5083	True	24
-test	CB5038 clone 17	accuracy	0.5	cb5083	True	24
+test	CB5038 clone 17	accuracy	0.75	cb5083	True	24
 test	WT clone 04	accuracy	0.0	cb5083	True	24
 test	WT clone 05	accuracy	0.4	cb5083	True	24
 test	WT clone 06	accuracy	0.6	cb5083	True	24
 test	WT clone 07	accuracy	0.25	cb5083	True	24
 test	WT_parental	accuracy	0.5555555555555556	cb5083	True	24
-training	CB5038 clone 13	accuracy	0.46153846153846156	cb5083	True	24
+training	CB5038 clone 13	accuracy	0.5384615384615384	cb5083	True	24
 training	CB5038 clone 14	accuracy	0.6428571428571429	cb5083	True	24
 training	CB5038 clone 15	accuracy	0.5384615384615384	cb5083	True	24
 training	CB5038 clone 16	accuracy	0.6153846153846154	cb5083	True	24
-training	CB5038 clone 17	accuracy	0.6428571428571429	cb5083	True	24
-training	WT clone 04	accuracy	0.42857142857142855	cb5083	True	24
+training	CB5038 clone 17	accuracy	0.5714285714285714	cb5083	True	24
+training	WT clone 04	accuracy	0.5	cb5083	True	24
 training	WT clone 05	accuracy	0.3076923076923077	cb5083	True	24
-training	WT clone 06	accuracy	0.38461538461538464	cb5083	True	24
+training	WT clone 06	accuracy	0.46153846153846156	cb5083	True	24
 training	WT clone 07	accuracy	0.5714285714285714	cb5083	True	24
 validation	CB5038 clone 13	accuracy	0.5	cb5083	True	24
-validation	CB5038 clone 14	accuracy	0.5	cb5083	True	24
-validation	CB5038 clone 15	accuracy	0.6666666666666666	cb5083	True	24
+validation	CB5038 clone 14	accuracy	0.6666666666666666	cb5083	True	24
+validation	CB5038 clone 15	accuracy	0.5	cb5083	True	24
 validation	CB5038 clone 16	accuracy	0.3333333333333333	cb5083	True	24
 validation	CB5038 clone 17	accuracy	0.5	cb5083	True	24
-validation	WT clone 04	accuracy	0.8333333333333334	cb5083	True	24
-validation	WT clone 05	accuracy	1.0	cb5083	True	24
+validation	WT clone 04	accuracy	0.6666666666666666	cb5083	True	24
+validation	WT clone 05	accuracy	0.8333333333333334	cb5083	True	24
 validation	WT clone 06	accuracy	0.6666666666666666	cb5083	True	24
 validation	WT clone 07	accuracy	0.0	cb5083	True	24
 validation	WT_parental	accuracy	0.5	cb5083	True	24
@@ -3300,22 +3300,22 @@ test	WT clone 04	accuracy	0.6666666666666666	ixazomib	True	24
 test	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	24
 test	WT clone 06	accuracy	0.6666666666666666	ixazomib	True	24
 test	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	24
-test	WT_parental	accuracy	0.4166666666666667	ixazomib	True	24
-training	Ixazomib clone 01	accuracy	0.3333333333333333	ixazomib	True	24
+test	WT_parental	accuracy	0.3333333333333333	ixazomib	True	24
+training	Ixazomib clone 01	accuracy	0.4444444444444444	ixazomib	True	24
 training	Ixazomib clone 02	accuracy	0.6666666666666666	ixazomib	True	24
-training	Ixazomib clone 03	accuracy	0.4444444444444444	ixazomib	True	24
+training	Ixazomib clone 03	accuracy	0.5555555555555556	ixazomib	True	24
 training	Ixazomib clone 04	accuracy	0.5555555555555556	ixazomib	True	24
-training	Ixazomib clone 05	accuracy	0.4444444444444444	ixazomib	True	24
+training	Ixazomib clone 05	accuracy	0.3333333333333333	ixazomib	True	24
 training	WT clone 04	accuracy	0.4444444444444444	ixazomib	True	24
-training	WT clone 05	accuracy	0.6666666666666666	ixazomib	True	24
+training	WT clone 05	accuracy	0.7777777777777778	ixazomib	True	24
 training	WT clone 06	accuracy	0.4444444444444444	ixazomib	True	24
-training	WT clone 07	accuracy	0.3333333333333333	ixazomib	True	24
+training	WT clone 07	accuracy	0.4444444444444444	ixazomib	True	24
 validation	Ixazomib clone 01	accuracy	0.16666666666666666	ixazomib	True	24
 validation	Ixazomib clone 02	accuracy	0.3333333333333333	ixazomib	True	24
 validation	Ixazomib clone 03	accuracy	0.6666666666666666	ixazomib	True	24
 validation	Ixazomib clone 04	accuracy	0.5	ixazomib	True	24
 validation	Ixazomib clone 05	accuracy	0.6666666666666666	ixazomib	True	24
-validation	WT clone 04	accuracy	1.0	ixazomib	True	24
+validation	WT clone 04	accuracy	0.8333333333333334	ixazomib	True	24
 validation	WT clone 05	accuracy	0.8333333333333334	ixazomib	True	24
 validation	WT clone 06	accuracy	0.5	ixazomib	True	24
 validation	WT clone 07	accuracy	0.6666666666666666	ixazomib	True	24
