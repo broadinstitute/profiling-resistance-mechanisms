@@ -42,7 +42,7 @@ batch: 2019_02_15_Batch1_20X
 plates:
   - HCT116bortezomib
 process: false
-process_single_cell: true
+process_single_cell: false
 ---
 batch: 2019_02_15_Batch1_40X
 plates:
@@ -88,7 +88,7 @@ plates:
   - 217766
   - 217768
 process: false
-process_single_cell: true
+process_single_cell: false
 ---
 batch: 2020_07_02_Batch8
 plates:
@@ -96,8 +96,8 @@ plates:
   - 218361
   - 218362
   - 218363
-process: true
-process_single_cell: true
+process: false
+process_single_cell: false
 ---
 batch: 2020_08_24_Batch9
 plates:
@@ -107,8 +107,8 @@ plates:
   - 218699
   - 218774
   - 218775
-process: true
-process_single_cell: true
+process: false
+process_single_cell: false
 ---
 batch: 2020_09_08_Batch10
 plates:
@@ -120,5 +120,11 @@ plates:
   - 218857
   - 218858
   - 218859
+process: false
+process_single_cell: false
+---
+batch: 2021_02_08_Batch11
+plates:
+  - 219814
 process: true
 process_single_cell: true

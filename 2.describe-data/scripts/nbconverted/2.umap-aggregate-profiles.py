@@ -371,7 +371,7 @@ merged_umap_gg = (
 
 file = os.path.join("figures", "umap", "clone_compare_batch_effect")
 for extension in save_file_extensions:
-    merged_umap_gg.save(filename='{}{}'.format(file, extension), height=4, width=4.5, dpi=400)
+    merged_umap_gg.save(filename='{}{}'.format(file, extension), height=4, width=5.25, dpi=400)
 
 merged_umap_gg
 
