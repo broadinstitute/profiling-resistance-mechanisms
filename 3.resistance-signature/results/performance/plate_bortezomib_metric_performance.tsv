@@ -1,0 +1,11 @@
+Metadata_model_split	Metadata_Plate	metric	metric_value	dataset	shuffle
+holdout	219814	accuracy	0.25	bortezomib	False
+inference	MutClones	accuracy	0.5263157894736842	bortezomib	False
+inference	WTClones	accuracy	0.8125	bortezomib	False
+testing	219814	accuracy	0.5	bortezomib	False
+training	219814	accuracy	0.5	bortezomib	False
+holdout	219814	avg_precision	0.4	bortezomib	False
+inference	MutClones	avg_precision	0.9567789204812798	bortezomib	False
+inference	WTClones	avg_precision		bortezomib	False
+testing	219814	avg_precision	0.5	bortezomib	False
+training	219814	avg_precision	0.5	bortezomib	False

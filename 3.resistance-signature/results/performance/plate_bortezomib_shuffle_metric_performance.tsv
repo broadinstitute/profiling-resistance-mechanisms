@@ -1,0 +1,251 @@
+Metadata_model_split	Metadata_Plate	metric	metric_value	dataset	shuffle	permutation
+holdout	219814	accuracy	0.65	bortezomib	True	0
+inference	MutClones	accuracy	0.21052631578947367	bortezomib	True	0
+inference	WTClones	accuracy	0.7291666666666666	bortezomib	True	0
+testing	219814	accuracy	0.6	bortezomib	True	0
+training	219814	accuracy	0.4	bortezomib	True	0
+holdout	219814	avg_precision	0.4857142857142857	bortezomib	True	0
+inference	MutClones	avg_precision	0.926750637276953	bortezomib	True	0
+inference	WTClones	avg_precision		bortezomib	True	0
+testing	219814	avg_precision	0.6000000000000001	bortezomib	True	0
+training	219814	avg_precision	0.4636363636363637	bortezomib	True	0
+holdout	219814	accuracy	0.55	bortezomib	True	1
+inference	MutClones	accuracy	0.21052631578947367	bortezomib	True	1
+inference	WTClones	accuracy	0.625	bortezomib	True	1
+testing	219814	accuracy	0.7	bortezomib	True	1
+training	219814	accuracy	0.6666666666666666	bortezomib	True	1
+holdout	219814	avg_precision	0.4	bortezomib	True	1
+inference	MutClones	avg_precision	0.956140350877193	bortezomib	True	1
+inference	WTClones	avg_precision		bortezomib	True	1
+testing	219814	avg_precision	0.6499999999999999	bortezomib	True	1
+training	219814	avg_precision	0.6296296296296297	bortezomib	True	1
+holdout	219814	accuracy	0.4	bortezomib	True	2
+inference	MutClones	accuracy	0.22807017543859648	bortezomib	True	2
+inference	WTClones	accuracy	0.6875	bortezomib	True	2
+testing	219814	accuracy	0.4	bortezomib	True	2
+training	219814	accuracy	0.6	bortezomib	True	2
+holdout	219814	avg_precision	0.4	bortezomib	True	2
+inference	MutClones	avg_precision	0.9411143599740089	bortezomib	True	2
+inference	WTClones	avg_precision		bortezomib	True	2
+testing	219814	avg_precision	0.4666666666666667	bortezomib	True	2
+training	219814	avg_precision	0.5636363636363637	bortezomib	True	2
+holdout	219814	accuracy	0.5	bortezomib	True	3
+inference	MutClones	accuracy	0.24561403508771928	bortezomib	True	3
+inference	WTClones	accuracy	0.6875	bortezomib	True	3
+testing	219814	accuracy	0.5	bortezomib	True	3
+training	219814	accuracy	0.4	bortezomib	True	3
+holdout	219814	avg_precision	0.38333333333333336	bortezomib	True	3
+inference	MutClones	avg_precision	0.941970310391363	bortezomib	True	3
+inference	WTClones	avg_precision		bortezomib	True	3
+testing	219814	avg_precision	0.5	bortezomib	True	3
+training	219814	avg_precision	0.4714285714285714	bortezomib	True	3
+holdout	219814	accuracy	0.5	bortezomib	True	4
+inference	MutClones	accuracy	0.2982456140350877	bortezomib	True	4
+inference	WTClones	accuracy	0.7291666666666666	bortezomib	True	4
+testing	219814	accuracy	0.7	bortezomib	True	4
+training	219814	accuracy	0.5666666666666667	bortezomib	True	4
+holdout	219814	avg_precision	0.38333333333333336	bortezomib	True	4
+inference	MutClones	avg_precision	0.9610136452241715	bortezomib	True	4
+inference	WTClones	avg_precision		bortezomib	True	4
+testing	219814	avg_precision	0.6499999999999999	bortezomib	True	4
+training	219814	avg_precision	0.5416666666666667	bortezomib	True	4
+holdout	219814	accuracy	0.65	bortezomib	True	5
+inference	MutClones	accuracy	0.3508771929824561	bortezomib	True	5
+inference	WTClones	accuracy	0.8125	bortezomib	True	5
+testing	219814	accuracy	0.5	bortezomib	True	5
+training	219814	accuracy	0.43333333333333335	bortezomib	True	5
+holdout	219814	avg_precision	0.475	bortezomib	True	5
+inference	MutClones	avg_precision	0.9473684210526316	bortezomib	True	5
+inference	WTClones	avg_precision		bortezomib	True	5
+testing	219814	avg_precision	0.5	bortezomib	True	5
+training	219814	avg_precision	0.4733333333333334	bortezomib	True	5
+holdout	219814	accuracy	0.45	bortezomib	True	6
+inference	MutClones	accuracy	0.21052631578947367	bortezomib	True	6
+inference	WTClones	accuracy	0.5833333333333334	bortezomib	True	6
+testing	219814	accuracy	0.6	bortezomib	True	6
+training	219814	accuracy	0.43333333333333335	bortezomib	True	6
+holdout	219814	avg_precision	0.37142857142857144	bortezomib	True	6
+inference	MutClones	avg_precision	0.956140350877193	bortezomib	True	6
+inference	WTClones	avg_precision		bortezomib	True	6
+testing	219814	avg_precision	0.6000000000000001	bortezomib	True	6
+training	219814	avg_precision	0.47500000000000003	bortezomib	True	6
+holdout	219814	accuracy	0.55	bortezomib	True	7
+inference	MutClones	accuracy	0.3157894736842105	bortezomib	True	7
+inference	WTClones	accuracy	0.8125	bortezomib	True	7
+testing	219814	accuracy	0.1	bortezomib	True	7
+training	219814	accuracy	0.5	bortezomib	True	7
+holdout	219814	avg_precision	0.4107142857142857	bortezomib	True	7
+inference	MutClones	avg_precision	0.9619883040935672	bortezomib	True	7
+inference	WTClones	avg_precision		bortezomib	True	7
+testing	219814	avg_precision	0.5	bortezomib	True	7
+training	219814	avg_precision	0.5	bortezomib	True	7
+holdout	219814	accuracy	0.65	bortezomib	True	8
+inference	MutClones	accuracy	0.3684210526315789	bortezomib	True	8
+inference	WTClones	accuracy	0.75	bortezomib	True	8
+testing	219814	accuracy	0.5	bortezomib	True	8
+training	219814	accuracy	0.5666666666666667	bortezomib	True	8
+holdout	219814	avg_precision	0.475	bortezomib	True	8
+inference	MutClones	avg_precision	0.9649122807017545	bortezomib	True	8
+inference	WTClones	avg_precision		bortezomib	True	8
+testing	219814	avg_precision	0.5	bortezomib	True	8
+training	219814	avg_precision	0.5444444444444445	bortezomib	True	8
+holdout	219814	accuracy	0.75	bortezomib	True	9
+inference	MutClones	accuracy	0.3157894736842105	bortezomib	True	9
+inference	WTClones	accuracy	0.7708333333333334	bortezomib	True	9
+testing	219814	accuracy	0.5	bortezomib	True	9
+training	219814	accuracy	0.3	bortezomib	True	9
+holdout	219814	avg_precision	0.625	bortezomib	True	9
+inference	MutClones	avg_precision	0.9455337690631808	bortezomib	True	9
+inference	WTClones	avg_precision		bortezomib	True	9
+testing	219814	avg_precision	0.5	bortezomib	True	9
+training	219814	avg_precision	0.4428571428571429	bortezomib	True	9
+holdout	219814	accuracy	0.55	bortezomib	True	10
+inference	MutClones	accuracy	0.2982456140350877	bortezomib	True	10
+inference	WTClones	accuracy	0.75	bortezomib	True	10
+testing	219814	accuracy	0.6	bortezomib	True	10
+training	219814	accuracy	0.4	bortezomib	True	10
+holdout	219814	avg_precision	0.3916666666666667	bortezomib	True	10
+inference	MutClones	avg_precision	0.9446271929824561	bortezomib	True	10
+inference	WTClones	avg_precision		bortezomib	True	10
+testing	219814	avg_precision	0.56	bortezomib	True	10
+training	219814	avg_precision	0.4666666666666667	bortezomib	True	10
+holdout	219814	accuracy	0.5	bortezomib	True	11
+inference	MutClones	accuracy	0.22807017543859648	bortezomib	True	11
+inference	WTClones	accuracy	0.7083333333333334	bortezomib	True	11
+testing	219814	accuracy	0.3	bortezomib	True	11
+training	219814	accuracy	0.4666666666666667	bortezomib	True	11
+holdout	219814	avg_precision	0.38333333333333336	bortezomib	True	11
+inference	MutClones	avg_precision	0.9571150097465888	bortezomib	True	11
+inference	WTClones	avg_precision		bortezomib	True	11
+testing	219814	avg_precision	0.5	bortezomib	True	11
+training	219814	avg_precision	0.4846153846153846	bortezomib	True	11
+holdout	219814	accuracy	0.35	bortezomib	True	12
+inference	MutClones	accuracy	0.3684210526315789	bortezomib	True	12
+inference	WTClones	accuracy	0.8541666666666666	bortezomib	True	12
+testing	219814	accuracy	0.4	bortezomib	True	12
+training	219814	accuracy	0.5666666666666667	bortezomib	True	12
+holdout	219814	avg_precision	0.3678571428571429	bortezomib	True	12
+inference	MutClones	avg_precision	0.9482943469785574	bortezomib	True	12
+inference	WTClones	avg_precision		bortezomib	True	12
+testing	219814	avg_precision	0.4666666666666667	bortezomib	True	12
+training	219814	avg_precision	0.5416666666666667	bortezomib	True	12
+holdout	219814	accuracy	0.5	bortezomib	True	13
+inference	MutClones	accuracy	0.2807017543859649	bortezomib	True	13
+inference	WTClones	accuracy	0.7708333333333334	bortezomib	True	13
+testing	219814	accuracy	0.6	bortezomib	True	13
+training	219814	accuracy	0.5666666666666667	bortezomib	True	13
+holdout	219814	avg_precision	0.38333333333333336	bortezomib	True	13
+inference	MutClones	avg_precision	0.9600389863547758	bortezomib	True	13
+inference	WTClones	avg_precision		bortezomib	True	13
+testing	219814	avg_precision	0.6000000000000001	bortezomib	True	13
+training	219814	avg_precision	0.5380952380952381	bortezomib	True	13
+holdout	219814	accuracy	0.5	bortezomib	True	14
+inference	MutClones	accuracy	0.3157894736842105	bortezomib	True	14
+inference	WTClones	accuracy	0.6875	bortezomib	True	14
+testing	219814	accuracy	0.4	bortezomib	True	14
+training	219814	accuracy	0.43333333333333335	bortezomib	True	14
+holdout	219814	avg_precision	0.38125000000000003	bortezomib	True	14
+inference	MutClones	avg_precision	0.9619883040935672	bortezomib	True	14
+inference	WTClones	avg_precision		bortezomib	True	14
+testing	219814	avg_precision	0.4666666666666667	bortezomib	True	14
+training	219814	avg_precision	0.47500000000000003	bortezomib	True	14
+holdout	219814	accuracy	0.55	bortezomib	True	15
+inference	MutClones	accuracy	0.24561403508771928	bortezomib	True	15
+inference	WTClones	accuracy	0.625	bortezomib	True	15
+testing	219814	accuracy	0.4	bortezomib	True	15
+training	219814	accuracy	0.5	bortezomib	True	15
+holdout	219814	avg_precision	0.3916666666666667	bortezomib	True	15
+inference	MutClones	avg_precision	0.9580896686159843	bortezomib	True	15
+inference	WTClones	avg_precision		bortezomib	True	15
+testing	219814	avg_precision	0.4666666666666667	bortezomib	True	15
+training	219814	avg_precision	0.5	bortezomib	True	15
+holdout	219814	accuracy	0.45	bortezomib	True	16
+inference	MutClones	accuracy	0.3333333333333333	bortezomib	True	16
+inference	WTClones	accuracy	0.75	bortezomib	True	16
+testing	219814	accuracy	0.5	bortezomib	True	16
+training	219814	accuracy	0.5666666666666667	bortezomib	True	16
+holdout	219814	avg_precision	0.37142857142857144	bortezomib	True	16
+inference	MutClones	avg_precision	0.9629629629629629	bortezomib	True	16
+inference	WTClones	avg_precision		bortezomib	True	16
+testing	219814	avg_precision	0.5	bortezomib	True	16
+training	219814	avg_precision	0.5416666666666667	bortezomib	True	16
+holdout	219814	accuracy	0.55	bortezomib	True	17
+inference	MutClones	accuracy	0.2807017543859649	bortezomib	True	17
+inference	WTClones	accuracy	0.7291666666666666	bortezomib	True	17
+testing	219814	accuracy	0.7	bortezomib	True	17
+training	219814	accuracy	0.43333333333333335	bortezomib	True	17
+holdout	219814	avg_precision	0.4222222222222222	bortezomib	True	17
+inference	MutClones	avg_precision	0.9600389863547758	bortezomib	True	17
+inference	WTClones	avg_precision		bortezomib	True	17
+testing	219814	avg_precision	0.7	bortezomib	True	17
+training	219814	avg_precision	0.47500000000000003	bortezomib	True	17
+holdout	219814	accuracy	0.5	bortezomib	True	18
+inference	MutClones	accuracy	0.3508771929824561	bortezomib	True	18
+inference	WTClones	accuracy	0.6875	bortezomib	True	18
+testing	219814	accuracy	0.5	bortezomib	True	18
+training	219814	accuracy	0.4666666666666667	bortezomib	True	18
+holdout	219814	avg_precision	0.38125000000000003	bortezomib	True	18
+inference	MutClones	avg_precision	0.9639376218323585	bortezomib	True	18
+inference	WTClones	avg_precision		bortezomib	True	18
+testing	219814	avg_precision	0.5	bortezomib	True	18
+training	219814	avg_precision	0.48571428571428577	bortezomib	True	18
+holdout	219814	accuracy	0.45	bortezomib	True	19
+inference	MutClones	accuracy	0.3684210526315789	bortezomib	True	19
+inference	WTClones	accuracy	0.7291666666666666	bortezomib	True	19
+testing	219814	accuracy	0.3	bortezomib	True	19
+training	219814	accuracy	0.5333333333333333	bortezomib	True	19
+holdout	219814	avg_precision	0.37142857142857144	bortezomib	True	19
+inference	MutClones	avg_precision	0.9649122807017545	bortezomib	True	19
+inference	WTClones	avg_precision		bortezomib	True	19
+testing	219814	avg_precision	0.5	bortezomib	True	19
+training	219814	avg_precision	0.52	bortezomib	True	19
+holdout	219814	accuracy	0.45	bortezomib	True	20
+inference	MutClones	accuracy	0.3157894736842105	bortezomib	True	20
+inference	WTClones	accuracy	0.8125	bortezomib	True	20
+testing	219814	accuracy	0.6	bortezomib	True	20
+training	219814	accuracy	0.6	bortezomib	True	20
+holdout	219814	avg_precision	0.37500000000000006	bortezomib	True	20
+inference	MutClones	avg_precision	0.9619883040935672	bortezomib	True	20
+inference	WTClones	avg_precision		bortezomib	True	20
+testing	219814	avg_precision	0.56	bortezomib	True	20
+training	219814	avg_precision	0.5636363636363637	bortezomib	True	20
+holdout	219814	accuracy	0.8	bortezomib	True	21
+inference	MutClones	accuracy	0.3508771929824561	bortezomib	True	21
+inference	WTClones	accuracy	0.7291666666666666	bortezomib	True	21
+testing	219814	accuracy	0.6	bortezomib	True	21
+training	219814	accuracy	0.5666666666666667	bortezomib	True	21
+holdout	219814	avg_precision	0.6708333333333334	bortezomib	True	21
+inference	MutClones	avg_precision	0.9639376218323585	bortezomib	True	21
+inference	WTClones	avg_precision		bortezomib	True	21
+testing	219814	avg_precision	0.6000000000000001	bortezomib	True	21
+training	219814	avg_precision	0.5416666666666667	bortezomib	True	21
+holdout	219814	accuracy	0.7	bortezomib	True	22
+inference	MutClones	accuracy	0.22807017543859648	bortezomib	True	22
+inference	WTClones	accuracy	0.6875	bortezomib	True	22
+testing	219814	accuracy	0.8	bortezomib	True	22
+training	219814	accuracy	0.6	bortezomib	True	22
+holdout	219814	avg_precision	0.5333333333333333	bortezomib	True	22
+inference	MutClones	avg_precision	0.9571150097465888	bortezomib	True	22
+inference	WTClones	avg_precision		bortezomib	True	22
+testing	219814	avg_precision	0.7400000000000001	bortezomib	True	22
+training	219814	avg_precision	0.5666666666666667	bortezomib	True	22
+holdout	219814	accuracy	0.4	bortezomib	True	23
+inference	MutClones	accuracy	0.2982456140350877	bortezomib	True	23
+inference	WTClones	accuracy	0.7083333333333334	bortezomib	True	23
+testing	219814	accuracy	0.5	bortezomib	True	23
+training	219814	accuracy	0.4	bortezomib	True	23
+holdout	219814	avg_precision	0.37083333333333335	bortezomib	True	23
+inference	MutClones	avg_precision	0.9610136452241715	bortezomib	True	23
+inference	WTClones	avg_precision		bortezomib	True	23
+testing	219814	avg_precision	0.5	bortezomib	True	23
+training	219814	avg_precision	0.4714285714285714	bortezomib	True	23
+holdout	219814	accuracy	0.5	bortezomib	True	24
+inference	MutClones	accuracy	0.2631578947368421	bortezomib	True	24
+inference	WTClones	accuracy	0.625	bortezomib	True	24
+testing	219814	accuracy	0.3	bortezomib	True	24
+training	219814	accuracy	0.6	bortezomib	True	24
+holdout	219814	avg_precision	0.38125000000000003	bortezomib	True	24
+inference	MutClones	avg_precision	0.9590643274853801	bortezomib	True	24
+inference	WTClones	avg_precision		bortezomib	True	24
+testing	219814	avg_precision	0.5	bortezomib	True	24
+training	219814	avg_precision	0.5666666666666667	bortezomib	True	24
