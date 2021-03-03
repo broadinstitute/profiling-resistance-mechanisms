@@ -36,4 +36,4 @@ dependencies:
 - conda-forge::r-yaml=2.2.0
 - pip:
   - git+https://github.com/cytomining/pycytominer@c1aa34b641b4e07eb5cbd424166f31355abdbd4d
-  - git+https://github.com/cytomining/cytominer-eval@56bd9e545d4ce5dea8c2d3897024a4eb241d06db
+  - cytominer_eval==0.1
