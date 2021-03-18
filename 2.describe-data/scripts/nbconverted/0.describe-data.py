@@ -225,12 +225,6 @@ treatment_counts_df.head()
 # In[12]:
 
 
-treatment_counts_df.query("batch == '2019_06_25_Batch3'")
-
-
-# In[13]:
-
-
 clone_counts_df = (
     treatment_counts_df
     .groupby(["Metadata_clone", "Metadata_treatment"])
@@ -248,7 +242,7 @@ clone_counts_df
 
 # ## Visualize Counts
 
-# In[14]:
+# In[13]:
 
 
 total_count = profile_counts_df.profile_count.sum()
@@ -276,7 +270,7 @@ batch_count_gg
 # 
 # For quick description
 
-# In[15]:
+# In[14]:
 
 
 suspect_batches = [
@@ -286,7 +280,7 @@ suspect_batches = [
 ]
 
 
-# In[16]:
+# In[15]:
 
 
 non_suspect_counts = treatment_counts_df.loc[~treatment_counts_df.batch.isin(suspect_batches), :]
@@ -316,91 +310,105 @@ treatment_count_by_batch_gg = (
 )
 
 output_figure = pathlib.Path("figures/treatment_count_by_batch.png")
-treatment_count_by_batch_gg.save(output_figure, height=6.5, width=5.5, dpi=400, verbose=False)
+treatment_count_by_batch_gg.save(output_figure, height=8, width=5.5, dpi=400, verbose=False)
 
 treatment_count_by_batch_gg
 
 
-# In[17]:
+# In[16]:
 
 
 batch1_40x_df = treatment_counts_df.query("batch == '2019_02_15_Batch1_40X'").dropna(axis="columns")
 batch1_40x_df
 
 
-# In[18]:
+# In[17]:
 
 
 batch1_20x_df = treatment_counts_df.query("batch == '2019_02_15_Batch1_20X'").dropna(axis="columns")
 batch1_20x_df
 
 
-# In[19]:
+# In[18]:
 
 
 batch2_df = treatment_counts_df.query("batch == '2019_03_20_Batch2'").dropna(axis="columns")
 batch2_df
 
 
-# In[20]:
+# In[19]:
 
 
 batch3_df = treatment_counts_df.query("batch == '2019_06_25_Batch3'").dropna(axis="columns")
 batch3_df
 
 
-# In[21]:
+# In[20]:
 
 
 batch4_df = treatment_counts_df.query("batch == '2019_11_11_Batch4'").dropna(axis="columns")
 batch4_df
 
 
-# In[22]:
+# In[21]:
 
 
 batch5_df = treatment_counts_df.query("batch == '2019_11_19_Batch5'").dropna(axis="columns")
 batch5_df
 
 
-# In[23]:
+# In[22]:
 
 
 batch6_df = treatment_counts_df.query("batch == '2019_11_20_Batch6'").dropna(axis="columns")
 batch6_df
 
 
-# In[24]:
+# In[23]:
 
 
 batch7_df = treatment_counts_df.query("batch == '2019_11_22_Batch7'").dropna(axis="columns")
 batch7_df
 
 
-# In[25]:
+# In[24]:
 
 
 batch8_df = treatment_counts_df.query("batch == '2020_07_02_Batch8'").dropna(axis="columns")
 batch8_df
 
 
-# In[26]:
+# In[25]:
 
 
 batch9_df = treatment_counts_df.query("batch == '2020_08_24_Batch9'").dropna(axis="columns")
 batch9_df
 
 
-# In[27]:
+# In[26]:
 
 
 batch10_df = treatment_counts_df.query("batch == '2020_09_08_Batch10'").dropna(axis="columns")
 batch10_df
 
 
-# In[28]:
+# In[27]:
 
 
 batch11_df = treatment_counts_df.query("batch == '2021_02_08_Batch11'").dropna(axis="columns")
 batch11_df
+
+
+# In[28]:
+
+
+batch12_df = treatment_counts_df.query("batch == '2021_03_03_Batch12'").dropna(axis="columns")
+batch12_df
+
+
+# In[29]:
+
+
+batch13_df = treatment_counts_df.query("batch == '2021_03_03_Batch13'").dropna(axis="columns")
+batch13_df
 

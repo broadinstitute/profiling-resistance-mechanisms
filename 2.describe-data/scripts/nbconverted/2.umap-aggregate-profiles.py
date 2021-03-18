@@ -61,9 +61,10 @@ def process_umap(data_df):
 save_file_extensions = ['.png']
 data_dir = os.path.join("data", "merged")
 
-# Two example datasets
+# Three example datasets
 dataset_a = ["2019_02_15_Batch1_20X", "2019_03_20_Batch2"]
 dataset_b = ["2019_11_19_Batch5", "2019_11_20_Batch6", "2019_11_22_Batch7"]
+dataset_c = ["2021_03_03_Batch12", "2021_03_03_Batch13"]
 
 
 # In[6]:
@@ -83,9 +84,83 @@ data_df.head()
 data_df.Metadata_batch.value_counts()
 
 
-# ## For Combined Batches of Four WT + Resistant Clones
+# ## The dataset with DMSO treated only
+# 
+# Four clones, clone A/E, and WT Parental lines.
 
 # In[8]:
+
+
+dmso_data_df = data_df.query("Metadata_batch in @dataset_c").reset_index(drop=True)
+
+embedding_df = process_umap(dmso_data_df)
+embedding_df.head()
+
+
+# In[9]:
+
+
+dataset = "dmso_treated"
+
+umap_resistant_type_gg = (
+    gg.ggplot(embedding_df, gg.aes(x="x", y="y"))
+    + gg.geom_point(
+        gg.aes(fill="Metadata_clone_type", shape="Metadata_batch", size="Metadata_cell_count"),
+        color='black', alpha=0.6)
+    + gg.theme_bw()
+    + gg.xlab("UMAP (X)")
+    + gg.ylab("UMAP (Y)")
+    + gg.ggtitle("DMSO treated samples")
+    + gg.scale_shape_manual(name="Batch", values=[".", "+"])
+    + gg.scale_fill_manual(name="Clone type", values=["#1F8AA5", "#E98831"])
+    + gg.scale_size_continuous(name="Cell count")
+    + gg.theme(
+        strip_text=gg.element_text(size=6, color="black"),
+        strip_background=gg.element_rect(colour="black", fill="#fdfff4"),
+    )
+)
+
+file = os.path.join("figures", "umap", f"{dataset}_umap_resistant_type")
+
+for extension in save_file_extensions:
+    umap_resistant_type_gg.save(filename='{}{}'.format(file, extension), height=3, width=3.5, dpi=400)
+
+umap_resistant_type_gg
+
+
+# In[10]:
+
+
+umap_clone_gg = (
+    gg.ggplot(embedding_df, gg.aes(x="x", y="y"))
+    + gg.geom_point(
+        gg.aes(fill="Metadata_clone_type", shape="Metadata_batch", size="Metadata_cell_count"),
+        color='black', alpha=0.6)
+    + gg.theme_bw()
+    + gg.xlab("UMAP (X)")
+    + gg.ylab("UMAP (Y)")
+    + gg.ggtitle("DMSO treated samples")
+    + gg.scale_shape_manual(name="Batch", values=[".", "+"])
+    + gg.scale_fill_manual(name="Clone type", values=["#1F8AA5", "#E98831"])
+    + gg.facet_wrap("~Metadata_clone_number")
+    + gg.scale_size_continuous(name="Cell count")
+    + gg.theme(
+        strip_text=gg.element_text(size=6, color="black"),
+        strip_background=gg.element_rect(colour="black", fill="#fdfff4"),
+    )
+)
+
+file = os.path.join("figures", "umap", f"{dataset}_umap_facet_clone_sample")
+
+for extension in save_file_extensions:
+    umap_clone_gg.save(filename='{}{}'.format(file, extension), height=3, width=3.5, dpi=400)
+
+umap_clone_gg
+
+
+# ## For Combined Batches of Four WT + Resistant Clones
+
+# In[11]:
 
 
 fourclone_data_df = data_df.query("Metadata_batch in @dataset_b").reset_index(drop=True)
@@ -96,7 +171,7 @@ embedding_df.head()
 
 # ## Visualize a Series of UMAP Representations
 
-# In[9]:
+# In[12]:
 
 
 umap_resistant_type_gg = (
@@ -119,7 +194,7 @@ for extension in save_file_extensions:
 umap_resistant_type_gg
 
 
-# In[10]:
+# In[13]:
 
 
 umap_cell_count_gg = (
@@ -142,7 +217,7 @@ for extension in save_file_extensions:
 umap_cell_count_gg
 
 
-# In[11]:
+# In[14]:
 
 
 umap_batch_gg = (
@@ -170,7 +245,7 @@ for extension in save_file_extensions:
 umap_batch_gg
 
 
-# In[12]:
+# In[15]:
 
 
 umap_batch_facet_gg = (
@@ -205,7 +280,7 @@ for extension in save_file_extensions:
 umap_batch_facet_gg
 
 
-# In[13]:
+# In[16]:
 
 
 # Visualize UMAP results
@@ -236,7 +311,7 @@ for extension in save_file_extensions:
 clone_facet_gg
 
 
-# In[14]:
+# In[17]:
 
 
 umap_well_embedding_gg = (
@@ -262,7 +337,7 @@ umap_well_embedding_gg
 
 # ## For Clone A and E Data
 
-# In[15]:
+# In[18]:
 
 
 # Load and process data
@@ -272,7 +347,7 @@ embedding_cloneAE_df = process_umap(cloneAE_data_df)
 embedding_cloneAE_df.head()
 
 
-# In[16]:
+# In[19]:
 
 
 # Visualize UMAP results
@@ -307,7 +382,7 @@ for extension in save_file_extensions:
 clone_ae_umap_gg
 
 
-# In[17]:
+# In[20]:
 
 
 clone_ae_umap_cell_count_gg = (
@@ -334,14 +409,14 @@ clone_ae_umap_cell_count_gg
 
 # ## All Data
 
-# In[18]:
+# In[21]:
 
 
 embedding_combined_df = process_umap(data_df)
 embedding_combined_df.head()
 
 
-# In[19]:
+# In[22]:
 
 
 # Visualize UMAP results
