@@ -123,4 +123,22 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
+process: false
+---
+batch: 2021_03_03_Batch12
+plates:
+  - 219907
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
+process: true
+---
+batch: 2021_03_03_Batch13
+plates:
+  - 219973
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
 process: true
