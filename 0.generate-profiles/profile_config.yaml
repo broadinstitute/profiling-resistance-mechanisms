@@ -132,11 +132,35 @@ process_single_cell: false
 batch: 2021_03_03_Batch12
 plates:
   - 219907
-process: true
-process_single_cell: true
+process: false
+process_single_cell: false
 ---
 batch: 2021_03_03_Batch13
 plates:
   - 219973
+process: false
+process_single_cell: false
+---
+batch: 2021_03_03_Batch14
+plates:
+  - 219901
+  - 219904
+  - 219905
+  - 219906
+process: true
+process_single_cell: true
+---
+batch: 2021_03_03_Batch15
+plates:
+  - 219956
+  - 219957
+  - 219958
+  - 219959
+process: true
+process_single_cell: true
+---
+batch: 2021_03_05_Batch16
+plates:
+  - 220039
 process: true
 process_single_cell: true
