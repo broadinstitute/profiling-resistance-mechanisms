@@ -261,7 +261,7 @@ batch_count_gg = (
 )
 
 output_figure = pathlib.Path("figures/batch_count.png")
-batch_count_gg.save(output_figure, height=4, width=5.5, dpi=400, verbose=False)
+batch_count_gg.save(output_figure, height=4, width=6.5, dpi=400, verbose=False)
 
 batch_count_gg
 
@@ -411,4 +411,25 @@ batch12_df
 
 batch13_df = treatment_counts_df.query("batch == '2021_03_03_Batch13'").dropna(axis="columns")
 batch13_df
+
+
+# In[30]:
+
+
+batch14_df = treatment_counts_df.query("batch == '2021_03_03_Batch14'").dropna(axis="columns")
+batch14_df
+
+
+# In[31]:
+
+
+batch15_df = treatment_counts_df.query("batch == '2021_03_03_Batch15'").dropna(axis="columns")
+batch15_df
+
+
+# In[32]:
+
+
+batch16_df = treatment_counts_df.query("batch == '2021_03_05_Batch16'").dropna(axis="columns")
+batch16_df
 
