@@ -11,7 +11,7 @@ data_dir <- "data"
 data_file <- file.path(data_dir, paste0(dataset, "_signature_analytical_set.tsv.gz"))
 
 input_results_dir <- file.path("results", "signatures")
-signature_file <- file.path(input_results_dir, paste0("signature_summary_", dataset, "_signature.tsv"))
+signature_file <- file.path(input_results_dir, paste0("signature_summary_", dataset, "_signature.tsv.gz"))
 tukey_file <- file.path(input_results_dir, paste0("tukey_results_", dataset, "_signature.tsv.gz"))
 
 output_dir <- file.path("results", "singscore")
@@ -56,6 +56,8 @@ signature_df <- readr::read_tsv(signature_file, col_types = sig_col_types)
 
 print(dim(signature_df))
 head(signature_df, 4)
+
+signature_df %>% dplyr::filter(final_signature)
 
 # Load Tukey results (to determine if feature is "up" or "down")
 tukey_cols <- readr::cols(

@@ -61,6 +61,7 @@ print(table(
 formula_terms <- paste(
     "~",
     "Metadata_clone_type_indicator", "+",
+    "Metadata_batch", "+",
     "Metadata_clone_number"
 )
 
@@ -122,6 +123,10 @@ feature_exclude_nonspecific_variation <- unique(
     dplyr::pull(feature)
     )
 
+feature_exclude_batch <- tukey_results_df %>%
+    dplyr::filter(term == "Metadata_batch", neg_log_adj_p > !!signif_line) %>%
+    dplyr::pull(feature)
+
 # Exclude features that are significantly impacted by cell count
 feature_exclude_cell_count <- cell_count_results %>%
     dplyr::filter(term == "scale(Metadata_cell_count)", neg_log_p > !!signif_line) %>%
@@ -160,3 +165,9 @@ anova_results_df %>% readr::write_tsv(anova_output_file)
 tukey_results_df %>% readr::write_tsv(tukey_output_file)
 cell_count_results %>% readr::write_tsv(cell_count_output_file)
 signature_summary_df %>% readr::write_tsv(signature_output_file)
+
+dataset
+
+signature_output_file
+
+

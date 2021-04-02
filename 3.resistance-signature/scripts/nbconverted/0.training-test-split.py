@@ -13,7 +13,7 @@
 # 4. Perform feature selection using the training data only
 # 5. Also load the batch 3 data and add to the analytical set as an inference set
 
-# In[1]:
+# In[3]:
 
 
 import sys
@@ -30,13 +30,13 @@ sys.path.insert(0, "../2.describe-data/scripts")
 from processing_utils import load_data
 
 
-# In[2]:
+# In[4]:
 
 
 np.random.seed(1233)
 
 
-# In[3]:
+# In[11]:
 
 
 data_dir = pathlib.Path("../0.generate-profiles/profiles")
@@ -44,7 +44,7 @@ cell_count_dir = pathlib.Path("../0.generate-profiles/cell_counts/")
 
 output_dir = pathlib.Path("data")
 
-profile_suffix = "augmented.csv.gz"
+profile_suffix = "normalized.csv.gz"
 
 feature_select_opts = [
     "variance_threshold",
@@ -57,19 +57,28 @@ feature_select_opts = [
 corr_threshold = 0.90
 na_cutoff = 0
 
-test_set_size = 0.25
+test_set_size = 0.15
 
 
-# In[4]:
+# In[12]:
 
 
-dataset = "bortezomib"
+datasets = {
+    "bortezomib": {
+        "2021_03_03_Batch12": ["219907"],
+        "2021_03_03_Batch13": ["219973"],
+        "2021_03_03_Batch14": ["219901"],
+        "2021_03_03_Batch15": ["219956"],
+        "2021_03_05_Batch16": ["220039"]
+    }
+}
 
-batch = "2021_02_08_Batch11"
-plate = "219814"
+validation_plates = {
+    "bortezomib": "219901"
+}
 
 
-# In[5]:
+# In[13]:
 
 
 clones = [
@@ -86,100 +95,142 @@ clones = [
 ]
 
 
-# In[6]:
+# In[14]:
 
 
 # Load and harmonize data for the given plates
-df = load_data(
-    batch=batch,
-    plates=plate,
-    profile_dir=data_dir,
-    suffix=profile_suffix,
-    combine_dfs=True,
-    harmonize_cols=True,
-    add_cell_count=True,
-    cell_count_dir=cell_count_dir
-)
+full_df = []
+for dataset in datasets:
+    dataset_df = []
+    validation_plate = validation_plates[dataset]
+    for batch in datasets[dataset]:
+        plates = datasets[dataset][batch]
 
-# Add important metadata features
-df = df.assign(
-    Metadata_dataset=dataset,
-    Metadata_batch=batch,
-    Metadata_clone_type="resistant",
-    Metadata_clone_type_indicator=1,
-    Metadata_model_split="training"
-)
+        # Load and harmonize data for the given plates
+        df = load_data(
+            batch=batch,
+            plates=plates,
+            profile_dir=data_dir,
+            suffix=profile_suffix,
+            combine_dfs=True,
+            harmonize_cols=True,
+            add_cell_count=True,
+            cell_count_dir=cell_count_dir
+        )
 
-df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type"] = "sensitive"
-df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type_indicator"] = 0
-df = df.assign(
-    Metadata_unique_sample_name=[f"profile_{x}_{dataset}" for x in range(0, df.shape[0])]
-)
+        # Add important metadata features
+        df = df.assign(
+            Metadata_dataset=dataset,
+            Metadata_batch=batch,
+            Metadata_clone_type="resistant",
+            Metadata_clone_type_indicator=1,
+            Metadata_model_split="training"
+        )
 
-df.head()
+        df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type"] = "sensitive"
+        df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type_indicator"] = 0
+        dataset_df.append(df)
 
+    # Merge plates of the same dataset together
+    dataset_df = pd.concat(dataset_df, axis="rows", sort=False).reset_index(drop=True)
+    
+    # Generate a unique sample ID
+    # (This will be used in singscore calculation)
+    dataset_df = dataset_df.assign(
+        Metadata_unique_sample_name=[f"profile_{x}_{dataset}" for x in range(0, dataset_df.shape[0])]
+    )
+    
+    dataset_df.loc[
+        dataset_df.Metadata_Plate.astype(str) == validation_plate, "Metadata_model_split"
+    ] = "validation"
+    
+    training_df = dataset_df.query("Metadata_model_split == 'training'")
 
-# In[7]:
+    train_samples, test_samples = train_test_split(
+        training_df.Metadata_unique_sample_name,
+        random_state=9876,
+        test_size=test_set_size,
+        stratify=training_df.Metadata_clone_number.astype(str)
+    )
+    
+    dataset_df.loc[
+        dataset_df.Metadata_unique_sample_name.isin(test_samples), "Metadata_model_split"
+    ] = "test"
+    
+    full_df.append(dataset_df)
 
-
-# Normalize with respect to WT controls
-df = normalize(
-    df,
-    features="infer",
-    meta_features="infer",
-    samples="Metadata_clone_number == 'WT_parental'",
-    method="standardize",
-    output_file="none"
-)
-
-
-# In[8]:
-
-
-# Select only the uncharacterized clones
-training_df = df.query("Metadata_clone_number in @clones").reset_index(drop=True)
-
-
-# In[9]:
-
-
-# Split data
-train_samples, test_samples = train_test_split(
-    training_df.Metadata_unique_sample_name,
-    random_state=9876,
-    test_size=test_set_size,
-    stratify=training_df.Metadata_clone_number.astype(str)
-)
-
-print(len(train_samples))
-print(len(test_samples))
+full_df = pd.concat(full_df, axis="rows", sort=False).reset_index(drop=True)
 
 
-# In[10]:
+# In[15]:
 
 
-# Apply feature selection using only the training samples
-feature_select_training_df = feature_select(
-    training_df.query("Metadata_unique_sample_name in @train_samples"),
-    operation=feature_select_opts,
-    na_cutoff=na_cutoff,
-)
+pd.crosstab(full_df.Metadata_dataset, full_df.Metadata_model_split)
 
 
-# In[11]:
+# In[16]:
 
 
-# Identify testing data
-testing_df = (
-    training_df
-    .query("Metadata_unique_sample_name in @test_samples")
-    .reindex(feature_select_training_df.columns, axis="columns")
-)
-
-testing_df.loc[:, "Metadata_model_split"] = "testing"
+pd.crosstab(full_df.Metadata_clone_number, full_df.Metadata_model_split)
 
 
-# In[12]:
+# In[17]:
+
+
+# We see a very large difference in cell count across profiles
+# Remember that profiles were generated from averaging feature values for all single cells
+full_df.Metadata_cell_count.hist()
+
+
+# In[18]:
+
+
+# Reorder features
+common_metadata = infer_cp_features(full_df, metadata=True)
+morph_features = infer_cp_features(full_df)
+
+full_df = full_df.reindex(common_metadata + morph_features, axis="columns")
+
+print(full_df.shape)
+full_df.head()
+
+
+# In[32]:
+
+
+selected_features = []
+for dataset in datasets:
+        
+    # Apply feature selection
+    feature_select_df = feature_select(
+        full_df.query("Metadata_dataset == @dataset").query("Metadata_model_split == 'training'"),
+        operation=feature_select_opts,
+        na_cutoff=na_cutoff,
+    )
+
+    dataset_features = infer_cp_features(feature_select_df)
+
+    selected_features.append(
+        pd.DataFrame(dataset_features, columns=["features"])
+        .assign(dataset=dataset)
+    )
+    
+# Output results of feature selection
+all_selected_features = pd.concat(selected_features).reset_index(drop=True)
+
+output_file = pathlib.Path(f"{output_dir}/updated_dataset_features_selected.tsv")
+all_selected_features.to_csv(output_file, sep="\t", index=False)
+
+all_selected_features.head()
+
+
+# In[33]:
+
+
+output_file
+
+
+# In[23]:
 
 
 # Load inference data (a different hold out)
@@ -201,44 +252,46 @@ inference_df = inference_df.assign(
     Metadata_unique_sample_name=[f"profile_{x}_inference" for x in range(0, inference_df.shape[0])]
 )
 
-inference_df =  inference_df.reindex(feature_select_training_df.columns, axis="columns")
-
 inference_df.Metadata_clone_number.value_counts()
 
 
-# In[13]:
+# In[26]:
+
+
+infer_cp_features(inference_df, metadata=True)
+
+
+# In[27]:
+
+
+infer_cp_features(full_df, metadata=True)
+
+
+# In[29]:
 
 
 # Combine profiles into a single dataset and output
-heldout_df = (
-    df.query("Metadata_clone_number not in @clones")
-    .reindex(feature_select_training_df.columns, axis="columns")
-)
-
-heldout_df.loc[:, "Metadata_model_split"] = "holdout"
-
 bortezomib_df = pd.concat(
     [
-        feature_select_training_df,
-        testing_df,
-        heldout_df,
+        full_df,
         inference_df
     ],
-    axis="rows"
+    axis="rows",
+    sort=False
 ).reset_index(drop=True)
 
 output_file = pathlib.Path(f"{output_dir}/bortezomib_signature_analytical_set.tsv.gz")
 bortezomib_df.to_csv(output_file, sep="\t", index=False)
 
 
-# In[14]:
+# In[30]:
 
 
 print(bortezomib_df.shape)
 bortezomib_df.head()
 
 
-# In[15]:
+# In[31]:
 
 
 assert len(bortezomib_df.Metadata_unique_sample_name.unique()) == bortezomib_df.shape[0]
