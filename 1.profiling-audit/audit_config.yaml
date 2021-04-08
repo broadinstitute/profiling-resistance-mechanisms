@@ -153,7 +153,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_03_Batch15
 plates:
@@ -165,11 +165,44 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_05_Batch16
 plates:
   - 220039
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
+process: true
+---
+batch: 2021_03_05_Batch17
+plates:
+  - 220040
+  - 220041
+  - 220042
+  - 220043
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
+process: true
+---
+batch: 2021_03_12_Batch18
+plates:
+  - 220055
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
+process: true
+---
+batch: 2021_03_12_Batch19
+plates:
+  - 220056
+  - 220057
+  - 220059
+  - 220060
 auditcols:
   - Metadata_clone_number
   - Metadata_treatment
