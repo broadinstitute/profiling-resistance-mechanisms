@@ -1,9 +1,9 @@
 Metadata_clone	0.1% DMSO	0.78 nM bortezomib	2.1 nM bortezomib	2.33 nM bortezomib	21 nM bortezomib	210 nM bortezomib	50 nM Ixazomib	7 nM bortezomib	700 nM CB-5083	Untreated
-BZ001	45	8	0	8	21	0	0	8	0	3
-BZ002	24	8	0	8	0	0	0	8	0	3
-BZ003	24	8	0	8	0	0	0	8	0	3
-BZ004	24	8	0	8	0	0	0	8	0	3
-BZ005	24	8	0	8	0	0	0	8	0	3
+BZ001	57	16	0	16	21	0	0	16	0	3
+BZ002	36	16	0	16	0	0	0	16	0	3
+BZ003	36	16	0	16	0	0	0	16	0	3
+BZ004	36	16	0	16	0	0	0	16	0	3
+BZ005	36	16	0	16	0	0	0	16	0	3
 BZ006	0	0	0	0	0	0	0	0	0	3
 BZ007	0	0	0	0	0	0	0	0	0	3
 BZ008	21	0	0	0	21	0	0	0	0	3
@@ -22,19 +22,19 @@ CB5038 clone 14	24	0	0	0	0	0	0	0	24	0
 CB5038 clone 15	24	0	0	0	0	0	0	0	24	0
 CB5038 clone 16	24	0	0	0	0	0	0	0	24	0
 CB5038 clone 17	24	0	0	0	0	0	0	0	24	0
-Clone E 	24	8	0	8	0	0	0	8	0	0
-CloneA	53	8	29	8	29	29	0	8	0	0
+Clone E 	36	16	0	16	0	0	0	16	0	0
+CloneA	65	16	29	16	29	29	0	16	0	0
 CloneE	29	0	29	0	29	29	0	0	0	0
 Ixazomib clone 01	18	0	0	0	0	0	18	0	0	0
 Ixazomib clone 02	18	0	0	0	0	0	18	0	0	0
 Ixazomib clone 03	18	0	0	0	0	0	18	0	0	0
 Ixazomib clone 04	18	0	0	0	0	0	18	0	0	0
 Ixazomib clone 05	18	0	0	0	0	0	18	0	0	0
-WT clone 01	24	8	0	8	0	0	0	8	0	0
-WT clone 02	24	8	0	8	0	0	0	8	0	0
-WT clone 03	24	8	0	8	0	0	0	8	0	0
-WT clone 04	66	8	0	8	0	0	18	8	24	0
-WT clone 05	66	8	0	8	0	0	18	8	24	0
+WT clone 01	36	16	0	16	0	0	0	16	0	0
+WT clone 02	36	16	0	16	0	0	0	16	0	0
+WT clone 03	36	16	0	16	0	0	0	16	0	0
+WT clone 04	78	16	0	16	0	0	18	16	24	0
+WT clone 05	78	16	0	16	0	0	18	16	24	0
 WT clone 06	42	0	0	0	0	0	18	0	24	0
 WT clone 07	42	0	0	0	0	0	18	0	24	0
 WT001	0	0	0	0	0	0	0	0	0	3
@@ -52,4 +52,4 @@ WT012	0	0	0	0	0	0	0	0	0	3
 WT013	0	0	0	0	0	0	0	0	0	3
 WT014	0	0	0	0	0	0	0	0	0	3
 WT015	0	0	0	0	0	0	0	0	0	3
-WT_parental	254	8	29	8	50	29	18	8	24	6
+WT_parental	338	16	29	16	50	29	18	16	24	6

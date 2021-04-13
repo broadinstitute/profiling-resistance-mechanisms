@@ -1,0 +1,61 @@
+Metadata_Plate	Metadata_Well	cell_count	Metadata_plate_map_name	Metadata_date	Metadata_clone_number	Metadata_celltype_shorthand_from_plate_graph	Metadata_treatment	Metadata_treatment_shorthand_from_plate_graph	Metadata_treatment_time	Metadata_cell_density	Metadata_time_to_adhere
+220043	B02	2474	220043	20210305	WT parental	1	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B03	1628	220043	20210305	Clone A	2	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B04	1000	220043	20210305	Clone E 	3	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B05	1945	220043	20210305	WT clone 01	4	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B06	1966	220043	20210305	WT clone 02	5	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B07	3111	220043	20210305	WT parental	1	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B08	2130	220043	20210305	Clone A	2	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B09	974	220043	20210305	Clone E 	3	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B10	1409	220043	20210305	WT clone 01	4	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	B11	1086	220043	20210305	WT clone 02	5	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C02	1054	220043	20210305	BZ002	10	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C03	1085	220043	20210305	BZ001	9	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C04	676	220043	20210305	WT clone 05	8	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C05	611	220043	20210305	WT clone 04	7	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C06	619	220043	20210305	WT clone 03	6	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C07	1159	220043	20210305	BZ002	10	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C08	1043	220043	20210305	BZ001	9	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C09	440	220043	20210305	WT clone 05	8	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C10	496	220043	20210305	WT clone 04	7	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	C11	698	220043	20210305	WT clone 03	6	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	D02	484	220043	20210305	BZ003	11	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	D03	521	220043	20210305	BZ004	12	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	D04	906	220043	20210305	BZ005	13	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	D05	1597	220043	20210305	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+220043	D06	1536	220043	20210305	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+220043	D07	639	220043	20210305	BZ003	11	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	D08	727	220043	20210305	BZ004	12	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	D09	873	220043	20210305	BZ005	13	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	D10	1566	220043	20210305	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+220043	D11	1642	220043	20210305	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+220043	E02	2466	220043	20210305	WT parental	1	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E03	2028	220043	20210305	Clone A	2	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E04	1004	220043	20210305	Clone E 	3	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E05	1220	220043	20210305	WT clone 01	4	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E06	1352	220043	20210305	WT clone 02	5	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E07	2488	220043	20210305	WT parental	1	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E08	1855	220043	20210305	Clone A	2	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E09	1176	220043	20210305	Clone E 	3	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E10	920	220043	20210305	WT clone 01	4	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	E11	1551	220043	20210305	WT clone 02	5	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F02	1204	220043	20210305	BZ002	10	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F03	1094	220043	20210305	BZ001	9	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F04	550	220043	20210305	WT clone 05	8	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F05	575	220043	20210305	WT clone 04	7	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F06	698	220043	20210305	WT clone 03	6	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F07	1112	220043	20210305	BZ002	10	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F08	874	220043	20210305	BZ001	9	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F09	574	220043	20210305	WT clone 05	8	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F10	557	220043	20210305	WT clone 04	7	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	F11	527	220043	20210305	WT clone 03	6	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	G02	353	220043	20210305	BZ003	11	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	G03	421	220043	20210305	BZ004	12	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	G04	520	220043	20210305	BZ005	13	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	G05	1434	220043	20210305	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+220043	G06	1292	220043	20210305	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+220043	G07	443	220043	20210305	BZ003	11	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	G08	391	220043	20210305	BZ004	12	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	G09	682	220043	20210305	BZ005	13	7 nM bortezomib	2	4 hr	2.5x10^3 cells/well	48 hr
+220043	G10	1599	220043	20210305	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+220043	G11	1517	220043	20210305	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
