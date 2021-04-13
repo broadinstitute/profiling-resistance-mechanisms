@@ -433,3 +433,24 @@ batch15_df
 batch16_df = treatment_counts_df.query("batch == '2021_03_05_Batch16'").dropna(axis="columns")
 batch16_df
 
+
+# In[33]:
+
+
+batch17_df = treatment_counts_df.query("batch == '2021_03_05_Batch17'").dropna(axis="columns")
+batch17_df
+
+
+# In[34]:
+
+
+batch18_df = treatment_counts_df.query("batch == '2021_03_12_Batch18'").dropna(axis="columns")
+batch18_df
+
+
+# In[35]:
+
+
+batch19_df = treatment_counts_df.query("batch == '2021_03_12_Batch19'").dropna(axis="columns")
+batch19_df
+
