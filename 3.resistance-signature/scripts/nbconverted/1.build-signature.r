@@ -10,9 +10,12 @@ set.seed(123)
 dataset <- "bortezomib"
 input_data_dir <- "data"
 data_file <- file.path(input_data_dir, "bortezomib_signature_analytical_set.tsv.gz")
+feat_file <- file.path(input_data_dir, "dataset_features_selected.tsv")
 
 output_fig_dir = file.path("figures", "anova")
 output_results_dir = file.path("results", "signatures")
+
+alpha = 0.05
 
 # Load profiles
 bulk_col_types <- readr::cols(
@@ -39,12 +42,24 @@ data_df <- readr::read_tsv(data_file, col_types = bulk_col_types)
 print(dim(data_df))
 head(data_df, 4)
 
+# Load feature selected features
+all_selected_features_df <- readr::read_tsv(feat_file, col_types = readr::cols())
+head(all_selected_features_df, 3)
+
 # Subset dataset
 bulk_subset_df <- data_df %>%
     dplyr::filter(
         Metadata_dataset == !!dataset,
         Metadata_model_split == "training",
     )
+
+# Apply feature selection performed in 0.compile-bulk-datasets
+selected_features <- all_selected_features_df %>%
+    dplyr::filter(dataset == !!dataset) %>%
+    dplyr::pull(features)
+
+bulk_subset_df <- bulk_subset_df %>%
+    dplyr::select(starts_with("Metadata"), all_of(selected_features))
 
 # Populate the list for signature building
 bulk_subset_df$Metadata_clone_type_indicator <- factor(
@@ -72,7 +87,7 @@ cell_count_formula <- paste(
     "scale(Metadata_cell_count)"
 )
 
-# Fit linear model to determine sources of variation and process results
+# Fit ANOVA to determine sources of variation and process results
 lm_results <- perform_anova(bulk_subset_df, formula_terms)
 
 # Order the full results data frame by significance and extract feature names
@@ -92,6 +107,7 @@ cell_count_results <- perform_linear_model(bulk_subset_df, cell_count_formula) %
     dplyr::arrange(desc(neg_log_p)) %>%
     dplyr::mutate(dataset = dataset)
 
+# Isolate features that represent significant differences between resistant and senstive clones
 anova_results_df <- lm_results[["full_results_df"]] %>%
     dplyr::mutate(dataset = dataset)
 
@@ -101,7 +117,7 @@ tukey_results_df <- tukey_results %>%
 features <- unique(anova_results_df$feature)
 
 num_cp_features <- length(features)
-signif_line <- -log10(0.05 / num_cp_features)
+signif_line <- -log10(alpha / num_cp_features)
 
 # Derive signature by systematically removing features influenced by technical artifacts
 signature_features <- tukey_results_df %>%
@@ -170,7 +186,23 @@ signature_summary_df <- signature_summary_df %>%
 print(paste("For the dataset:", dataset))
 print(paste("the number of features in the core signature:", sum(signature_summary_df$final_signature)))
 
-signature_summary_df %>% dplyr::filter(final_signature)
+# Determine feature direction
+final_signature <- signature_summary_df %>% dplyr::filter(final_signature)
+
+tukey_subset_results_df <- tukey_results_df %>%
+    dplyr::filter(
+        dataset == !!dataset,
+        term == "Metadata_clone_type_indicator",
+        feature %in% final_signature$features
+    )
+
+up_features <- tukey_subset_results_df %>% dplyr::filter(estimate > 0) %>% dplyr::pull(feature)
+down_features <- tukey_subset_results_df %>% dplyr::filter(estimate < 0) %>% dplyr::pull(feature)
+
+# Store signature for downstream analyses
+signature_features <- list("up" = up_features, "down" = down_features)
+
+signature_features
 
 anova_output_file <- file.path(output_results_dir, paste0("anova_results_", dataset, "_signature.tsv.gz"))
 tukey_output_file <- file.path(output_results_dir, paste0("tukey_results_", dataset, "_signature.tsv.gz"))
