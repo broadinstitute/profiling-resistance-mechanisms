@@ -8,16 +8,20 @@ num_permutations <- 1000
 dataset <- "bortezomib"
 
 data_dir <- "data"
-data_file <- file.path(data_dir, paste0(dataset, "_signature_analytical_set.tsv.gz"))
-
 input_results_dir <- file.path("results", "signatures")
+output_dir <- file.path("results", "singscore")
+
+data_file <- file.path(data_dir, paste0(dataset, "_signature_analytical_set.tsv.gz"))
+feat_file <- file.path(data_dir, "dataset_features_selected.tsv")
 signature_file <- file.path(input_results_dir, paste0("signature_summary_", dataset, "_signature.tsv.gz"))
 tukey_file <- file.path(input_results_dir, paste0("tukey_results_", dataset, "_signature.tsv.gz"))
-
-output_dir <- file.path("results", "singscore")
 output_results_file <- file.path(output_dir, paste0("singscore_results", dataset, ".tsv.gz"))
 
 set.seed(seed)
+
+# Load feature selected features
+all_selected_features_df <- readr::read_tsv(feat_file, col_types = readr::cols())
+head(all_selected_features_df, 3)
 
 # Load profiles
 bulk_col_types <- readr::cols(
@@ -41,6 +45,14 @@ bulk_col_types <- readr::cols(
 
 data_df <- readr::read_tsv(data_file, col_types = bulk_col_types)
 
+# Apply feature selection performed in 0.compile-bulk-datasets
+selected_features <- all_selected_features_df %>%
+    dplyr::filter(dataset == !!dataset) %>%
+    dplyr::pull(features)
+
+data_df <- data_df %>%
+    dplyr::select(starts_with("Metadata"), all_of(selected_features))
+
 print(dim(data_df))
 head(data_df, 4)
 
@@ -56,8 +68,6 @@ signature_df <- readr::read_tsv(signature_file, col_types = sig_col_types)
 
 print(dim(signature_df))
 head(signature_df, 4)
-
-signature_df %>% dplyr::filter(final_signature)
 
 # Load Tukey results (to determine if feature is "up" or "down")
 tukey_cols <- readr::cols(
@@ -86,7 +96,8 @@ tukey_subset_df <- tukey_df %>%
         dataset == !!dataset,
         term == "Metadata_clone_type_indicator",
         feature %in% signature_subset_df$features
-    )
+    ) %>%
+    dplyr::arrange(desc(estimate))
 
 # Ensure that the comparison is always resistant vs. senstive
 # and never the other way around!

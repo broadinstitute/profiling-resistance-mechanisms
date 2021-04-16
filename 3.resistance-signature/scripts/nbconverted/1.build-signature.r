@@ -131,14 +131,15 @@ wt_clone_count <- stringr::str_count(
     dplyr::pull("comparison"), "WT"
 )
 
-# Exclude features with very high within sensitivity-type clones
-feature_exclude_nonspecific_variation <- unique(
-    tukey_results_df %>%
+# Exclude features with consistent within sensitivity-type clones
+feature_exclude_nonspecific_variation <- tukey_results_df %>%
     dplyr::filter(term == "Metadata_clone_number") %>%
     dplyr::mutate(wt_clone_count = wt_clone_count) %>%
     dplyr::filter(neg_log_adj_p > !!signif_line, wt_clone_count != 1) %>%
+    dplyr::count(feature) %>%
+    dplyr::arrange(desc(n)) %>%
+    dplyr::filter(n > 1) %>%
     dplyr::pull(feature)
-    )
 
 # Exclude features that are significantly different as explained by batch
 feature_exclude_batch <- tukey_results_df %>%
@@ -150,9 +151,9 @@ feature_exclude_cell_count <- cell_count_results %>%
     dplyr::filter(term == "scale(Metadata_cell_count)", neg_log_p > !!signif_line) %>%
     dplyr::pull(feature)
 
-# Exclude features that are significantly impacted by cell count
-feature_exclude_time <- cell_count_results %>%
-    dplyr::filter(term == "Metadata_treatment_time", neg_log_p > !!signif_line) %>%
+# Exclude features that are significantly impacted by treatment time
+feature_exclude_time <- tukey_results_df %>%
+    dplyr::filter(term == "Metadata_treatment_time", neg_log_adj_p > !!signif_line) %>%
     dplyr::pull(feature)
 
 # Restrict signature
