@@ -1,9 +1,9 @@
 Metadata_model_split	metric	metric_value	dataset	shuffle
-inference	accuracy	0.8857142857142857	bortezomib	False
-test	accuracy	0.7777777777777778	bortezomib	False
-training	accuracy	0.7745098039215687	bortezomib	False
-validation	accuracy	0.5833333333333334	bortezomib	False
-inference	avg_precision	0.8472663139329806	bortezomib	False
-test	avg_precision	0.6958861976163014	bortezomib	False
-training	avg_precision	0.6818576815871454	bortezomib	False
-validation	avg_precision	0.5173160173160173	bortezomib	False
+inference	accuracy	0.10476190476190476	bortezomib	False
+test	accuracy	0.6190476190476191	bortezomib	False
+training	accuracy	0.6696428571428571	bortezomib	False
+validation	accuracy	0.7	bortezomib	False
+inference	avg_precision	0.4699633699633699	bortezomib	False
+test	avg_precision	0.53994708994709	bortezomib	False
+training	avg_precision	0.5828509429249407	bortezomib	False
+validation	avg_precision	0.6084033613445378	bortezomib	False

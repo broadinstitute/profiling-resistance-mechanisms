@@ -62,6 +62,7 @@ formula_terms <- paste(
     "~",
     "Metadata_clone_type_indicator", "+",
     "Metadata_batch", "+",
+    "Metadata_treatment_time", "+",
     "Metadata_clone_number"
 )
 
@@ -123,6 +124,7 @@ feature_exclude_nonspecific_variation <- unique(
     dplyr::pull(feature)
     )
 
+# Exclude features that are significantly different as explained by batch
 feature_exclude_batch <- tukey_results_df %>%
     dplyr::filter(term == "Metadata_batch", neg_log_adj_p > !!signif_line) %>%
     dplyr::pull(feature)
@@ -132,11 +134,23 @@ feature_exclude_cell_count <- cell_count_results %>%
     dplyr::filter(term == "scale(Metadata_cell_count)", neg_log_p > !!signif_line) %>%
     dplyr::pull(feature)
 
+# Exclude features that are significantly impacted by cell count
+feature_exclude_time <- cell_count_results %>%
+    dplyr::filter(term == "Metadata_treatment_time", neg_log_p > !!signif_line) %>%
+    dplyr::pull(feature)
+
+# Restrict signature
 final_signature_features <- setdiff(
     signature_features, unique(feature_exclude_cell_count)
 )
 final_signature_features <- setdiff(
     final_signature_features, unique(feature_exclude_nonspecific_variation)
+)
+final_signature_features <- setdiff(
+    final_signature_features, unique(feature_exclude_batch)
+)
+final_signature_features <- setdiff(
+    final_signature_features, unique(feature_exclude_cell_count)
 )
 
 # Create a summary of the signatures
@@ -145,8 +159,10 @@ signature_summary_df <- tibble(features)
 signature_summary_df <- signature_summary_df %>%
     dplyr::mutate(
         non_status_significant_exclude = !(signature_summary_df$features %in% signature_features),
+        batch_exclude = signature_summary_df$features %in% feature_exclude_batch,
         cell_count_exclude = signature_summary_df$features %in% feature_exclude_cell_count,
         non_specific_exclude = signature_summary_df$features %in% feature_exclude_nonspecific_variation,
+        treatment_time_exclude = signature_summary_df$features %in% feature_exclude_time,
         final_signature = signature_summary_df$features %in% final_signature_features,
         dataset = dataset
     )
@@ -165,9 +181,3 @@ anova_results_df %>% readr::write_tsv(anova_output_file)
 tukey_results_df %>% readr::write_tsv(tukey_output_file)
 cell_count_results %>% readr::write_tsv(cell_count_output_file)
 signature_summary_df %>% readr::write_tsv(signature_output_file)
-
-dataset
-
-signature_output_file
-
-

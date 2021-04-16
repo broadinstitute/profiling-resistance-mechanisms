@@ -109,7 +109,7 @@ result_gg <- (
 output_fig_file <- file.path("figures", "signature_scores_training_testing_validation.png")
 ggsave(output_fig_file, result_gg, dpi = 500, height = 3, width = 5)
 
-inference_df
+result_gg
 
 inference_gg <- ggplot(inference_df,
            aes(x = Metadata_clone_number,
@@ -158,9 +158,7 @@ inference_gg <- ggplot(inference_df,
 output_fig_file <- file.path("figures", "signature_scores_inference.png")
 ggsave(output_fig_file, inference_gg, dpi = 500, height = 3, width = 5)
 
-
-
-
+inference_gg
 
 perf_dir <- file.path("results", "performance")
 
@@ -244,5 +242,3 @@ output_fig_file <- file.path("figures", "total_performance.png")
 ggsave(output_fig_file, total_performance_gg, dpi = 500, height = 4.2, width = 4)
 
 total_performance_gg
-
-

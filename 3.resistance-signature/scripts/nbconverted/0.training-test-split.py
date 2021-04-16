@@ -13,7 +13,7 @@
 # 4. Perform feature selection using the training data only
 # 5. Also load the batch 3 data and add to the analytical set as an inference set
 
-# In[3]:
+# In[1]:
 
 
 import sys
@@ -30,13 +30,13 @@ sys.path.insert(0, "../2.describe-data/scripts")
 from processing_utils import load_data
 
 
-# In[4]:
+# In[2]:
 
 
-np.random.seed(1233)
+np.random.seed(1234)
 
 
-# In[11]:
+# In[3]:
 
 
 data_dir = pathlib.Path("../0.generate-profiles/profiles")
@@ -60,7 +60,7 @@ na_cutoff = 0
 test_set_size = 0.15
 
 
-# In[12]:
+# In[4]:
 
 
 datasets = {
@@ -69,7 +69,10 @@ datasets = {
         "2021_03_03_Batch13": ["219973"],
         "2021_03_03_Batch14": ["219901"],
         "2021_03_03_Batch15": ["219956"],
-        "2021_03_05_Batch16": ["220039"]
+        "2021_03_05_Batch16": ["220039"],
+        "2021_03_05_Batch17": ["220040"],
+        "2021_03_12_Batch18": ["220055"],
+        "2021_03_12_Batch19": ["220056"]
     }
 }
 
@@ -78,7 +81,7 @@ validation_plates = {
 }
 
 
-# In[13]:
+# In[5]:
 
 
 clones = [
@@ -95,7 +98,7 @@ clones = [
 ]
 
 
-# In[14]:
+# In[6]:
 
 
 # Load and harmonize data for the given plates
@@ -162,19 +165,19 @@ for dataset in datasets:
 full_df = pd.concat(full_df, axis="rows", sort=False).reset_index(drop=True)
 
 
-# In[15]:
+# In[7]:
 
 
 pd.crosstab(full_df.Metadata_dataset, full_df.Metadata_model_split)
 
 
-# In[16]:
+# In[8]:
 
 
 pd.crosstab(full_df.Metadata_clone_number, full_df.Metadata_model_split)
 
 
-# In[17]:
+# In[9]:
 
 
 # We see a very large difference in cell count across profiles
@@ -182,7 +185,7 @@ pd.crosstab(full_df.Metadata_clone_number, full_df.Metadata_model_split)
 full_df.Metadata_cell_count.hist()
 
 
-# In[18]:
+# In[10]:
 
 
 # Reorder features
@@ -195,7 +198,7 @@ print(full_df.shape)
 full_df.head()
 
 
-# In[32]:
+# In[11]:
 
 
 selected_features = []
@@ -224,13 +227,13 @@ all_selected_features.to_csv(output_file, sep="\t", index=False)
 all_selected_features.head()
 
 
-# In[33]:
+# In[12]:
 
 
 output_file
 
 
-# In[23]:
+# In[13]:
 
 
 # Load inference data (a different hold out)
@@ -255,19 +258,19 @@ inference_df = inference_df.assign(
 inference_df.Metadata_clone_number.value_counts()
 
 
-# In[26]:
+# In[14]:
 
 
 infer_cp_features(inference_df, metadata=True)
 
 
-# In[27]:
+# In[15]:
 
 
 infer_cp_features(full_df, metadata=True)
 
 
-# In[29]:
+# In[16]:
 
 
 # Combine profiles into a single dataset and output
@@ -284,14 +287,14 @@ output_file = pathlib.Path(f"{output_dir}/bortezomib_signature_analytical_set.ts
 bortezomib_df.to_csv(output_file, sep="\t", index=False)
 
 
-# In[30]:
+# In[17]:
 
 
 print(bortezomib_df.shape)
 bortezomib_df.head()
 
 
-# In[31]:
+# In[18]:
 
 
 assert len(bortezomib_df.Metadata_unique_sample_name.unique()) == bortezomib_df.shape[0]

@@ -1,77 +1,77 @@
 Metadata_model_split	Metadata_clone_number	metric	metric_value	dataset	shuffle	permutation
-inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	0
 inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	0
-inference	BZ003	accuracy	0.0	bortezomib	True	0
-inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	0
-inference	BZ005	accuracy	0.0	bortezomib	True	0
+inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	0
+inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	0
 inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	0
-inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	0
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	0
-inference	BZ009	accuracy	0.0	bortezomib	True	0
-inference	BZ010	accuracy	1.0	bortezomib	True	0
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	0
-inference	BZ012	accuracy	1.0	bortezomib	True	0
-inference	BZ013	accuracy	0.0	bortezomib	True	0
-inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	0
-inference	BZ015	accuracy	1.0	bortezomib	True	0
+inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	0
+inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	0
+inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	0
 inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	0
-inference	BZ017	accuracy	1.0	bortezomib	True	0
-inference	BZ018	accuracy	0.0	bortezomib	True	0
+inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	0
+inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	0
 inference	WT001	accuracy	0.6666666666666666	bortezomib	True	0
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	0
-inference	WT003	accuracy	0.6666666666666666	bortezomib	True	0
+inference	WT002	accuracy	1.0	bortezomib	True	0
+inference	WT003	accuracy	0.0	bortezomib	True	0
 inference	WT004	accuracy	0.6666666666666666	bortezomib	True	0
 inference	WT005	accuracy	0.6666666666666666	bortezomib	True	0
 inference	WT006	accuracy	0.3333333333333333	bortezomib	True	0
-inference	WT007	accuracy	0.0	bortezomib	True	0
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	0
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	0
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	0
-inference	WT011	accuracy	0.6666666666666666	bortezomib	True	0
+inference	WT007	accuracy	0.6666666666666666	bortezomib	True	0
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	0
+inference	WT009	accuracy	1.0	bortezomib	True	0
+inference	WT010	accuracy	1.0	bortezomib	True	0
+inference	WT011	accuracy	0.3333333333333333	bortezomib	True	0
 inference	WT012	accuracy	0.3333333333333333	bortezomib	True	0
-inference	WT013	accuracy	0.0	bortezomib	True	0
-inference	WT014	accuracy	1.0	bortezomib	True	0
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	0
+inference	WT013	accuracy	0.6666666666666666	bortezomib	True	0
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	0
+inference	WT015	accuracy	0.0	bortezomib	True	0
 inference	WT_parental	accuracy	0.5	bortezomib	True	0
-test	BZ001	accuracy	0.0	bortezomib	True	0
-test	BZ002	accuracy	0.0	bortezomib	True	0
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	0
-test	BZ004	accuracy	0.0	bortezomib	True	0
-test	BZ005	accuracy	0.0	bortezomib	True	0
-test	CloneA	accuracy	0.5	bortezomib	True	0
-test	CloneE	accuracy	0.6666666666666666	bortezomib	True	0
-test	WT clone 01	accuracy	0.0	bortezomib	True	0
-test	WT clone 02	accuracy	0.0	bortezomib	True	0
-test	WT clone 03	accuracy	0.0	bortezomib	True	0
-test	WT clone 04	accuracy	0.5	bortezomib	True	0
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	0
-test	WT_parental	accuracy	0.14285714285714285	bortezomib	True	0
-training	BZ001	accuracy	0.5	bortezomib	True	0
-training	BZ002	accuracy	0.5714285714285714	bortezomib	True	0
-training	BZ003	accuracy	0.6923076923076923	bortezomib	True	0
-training	BZ004	accuracy	0.3076923076923077	bortezomib	True	0
-training	BZ005	accuracy	0.6428571428571429	bortezomib	True	0
-training	CloneA	accuracy	0.6428571428571429	bortezomib	True	0
-training	CloneE	accuracy	0.3076923076923077	bortezomib	True	0
-training	WT clone 01	accuracy	0.5384615384615384	bortezomib	True	0
-training	WT clone 02	accuracy	0.5	bortezomib	True	0
-training	WT clone 03	accuracy	0.35714285714285715	bortezomib	True	0
-training	WT clone 04	accuracy	0.5714285714285714	bortezomib	True	0
-training	WT clone 05	accuracy	0.5384615384615384	bortezomib	True	0
-training	WT_parental	accuracy	0.5853658536585366	bortezomib	True	0
+test	BZ001	accuracy	0.6666666666666666	bortezomib	True	0
+test	BZ002	accuracy	0.8	bortezomib	True	0
+test	BZ003	accuracy	0.8333333333333334	bortezomib	True	0
+test	BZ004	accuracy	0.5	bortezomib	True	0
+test	BZ005	accuracy	0.2	bortezomib	True	0
+test	CloneA	accuracy	0.4	bortezomib	True	0
+test	CloneE	accuracy	0.5	bortezomib	True	0
+test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	0
+test	WT clone 02	accuracy	0.4	bortezomib	True	0
+test	WT clone 03	accuracy	0.16666666666666666	bortezomib	True	0
+test	WT clone 04	accuracy	0.4	bortezomib	True	0
+test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	0
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	0
+training	BZ001	accuracy	0.5454545454545454	bortezomib	True	0
+training	BZ002	accuracy	0.4782608695652174	bortezomib	True	0
+training	BZ003	accuracy	0.45454545454545453	bortezomib	True	0
+training	BZ004	accuracy	0.5909090909090909	bortezomib	True	0
+training	BZ005	accuracy	0.4782608695652174	bortezomib	True	0
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	0
+training	CloneE	accuracy	0.5909090909090909	bortezomib	True	0
+training	WT clone 01	accuracy	0.4090909090909091	bortezomib	True	0
+training	WT clone 02	accuracy	0.6521739130434783	bortezomib	True	0
+training	WT clone 03	accuracy	0.3181818181818182	bortezomib	True	0
+training	WT clone 04	accuracy	0.4782608695652174	bortezomib	True	0
+training	WT clone 05	accuracy	0.3181818181818182	bortezomib	True	0
+training	WT_parental	accuracy	0.5373134328358209	bortezomib	True	0
 validation	BZ001	accuracy	0.5	bortezomib	True	0
 validation	BZ002	accuracy	0.75	bortezomib	True	0
-validation	BZ003	accuracy	0.75	bortezomib	True	0
-validation	BZ004	accuracy	0.75	bortezomib	True	0
-validation	BZ005	accuracy	0.75	bortezomib	True	0
+validation	BZ003	accuracy	0.0	bortezomib	True	0
+validation	BZ004	accuracy	0.25	bortezomib	True	0
+validation	BZ005	accuracy	0.25	bortezomib	True	0
 validation	CloneA	accuracy	0.75	bortezomib	True	0
-validation	CloneE	accuracy	0.75	bortezomib	True	0
+validation	CloneE	accuracy	0.25	bortezomib	True	0
 validation	WT clone 01	accuracy	0.25	bortezomib	True	0
 validation	WT clone 02	accuracy	0.5	bortezomib	True	0
-validation	WT clone 03	accuracy	0.0	bortezomib	True	0
+validation	WT clone 03	accuracy	0.75	bortezomib	True	0
 validation	WT clone 04	accuracy	0.5	bortezomib	True	0
-validation	WT clone 05	accuracy	0.5	bortezomib	True	0
-validation	WT_parental	accuracy	0.5	bortezomib	True	0
+validation	WT clone 05	accuracy	0.25	bortezomib	True	0
+validation	WT_parental	accuracy	0.6666666666666666	bortezomib	True	0
 inference	BZ001	avg_precision	1.0	bortezomib	True	0
 inference	BZ002	avg_precision	1.0	bortezomib	True	0
 inference	BZ003	avg_precision	1.0	bortezomib	True	0
@@ -145,79 +145,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	0
 validation	WT clone 04	avg_precision		bortezomib	True	0
 validation	WT clone 05	avg_precision		bortezomib	True	0
 validation	WT_parental	avg_precision		bortezomib	True	0
-inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	1
+inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	1
 inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	1
-inference	BZ003	accuracy	1.0	bortezomib	True	1
-inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	1
+inference	BZ003	accuracy	0.0	bortezomib	True	1
+inference	BZ004	accuracy	0.0	bortezomib	True	1
 inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	1
-inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	1
+inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	1
 inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	1
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	1
-inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	1
+inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	1
+inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	1
 inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	1
-inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	1
-inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	1
-inference	BZ013	accuracy	1.0	bortezomib	True	1
-inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	1
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	1
-inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	1
+inference	BZ011	accuracy	0.0	bortezomib	True	1
+inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	1
+inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	1
+inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	1
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	1
+inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	1
 inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	1
 inference	BZ018	accuracy	1.0	bortezomib	True	1
 inference	WT001	accuracy	0.6666666666666666	bortezomib	True	1
-inference	WT002	accuracy	1.0	bortezomib	True	1
-inference	WT003	accuracy	0.3333333333333333	bortezomib	True	1
-inference	WT004	accuracy	0.6666666666666666	bortezomib	True	1
-inference	WT005	accuracy	0.3333333333333333	bortezomib	True	1
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	1
+inference	WT003	accuracy	0.0	bortezomib	True	1
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	1
+inference	WT005	accuracy	0.0	bortezomib	True	1
 inference	WT006	accuracy	0.6666666666666666	bortezomib	True	1
-inference	WT007	accuracy	0.6666666666666666	bortezomib	True	1
-inference	WT008	accuracy	0.0	bortezomib	True	1
-inference	WT009	accuracy	1.0	bortezomib	True	1
-inference	WT010	accuracy	1.0	bortezomib	True	1
-inference	WT011	accuracy	0.6666666666666666	bortezomib	True	1
-inference	WT012	accuracy	0.3333333333333333	bortezomib	True	1
-inference	WT013	accuracy	0.6666666666666666	bortezomib	True	1
-inference	WT014	accuracy	0.6666666666666666	bortezomib	True	1
-inference	WT015	accuracy	1.0	bortezomib	True	1
-inference	WT_parental	accuracy	0.6666666666666666	bortezomib	True	1
-test	BZ001	accuracy	0.5	bortezomib	True	1
-test	BZ002	accuracy	0.5	bortezomib	True	1
-test	BZ003	accuracy	0.3333333333333333	bortezomib	True	1
-test	BZ004	accuracy	0.3333333333333333	bortezomib	True	1
-test	BZ005	accuracy	0.5	bortezomib	True	1
-test	CloneA	accuracy	0.0	bortezomib	True	1
-test	CloneE	accuracy	0.3333333333333333	bortezomib	True	1
-test	WT clone 01	accuracy	1.0	bortezomib	True	1
-test	WT clone 02	accuracy	1.0	bortezomib	True	1
-test	WT clone 03	accuracy	0.0	bortezomib	True	1
-test	WT clone 04	accuracy	0.0	bortezomib	True	1
+inference	WT007	accuracy	0.0	bortezomib	True	1
+inference	WT008	accuracy	0.3333333333333333	bortezomib	True	1
+inference	WT009	accuracy	0.3333333333333333	bortezomib	True	1
+inference	WT010	accuracy	0.3333333333333333	bortezomib	True	1
+inference	WT011	accuracy	0.3333333333333333	bortezomib	True	1
+inference	WT012	accuracy	1.0	bortezomib	True	1
+inference	WT013	accuracy	0.0	bortezomib	True	1
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	1
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	1
+inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	1
+test	BZ001	accuracy	0.3333333333333333	bortezomib	True	1
+test	BZ002	accuracy	0.6	bortezomib	True	1
+test	BZ003	accuracy	0.8333333333333334	bortezomib	True	1
+test	BZ004	accuracy	0.16666666666666666	bortezomib	True	1
+test	BZ005	accuracy	0.6	bortezomib	True	1
+test	CloneA	accuracy	0.6	bortezomib	True	1
+test	CloneE	accuracy	0.5	bortezomib	True	1
+test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	1
+test	WT clone 02	accuracy	0.6	bortezomib	True	1
+test	WT clone 03	accuracy	0.8333333333333334	bortezomib	True	1
+test	WT clone 04	accuracy	0.6	bortezomib	True	1
 test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	1
-test	WT_parental	accuracy	0.5714285714285714	bortezomib	True	1
-training	BZ001	accuracy	0.42857142857142855	bortezomib	True	1
-training	BZ002	accuracy	0.5	bortezomib	True	1
-training	BZ003	accuracy	0.6153846153846154	bortezomib	True	1
-training	BZ004	accuracy	0.5384615384615384	bortezomib	True	1
-training	BZ005	accuracy	0.7142857142857143	bortezomib	True	1
-training	CloneA	accuracy	0.6428571428571429	bortezomib	True	1
-training	CloneE	accuracy	0.7692307692307693	bortezomib	True	1
-training	WT clone 01	accuracy	0.5384615384615384	bortezomib	True	1
-training	WT clone 02	accuracy	0.42857142857142855	bortezomib	True	1
-training	WT clone 03	accuracy	0.35714285714285715	bortezomib	True	1
-training	WT clone 04	accuracy	0.7142857142857143	bortezomib	True	1
-training	WT clone 05	accuracy	0.3076923076923077	bortezomib	True	1
-training	WT_parental	accuracy	0.5609756097560976	bortezomib	True	1
-validation	BZ001	accuracy	0.5	bortezomib	True	1
-validation	BZ002	accuracy	0.5	bortezomib	True	1
+test	WT_parental	accuracy	0.11764705882352941	bortezomib	True	1
+training	BZ001	accuracy	0.45454545454545453	bortezomib	True	1
+training	BZ002	accuracy	0.34782608695652173	bortezomib	True	1
+training	BZ003	accuracy	0.45454545454545453	bortezomib	True	1
+training	BZ004	accuracy	0.4090909090909091	bortezomib	True	1
+training	BZ005	accuracy	0.7391304347826086	bortezomib	True	1
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	1
+training	CloneE	accuracy	0.45454545454545453	bortezomib	True	1
+training	WT clone 01	accuracy	0.36363636363636365	bortezomib	True	1
+training	WT clone 02	accuracy	0.43478260869565216	bortezomib	True	1
+training	WT clone 03	accuracy	0.5909090909090909	bortezomib	True	1
+training	WT clone 04	accuracy	0.6086956521739131	bortezomib	True	1
+training	WT clone 05	accuracy	0.45454545454545453	bortezomib	True	1
+training	WT_parental	accuracy	0.4626865671641791	bortezomib	True	1
+validation	BZ001	accuracy	0.75	bortezomib	True	1
+validation	BZ002	accuracy	0.0	bortezomib	True	1
 validation	BZ003	accuracy	0.5	bortezomib	True	1
-validation	BZ004	accuracy	0.25	bortezomib	True	1
-validation	BZ005	accuracy	0.5	bortezomib	True	1
-validation	CloneA	accuracy	0.75	bortezomib	True	1
-validation	CloneE	accuracy	1.0	bortezomib	True	1
+validation	BZ004	accuracy	0.5	bortezomib	True	1
+validation	BZ005	accuracy	0.75	bortezomib	True	1
+validation	CloneA	accuracy	0.25	bortezomib	True	1
+validation	CloneE	accuracy	0.0	bortezomib	True	1
 validation	WT clone 01	accuracy	0.5	bortezomib	True	1
-validation	WT clone 02	accuracy	1.0	bortezomib	True	1
+validation	WT clone 02	accuracy	0.75	bortezomib	True	1
 validation	WT clone 03	accuracy	0.5	bortezomib	True	1
 validation	WT clone 04	accuracy	0.5	bortezomib	True	1
-validation	WT clone 05	accuracy	0.75	bortezomib	True	1
-validation	WT_parental	accuracy	0.25	bortezomib	True	1
+validation	WT clone 05	accuracy	0.5	bortezomib	True	1
+validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	1
 inference	BZ001	avg_precision	1.0	bortezomib	True	1
 inference	BZ002	avg_precision	1.0	bortezomib	True	1
 inference	BZ003	avg_precision	1.0	bortezomib	True	1
@@ -292,78 +292,78 @@ validation	WT clone 04	avg_precision		bortezomib	True	1
 validation	WT clone 05	avg_precision		bortezomib	True	1
 validation	WT_parental	avg_precision		bortezomib	True	1
 inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	2
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	2
-inference	BZ003	accuracy	0.0	bortezomib	True	2
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	2
+inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	2
 inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	2
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	2
-inference	BZ006	accuracy	0.0	bortezomib	True	2
-inference	BZ007	accuracy	0.0	bortezomib	True	2
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	2
-inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	2
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	2
+inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	2
+inference	BZ007	accuracy	1.0	bortezomib	True	2
+inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	2
+inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	2
 inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	2
-inference	BZ011	accuracy	0.0	bortezomib	True	2
-inference	BZ012	accuracy	1.0	bortezomib	True	2
-inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	2
+inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	2
+inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	2
+inference	BZ013	accuracy	1.0	bortezomib	True	2
 inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	2
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	2
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	2
 inference	BZ016	accuracy	1.0	bortezomib	True	2
-inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	2
-inference	BZ018	accuracy	1.0	bortezomib	True	2
+inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	2
+inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	2
 inference	WT001	accuracy	0.3333333333333333	bortezomib	True	2
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	2
-inference	WT003	accuracy	1.0	bortezomib	True	2
-inference	WT004	accuracy	0.6666666666666666	bortezomib	True	2
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	2
+inference	WT003	accuracy	0.3333333333333333	bortezomib	True	2
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	2
 inference	WT005	accuracy	0.3333333333333333	bortezomib	True	2
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	2
-inference	WT007	accuracy	0.6666666666666666	bortezomib	True	2
+inference	WT006	accuracy	0.3333333333333333	bortezomib	True	2
+inference	WT007	accuracy	1.0	bortezomib	True	2
 inference	WT008	accuracy	0.3333333333333333	bortezomib	True	2
 inference	WT009	accuracy	0.3333333333333333	bortezomib	True	2
 inference	WT010	accuracy	0.0	bortezomib	True	2
-inference	WT011	accuracy	0.0	bortezomib	True	2
+inference	WT011	accuracy	0.6666666666666666	bortezomib	True	2
 inference	WT012	accuracy	0.3333333333333333	bortezomib	True	2
-inference	WT013	accuracy	0.3333333333333333	bortezomib	True	2
+inference	WT013	accuracy	0.0	bortezomib	True	2
 inference	WT014	accuracy	1.0	bortezomib	True	2
 inference	WT015	accuracy	0.3333333333333333	bortezomib	True	2
-inference	WT_parental	accuracy	0.6666666666666666	bortezomib	True	2
-test	BZ001	accuracy	0.0	bortezomib	True	2
-test	BZ002	accuracy	0.5	bortezomib	True	2
-test	BZ003	accuracy	1.0	bortezomib	True	2
-test	BZ004	accuracy	1.0	bortezomib	True	2
-test	BZ005	accuracy	0.0	bortezomib	True	2
-test	CloneA	accuracy	0.5	bortezomib	True	2
-test	CloneE	accuracy	1.0	bortezomib	True	2
-test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	2
-test	WT clone 02	accuracy	0.5	bortezomib	True	2
-test	WT clone 03	accuracy	0.0	bortezomib	True	2
-test	WT clone 04	accuracy	0.0	bortezomib	True	2
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	2
-test	WT_parental	accuracy	0.14285714285714285	bortezomib	True	2
-training	BZ001	accuracy	0.5714285714285714	bortezomib	True	2
-training	BZ002	accuracy	0.6428571428571429	bortezomib	True	2
-training	BZ003	accuracy	0.46153846153846156	bortezomib	True	2
-training	BZ004	accuracy	0.3076923076923077	bortezomib	True	2
-training	BZ005	accuracy	0.7857142857142857	bortezomib	True	2
-training	CloneA	accuracy	0.7142857142857143	bortezomib	True	2
-training	CloneE	accuracy	0.46153846153846156	bortezomib	True	2
-training	WT clone 01	accuracy	0.5384615384615384	bortezomib	True	2
-training	WT clone 02	accuracy	0.35714285714285715	bortezomib	True	2
-training	WT clone 03	accuracy	0.5	bortezomib	True	2
-training	WT clone 04	accuracy	0.2857142857142857	bortezomib	True	2
-training	WT clone 05	accuracy	0.5384615384615384	bortezomib	True	2
-training	WT_parental	accuracy	0.4634146341463415	bortezomib	True	2
+inference	WT_parental	accuracy	0.0	bortezomib	True	2
+test	BZ001	accuracy	0.6666666666666666	bortezomib	True	2
+test	BZ002	accuracy	0.6	bortezomib	True	2
+test	BZ003	accuracy	0.5	bortezomib	True	2
+test	BZ004	accuracy	0.3333333333333333	bortezomib	True	2
+test	BZ005	accuracy	0.4	bortezomib	True	2
+test	CloneA	accuracy	0.8	bortezomib	True	2
+test	CloneE	accuracy	0.6666666666666666	bortezomib	True	2
+test	WT clone 01	accuracy	0.5	bortezomib	True	2
+test	WT clone 02	accuracy	0.6	bortezomib	True	2
+test	WT clone 03	accuracy	0.8333333333333334	bortezomib	True	2
+test	WT clone 04	accuracy	0.4	bortezomib	True	2
+test	WT clone 05	accuracy	0.8333333333333334	bortezomib	True	2
+test	WT_parental	accuracy	0.4117647058823529	bortezomib	True	2
+training	BZ001	accuracy	0.6363636363636364	bortezomib	True	2
+training	BZ002	accuracy	0.5217391304347826	bortezomib	True	2
+training	BZ003	accuracy	0.5	bortezomib	True	2
+training	BZ004	accuracy	0.3181818181818182	bortezomib	True	2
+training	BZ005	accuracy	0.2608695652173913	bortezomib	True	2
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	2
+training	CloneE	accuracy	0.5909090909090909	bortezomib	True	2
+training	WT clone 01	accuracy	0.6363636363636364	bortezomib	True	2
+training	WT clone 02	accuracy	0.6086956521739131	bortezomib	True	2
+training	WT clone 03	accuracy	0.4090909090909091	bortezomib	True	2
+training	WT clone 04	accuracy	0.6086956521739131	bortezomib	True	2
+training	WT clone 05	accuracy	0.6363636363636364	bortezomib	True	2
+training	WT_parental	accuracy	0.5223880597014925	bortezomib	True	2
 validation	BZ001	accuracy	0.5	bortezomib	True	2
-validation	BZ002	accuracy	0.25	bortezomib	True	2
-validation	BZ003	accuracy	0.25	bortezomib	True	2
-validation	BZ004	accuracy	0.25	bortezomib	True	2
-validation	BZ005	accuracy	0.25	bortezomib	True	2
-validation	CloneA	accuracy	0.0	bortezomib	True	2
-validation	CloneE	accuracy	0.25	bortezomib	True	2
-validation	WT clone 01	accuracy	0.75	bortezomib	True	2
-validation	WT clone 02	accuracy	0.75	bortezomib	True	2
+validation	BZ002	accuracy	0.5	bortezomib	True	2
+validation	BZ003	accuracy	0.75	bortezomib	True	2
+validation	BZ004	accuracy	0.5	bortezomib	True	2
+validation	BZ005	accuracy	0.75	bortezomib	True	2
+validation	CloneA	accuracy	0.75	bortezomib	True	2
+validation	CloneE	accuracy	0.5	bortezomib	True	2
+validation	WT clone 01	accuracy	0.5	bortezomib	True	2
+validation	WT clone 02	accuracy	0.5	bortezomib	True	2
 validation	WT clone 03	accuracy	0.25	bortezomib	True	2
-validation	WT clone 04	accuracy	0.75	bortezomib	True	2
-validation	WT clone 05	accuracy	0.75	bortezomib	True	2
-validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	2
+validation	WT clone 04	accuracy	0.25	bortezomib	True	2
+validation	WT clone 05	accuracy	0.0	bortezomib	True	2
+validation	WT_parental	accuracy	0.3333333333333333	bortezomib	True	2
 inference	BZ001	avg_precision	1.0	bortezomib	True	2
 inference	BZ002	avg_precision	1.0	bortezomib	True	2
 inference	BZ003	avg_precision	1.0	bortezomib	True	2
@@ -437,78 +437,78 @@ validation	WT clone 03	avg_precision		bortezomib	True	2
 validation	WT clone 04	avg_precision		bortezomib	True	2
 validation	WT clone 05	avg_precision		bortezomib	True	2
 validation	WT_parental	avg_precision		bortezomib	True	2
-inference	BZ001	accuracy	1.0	bortezomib	True	3
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	3
-inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	3
-inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	3
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	3
+inference	BZ005	accuracy	1.0	bortezomib	True	3
 inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	3
 inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	3
-inference	BZ008	accuracy	0.0	bortezomib	True	3
-inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	3
+inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	3
 inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	3
-inference	BZ011	accuracy	1.0	bortezomib	True	3
-inference	BZ012	accuracy	0.0	bortezomib	True	3
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	3
-inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	3
-inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ013	accuracy	1.0	bortezomib	True	3
+inference	BZ014	accuracy	1.0	bortezomib	True	3
+inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	3
 inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	3
-inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	3
-inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	3
-inference	WT001	accuracy	0.6666666666666666	bortezomib	True	3
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	3
-inference	WT003	accuracy	0.6666666666666666	bortezomib	True	3
+inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	3
+inference	BZ018	accuracy	1.0	bortezomib	True	3
+inference	WT001	accuracy	0.3333333333333333	bortezomib	True	3
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	3
+inference	WT003	accuracy	0.0	bortezomib	True	3
 inference	WT004	accuracy	0.3333333333333333	bortezomib	True	3
 inference	WT005	accuracy	1.0	bortezomib	True	3
 inference	WT006	accuracy	0.3333333333333333	bortezomib	True	3
-inference	WT007	accuracy	0.3333333333333333	bortezomib	True	3
-inference	WT008	accuracy	0.6666666666666666	bortezomib	True	3
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	3
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	3
-inference	WT011	accuracy	0.3333333333333333	bortezomib	True	3
-inference	WT012	accuracy	0.3333333333333333	bortezomib	True	3
-inference	WT013	accuracy	1.0	bortezomib	True	3
+inference	WT007	accuracy	0.0	bortezomib	True	3
+inference	WT008	accuracy	0.0	bortezomib	True	3
+inference	WT009	accuracy	1.0	bortezomib	True	3
+inference	WT010	accuracy	0.0	bortezomib	True	3
+inference	WT011	accuracy	1.0	bortezomib	True	3
+inference	WT012	accuracy	0.6666666666666666	bortezomib	True	3
+inference	WT013	accuracy	0.6666666666666666	bortezomib	True	3
 inference	WT014	accuracy	0.3333333333333333	bortezomib	True	3
 inference	WT015	accuracy	0.3333333333333333	bortezomib	True	3
 inference	WT_parental	accuracy	0.6666666666666666	bortezomib	True	3
-test	BZ001	accuracy	1.0	bortezomib	True	3
-test	BZ002	accuracy	0.5	bortezomib	True	3
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	3
-test	BZ004	accuracy	0.3333333333333333	bortezomib	True	3
-test	BZ005	accuracy	1.0	bortezomib	True	3
-test	CloneA	accuracy	1.0	bortezomib	True	3
-test	CloneE	accuracy	0.3333333333333333	bortezomib	True	3
-test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	3
-test	WT clone 02	accuracy	0.0	bortezomib	True	3
-test	WT clone 03	accuracy	0.0	bortezomib	True	3
-test	WT clone 04	accuracy	0.5	bortezomib	True	3
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	3
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	3
-training	BZ001	accuracy	0.5	bortezomib	True	3
-training	BZ002	accuracy	0.2857142857142857	bortezomib	True	3
-training	BZ003	accuracy	0.5384615384615384	bortezomib	True	3
-training	BZ004	accuracy	0.7692307692307693	bortezomib	True	3
-training	BZ005	accuracy	0.5714285714285714	bortezomib	True	3
-training	CloneA	accuracy	0.42857142857142855	bortezomib	True	3
-training	CloneE	accuracy	0.38461538461538464	bortezomib	True	3
-training	WT clone 01	accuracy	0.38461538461538464	bortezomib	True	3
-training	WT clone 02	accuracy	0.5714285714285714	bortezomib	True	3
-training	WT clone 03	accuracy	0.5	bortezomib	True	3
-training	WT clone 04	accuracy	0.6428571428571429	bortezomib	True	3
-training	WT clone 05	accuracy	0.23076923076923078	bortezomib	True	3
-training	WT_parental	accuracy	0.4634146341463415	bortezomib	True	3
-validation	BZ001	accuracy	0.5	bortezomib	True	3
-validation	BZ002	accuracy	0.75	bortezomib	True	3
-validation	BZ003	accuracy	0.0	bortezomib	True	3
-validation	BZ004	accuracy	0.75	bortezomib	True	3
+test	BZ001	accuracy	0.5	bortezomib	True	3
+test	BZ002	accuracy	0.8	bortezomib	True	3
+test	BZ003	accuracy	0.3333333333333333	bortezomib	True	3
+test	BZ004	accuracy	0.16666666666666666	bortezomib	True	3
+test	BZ005	accuracy	0.6	bortezomib	True	3
+test	CloneA	accuracy	0.4	bortezomib	True	3
+test	CloneE	accuracy	0.6666666666666666	bortezomib	True	3
+test	WT clone 01	accuracy	0.16666666666666666	bortezomib	True	3
+test	WT clone 02	accuracy	0.2	bortezomib	True	3
+test	WT clone 03	accuracy	0.8333333333333334	bortezomib	True	3
+test	WT clone 04	accuracy	0.8	bortezomib	True	3
+test	WT clone 05	accuracy	0.16666666666666666	bortezomib	True	3
+test	WT_parental	accuracy	0.29411764705882354	bortezomib	True	3
+training	BZ001	accuracy	0.4090909090909091	bortezomib	True	3
+training	BZ002	accuracy	0.43478260869565216	bortezomib	True	3
+training	BZ003	accuracy	0.5454545454545454	bortezomib	True	3
+training	BZ004	accuracy	0.45454545454545453	bortezomib	True	3
+training	BZ005	accuracy	0.4782608695652174	bortezomib	True	3
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	3
+training	CloneE	accuracy	0.5454545454545454	bortezomib	True	3
+training	WT clone 01	accuracy	0.7272727272727273	bortezomib	True	3
+training	WT clone 02	accuracy	0.391304347826087	bortezomib	True	3
+training	WT clone 03	accuracy	0.3181818181818182	bortezomib	True	3
+training	WT clone 04	accuracy	0.34782608695652173	bortezomib	True	3
+training	WT clone 05	accuracy	0.5	bortezomib	True	3
+training	WT_parental	accuracy	0.5671641791044776	bortezomib	True	3
+validation	BZ001	accuracy	0.75	bortezomib	True	3
+validation	BZ002	accuracy	0.25	bortezomib	True	3
+validation	BZ003	accuracy	0.75	bortezomib	True	3
+validation	BZ004	accuracy	0.5	bortezomib	True	3
 validation	BZ005	accuracy	0.5	bortezomib	True	3
-validation	CloneA	accuracy	0.75	bortezomib	True	3
-validation	CloneE	accuracy	0.5	bortezomib	True	3
-validation	WT clone 01	accuracy	0.75	bortezomib	True	3
-validation	WT clone 02	accuracy	0.75	bortezomib	True	3
-validation	WT clone 03	accuracy	0.5	bortezomib	True	3
-validation	WT clone 04	accuracy	0.25	bortezomib	True	3
-validation	WT clone 05	accuracy	0.5	bortezomib	True	3
+validation	CloneA	accuracy	0.5	bortezomib	True	3
+validation	CloneE	accuracy	1.0	bortezomib	True	3
+validation	WT clone 01	accuracy	0.5	bortezomib	True	3
+validation	WT clone 02	accuracy	1.0	bortezomib	True	3
+validation	WT clone 03	accuracy	0.25	bortezomib	True	3
+validation	WT clone 04	accuracy	1.0	bortezomib	True	3
+validation	WT clone 05	accuracy	1.0	bortezomib	True	3
 validation	WT_parental	accuracy	0.5	bortezomib	True	3
 inference	BZ001	avg_precision	1.0	bortezomib	True	3
 inference	BZ002	avg_precision	1.0	bortezomib	True	3
@@ -583,79 +583,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	3
 validation	WT clone 04	avg_precision		bortezomib	True	3
 validation	WT clone 05	avg_precision		bortezomib	True	3
 validation	WT_parental	avg_precision		bortezomib	True	3
-inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	4
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	4
-inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	4
-inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	4
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	4
-inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	4
-inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	4
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	4
-inference	BZ009	accuracy	0.0	bortezomib	True	4
-inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	4
-inference	BZ011	accuracy	0.0	bortezomib	True	4
-inference	BZ012	accuracy	0.0	bortezomib	True	4
+inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ005	accuracy	0.0	bortezomib	True	4
+inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	4
+inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ008	accuracy	1.0	bortezomib	True	4
+inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	4
+inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	4
 inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	4
-inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	4
-inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	4
+inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	4
 inference	BZ016	accuracy	0.0	bortezomib	True	4
-inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	4
-inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	4
-inference	WT001	accuracy	0.6666666666666666	bortezomib	True	4
+inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	4
+inference	BZ018	accuracy	0.0	bortezomib	True	4
+inference	WT001	accuracy	0.0	bortezomib	True	4
 inference	WT002	accuracy	0.6666666666666666	bortezomib	True	4
-inference	WT003	accuracy	0.3333333333333333	bortezomib	True	4
-inference	WT004	accuracy	0.3333333333333333	bortezomib	True	4
+inference	WT003	accuracy	0.6666666666666666	bortezomib	True	4
+inference	WT004	accuracy	0.6666666666666666	bortezomib	True	4
 inference	WT005	accuracy	0.3333333333333333	bortezomib	True	4
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	4
+inference	WT006	accuracy	0.3333333333333333	bortezomib	True	4
 inference	WT007	accuracy	0.3333333333333333	bortezomib	True	4
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	4
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	4
 inference	WT009	accuracy	0.6666666666666666	bortezomib	True	4
-inference	WT010	accuracy	0.0	bortezomib	True	4
-inference	WT011	accuracy	0.6666666666666666	bortezomib	True	4
-inference	WT012	accuracy	0.3333333333333333	bortezomib	True	4
-inference	WT013	accuracy	1.0	bortezomib	True	4
-inference	WT014	accuracy	0.0	bortezomib	True	4
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	4
-inference	WT_parental	accuracy	0.16666666666666666	bortezomib	True	4
-test	BZ001	accuracy	0.0	bortezomib	True	4
-test	BZ002	accuracy	0.0	bortezomib	True	4
+inference	WT010	accuracy	0.6666666666666666	bortezomib	True	4
+inference	WT011	accuracy	0.3333333333333333	bortezomib	True	4
+inference	WT012	accuracy	1.0	bortezomib	True	4
+inference	WT013	accuracy	0.6666666666666666	bortezomib	True	4
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	4
+inference	WT015	accuracy	1.0	bortezomib	True	4
+inference	WT_parental	accuracy	0.8333333333333334	bortezomib	True	4
+test	BZ001	accuracy	0.8333333333333334	bortezomib	True	4
+test	BZ002	accuracy	0.2	bortezomib	True	4
 test	BZ003	accuracy	0.3333333333333333	bortezomib	True	4
-test	BZ004	accuracy	0.3333333333333333	bortezomib	True	4
-test	BZ005	accuracy	0.5	bortezomib	True	4
-test	CloneA	accuracy	0.5	bortezomib	True	4
-test	CloneE	accuracy	0.3333333333333333	bortezomib	True	4
-test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	4
-test	WT clone 02	accuracy	0.5	bortezomib	True	4
-test	WT clone 03	accuracy	0.5	bortezomib	True	4
-test	WT clone 04	accuracy	0.0	bortezomib	True	4
-test	WT clone 05	accuracy	0.0	bortezomib	True	4
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	4
-training	BZ001	accuracy	0.7857142857142857	bortezomib	True	4
-training	BZ002	accuracy	0.6428571428571429	bortezomib	True	4
-training	BZ003	accuracy	0.23076923076923078	bortezomib	True	4
-training	BZ004	accuracy	0.5384615384615384	bortezomib	True	4
-training	BZ005	accuracy	0.6428571428571429	bortezomib	True	4
-training	CloneA	accuracy	0.5	bortezomib	True	4
-training	CloneE	accuracy	0.6153846153846154	bortezomib	True	4
-training	WT clone 01	accuracy	0.23076923076923078	bortezomib	True	4
-training	WT clone 02	accuracy	0.42857142857142855	bortezomib	True	4
-training	WT clone 03	accuracy	0.6428571428571429	bortezomib	True	4
-training	WT clone 04	accuracy	0.35714285714285715	bortezomib	True	4
-training	WT clone 05	accuracy	0.5384615384615384	bortezomib	True	4
-training	WT_parental	accuracy	0.4634146341463415	bortezomib	True	4
-validation	BZ001	accuracy	0.5	bortezomib	True	4
-validation	BZ002	accuracy	0.5	bortezomib	True	4
-validation	BZ003	accuracy	0.75	bortezomib	True	4
+test	BZ004	accuracy	0.8333333333333334	bortezomib	True	4
+test	BZ005	accuracy	0.4	bortezomib	True	4
+test	CloneA	accuracy	0.8	bortezomib	True	4
+test	CloneE	accuracy	0.8333333333333334	bortezomib	True	4
+test	WT clone 01	accuracy	0.5	bortezomib	True	4
+test	WT clone 02	accuracy	0.2	bortezomib	True	4
+test	WT clone 03	accuracy	0.8333333333333334	bortezomib	True	4
+test	WT clone 04	accuracy	0.4	bortezomib	True	4
+test	WT clone 05	accuracy	0.5	bortezomib	True	4
+test	WT_parental	accuracy	0.35294117647058826	bortezomib	True	4
+training	BZ001	accuracy	0.5909090909090909	bortezomib	True	4
+training	BZ002	accuracy	0.391304347826087	bortezomib	True	4
+training	BZ003	accuracy	0.6818181818181818	bortezomib	True	4
+training	BZ004	accuracy	0.5909090909090909	bortezomib	True	4
+training	BZ005	accuracy	0.5652173913043478	bortezomib	True	4
+training	CloneA	accuracy	0.391304347826087	bortezomib	True	4
+training	CloneE	accuracy	0.2727272727272727	bortezomib	True	4
+training	WT clone 01	accuracy	0.4090909090909091	bortezomib	True	4
+training	WT clone 02	accuracy	0.34782608695652173	bortezomib	True	4
+training	WT clone 03	accuracy	0.45454545454545453	bortezomib	True	4
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	4
+training	WT clone 05	accuracy	0.6363636363636364	bortezomib	True	4
+training	WT_parental	accuracy	0.44776119402985076	bortezomib	True	4
+validation	BZ001	accuracy	0.75	bortezomib	True	4
+validation	BZ002	accuracy	0.25	bortezomib	True	4
+validation	BZ003	accuracy	0.5	bortezomib	True	4
 validation	BZ004	accuracy	0.5	bortezomib	True	4
-validation	BZ005	accuracy	0.0	bortezomib	True	4
+validation	BZ005	accuracy	0.75	bortezomib	True	4
 validation	CloneA	accuracy	0.25	bortezomib	True	4
-validation	CloneE	accuracy	1.0	bortezomib	True	4
-validation	WT clone 01	accuracy	0.25	bortezomib	True	4
-validation	WT clone 02	accuracy	0.5	bortezomib	True	4
-validation	WT clone 03	accuracy	0.75	bortezomib	True	4
-validation	WT clone 04	accuracy	0.5	bortezomib	True	4
-validation	WT clone 05	accuracy	0.5	bortezomib	True	4
-validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	4
+validation	CloneE	accuracy	0.25	bortezomib	True	4
+validation	WT clone 01	accuracy	0.5	bortezomib	True	4
+validation	WT clone 02	accuracy	0.75	bortezomib	True	4
+validation	WT clone 03	accuracy	0.5	bortezomib	True	4
+validation	WT clone 04	accuracy	0.25	bortezomib	True	4
+validation	WT clone 05	accuracy	0.25	bortezomib	True	4
+validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	4
 inference	BZ001	avg_precision	1.0	bortezomib	True	4
 inference	BZ002	avg_precision	1.0	bortezomib	True	4
 inference	BZ003	avg_precision	1.0	bortezomib	True	4
@@ -729,79 +729,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	4
 validation	WT clone 04	avg_precision		bortezomib	True	4
 validation	WT clone 05	avg_precision		bortezomib	True	4
 validation	WT_parental	avg_precision		bortezomib	True	4
-inference	BZ001	accuracy	0.0	bortezomib	True	5
-inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	5
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	5
-inference	BZ004	accuracy	0.0	bortezomib	True	5
+inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	5
+inference	BZ002	accuracy	1.0	bortezomib	True	5
+inference	BZ003	accuracy	1.0	bortezomib	True	5
+inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	5
 inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	5
 inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	5
-inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	5
+inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	5
 inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	5
-inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	5
-inference	BZ010	accuracy	0.0	bortezomib	True	5
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	5
-inference	BZ012	accuracy	0.0	bortezomib	True	5
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	5
+inference	BZ009	accuracy	1.0	bortezomib	True	5
+inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	5
+inference	BZ011	accuracy	0.0	bortezomib	True	5
+inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	5
+inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	5
 inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	5
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	5
-inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	5
-inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	5
-inference	BZ018	accuracy	0.0	bortezomib	True	5
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	5
+inference	BZ016	accuracy	1.0	bortezomib	True	5
+inference	BZ017	accuracy	1.0	bortezomib	True	5
+inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	5
 inference	WT001	accuracy	0.0	bortezomib	True	5
 inference	WT002	accuracy	0.3333333333333333	bortezomib	True	5
 inference	WT003	accuracy	0.3333333333333333	bortezomib	True	5
 inference	WT004	accuracy	0.3333333333333333	bortezomib	True	5
-inference	WT005	accuracy	0.6666666666666666	bortezomib	True	5
-inference	WT006	accuracy	0.3333333333333333	bortezomib	True	5
-inference	WT007	accuracy	0.6666666666666666	bortezomib	True	5
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	5
-inference	WT009	accuracy	0.3333333333333333	bortezomib	True	5
-inference	WT010	accuracy	1.0	bortezomib	True	5
+inference	WT005	accuracy	0.3333333333333333	bortezomib	True	5
+inference	WT006	accuracy	1.0	bortezomib	True	5
+inference	WT007	accuracy	0.3333333333333333	bortezomib	True	5
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	5
+inference	WT009	accuracy	0.0	bortezomib	True	5
+inference	WT010	accuracy	0.0	bortezomib	True	5
 inference	WT011	accuracy	0.6666666666666666	bortezomib	True	5
 inference	WT012	accuracy	0.6666666666666666	bortezomib	True	5
-inference	WT013	accuracy	0.0	bortezomib	True	5
-inference	WT014	accuracy	0.6666666666666666	bortezomib	True	5
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	5
-inference	WT_parental	accuracy	0.16666666666666666	bortezomib	True	5
-test	BZ001	accuracy	0.5	bortezomib	True	5
-test	BZ002	accuracy	0.5	bortezomib	True	5
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	5
-test	BZ004	accuracy	0.6666666666666666	bortezomib	True	5
-test	BZ005	accuracy	0.5	bortezomib	True	5
-test	CloneA	accuracy	1.0	bortezomib	True	5
-test	CloneE	accuracy	0.0	bortezomib	True	5
-test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	5
-test	WT clone 02	accuracy	0.5	bortezomib	True	5
-test	WT clone 03	accuracy	0.5	bortezomib	True	5
-test	WT clone 04	accuracy	0.5	bortezomib	True	5
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	5
-test	WT_parental	accuracy	0.7142857142857143	bortezomib	True	5
-training	BZ001	accuracy	0.5714285714285714	bortezomib	True	5
-training	BZ002	accuracy	0.42857142857142855	bortezomib	True	5
-training	BZ003	accuracy	0.5384615384615384	bortezomib	True	5
-training	BZ004	accuracy	0.46153846153846156	bortezomib	True	5
-training	BZ005	accuracy	0.5714285714285714	bortezomib	True	5
-training	CloneA	accuracy	0.5	bortezomib	True	5
-training	CloneE	accuracy	0.5384615384615384	bortezomib	True	5
-training	WT clone 01	accuracy	0.46153846153846156	bortezomib	True	5
-training	WT clone 02	accuracy	0.5714285714285714	bortezomib	True	5
-training	WT clone 03	accuracy	0.6428571428571429	bortezomib	True	5
-training	WT clone 04	accuracy	0.42857142857142855	bortezomib	True	5
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	5
-training	WT_parental	accuracy	0.3902439024390244	bortezomib	True	5
-validation	BZ001	accuracy	0.75	bortezomib	True	5
-validation	BZ002	accuracy	0.75	bortezomib	True	5
-validation	BZ003	accuracy	0.75	bortezomib	True	5
-validation	BZ004	accuracy	0.5	bortezomib	True	5
-validation	BZ005	accuracy	0.25	bortezomib	True	5
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	5
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	5
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	5
+inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	5
+test	BZ001	accuracy	0.6666666666666666	bortezomib	True	5
+test	BZ002	accuracy	0.4	bortezomib	True	5
+test	BZ003	accuracy	0.16666666666666666	bortezomib	True	5
+test	BZ004	accuracy	0.3333333333333333	bortezomib	True	5
+test	BZ005	accuracy	0.4	bortezomib	True	5
+test	CloneA	accuracy	0.2	bortezomib	True	5
+test	CloneE	accuracy	0.16666666666666666	bortezomib	True	5
+test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	5
+test	WT clone 02	accuracy	0.6	bortezomib	True	5
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	5
+test	WT clone 04	accuracy	0.2	bortezomib	True	5
+test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	5
+test	WT_parental	accuracy	0.23529411764705882	bortezomib	True	5
+training	BZ001	accuracy	0.5909090909090909	bortezomib	True	5
+training	BZ002	accuracy	0.5652173913043478	bortezomib	True	5
+training	BZ003	accuracy	0.4090909090909091	bortezomib	True	5
+training	BZ004	accuracy	0.4090909090909091	bortezomib	True	5
+training	BZ005	accuracy	0.6086956521739131	bortezomib	True	5
+training	CloneA	accuracy	0.43478260869565216	bortezomib	True	5
+training	CloneE	accuracy	0.4090909090909091	bortezomib	True	5
+training	WT clone 01	accuracy	0.6363636363636364	bortezomib	True	5
+training	WT clone 02	accuracy	0.5652173913043478	bortezomib	True	5
+training	WT clone 03	accuracy	0.5454545454545454	bortezomib	True	5
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	5
+training	WT clone 05	accuracy	0.5454545454545454	bortezomib	True	5
+training	WT_parental	accuracy	0.417910447761194	bortezomib	True	5
+validation	BZ001	accuracy	0.5	bortezomib	True	5
+validation	BZ002	accuracy	0.5	bortezomib	True	5
+validation	BZ003	accuracy	0.5	bortezomib	True	5
+validation	BZ004	accuracy	0.25	bortezomib	True	5
+validation	BZ005	accuracy	0.75	bortezomib	True	5
 validation	CloneA	accuracy	0.75	bortezomib	True	5
-validation	CloneE	accuracy	1.0	bortezomib	True	5
+validation	CloneE	accuracy	0.25	bortezomib	True	5
 validation	WT clone 01	accuracy	0.5	bortezomib	True	5
 validation	WT clone 02	accuracy	0.5	bortezomib	True	5
 validation	WT clone 03	accuracy	0.5	bortezomib	True	5
-validation	WT clone 04	accuracy	0.25	bortezomib	True	5
-validation	WT clone 05	accuracy	0.0	bortezomib	True	5
-validation	WT_parental	accuracy	0.75	bortezomib	True	5
+validation	WT clone 04	accuracy	0.75	bortezomib	True	5
+validation	WT clone 05	accuracy	0.5	bortezomib	True	5
+validation	WT_parental	accuracy	0.3333333333333333	bortezomib	True	5
 inference	BZ001	avg_precision	1.0	bortezomib	True	5
 inference	BZ002	avg_precision	1.0	bortezomib	True	5
 inference	BZ003	avg_precision	1.0	bortezomib	True	5
@@ -878,76 +878,76 @@ validation	WT_parental	avg_precision		bortezomib	True	5
 inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	6
 inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	6
 inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	6
-inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	6
+inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	6
 inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	6
 inference	BZ006	accuracy	1.0	bortezomib	True	6
-inference	BZ007	accuracy	1.0	bortezomib	True	6
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	6
+inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	6
+inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	6
 inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	6
 inference	BZ010	accuracy	0.0	bortezomib	True	6
 inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	6
-inference	BZ012	accuracy	0.0	bortezomib	True	6
+inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	6
 inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	6
 inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	6
-inference	BZ015	accuracy	1.0	bortezomib	True	6
-inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	6
-inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	6
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	6
+inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	6
+inference	BZ017	accuracy	0.0	bortezomib	True	6
 inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	6
-inference	WT001	accuracy	0.6666666666666666	bortezomib	True	6
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	6
+inference	WT001	accuracy	0.3333333333333333	bortezomib	True	6
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	6
 inference	WT003	accuracy	0.3333333333333333	bortezomib	True	6
-inference	WT004	accuracy	0.0	bortezomib	True	6
-inference	WT005	accuracy	0.3333333333333333	bortezomib	True	6
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	6
+inference	WT004	accuracy	0.6666666666666666	bortezomib	True	6
+inference	WT005	accuracy	0.6666666666666666	bortezomib	True	6
+inference	WT006	accuracy	0.3333333333333333	bortezomib	True	6
 inference	WT007	accuracy	0.3333333333333333	bortezomib	True	6
 inference	WT008	accuracy	0.3333333333333333	bortezomib	True	6
 inference	WT009	accuracy	0.3333333333333333	bortezomib	True	6
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	6
-inference	WT011	accuracy	0.6666666666666666	bortezomib	True	6
-inference	WT012	accuracy	0.0	bortezomib	True	6
-inference	WT013	accuracy	0.6666666666666666	bortezomib	True	6
+inference	WT010	accuracy	1.0	bortezomib	True	6
+inference	WT011	accuracy	0.3333333333333333	bortezomib	True	6
+inference	WT012	accuracy	0.3333333333333333	bortezomib	True	6
+inference	WT013	accuracy	1.0	bortezomib	True	6
 inference	WT014	accuracy	0.3333333333333333	bortezomib	True	6
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	6
-inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	6
-test	BZ001	accuracy	1.0	bortezomib	True	6
-test	BZ002	accuracy	0.5	bortezomib	True	6
-test	BZ003	accuracy	0.3333333333333333	bortezomib	True	6
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	6
+inference	WT_parental	accuracy	0.6666666666666666	bortezomib	True	6
+test	BZ001	accuracy	0.6666666666666666	bortezomib	True	6
+test	BZ002	accuracy	0.6	bortezomib	True	6
+test	BZ003	accuracy	0.5	bortezomib	True	6
 test	BZ004	accuracy	0.6666666666666666	bortezomib	True	6
-test	BZ005	accuracy	0.5	bortezomib	True	6
-test	CloneA	accuracy	1.0	bortezomib	True	6
-test	CloneE	accuracy	0.3333333333333333	bortezomib	True	6
-test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	6
-test	WT clone 02	accuracy	1.0	bortezomib	True	6
-test	WT clone 03	accuracy	1.0	bortezomib	True	6
-test	WT clone 04	accuracy	0.5	bortezomib	True	6
-test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	6
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	6
-training	BZ001	accuracy	0.5	bortezomib	True	6
-training	BZ002	accuracy	0.5714285714285714	bortezomib	True	6
-training	BZ003	accuracy	0.6153846153846154	bortezomib	True	6
-training	BZ004	accuracy	0.5384615384615384	bortezomib	True	6
-training	BZ005	accuracy	0.5714285714285714	bortezomib	True	6
-training	CloneA	accuracy	0.5714285714285714	bortezomib	True	6
-training	CloneE	accuracy	0.5384615384615384	bortezomib	True	6
-training	WT clone 01	accuracy	0.5384615384615384	bortezomib	True	6
-training	WT clone 02	accuracy	0.2857142857142857	bortezomib	True	6
-training	WT clone 03	accuracy	0.5714285714285714	bortezomib	True	6
-training	WT clone 04	accuracy	0.42857142857142855	bortezomib	True	6
-training	WT clone 05	accuracy	0.6923076923076923	bortezomib	True	6
-training	WT_parental	accuracy	0.4878048780487805	bortezomib	True	6
+test	BZ005	accuracy	0.2	bortezomib	True	6
+test	CloneA	accuracy	0.4	bortezomib	True	6
+test	CloneE	accuracy	0.6666666666666666	bortezomib	True	6
+test	WT clone 01	accuracy	0.5	bortezomib	True	6
+test	WT clone 02	accuracy	0.6	bortezomib	True	6
+test	WT clone 03	accuracy	0.5	bortezomib	True	6
+test	WT clone 04	accuracy	0.0	bortezomib	True	6
+test	WT clone 05	accuracy	0.5	bortezomib	True	6
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	6
+training	BZ001	accuracy	0.45454545454545453	bortezomib	True	6
+training	BZ002	accuracy	0.5652173913043478	bortezomib	True	6
+training	BZ003	accuracy	0.45454545454545453	bortezomib	True	6
+training	BZ004	accuracy	0.5	bortezomib	True	6
+training	BZ005	accuracy	0.43478260869565216	bortezomib	True	6
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	6
+training	CloneE	accuracy	0.5	bortezomib	True	6
+training	WT clone 01	accuracy	0.5454545454545454	bortezomib	True	6
+training	WT clone 02	accuracy	0.391304347826087	bortezomib	True	6
+training	WT clone 03	accuracy	0.5909090909090909	bortezomib	True	6
+training	WT clone 04	accuracy	0.6086956521739131	bortezomib	True	6
+training	WT clone 05	accuracy	0.2727272727272727	bortezomib	True	6
+training	WT_parental	accuracy	0.3880597014925373	bortezomib	True	6
 validation	BZ001	accuracy	0.5	bortezomib	True	6
-validation	BZ002	accuracy	0.25	bortezomib	True	6
-validation	BZ003	accuracy	0.75	bortezomib	True	6
-validation	BZ004	accuracy	0.25	bortezomib	True	6
+validation	BZ002	accuracy	0.5	bortezomib	True	6
+validation	BZ003	accuracy	0.25	bortezomib	True	6
+validation	BZ004	accuracy	0.5	bortezomib	True	6
 validation	BZ005	accuracy	0.75	bortezomib	True	6
-validation	CloneA	accuracy	0.0	bortezomib	True	6
-validation	CloneE	accuracy	0.25	bortezomib	True	6
+validation	CloneA	accuracy	0.5	bortezomib	True	6
+validation	CloneE	accuracy	0.75	bortezomib	True	6
 validation	WT clone 01	accuracy	0.5	bortezomib	True	6
-validation	WT clone 02	accuracy	0.25	bortezomib	True	6
-validation	WT clone 03	accuracy	0.75	bortezomib	True	6
+validation	WT clone 02	accuracy	1.0	bortezomib	True	6
+validation	WT clone 03	accuracy	0.5	bortezomib	True	6
 validation	WT clone 04	accuracy	0.5	bortezomib	True	6
 validation	WT clone 05	accuracy	0.5	bortezomib	True	6
-validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	6
+validation	WT_parental	accuracy	0.5	bortezomib	True	6
 inference	BZ001	avg_precision	1.0	bortezomib	True	6
 inference	BZ002	avg_precision	1.0	bortezomib	True	6
 inference	BZ003	avg_precision	1.0	bortezomib	True	6
@@ -1021,79 +1021,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	6
 validation	WT clone 04	avg_precision		bortezomib	True	6
 validation	WT clone 05	avg_precision		bortezomib	True	6
 validation	WT_parental	avg_precision		bortezomib	True	6
-inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	7
-inference	BZ002	accuracy	1.0	bortezomib	True	7
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	7
-inference	BZ004	accuracy	0.0	bortezomib	True	7
-inference	BZ005	accuracy	1.0	bortezomib	True	7
-inference	BZ006	accuracy	1.0	bortezomib	True	7
+inference	BZ001	accuracy	0.0	bortezomib	True	7
+inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	7
+inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	7
+inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	7
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	7
+inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	7
 inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	7
-inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	7
-inference	BZ009	accuracy	1.0	bortezomib	True	7
-inference	BZ010	accuracy	0.0	bortezomib	True	7
+inference	BZ008	accuracy	0.0	bortezomib	True	7
+inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	7
+inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	7
 inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	7
-inference	BZ012	accuracy	1.0	bortezomib	True	7
+inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	7
 inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	7
-inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	7
-inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	7
-inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	7
+inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	7
+inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	7
+inference	BZ016	accuracy	1.0	bortezomib	True	7
 inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	7
-inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	7
-inference	WT001	accuracy	1.0	bortezomib	True	7
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	7
-inference	WT003	accuracy	0.3333333333333333	bortezomib	True	7
-inference	WT004	accuracy	0.6666666666666666	bortezomib	True	7
-inference	WT005	accuracy	0.0	bortezomib	True	7
+inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	7
+inference	WT001	accuracy	0.6666666666666666	bortezomib	True	7
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	7
+inference	WT003	accuracy	1.0	bortezomib	True	7
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	7
+inference	WT005	accuracy	0.3333333333333333	bortezomib	True	7
 inference	WT006	accuracy	0.3333333333333333	bortezomib	True	7
 inference	WT007	accuracy	0.3333333333333333	bortezomib	True	7
 inference	WT008	accuracy	0.6666666666666666	bortezomib	True	7
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	7
+inference	WT009	accuracy	0.3333333333333333	bortezomib	True	7
 inference	WT010	accuracy	0.3333333333333333	bortezomib	True	7
 inference	WT011	accuracy	0.3333333333333333	bortezomib	True	7
 inference	WT012	accuracy	0.3333333333333333	bortezomib	True	7
-inference	WT013	accuracy	1.0	bortezomib	True	7
-inference	WT014	accuracy	0.3333333333333333	bortezomib	True	7
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	7
+inference	WT014	accuracy	0.6666666666666666	bortezomib	True	7
 inference	WT015	accuracy	0.3333333333333333	bortezomib	True	7
-inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	7
-test	BZ001	accuracy	0.5	bortezomib	True	7
-test	BZ002	accuracy	0.5	bortezomib	True	7
+inference	WT_parental	accuracy	0.5	bortezomib	True	7
+test	BZ001	accuracy	0.3333333333333333	bortezomib	True	7
+test	BZ002	accuracy	0.4	bortezomib	True	7
 test	BZ003	accuracy	0.6666666666666666	bortezomib	True	7
-test	BZ004	accuracy	0.6666666666666666	bortezomib	True	7
-test	BZ005	accuracy	0.5	bortezomib	True	7
-test	CloneA	accuracy	0.5	bortezomib	True	7
-test	CloneE	accuracy	0.0	bortezomib	True	7
+test	BZ004	accuracy	0.16666666666666666	bortezomib	True	7
+test	BZ005	accuracy	0.4	bortezomib	True	7
+test	CloneA	accuracy	0.4	bortezomib	True	7
+test	CloneE	accuracy	0.6666666666666666	bortezomib	True	7
 test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	7
-test	WT clone 02	accuracy	0.5	bortezomib	True	7
-test	WT clone 03	accuracy	0.0	bortezomib	True	7
-test	WT clone 04	accuracy	1.0	bortezomib	True	7
-test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	7
-test	WT_parental	accuracy	0.5714285714285714	bortezomib	True	7
-training	BZ001	accuracy	0.5	bortezomib	True	7
-training	BZ002	accuracy	0.5	bortezomib	True	7
-training	BZ003	accuracy	0.5384615384615384	bortezomib	True	7
-training	BZ004	accuracy	0.5384615384615384	bortezomib	True	7
-training	BZ005	accuracy	0.42857142857142855	bortezomib	True	7
-training	CloneA	accuracy	0.42857142857142855	bortezomib	True	7
-training	CloneE	accuracy	0.3076923076923077	bortezomib	True	7
-training	WT clone 01	accuracy	0.46153846153846156	bortezomib	True	7
-training	WT clone 02	accuracy	0.2857142857142857	bortezomib	True	7
-training	WT clone 03	accuracy	0.42857142857142855	bortezomib	True	7
-training	WT clone 04	accuracy	0.21428571428571427	bortezomib	True	7
-training	WT clone 05	accuracy	0.5384615384615384	bortezomib	True	7
-training	WT_parental	accuracy	0.6097560975609756	bortezomib	True	7
+test	WT clone 02	accuracy	0.8	bortezomib	True	7
+test	WT clone 03	accuracy	0.5	bortezomib	True	7
+test	WT clone 04	accuracy	0.0	bortezomib	True	7
+test	WT clone 05	accuracy	0.5	bortezomib	True	7
+test	WT_parental	accuracy	0.5294117647058824	bortezomib	True	7
+training	BZ001	accuracy	0.5454545454545454	bortezomib	True	7
+training	BZ002	accuracy	0.34782608695652173	bortezomib	True	7
+training	BZ003	accuracy	0.4090909090909091	bortezomib	True	7
+training	BZ004	accuracy	0.5	bortezomib	True	7
+training	BZ005	accuracy	0.6956521739130435	bortezomib	True	7
+training	CloneA	accuracy	0.6521739130434783	bortezomib	True	7
+training	CloneE	accuracy	0.5454545454545454	bortezomib	True	7
+training	WT clone 01	accuracy	0.45454545454545453	bortezomib	True	7
+training	WT clone 02	accuracy	0.43478260869565216	bortezomib	True	7
+training	WT clone 03	accuracy	0.6363636363636364	bortezomib	True	7
+training	WT clone 04	accuracy	0.6086956521739131	bortezomib	True	7
+training	WT clone 05	accuracy	0.36363636363636365	bortezomib	True	7
+training	WT_parental	accuracy	0.5522388059701493	bortezomib	True	7
 validation	BZ001	accuracy	0.75	bortezomib	True	7
 validation	BZ002	accuracy	0.75	bortezomib	True	7
 validation	BZ003	accuracy	0.75	bortezomib	True	7
-validation	BZ004	accuracy	0.5	bortezomib	True	7
-validation	BZ005	accuracy	0.75	bortezomib	True	7
-validation	CloneA	accuracy	0.75	bortezomib	True	7
-validation	CloneE	accuracy	0.5	bortezomib	True	7
-validation	WT clone 01	accuracy	0.5	bortezomib	True	7
-validation	WT clone 02	accuracy	0.75	bortezomib	True	7
-validation	WT clone 03	accuracy	0.25	bortezomib	True	7
-validation	WT clone 04	accuracy	1.0	bortezomib	True	7
+validation	BZ004	accuracy	0.75	bortezomib	True	7
+validation	BZ005	accuracy	0.5	bortezomib	True	7
+validation	CloneA	accuracy	0.25	bortezomib	True	7
+validation	CloneE	accuracy	0.25	bortezomib	True	7
+validation	WT clone 01	accuracy	0.25	bortezomib	True	7
+validation	WT clone 02	accuracy	0.0	bortezomib	True	7
+validation	WT clone 03	accuracy	0.5	bortezomib	True	7
+validation	WT clone 04	accuracy	0.5	bortezomib	True	7
 validation	WT clone 05	accuracy	0.25	bortezomib	True	7
-validation	WT_parental	accuracy	0.5	bortezomib	True	7
+validation	WT_parental	accuracy	0.3333333333333333	bortezomib	True	7
 inference	BZ001	avg_precision	1.0	bortezomib	True	7
 inference	BZ002	avg_precision	1.0	bortezomib	True	7
 inference	BZ003	avg_precision	1.0	bortezomib	True	7
@@ -1167,79 +1167,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	7
 validation	WT clone 04	avg_precision		bortezomib	True	7
 validation	WT clone 05	avg_precision		bortezomib	True	7
 validation	WT_parental	avg_precision		bortezomib	True	7
-inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	8
+inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	8
 inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	8
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	8
+inference	BZ003	accuracy	1.0	bortezomib	True	8
 inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	8
-inference	BZ005	accuracy	1.0	bortezomib	True	8
-inference	BZ006	accuracy	1.0	bortezomib	True	8
-inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	8
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	8
-inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	8
-inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	8
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	8
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	8
+inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	8
+inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	8
+inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	8
+inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	8
+inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	8
+inference	BZ011	accuracy	1.0	bortezomib	True	8
 inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	8
 inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	8
-inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	8
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	8
-inference	BZ016	accuracy	0.0	bortezomib	True	8
+inference	BZ014	accuracy	1.0	bortezomib	True	8
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	8
+inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	8
 inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	8
 inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	8
-inference	WT001	accuracy	1.0	bortezomib	True	8
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	8
-inference	WT003	accuracy	0.3333333333333333	bortezomib	True	8
-inference	WT004	accuracy	1.0	bortezomib	True	8
+inference	WT001	accuracy	0.3333333333333333	bortezomib	True	8
+inference	WT002	accuracy	0.0	bortezomib	True	8
+inference	WT003	accuracy	0.6666666666666666	bortezomib	True	8
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	8
 inference	WT005	accuracy	0.6666666666666666	bortezomib	True	8
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	8
-inference	WT007	accuracy	0.3333333333333333	bortezomib	True	8
+inference	WT006	accuracy	0.0	bortezomib	True	8
+inference	WT007	accuracy	0.6666666666666666	bortezomib	True	8
 inference	WT008	accuracy	0.0	bortezomib	True	8
-inference	WT009	accuracy	0.3333333333333333	bortezomib	True	8
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	8
-inference	WT011	accuracy	0.6666666666666666	bortezomib	True	8
-inference	WT012	accuracy	0.3333333333333333	bortezomib	True	8
-inference	WT013	accuracy	0.6666666666666666	bortezomib	True	8
-inference	WT014	accuracy	0.3333333333333333	bortezomib	True	8
+inference	WT009	accuracy	0.6666666666666666	bortezomib	True	8
+inference	WT010	accuracy	1.0	bortezomib	True	8
+inference	WT011	accuracy	0.3333333333333333	bortezomib	True	8
+inference	WT012	accuracy	0.0	bortezomib	True	8
+inference	WT013	accuracy	0.0	bortezomib	True	8
+inference	WT014	accuracy	0.0	bortezomib	True	8
 inference	WT015	accuracy	0.3333333333333333	bortezomib	True	8
-inference	WT_parental	accuracy	0.6666666666666666	bortezomib	True	8
-test	BZ001	accuracy	0.5	bortezomib	True	8
-test	BZ002	accuracy	1.0	bortezomib	True	8
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	8
-test	BZ004	accuracy	0.6666666666666666	bortezomib	True	8
-test	BZ005	accuracy	0.5	bortezomib	True	8
-test	CloneA	accuracy	0.5	bortezomib	True	8
+inference	WT_parental	accuracy	0.16666666666666666	bortezomib	True	8
+test	BZ001	accuracy	0.8333333333333334	bortezomib	True	8
+test	BZ002	accuracy	0.6	bortezomib	True	8
+test	BZ003	accuracy	0.0	bortezomib	True	8
+test	BZ004	accuracy	0.5	bortezomib	True	8
+test	BZ005	accuracy	0.6	bortezomib	True	8
+test	CloneA	accuracy	0.8	bortezomib	True	8
 test	CloneE	accuracy	0.3333333333333333	bortezomib	True	8
-test	WT clone 01	accuracy	0.0	bortezomib	True	8
-test	WT clone 02	accuracy	0.5	bortezomib	True	8
-test	WT clone 03	accuracy	0.5	bortezomib	True	8
-test	WT clone 04	accuracy	0.5	bortezomib	True	8
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	8
-test	WT_parental	accuracy	0.5714285714285714	bortezomib	True	8
-training	BZ001	accuracy	0.42857142857142855	bortezomib	True	8
-training	BZ002	accuracy	0.5	bortezomib	True	8
-training	BZ003	accuracy	0.46153846153846156	bortezomib	True	8
-training	BZ004	accuracy	0.46153846153846156	bortezomib	True	8
-training	BZ005	accuracy	0.5	bortezomib	True	8
-training	CloneA	accuracy	0.7857142857142857	bortezomib	True	8
-training	CloneE	accuracy	0.5384615384615384	bortezomib	True	8
-training	WT clone 01	accuracy	0.5384615384615384	bortezomib	True	8
-training	WT clone 02	accuracy	0.35714285714285715	bortezomib	True	8
-training	WT clone 03	accuracy	0.5	bortezomib	True	8
-training	WT clone 04	accuracy	0.7142857142857143	bortezomib	True	8
-training	WT clone 05	accuracy	0.5384615384615384	bortezomib	True	8
-training	WT_parental	accuracy	0.4146341463414634	bortezomib	True	8
-validation	BZ001	accuracy	0.5	bortezomib	True	8
-validation	BZ002	accuracy	0.5	bortezomib	True	8
-validation	BZ003	accuracy	0.25	bortezomib	True	8
-validation	BZ004	accuracy	1.0	bortezomib	True	8
-validation	BZ005	accuracy	0.25	bortezomib	True	8
+test	WT clone 01	accuracy	0.5	bortezomib	True	8
+test	WT clone 02	accuracy	0.8	bortezomib	True	8
+test	WT clone 03	accuracy	1.0	bortezomib	True	8
+test	WT clone 04	accuracy	0.6	bortezomib	True	8
+test	WT clone 05	accuracy	0.8333333333333334	bortezomib	True	8
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	8
+training	BZ001	accuracy	0.3181818181818182	bortezomib	True	8
+training	BZ002	accuracy	0.6086956521739131	bortezomib	True	8
+training	BZ003	accuracy	0.45454545454545453	bortezomib	True	8
+training	BZ004	accuracy	0.3181818181818182	bortezomib	True	8
+training	BZ005	accuracy	0.391304347826087	bortezomib	True	8
+training	CloneA	accuracy	0.5217391304347826	bortezomib	True	8
+training	CloneE	accuracy	0.45454545454545453	bortezomib	True	8
+training	WT clone 01	accuracy	0.4090909090909091	bortezomib	True	8
+training	WT clone 02	accuracy	0.21739130434782608	bortezomib	True	8
+training	WT clone 03	accuracy	0.6818181818181818	bortezomib	True	8
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	8
+training	WT clone 05	accuracy	0.4090909090909091	bortezomib	True	8
+training	WT_parental	accuracy	0.4925373134328358	bortezomib	True	8
+validation	BZ001	accuracy	0.25	bortezomib	True	8
+validation	BZ002	accuracy	0.75	bortezomib	True	8
+validation	BZ003	accuracy	0.5	bortezomib	True	8
+validation	BZ004	accuracy	0.75	bortezomib	True	8
+validation	BZ005	accuracy	0.5	bortezomib	True	8
 validation	CloneA	accuracy	0.75	bortezomib	True	8
 validation	CloneE	accuracy	0.75	bortezomib	True	8
-validation	WT clone 01	accuracy	0.25	bortezomib	True	8
-validation	WT clone 02	accuracy	0.5	bortezomib	True	8
-validation	WT clone 03	accuracy	0.25	bortezomib	True	8
+validation	WT clone 01	accuracy	0.5	bortezomib	True	8
+validation	WT clone 02	accuracy	0.25	bortezomib	True	8
+validation	WT clone 03	accuracy	0.75	bortezomib	True	8
 validation	WT clone 04	accuracy	0.5	bortezomib	True	8
-validation	WT clone 05	accuracy	0.75	bortezomib	True	8
-validation	WT_parental	accuracy	0.5	bortezomib	True	8
+validation	WT clone 05	accuracy	0.25	bortezomib	True	8
+validation	WT_parental	accuracy	0.75	bortezomib	True	8
 inference	BZ001	avg_precision	1.0	bortezomib	True	8
 inference	BZ002	avg_precision	1.0	bortezomib	True	8
 inference	BZ003	avg_precision	1.0	bortezomib	True	8
@@ -1313,79 +1313,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	8
 validation	WT clone 04	avg_precision		bortezomib	True	8
 validation	WT clone 05	avg_precision		bortezomib	True	8
 validation	WT_parental	avg_precision		bortezomib	True	8
-inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	9
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	9
+inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	9
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	9
 inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	9
-inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	9
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	9
-inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	9
+inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	9
+inference	BZ005	accuracy	0.0	bortezomib	True	9
+inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	9
 inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	9
-inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	9
-inference	BZ009	accuracy	1.0	bortezomib	True	9
-inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	9
-inference	BZ011	accuracy	0.0	bortezomib	True	9
+inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	9
+inference	BZ009	accuracy	0.0	bortezomib	True	9
+inference	BZ010	accuracy	1.0	bortezomib	True	9
+inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	9
 inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	9
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	9
-inference	BZ014	accuracy	0.0	bortezomib	True	9
+inference	BZ013	accuracy	0.0	bortezomib	True	9
+inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	9
 inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	9
 inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	9
-inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	9
-inference	BZ018	accuracy	1.0	bortezomib	True	9
-inference	WT001	accuracy	0.0	bortezomib	True	9
+inference	BZ017	accuracy	0.0	bortezomib	True	9
+inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	9
+inference	WT001	accuracy	1.0	bortezomib	True	9
 inference	WT002	accuracy	1.0	bortezomib	True	9
-inference	WT003	accuracy	0.3333333333333333	bortezomib	True	9
-inference	WT004	accuracy	0.6666666666666666	bortezomib	True	9
-inference	WT005	accuracy	0.3333333333333333	bortezomib	True	9
-inference	WT006	accuracy	0.3333333333333333	bortezomib	True	9
-inference	WT007	accuracy	0.3333333333333333	bortezomib	True	9
-inference	WT008	accuracy	0.0	bortezomib	True	9
-inference	WT009	accuracy	0.0	bortezomib	True	9
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	9
-inference	WT011	accuracy	0.3333333333333333	bortezomib	True	9
-inference	WT012	accuracy	1.0	bortezomib	True	9
+inference	WT003	accuracy	0.6666666666666666	bortezomib	True	9
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	9
+inference	WT005	accuracy	0.6666666666666666	bortezomib	True	9
+inference	WT006	accuracy	0.6666666666666666	bortezomib	True	9
+inference	WT007	accuracy	0.6666666666666666	bortezomib	True	9
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	9
+inference	WT009	accuracy	1.0	bortezomib	True	9
+inference	WT010	accuracy	1.0	bortezomib	True	9
+inference	WT011	accuracy	0.0	bortezomib	True	9
+inference	WT012	accuracy	0.6666666666666666	bortezomib	True	9
 inference	WT013	accuracy	0.3333333333333333	bortezomib	True	9
-inference	WT014	accuracy	0.0	bortezomib	True	9
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	9
 inference	WT015	accuracy	0.6666666666666666	bortezomib	True	9
-inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	9
-test	BZ001	accuracy	1.0	bortezomib	True	9
-test	BZ002	accuracy	1.0	bortezomib	True	9
-test	BZ003	accuracy	1.0	bortezomib	True	9
+inference	WT_parental	accuracy	0.6666666666666666	bortezomib	True	9
+test	BZ001	accuracy	0.3333333333333333	bortezomib	True	9
+test	BZ002	accuracy	0.4	bortezomib	True	9
+test	BZ003	accuracy	0.3333333333333333	bortezomib	True	9
 test	BZ004	accuracy	0.3333333333333333	bortezomib	True	9
-test	BZ005	accuracy	0.5	bortezomib	True	9
-test	CloneA	accuracy	0.5	bortezomib	True	9
+test	BZ005	accuracy	0.2	bortezomib	True	9
+test	CloneA	accuracy	0.4	bortezomib	True	9
 test	CloneE	accuracy	0.3333333333333333	bortezomib	True	9
-test	WT clone 01	accuracy	0.0	bortezomib	True	9
-test	WT clone 02	accuracy	0.5	bortezomib	True	9
-test	WT clone 03	accuracy	1.0	bortezomib	True	9
-test	WT clone 04	accuracy	0.0	bortezomib	True	9
-test	WT clone 05	accuracy	1.0	bortezomib	True	9
-test	WT_parental	accuracy	0.7142857142857143	bortezomib	True	9
-training	BZ001	accuracy	0.35714285714285715	bortezomib	True	9
-training	BZ002	accuracy	0.42857142857142855	bortezomib	True	9
-training	BZ003	accuracy	0.38461538461538464	bortezomib	True	9
-training	BZ004	accuracy	0.5384615384615384	bortezomib	True	9
-training	BZ005	accuracy	0.5714285714285714	bortezomib	True	9
-training	CloneA	accuracy	0.6428571428571429	bortezomib	True	9
-training	CloneE	accuracy	0.3076923076923077	bortezomib	True	9
-training	WT clone 01	accuracy	0.5384615384615384	bortezomib	True	9
-training	WT clone 02	accuracy	0.5	bortezomib	True	9
-training	WT clone 03	accuracy	0.5714285714285714	bortezomib	True	9
-training	WT clone 04	accuracy	0.5	bortezomib	True	9
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	9
-training	WT_parental	accuracy	0.5365853658536586	bortezomib	True	9
-validation	BZ001	accuracy	1.0	bortezomib	True	9
-validation	BZ002	accuracy	0.25	bortezomib	True	9
-validation	BZ003	accuracy	0.75	bortezomib	True	9
+test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	9
+test	WT clone 02	accuracy	0.4	bortezomib	True	9
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	9
+test	WT clone 04	accuracy	0.4	bortezomib	True	9
+test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	9
+test	WT_parental	accuracy	0.35294117647058826	bortezomib	True	9
+training	BZ001	accuracy	0.5909090909090909	bortezomib	True	9
+training	BZ002	accuracy	0.6086956521739131	bortezomib	True	9
+training	BZ003	accuracy	0.6363636363636364	bortezomib	True	9
+training	BZ004	accuracy	0.5454545454545454	bortezomib	True	9
+training	BZ005	accuracy	0.6521739130434783	bortezomib	True	9
+training	CloneA	accuracy	0.5652173913043478	bortezomib	True	9
+training	CloneE	accuracy	0.4090909090909091	bortezomib	True	9
+training	WT clone 01	accuracy	0.5909090909090909	bortezomib	True	9
+training	WT clone 02	accuracy	0.391304347826087	bortezomib	True	9
+training	WT clone 03	accuracy	0.4090909090909091	bortezomib	True	9
+training	WT clone 04	accuracy	0.43478260869565216	bortezomib	True	9
+training	WT clone 05	accuracy	0.2727272727272727	bortezomib	True	9
+training	WT_parental	accuracy	0.5522388059701493	bortezomib	True	9
+validation	BZ001	accuracy	0.75	bortezomib	True	9
+validation	BZ002	accuracy	0.75	bortezomib	True	9
+validation	BZ003	accuracy	0.5	bortezomib	True	9
 validation	BZ004	accuracy	0.75	bortezomib	True	9
-validation	BZ005	accuracy	1.0	bortezomib	True	9
-validation	CloneA	accuracy	0.0	bortezomib	True	9
-validation	CloneE	accuracy	0.75	bortezomib	True	9
+validation	BZ005	accuracy	0.5	bortezomib	True	9
+validation	CloneA	accuracy	0.75	bortezomib	True	9
+validation	CloneE	accuracy	0.5	bortezomib	True	9
 validation	WT clone 01	accuracy	0.5	bortezomib	True	9
-validation	WT clone 02	accuracy	0.25	bortezomib	True	9
+validation	WT clone 02	accuracy	0.5	bortezomib	True	9
 validation	WT clone 03	accuracy	0.25	bortezomib	True	9
-validation	WT clone 04	accuracy	0.75	bortezomib	True	9
-validation	WT clone 05	accuracy	0.0	bortezomib	True	9
-validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	9
+validation	WT clone 04	accuracy	0.25	bortezomib	True	9
+validation	WT clone 05	accuracy	0.25	bortezomib	True	9
+validation	WT_parental	accuracy	0.3333333333333333	bortezomib	True	9
 inference	BZ001	avg_precision	1.0	bortezomib	True	9
 inference	BZ002	avg_precision	1.0	bortezomib	True	9
 inference	BZ003	avg_precision	1.0	bortezomib	True	9
@@ -1459,76 +1459,76 @@ validation	WT clone 03	avg_precision		bortezomib	True	9
 validation	WT clone 04	avg_precision		bortezomib	True	9
 validation	WT clone 05	avg_precision		bortezomib	True	9
 validation	WT_parental	avg_precision		bortezomib	True	9
-inference	BZ001	accuracy	1.0	bortezomib	True	10
-inference	BZ002	accuracy	1.0	bortezomib	True	10
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	10
-inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	10
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	10
-inference	BZ006	accuracy	1.0	bortezomib	True	10
-inference	BZ007	accuracy	0.0	bortezomib	True	10
+inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	10
+inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	10
+inference	BZ003	accuracy	1.0	bortezomib	True	10
+inference	BZ004	accuracy	1.0	bortezomib	True	10
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	10
+inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	10
+inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	10
 inference	BZ008	accuracy	1.0	bortezomib	True	10
-inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	10
-inference	BZ010	accuracy	1.0	bortezomib	True	10
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	10
-inference	BZ012	accuracy	0.0	bortezomib	True	10
-inference	BZ013	accuracy	0.0	bortezomib	True	10
+inference	BZ009	accuracy	1.0	bortezomib	True	10
+inference	BZ010	accuracy	0.0	bortezomib	True	10
+inference	BZ011	accuracy	0.0	bortezomib	True	10
+inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	10
+inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	10
 inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	10
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	10
-inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	10
-inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	10
-inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	10
-inference	WT001	accuracy	0.6666666666666666	bortezomib	True	10
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	10
+inference	BZ016	accuracy	0.0	bortezomib	True	10
+inference	BZ017	accuracy	0.0	bortezomib	True	10
+inference	BZ018	accuracy	0.0	bortezomib	True	10
+inference	WT001	accuracy	0.3333333333333333	bortezomib	True	10
 inference	WT002	accuracy	0.3333333333333333	bortezomib	True	10
-inference	WT003	accuracy	0.6666666666666666	bortezomib	True	10
+inference	WT003	accuracy	0.3333333333333333	bortezomib	True	10
 inference	WT004	accuracy	1.0	bortezomib	True	10
-inference	WT005	accuracy	0.6666666666666666	bortezomib	True	10
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	10
+inference	WT005	accuracy	0.3333333333333333	bortezomib	True	10
+inference	WT006	accuracy	0.3333333333333333	bortezomib	True	10
 inference	WT007	accuracy	0.6666666666666666	bortezomib	True	10
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	10
-inference	WT009	accuracy	0.3333333333333333	bortezomib	True	10
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	10
-inference	WT011	accuracy	0.3333333333333333	bortezomib	True	10
-inference	WT012	accuracy	0.6666666666666666	bortezomib	True	10
-inference	WT013	accuracy	0.3333333333333333	bortezomib	True	10
-inference	WT014	accuracy	0.6666666666666666	bortezomib	True	10
+inference	WT008	accuracy	0.0	bortezomib	True	10
+inference	WT009	accuracy	0.6666666666666666	bortezomib	True	10
+inference	WT010	accuracy	0.0	bortezomib	True	10
+inference	WT011	accuracy	0.6666666666666666	bortezomib	True	10
+inference	WT012	accuracy	0.3333333333333333	bortezomib	True	10
+inference	WT013	accuracy	0.6666666666666666	bortezomib	True	10
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	10
 inference	WT015	accuracy	0.3333333333333333	bortezomib	True	10
 inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	10
-test	BZ001	accuracy	1.0	bortezomib	True	10
-test	BZ002	accuracy	0.0	bortezomib	True	10
-test	BZ003	accuracy	1.0	bortezomib	True	10
-test	BZ004	accuracy	0.3333333333333333	bortezomib	True	10
-test	BZ005	accuracy	1.0	bortezomib	True	10
-test	CloneA	accuracy	0.0	bortezomib	True	10
+test	BZ001	accuracy	0.5	bortezomib	True	10
+test	BZ002	accuracy	0.8	bortezomib	True	10
+test	BZ003	accuracy	0.6666666666666666	bortezomib	True	10
+test	BZ004	accuracy	0.6666666666666666	bortezomib	True	10
+test	BZ005	accuracy	0.8	bortezomib	True	10
+test	CloneA	accuracy	0.4	bortezomib	True	10
 test	CloneE	accuracy	0.6666666666666666	bortezomib	True	10
-test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	10
-test	WT clone 02	accuracy	0.5	bortezomib	True	10
-test	WT clone 03	accuracy	0.0	bortezomib	True	10
-test	WT clone 04	accuracy	1.0	bortezomib	True	10
-test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	10
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	10
-training	BZ001	accuracy	0.35714285714285715	bortezomib	True	10
-training	BZ002	accuracy	0.5	bortezomib	True	10
-training	BZ003	accuracy	0.6153846153846154	bortezomib	True	10
-training	BZ004	accuracy	0.23076923076923078	bortezomib	True	10
-training	BZ005	accuracy	0.5	bortezomib	True	10
-training	CloneA	accuracy	0.42857142857142855	bortezomib	True	10
-training	CloneE	accuracy	0.6923076923076923	bortezomib	True	10
-training	WT clone 01	accuracy	0.38461538461538464	bortezomib	True	10
-training	WT clone 02	accuracy	0.42857142857142855	bortezomib	True	10
-training	WT clone 03	accuracy	0.5	bortezomib	True	10
-training	WT clone 04	accuracy	0.35714285714285715	bortezomib	True	10
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	10
-training	WT_parental	accuracy	0.5365853658536586	bortezomib	True	10
+test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	10
+test	WT clone 02	accuracy	0.4	bortezomib	True	10
+test	WT clone 03	accuracy	0.16666666666666666	bortezomib	True	10
+test	WT clone 04	accuracy	0.6	bortezomib	True	10
+test	WT clone 05	accuracy	0.8333333333333334	bortezomib	True	10
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	10
+training	BZ001	accuracy	0.5	bortezomib	True	10
+training	BZ002	accuracy	0.391304347826087	bortezomib	True	10
+training	BZ003	accuracy	0.5909090909090909	bortezomib	True	10
+training	BZ004	accuracy	0.3181818181818182	bortezomib	True	10
+training	BZ005	accuracy	0.6521739130434783	bortezomib	True	10
+training	CloneA	accuracy	0.6956521739130435	bortezomib	True	10
+training	CloneE	accuracy	0.5454545454545454	bortezomib	True	10
+training	WT clone 01	accuracy	0.5454545454545454	bortezomib	True	10
+training	WT clone 02	accuracy	0.5217391304347826	bortezomib	True	10
+training	WT clone 03	accuracy	0.5454545454545454	bortezomib	True	10
+training	WT clone 04	accuracy	0.6521739130434783	bortezomib	True	10
+training	WT clone 05	accuracy	0.5909090909090909	bortezomib	True	10
+training	WT_parental	accuracy	0.40298507462686567	bortezomib	True	10
 validation	BZ001	accuracy	0.25	bortezomib	True	10
-validation	BZ002	accuracy	0.75	bortezomib	True	10
-validation	BZ003	accuracy	0.5	bortezomib	True	10
-validation	BZ004	accuracy	1.0	bortezomib	True	10
+validation	BZ002	accuracy	0.5	bortezomib	True	10
+validation	BZ003	accuracy	0.25	bortezomib	True	10
+validation	BZ004	accuracy	0.25	bortezomib	True	10
 validation	BZ005	accuracy	0.25	bortezomib	True	10
-validation	CloneA	accuracy	0.5	bortezomib	True	10
+validation	CloneA	accuracy	0.25	bortezomib	True	10
 validation	CloneE	accuracy	0.75	bortezomib	True	10
-validation	WT clone 01	accuracy	0.75	bortezomib	True	10
+validation	WT clone 01	accuracy	0.5	bortezomib	True	10
 validation	WT clone 02	accuracy	0.5	bortezomib	True	10
-validation	WT clone 03	accuracy	0.25	bortezomib	True	10
+validation	WT clone 03	accuracy	1.0	bortezomib	True	10
 validation	WT clone 04	accuracy	0.25	bortezomib	True	10
 validation	WT clone 05	accuracy	0.5	bortezomib	True	10
 validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	10
@@ -1606,77 +1606,77 @@ validation	WT clone 04	avg_precision		bortezomib	True	10
 validation	WT clone 05	avg_precision		bortezomib	True	10
 validation	WT_parental	avg_precision		bortezomib	True	10
 inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	11
-inference	BZ002	accuracy	1.0	bortezomib	True	11
+inference	BZ002	accuracy	0.0	bortezomib	True	11
 inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	11
 inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	11
 inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	11
 inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	11
-inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	11
-inference	BZ008	accuracy	0.0	bortezomib	True	11
+inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	11
+inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	11
 inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	11
-inference	BZ010	accuracy	1.0	bortezomib	True	11
+inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	11
 inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	11
-inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	11
-inference	BZ013	accuracy	0.0	bortezomib	True	11
+inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	11
+inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	11
 inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	11
-inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	11
-inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	11
+inference	BZ015	accuracy	1.0	bortezomib	True	11
+inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	11
 inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	11
-inference	BZ018	accuracy	1.0	bortezomib	True	11
-inference	WT001	accuracy	0.6666666666666666	bortezomib	True	11
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	11
-inference	WT003	accuracy	0.6666666666666666	bortezomib	True	11
-inference	WT004	accuracy	0.6666666666666666	bortezomib	True	11
-inference	WT005	accuracy	0.3333333333333333	bortezomib	True	11
-inference	WT006	accuracy	0.3333333333333333	bortezomib	True	11
-inference	WT007	accuracy	0.6666666666666666	bortezomib	True	11
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	11
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	11
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	11
+inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	11
+inference	WT001	accuracy	0.0	bortezomib	True	11
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	11
+inference	WT003	accuracy	0.0	bortezomib	True	11
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	11
+inference	WT005	accuracy	0.0	bortezomib	True	11
+inference	WT006	accuracy	0.6666666666666666	bortezomib	True	11
+inference	WT007	accuracy	0.3333333333333333	bortezomib	True	11
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	11
+inference	WT009	accuracy	0.3333333333333333	bortezomib	True	11
+inference	WT010	accuracy	0.6666666666666666	bortezomib	True	11
 inference	WT011	accuracy	0.6666666666666666	bortezomib	True	11
 inference	WT012	accuracy	0.6666666666666666	bortezomib	True	11
-inference	WT013	accuracy	0.3333333333333333	bortezomib	True	11
+inference	WT013	accuracy	0.0	bortezomib	True	11
 inference	WT014	accuracy	0.3333333333333333	bortezomib	True	11
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	11
-inference	WT_parental	accuracy	0.6666666666666666	bortezomib	True	11
-test	BZ001	accuracy	0.0	bortezomib	True	11
-test	BZ002	accuracy	0.0	bortezomib	True	11
-test	BZ003	accuracy	0.0	bortezomib	True	11
-test	BZ004	accuracy	0.3333333333333333	bortezomib	True	11
-test	BZ005	accuracy	0.5	bortezomib	True	11
-test	CloneA	accuracy	0.5	bortezomib	True	11
-test	CloneE	accuracy	0.6666666666666666	bortezomib	True	11
-test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	11
-test	WT clone 02	accuracy	0.5	bortezomib	True	11
-test	WT clone 03	accuracy	0.5	bortezomib	True	11
-test	WT clone 04	accuracy	0.0	bortezomib	True	11
-test	WT clone 05	accuracy	1.0	bortezomib	True	11
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	11
-training	BZ001	accuracy	0.5714285714285714	bortezomib	True	11
-training	BZ002	accuracy	0.6428571428571429	bortezomib	True	11
-training	BZ003	accuracy	0.6923076923076923	bortezomib	True	11
-training	BZ004	accuracy	0.5384615384615384	bortezomib	True	11
-training	BZ005	accuracy	0.5	bortezomib	True	11
-training	CloneA	accuracy	0.5714285714285714	bortezomib	True	11
-training	CloneE	accuracy	0.38461538461538464	bortezomib	True	11
-training	WT clone 01	accuracy	0.23076923076923078	bortezomib	True	11
-training	WT clone 02	accuracy	0.5	bortezomib	True	11
-training	WT clone 03	accuracy	0.35714285714285715	bortezomib	True	11
-training	WT clone 04	accuracy	0.5	bortezomib	True	11
-training	WT clone 05	accuracy	0.6153846153846154	bortezomib	True	11
-training	WT_parental	accuracy	0.5853658536585366	bortezomib	True	11
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	11
+inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	11
+test	BZ001	accuracy	0.8333333333333334	bortezomib	True	11
+test	BZ002	accuracy	0.6	bortezomib	True	11
+test	BZ003	accuracy	0.3333333333333333	bortezomib	True	11
+test	BZ004	accuracy	0.6666666666666666	bortezomib	True	11
+test	BZ005	accuracy	0.2	bortezomib	True	11
+test	CloneA	accuracy	0.8	bortezomib	True	11
+test	CloneE	accuracy	0.16666666666666666	bortezomib	True	11
+test	WT clone 01	accuracy	0.5	bortezomib	True	11
+test	WT clone 02	accuracy	0.4	bortezomib	True	11
+test	WT clone 03	accuracy	0.16666666666666666	bortezomib	True	11
+test	WT clone 04	accuracy	0.6	bortezomib	True	11
+test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	11
+test	WT_parental	accuracy	0.6470588235294118	bortezomib	True	11
+training	BZ001	accuracy	0.5454545454545454	bortezomib	True	11
+training	BZ002	accuracy	0.4782608695652174	bortezomib	True	11
+training	BZ003	accuracy	0.4090909090909091	bortezomib	True	11
+training	BZ004	accuracy	0.5454545454545454	bortezomib	True	11
+training	BZ005	accuracy	0.4782608695652174	bortezomib	True	11
+training	CloneA	accuracy	0.6521739130434783	bortezomib	True	11
+training	CloneE	accuracy	0.5909090909090909	bortezomib	True	11
+training	WT clone 01	accuracy	0.5454545454545454	bortezomib	True	11
+training	WT clone 02	accuracy	0.43478260869565216	bortezomib	True	11
+training	WT clone 03	accuracy	0.5454545454545454	bortezomib	True	11
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	11
+training	WT clone 05	accuracy	0.45454545454545453	bortezomib	True	11
+training	WT_parental	accuracy	0.47761194029850745	bortezomib	True	11
 validation	BZ001	accuracy	0.75	bortezomib	True	11
-validation	BZ002	accuracy	1.0	bortezomib	True	11
-validation	BZ003	accuracy	0.75	bortezomib	True	11
-validation	BZ004	accuracy	0.25	bortezomib	True	11
-validation	BZ005	accuracy	0.75	bortezomib	True	11
+validation	BZ002	accuracy	0.25	bortezomib	True	11
+validation	BZ003	accuracy	0.25	bortezomib	True	11
+validation	BZ004	accuracy	0.0	bortezomib	True	11
+validation	BZ005	accuracy	0.25	bortezomib	True	11
 validation	CloneA	accuracy	0.25	bortezomib	True	11
 validation	CloneE	accuracy	1.0	bortezomib	True	11
-validation	WT clone 01	accuracy	0.75	bortezomib	True	11
-validation	WT clone 02	accuracy	0.25	bortezomib	True	11
-validation	WT clone 03	accuracy	0.5	bortezomib	True	11
+validation	WT clone 01	accuracy	0.5	bortezomib	True	11
+validation	WT clone 02	accuracy	0.5	bortezomib	True	11
+validation	WT clone 03	accuracy	0.75	bortezomib	True	11
 validation	WT clone 04	accuracy	0.5	bortezomib	True	11
-validation	WT clone 05	accuracy	0.0	bortezomib	True	11
+validation	WT clone 05	accuracy	0.5	bortezomib	True	11
 validation	WT_parental	accuracy	0.5	bortezomib	True	11
 inference	BZ001	avg_precision	1.0	bortezomib	True	11
 inference	BZ002	avg_precision	1.0	bortezomib	True	11
@@ -1751,79 +1751,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	11
 validation	WT clone 04	avg_precision		bortezomib	True	11
 validation	WT clone 05	avg_precision		bortezomib	True	11
 validation	WT_parental	avg_precision		bortezomib	True	11
-inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	12
-inference	BZ002	accuracy	1.0	bortezomib	True	12
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	12
-inference	BZ004	accuracy	0.0	bortezomib	True	12
-inference	BZ005	accuracy	0.0	bortezomib	True	12
-inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	12
-inference	BZ007	accuracy	1.0	bortezomib	True	12
+inference	BZ001	accuracy	1.0	bortezomib	True	12
+inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	12
+inference	BZ003	accuracy	0.0	bortezomib	True	12
+inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	12
+inference	BZ005	accuracy	1.0	bortezomib	True	12
+inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	12
+inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	12
 inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	12
 inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	12
-inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	12
-inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	12
-inference	BZ012	accuracy	0.0	bortezomib	True	12
+inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	12
+inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	12
+inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	12
 inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	12
-inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	12
-inference	BZ015	accuracy	1.0	bortezomib	True	12
+inference	BZ014	accuracy	0.0	bortezomib	True	12
+inference	BZ015	accuracy	0.0	bortezomib	True	12
 inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	12
-inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	12
-inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	12
-inference	WT001	accuracy	0.0	bortezomib	True	12
-inference	WT002	accuracy	1.0	bortezomib	True	12
+inference	BZ017	accuracy	0.0	bortezomib	True	12
+inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	12
+inference	WT001	accuracy	0.6666666666666666	bortezomib	True	12
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	12
 inference	WT003	accuracy	0.6666666666666666	bortezomib	True	12
-inference	WT004	accuracy	0.6666666666666666	bortezomib	True	12
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	12
 inference	WT005	accuracy	0.3333333333333333	bortezomib	True	12
-inference	WT006	accuracy	0.3333333333333333	bortezomib	True	12
-inference	WT007	accuracy	0.3333333333333333	bortezomib	True	12
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	12
-inference	WT009	accuracy	1.0	bortezomib	True	12
+inference	WT006	accuracy	0.6666666666666666	bortezomib	True	12
+inference	WT007	accuracy	0.0	bortezomib	True	12
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	12
+inference	WT009	accuracy	0.3333333333333333	bortezomib	True	12
 inference	WT010	accuracy	0.3333333333333333	bortezomib	True	12
-inference	WT011	accuracy	1.0	bortezomib	True	12
-inference	WT012	accuracy	0.6666666666666666	bortezomib	True	12
-inference	WT013	accuracy	0.0	bortezomib	True	12
+inference	WT011	accuracy	0.3333333333333333	bortezomib	True	12
+inference	WT012	accuracy	0.0	bortezomib	True	12
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	12
 inference	WT014	accuracy	0.3333333333333333	bortezomib	True	12
-inference	WT015	accuracy	0.6666666666666666	bortezomib	True	12
-inference	WT_parental	accuracy	0.8333333333333334	bortezomib	True	12
-test	BZ001	accuracy	1.0	bortezomib	True	12
-test	BZ002	accuracy	0.0	bortezomib	True	12
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	12
-test	BZ004	accuracy	1.0	bortezomib	True	12
-test	BZ005	accuracy	0.5	bortezomib	True	12
-test	CloneA	accuracy	0.5	bortezomib	True	12
-test	CloneE	accuracy	0.6666666666666666	bortezomib	True	12
-test	WT clone 01	accuracy	1.0	bortezomib	True	12
-test	WT clone 02	accuracy	0.5	bortezomib	True	12
-test	WT clone 03	accuracy	0.5	bortezomib	True	12
-test	WT clone 04	accuracy	0.5	bortezomib	True	12
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	12
-test	WT_parental	accuracy	0.2857142857142857	bortezomib	True	12
-training	BZ001	accuracy	0.6428571428571429	bortezomib	True	12
-training	BZ002	accuracy	0.5	bortezomib	True	12
-training	BZ003	accuracy	0.5384615384615384	bortezomib	True	12
-training	BZ004	accuracy	0.5384615384615384	bortezomib	True	12
-training	BZ005	accuracy	0.5	bortezomib	True	12
-training	CloneA	accuracy	0.35714285714285715	bortezomib	True	12
-training	CloneE	accuracy	0.5384615384615384	bortezomib	True	12
-training	WT clone 01	accuracy	0.46153846153846156	bortezomib	True	12
-training	WT clone 02	accuracy	0.5	bortezomib	True	12
-training	WT clone 03	accuracy	0.5	bortezomib	True	12
-training	WT clone 04	accuracy	0.5	bortezomib	True	12
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	12
-training	WT_parental	accuracy	0.3902439024390244	bortezomib	True	12
-validation	BZ001	accuracy	1.0	bortezomib	True	12
-validation	BZ002	accuracy	0.25	bortezomib	True	12
-validation	BZ003	accuracy	1.0	bortezomib	True	12
-validation	BZ004	accuracy	0.75	bortezomib	True	12
-validation	BZ005	accuracy	0.25	bortezomib	True	12
+inference	WT015	accuracy	0.3333333333333333	bortezomib	True	12
+inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	12
+test	BZ001	accuracy	0.5	bortezomib	True	12
+test	BZ002	accuracy	0.6	bortezomib	True	12
+test	BZ003	accuracy	0.3333333333333333	bortezomib	True	12
+test	BZ004	accuracy	0.5	bortezomib	True	12
+test	BZ005	accuracy	0.6	bortezomib	True	12
+test	CloneA	accuracy	0.6	bortezomib	True	12
+test	CloneE	accuracy	0.3333333333333333	bortezomib	True	12
+test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	12
+test	WT clone 02	accuracy	0.2	bortezomib	True	12
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	12
+test	WT clone 04	accuracy	0.0	bortezomib	True	12
+test	WT clone 05	accuracy	0.16666666666666666	bortezomib	True	12
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	12
+training	BZ001	accuracy	0.45454545454545453	bortezomib	True	12
+training	BZ002	accuracy	0.5217391304347826	bortezomib	True	12
+training	BZ003	accuracy	0.45454545454545453	bortezomib	True	12
+training	BZ004	accuracy	0.45454545454545453	bortezomib	True	12
+training	BZ005	accuracy	0.5217391304347826	bortezomib	True	12
+training	CloneA	accuracy	0.5652173913043478	bortezomib	True	12
+training	CloneE	accuracy	0.45454545454545453	bortezomib	True	12
+training	WT clone 01	accuracy	0.7272727272727273	bortezomib	True	12
+training	WT clone 02	accuracy	0.5652173913043478	bortezomib	True	12
+training	WT clone 03	accuracy	0.6818181818181818	bortezomib	True	12
+training	WT clone 04	accuracy	0.2608695652173913	bortezomib	True	12
+training	WT clone 05	accuracy	0.4090909090909091	bortezomib	True	12
+training	WT_parental	accuracy	0.47761194029850745	bortezomib	True	12
+validation	BZ001	accuracy	0.5	bortezomib	True	12
+validation	BZ002	accuracy	0.75	bortezomib	True	12
+validation	BZ003	accuracy	0.5	bortezomib	True	12
+validation	BZ004	accuracy	0.25	bortezomib	True	12
+validation	BZ005	accuracy	0.5	bortezomib	True	12
 validation	CloneA	accuracy	0.75	bortezomib	True	12
 validation	CloneE	accuracy	0.5	bortezomib	True	12
-validation	WT clone 01	accuracy	0.0	bortezomib	True	12
-validation	WT clone 02	accuracy	0.75	bortezomib	True	12
-validation	WT clone 03	accuracy	0.75	bortezomib	True	12
-validation	WT clone 04	accuracy	1.0	bortezomib	True	12
-validation	WT clone 05	accuracy	1.0	bortezomib	True	12
-validation	WT_parental	accuracy	0.6666666666666666	bortezomib	True	12
+validation	WT clone 01	accuracy	0.25	bortezomib	True	12
+validation	WT clone 02	accuracy	0.25	bortezomib	True	12
+validation	WT clone 03	accuracy	0.25	bortezomib	True	12
+validation	WT clone 04	accuracy	0.75	bortezomib	True	12
+validation	WT clone 05	accuracy	0.5	bortezomib	True	12
+validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	12
 inference	BZ001	avg_precision	1.0	bortezomib	True	12
 inference	BZ002	avg_precision	1.0	bortezomib	True	12
 inference	BZ003	avg_precision	1.0	bortezomib	True	12
@@ -1898,77 +1898,77 @@ validation	WT clone 04	avg_precision		bortezomib	True	12
 validation	WT clone 05	avg_precision		bortezomib	True	12
 validation	WT_parental	avg_precision		bortezomib	True	12
 inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	13
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	13
-inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	13
-inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	13
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	13
-inference	BZ006	accuracy	1.0	bortezomib	True	13
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	13
+inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	13
+inference	BZ004	accuracy	1.0	bortezomib	True	13
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	13
+inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	13
 inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	13
-inference	BZ008	accuracy	0.0	bortezomib	True	13
-inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	13
-inference	BZ010	accuracy	1.0	bortezomib	True	13
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	13
+inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	13
+inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	13
+inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	13
+inference	BZ011	accuracy	0.0	bortezomib	True	13
 inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	13
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	13
+inference	BZ013	accuracy	0.0	bortezomib	True	13
 inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	13
 inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	13
-inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	13
-inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	13
-inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	13
+inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	13
+inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	13
+inference	BZ018	accuracy	1.0	bortezomib	True	13
 inference	WT001	accuracy	0.6666666666666666	bortezomib	True	13
 inference	WT002	accuracy	0.0	bortezomib	True	13
-inference	WT003	accuracy	0.3333333333333333	bortezomib	True	13
+inference	WT003	accuracy	1.0	bortezomib	True	13
 inference	WT004	accuracy	0.6666666666666666	bortezomib	True	13
-inference	WT005	accuracy	0.3333333333333333	bortezomib	True	13
+inference	WT005	accuracy	0.6666666666666666	bortezomib	True	13
 inference	WT006	accuracy	0.6666666666666666	bortezomib	True	13
-inference	WT007	accuracy	1.0	bortezomib	True	13
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	13
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	13
+inference	WT007	accuracy	0.6666666666666666	bortezomib	True	13
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	13
+inference	WT009	accuracy	1.0	bortezomib	True	13
 inference	WT010	accuracy	0.6666666666666666	bortezomib	True	13
 inference	WT011	accuracy	0.0	bortezomib	True	13
-inference	WT012	accuracy	0.3333333333333333	bortezomib	True	13
-inference	WT013	accuracy	0.0	bortezomib	True	13
-inference	WT014	accuracy	0.0	bortezomib	True	13
-inference	WT015	accuracy	0.6666666666666666	bortezomib	True	13
-inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	13
-test	BZ001	accuracy	1.0	bortezomib	True	13
-test	BZ002	accuracy	0.0	bortezomib	True	13
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	13
-test	BZ004	accuracy	1.0	bortezomib	True	13
-test	BZ005	accuracy	0.5	bortezomib	True	13
-test	CloneA	accuracy	0.5	bortezomib	True	13
-test	CloneE	accuracy	0.3333333333333333	bortezomib	True	13
-test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	13
-test	WT clone 02	accuracy	0.5	bortezomib	True	13
+inference	WT012	accuracy	0.6666666666666666	bortezomib	True	13
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	13
+inference	WT014	accuracy	0.6666666666666666	bortezomib	True	13
+inference	WT015	accuracy	0.3333333333333333	bortezomib	True	13
+inference	WT_parental	accuracy	0.5	bortezomib	True	13
+test	BZ001	accuracy	0.16666666666666666	bortezomib	True	13
+test	BZ002	accuracy	0.6	bortezomib	True	13
+test	BZ003	accuracy	0.8333333333333334	bortezomib	True	13
+test	BZ004	accuracy	0.5	bortezomib	True	13
+test	BZ005	accuracy	0.6	bortezomib	True	13
+test	CloneA	accuracy	0.4	bortezomib	True	13
+test	CloneE	accuracy	0.8333333333333334	bortezomib	True	13
+test	WT clone 01	accuracy	0.8333333333333334	bortezomib	True	13
+test	WT clone 02	accuracy	0.6	bortezomib	True	13
 test	WT clone 03	accuracy	0.5	bortezomib	True	13
-test	WT clone 04	accuracy	0.5	bortezomib	True	13
+test	WT clone 04	accuracy	0.0	bortezomib	True	13
 test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	13
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	13
-training	BZ001	accuracy	0.35714285714285715	bortezomib	True	13
-training	BZ002	accuracy	0.5	bortezomib	True	13
-training	BZ003	accuracy	0.5384615384615384	bortezomib	True	13
-training	BZ004	accuracy	0.6153846153846154	bortezomib	True	13
-training	BZ005	accuracy	0.2857142857142857	bortezomib	True	13
-training	CloneA	accuracy	0.7142857142857143	bortezomib	True	13
-training	CloneE	accuracy	0.38461538461538464	bortezomib	True	13
-training	WT clone 01	accuracy	0.46153846153846156	bortezomib	True	13
-training	WT clone 02	accuracy	0.6428571428571429	bortezomib	True	13
-training	WT clone 03	accuracy	0.42857142857142855	bortezomib	True	13
-training	WT clone 04	accuracy	0.35714285714285715	bortezomib	True	13
-training	WT clone 05	accuracy	0.3076923076923077	bortezomib	True	13
-training	WT_parental	accuracy	0.4878048780487805	bortezomib	True	13
-validation	BZ001	accuracy	1.0	bortezomib	True	13
-validation	BZ002	accuracy	0.25	bortezomib	True	13
-validation	BZ003	accuracy	0.25	bortezomib	True	13
-validation	BZ004	accuracy	0.25	bortezomib	True	13
-validation	BZ005	accuracy	0.5	bortezomib	True	13
-validation	CloneA	accuracy	0.5	bortezomib	True	13
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	13
+training	BZ001	accuracy	0.5909090909090909	bortezomib	True	13
+training	BZ002	accuracy	0.5652173913043478	bortezomib	True	13
+training	BZ003	accuracy	0.45454545454545453	bortezomib	True	13
+training	BZ004	accuracy	0.6363636363636364	bortezomib	True	13
+training	BZ005	accuracy	0.5652173913043478	bortezomib	True	13
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	13
+training	CloneE	accuracy	0.5	bortezomib	True	13
+training	WT clone 01	accuracy	0.4090909090909091	bortezomib	True	13
+training	WT clone 02	accuracy	0.5217391304347826	bortezomib	True	13
+training	WT clone 03	accuracy	0.5454545454545454	bortezomib	True	13
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	13
+training	WT clone 05	accuracy	0.5454545454545454	bortezomib	True	13
+training	WT_parental	accuracy	0.5074626865671642	bortezomib	True	13
+validation	BZ001	accuracy	0.75	bortezomib	True	13
+validation	BZ002	accuracy	0.5	bortezomib	True	13
+validation	BZ003	accuracy	0.5	bortezomib	True	13
+validation	BZ004	accuracy	0.5	bortezomib	True	13
+validation	BZ005	accuracy	0.25	bortezomib	True	13
+validation	CloneA	accuracy	0.75	bortezomib	True	13
 validation	CloneE	accuracy	0.5	bortezomib	True	13
 validation	WT clone 01	accuracy	0.5	bortezomib	True	13
 validation	WT clone 02	accuracy	0.75	bortezomib	True	13
-validation	WT clone 03	accuracy	0.25	bortezomib	True	13
-validation	WT clone 04	accuracy	0.75	bortezomib	True	13
-validation	WT clone 05	accuracy	0.5	bortezomib	True	13
+validation	WT clone 03	accuracy	0.5	bortezomib	True	13
+validation	WT clone 04	accuracy	0.25	bortezomib	True	13
+validation	WT clone 05	accuracy	0.25	bortezomib	True	13
 validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	13
 inference	BZ001	avg_precision	1.0	bortezomib	True	13
 inference	BZ002	avg_precision	1.0	bortezomib	True	13
@@ -2043,79 +2043,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	13
 validation	WT clone 04	avg_precision		bortezomib	True	13
 validation	WT clone 05	avg_precision		bortezomib	True	13
 validation	WT_parental	avg_precision		bortezomib	True	13
-inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	14
-inference	BZ002	accuracy	1.0	bortezomib	True	14
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	14
-inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	14
+inference	BZ001	accuracy	0.0	bortezomib	True	14
+inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	14
+inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	14
+inference	BZ004	accuracy	1.0	bortezomib	True	14
 inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	14
-inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	14
-inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	14
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	14
-inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	14
+inference	BZ006	accuracy	1.0	bortezomib	True	14
+inference	BZ007	accuracy	0.0	bortezomib	True	14
+inference	BZ008	accuracy	0.0	bortezomib	True	14
+inference	BZ009	accuracy	0.0	bortezomib	True	14
 inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	14
-inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	14
-inference	BZ012	accuracy	0.0	bortezomib	True	14
-inference	BZ013	accuracy	1.0	bortezomib	True	14
+inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	14
+inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	14
+inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	14
 inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	14
-inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	14
-inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	14
-inference	BZ017	accuracy	1.0	bortezomib	True	14
-inference	BZ018	accuracy	1.0	bortezomib	True	14
-inference	WT001	accuracy	0.6666666666666666	bortezomib	True	14
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	14
-inference	WT003	accuracy	0.6666666666666666	bortezomib	True	14
+inference	BZ015	accuracy	0.0	bortezomib	True	14
+inference	BZ016	accuracy	0.0	bortezomib	True	14
+inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	14
+inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	14
+inference	WT001	accuracy	0.3333333333333333	bortezomib	True	14
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	14
+inference	WT003	accuracy	0.0	bortezomib	True	14
 inference	WT004	accuracy	0.3333333333333333	bortezomib	True	14
-inference	WT005	accuracy	0.3333333333333333	bortezomib	True	14
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	14
-inference	WT007	accuracy	0.3333333333333333	bortezomib	True	14
+inference	WT005	accuracy	0.6666666666666666	bortezomib	True	14
+inference	WT006	accuracy	1.0	bortezomib	True	14
+inference	WT007	accuracy	0.6666666666666666	bortezomib	True	14
 inference	WT008	accuracy	0.6666666666666666	bortezomib	True	14
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	14
-inference	WT010	accuracy	0.6666666666666666	bortezomib	True	14
+inference	WT009	accuracy	0.3333333333333333	bortezomib	True	14
+inference	WT010	accuracy	0.3333333333333333	bortezomib	True	14
 inference	WT011	accuracy	0.3333333333333333	bortezomib	True	14
-inference	WT012	accuracy	0.3333333333333333	bortezomib	True	14
-inference	WT013	accuracy	0.6666666666666666	bortezomib	True	14
+inference	WT012	accuracy	0.6666666666666666	bortezomib	True	14
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	14
 inference	WT014	accuracy	0.3333333333333333	bortezomib	True	14
 inference	WT015	accuracy	0.6666666666666666	bortezomib	True	14
 inference	WT_parental	accuracy	0.5	bortezomib	True	14
-test	BZ001	accuracy	0.5	bortezomib	True	14
-test	BZ002	accuracy	0.0	bortezomib	True	14
-test	BZ003	accuracy	0.3333333333333333	bortezomib	True	14
-test	BZ004	accuracy	1.0	bortezomib	True	14
-test	BZ005	accuracy	1.0	bortezomib	True	14
-test	CloneA	accuracy	1.0	bortezomib	True	14
-test	CloneE	accuracy	1.0	bortezomib	True	14
-test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	14
-test	WT clone 02	accuracy	0.0	bortezomib	True	14
-test	WT clone 03	accuracy	0.5	bortezomib	True	14
-test	WT clone 04	accuracy	0.5	bortezomib	True	14
-test	WT clone 05	accuracy	1.0	bortezomib	True	14
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	14
-training	BZ001	accuracy	0.5	bortezomib	True	14
-training	BZ002	accuracy	0.42857142857142855	bortezomib	True	14
-training	BZ003	accuracy	0.5384615384615384	bortezomib	True	14
-training	BZ004	accuracy	0.46153846153846156	bortezomib	True	14
-training	BZ005	accuracy	0.5	bortezomib	True	14
-training	CloneA	accuracy	0.5714285714285714	bortezomib	True	14
-training	CloneE	accuracy	0.6153846153846154	bortezomib	True	14
-training	WT clone 01	accuracy	0.5384615384615384	bortezomib	True	14
-training	WT clone 02	accuracy	0.5	bortezomib	True	14
-training	WT clone 03	accuracy	0.35714285714285715	bortezomib	True	14
-training	WT clone 04	accuracy	0.5714285714285714	bortezomib	True	14
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	14
-training	WT_parental	accuracy	0.4878048780487805	bortezomib	True	14
-validation	BZ001	accuracy	0.5	bortezomib	True	14
-validation	BZ002	accuracy	0.75	bortezomib	True	14
-validation	BZ003	accuracy	0.75	bortezomib	True	14
-validation	BZ004	accuracy	0.0	bortezomib	True	14
-validation	BZ005	accuracy	0.75	bortezomib	True	14
-validation	CloneA	accuracy	0.25	bortezomib	True	14
-validation	CloneE	accuracy	0.75	bortezomib	True	14
-validation	WT clone 01	accuracy	0.25	bortezomib	True	14
-validation	WT clone 02	accuracy	1.0	bortezomib	True	14
+test	BZ001	accuracy	0.3333333333333333	bortezomib	True	14
+test	BZ002	accuracy	0.4	bortezomib	True	14
+test	BZ003	accuracy	0.5	bortezomib	True	14
+test	BZ004	accuracy	0.3333333333333333	bortezomib	True	14
+test	BZ005	accuracy	0.8	bortezomib	True	14
+test	CloneA	accuracy	0.2	bortezomib	True	14
+test	CloneE	accuracy	0.5	bortezomib	True	14
+test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	14
+test	WT clone 02	accuracy	0.2	bortezomib	True	14
+test	WT clone 03	accuracy	0.8333333333333334	bortezomib	True	14
+test	WT clone 04	accuracy	0.8	bortezomib	True	14
+test	WT clone 05	accuracy	0.5	bortezomib	True	14
+test	WT_parental	accuracy	0.5882352941176471	bortezomib	True	14
+training	BZ001	accuracy	0.5909090909090909	bortezomib	True	14
+training	BZ002	accuracy	0.5652173913043478	bortezomib	True	14
+training	BZ003	accuracy	0.5909090909090909	bortezomib	True	14
+training	BZ004	accuracy	0.6363636363636364	bortezomib	True	14
+training	BZ005	accuracy	0.5217391304347826	bortezomib	True	14
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	14
+training	CloneE	accuracy	0.5909090909090909	bortezomib	True	14
+training	WT clone 01	accuracy	0.2727272727272727	bortezomib	True	14
+training	WT clone 02	accuracy	0.30434782608695654	bortezomib	True	14
+training	WT clone 03	accuracy	0.36363636363636365	bortezomib	True	14
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	14
+training	WT clone 05	accuracy	0.36363636363636365	bortezomib	True	14
+training	WT_parental	accuracy	0.5522388059701493	bortezomib	True	14
+validation	BZ001	accuracy	0.25	bortezomib	True	14
+validation	BZ002	accuracy	0.5	bortezomib	True	14
+validation	BZ003	accuracy	0.5	bortezomib	True	14
+validation	BZ004	accuracy	0.75	bortezomib	True	14
+validation	BZ005	accuracy	0.25	bortezomib	True	14
+validation	CloneA	accuracy	0.5	bortezomib	True	14
+validation	CloneE	accuracy	0.5	bortezomib	True	14
+validation	WT clone 01	accuracy	0.75	bortezomib	True	14
+validation	WT clone 02	accuracy	0.25	bortezomib	True	14
 validation	WT clone 03	accuracy	0.25	bortezomib	True	14
 validation	WT clone 04	accuracy	0.75	bortezomib	True	14
 validation	WT clone 05	accuracy	0.5	bortezomib	True	14
-validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	14
+validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	14
 inference	BZ001	avg_precision	1.0	bortezomib	True	14
 inference	BZ002	avg_precision	1.0	bortezomib	True	14
 inference	BZ003	avg_precision	1.0	bortezomib	True	14
@@ -2190,78 +2190,78 @@ validation	WT clone 04	avg_precision		bortezomib	True	14
 validation	WT clone 05	avg_precision		bortezomib	True	14
 validation	WT_parental	avg_precision		bortezomib	True	14
 inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	15
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	15
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	15
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	15
+inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	15
 inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	15
-inference	BZ005	accuracy	1.0	bortezomib	True	15
+inference	BZ005	accuracy	0.0	bortezomib	True	15
 inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	15
 inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	15
-inference	BZ008	accuracy	1.0	bortezomib	True	15
-inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	15
-inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	15
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	15
-inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	15
+inference	BZ008	accuracy	0.0	bortezomib	True	15
+inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	15
+inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	15
+inference	BZ011	accuracy	1.0	bortezomib	True	15
+inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	15
 inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	15
-inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	15
+inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	15
 inference	BZ015	accuracy	0.0	bortezomib	True	15
-inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	15
+inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	15
 inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	15
-inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	15
-inference	WT001	accuracy	0.3333333333333333	bortezomib	True	15
-inference	WT002	accuracy	0.3333333333333333	bortezomib	True	15
-inference	WT003	accuracy	0.3333333333333333	bortezomib	True	15
+inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	15
+inference	WT001	accuracy	0.6666666666666666	bortezomib	True	15
+inference	WT002	accuracy	0.6666666666666666	bortezomib	True	15
+inference	WT003	accuracy	0.6666666666666666	bortezomib	True	15
 inference	WT004	accuracy	0.3333333333333333	bortezomib	True	15
-inference	WT005	accuracy	0.6666666666666666	bortezomib	True	15
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	15
-inference	WT007	accuracy	1.0	bortezomib	True	15
+inference	WT005	accuracy	1.0	bortezomib	True	15
+inference	WT006	accuracy	0.3333333333333333	bortezomib	True	15
+inference	WT007	accuracy	0.6666666666666666	bortezomib	True	15
 inference	WT008	accuracy	0.6666666666666666	bortezomib	True	15
-inference	WT009	accuracy	0.0	bortezomib	True	15
+inference	WT009	accuracy	0.3333333333333333	bortezomib	True	15
 inference	WT010	accuracy	0.6666666666666666	bortezomib	True	15
 inference	WT011	accuracy	0.3333333333333333	bortezomib	True	15
-inference	WT012	accuracy	0.0	bortezomib	True	15
-inference	WT013	accuracy	0.6666666666666666	bortezomib	True	15
-inference	WT014	accuracy	0.3333333333333333	bortezomib	True	15
-inference	WT015	accuracy	0.0	bortezomib	True	15
-inference	WT_parental	accuracy	0.8333333333333334	bortezomib	True	15
-test	BZ001	accuracy	1.0	bortezomib	True	15
-test	BZ002	accuracy	0.5	bortezomib	True	15
-test	BZ003	accuracy	0.3333333333333333	bortezomib	True	15
+inference	WT012	accuracy	1.0	bortezomib	True	15
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	15
+inference	WT014	accuracy	0.0	bortezomib	True	15
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	15
+inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	15
+test	BZ001	accuracy	0.5	bortezomib	True	15
+test	BZ002	accuracy	0.4	bortezomib	True	15
+test	BZ003	accuracy	1.0	bortezomib	True	15
 test	BZ004	accuracy	0.3333333333333333	bortezomib	True	15
-test	BZ005	accuracy	0.5	bortezomib	True	15
-test	CloneA	accuracy	0.5	bortezomib	True	15
-test	CloneE	accuracy	1.0	bortezomib	True	15
-test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	15
-test	WT clone 02	accuracy	0.0	bortezomib	True	15
-test	WT clone 03	accuracy	0.5	bortezomib	True	15
-test	WT clone 04	accuracy	0.5	bortezomib	True	15
-test	WT clone 05	accuracy	1.0	bortezomib	True	15
-test	WT_parental	accuracy	0.2857142857142857	bortezomib	True	15
-training	BZ001	accuracy	0.5	bortezomib	True	15
-training	BZ002	accuracy	0.5714285714285714	bortezomib	True	15
-training	BZ003	accuracy	0.46153846153846156	bortezomib	True	15
-training	BZ004	accuracy	0.5384615384615384	bortezomib	True	15
-training	BZ005	accuracy	0.42857142857142855	bortezomib	True	15
-training	CloneA	accuracy	0.42857142857142855	bortezomib	True	15
-training	CloneE	accuracy	0.38461538461538464	bortezomib	True	15
-training	WT clone 01	accuracy	0.38461538461538464	bortezomib	True	15
-training	WT clone 02	accuracy	0.5	bortezomib	True	15
-training	WT clone 03	accuracy	0.5714285714285714	bortezomib	True	15
-training	WT clone 04	accuracy	0.7857142857142857	bortezomib	True	15
-training	WT clone 05	accuracy	0.38461538461538464	bortezomib	True	15
-training	WT_parental	accuracy	0.4634146341463415	bortezomib	True	15
+test	BZ005	accuracy	0.6	bortezomib	True	15
+test	CloneA	accuracy	0.6	bortezomib	True	15
+test	CloneE	accuracy	0.0	bortezomib	True	15
+test	WT clone 01	accuracy	0.5	bortezomib	True	15
+test	WT clone 02	accuracy	0.8	bortezomib	True	15
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	15
+test	WT clone 04	accuracy	0.2	bortezomib	True	15
+test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	15
+test	WT_parental	accuracy	0.35294117647058826	bortezomib	True	15
+training	BZ001	accuracy	0.4090909090909091	bortezomib	True	15
+training	BZ002	accuracy	0.6521739130434783	bortezomib	True	15
+training	BZ003	accuracy	0.5	bortezomib	True	15
+training	BZ004	accuracy	0.45454545454545453	bortezomib	True	15
+training	BZ005	accuracy	0.4782608695652174	bortezomib	True	15
+training	CloneA	accuracy	0.5652173913043478	bortezomib	True	15
+training	CloneE	accuracy	0.5909090909090909	bortezomib	True	15
+training	WT clone 01	accuracy	0.4090909090909091	bortezomib	True	15
+training	WT clone 02	accuracy	0.43478260869565216	bortezomib	True	15
+training	WT clone 03	accuracy	0.5	bortezomib	True	15
+training	WT clone 04	accuracy	0.43478260869565216	bortezomib	True	15
+training	WT clone 05	accuracy	0.3181818181818182	bortezomib	True	15
+training	WT_parental	accuracy	0.4925373134328358	bortezomib	True	15
 validation	BZ001	accuracy	0.75	bortezomib	True	15
-validation	BZ002	accuracy	0.25	bortezomib	True	15
+validation	BZ002	accuracy	0.5	bortezomib	True	15
 validation	BZ003	accuracy	0.25	bortezomib	True	15
-validation	BZ004	accuracy	0.75	bortezomib	True	15
-validation	BZ005	accuracy	0.0	bortezomib	True	15
-validation	CloneA	accuracy	0.5	bortezomib	True	15
-validation	CloneE	accuracy	0.5	bortezomib	True	15
-validation	WT clone 01	accuracy	0.0	bortezomib	True	15
+validation	BZ004	accuracy	0.5	bortezomib	True	15
+validation	BZ005	accuracy	0.25	bortezomib	True	15
+validation	CloneA	accuracy	0.75	bortezomib	True	15
+validation	CloneE	accuracy	0.25	bortezomib	True	15
+validation	WT clone 01	accuracy	0.75	bortezomib	True	15
 validation	WT clone 02	accuracy	0.0	bortezomib	True	15
-validation	WT clone 03	accuracy	0.5	bortezomib	True	15
-validation	WT clone 04	accuracy	0.25	bortezomib	True	15
+validation	WT clone 03	accuracy	0.0	bortezomib	True	15
+validation	WT clone 04	accuracy	0.5	bortezomib	True	15
 validation	WT clone 05	accuracy	0.25	bortezomib	True	15
-validation	WT_parental	accuracy	0.5	bortezomib	True	15
+validation	WT_parental	accuracy	0.6666666666666666	bortezomib	True	15
 inference	BZ001	avg_precision	1.0	bortezomib	True	15
 inference	BZ002	avg_precision	1.0	bortezomib	True	15
 inference	BZ003	avg_precision	1.0	bortezomib	True	15
@@ -2336,78 +2336,78 @@ validation	WT clone 04	avg_precision		bortezomib	True	15
 validation	WT clone 05	avg_precision		bortezomib	True	15
 validation	WT_parental	avg_precision		bortezomib	True	15
 inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	16
-inference	BZ002	accuracy	0.0	bortezomib	True	16
-inference	BZ003	accuracy	1.0	bortezomib	True	16
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	16
+inference	BZ003	accuracy	0.0	bortezomib	True	16
 inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	16
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	16
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	16
 inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	16
 inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	16
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	16
+inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	16
 inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	16
-inference	BZ010	accuracy	1.0	bortezomib	True	16
-inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	16
+inference	BZ010	accuracy	0.0	bortezomib	True	16
+inference	BZ011	accuracy	0.0	bortezomib	True	16
 inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	16
 inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	16
 inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	16
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	16
-inference	BZ016	accuracy	0.0	bortezomib	True	16
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	16
+inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	16
 inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	16
-inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	16
-inference	WT001	accuracy	0.6666666666666666	bortezomib	True	16
-inference	WT002	accuracy	0.0	bortezomib	True	16
+inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	16
+inference	WT001	accuracy	0.3333333333333333	bortezomib	True	16
+inference	WT002	accuracy	0.6666666666666666	bortezomib	True	16
 inference	WT003	accuracy	0.3333333333333333	bortezomib	True	16
-inference	WT004	accuracy	0.3333333333333333	bortezomib	True	16
-inference	WT005	accuracy	0.3333333333333333	bortezomib	True	16
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	16
-inference	WT007	accuracy	0.6666666666666666	bortezomib	True	16
-inference	WT008	accuracy	0.6666666666666666	bortezomib	True	16
-inference	WT009	accuracy	0.3333333333333333	bortezomib	True	16
+inference	WT004	accuracy	1.0	bortezomib	True	16
+inference	WT005	accuracy	0.6666666666666666	bortezomib	True	16
+inference	WT006	accuracy	1.0	bortezomib	True	16
+inference	WT007	accuracy	0.3333333333333333	bortezomib	True	16
+inference	WT008	accuracy	0.3333333333333333	bortezomib	True	16
+inference	WT009	accuracy	0.6666666666666666	bortezomib	True	16
 inference	WT010	accuracy	0.3333333333333333	bortezomib	True	16
-inference	WT011	accuracy	1.0	bortezomib	True	16
-inference	WT012	accuracy	0.0	bortezomib	True	16
-inference	WT013	accuracy	0.3333333333333333	bortezomib	True	16
-inference	WT014	accuracy	0.3333333333333333	bortezomib	True	16
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	16
+inference	WT011	accuracy	0.6666666666666666	bortezomib	True	16
+inference	WT012	accuracy	0.6666666666666666	bortezomib	True	16
+inference	WT013	accuracy	0.0	bortezomib	True	16
+inference	WT014	accuracy	0.6666666666666666	bortezomib	True	16
+inference	WT015	accuracy	0.0	bortezomib	True	16
 inference	WT_parental	accuracy	0.5	bortezomib	True	16
-test	BZ001	accuracy	1.0	bortezomib	True	16
-test	BZ002	accuracy	0.5	bortezomib	True	16
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	16
-test	BZ004	accuracy	0.3333333333333333	bortezomib	True	16
-test	BZ005	accuracy	0.0	bortezomib	True	16
-test	CloneA	accuracy	0.5	bortezomib	True	16
-test	CloneE	accuracy	1.0	bortezomib	True	16
-test	WT clone 01	accuracy	1.0	bortezomib	True	16
-test	WT clone 02	accuracy	0.5	bortezomib	True	16
-test	WT clone 03	accuracy	0.0	bortezomib	True	16
-test	WT clone 04	accuracy	0.5	bortezomib	True	16
-test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	16
-test	WT_parental	accuracy	0.14285714285714285	bortezomib	True	16
-training	BZ001	accuracy	0.6428571428571429	bortezomib	True	16
-training	BZ002	accuracy	0.42857142857142855	bortezomib	True	16
-training	BZ003	accuracy	0.6153846153846154	bortezomib	True	16
-training	BZ004	accuracy	0.46153846153846156	bortezomib	True	16
-training	BZ005	accuracy	0.2857142857142857	bortezomib	True	16
-training	CloneA	accuracy	0.2857142857142857	bortezomib	True	16
-training	CloneE	accuracy	0.46153846153846156	bortezomib	True	16
-training	WT clone 01	accuracy	0.38461538461538464	bortezomib	True	16
-training	WT clone 02	accuracy	0.5	bortezomib	True	16
-training	WT clone 03	accuracy	0.5714285714285714	bortezomib	True	16
-training	WT clone 04	accuracy	0.42857142857142855	bortezomib	True	16
-training	WT clone 05	accuracy	0.15384615384615385	bortezomib	True	16
-training	WT_parental	accuracy	0.5609756097560976	bortezomib	True	16
-validation	BZ001	accuracy	0.5	bortezomib	True	16
-validation	BZ002	accuracy	0.5	bortezomib	True	16
-validation	BZ003	accuracy	0.25	bortezomib	True	16
-validation	BZ004	accuracy	0.75	bortezomib	True	16
-validation	BZ005	accuracy	0.5	bortezomib	True	16
-validation	CloneA	accuracy	0.25	bortezomib	True	16
-validation	CloneE	accuracy	0.0	bortezomib	True	16
+test	BZ001	accuracy	0.3333333333333333	bortezomib	True	16
+test	BZ002	accuracy	0.4	bortezomib	True	16
+test	BZ003	accuracy	0.5	bortezomib	True	16
+test	BZ004	accuracy	0.5	bortezomib	True	16
+test	BZ005	accuracy	0.2	bortezomib	True	16
+test	CloneA	accuracy	0.6	bortezomib	True	16
+test	CloneE	accuracy	0.3333333333333333	bortezomib	True	16
+test	WT clone 01	accuracy	0.5	bortezomib	True	16
+test	WT clone 02	accuracy	0.8	bortezomib	True	16
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	16
+test	WT clone 04	accuracy	0.2	bortezomib	True	16
+test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	16
+test	WT_parental	accuracy	0.4117647058823529	bortezomib	True	16
+training	BZ001	accuracy	0.5454545454545454	bortezomib	True	16
+training	BZ002	accuracy	0.6521739130434783	bortezomib	True	16
+training	BZ003	accuracy	0.5	bortezomib	True	16
+training	BZ004	accuracy	0.5909090909090909	bortezomib	True	16
+training	BZ005	accuracy	0.5652173913043478	bortezomib	True	16
+training	CloneA	accuracy	0.5652173913043478	bortezomib	True	16
+training	CloneE	accuracy	0.5454545454545454	bortezomib	True	16
+training	WT clone 01	accuracy	0.5	bortezomib	True	16
+training	WT clone 02	accuracy	0.43478260869565216	bortezomib	True	16
+training	WT clone 03	accuracy	0.45454545454545453	bortezomib	True	16
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	16
+training	WT clone 05	accuracy	0.6818181818181818	bortezomib	True	16
+training	WT_parental	accuracy	0.582089552238806	bortezomib	True	16
+validation	BZ001	accuracy	1.0	bortezomib	True	16
+validation	BZ002	accuracy	0.25	bortezomib	True	16
+validation	BZ003	accuracy	1.0	bortezomib	True	16
+validation	BZ004	accuracy	0.25	bortezomib	True	16
+validation	BZ005	accuracy	0.0	bortezomib	True	16
+validation	CloneA	accuracy	0.5	bortezomib	True	16
+validation	CloneE	accuracy	0.5	bortezomib	True	16
 validation	WT clone 01	accuracy	0.25	bortezomib	True	16
-validation	WT clone 02	accuracy	0.5	bortezomib	True	16
-validation	WT clone 03	accuracy	0.75	bortezomib	True	16
+validation	WT clone 02	accuracy	0.25	bortezomib	True	16
+validation	WT clone 03	accuracy	0.25	bortezomib	True	16
 validation	WT clone 04	accuracy	0.0	bortezomib	True	16
-validation	WT clone 05	accuracy	0.5	bortezomib	True	16
-validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	16
+validation	WT clone 05	accuracy	0.25	bortezomib	True	16
+validation	WT_parental	accuracy	0.25	bortezomib	True	16
 inference	BZ001	avg_precision	1.0	bortezomib	True	16
 inference	BZ002	avg_precision	1.0	bortezomib	True	16
 inference	BZ003	avg_precision	1.0	bortezomib	True	16
@@ -2482,78 +2482,78 @@ validation	WT clone 04	avg_precision		bortezomib	True	16
 validation	WT clone 05	avg_precision		bortezomib	True	16
 validation	WT_parental	avg_precision		bortezomib	True	16
 inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	17
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	17
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	17
+inference	BZ002	accuracy	0.0	bortezomib	True	17
+inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	17
 inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	17
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	17
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	17
 inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	17
-inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	17
-inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	17
+inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	17
+inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	17
 inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	17
-inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	17
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	17
+inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	17
+inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	17
 inference	BZ012	accuracy	1.0	bortezomib	True	17
-inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	17
+inference	BZ013	accuracy	1.0	bortezomib	True	17
 inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	17
-inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	17
-inference	BZ016	accuracy	0.0	bortezomib	True	17
+inference	BZ015	accuracy	0.0	bortezomib	True	17
+inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	17
 inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	17
-inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	17
-inference	WT001	accuracy	0.3333333333333333	bortezomib	True	17
+inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	17
+inference	WT001	accuracy	0.6666666666666666	bortezomib	True	17
 inference	WT002	accuracy	0.3333333333333333	bortezomib	True	17
 inference	WT003	accuracy	0.3333333333333333	bortezomib	True	17
 inference	WT004	accuracy	0.3333333333333333	bortezomib	True	17
 inference	WT005	accuracy	0.3333333333333333	bortezomib	True	17
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	17
-inference	WT007	accuracy	1.0	bortezomib	True	17
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	17
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	17
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	17
-inference	WT011	accuracy	0.0	bortezomib	True	17
+inference	WT006	accuracy	0.3333333333333333	bortezomib	True	17
+inference	WT007	accuracy	0.6666666666666666	bortezomib	True	17
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	17
+inference	WT009	accuracy	0.0	bortezomib	True	17
+inference	WT010	accuracy	0.6666666666666666	bortezomib	True	17
+inference	WT011	accuracy	0.6666666666666666	bortezomib	True	17
 inference	WT012	accuracy	0.3333333333333333	bortezomib	True	17
 inference	WT013	accuracy	0.6666666666666666	bortezomib	True	17
-inference	WT014	accuracy	0.0	bortezomib	True	17
-inference	WT015	accuracy	1.0	bortezomib	True	17
+inference	WT014	accuracy	0.6666666666666666	bortezomib	True	17
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	17
 inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	17
-test	BZ001	accuracy	0.0	bortezomib	True	17
-test	BZ002	accuracy	1.0	bortezomib	True	17
-test	BZ003	accuracy	0.0	bortezomib	True	17
-test	BZ004	accuracy	0.6666666666666666	bortezomib	True	17
-test	BZ005	accuracy	0.0	bortezomib	True	17
-test	CloneA	accuracy	0.5	bortezomib	True	17
+test	BZ001	accuracy	0.5	bortezomib	True	17
+test	BZ002	accuracy	0.2	bortezomib	True	17
+test	BZ003	accuracy	0.8333333333333334	bortezomib	True	17
+test	BZ004	accuracy	0.5	bortezomib	True	17
+test	BZ005	accuracy	0.4	bortezomib	True	17
+test	CloneA	accuracy	0.2	bortezomib	True	17
 test	CloneE	accuracy	0.6666666666666666	bortezomib	True	17
-test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	17
-test	WT clone 02	accuracy	0.5	bortezomib	True	17
-test	WT clone 03	accuracy	1.0	bortezomib	True	17
-test	WT clone 04	accuracy	0.5	bortezomib	True	17
-test	WT clone 05	accuracy	0.0	bortezomib	True	17
-test	WT_parental	accuracy	0.7142857142857143	bortezomib	True	17
-training	BZ001	accuracy	0.5	bortezomib	True	17
-training	BZ002	accuracy	0.7857142857142857	bortezomib	True	17
-training	BZ003	accuracy	0.7692307692307693	bortezomib	True	17
-training	BZ004	accuracy	0.46153846153846156	bortezomib	True	17
-training	BZ005	accuracy	0.5714285714285714	bortezomib	True	17
-training	CloneA	accuracy	0.5	bortezomib	True	17
-training	CloneE	accuracy	0.46153846153846156	bortezomib	True	17
-training	WT clone 01	accuracy	0.46153846153846156	bortezomib	True	17
-training	WT clone 02	accuracy	0.42857142857142855	bortezomib	True	17
-training	WT clone 03	accuracy	0.5	bortezomib	True	17
-training	WT clone 04	accuracy	0.5	bortezomib	True	17
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	17
-training	WT_parental	accuracy	0.4878048780487805	bortezomib	True	17
-validation	BZ001	accuracy	0.5	bortezomib	True	17
-validation	BZ002	accuracy	0.0	bortezomib	True	17
+test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	17
+test	WT clone 02	accuracy	0.4	bortezomib	True	17
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	17
+test	WT clone 04	accuracy	0.4	bortezomib	True	17
+test	WT clone 05	accuracy	0.5	bortezomib	True	17
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	17
+training	BZ001	accuracy	0.5909090909090909	bortezomib	True	17
+training	BZ002	accuracy	0.5217391304347826	bortezomib	True	17
+training	BZ003	accuracy	0.5454545454545454	bortezomib	True	17
+training	BZ004	accuracy	0.45454545454545453	bortezomib	True	17
+training	BZ005	accuracy	0.5652173913043478	bortezomib	True	17
+training	CloneA	accuracy	0.6086956521739131	bortezomib	True	17
+training	CloneE	accuracy	0.5454545454545454	bortezomib	True	17
+training	WT clone 01	accuracy	0.5	bortezomib	True	17
+training	WT clone 02	accuracy	0.5217391304347826	bortezomib	True	17
+training	WT clone 03	accuracy	0.45454545454545453	bortezomib	True	17
+training	WT clone 04	accuracy	0.391304347826087	bortezomib	True	17
+training	WT clone 05	accuracy	0.7272727272727273	bortezomib	True	17
+training	WT_parental	accuracy	0.40298507462686567	bortezomib	True	17
+validation	BZ001	accuracy	0.75	bortezomib	True	17
+validation	BZ002	accuracy	0.5	bortezomib	True	17
 validation	BZ003	accuracy	0.5	bortezomib	True	17
 validation	BZ004	accuracy	0.5	bortezomib	True	17
-validation	BZ005	accuracy	0.5	bortezomib	True	17
+validation	BZ005	accuracy	0.0	bortezomib	True	17
 validation	CloneA	accuracy	0.5	bortezomib	True	17
-validation	CloneE	accuracy	0.5	bortezomib	True	17
+validation	CloneE	accuracy	0.0	bortezomib	True	17
 validation	WT clone 01	accuracy	0.75	bortezomib	True	17
-validation	WT clone 02	accuracy	0.75	bortezomib	True	17
+validation	WT clone 02	accuracy	0.5	bortezomib	True	17
 validation	WT clone 03	accuracy	0.75	bortezomib	True	17
-validation	WT clone 04	accuracy	0.25	bortezomib	True	17
-validation	WT clone 05	accuracy	0.5	bortezomib	True	17
-validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	17
+validation	WT clone 04	accuracy	1.0	bortezomib	True	17
+validation	WT clone 05	accuracy	0.25	bortezomib	True	17
+validation	WT_parental	accuracy	0.3333333333333333	bortezomib	True	17
 inference	BZ001	avg_precision	1.0	bortezomib	True	17
 inference	BZ002	avg_precision	1.0	bortezomib	True	17
 inference	BZ003	avg_precision	1.0	bortezomib	True	17
@@ -2629,77 +2629,77 @@ validation	WT clone 05	avg_precision		bortezomib	True	17
 validation	WT_parental	avg_precision		bortezomib	True	17
 inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	18
 inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	18
-inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	18
-inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	18
-inference	BZ005	accuracy	1.0	bortezomib	True	18
+inference	BZ003	accuracy	1.0	bortezomib	True	18
+inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	18
+inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	18
 inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	18
 inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	18
 inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	18
-inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	18
+inference	BZ009	accuracy	0.6666666666666666	bortezomib	True	18
 inference	BZ010	accuracy	1.0	bortezomib	True	18
-inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	18
-inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	18
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	18
-inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	18
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	18
+inference	BZ011	accuracy	1.0	bortezomib	True	18
+inference	BZ012	accuracy	0.0	bortezomib	True	18
+inference	BZ013	accuracy	0.0	bortezomib	True	18
+inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	18
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	18
 inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	18
 inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	18
-inference	BZ018	accuracy	0.0	bortezomib	True	18
-inference	WT001	accuracy	0.3333333333333333	bortezomib	True	18
-inference	WT002	accuracy	0.3333333333333333	bortezomib	True	18
+inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	18
+inference	WT001	accuracy	0.6666666666666666	bortezomib	True	18
+inference	WT002	accuracy	0.6666666666666666	bortezomib	True	18
 inference	WT003	accuracy	0.6666666666666666	bortezomib	True	18
-inference	WT004	accuracy	0.6666666666666666	bortezomib	True	18
-inference	WT005	accuracy	0.6666666666666666	bortezomib	True	18
-inference	WT006	accuracy	0.0	bortezomib	True	18
-inference	WT007	accuracy	0.3333333333333333	bortezomib	True	18
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	18
+inference	WT005	accuracy	0.0	bortezomib	True	18
+inference	WT006	accuracy	1.0	bortezomib	True	18
+inference	WT007	accuracy	1.0	bortezomib	True	18
 inference	WT008	accuracy	0.6666666666666666	bortezomib	True	18
-inference	WT009	accuracy	0.3333333333333333	bortezomib	True	18
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	18
-inference	WT011	accuracy	0.6666666666666666	bortezomib	True	18
+inference	WT009	accuracy	1.0	bortezomib	True	18
+inference	WT010	accuracy	0.6666666666666666	bortezomib	True	18
+inference	WT011	accuracy	0.3333333333333333	bortezomib	True	18
 inference	WT012	accuracy	0.3333333333333333	bortezomib	True	18
-inference	WT013	accuracy	0.0	bortezomib	True	18
-inference	WT014	accuracy	0.3333333333333333	bortezomib	True	18
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	18
+inference	WT013	accuracy	0.6666666666666666	bortezomib	True	18
+inference	WT014	accuracy	1.0	bortezomib	True	18
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	18
 inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	18
-test	BZ001	accuracy	0.5	bortezomib	True	18
-test	BZ002	accuracy	1.0	bortezomib	True	18
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	18
+test	BZ001	accuracy	0.16666666666666666	bortezomib	True	18
+test	BZ002	accuracy	0.4	bortezomib	True	18
+test	BZ003	accuracy	0.3333333333333333	bortezomib	True	18
 test	BZ004	accuracy	0.3333333333333333	bortezomib	True	18
-test	BZ005	accuracy	1.0	bortezomib	True	18
-test	CloneA	accuracy	0.5	bortezomib	True	18
+test	BZ005	accuracy	0.6	bortezomib	True	18
+test	CloneA	accuracy	0.8	bortezomib	True	18
 test	CloneE	accuracy	1.0	bortezomib	True	18
-test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	18
-test	WT clone 02	accuracy	0.5	bortezomib	True	18
-test	WT clone 03	accuracy	0.0	bortezomib	True	18
-test	WT clone 04	accuracy	1.0	bortezomib	True	18
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	18
-test	WT_parental	accuracy	0.5714285714285714	bortezomib	True	18
-training	BZ001	accuracy	0.42857142857142855	bortezomib	True	18
-training	BZ002	accuracy	0.6428571428571429	bortezomib	True	18
-training	BZ003	accuracy	0.6153846153846154	bortezomib	True	18
-training	BZ004	accuracy	0.46153846153846156	bortezomib	True	18
-training	BZ005	accuracy	0.6428571428571429	bortezomib	True	18
-training	CloneA	accuracy	0.5714285714285714	bortezomib	True	18
-training	CloneE	accuracy	0.15384615384615385	bortezomib	True	18
-training	WT clone 01	accuracy	0.38461538461538464	bortezomib	True	18
-training	WT clone 02	accuracy	0.42857142857142855	bortezomib	True	18
-training	WT clone 03	accuracy	0.42857142857142855	bortezomib	True	18
-training	WT clone 04	accuracy	0.7142857142857143	bortezomib	True	18
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	18
-training	WT_parental	accuracy	0.5609756097560976	bortezomib	True	18
-validation	BZ001	accuracy	0.75	bortezomib	True	18
-validation	BZ002	accuracy	0.75	bortezomib	True	18
-validation	BZ003	accuracy	0.75	bortezomib	True	18
+test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	18
+test	WT clone 02	accuracy	0.6	bortezomib	True	18
+test	WT clone 03	accuracy	0.5	bortezomib	True	18
+test	WT clone 04	accuracy	0.4	bortezomib	True	18
+test	WT clone 05	accuracy	0.8333333333333334	bortezomib	True	18
+test	WT_parental	accuracy	0.7058823529411765	bortezomib	True	18
+training	BZ001	accuracy	0.5454545454545454	bortezomib	True	18
+training	BZ002	accuracy	0.6956521739130435	bortezomib	True	18
+training	BZ003	accuracy	0.6363636363636364	bortezomib	True	18
+training	BZ004	accuracy	0.5	bortezomib	True	18
+training	BZ005	accuracy	0.6521739130434783	bortezomib	True	18
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	18
+training	CloneE	accuracy	0.6363636363636364	bortezomib	True	18
+training	WT clone 01	accuracy	0.6818181818181818	bortezomib	True	18
+training	WT clone 02	accuracy	0.5652173913043478	bortezomib	True	18
+training	WT clone 03	accuracy	0.45454545454545453	bortezomib	True	18
+training	WT clone 04	accuracy	0.43478260869565216	bortezomib	True	18
+training	WT clone 05	accuracy	0.45454545454545453	bortezomib	True	18
+training	WT_parental	accuracy	0.44776119402985076	bortezomib	True	18
+validation	BZ001	accuracy	0.5	bortezomib	True	18
+validation	BZ002	accuracy	0.5	bortezomib	True	18
+validation	BZ003	accuracy	0.5	bortezomib	True	18
 validation	BZ004	accuracy	0.75	bortezomib	True	18
-validation	BZ005	accuracy	0.75	bortezomib	True	18
+validation	BZ005	accuracy	0.5	bortezomib	True	18
 validation	CloneA	accuracy	0.25	bortezomib	True	18
-validation	CloneE	accuracy	0.25	bortezomib	True	18
+validation	CloneE	accuracy	0.75	bortezomib	True	18
 validation	WT clone 01	accuracy	0.5	bortezomib	True	18
 validation	WT clone 02	accuracy	0.5	bortezomib	True	18
 validation	WT clone 03	accuracy	0.5	bortezomib	True	18
-validation	WT clone 04	accuracy	0.5	bortezomib	True	18
+validation	WT clone 04	accuracy	0.75	bortezomib	True	18
 validation	WT clone 05	accuracy	0.5	bortezomib	True	18
-validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	18
+validation	WT_parental	accuracy	0.4166666666666667	bortezomib	True	18
 inference	BZ001	avg_precision	1.0	bortezomib	True	18
 inference	BZ002	avg_precision	1.0	bortezomib	True	18
 inference	BZ003	avg_precision	1.0	bortezomib	True	18
@@ -2773,79 +2773,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	18
 validation	WT clone 04	avg_precision		bortezomib	True	18
 validation	WT clone 05	avg_precision		bortezomib	True	18
 validation	WT_parental	avg_precision		bortezomib	True	18
-inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	19
-inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	19
-inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	19
+inference	BZ001	accuracy	1.0	bortezomib	True	19
+inference	BZ002	accuracy	1.0	bortezomib	True	19
+inference	BZ003	accuracy	0.0	bortezomib	True	19
 inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	19
 inference	BZ005	accuracy	1.0	bortezomib	True	19
 inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	19
-inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	19
-inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	19
-inference	BZ009	accuracy	1.0	bortezomib	True	19
-inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	19
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	19
-inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	19
+inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	19
+inference	BZ008	accuracy	0.0	bortezomib	True	19
+inference	BZ009	accuracy	0.0	bortezomib	True	19
+inference	BZ010	accuracy	1.0	bortezomib	True	19
+inference	BZ011	accuracy	1.0	bortezomib	True	19
+inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	19
 inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	19
 inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	19
-inference	BZ015	accuracy	1.0	bortezomib	True	19
+inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	19
 inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	19
-inference	BZ017	accuracy	1.0	bortezomib	True	19
-inference	BZ018	accuracy	0.0	bortezomib	True	19
+inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	19
+inference	BZ018	accuracy	1.0	bortezomib	True	19
 inference	WT001	accuracy	0.0	bortezomib	True	19
 inference	WT002	accuracy	0.3333333333333333	bortezomib	True	19
 inference	WT003	accuracy	0.3333333333333333	bortezomib	True	19
 inference	WT004	accuracy	0.3333333333333333	bortezomib	True	19
-inference	WT005	accuracy	1.0	bortezomib	True	19
-inference	WT006	accuracy	0.3333333333333333	bortezomib	True	19
-inference	WT007	accuracy	0.6666666666666666	bortezomib	True	19
-inference	WT008	accuracy	0.6666666666666666	bortezomib	True	19
-inference	WT009	accuracy	0.0	bortezomib	True	19
+inference	WT005	accuracy	0.3333333333333333	bortezomib	True	19
+inference	WT006	accuracy	1.0	bortezomib	True	19
+inference	WT007	accuracy	0.3333333333333333	bortezomib	True	19
+inference	WT008	accuracy	0.3333333333333333	bortezomib	True	19
+inference	WT009	accuracy	0.6666666666666666	bortezomib	True	19
 inference	WT010	accuracy	0.3333333333333333	bortezomib	True	19
-inference	WT011	accuracy	0.6666666666666666	bortezomib	True	19
-inference	WT012	accuracy	0.6666666666666666	bortezomib	True	19
-inference	WT013	accuracy	1.0	bortezomib	True	19
-inference	WT014	accuracy	0.6666666666666666	bortezomib	True	19
-inference	WT015	accuracy	0.6666666666666666	bortezomib	True	19
-inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	19
-test	BZ001	accuracy	0.0	bortezomib	True	19
-test	BZ002	accuracy	0.5	bortezomib	True	19
-test	BZ003	accuracy	1.0	bortezomib	True	19
-test	BZ004	accuracy	1.0	bortezomib	True	19
-test	BZ005	accuracy	0.5	bortezomib	True	19
-test	CloneA	accuracy	0.5	bortezomib	True	19
-test	CloneE	accuracy	0.6666666666666666	bortezomib	True	19
-test	WT clone 01	accuracy	0.0	bortezomib	True	19
-test	WT clone 02	accuracy	0.5	bortezomib	True	19
-test	WT clone 03	accuracy	0.0	bortezomib	True	19
-test	WT clone 04	accuracy	0.0	bortezomib	True	19
+inference	WT011	accuracy	0.0	bortezomib	True	19
+inference	WT012	accuracy	0.3333333333333333	bortezomib	True	19
+inference	WT013	accuracy	0.0	bortezomib	True	19
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	19
+inference	WT015	accuracy	0.3333333333333333	bortezomib	True	19
+inference	WT_parental	accuracy	0.5	bortezomib	True	19
+test	BZ001	accuracy	0.3333333333333333	bortezomib	True	19
+test	BZ002	accuracy	0.8	bortezomib	True	19
+test	BZ003	accuracy	0.5	bortezomib	True	19
+test	BZ004	accuracy	0.5	bortezomib	True	19
+test	BZ005	accuracy	0.8	bortezomib	True	19
+test	CloneA	accuracy	0.4	bortezomib	True	19
+test	CloneE	accuracy	0.3333333333333333	bortezomib	True	19
+test	WT clone 01	accuracy	0.5	bortezomib	True	19
+test	WT clone 02	accuracy	0.8	bortezomib	True	19
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	19
+test	WT clone 04	accuracy	0.2	bortezomib	True	19
 test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	19
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	19
-training	BZ001	accuracy	0.7142857142857143	bortezomib	True	19
-training	BZ002	accuracy	0.5714285714285714	bortezomib	True	19
-training	BZ003	accuracy	0.38461538461538464	bortezomib	True	19
-training	BZ004	accuracy	0.46153846153846156	bortezomib	True	19
-training	BZ005	accuracy	0.2857142857142857	bortezomib	True	19
-training	CloneA	accuracy	0.42857142857142855	bortezomib	True	19
-training	CloneE	accuracy	0.5384615384615384	bortezomib	True	19
-training	WT clone 01	accuracy	0.46153846153846156	bortezomib	True	19
-training	WT clone 02	accuracy	0.5714285714285714	bortezomib	True	19
-training	WT clone 03	accuracy	0.42857142857142855	bortezomib	True	19
-training	WT clone 04	accuracy	0.6428571428571429	bortezomib	True	19
-training	WT clone 05	accuracy	0.5384615384615384	bortezomib	True	19
-training	WT_parental	accuracy	0.43902439024390244	bortezomib	True	19
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	19
+training	BZ001	accuracy	0.5	bortezomib	True	19
+training	BZ002	accuracy	0.4782608695652174	bortezomib	True	19
+training	BZ003	accuracy	0.5454545454545454	bortezomib	True	19
+training	BZ004	accuracy	0.4090909090909091	bortezomib	True	19
+training	BZ005	accuracy	0.43478260869565216	bortezomib	True	19
+training	CloneA	accuracy	0.6086956521739131	bortezomib	True	19
+training	CloneE	accuracy	0.5	bortezomib	True	19
+training	WT clone 01	accuracy	0.5454545454545454	bortezomib	True	19
+training	WT clone 02	accuracy	0.6956521739130435	bortezomib	True	19
+training	WT clone 03	accuracy	0.5454545454545454	bortezomib	True	19
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	19
+training	WT clone 05	accuracy	0.45454545454545453	bortezomib	True	19
+training	WT_parental	accuracy	0.5223880597014925	bortezomib	True	19
 validation	BZ001	accuracy	0.5	bortezomib	True	19
 validation	BZ002	accuracy	0.5	bortezomib	True	19
-validation	BZ003	accuracy	0.5	bortezomib	True	19
-validation	BZ004	accuracy	0.5	bortezomib	True	19
-validation	BZ005	accuracy	0.5	bortezomib	True	19
-validation	CloneA	accuracy	0.75	bortezomib	True	19
+validation	BZ003	accuracy	0.25	bortezomib	True	19
+validation	BZ004	accuracy	0.25	bortezomib	True	19
+validation	BZ005	accuracy	0.75	bortezomib	True	19
+validation	CloneA	accuracy	0.5	bortezomib	True	19
 validation	CloneE	accuracy	0.5	bortezomib	True	19
-validation	WT clone 01	accuracy	0.75	bortezomib	True	19
+validation	WT clone 01	accuracy	0.0	bortezomib	True	19
 validation	WT clone 02	accuracy	0.5	bortezomib	True	19
-validation	WT clone 03	accuracy	0.5	bortezomib	True	19
+validation	WT clone 03	accuracy	0.25	bortezomib	True	19
 validation	WT clone 04	accuracy	0.5	bortezomib	True	19
-validation	WT clone 05	accuracy	1.0	bortezomib	True	19
-validation	WT_parental	accuracy	0.5	bortezomib	True	19
+validation	WT clone 05	accuracy	0.25	bortezomib	True	19
+validation	WT_parental	accuracy	0.08333333333333333	bortezomib	True	19
 inference	BZ001	avg_precision	1.0	bortezomib	True	19
 inference	BZ002	avg_precision	1.0	bortezomib	True	19
 inference	BZ003	avg_precision	1.0	bortezomib	True	19
@@ -2920,78 +2920,78 @@ validation	WT clone 04	avg_precision		bortezomib	True	19
 validation	WT clone 05	avg_precision		bortezomib	True	19
 validation	WT_parental	avg_precision		bortezomib	True	19
 inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	20
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	20
+inference	BZ002	accuracy	1.0	bortezomib	True	20
 inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	20
-inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	20
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	20
-inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	20
+inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	20
+inference	BZ005	accuracy	0.0	bortezomib	True	20
+inference	BZ006	accuracy	1.0	bortezomib	True	20
 inference	BZ007	accuracy	0.3333333333333333	bortezomib	True	20
 inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	20
 inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	20
-inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	20
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	20
+inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	20
+inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	20
 inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	20
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	20
+inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	20
 inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	20
-inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	20
+inference	BZ015	accuracy	1.0	bortezomib	True	20
 inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	20
-inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	20
-inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	20
-inference	WT001	accuracy	0.0	bortezomib	True	20
+inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	20
+inference	BZ018	accuracy	0.0	bortezomib	True	20
+inference	WT001	accuracy	0.6666666666666666	bortezomib	True	20
 inference	WT002	accuracy	0.6666666666666666	bortezomib	True	20
-inference	WT003	accuracy	0.0	bortezomib	True	20
-inference	WT004	accuracy	0.3333333333333333	bortezomib	True	20
+inference	WT003	accuracy	1.0	bortezomib	True	20
+inference	WT004	accuracy	0.6666666666666666	bortezomib	True	20
 inference	WT005	accuracy	1.0	bortezomib	True	20
 inference	WT006	accuracy	0.6666666666666666	bortezomib	True	20
-inference	WT007	accuracy	0.6666666666666666	bortezomib	True	20
-inference	WT008	accuracy	0.6666666666666666	bortezomib	True	20
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	20
-inference	WT010	accuracy	0.6666666666666666	bortezomib	True	20
-inference	WT011	accuracy	0.3333333333333333	bortezomib	True	20
+inference	WT007	accuracy	0.3333333333333333	bortezomib	True	20
+inference	WT008	accuracy	0.3333333333333333	bortezomib	True	20
+inference	WT009	accuracy	0.3333333333333333	bortezomib	True	20
+inference	WT010	accuracy	0.0	bortezomib	True	20
+inference	WT011	accuracy	0.6666666666666666	bortezomib	True	20
 inference	WT012	accuracy	0.3333333333333333	bortezomib	True	20
-inference	WT013	accuracy	0.3333333333333333	bortezomib	True	20
+inference	WT013	accuracy	0.6666666666666666	bortezomib	True	20
 inference	WT014	accuracy	0.6666666666666666	bortezomib	True	20
 inference	WT015	accuracy	0.6666666666666666	bortezomib	True	20
-inference	WT_parental	accuracy	0.5	bortezomib	True	20
+inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	20
 test	BZ001	accuracy	0.5	bortezomib	True	20
-test	BZ002	accuracy	0.5	bortezomib	True	20
-test	BZ003	accuracy	0.6666666666666666	bortezomib	True	20
-test	BZ004	accuracy	1.0	bortezomib	True	20
-test	BZ005	accuracy	0.5	bortezomib	True	20
-test	CloneA	accuracy	0.5	bortezomib	True	20
-test	CloneE	accuracy	0.6666666666666666	bortezomib	True	20
-test	WT clone 01	accuracy	0.6666666666666666	bortezomib	True	20
-test	WT clone 02	accuracy	1.0	bortezomib	True	20
-test	WT clone 03	accuracy	0.0	bortezomib	True	20
-test	WT clone 04	accuracy	1.0	bortezomib	True	20
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	20
-test	WT_parental	accuracy	0.7142857142857143	bortezomib	True	20
-training	BZ001	accuracy	0.2857142857142857	bortezomib	True	20
-training	BZ002	accuracy	0.7857142857142857	bortezomib	True	20
-training	BZ003	accuracy	0.6153846153846154	bortezomib	True	20
-training	BZ004	accuracy	0.6923076923076923	bortezomib	True	20
-training	BZ005	accuracy	0.5	bortezomib	True	20
-training	CloneA	accuracy	0.42857142857142855	bortezomib	True	20
-training	CloneE	accuracy	0.5384615384615384	bortezomib	True	20
-training	WT clone 01	accuracy	0.6153846153846154	bortezomib	True	20
-training	WT clone 02	accuracy	0.35714285714285715	bortezomib	True	20
+test	BZ002	accuracy	0.4	bortezomib	True	20
+test	BZ003	accuracy	0.5	bortezomib	True	20
+test	BZ004	accuracy	0.6666666666666666	bortezomib	True	20
+test	BZ005	accuracy	0.6	bortezomib	True	20
+test	CloneA	accuracy	0.4	bortezomib	True	20
+test	CloneE	accuracy	0.0	bortezomib	True	20
+test	WT clone 01	accuracy	0.0	bortezomib	True	20
+test	WT clone 02	accuracy	0.2	bortezomib	True	20
+test	WT clone 03	accuracy	0.8333333333333334	bortezomib	True	20
+test	WT clone 04	accuracy	0.4	bortezomib	True	20
+test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	20
+test	WT_parental	accuracy	0.35294117647058826	bortezomib	True	20
+training	BZ001	accuracy	0.3181818181818182	bortezomib	True	20
+training	BZ002	accuracy	0.6086956521739131	bortezomib	True	20
+training	BZ003	accuracy	0.6363636363636364	bortezomib	True	20
+training	BZ004	accuracy	0.4090909090909091	bortezomib	True	20
+training	BZ005	accuracy	0.5217391304347826	bortezomib	True	20
+training	CloneA	accuracy	0.391304347826087	bortezomib	True	20
+training	CloneE	accuracy	0.5	bortezomib	True	20
+training	WT clone 01	accuracy	0.5909090909090909	bortezomib	True	20
+training	WT clone 02	accuracy	0.43478260869565216	bortezomib	True	20
 training	WT clone 03	accuracy	0.5	bortezomib	True	20
-training	WT clone 04	accuracy	0.5714285714285714	bortezomib	True	20
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	20
-training	WT_parental	accuracy	0.3902439024390244	bortezomib	True	20
+training	WT clone 04	accuracy	0.43478260869565216	bortezomib	True	20
+training	WT clone 05	accuracy	0.4090909090909091	bortezomib	True	20
+training	WT_parental	accuracy	0.4925373134328358	bortezomib	True	20
 validation	BZ001	accuracy	0.75	bortezomib	True	20
-validation	BZ002	accuracy	0.75	bortezomib	True	20
-validation	BZ003	accuracy	0.25	bortezomib	True	20
+validation	BZ002	accuracy	0.5	bortezomib	True	20
+validation	BZ003	accuracy	0.75	bortezomib	True	20
 validation	BZ004	accuracy	0.5	bortezomib	True	20
-validation	BZ005	accuracy	1.0	bortezomib	True	20
-validation	CloneA	accuracy	0.0	bortezomib	True	20
+validation	BZ005	accuracy	0.5	bortezomib	True	20
+validation	CloneA	accuracy	0.75	bortezomib	True	20
 validation	CloneE	accuracy	0.25	bortezomib	True	20
-validation	WT clone 01	accuracy	0.75	bortezomib	True	20
-validation	WT clone 02	accuracy	0.0	bortezomib	True	20
+validation	WT clone 01	accuracy	0.25	bortezomib	True	20
+validation	WT clone 02	accuracy	0.25	bortezomib	True	20
 validation	WT clone 03	accuracy	0.5	bortezomib	True	20
-validation	WT clone 04	accuracy	0.0	bortezomib	True	20
-validation	WT clone 05	accuracy	0.5	bortezomib	True	20
-validation	WT_parental	accuracy	0.75	bortezomib	True	20
+validation	WT clone 04	accuracy	0.25	bortezomib	True	20
+validation	WT clone 05	accuracy	0.0	bortezomib	True	20
+validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	20
 inference	BZ001	avg_precision	1.0	bortezomib	True	20
 inference	BZ002	avg_precision	1.0	bortezomib	True	20
 inference	BZ003	avg_precision	1.0	bortezomib	True	20
@@ -3065,79 +3065,79 @@ validation	WT clone 03	avg_precision		bortezomib	True	20
 validation	WT clone 04	avg_precision		bortezomib	True	20
 validation	WT clone 05	avg_precision		bortezomib	True	20
 validation	WT_parental	avg_precision		bortezomib	True	20
-inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	21
-inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	21
-inference	BZ003	accuracy	1.0	bortezomib	True	21
-inference	BZ004	accuracy	0.0	bortezomib	True	21
-inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	21
-inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	21
+inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	21
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	21
+inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	21
+inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	21
+inference	BZ005	accuracy	1.0	bortezomib	True	21
+inference	BZ006	accuracy	1.0	bortezomib	True	21
 inference	BZ007	accuracy	1.0	bortezomib	True	21
-inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	21
-inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	21
+inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	21
+inference	BZ009	accuracy	1.0	bortezomib	True	21
 inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	21
-inference	BZ011	accuracy	0.0	bortezomib	True	21
+inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	21
 inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	21
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	21
-inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	21
-inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	21
+inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	21
+inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	21
+inference	BZ015	accuracy	0.0	bortezomib	True	21
 inference	BZ016	accuracy	1.0	bortezomib	True	21
-inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	21
-inference	BZ018	accuracy	0.0	bortezomib	True	21
-inference	WT001	accuracy	0.6666666666666666	bortezomib	True	21
+inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	21
+inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	21
+inference	WT001	accuracy	0.3333333333333333	bortezomib	True	21
 inference	WT002	accuracy	0.6666666666666666	bortezomib	True	21
-inference	WT003	accuracy	0.6666666666666666	bortezomib	True	21
-inference	WT004	accuracy	0.0	bortezomib	True	21
+inference	WT003	accuracy	0.0	bortezomib	True	21
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	21
 inference	WT005	accuracy	1.0	bortezomib	True	21
-inference	WT006	accuracy	0.0	bortezomib	True	21
-inference	WT007	accuracy	0.6666666666666666	bortezomib	True	21
-inference	WT008	accuracy	0.3333333333333333	bortezomib	True	21
+inference	WT006	accuracy	1.0	bortezomib	True	21
+inference	WT007	accuracy	0.3333333333333333	bortezomib	True	21
+inference	WT008	accuracy	0.6666666666666666	bortezomib	True	21
 inference	WT009	accuracy	0.6666666666666666	bortezomib	True	21
-inference	WT010	accuracy	0.0	bortezomib	True	21
+inference	WT010	accuracy	0.6666666666666666	bortezomib	True	21
 inference	WT011	accuracy	0.3333333333333333	bortezomib	True	21
-inference	WT012	accuracy	0.6666666666666666	bortezomib	True	21
-inference	WT013	accuracy	0.0	bortezomib	True	21
-inference	WT014	accuracy	0.6666666666666666	bortezomib	True	21
-inference	WT015	accuracy	0.0	bortezomib	True	21
-inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	21
-test	BZ001	accuracy	0.5	bortezomib	True	21
-test	BZ002	accuracy	0.0	bortezomib	True	21
-test	BZ003	accuracy	0.3333333333333333	bortezomib	True	21
+inference	WT012	accuracy	1.0	bortezomib	True	21
+inference	WT013	accuracy	0.6666666666666666	bortezomib	True	21
+inference	WT014	accuracy	1.0	bortezomib	True	21
+inference	WT015	accuracy	1.0	bortezomib	True	21
+inference	WT_parental	accuracy	0.5	bortezomib	True	21
+test	BZ001	accuracy	0.16666666666666666	bortezomib	True	21
+test	BZ002	accuracy	0.8	bortezomib	True	21
+test	BZ003	accuracy	0.16666666666666666	bortezomib	True	21
 test	BZ004	accuracy	0.6666666666666666	bortezomib	True	21
-test	BZ005	accuracy	0.0	bortezomib	True	21
-test	CloneA	accuracy	0.0	bortezomib	True	21
+test	BZ005	accuracy	0.6	bortezomib	True	21
+test	CloneA	accuracy	0.6	bortezomib	True	21
 test	CloneE	accuracy	0.6666666666666666	bortezomib	True	21
 test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	21
-test	WT clone 02	accuracy	0.5	bortezomib	True	21
-test	WT clone 03	accuracy	0.0	bortezomib	True	21
-test	WT clone 04	accuracy	0.5	bortezomib	True	21
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	21
-test	WT_parental	accuracy	0.5714285714285714	bortezomib	True	21
-training	BZ001	accuracy	0.6428571428571429	bortezomib	True	21
-training	BZ002	accuracy	0.6428571428571429	bortezomib	True	21
-training	BZ003	accuracy	0.46153846153846156	bortezomib	True	21
-training	BZ004	accuracy	0.46153846153846156	bortezomib	True	21
-training	BZ005	accuracy	0.5714285714285714	bortezomib	True	21
-training	CloneA	accuracy	0.7142857142857143	bortezomib	True	21
-training	CloneE	accuracy	0.38461538461538464	bortezomib	True	21
-training	WT clone 01	accuracy	0.6153846153846154	bortezomib	True	21
-training	WT clone 02	accuracy	0.35714285714285715	bortezomib	True	21
-training	WT clone 03	accuracy	0.7857142857142857	bortezomib	True	21
-training	WT clone 04	accuracy	0.6428571428571429	bortezomib	True	21
-training	WT clone 05	accuracy	0.6153846153846154	bortezomib	True	21
-training	WT_parental	accuracy	0.43902439024390244	bortezomib	True	21
-validation	BZ001	accuracy	0.75	bortezomib	True	21
-validation	BZ002	accuracy	0.5	bortezomib	True	21
-validation	BZ003	accuracy	0.75	bortezomib	True	21
-validation	BZ004	accuracy	0.5	bortezomib	True	21
+test	WT clone 02	accuracy	0.6	bortezomib	True	21
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	21
+test	WT clone 04	accuracy	0.8	bortezomib	True	21
+test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	21
+test	WT_parental	accuracy	0.5294117647058824	bortezomib	True	21
+training	BZ001	accuracy	0.45454545454545453	bortezomib	True	21
+training	BZ002	accuracy	0.5217391304347826	bortezomib	True	21
+training	BZ003	accuracy	0.5454545454545454	bortezomib	True	21
+training	BZ004	accuracy	0.8181818181818182	bortezomib	True	21
+training	BZ005	accuracy	0.43478260869565216	bortezomib	True	21
+training	CloneA	accuracy	0.4782608695652174	bortezomib	True	21
+training	CloneE	accuracy	0.6818181818181818	bortezomib	True	21
+training	WT clone 01	accuracy	0.5454545454545454	bortezomib	True	21
+training	WT clone 02	accuracy	0.5217391304347826	bortezomib	True	21
+training	WT clone 03	accuracy	0.5	bortezomib	True	21
+training	WT clone 04	accuracy	0.391304347826087	bortezomib	True	21
+training	WT clone 05	accuracy	0.5909090909090909	bortezomib	True	21
+training	WT_parental	accuracy	0.44776119402985076	bortezomib	True	21
+validation	BZ001	accuracy	1.0	bortezomib	True	21
+validation	BZ002	accuracy	0.25	bortezomib	True	21
+validation	BZ003	accuracy	0.25	bortezomib	True	21
+validation	BZ004	accuracy	0.75	bortezomib	True	21
 validation	BZ005	accuracy	0.75	bortezomib	True	21
-validation	CloneA	accuracy	0.5	bortezomib	True	21
-validation	CloneE	accuracy	0.5	bortezomib	True	21
+validation	CloneA	accuracy	0.75	bortezomib	True	21
+validation	CloneE	accuracy	0.0	bortezomib	True	21
 validation	WT clone 01	accuracy	0.5	bortezomib	True	21
-validation	WT clone 02	accuracy	0.75	bortezomib	True	21
+validation	WT clone 02	accuracy	0.5	bortezomib	True	21
 validation	WT clone 03	accuracy	0.25	bortezomib	True	21
-validation	WT clone 04	accuracy	0.25	bortezomib	True	21
-validation	WT clone 05	accuracy	0.5	bortezomib	True	21
-validation	WT_parental	accuracy	0.5	bortezomib	True	21
+validation	WT clone 04	accuracy	0.5	bortezomib	True	21
+validation	WT clone 05	accuracy	0.75	bortezomib	True	21
+validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	21
 inference	BZ001	avg_precision	1.0	bortezomib	True	21
 inference	BZ002	avg_precision	1.0	bortezomib	True	21
 inference	BZ003	avg_precision	1.0	bortezomib	True	21
@@ -3211,78 +3211,78 @@ validation	WT clone 03	avg_precision		bortezomib	True	21
 validation	WT clone 04	avg_precision		bortezomib	True	21
 validation	WT clone 05	avg_precision		bortezomib	True	21
 validation	WT_parental	avg_precision		bortezomib	True	21
-inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	22
-inference	BZ002	accuracy	1.0	bortezomib	True	22
+inference	BZ001	accuracy	0.3333333333333333	bortezomib	True	22
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	22
 inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	22
 inference	BZ004	accuracy	1.0	bortezomib	True	22
-inference	BZ005	accuracy	0.3333333333333333	bortezomib	True	22
+inference	BZ005	accuracy	1.0	bortezomib	True	22
 inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	22
-inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	22
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	22
-inference	BZ009	accuracy	0.0	bortezomib	True	22
+inference	BZ007	accuracy	0.0	bortezomib	True	22
+inference	BZ008	accuracy	1.0	bortezomib	True	22
+inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	22
 inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	22
-inference	BZ011	accuracy	0.0	bortezomib	True	22
-inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	22
+inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	22
+inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	22
 inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	22
 inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	22
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	22
+inference	BZ015	accuracy	1.0	bortezomib	True	22
 inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	22
 inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	22
-inference	BZ018	accuracy	0.0	bortezomib	True	22
-inference	WT001	accuracy	0.0	bortezomib	True	22
+inference	BZ018	accuracy	0.6666666666666666	bortezomib	True	22
+inference	WT001	accuracy	0.6666666666666666	bortezomib	True	22
 inference	WT002	accuracy	0.3333333333333333	bortezomib	True	22
 inference	WT003	accuracy	0.6666666666666666	bortezomib	True	22
 inference	WT004	accuracy	0.3333333333333333	bortezomib	True	22
 inference	WT005	accuracy	0.6666666666666666	bortezomib	True	22
-inference	WT006	accuracy	0.6666666666666666	bortezomib	True	22
-inference	WT007	accuracy	0.3333333333333333	bortezomib	True	22
-inference	WT008	accuracy	1.0	bortezomib	True	22
-inference	WT009	accuracy	0.6666666666666666	bortezomib	True	22
-inference	WT010	accuracy	0.6666666666666666	bortezomib	True	22
+inference	WT006	accuracy	0.3333333333333333	bortezomib	True	22
+inference	WT007	accuracy	0.6666666666666666	bortezomib	True	22
+inference	WT008	accuracy	0.0	bortezomib	True	22
+inference	WT009	accuracy	0.0	bortezomib	True	22
+inference	WT010	accuracy	1.0	bortezomib	True	22
 inference	WT011	accuracy	0.6666666666666666	bortezomib	True	22
 inference	WT012	accuracy	0.3333333333333333	bortezomib	True	22
-inference	WT013	accuracy	0.0	bortezomib	True	22
-inference	WT014	accuracy	0.6666666666666666	bortezomib	True	22
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	22
-inference	WT_parental	accuracy	0.5	bortezomib	True	22
-test	BZ001	accuracy	0.0	bortezomib	True	22
-test	BZ002	accuracy	0.0	bortezomib	True	22
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	22
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	22
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	22
+inference	WT_parental	accuracy	0.6666666666666666	bortezomib	True	22
+test	BZ001	accuracy	0.6666666666666666	bortezomib	True	22
+test	BZ002	accuracy	0.6	bortezomib	True	22
 test	BZ003	accuracy	0.3333333333333333	bortezomib	True	22
-test	BZ004	accuracy	1.0	bortezomib	True	22
-test	BZ005	accuracy	1.0	bortezomib	True	22
-test	CloneA	accuracy	0.0	bortezomib	True	22
-test	CloneE	accuracy	0.3333333333333333	bortezomib	True	22
-test	WT clone 01	accuracy	1.0	bortezomib	True	22
-test	WT clone 02	accuracy	0.5	bortezomib	True	22
-test	WT clone 03	accuracy	0.0	bortezomib	True	22
-test	WT clone 04	accuracy	0.5	bortezomib	True	22
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	22
-test	WT_parental	accuracy	0.8571428571428571	bortezomib	True	22
-training	BZ001	accuracy	0.42857142857142855	bortezomib	True	22
-training	BZ002	accuracy	0.6428571428571429	bortezomib	True	22
-training	BZ003	accuracy	0.38461538461538464	bortezomib	True	22
-training	BZ004	accuracy	0.6923076923076923	bortezomib	True	22
-training	BZ005	accuracy	0.5714285714285714	bortezomib	True	22
-training	CloneA	accuracy	0.5714285714285714	bortezomib	True	22
-training	CloneE	accuracy	0.6923076923076923	bortezomib	True	22
-training	WT clone 01	accuracy	0.6923076923076923	bortezomib	True	22
-training	WT clone 02	accuracy	0.7142857142857143	bortezomib	True	22
-training	WT clone 03	accuracy	0.2857142857142857	bortezomib	True	22
-training	WT clone 04	accuracy	0.42857142857142855	bortezomib	True	22
-training	WT clone 05	accuracy	0.46153846153846156	bortezomib	True	22
-training	WT_parental	accuracy	0.43902439024390244	bortezomib	True	22
+test	BZ004	accuracy	0.8333333333333334	bortezomib	True	22
+test	BZ005	accuracy	0.8	bortezomib	True	22
+test	CloneA	accuracy	0.6	bortezomib	True	22
+test	CloneE	accuracy	0.6666666666666666	bortezomib	True	22
+test	WT clone 01	accuracy	0.16666666666666666	bortezomib	True	22
+test	WT clone 02	accuracy	0.4	bortezomib	True	22
+test	WT clone 03	accuracy	0.3333333333333333	bortezomib	True	22
+test	WT clone 04	accuracy	0.4	bortezomib	True	22
+test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	22
+test	WT_parental	accuracy	0.35294117647058826	bortezomib	True	22
+training	BZ001	accuracy	0.5454545454545454	bortezomib	True	22
+training	BZ002	accuracy	0.4782608695652174	bortezomib	True	22
+training	BZ003	accuracy	0.5	bortezomib	True	22
+training	BZ004	accuracy	0.5	bortezomib	True	22
+training	BZ005	accuracy	0.34782608695652173	bortezomib	True	22
+training	CloneA	accuracy	0.6086956521739131	bortezomib	True	22
+training	CloneE	accuracy	0.5909090909090909	bortezomib	True	22
+training	WT clone 01	accuracy	0.6818181818181818	bortezomib	True	22
+training	WT clone 02	accuracy	0.5652173913043478	bortezomib	True	22
+training	WT clone 03	accuracy	0.5909090909090909	bortezomib	True	22
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	22
+training	WT clone 05	accuracy	0.4090909090909091	bortezomib	True	22
+training	WT_parental	accuracy	0.5223880597014925	bortezomib	True	22
 validation	BZ001	accuracy	0.25	bortezomib	True	22
-validation	BZ002	accuracy	1.0	bortezomib	True	22
-validation	BZ003	accuracy	1.0	bortezomib	True	22
-validation	BZ004	accuracy	0.75	bortezomib	True	22
-validation	BZ005	accuracy	0.75	bortezomib	True	22
-validation	CloneA	accuracy	0.5	bortezomib	True	22
+validation	BZ002	accuracy	0.5	bortezomib	True	22
+validation	BZ003	accuracy	0.5	bortezomib	True	22
+validation	BZ004	accuracy	0.0	bortezomib	True	22
+validation	BZ005	accuracy	0.25	bortezomib	True	22
+validation	CloneA	accuracy	1.0	bortezomib	True	22
 validation	CloneE	accuracy	0.75	bortezomib	True	22
-validation	WT clone 01	accuracy	0.25	bortezomib	True	22
-validation	WT clone 02	accuracy	0.75	bortezomib	True	22
+validation	WT clone 01	accuracy	0.5	bortezomib	True	22
+validation	WT clone 02	accuracy	0.5	bortezomib	True	22
 validation	WT clone 03	accuracy	0.5	bortezomib	True	22
-validation	WT clone 04	accuracy	0.5	bortezomib	True	22
-validation	WT clone 05	accuracy	0.5	bortezomib	True	22
+validation	WT clone 04	accuracy	0.75	bortezomib	True	22
+validation	WT clone 05	accuracy	0.75	bortezomib	True	22
 validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	22
 inference	BZ001	avg_precision	1.0	bortezomib	True	22
 inference	BZ002	avg_precision	1.0	bortezomib	True	22
@@ -3359,76 +3359,76 @@ validation	WT clone 05	avg_precision		bortezomib	True	22
 validation	WT_parental	avg_precision		bortezomib	True	22
 inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	23
 inference	BZ002	accuracy	0.3333333333333333	bortezomib	True	23
-inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	23
-inference	BZ004	accuracy	0.3333333333333333	bortezomib	True	23
+inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	23
+inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	23
 inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	23
 inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	23
 inference	BZ007	accuracy	0.6666666666666666	bortezomib	True	23
-inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	23
-inference	BZ009	accuracy	0.0	bortezomib	True	23
-inference	BZ010	accuracy	0.6666666666666666	bortezomib	True	23
-inference	BZ011	accuracy	0.6666666666666666	bortezomib	True	23
+inference	BZ008	accuracy	0.6666666666666666	bortezomib	True	23
+inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	23
+inference	BZ010	accuracy	0.0	bortezomib	True	23
+inference	BZ011	accuracy	1.0	bortezomib	True	23
 inference	BZ012	accuracy	0.3333333333333333	bortezomib	True	23
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	23
-inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	23
-inference	BZ015	accuracy	0.3333333333333333	bortezomib	True	23
-inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	23
-inference	BZ017	accuracy	1.0	bortezomib	True	23
-inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	23
-inference	WT001	accuracy	1.0	bortezomib	True	23
+inference	BZ013	accuracy	0.6666666666666666	bortezomib	True	23
+inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	23
+inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	23
+inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	23
+inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	23
+inference	BZ018	accuracy	1.0	bortezomib	True	23
+inference	WT001	accuracy	0.3333333333333333	bortezomib	True	23
 inference	WT002	accuracy	0.3333333333333333	bortezomib	True	23
-inference	WT003	accuracy	0.6666666666666666	bortezomib	True	23
-inference	WT004	accuracy	0.6666666666666666	bortezomib	True	23
+inference	WT003	accuracy	1.0	bortezomib	True	23
+inference	WT004	accuracy	0.3333333333333333	bortezomib	True	23
 inference	WT005	accuracy	0.0	bortezomib	True	23
-inference	WT006	accuracy	0.3333333333333333	bortezomib	True	23
+inference	WT006	accuracy	0.6666666666666666	bortezomib	True	23
 inference	WT007	accuracy	0.6666666666666666	bortezomib	True	23
-inference	WT008	accuracy	0.6666666666666666	bortezomib	True	23
-inference	WT009	accuracy	0.0	bortezomib	True	23
+inference	WT008	accuracy	0.3333333333333333	bortezomib	True	23
+inference	WT009	accuracy	0.3333333333333333	bortezomib	True	23
 inference	WT010	accuracy	0.6666666666666666	bortezomib	True	23
-inference	WT011	accuracy	0.6666666666666666	bortezomib	True	23
+inference	WT011	accuracy	0.0	bortezomib	True	23
 inference	WT012	accuracy	1.0	bortezomib	True	23
-inference	WT013	accuracy	0.6666666666666666	bortezomib	True	23
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	23
 inference	WT014	accuracy	0.6666666666666666	bortezomib	True	23
-inference	WT015	accuracy	0.3333333333333333	bortezomib	True	23
-inference	WT_parental	accuracy	0.5	bortezomib	True	23
+inference	WT015	accuracy	0.6666666666666666	bortezomib	True	23
+inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	23
 test	BZ001	accuracy	0.5	bortezomib	True	23
-test	BZ002	accuracy	0.0	bortezomib	True	23
-test	BZ003	accuracy	1.0	bortezomib	True	23
-test	BZ004	accuracy	0.6666666666666666	bortezomib	True	23
-test	BZ005	accuracy	1.0	bortezomib	True	23
-test	CloneA	accuracy	0.5	bortezomib	True	23
-test	CloneE	accuracy	0.6666666666666666	bortezomib	True	23
-test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	23
-test	WT clone 02	accuracy	0.5	bortezomib	True	23
+test	BZ002	accuracy	0.4	bortezomib	True	23
+test	BZ003	accuracy	0.6666666666666666	bortezomib	True	23
+test	BZ004	accuracy	0.3333333333333333	bortezomib	True	23
+test	BZ005	accuracy	0.2	bortezomib	True	23
+test	CloneA	accuracy	0.6	bortezomib	True	23
+test	CloneE	accuracy	0.8333333333333334	bortezomib	True	23
+test	WT clone 01	accuracy	0.5	bortezomib	True	23
+test	WT clone 02	accuracy	0.4	bortezomib	True	23
 test	WT clone 03	accuracy	0.5	bortezomib	True	23
-test	WT clone 04	accuracy	0.0	bortezomib	True	23
-test	WT clone 05	accuracy	0.6666666666666666	bortezomib	True	23
-test	WT_parental	accuracy	0.42857142857142855	bortezomib	True	23
-training	BZ001	accuracy	0.5	bortezomib	True	23
-training	BZ002	accuracy	0.6428571428571429	bortezomib	True	23
-training	BZ003	accuracy	0.5384615384615384	bortezomib	True	23
-training	BZ004	accuracy	0.6923076923076923	bortezomib	True	23
-training	BZ005	accuracy	0.42857142857142855	bortezomib	True	23
-training	CloneA	accuracy	0.35714285714285715	bortezomib	True	23
-training	CloneE	accuracy	0.38461538461538464	bortezomib	True	23
-training	WT clone 01	accuracy	0.38461538461538464	bortezomib	True	23
-training	WT clone 02	accuracy	0.6428571428571429	bortezomib	True	23
-training	WT clone 03	accuracy	0.6428571428571429	bortezomib	True	23
-training	WT clone 04	accuracy	0.42857142857142855	bortezomib	True	23
-training	WT clone 05	accuracy	0.5384615384615384	bortezomib	True	23
-training	WT_parental	accuracy	0.4146341463414634	bortezomib	True	23
-validation	BZ001	accuracy	0.75	bortezomib	True	23
-validation	BZ002	accuracy	0.75	bortezomib	True	23
-validation	BZ003	accuracy	0.75	bortezomib	True	23
-validation	BZ004	accuracy	0.25	bortezomib	True	23
-validation	BZ005	accuracy	0.0	bortezomib	True	23
-validation	CloneA	accuracy	1.0	bortezomib	True	23
-validation	CloneE	accuracy	0.5	bortezomib	True	23
+test	WT clone 04	accuracy	0.4	bortezomib	True	23
+test	WT clone 05	accuracy	0.8333333333333334	bortezomib	True	23
+test	WT_parental	accuracy	0.35294117647058826	bortezomib	True	23
+training	BZ001	accuracy	0.36363636363636365	bortezomib	True	23
+training	BZ002	accuracy	0.6086956521739131	bortezomib	True	23
+training	BZ003	accuracy	0.5	bortezomib	True	23
+training	BZ004	accuracy	0.5454545454545454	bortezomib	True	23
+training	BZ005	accuracy	0.6086956521739131	bortezomib	True	23
+training	CloneA	accuracy	0.43478260869565216	bortezomib	True	23
+training	CloneE	accuracy	0.45454545454545453	bortezomib	True	23
+training	WT clone 01	accuracy	0.5454545454545454	bortezomib	True	23
+training	WT clone 02	accuracy	0.5652173913043478	bortezomib	True	23
+training	WT clone 03	accuracy	0.45454545454545453	bortezomib	True	23
+training	WT clone 04	accuracy	0.5217391304347826	bortezomib	True	23
+training	WT clone 05	accuracy	0.36363636363636365	bortezomib	True	23
+training	WT_parental	accuracy	0.5671641791044776	bortezomib	True	23
+validation	BZ001	accuracy	0.5	bortezomib	True	23
+validation	BZ002	accuracy	0.5	bortezomib	True	23
+validation	BZ003	accuracy	0.25	bortezomib	True	23
+validation	BZ004	accuracy	0.75	bortezomib	True	23
+validation	BZ005	accuracy	0.25	bortezomib	True	23
+validation	CloneA	accuracy	0.5	bortezomib	True	23
+validation	CloneE	accuracy	0.75	bortezomib	True	23
 validation	WT clone 01	accuracy	0.25	bortezomib	True	23
-validation	WT clone 02	accuracy	0.5	bortezomib	True	23
-validation	WT clone 03	accuracy	0.75	bortezomib	True	23
+validation	WT clone 02	accuracy	0.25	bortezomib	True	23
+validation	WT clone 03	accuracy	0.5	bortezomib	True	23
 validation	WT clone 04	accuracy	0.5	bortezomib	True	23
-validation	WT clone 05	accuracy	0.25	bortezomib	True	23
+validation	WT clone 05	accuracy	0.75	bortezomib	True	23
 validation	WT_parental	accuracy	0.25	bortezomib	True	23
 inference	BZ001	avg_precision	1.0	bortezomib	True	23
 inference	BZ002	avg_precision	1.0	bortezomib	True	23
@@ -3504,78 +3504,78 @@ validation	WT clone 04	avg_precision		bortezomib	True	23
 validation	WT clone 05	avg_precision		bortezomib	True	23
 validation	WT_parental	avg_precision		bortezomib	True	23
 inference	BZ001	accuracy	0.6666666666666666	bortezomib	True	24
-inference	BZ002	accuracy	1.0	bortezomib	True	24
-inference	BZ003	accuracy	0.6666666666666666	bortezomib	True	24
+inference	BZ002	accuracy	0.6666666666666666	bortezomib	True	24
+inference	BZ003	accuracy	0.3333333333333333	bortezomib	True	24
 inference	BZ004	accuracy	0.6666666666666666	bortezomib	True	24
-inference	BZ005	accuracy	0.6666666666666666	bortezomib	True	24
-inference	BZ006	accuracy	0.3333333333333333	bortezomib	True	24
+inference	BZ005	accuracy	1.0	bortezomib	True	24
+inference	BZ006	accuracy	0.6666666666666666	bortezomib	True	24
 inference	BZ007	accuracy	0.0	bortezomib	True	24
-inference	BZ008	accuracy	1.0	bortezomib	True	24
+inference	BZ008	accuracy	0.3333333333333333	bortezomib	True	24
 inference	BZ009	accuracy	0.3333333333333333	bortezomib	True	24
-inference	BZ010	accuracy	0.3333333333333333	bortezomib	True	24
-inference	BZ011	accuracy	0.3333333333333333	bortezomib	True	24
-inference	BZ012	accuracy	0.6666666666666666	bortezomib	True	24
-inference	BZ013	accuracy	0.3333333333333333	bortezomib	True	24
-inference	BZ014	accuracy	0.6666666666666666	bortezomib	True	24
+inference	BZ010	accuracy	1.0	bortezomib	True	24
+inference	BZ011	accuracy	1.0	bortezomib	True	24
+inference	BZ012	accuracy	1.0	bortezomib	True	24
+inference	BZ013	accuracy	1.0	bortezomib	True	24
+inference	BZ014	accuracy	0.3333333333333333	bortezomib	True	24
 inference	BZ015	accuracy	0.6666666666666666	bortezomib	True	24
-inference	BZ016	accuracy	0.6666666666666666	bortezomib	True	24
-inference	BZ017	accuracy	0.3333333333333333	bortezomib	True	24
+inference	BZ016	accuracy	0.3333333333333333	bortezomib	True	24
+inference	BZ017	accuracy	0.6666666666666666	bortezomib	True	24
 inference	BZ018	accuracy	0.3333333333333333	bortezomib	True	24
-inference	WT001	accuracy	0.3333333333333333	bortezomib	True	24
-inference	WT002	accuracy	0.6666666666666666	bortezomib	True	24
+inference	WT001	accuracy	0.6666666666666666	bortezomib	True	24
+inference	WT002	accuracy	0.3333333333333333	bortezomib	True	24
 inference	WT003	accuracy	0.6666666666666666	bortezomib	True	24
 inference	WT004	accuracy	0.3333333333333333	bortezomib	True	24
 inference	WT005	accuracy	0.3333333333333333	bortezomib	True	24
 inference	WT006	accuracy	0.6666666666666666	bortezomib	True	24
-inference	WT007	accuracy	0.0	bortezomib	True	24
-inference	WT008	accuracy	0.6666666666666666	bortezomib	True	24
-inference	WT009	accuracy	0.3333333333333333	bortezomib	True	24
-inference	WT010	accuracy	0.3333333333333333	bortezomib	True	24
-inference	WT011	accuracy	0.3333333333333333	bortezomib	True	24
-inference	WT012	accuracy	0.6666666666666666	bortezomib	True	24
-inference	WT013	accuracy	0.6666666666666666	bortezomib	True	24
-inference	WT014	accuracy	0.6666666666666666	bortezomib	True	24
-inference	WT015	accuracy	1.0	bortezomib	True	24
+inference	WT007	accuracy	0.3333333333333333	bortezomib	True	24
+inference	WT008	accuracy	1.0	bortezomib	True	24
+inference	WT009	accuracy	0.6666666666666666	bortezomib	True	24
+inference	WT010	accuracy	0.0	bortezomib	True	24
+inference	WT011	accuracy	0.6666666666666666	bortezomib	True	24
+inference	WT012	accuracy	0.3333333333333333	bortezomib	True	24
+inference	WT013	accuracy	0.3333333333333333	bortezomib	True	24
+inference	WT014	accuracy	0.3333333333333333	bortezomib	True	24
+inference	WT015	accuracy	0.3333333333333333	bortezomib	True	24
 inference	WT_parental	accuracy	0.3333333333333333	bortezomib	True	24
-test	BZ001	accuracy	0.5	bortezomib	True	24
-test	BZ002	accuracy	0.0	bortezomib	True	24
-test	BZ003	accuracy	0.0	bortezomib	True	24
+test	BZ001	accuracy	0.16666666666666666	bortezomib	True	24
+test	BZ002	accuracy	1.0	bortezomib	True	24
+test	BZ003	accuracy	0.3333333333333333	bortezomib	True	24
 test	BZ004	accuracy	0.3333333333333333	bortezomib	True	24
-test	BZ005	accuracy	0.0	bortezomib	True	24
-test	CloneA	accuracy	0.0	bortezomib	True	24
-test	CloneE	accuracy	0.3333333333333333	bortezomib	True	24
-test	WT clone 01	accuracy	0.3333333333333333	bortezomib	True	24
-test	WT clone 02	accuracy	0.5	bortezomib	True	24
-test	WT clone 03	accuracy	0.5	bortezomib	True	24
-test	WT clone 04	accuracy	1.0	bortezomib	True	24
-test	WT clone 05	accuracy	0.3333333333333333	bortezomib	True	24
-test	WT_parental	accuracy	0.5714285714285714	bortezomib	True	24
-training	BZ001	accuracy	0.42857142857142855	bortezomib	True	24
-training	BZ002	accuracy	0.7142857142857143	bortezomib	True	24
-training	BZ003	accuracy	0.6153846153846154	bortezomib	True	24
-training	BZ004	accuracy	0.38461538461538464	bortezomib	True	24
-training	BZ005	accuracy	0.5714285714285714	bortezomib	True	24
-training	CloneA	accuracy	0.35714285714285715	bortezomib	True	24
-training	CloneE	accuracy	0.23076923076923078	bortezomib	True	24
-training	WT clone 01	accuracy	0.5384615384615384	bortezomib	True	24
-training	WT clone 02	accuracy	0.5714285714285714	bortezomib	True	24
-training	WT clone 03	accuracy	0.5	bortezomib	True	24
-training	WT clone 04	accuracy	0.5	bortezomib	True	24
-training	WT clone 05	accuracy	0.23076923076923078	bortezomib	True	24
-training	WT_parental	accuracy	0.36585365853658536	bortezomib	True	24
+test	BZ005	accuracy	0.6	bortezomib	True	24
+test	CloneA	accuracy	0.4	bortezomib	True	24
+test	CloneE	accuracy	0.6666666666666666	bortezomib	True	24
+test	WT clone 01	accuracy	0.5	bortezomib	True	24
+test	WT clone 02	accuracy	0.6	bortezomib	True	24
+test	WT clone 03	accuracy	0.6666666666666666	bortezomib	True	24
+test	WT clone 04	accuracy	0.8	bortezomib	True	24
+test	WT clone 05	accuracy	0.5	bortezomib	True	24
+test	WT_parental	accuracy	0.47058823529411764	bortezomib	True	24
+training	BZ001	accuracy	0.5909090909090909	bortezomib	True	24
+training	BZ002	accuracy	0.43478260869565216	bortezomib	True	24
+training	BZ003	accuracy	0.3181818181818182	bortezomib	True	24
+training	BZ004	accuracy	0.5	bortezomib	True	24
+training	BZ005	accuracy	0.43478260869565216	bortezomib	True	24
+training	CloneA	accuracy	0.391304347826087	bortezomib	True	24
+training	CloneE	accuracy	0.5454545454545454	bortezomib	True	24
+training	WT clone 01	accuracy	0.5454545454545454	bortezomib	True	24
+training	WT clone 02	accuracy	0.4782608695652174	bortezomib	True	24
+training	WT clone 03	accuracy	0.4090909090909091	bortezomib	True	24
+training	WT clone 04	accuracy	0.34782608695652173	bortezomib	True	24
+training	WT clone 05	accuracy	0.5	bortezomib	True	24
+training	WT_parental	accuracy	0.43283582089552236	bortezomib	True	24
 validation	BZ001	accuracy	0.25	bortezomib	True	24
-validation	BZ002	accuracy	0.5	bortezomib	True	24
-validation	BZ003	accuracy	0.75	bortezomib	True	24
+validation	BZ002	accuracy	1.0	bortezomib	True	24
+validation	BZ003	accuracy	0.5	bortezomib	True	24
 validation	BZ004	accuracy	0.75	bortezomib	True	24
-validation	BZ005	accuracy	0.75	bortezomib	True	24
+validation	BZ005	accuracy	0.5	bortezomib	True	24
 validation	CloneA	accuracy	0.5	bortezomib	True	24
 validation	CloneE	accuracy	0.5	bortezomib	True	24
-validation	WT clone 01	accuracy	0.5	bortezomib	True	24
-validation	WT clone 02	accuracy	0.0	bortezomib	True	24
+validation	WT clone 01	accuracy	0.75	bortezomib	True	24
+validation	WT clone 02	accuracy	0.25	bortezomib	True	24
 validation	WT clone 03	accuracy	0.5	bortezomib	True	24
-validation	WT clone 04	accuracy	0.5	bortezomib	True	24
-validation	WT clone 05	accuracy	0.25	bortezomib	True	24
-validation	WT_parental	accuracy	0.3333333333333333	bortezomib	True	24
+validation	WT clone 04	accuracy	0.75	bortezomib	True	24
+validation	WT clone 05	accuracy	0.5	bortezomib	True	24
+validation	WT_parental	accuracy	0.5833333333333334	bortezomib	True	24
 inference	BZ001	avg_precision	1.0	bortezomib	True	24
 inference	BZ002	avg_precision	1.0	bortezomib	True	24
 inference	BZ003	avg_precision	1.0	bortezomib	True	24
