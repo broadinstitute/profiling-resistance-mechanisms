@@ -1,6 +1,34 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Calculate performance of signature
+# 
+# Gregory Way, 2021
+# 
+# I previously identified a series of morphology features that were significantly different between sensitive and resistant clones.
+# I also applied this signature to all profiles from training, testing, validation, and holdout sets.
+# Here, I evaluate the performance of this signature.
+# 
+# ## Evaluation
+# 
+# * Accuracy
+#   - The resistant and sensitive clones were balanced, so accuracy is an appropriate measure
+# * Average precision
+#   - How well are we able to classify the resistant samples (number correctly identified as resistant / total resistant)
+#   
+# ## Shuffled results
+# 
+# I also randomly permute the signature score 100 times and perform the full evaluation.
+# I record performance in this shuffled set as a negative control.
+# 
+# ## Metadata stratification
+# 
+# Lastly, I calculate performance in a variety of different metadata subsets. I calculate performance separately for:
+# 
+# 1. Across model splits (training, test, validation, holdout)
+# 2. Across model splits and plates (to identify plate-specific performance)
+# 3. Across model splits and clone ID (to identify if certain clones are consistently predicted differentially)
+
 # In[1]:
 
 
@@ -8,12 +36,10 @@ import sys
 import pathlib
 import numpy as np
 import pandas as pd
-
 from sklearn.metrics import accuracy_score, average_precision_score
 
 import plotnine as gg
 
-sys.path.insert(0, "../3.bulk-signatures/")
 from utils.metrics import get_metrics, get_metric_pipeline
 
 
@@ -34,9 +60,8 @@ results_file = pathlib.Path(sig_dir, f"singscore_results{dataset}.tsv.gz")
 
 output_dir = pathlib.Path("results", "performance")
 
-num_permutations = 25
+num_permutations = 100
 threshold = 0
-
 
 metric_comparisons = {
     "total": ["Metadata_model_split"],
@@ -79,7 +104,7 @@ for i in range(0, num_permutations):
     shuffle_metric_results = get_metric_pipeline(
         results_df,
         metric_comparisons,
-        [dataset],
+        datasets=[dataset],
         shuffle=True,
         signature=False,
         threshold=threshold
@@ -92,6 +117,7 @@ for i in range(0, num_permutations):
 # In[7]:
 
 
+# Output performance results
 for compare in metric_comparisons:
     full_results_df = real_metric_results[compare]
     shuffle_results_df = pd.concat(all_shuffle_results[compare]).reset_index(drop=True)
