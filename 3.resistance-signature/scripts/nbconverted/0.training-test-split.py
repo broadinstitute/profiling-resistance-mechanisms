@@ -25,7 +25,7 @@
 # | 2021_03_05_Batch17 | 220040 | 60 | 4 hour 0.1% DMSO | WT Parental, WT Clones 1-5, Resistant Clones 1-5, clone A/E |
 # | 2021_03_12_Batch18 | 220055 | 60 | 13 hour 0.1% DMSO | WT Parental, WT Clones 1-5, Resistant Clones 1-5, clone A/E |
 # 
-# Note we did not use batch 19 plate 220056 because of poor replicate reproducibility.
+# Note we did not use batch 19 plate 220056 because of poor replicate reproducibility (37% strong).
 # 
 # ### Procedure
 # 
