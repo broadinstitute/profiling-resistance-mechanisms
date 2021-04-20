@@ -150,7 +150,7 @@ for dataset in datasets:
             Metadata_batch=batch,
             Metadata_clone_type="resistant",
             Metadata_clone_type_indicator=1,
-            Metadata_model_split="holdout"
+            Metadata_model_split="test"
         )
 
         df.loc[df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type"] = "sensitive"
@@ -168,11 +168,11 @@ for dataset in datasets:
     
     dataset_df.loc[
         dataset_df.Metadata_Plate.astype(str) == validation_plate, "Metadata_model_split"
-    ] = "validation"
+    ] = "holdout"
     
     training_df = (
         dataset_df
-        .query("Metadata_model_split != 'validation'")
+        .query("Metadata_model_split != 'holdout'")
         .query("Metadata_clone_number in @training_clones")
     )
 
@@ -189,7 +189,7 @@ for dataset in datasets:
         
     dataset_df.loc[
         dataset_df.Metadata_unique_sample_name.isin(test_samples), "Metadata_model_split"
-    ] = "test"
+    ] = "validation"
     
     full_df.append(dataset_df)
 
