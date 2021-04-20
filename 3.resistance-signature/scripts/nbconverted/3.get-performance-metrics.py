@@ -15,6 +15,9 @@
 #   - The resistant and sensitive clones were balanced, so accuracy is an appropriate measure
 # * Average precision
 #   - How well are we able to classify the resistant samples (number correctly identified as resistant / total resistant)
+# * Receiver operating characteristic (ROC) curve
+#   - Computing the area under the ROC curve
+#   - Calculating the ROC curve coordinates as a tradeoff between true and false positives given various thresholds
 #   
 # ## Shuffled results
 # 
@@ -28,6 +31,8 @@
 # 1. Across model splits (training, test, validation, holdout)
 # 2. Across model splits and plates (to identify plate-specific performance)
 # 3. Across model splits and clone ID (to identify if certain clones are consistently predicted differentially)
+# 
+# Note that I only calculate ROC information for model splits (training, validation, and holdout)
 
 # In[1]:
 
@@ -69,6 +74,8 @@ metric_comparisons = {
     "sample": ["Metadata_model_split", "Metadata_clone_number"]
 }
 
+roc_model_split_focus = ["training", "test", "holdout"]
+
 
 # In[4]:
 
@@ -83,7 +90,7 @@ results_df.head()
 # In[5]:
 
 
-# Using real predictions
+# Get performance metrics using real predictions
 real_metric_results = get_metric_pipeline(
     results_df,
     metric_comparisons,
@@ -97,7 +104,7 @@ real_metric_results = get_metric_pipeline(
 # In[6]:
 
 
-# Using shuffled predictions
+# Get performance metrics using shuffled predictions
 all_shuffle_results = {compare: [] for compare in metric_comparisons}
 for i in range(0, num_permutations):
     np.random.seed(i)
@@ -117,6 +124,25 @@ for i in range(0, num_permutations):
 # In[7]:
 
 
+# Get ROC curve information for model sets
+roc_scores = []
+roc_curve_data = []
+for split in roc_model_split_focus:
+    results_subset_df = results_df.query("Metadata_model_split == @split")
+    for shuffle in [True, False]:
+        roc_auc_val, roc_df = get_metrics(df=results_subset_df, return_roc_curve=True, shuffle=shuffle)
+
+        roc_scores.append(pd.Series([roc_auc_val, split, shuffle]))
+        roc_curve_data.append(roc_df.assign(model_split=split, shuffled=shuffle))
+
+roc_scores_df = pd.DataFrame(roc_scores)
+roc_scores_df.columns = ["roc_auc", "model_split", "shuffled"]
+roc_curve_data_df = pd.concat(roc_curve_data).reset_index(drop=True)
+
+
+# In[8]:
+
+
 # Output performance results
 for compare in metric_comparisons:
     full_results_df = real_metric_results[compare]
@@ -127,4 +153,11 @@ for compare in metric_comparisons:
     
     output_file = pathlib.Path(f"{output_dir}/{compare}_{dataset}_shuffle_metric_performance.tsv")
     shuffle_results_df.to_csv(output_file, sep="\t", index=False)
+    
+# Output ROC results
+output_file = pathlib.Path(f"{output_dir}/{dataset}_roc_auc.tsv")
+roc_scores_df.to_csv(output_file, sep="\t", index=False)
+
+output_file = pathlib.Path(f"{output_dir}/{dataset}_roc_curve.tsv")
+roc_curve_data_df.to_csv(output_file, sep="\t", index=False)
 
