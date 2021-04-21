@@ -1,28 +1,28 @@
 Metadata_model_split	Metadata_clone_number	metric	metric_value	dataset	shuffle
 holdout	BZ001	accuracy	0.5	bortezomib	False
-holdout	BZ002	accuracy	0.5	bortezomib	False
+holdout	BZ002	accuracy	1.0	bortezomib	False
 holdout	BZ003	accuracy	1.0	bortezomib	False
 holdout	BZ004	accuracy	0.75	bortezomib	False
 holdout	BZ005	accuracy	1.0	bortezomib	False
-holdout	CloneA	accuracy	0.75	bortezomib	False
+holdout	CloneA	accuracy	0.5	bortezomib	False
 holdout	CloneE	accuracy	1.0	bortezomib	False
 holdout	WT clone 01	accuracy	0.0	bortezomib	False
 holdout	WT clone 02	accuracy	1.0	bortezomib	False
 holdout	WT clone 03	accuracy	1.0	bortezomib	False
-holdout	WT clone 04	accuracy	1.0	bortezomib	False
+holdout	WT clone 04	accuracy	0.75	bortezomib	False
 holdout	WT clone 05	accuracy	0.5	bortezomib	False
 holdout	WT_parental	accuracy	0.9166666666666666	bortezomib	False
-inference	BZ001	accuracy	0.6666666666666666	bortezomib	False
+inference	BZ001	accuracy	1.0	bortezomib	False
 inference	BZ002	accuracy	1.0	bortezomib	False
 inference	BZ003	accuracy	1.0	bortezomib	False
-inference	BZ004	accuracy	0.0	bortezomib	False
-inference	BZ005	accuracy	0.3333333333333333	bortezomib	False
+inference	BZ004	accuracy	1.0	bortezomib	False
+inference	BZ005	accuracy	0.6666666666666666	bortezomib	False
 inference	BZ006	accuracy	0.0	bortezomib	False
 inference	BZ007	accuracy	0.0	bortezomib	False
-inference	BZ008	accuracy	0.0	bortezomib	False
-inference	BZ009	accuracy	0.0	bortezomib	False
-inference	BZ010	accuracy	0.3333333333333333	bortezomib	False
-inference	BZ011	accuracy	0.0	bortezomib	False
+inference	BZ008	accuracy	1.0	bortezomib	False
+inference	BZ009	accuracy	1.0	bortezomib	False
+inference	BZ010	accuracy	1.0	bortezomib	False
+inference	BZ011	accuracy	0.6666666666666666	bortezomib	False
 inference	BZ012	accuracy	1.0	bortezomib	False
 inference	BZ013	accuracy	1.0	bortezomib	False
 inference	BZ014	accuracy	1.0	bortezomib	False
@@ -33,32 +33,32 @@ inference	BZ018	accuracy	1.0	bortezomib	False
 inference	WT001	accuracy	1.0	bortezomib	False
 inference	WT002	accuracy	1.0	bortezomib	False
 inference	WT003	accuracy	1.0	bortezomib	False
-inference	WT004	accuracy	1.0	bortezomib	False
+inference	WT004	accuracy	0.3333333333333333	bortezomib	False
 inference	WT005	accuracy	1.0	bortezomib	False
-inference	WT006	accuracy	1.0	bortezomib	False
+inference	WT006	accuracy	0.3333333333333333	bortezomib	False
 inference	WT007	accuracy	1.0	bortezomib	False
 inference	WT008	accuracy	1.0	bortezomib	False
 inference	WT009	accuracy	1.0	bortezomib	False
-inference	WT010	accuracy	1.0	bortezomib	False
+inference	WT010	accuracy	0.3333333333333333	bortezomib	False
 inference	WT011	accuracy	1.0	bortezomib	False
 inference	WT012	accuracy	1.0	bortezomib	False
 inference	WT013	accuracy	0.6666666666666666	bortezomib	False
 inference	WT014	accuracy	1.0	bortezomib	False
-inference	WT015	accuracy	0.6666666666666666	bortezomib	False
-inference	WT_parental	accuracy	0.6666666666666666	bortezomib	False
-test	CloneA	accuracy	0.625	bortezomib	False
-test	CloneE	accuracy	0.7083333333333334	bortezomib	False
+inference	WT015	accuracy	0.3333333333333333	bortezomib	False
+inference	WT_parental	accuracy	0.5	bortezomib	False
+test	CloneA	accuracy	0.5416666666666666	bortezomib	False
+test	CloneE	accuracy	0.625	bortezomib	False
 test	WT_parental	accuracy	0.9444444444444444	bortezomib	False
 training	BZ001	accuracy	0.95	bortezomib	False
-training	BZ002	accuracy	0.8095238095238095	bortezomib	False
+training	BZ002	accuracy	0.9047619047619048	bortezomib	False
 training	BZ003	accuracy	1.0	bortezomib	False
-training	BZ004	accuracy	0.85	bortezomib	False
-training	BZ005	accuracy	0.9047619047619048	bortezomib	False
+training	BZ004	accuracy	0.95	bortezomib	False
+training	BZ005	accuracy	0.9523809523809523	bortezomib	False
 training	WT clone 01	accuracy	0.7619047619047619	bortezomib	False
 training	WT clone 02	accuracy	0.95	bortezomib	False
 training	WT clone 03	accuracy	1.0	bortezomib	False
-training	WT clone 04	accuracy	0.8	bortezomib	False
-training	WT clone 05	accuracy	0.7142857142857143	bortezomib	False
+training	WT clone 04	accuracy	0.7	bortezomib	False
+training	WT clone 05	accuracy	0.6190476190476191	bortezomib	False
 validation	BZ001	accuracy	1.0	bortezomib	False
 validation	BZ002	accuracy	0.6666666666666666	bortezomib	False
 validation	BZ003	accuracy	1.0	bortezomib	False
