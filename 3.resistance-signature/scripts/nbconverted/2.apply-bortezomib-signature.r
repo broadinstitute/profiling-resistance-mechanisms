@@ -1,7 +1,7 @@
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(singscore))
 
-source(file.path("../3.bulk-signatures/utils", "singscore_utils.R"))
+source(file.path("utils", "singscore_utils.R"))
 
 seed <- 1234
 num_permutations <- 1000

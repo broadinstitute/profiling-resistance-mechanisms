@@ -3,7 +3,7 @@ suppressPackageStartupMessages(library(broom))
 suppressPackageStartupMessages(library(ggplot2))
 suppressPackageStartupMessages(library(ggrepel))
 
-source(file.path("../3.bulk-signatures/scripts", "signature_utils.R"))
+source(file.path("utils", "signature_utils.R"))
 
 set.seed(123)
 
@@ -76,8 +76,8 @@ print(table(
 formula_terms <- paste(
     "~",
     "Metadata_clone_type_indicator", "+",
-    "Metadata_batch", "+",
     "Metadata_treatment_time", "+",
+    "Metadata_batch", "+",
     "Metadata_clone_number"
 )
 
@@ -118,6 +118,8 @@ features <- unique(anova_results_df$feature)
 
 num_cp_features <- length(features)
 signif_line <- -log10(alpha / num_cp_features)
+
+signif_line
 
 # Derive signature by systematically removing features influenced by technical artifacts
 signature_features <- tukey_results_df %>%
@@ -169,7 +171,9 @@ final_signature_features <- setdiff(
 final_signature_features <- setdiff(
     final_signature_features, unique(feature_exclude_cell_count)
 )
-
+final_signature_features <- setdiff(
+    final_signature_features, unique(feature_exclude_time)
+)
 # Create a summary of the signatures
 signature_summary_df <- tibble(features)
 
