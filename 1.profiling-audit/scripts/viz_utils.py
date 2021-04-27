@@ -97,15 +97,15 @@ def plot_replicate_density(
         + gg.ylab("Density")
         + gg.geom_vline(xintercept=cutoff, color="red", linetype="dashed")
         + gg.ggtitle(
-            f"Batch: {batch}; Plate: {plate}\nPercent Strong: {np.round(percent_strong * 100, 2)}%"
+            f"{batch}; Plate: {plate}\n\nPercent Replicating: {np.round(percent_strong * 100, 2)}%"
         )
         + gg.theme_bw()
         + gg.theme(
-            title=gg.element_text(size=5),
+            title=gg.element_text(size=3.5),
             axis_text=gg.element_text(size=4),
-            axis_title=gg.element_text(size=5),
+            axis_title=gg.element_text(size=4),
             legend_text=gg.element_text(size=4),
-            legend_title=gg.element_text(size=5),
+            legend_title=gg.element_text(size=4),
             strip_text=gg.element_text(size=4, color="black"),
             strip_background=gg.element_rect(colour="black", fill="#fdfff4"),
         )

@@ -79,7 +79,7 @@ for batch in audit_config:
             features=features,
             metadata_features=meta_features,
             similarity_metric="pearson",
-            eval_metric="percent_strong",
+            eval_metric="replicate_reproducibility",
         )
 
         audit_df = assign_replicates(
@@ -94,9 +94,9 @@ for batch in audit_config:
             features=features,
             meta_features=meta_features,
             replicate_groups=audit_cols,
-            operation="percent_strong",
+            operation="replicate_reproducibility",
             similarity_metric="pearson",
-            percent_strong_quantile=0.95,
+            replicate_reproducibility_quantile=0.95,
         )
 
         grid_string = "~{}".format("+".join([f"{x}_pair_a" for x in audit_cols]))
