@@ -1,11 +1,17 @@
 # Utility functions to facilitate platemap layout analysis and visualization
 
-platemap_theme <- ggplot2::theme(
-    title = element_text(size = 9),
+platemap_theme <- ggplot2::theme_bw() + ggplot2::theme(
+    title = element_text(size = 5),
+    plot.title = element_text(margin = margin(b = -1, unit = "mm")),
+    axis.text = element_text(size = 5),
     legend.position = "bottom",
     legend.text = element_text(size = 5),
     legend.title = element_blank(),
-    legend.key.size = unit(0.5, "line")
+    legend.key.size = unit(0.1, "line"),
+    legend.box = "vertical",
+    legend.spacing.x = unit(1.0, "mm"),
+    legend.spacing.y = unit(2.0, "mm"),
+    legend.margin = margin(t = 0.1, unit="mm")
 )
 
 
@@ -87,20 +93,28 @@ visualize_platemaps <- function(platemap_info_df, batch, plate, output_dir) {
     require(platetools)
     require(ggplot2)
 
-    title_base <- paste0(batch, "\nPlate: ", plate)
+    title_base <- paste0("Batch: ", batch, "\nPlate: ", plate)
 
     plate_replicate_gg <-
         platetools::raw_map(
-            data = platemap_info_df$Metadata_plate_replicate,
+            data = platemap_info_df$Metadata_color,
             well = platemap_info_df$Metadata_Well,
             plate = 96,
             size = 4
         ) +
-        ggplot2::ggtitle(paste0(title_base, "\nReplicate Info")) +
-        ggplot2::theme_dark() +
+        ggplot2::ggtitle(title_base) +
         ggplot2::scale_fill_discrete() +
+        ggplot2::geom_point(
+          aes(shape = platemap_info_df$Metadata_shape),
+          size = 1,
+          color = "black",
+          position = position_nudge(x = 0.1, y = -0.1)
+        ) +
         platemap_theme +
-        ggplot2::guides(fill = guide_legend(ncol = 5))
+        ggplot2::guides(
+          fill = guide_legend(ncol = 4, override.aes = list(size = 1)),
+          shape = guide_legend(override.aes = list(size = 1))
+        )
 
     replicate_file <- file.path(
       output_dir,
@@ -109,8 +123,9 @@ visualize_platemaps <- function(platemap_info_df, batch, plate, output_dir) {
     ggplot2::ggsave(
       plot = plate_replicate_gg,
       filename = replicate_file,
-      height = 4,
-      width = 3
+      height = 3,
+      width = 3,
+      dpi = 500
     )
 
     cell_count_gg <-
@@ -120,8 +135,7 @@ visualize_platemaps <- function(platemap_info_df, batch, plate, output_dir) {
             plate = 96,
             size = 4
         ) +
-        ggplot2::ggtitle(paste0(title_base, "\nCell Count")) +
-        ggplot2::theme_dark() +
+        ggplot2::ggtitle(title_base) +
         ggplot2::scale_fill_continuous(name = "Cells") +
         platemap_theme +
         ggplot2::guides(fill = guide_legend(ncol = 5))
@@ -133,8 +147,9 @@ visualize_platemaps <- function(platemap_info_df, batch, plate, output_dir) {
     ggplot2::ggsave(
       plot = cell_count_gg,
       filename = count_file,
-      height = 4,
-      width = 3
+      height = 3,
+      width = 3,
+      dpi = 500
     )
 }
 
