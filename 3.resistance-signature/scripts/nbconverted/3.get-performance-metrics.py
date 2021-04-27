@@ -74,7 +74,7 @@ metric_comparisons = {
     "sample": ["Metadata_model_split", "Metadata_clone_number"]
 }
 
-roc_model_split_focus = ["training", "test", "holdout"]
+roc_model_split_focus = ["training", "validation", "test", "holdout"]
 
 
 # In[4]:
