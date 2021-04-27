@@ -19,7 +19,8 @@ plot_total_score_platemap <- function(sig_df, output_file, plate, batch, spectra
             size = 4
         )
         + ggtitle(title_base)
-        + scale_fill_distiller(palette = "Spectral", limits = spectral_limits)
+        + scale_fill_distiller(name = "Bortezomib\nsignature", palette = "Spectral", limits = spectral_limits)
+        + scale_shape_discrete(name = "Clone type")
         + geom_point(
             aes(shape = platemap_signature_df$Metadata_clone_type),
             size = 1,
@@ -27,12 +28,14 @@ plot_total_score_platemap <- function(sig_df, output_file, plate, batch, spectra
         )
         + platemap_theme
         + theme(
+            legend.title = element_text(size = 5),
             legend.position = "right",
             legend.key.size = unit(0.5, "line"),
-            legend.margin = margin(unit="mm")
+            legend.margin = margin(unit="mm"),
+            legend.title.align = 0
         )
         + guides(
-          shape = guide_legend(override.aes = list(size = 1))
+          shape = guide_legend(order = 1, override.aes = list(size = 1))
         )
     )
     
@@ -149,3 +152,5 @@ for (batch in names(bortezomib_signature_data)) {
         )
     }
 }
+
+
