@@ -21,6 +21,7 @@ def get_recode_cols():
     return_dict["recode_sample"] = {
         "Clone A": "CloneA",
         "Clone E": "CloneE",
+        "Clone E ": "CloneE",
         "WT": "WT_parental",
         "WT parental": "WT_parental",
     }
