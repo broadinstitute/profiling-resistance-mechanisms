@@ -42,15 +42,17 @@ linetype_labels <- c(
 
 # For a consistent custom theme
 custom_theme <- ggplot2::theme_bw() + ggplot2::theme(
-    legend.title = element_text(size = 5),
-    legend.text = element_text(size = 4),
-    axis.title = element_text(size = 6),
-    axis.text = element_text(size = 5),
-    strip.text = element_text(size = 5),
-    strip.background = element_rect(size = 0.5, colour = "black", fill = "#fdfff4"),
-    legend.key.size = unit(2, "mm"),
-    legend.key.width = unit(5, "mm"),
-    legend.margin = margin(l = -2),
-    panel.grid.major = element_line(size = 0.25),
-    panel.grid.minor = element_line(size = 0.25)
+    legend.title = ggplot2::element_text(size = 5),
+    legend.text = ggplot2::element_text(size = 4),
+    axis.title = ggplot2::element_text(size = 6),
+    axis.text = ggplot2::element_text(size = 5),
+    strip.text = ggplot2::element_text(size = 5),
+    strip.background = ggplot2::element_rect(
+      size = 0.5, colour = "black", fill = "#fdfff4"
+    ),
+    legend.key.size = ggplot2::unit(2, "mm"),
+    legend.key.width = ggplot2::unit(5, "mm"),
+    legend.margin = ggplot2::margin(l = -2),
+    panel.grid.major = ggplot2::element_line(size = 0.25),
+    panel.grid.minor = ggplot2::element_line(size = 0.25)
 )

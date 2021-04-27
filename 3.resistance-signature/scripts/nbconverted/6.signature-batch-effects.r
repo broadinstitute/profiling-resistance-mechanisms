@@ -152,5 +152,3 @@ for (batch in names(bortezomib_signature_data)) {
         )
     }
 }
-
-
