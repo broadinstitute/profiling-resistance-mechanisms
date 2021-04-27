@@ -34,6 +34,7 @@ dependencies:
 - conda-forge::r-curl=4.0
 - conda-forge::r-platetools=0.1.2
 - conda-forge::r-yaml=2.2.0
+- conda-forge::r-devtools
 - pip:
   - git+https://github.com/cytomining/pycytominer@c1aa34b641b4e07eb5cbd424166f31355abdbd4d
   - cytominer_eval==0.1
