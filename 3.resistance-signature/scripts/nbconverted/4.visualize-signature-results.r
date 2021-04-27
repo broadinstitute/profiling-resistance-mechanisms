@@ -126,7 +126,7 @@ table_gg <- gridExtra::tableGrob(roc_df,
 
 roc_curve_df$model_split <- factor(
     roc_curve_df$model_split,
-    levels = c("training", "test", "holdout")
+    levels = c("training", "validation", "test", "holdout")
 )
 
 roc_gg <- (
@@ -138,7 +138,7 @@ roc_gg <- (
     + coord_fixed()
     + xlab("False positive rate")
     + ylab("True positive rate")
-    + annotation_custom(table_gg, ymin = -0.85, xmin = 0.45)
+    + annotation_custom(table_gg, ymin = -0.82, xmin = 0.42)
     + custom_theme
 )
 

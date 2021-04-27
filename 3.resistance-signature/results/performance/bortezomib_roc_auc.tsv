@@ -1,7 +1,9 @@
 roc_auc	model_split	shuffled
 0.45588235294117646	training	True
 0.8774509803921569	training	False
+0.5277777777777778	validation	True
+0.9166666666666666	validation	False
 0.4861111111111111	test	True
 0.763888888888889	test	False
-0.6183035714285714	holdout	True
+0.484375	holdout	True
 0.7857142857142857	holdout	False
