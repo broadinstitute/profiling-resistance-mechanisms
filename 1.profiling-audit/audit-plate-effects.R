@@ -79,7 +79,7 @@ for (batch_idx in seq(1, length(yaml_list))) {
                dplyr::select(Metadata_Well, Metadata_Site, cell_count)
        } else {
            cell_merge_count_df <- cell_count_df %>%
-               dplyr::select(Metadata_Well, cell_count) 
+               dplyr::select(Metadata_Well, cell_count)
        }
 
         platemap_info_df <- cell_merge_count_df %>%
@@ -92,12 +92,21 @@ for (batch_idx in seq(1, length(yaml_list))) {
                 platemap_info_df %>% dplyr::pull(audit_cols[1]),
                 platemap_info_df %>% dplyr::pull(audit_cols[2])
             )
+            platemap_info_df <- platemap_info_df %>%
+                dplyr::mutate(
+                  Metadata_plate_replicate = replicate_info,
+                  Metadata_color = platemap_info_df %>% dplyr::pull(audit_cols[1]),
+                  Metadata_shape = paste(platemap_info_df %>% dplyr::pull(audit_cols[2]))
+                )
+
         } else {
             replicate_info <- platemap_info_df %>% dplyr::pull(audit_cols[1])
+            platemap_info_df <- platemap_info_df %>%
+                dplyr::mutate(
+                  Metadata_plate_replicate = replicate_info,
+                  Metadata_color = platemap_info_df %>% dplyr::pull(audit_cols[1])
+                )
         }
-
-        platemap_info_df <- platemap_info_df %>%
-            dplyr::mutate(Metadata_plate_replicate = replicate_info)
 
         if ("Metadata_Site" %in% colnames(cell_count_df)) {
 
@@ -121,6 +130,5 @@ for (batch_idx in seq(1, length(yaml_list))) {
             plate = plate,
             output_dir = output_figure_dir
         )
-
     }
 }
