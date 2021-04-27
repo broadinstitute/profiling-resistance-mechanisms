@@ -106,8 +106,9 @@ visualize_platemaps <- function(platemap_info_df, batch, plate, output_dir) {
         ggplot2::scale_fill_discrete() +
         ggplot2::geom_point(
           aes(shape = platemap_info_df$Metadata_shape),
-          size = 1.5,
-          color = "black"
+          size = 1,
+          color = "black",
+          position = position_nudge(x = 0.1, y = -0.1)
         ) +
         platemap_theme +
         ggplot2::guides(
