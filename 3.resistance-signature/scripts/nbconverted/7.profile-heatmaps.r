@@ -177,6 +177,9 @@ for (feature_select_type in c("selected", "signature")) {
         correlation_matrix_df,
         name = "Correlation",
         column_dend_side = "top",
+        # To generate heatmaps sorted by signature score
+        # row_order = order(subset_data_df$TotalScore),
+        # column_order = order(subset_data_df$TotalScore),
         clustering_method_columns = "average",
         clustering_method_rows = "average",
 
