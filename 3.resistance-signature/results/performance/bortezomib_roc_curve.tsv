@@ -1,4 +1,4 @@
-fpr	tpr	treshold	model_split	shuffled
+fpr	tpr	threshold	model_split	shuffled
 0.0	0.0	1.5747837528712356	training	True
 0.00980392156862745	0.0	0.5747837528712357	training	True
 0.0196078431372549	0.0	0.520597312901794	training	True
