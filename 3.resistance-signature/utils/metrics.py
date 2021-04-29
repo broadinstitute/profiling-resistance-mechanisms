@@ -91,7 +91,7 @@ def get_metrics(df, return_roc_curve=False, threshold=0, shuffle=False):
         )
 
         roc_curve_results = pd.DataFrame(roc_curve_results).transpose()
-        roc_curve_results.columns = ["fpr", "tpr", "treshold"]
+        roc_curve_results.columns = ["fpr", "tpr", "threshold"]
 
         df = assign_pred_score(df, threshold=threshold, shuffle=shuffle)
         roc_auc = roc_auc_score(

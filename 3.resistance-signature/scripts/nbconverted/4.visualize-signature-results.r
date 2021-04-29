@@ -87,7 +87,7 @@ for (metric_level in metric_levels) {
 roc_curve_cols <- readr::cols(
     fpr = readr::col_double(),
     tpr = readr::col_double(),
-    treshold = readr::col_double(),
+    threshold = readr::col_double(),
     model_split = readr::col_character(),
     shuffled = readr::col_character()
 )
@@ -124,6 +124,12 @@ table_gg <- gridExtra::tableGrob(roc_df,
                                  theme = table_theme,
                                  rows = NULL)
 
+threshold_points_df <- roc_curve_df %>%
+    dplyr::filter(shuffled == "False") %>%
+    dplyr::group_by(model_split) %>%
+    dplyr::filter(abs(threshold) == min(abs(threshold))) %>%
+    dplyr::ungroup()
+
 roc_curve_df$model_split <- factor(
     roc_curve_df$model_split,
     levels = c("training", "validation", "test", "holdout")
@@ -132,6 +138,7 @@ roc_curve_df$model_split <- factor(
 roc_gg <- (
     ggplot(roc_curve_df, aes(x = fpr, y = tpr))
     + geom_line(aes(color = model_split, linetype = shuffled), size=0.2)
+    + geom_point(data = threshold_points_df, aes(color = model_split), size = 1)
     + geom_abline(intercept=0, slope=1, size=0.2, linetype="dashed", color="black")
     + scale_color_manual(name="Model split", labels=legend_labels, values=legend_colors)
     + scale_linetype_manual(name="Shuffled", labels=linetype_labels, values=linetype_default)
