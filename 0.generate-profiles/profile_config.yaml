@@ -54,7 +54,7 @@ batch: 2019_03_20_Batch2
 plates:
   - 207106_exposure320
 process: false
-process_single_cell: true
+process_single_cell: false
 ---
 batch: 2019_06_25_Batch3
 plates:
@@ -186,5 +186,21 @@ plates:
   - 220057
   - 220059
   - 220060
+process: false
+process_single_cell: false
+---
+batch: 2021_06_25_Batch20
+plates:
+  - 220777
 process: true
 process_single_cell: true
+---
+batch: 2021_06_25_Batch21
+plates:
+  - 220778
+  - 220779
+  - 220780
+  - 220781
+process: true
+process_single_cell: true
+
