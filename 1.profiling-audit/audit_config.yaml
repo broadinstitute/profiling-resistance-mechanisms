@@ -6,7 +6,7 @@ auditcols:
   - Metadata_CellLine
   - Metadata_Dosage
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2019_02_15_Batch1_40X
 plates:
@@ -15,7 +15,7 @@ auditcols:
   - Metadata_CellLine
   - Metadata_Dosage
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2019_03_20_Batch2
 plates:
@@ -24,7 +24,7 @@ auditcols:
   - Metadata_CellLine
   - Metadata_Dosage
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2019_06_25_Batch3
 plates:
@@ -33,7 +33,7 @@ plates:
 auditcols:
   - Metadata_clone_number
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2019_11_11_Batch4
 plates:
@@ -43,7 +43,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2019_11_19_Batch5
 plates:
@@ -52,7 +52,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2019_11_20_Batch6
 plates:
@@ -62,7 +62,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2019_11_22_Batch7
 plates:
@@ -72,7 +72,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2020_07_02_Batch8
 plates:
@@ -84,7 +84,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2020_08_24_Batch9
 plates:
@@ -98,7 +98,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2020_09_08_Batch10
 plates:
@@ -114,7 +114,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_02_08_Batch11
 plates:
@@ -123,7 +123,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_03_Batch12
 plates:
@@ -132,7 +132,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_03_Batch13
 plates:
@@ -141,7 +141,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_03_Batch14
 plates:
@@ -153,7 +153,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_03_Batch15
 plates:
@@ -165,7 +165,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_05_Batch16
 plates:
@@ -174,7 +174,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_05_Batch17
 plates:
@@ -186,7 +186,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_12_Batch18
 plates:
@@ -195,7 +195,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_03_12_Batch19
 plates:
@@ -203,6 +203,27 @@ plates:
   - 220057
   - 220059
   - 220060
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
+process: false
+---
+batch: 2021_06_25_Batch20
+plates:
+  - 220777
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
+process: true
+---
+batch: 2021_06_25_Batch21
+plates:
+  - 220778
+  - 220779
+  - 220780
+  - 220781
 auditcols:
   - Metadata_clone_number
   - Metadata_treatment
