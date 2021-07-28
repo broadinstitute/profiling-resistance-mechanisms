@@ -216,7 +216,7 @@ auditcols:
   - Metadata_clone_number
   - Metadata_treatment
 auditlevel: normalized_feature_selected
-process: true
+process: false
 ---
 batch: 2021_06_25_Batch21
 plates:
@@ -224,6 +224,27 @@ plates:
   - 220779
   - 220780
   - 220781
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
+process: false
+---
+batch: 2021_07_21_Batch22
+plates:
+  - 220950
+auditcols:
+  - Metadata_clone_number
+  - Metadata_treatment
+auditlevel: normalized_feature_selected
+process: true
+---
+batch: 2021_07_21_Batch23
+plates:
+  - 220951
+  - 220952
+  - 220953
+  - 220954
 auditcols:
   - Metadata_clone_number
   - Metadata_treatment
