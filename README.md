@@ -76,4 +76,4 @@ Please file an [issue](https://github.com/broadinstitute/2018_05_30_ResistanceMe
 
 ## Internal documents
 
-[GDrive folder](https://drive.google.com/drive/folders/1a1V_JsvpBrSkpTDBE_Yy_s6TtBDC4HLv).
+[GDrive folder](https://drive.google.com/drive/folders/1a1V_JsvpBrSkpTDBE_Yy_s6TtBDC4HLv)
