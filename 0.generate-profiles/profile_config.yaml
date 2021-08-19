@@ -207,8 +207,8 @@ process_single_cell: false
 batch: 2021_07_21_Batch22
 plates:
   - 220950
-process: true
-process_single_cell: true
+process: false
+process_single_cell: false
 ---
 batch: 2021_07_21_Batch23
 plates:
@@ -216,6 +216,32 @@ plates:
   - 220952
   - 220953
   - 220954
+process: false
+process_single_cell: false
+---
+batch: 2021_08_02_Batch24
+plates:
+  - 221057
 process: true
 process_single_cell: true
-
+---
+batch: 2021_08_02_Batch25
+plates:
+  - 221064
+  - 221063
+  - 221059
+  - 221058
+process: true
+process_single_cell: true
+---
+batch: 2021_08_03_Batch26
+plates:
+  - 221093
+process: true
+process_single_cell: true
+---
+batch: 2021_08_03_Batch27
+plates:
+  - 221094
+process: true
+process_single_cell: true
