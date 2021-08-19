@@ -1,0 +1,61 @@
+Metadata_Plate	Metadata_Well	cell_count	Metadata_plate_map_name	Metadata_date	Metadata_clone_number	Metadata_celltype_shorthand_from_plate_graph	Metadata_treatment	Metadata_treatment_shorthand_from_plate_graph	Metadata_treatment_time	Metadata_cell_density	Metadata_time_to_adhere
+221094	B02	3865	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B03	1869	221094	20210802	Clone A	2	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B04	2535	221094	20210802	Clone E 	3	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B05	1342	221094	20210802	WT clone 10	4	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B06	898	221094	20210802	WT clone 12	5	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B07	3443	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B08	1723	221094	20210802	Clone A	2	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B09	2662	221094	20210802	Clone E 	3	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B10	1452	221094	20210802	WT clone 10	4	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	B11	762	221094	20210802	WT clone 12	5	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C02	1538	221094	20210802	TX clone 3	10	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C03	1443	221094	20210802	TX clone 2	9	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C04	1570	221094	20210802	WT clone 15	8	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C05	1362	221094	20210802	WT clone 14	7	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C06	2243	221094	20210802	WT clone 13	6	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C07	1342	221094	20210802	TX clone 3	10	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C08	887	221094	20210802	TX clone 2	9	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C09	1717	221094	20210802	WT clone 15	8	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C10	1037	221094	20210802	WT clone 14	7	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	C11	2313	221094	20210802	WT clone 13	6	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D02	1080	221094	20210802	TX clone 4	11	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D03	1096	221094	20210802	TX clone 5	12	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D04	611	221094	20210802	TX clone 6	13	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D05	3989	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D06	3622	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D07	790	221094	20210802	TX clone 4	11	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D08	958	221094	20210802	TX clone 5	12	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D09	903	221094	20210802	TX clone 6	13	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D10	3494	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	D11	3728	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E02	3840	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E03	1723	221094	20210802	Clone A	2	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E04	2555	221094	20210802	Clone E 	3	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E05	1191	221094	20210802	WT clone 10	4	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E06	1417	221094	20210802	WT clone 12	5	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E07	3323	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E08	1465	221094	20210802	Clone A	2	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E09	2327	221094	20210802	Clone E 	3	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E10	1080	221094	20210802	WT clone 10	4	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	E11	867	221094	20210802	WT clone 12	5	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F02	1416	221094	20210802	TX clone 3	10	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F03	1289	221094	20210802	TX clone 2	9	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F04	1756	221094	20210802	WT clone 15	8	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F05	1308	221094	20210802	WT clone 14	7	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F06	2035	221094	20210802	WT clone 13	6	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F07	1501	221094	20210802	TX clone 3	10	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F08	912	221094	20210802	TX clone 2	9	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F09	1550	221094	20210802	WT clone 15	8	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F10	981	221094	20210802	WT clone 14	7	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	F11	2789	221094	20210802	WT clone 13	6	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G02	1032	221094	20210802	TX clone 4	11	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G03	868	221094	20210802	TX clone 5	12	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G04	783	221094	20210802	TX clone 6	13	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G05	3730	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G06	3028	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G07	901	221094	20210802	TX clone 4	11	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G08	1068	221094	20210802	TX clone 5	12	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G09	849	221094	20210802	TX clone 6	13	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G10	3445	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
+221094	G11	2745	221094	20210802	WT parental	1	0.1% DMSO	1	4 hr	2.5x10^3 cells/well	48 hr
