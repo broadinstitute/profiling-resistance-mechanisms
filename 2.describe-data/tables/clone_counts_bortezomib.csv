@@ -25,12 +25,31 @@ BZ005,0.78 nM bortezomib,16
 BZ005,2.33 nM bortezomib,16
 BZ005,7 nM bortezomib,16
 BZ005,Untreated,3
+BZ006,0.1% DMSO,24
+BZ006,0.78 nM bortezomib,12
+BZ006,2.33 nM bortezomib,12
+BZ006,7 nM bortezomib,12
 BZ006,Untreated,3
+BZ007,0.1% DMSO,24
+BZ007,0.78 nM bortezomib,12
+BZ007,2.33 nM bortezomib,12
+BZ007,7 nM bortezomib,12
 BZ007,Untreated,3
-BZ008,0.1% DMSO,21
+BZ008,0.1% DMSO,45
+BZ008,0.78 nM bortezomib,12
+BZ008,2.33 nM bortezomib,12
 BZ008,21 nM bortezomib,21
+BZ008,7 nM bortezomib,12
 BZ008,Untreated,3
+BZ009,0.1% DMSO,24
+BZ009,0.78 nM bortezomib,12
+BZ009,2.33 nM bortezomib,12
+BZ009,7 nM bortezomib,12
 BZ009,Untreated,3
+BZ010,0.1% DMSO,24
+BZ010,0.78 nM bortezomib,12
+BZ010,2.33 nM bortezomib,12
+BZ010,7 nM bortezomib,12
 BZ010,Untreated,3
 BZ011,Untreated,3
 BZ012,Untreated,3
@@ -54,21 +73,20 @@ CB5038 clone 16,0.1% DMSO,24
 CB5038 clone 16,700 nM CB-5083,24
 CB5038 clone 17,0.1% DMSO,24
 CB5038 clone 17,700 nM CB-5083,24
-Clone E ,0.1% DMSO,36
-Clone E ,0.78 nM bortezomib,16
-Clone E ,2.33 nM bortezomib,16
-Clone E ,7 nM bortezomib,16
-CloneA,0.1% DMSO,65
-CloneA,0.78 nM bortezomib,16
+CloneA,0.1% DMSO,97
+CloneA,0.78 nM bortezomib,28
 CloneA,2.1 nM bortezomib,29
-CloneA,2.33 nM bortezomib,16
+CloneA,2.33 nM bortezomib,28
 CloneA,21 nM bortezomib,29
 CloneA,210 nM bortezomib,29
-CloneA,7 nM bortezomib,16
-CloneE,0.1% DMSO,29
+CloneA,7 nM bortezomib,28
+CloneE,0.1% DMSO,97
+CloneE,0.78 nM bortezomib,28
 CloneE,2.1 nM bortezomib,29
+CloneE,2.33 nM bortezomib,28
 CloneE,21 nM bortezomib,29
 CloneE,210 nM bortezomib,29
+CloneE,7 nM bortezomib,28
 Ixazomib clone 01,0.1% DMSO,18
 Ixazomib clone 01,50 nM Ixazomib,18
 Ixazomib clone 02,0.1% DMSO,18
@@ -79,6 +97,11 @@ Ixazomib clone 04,0.1% DMSO,18
 Ixazomib clone 04,50 nM Ixazomib,18
 Ixazomib clone 05,0.1% DMSO,18
 Ixazomib clone 05,50 nM Ixazomib,18
+TX clone 2,0.1% DMSO,8
+TX clone 3,0.1% DMSO,8
+TX clone 4,0.1% DMSO,8
+TX clone 5,0.1% DMSO,8
+TX clone 6,0.1% DMSO,8
 WT clone 01,0.1% DMSO,36
 WT clone 01,0.78 nM bortezomib,16
 WT clone 01,2.33 nM bortezomib,16
@@ -109,6 +132,26 @@ WT clone 06,700 nM CB-5083,24
 WT clone 07,0.1% DMSO,42
 WT clone 07,50 nM Ixazomib,18
 WT clone 07,700 nM CB-5083,24
+WT clone 10,0.1% DMSO,32
+WT clone 10,0.78 nM bortezomib,12
+WT clone 10,2.33 nM bortezomib,12
+WT clone 10,7 nM bortezomib,12
+WT clone 12,0.1% DMSO,32
+WT clone 12,0.78 nM bortezomib,12
+WT clone 12,2.33 nM bortezomib,12
+WT clone 12,7 nM bortezomib,12
+WT clone 13,0.1% DMSO,32
+WT clone 13,0.78 nM bortezomib,12
+WT clone 13,2.33 nM bortezomib,12
+WT clone 13,7 nM bortezomib,12
+WT clone 14,0.1% DMSO,32
+WT clone 14,0.78 nM bortezomib,12
+WT clone 14,2.33 nM bortezomib,12
+WT clone 14,7 nM bortezomib,12
+WT clone 15,0.1% DMSO,32
+WT clone 15,0.78 nM bortezomib,12
+WT clone 15,2.33 nM bortezomib,12
+WT clone 15,7 nM bortezomib,12
 WT001,Untreated,3
 WT002,0.1% DMSO,21
 WT002,21 nM bortezomib,21
@@ -132,13 +175,13 @@ WT012,Untreated,3
 WT013,Untreated,3
 WT014,Untreated,3
 WT015,Untreated,3
-WT_parental,0.1% DMSO,338
-WT_parental,0.78 nM bortezomib,16
+WT_parental,0.1% DMSO,506
+WT_parental,0.78 nM bortezomib,28
 WT_parental,2.1 nM bortezomib,29
-WT_parental,2.33 nM bortezomib,16
+WT_parental,2.33 nM bortezomib,28
 WT_parental,21 nM bortezomib,50
 WT_parental,210 nM bortezomib,29
 WT_parental,50 nM Ixazomib,18
-WT_parental,7 nM bortezomib,16
+WT_parental,7 nM bortezomib,28
 WT_parental,700 nM CB-5083,24
 WT_parental,Untreated,6

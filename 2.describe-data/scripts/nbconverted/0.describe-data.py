@@ -454,3 +454,59 @@ batch18_df
 batch19_df = treatment_counts_df.query("batch == '2021_03_12_Batch19'").dropna(axis="columns")
 batch19_df
 
+
+# In[36]:
+
+
+batch20_df = treatment_counts_df.query("batch == '2021_06_25_Batch20'").dropna(axis="columns")
+batch20_df
+
+
+# In[37]:
+
+
+batch21_df = treatment_counts_df.query("batch == '2021_06_25_Batch21'").dropna(axis="columns")
+batch21_df
+
+
+# In[38]:
+
+
+batch22_df = treatment_counts_df.query("batch == '2021_07_21_Batch22'").dropna(axis="columns")
+batch22_df
+
+
+# In[39]:
+
+
+batch23_df = treatment_counts_df.query("batch == '2021_07_21_Batch23'").dropna(axis="columns")
+batch23_df
+
+
+# In[40]:
+
+
+batch24_df = treatment_counts_df.query("batch == '2021_08_02_Batch24'").dropna(axis="columns")
+batch24_df
+
+
+# In[41]:
+
+
+batch25_df = treatment_counts_df.query("batch == '2021_08_02_Batch25'").dropna(axis="columns")
+batch25_df
+
+
+# In[42]:
+
+
+batch26_df = treatment_counts_df.query("batch == '2021_08_03_Batch26'").dropna(axis="columns")
+batch26_df
+
+
+# In[43]:
+
+
+batch27_df = treatment_counts_df.query("batch == '2021_08_03_Batch27'").dropna(axis="columns")
+batch27_df
+
