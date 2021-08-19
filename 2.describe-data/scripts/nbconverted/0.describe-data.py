@@ -482,3 +482,31 @@ batch22_df
 batch23_df = treatment_counts_df.query("batch == '2021_07_21_Batch23'").dropna(axis="columns")
 batch23_df
 
+
+# In[40]:
+
+
+batch24_df = treatment_counts_df.query("batch == '2021_08_02_Batch24'").dropna(axis="columns")
+batch24_df
+
+
+# In[41]:
+
+
+batch25_df = treatment_counts_df.query("batch == '2021_08_02_Batch25'").dropna(axis="columns")
+batch25_df
+
+
+# In[42]:
+
+
+batch26_df = treatment_counts_df.query("batch == '2021_08_03_Batch26'").dropna(axis="columns")
+batch26_df
+
+
+# In[43]:
+
+
+batch27_df = treatment_counts_df.query("batch == '2021_08_03_Batch27'").dropna(axis="columns")
+batch27_df
+

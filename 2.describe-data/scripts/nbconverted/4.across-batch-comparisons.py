@@ -119,13 +119,13 @@ similarity_melted_df.loc[different_treatment_within_batch, "comparison_category"
 similarity_melted_df.comparison_category.value_counts()
 
 
-# In[15]:
+# In[9]:
 
 
 similarity_melted_df.Metadata_clone_number_pair_a.value_counts()
 
 
-# In[9]:
+# In[10]:
 
 
 (
@@ -135,7 +135,7 @@ similarity_melted_df.Metadata_clone_number_pair_a.value_counts()
 )
 
 
-# In[10]:
+# In[11]:
 
 
 (
@@ -146,7 +146,7 @@ similarity_melted_df.Metadata_clone_number_pair_a.value_counts()
 )
 
 
-# In[17]:
+# In[12]:
 
 
 (
@@ -159,7 +159,7 @@ similarity_melted_df.Metadata_clone_number_pair_a.value_counts()
 )
 
 
-# In[18]:
+# In[13]:
 
 
 (
@@ -172,43 +172,7 @@ similarity_melted_df.Metadata_clone_number_pair_a.value_counts()
 )
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
+# In[14]:
 
 
 # Load and process data
@@ -232,7 +196,7 @@ print(data_df.shape)
 data_df.head()
 
 
-# In[3]:
+# In[15]:
 
 
 # Select only batches that have "WT_parental_0.1% DMSO" as a treatment group
@@ -245,26 +209,26 @@ select_batches = sorted(
 select_batches
 
 
-# In[4]:
+# In[16]:
 
 
 all_grit_control_perts = data_df.query("Metadata_batch in @select_batches").query("Metadata_treatment_group_id == @grit_control_pert").Metadata_treatment_profile_id.unique()
 all_grit_control_perts
 
 
-# In[5]:
+# In[17]:
 
 
 meta_features
 
 
-# In[6]:
+# In[18]:
 
 
 data_df.Metadata_treatment_profile_id.value_counts()
 
 
-# In[7]:
+# In[19]:
 
 
 # Get replicate correlation
@@ -278,19 +242,19 @@ percent_strong, corr_df = evaluate(
 )
 
 
-# In[8]:
+# In[20]:
 
 
 percent_strong
 
 
-# In[9]:
+# In[21]:
 
 
 corr_df.head()
 
 
-# In[11]:
+# In[22]:
 
 
 # Get technical grit for batch
@@ -309,14 +273,8 @@ grit_df = evaluate(
 )
 
 
-# In[12]:
+# In[23]:
 
 
 grit_df.sort_values(by="grit", ascending=False)
-
-
-# In[ ]:
-
-
-
 
