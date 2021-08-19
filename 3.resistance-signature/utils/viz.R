@@ -40,6 +40,17 @@ linetype_labels <- c(
   True = "True"
 )
 
+# To denote resistance vs. sensitive
+resistance_status_colors <- c(
+    "resistant" = "#E66100",
+    "sensitive" = "#5D3A9B"
+)
+
+resistance_status_labels <- c(
+    "resistant" = "Resistant",
+    "sensitive" = "Sensitive"
+)
+
 # For a consistent custom theme
 custom_theme <- ggplot2::theme_bw() + ggplot2::theme(
     legend.title = ggplot2::element_text(size = 5),

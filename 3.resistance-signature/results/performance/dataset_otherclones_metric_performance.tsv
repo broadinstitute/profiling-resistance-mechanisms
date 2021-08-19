@@ -1,0 +1,5 @@
+Metadata_dataset	metric	metric_value	dataset	shuffle
+cb5083	accuracy	0.5916666666666667	otherclones	False
+ixazomib	accuracy	0.6277777777777778	otherclones	False
+cb5083	avg_precision	0.5540983606557377	otherclones	False
+ixazomib	avg_precision	0.5790378006872852	otherclones	False
