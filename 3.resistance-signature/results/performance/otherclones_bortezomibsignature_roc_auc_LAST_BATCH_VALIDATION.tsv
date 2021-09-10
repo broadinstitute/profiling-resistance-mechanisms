@@ -1,5 +1,3 @@
-roc_auc	model_split	shuffled
-0.55	WT	True
-0.7000000000000001	WT	False
-0.4	BZ	True
-0.7000000000000001	BZ	False
+roc_auc	shuffled
+0.5546875	True
+0.7000000000000001	False
