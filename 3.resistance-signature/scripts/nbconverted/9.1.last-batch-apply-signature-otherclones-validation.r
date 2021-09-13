@@ -5,17 +5,18 @@ source(file.path("utils", "singscore_utils.R"))
 
 seed <- 1234
 num_permutations <- 1000
-dataset <- "bortezomib"
+sig_dataset <- "bortezomib"
+dataset <- "otherclones"
 
 data_dir <- "data"
 input_results_dir <- file.path("results", "signatures")
 output_dir <- file.path("results", "singscore")
 
-data_file <- file.path(data_dir, paste0(dataset, "_signature_analytical_set.tsv.gz"))
+data_file <- file.path(data_dir, paste0(dataset, "_normalized_profiles_LAST_BATCH_VALIDATION.tsv.gz"))
 feat_file <- file.path(data_dir, "dataset_features_selected.tsv")
-signature_file <- file.path(input_results_dir, paste0("signature_summary_", dataset, "_signature.tsv.gz"))
-tukey_file <- file.path(input_results_dir, paste0("tukey_results_", dataset, "_signature.tsv.gz"))
-output_results_file <- file.path(output_dir, paste0("singscore_results", dataset, ".tsv.gz"))
+signature_file <- file.path(input_results_dir, paste0("signature_summary_", sig_dataset, "_signature.tsv.gz"))
+tukey_file <- file.path(input_results_dir, paste0("tukey_results_", sig_dataset, "_signature.tsv.gz"))
+output_results_file <- file.path(output_dir, paste0("singscore_results_LAST_BATCH_VALIDATION", dataset, ".tsv.gz"))
 
 set.seed(seed)
 
@@ -47,7 +48,7 @@ data_df <- readr::read_tsv(data_file, col_types = bulk_col_types)
 
 # Apply feature selection performed in 0.compile-bulk-datasets
 selected_features <- all_selected_features_df %>%
-    dplyr::filter(dataset == !!dataset) %>%
+    dplyr::filter(dataset == !!sig_dataset) %>%
     dplyr::pull(features)
 
 data_df <- data_df %>%
@@ -55,6 +56,8 @@ data_df <- data_df %>%
 
 print(dim(data_df))
 head(data_df, 4)
+
+table(data_df$Metadata_clone_type_indicator)
 
 # Load signatures
 sig_col_types <- readr::cols(
@@ -89,11 +92,11 @@ head(tukey_df, 4)
 
 # Subset data to process dataset-specific signature
 signature_subset_df <- signature_df %>%
-    dplyr::filter(dataset == !!dataset, final_signature)
+    dplyr::filter(dataset == !!sig_dataset, final_signature)
 
 tukey_subset_df <- tukey_df %>%
     dplyr::filter(
-        dataset == !!dataset,
+        dataset == !!sig_dataset,
         term == "Metadata_clone_type_indicator",
         feature %in% signature_subset_df$features
     ) %>%
@@ -109,7 +112,6 @@ down_features <- tukey_subset_df %>% dplyr::filter(estimate < 0) %>% dplyr::pull
 
 # Store signature for downstream analyses
 signature_features <- list("up" = up_features, "down" = down_features)
-
 signature_features
 
 singscore_output = singscorePipeline(
@@ -137,3 +139,7 @@ sing_score_results_df %>% readr::write_tsv(output_results_file)
 
 print(dim(sing_score_results_df))
 head(sing_score_results_df)
+
+
+
+
