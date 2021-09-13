@@ -289,7 +289,7 @@ inference_df = inference_df.assign(
 inference_df.Metadata_clone_number.value_counts()
 
 
-# In[ ]:
+# In[13]:
 
 
 # Combine profiles into a single dataset and output
@@ -306,14 +306,14 @@ output_file = pathlib.Path(f"{output_dir}/bortezomib_signature_analytical_set.ts
 bortezomib_df.to_csv(output_file, sep="\t", index=False)
 
 
-# In[ ]:
+# In[14]:
 
 
 print(bortezomib_df.shape)
 bortezomib_df.head()
 
 
-# In[ ]:
+# In[15]:
 
 
 assert len(bortezomib_df.Metadata_unique_sample_name.unique()) == bortezomib_df.shape[0]
