@@ -9,8 +9,8 @@
 # 
 # This script is modified from Greg Way's original scripts of 8.compile-otherclone-dataset.
 # 
-# This dataset includes new batches of 24~27 including WT (10, 12-15) and Bz-resistant (6-10) clones.
-# They are DMSO-treated clones to later apply the bortezomib resistance signature.
+# This dataset includes new batches of 24~27 including WT (10, 12-15, parental) and Bz-resistant (6-10, A&E) clones.
+# They are DMSO-treated clones to later apply the bortezomib resistance signature. These clone types are either sensitive (WT) or resistance (BZ) to bortezomib. Clones A and E as resistant to bortezomib, and the WT parental would score somewhere in the "sensitive to bortezomib" range, since they are a heterogenous population but should mostly be composed of sensitive cells.
 
 # In[1]:
 
@@ -60,11 +60,13 @@ datasets_val = {
 #added 'val' to each original variable names from 8.0
 
 full_df_val = []
+
 for dataset_val in datasets_val:
     dataset_df_val = []
+
     for batch in datasets_val:
         plates = datasets_val[batch]
-        
+
         df_val = load_data(
             batch=batch,
             plates=plates,
@@ -75,7 +77,7 @@ for dataset_val in datasets_val:
             add_cell_count=True,
             cell_count_dir=cell_count_dir
         )
-        
+
         # Add important metadata features
         df_val = df_val.assign(
             Metadata_dataset=dataset_val,
@@ -91,25 +93,25 @@ for dataset_val in datasets_val:
 
     # Merge plates of the same dataset together
     dataset_df_val = pd.concat(dataset_df_val, axis="rows", sort=False).reset_index(drop=True)
-    
+
     # Generate a unique sample ID
     # (This will be used in singscore calculation)
     dataset_df_val = dataset_df_val.assign(
         Metadata_unique_sample_name=[f"profile_{x}_{dataset_val}" for x in range(0, dataset_df_val.shape[0])]
     )
-    
+
     full_df_val.append(dataset_df_val)
 
 #remove other clone types from the df
 full_df_val = pd.concat(full_df_val, axis="rows", sort=False).reset_index(drop=True)
-full_df_val = full_df_val[full_df_val.Metadata_clone_number != 'WT_parental']
-full_df_val = full_df_val[full_df_val.Metadata_clone_number != 'CloneA']
-full_df_val = full_df_val[full_df_val.Metadata_clone_number != 'CloneE']
-full_df_val = full_df_val[full_df_val.Metadata_clone_number != 'TX clone 2']
-full_df_val = full_df_val[full_df_val.Metadata_clone_number != 'TX clone 3']
-full_df_val = full_df_val[full_df_val.Metadata_clone_number != 'TX clone 4']
-full_df_val = full_df_val[full_df_val.Metadata_clone_number != 'TX clone 5']
-full_df_val = full_df_val[full_df_val.Metadata_clone_number != 'TX clone 6']
+tx_clones = [
+    "TX clone 2",
+    "TX clone 3",
+    "TX clone 4",
+    "TX clone 5",
+    "TX clone 6",
+]
+full_df_val = full_df_val.query("Metadata_clone_number not in @tx_clones")
 
 
 # In[6]:
@@ -148,16 +150,4 @@ pd.crosstab(full_df_val.Metadata_clone_number, full_df_val.Metadata_model_split)
 #saved output file as 'otherclones_normalized_profiles_LAST_BATCH_VALIDATION.tsv.gz'
 output_file = pathlib.Path(f"{output_dir}/otherclones_normalized_profiles_LAST_BATCH_VALIDATION.tsv.gz")
 full_df_val.to_csv(output_file, sep="\t", index=False)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 

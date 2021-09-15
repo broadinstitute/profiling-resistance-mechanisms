@@ -1,401 +1,401 @@
 Metadata_clone_type	metric	metric_value	dataset	shuffle	permutation
-resistant	accuracy	0.54375	otherclones	True	0
-sensitive	accuracy	0.471875	otherclones	True	0
+resistant	accuracy	0.4826388888888889	otherclones	True	0
+sensitive	accuracy	0.552734375	otherclones	True	0
 resistant	avg_precision	1.0	otherclones	True	0
 sensitive	avg_precision		otherclones	True	0
-resistant	accuracy	0.5125	otherclones	True	1
-sensitive	accuracy	0.45625	otherclones	True	1
+resistant	accuracy	0.4826388888888889	otherclones	True	1
+sensitive	accuracy	0.552734375	otherclones	True	1
 resistant	avg_precision	1.0	otherclones	True	1
 sensitive	avg_precision		otherclones	True	1
-resistant	accuracy	0.5875	otherclones	True	2
-sensitive	accuracy	0.49375	otherclones	True	2
+resistant	accuracy	0.4722222222222222	otherclones	True	2
+sensitive	accuracy	0.546875	otherclones	True	2
 resistant	avg_precision	1.0	otherclones	True	2
 sensitive	avg_precision		otherclones	True	2
-resistant	accuracy	0.48125	otherclones	True	3
-sensitive	accuracy	0.440625	otherclones	True	3
+resistant	accuracy	0.4756944444444444	otherclones	True	3
+sensitive	accuracy	0.548828125	otherclones	True	3
 resistant	avg_precision	1.0	otherclones	True	3
 sensitive	avg_precision		otherclones	True	3
-resistant	accuracy	0.5	otherclones	True	4
-sensitive	accuracy	0.45	otherclones	True	4
+resistant	accuracy	0.4305555555555556	otherclones	True	4
+sensitive	accuracy	0.5234375	otherclones	True	4
 resistant	avg_precision	1.0	otherclones	True	4
 sensitive	avg_precision		otherclones	True	4
-resistant	accuracy	0.525	otherclones	True	5
-sensitive	accuracy	0.4625	otherclones	True	5
+resistant	accuracy	0.4583333333333333	otherclones	True	5
+sensitive	accuracy	0.5390625	otherclones	True	5
 resistant	avg_precision	1.0	otherclones	True	5
 sensitive	avg_precision		otherclones	True	5
-resistant	accuracy	0.49375	otherclones	True	6
-sensitive	accuracy	0.446875	otherclones	True	6
+resistant	accuracy	0.4375	otherclones	True	6
+sensitive	accuracy	0.52734375	otherclones	True	6
 resistant	avg_precision	1.0	otherclones	True	6
 sensitive	avg_precision		otherclones	True	6
-resistant	accuracy	0.46875	otherclones	True	7
-sensitive	accuracy	0.434375	otherclones	True	7
+resistant	accuracy	0.4826388888888889	otherclones	True	7
+sensitive	accuracy	0.552734375	otherclones	True	7
 resistant	avg_precision	1.0	otherclones	True	7
 sensitive	avg_precision		otherclones	True	7
-resistant	accuracy	0.54375	otherclones	True	8
-sensitive	accuracy	0.471875	otherclones	True	8
+resistant	accuracy	0.4479166666666667	otherclones	True	8
+sensitive	accuracy	0.533203125	otherclones	True	8
 resistant	avg_precision	1.0	otherclones	True	8
 sensitive	avg_precision		otherclones	True	8
-resistant	accuracy	0.5375	otherclones	True	9
-sensitive	accuracy	0.46875	otherclones	True	9
+resistant	accuracy	0.4652777777777778	otherclones	True	9
+sensitive	accuracy	0.54296875	otherclones	True	9
 resistant	avg_precision	1.0	otherclones	True	9
 sensitive	avg_precision		otherclones	True	9
-resistant	accuracy	0.5375	otherclones	True	10
-sensitive	accuracy	0.46875	otherclones	True	10
+resistant	accuracy	0.4826388888888889	otherclones	True	10
+sensitive	accuracy	0.552734375	otherclones	True	10
 resistant	avg_precision	1.0	otherclones	True	10
 sensitive	avg_precision		otherclones	True	10
-resistant	accuracy	0.575	otherclones	True	11
-sensitive	accuracy	0.4875	otherclones	True	11
+resistant	accuracy	0.4270833333333333	otherclones	True	11
+sensitive	accuracy	0.521484375	otherclones	True	11
 resistant	avg_precision	1.0	otherclones	True	11
 sensitive	avg_precision		otherclones	True	11
-resistant	accuracy	0.53125	otherclones	True	12
-sensitive	accuracy	0.465625	otherclones	True	12
+resistant	accuracy	0.4409722222222222	otherclones	True	12
+sensitive	accuracy	0.529296875	otherclones	True	12
 resistant	avg_precision	1.0	otherclones	True	12
 sensitive	avg_precision		otherclones	True	12
-resistant	accuracy	0.575	otherclones	True	13
-sensitive	accuracy	0.4875	otherclones	True	13
+resistant	accuracy	0.4583333333333333	otherclones	True	13
+sensitive	accuracy	0.5390625	otherclones	True	13
 resistant	avg_precision	1.0	otherclones	True	13
 sensitive	avg_precision		otherclones	True	13
-resistant	accuracy	0.49375	otherclones	True	14
-sensitive	accuracy	0.446875	otherclones	True	14
+resistant	accuracy	0.4652777777777778	otherclones	True	14
+sensitive	accuracy	0.54296875	otherclones	True	14
 resistant	avg_precision	1.0	otherclones	True	14
 sensitive	avg_precision		otherclones	True	14
-resistant	accuracy	0.53125	otherclones	True	15
-sensitive	accuracy	0.465625	otherclones	True	15
+resistant	accuracy	0.4826388888888889	otherclones	True	15
+sensitive	accuracy	0.552734375	otherclones	True	15
 resistant	avg_precision	1.0	otherclones	True	15
 sensitive	avg_precision		otherclones	True	15
-resistant	accuracy	0.46875	otherclones	True	16
-sensitive	accuracy	0.434375	otherclones	True	16
+resistant	accuracy	0.4583333333333333	otherclones	True	16
+sensitive	accuracy	0.5390625	otherclones	True	16
 resistant	avg_precision	1.0	otherclones	True	16
 sensitive	avg_precision		otherclones	True	16
-resistant	accuracy	0.48125	otherclones	True	17
-sensitive	accuracy	0.440625	otherclones	True	17
+resistant	accuracy	0.4513888888888889	otherclones	True	17
+sensitive	accuracy	0.53515625	otherclones	True	17
 resistant	avg_precision	1.0	otherclones	True	17
 sensitive	avg_precision		otherclones	True	17
-resistant	accuracy	0.5125	otherclones	True	18
-sensitive	accuracy	0.45625	otherclones	True	18
+resistant	accuracy	0.4722222222222222	otherclones	True	18
+sensitive	accuracy	0.546875	otherclones	True	18
 resistant	avg_precision	1.0	otherclones	True	18
 sensitive	avg_precision		otherclones	True	18
-resistant	accuracy	0.4875	otherclones	True	19
-sensitive	accuracy	0.44375	otherclones	True	19
+resistant	accuracy	0.4652777777777778	otherclones	True	19
+sensitive	accuracy	0.54296875	otherclones	True	19
 resistant	avg_precision	1.0	otherclones	True	19
 sensitive	avg_precision		otherclones	True	19
-resistant	accuracy	0.50625	otherclones	True	20
-sensitive	accuracy	0.453125	otherclones	True	20
+resistant	accuracy	0.4513888888888889	otherclones	True	20
+sensitive	accuracy	0.53515625	otherclones	True	20
 resistant	avg_precision	1.0	otherclones	True	20
 sensitive	avg_precision		otherclones	True	20
-resistant	accuracy	0.55625	otherclones	True	21
-sensitive	accuracy	0.478125	otherclones	True	21
+resistant	accuracy	0.4375	otherclones	True	21
+sensitive	accuracy	0.52734375	otherclones	True	21
 resistant	avg_precision	1.0	otherclones	True	21
 sensitive	avg_precision		otherclones	True	21
-resistant	accuracy	0.5	otherclones	True	22
-sensitive	accuracy	0.45	otherclones	True	22
+resistant	accuracy	0.4548611111111111	otherclones	True	22
+sensitive	accuracy	0.537109375	otherclones	True	22
 resistant	avg_precision	1.0	otherclones	True	22
 sensitive	avg_precision		otherclones	True	22
-resistant	accuracy	0.5125	otherclones	True	23
-sensitive	accuracy	0.45625	otherclones	True	23
+resistant	accuracy	0.4305555555555556	otherclones	True	23
+sensitive	accuracy	0.5234375	otherclones	True	23
 resistant	avg_precision	1.0	otherclones	True	23
 sensitive	avg_precision		otherclones	True	23
-resistant	accuracy	0.51875	otherclones	True	24
-sensitive	accuracy	0.459375	otherclones	True	24
+resistant	accuracy	0.4513888888888889	otherclones	True	24
+sensitive	accuracy	0.53515625	otherclones	True	24
 resistant	avg_precision	1.0	otherclones	True	24
 sensitive	avg_precision		otherclones	True	24
-resistant	accuracy	0.58125	otherclones	True	25
-sensitive	accuracy	0.490625	otherclones	True	25
+resistant	accuracy	0.4305555555555556	otherclones	True	25
+sensitive	accuracy	0.5234375	otherclones	True	25
 resistant	avg_precision	1.0	otherclones	True	25
 sensitive	avg_precision		otherclones	True	25
-resistant	accuracy	0.54375	otherclones	True	26
-sensitive	accuracy	0.471875	otherclones	True	26
+resistant	accuracy	0.4444444444444444	otherclones	True	26
+sensitive	accuracy	0.53125	otherclones	True	26
 resistant	avg_precision	1.0	otherclones	True	26
 sensitive	avg_precision		otherclones	True	26
-resistant	accuracy	0.525	otherclones	True	27
-sensitive	accuracy	0.4625	otherclones	True	27
+resistant	accuracy	0.4895833333333333	otherclones	True	27
+sensitive	accuracy	0.556640625	otherclones	True	27
 resistant	avg_precision	1.0	otherclones	True	27
 sensitive	avg_precision		otherclones	True	27
-resistant	accuracy	0.5375	otherclones	True	28
-sensitive	accuracy	0.46875	otherclones	True	28
+resistant	accuracy	0.4270833333333333	otherclones	True	28
+sensitive	accuracy	0.521484375	otherclones	True	28
 resistant	avg_precision	1.0	otherclones	True	28
 sensitive	avg_precision		otherclones	True	28
-resistant	accuracy	0.51875	otherclones	True	29
-sensitive	accuracy	0.459375	otherclones	True	29
+resistant	accuracy	0.4548611111111111	otherclones	True	29
+sensitive	accuracy	0.537109375	otherclones	True	29
 resistant	avg_precision	1.0	otherclones	True	29
 sensitive	avg_precision		otherclones	True	29
-resistant	accuracy	0.5	otherclones	True	30
-sensitive	accuracy	0.45	otherclones	True	30
+resistant	accuracy	0.4583333333333333	otherclones	True	30
+sensitive	accuracy	0.5390625	otherclones	True	30
 resistant	avg_precision	1.0	otherclones	True	30
 sensitive	avg_precision		otherclones	True	30
-resistant	accuracy	0.5375	otherclones	True	31
-sensitive	accuracy	0.46875	otherclones	True	31
+resistant	accuracy	0.4513888888888889	otherclones	True	31
+sensitive	accuracy	0.53515625	otherclones	True	31
 resistant	avg_precision	1.0	otherclones	True	31
 sensitive	avg_precision		otherclones	True	31
-resistant	accuracy	0.48125	otherclones	True	32
-sensitive	accuracy	0.440625	otherclones	True	32
+resistant	accuracy	0.4479166666666667	otherclones	True	32
+sensitive	accuracy	0.533203125	otherclones	True	32
 resistant	avg_precision	1.0	otherclones	True	32
 sensitive	avg_precision		otherclones	True	32
-resistant	accuracy	0.53125	otherclones	True	33
-sensitive	accuracy	0.465625	otherclones	True	33
+resistant	accuracy	0.4756944444444444	otherclones	True	33
+sensitive	accuracy	0.548828125	otherclones	True	33
 resistant	avg_precision	1.0	otherclones	True	33
 sensitive	avg_precision		otherclones	True	33
-resistant	accuracy	0.50625	otherclones	True	34
-sensitive	accuracy	0.453125	otherclones	True	34
+resistant	accuracy	0.4409722222222222	otherclones	True	34
+sensitive	accuracy	0.529296875	otherclones	True	34
 resistant	avg_precision	1.0	otherclones	True	34
 sensitive	avg_precision		otherclones	True	34
-resistant	accuracy	0.53125	otherclones	True	35
-sensitive	accuracy	0.465625	otherclones	True	35
+resistant	accuracy	0.4756944444444444	otherclones	True	35
+sensitive	accuracy	0.548828125	otherclones	True	35
 resistant	avg_precision	1.0	otherclones	True	35
 sensitive	avg_precision		otherclones	True	35
-resistant	accuracy	0.58125	otherclones	True	36
-sensitive	accuracy	0.490625	otherclones	True	36
+resistant	accuracy	0.4895833333333333	otherclones	True	36
+sensitive	accuracy	0.556640625	otherclones	True	36
 resistant	avg_precision	1.0	otherclones	True	36
 sensitive	avg_precision		otherclones	True	36
-resistant	accuracy	0.54375	otherclones	True	37
-sensitive	accuracy	0.471875	otherclones	True	37
+resistant	accuracy	0.4895833333333333	otherclones	True	37
+sensitive	accuracy	0.556640625	otherclones	True	37
 resistant	avg_precision	1.0	otherclones	True	37
 sensitive	avg_precision		otherclones	True	37
-resistant	accuracy	0.5375	otherclones	True	38
-sensitive	accuracy	0.46875	otherclones	True	38
+resistant	accuracy	0.4652777777777778	otherclones	True	38
+sensitive	accuracy	0.54296875	otherclones	True	38
 resistant	avg_precision	1.0	otherclones	True	38
 sensitive	avg_precision		otherclones	True	38
-resistant	accuracy	0.55	otherclones	True	39
-sensitive	accuracy	0.475	otherclones	True	39
+resistant	accuracy	0.4756944444444444	otherclones	True	39
+sensitive	accuracy	0.548828125	otherclones	True	39
 resistant	avg_precision	1.0	otherclones	True	39
 sensitive	avg_precision		otherclones	True	39
-resistant	accuracy	0.51875	otherclones	True	40
-sensitive	accuracy	0.459375	otherclones	True	40
+resistant	accuracy	0.4583333333333333	otherclones	True	40
+sensitive	accuracy	0.5390625	otherclones	True	40
 resistant	avg_precision	1.0	otherclones	True	40
 sensitive	avg_precision		otherclones	True	40
-resistant	accuracy	0.53125	otherclones	True	41
-sensitive	accuracy	0.465625	otherclones	True	41
+resistant	accuracy	0.4652777777777778	otherclones	True	41
+sensitive	accuracy	0.54296875	otherclones	True	41
 resistant	avg_precision	1.0	otherclones	True	41
 sensitive	avg_precision		otherclones	True	41
-resistant	accuracy	0.525	otherclones	True	42
-sensitive	accuracy	0.4625	otherclones	True	42
+resistant	accuracy	0.4861111111111111	otherclones	True	42
+sensitive	accuracy	0.5546875	otherclones	True	42
 resistant	avg_precision	1.0	otherclones	True	42
 sensitive	avg_precision		otherclones	True	42
-resistant	accuracy	0.4875	otherclones	True	43
-sensitive	accuracy	0.44375	otherclones	True	43
+resistant	accuracy	0.4583333333333333	otherclones	True	43
+sensitive	accuracy	0.5390625	otherclones	True	43
 resistant	avg_precision	1.0	otherclones	True	43
 sensitive	avg_precision		otherclones	True	43
-resistant	accuracy	0.5375	otherclones	True	44
-sensitive	accuracy	0.46875	otherclones	True	44
+resistant	accuracy	0.4791666666666667	otherclones	True	44
+sensitive	accuracy	0.55078125	otherclones	True	44
 resistant	avg_precision	1.0	otherclones	True	44
 sensitive	avg_precision		otherclones	True	44
-resistant	accuracy	0.5	otherclones	True	45
-sensitive	accuracy	0.45	otherclones	True	45
+resistant	accuracy	0.4479166666666667	otherclones	True	45
+sensitive	accuracy	0.533203125	otherclones	True	45
 resistant	avg_precision	1.0	otherclones	True	45
 sensitive	avg_precision		otherclones	True	45
-resistant	accuracy	0.51875	otherclones	True	46
-sensitive	accuracy	0.459375	otherclones	True	46
+resistant	accuracy	0.4826388888888889	otherclones	True	46
+sensitive	accuracy	0.552734375	otherclones	True	46
 resistant	avg_precision	1.0	otherclones	True	46
 sensitive	avg_precision		otherclones	True	46
-resistant	accuracy	0.625	otherclones	True	47
-sensitive	accuracy	0.5125	otherclones	True	47
+resistant	accuracy	0.5243055555555556	otherclones	True	47
+sensitive	accuracy	0.576171875	otherclones	True	47
 resistant	avg_precision	1.0	otherclones	True	47
 sensitive	avg_precision		otherclones	True	47
-resistant	accuracy	0.525	otherclones	True	48
-sensitive	accuracy	0.4625	otherclones	True	48
+resistant	accuracy	0.4444444444444444	otherclones	True	48
+sensitive	accuracy	0.53125	otherclones	True	48
 resistant	avg_precision	1.0	otherclones	True	48
 sensitive	avg_precision		otherclones	True	48
-resistant	accuracy	0.5	otherclones	True	49
-sensitive	accuracy	0.45	otherclones	True	49
+resistant	accuracy	0.4583333333333333	otherclones	True	49
+sensitive	accuracy	0.5390625	otherclones	True	49
 resistant	avg_precision	1.0	otherclones	True	49
 sensitive	avg_precision		otherclones	True	49
-resistant	accuracy	0.5375	otherclones	True	50
-sensitive	accuracy	0.46875	otherclones	True	50
+resistant	accuracy	0.4444444444444444	otherclones	True	50
+sensitive	accuracy	0.53125	otherclones	True	50
 resistant	avg_precision	1.0	otherclones	True	50
 sensitive	avg_precision		otherclones	True	50
-resistant	accuracy	0.53125	otherclones	True	51
-sensitive	accuracy	0.465625	otherclones	True	51
+resistant	accuracy	0.4756944444444444	otherclones	True	51
+sensitive	accuracy	0.548828125	otherclones	True	51
 resistant	avg_precision	1.0	otherclones	True	51
 sensitive	avg_precision		otherclones	True	51
-resistant	accuracy	0.5	otherclones	True	52
-sensitive	accuracy	0.45	otherclones	True	52
+resistant	accuracy	0.4548611111111111	otherclones	True	52
+sensitive	accuracy	0.537109375	otherclones	True	52
 resistant	avg_precision	1.0	otherclones	True	52
 sensitive	avg_precision		otherclones	True	52
-resistant	accuracy	0.53125	otherclones	True	53
-sensitive	accuracy	0.465625	otherclones	True	53
+resistant	accuracy	0.46875	otherclones	True	53
+sensitive	accuracy	0.544921875	otherclones	True	53
 resistant	avg_precision	1.0	otherclones	True	53
 sensitive	avg_precision		otherclones	True	53
-resistant	accuracy	0.5625	otherclones	True	54
-sensitive	accuracy	0.48125	otherclones	True	54
+resistant	accuracy	0.4548611111111111	otherclones	True	54
+sensitive	accuracy	0.537109375	otherclones	True	54
 resistant	avg_precision	1.0	otherclones	True	54
 sensitive	avg_precision		otherclones	True	54
-resistant	accuracy	0.5625	otherclones	True	55
-sensitive	accuracy	0.48125	otherclones	True	55
+resistant	accuracy	0.4722222222222222	otherclones	True	55
+sensitive	accuracy	0.546875	otherclones	True	55
 resistant	avg_precision	1.0	otherclones	True	55
 sensitive	avg_precision		otherclones	True	55
 resistant	accuracy	0.46875	otherclones	True	56
-sensitive	accuracy	0.434375	otherclones	True	56
+sensitive	accuracy	0.544921875	otherclones	True	56
 resistant	avg_precision	1.0	otherclones	True	56
 sensitive	avg_precision		otherclones	True	56
-resistant	accuracy	0.5625	otherclones	True	57
-sensitive	accuracy	0.48125	otherclones	True	57
+resistant	accuracy	0.4895833333333333	otherclones	True	57
+sensitive	accuracy	0.556640625	otherclones	True	57
 resistant	avg_precision	1.0	otherclones	True	57
 sensitive	avg_precision		otherclones	True	57
-resistant	accuracy	0.525	otherclones	True	58
-sensitive	accuracy	0.4625	otherclones	True	58
+resistant	accuracy	0.4618055555555556	otherclones	True	58
+sensitive	accuracy	0.541015625	otherclones	True	58
 resistant	avg_precision	1.0	otherclones	True	58
 sensitive	avg_precision		otherclones	True	58
-resistant	accuracy	0.4875	otherclones	True	59
-sensitive	accuracy	0.44375	otherclones	True	59
+resistant	accuracy	0.4583333333333333	otherclones	True	59
+sensitive	accuracy	0.5390625	otherclones	True	59
 resistant	avg_precision	1.0	otherclones	True	59
 sensitive	avg_precision		otherclones	True	59
-resistant	accuracy	0.475	otherclones	True	60
-sensitive	accuracy	0.4375	otherclones	True	60
+resistant	accuracy	0.4583333333333333	otherclones	True	60
+sensitive	accuracy	0.5390625	otherclones	True	60
 resistant	avg_precision	1.0	otherclones	True	60
 sensitive	avg_precision		otherclones	True	60
-resistant	accuracy	0.4875	otherclones	True	61
-sensitive	accuracy	0.44375	otherclones	True	61
+resistant	accuracy	0.5	otherclones	True	61
+sensitive	accuracy	0.5625	otherclones	True	61
 resistant	avg_precision	1.0	otherclones	True	61
 sensitive	avg_precision		otherclones	True	61
-resistant	accuracy	0.56875	otherclones	True	62
-sensitive	accuracy	0.484375	otherclones	True	62
+resistant	accuracy	0.4930555555555556	otherclones	True	62
+sensitive	accuracy	0.55859375	otherclones	True	62
 resistant	avg_precision	1.0	otherclones	True	62
 sensitive	avg_precision		otherclones	True	62
-resistant	accuracy	0.53125	otherclones	True	63
-sensitive	accuracy	0.465625	otherclones	True	63
+resistant	accuracy	0.4791666666666667	otherclones	True	63
+sensitive	accuracy	0.55078125	otherclones	True	63
 resistant	avg_precision	1.0	otherclones	True	63
 sensitive	avg_precision		otherclones	True	63
-resistant	accuracy	0.5125	otherclones	True	64
-sensitive	accuracy	0.45625	otherclones	True	64
+resistant	accuracy	0.4479166666666667	otherclones	True	64
+sensitive	accuracy	0.533203125	otherclones	True	64
 resistant	avg_precision	1.0	otherclones	True	64
 sensitive	avg_precision		otherclones	True	64
-resistant	accuracy	0.525	otherclones	True	65
-sensitive	accuracy	0.4625	otherclones	True	65
+resistant	accuracy	0.4756944444444444	otherclones	True	65
+sensitive	accuracy	0.548828125	otherclones	True	65
 resistant	avg_precision	1.0	otherclones	True	65
 sensitive	avg_precision		otherclones	True	65
-resistant	accuracy	0.50625	otherclones	True	66
-sensitive	accuracy	0.453125	otherclones	True	66
+resistant	accuracy	0.4548611111111111	otherclones	True	66
+sensitive	accuracy	0.537109375	otherclones	True	66
 resistant	avg_precision	1.0	otherclones	True	66
 sensitive	avg_precision		otherclones	True	66
-resistant	accuracy	0.53125	otherclones	True	67
-sensitive	accuracy	0.465625	otherclones	True	67
+resistant	accuracy	0.4166666666666667	otherclones	True	67
+sensitive	accuracy	0.515625	otherclones	True	67
 resistant	avg_precision	1.0	otherclones	True	67
 sensitive	avg_precision		otherclones	True	67
-resistant	accuracy	0.5625	otherclones	True	68
-sensitive	accuracy	0.48125	otherclones	True	68
+resistant	accuracy	0.46875	otherclones	True	68
+sensitive	accuracy	0.544921875	otherclones	True	68
 resistant	avg_precision	1.0	otherclones	True	68
 sensitive	avg_precision		otherclones	True	68
-resistant	accuracy	0.48125	otherclones	True	69
-sensitive	accuracy	0.440625	otherclones	True	69
+resistant	accuracy	0.4305555555555556	otherclones	True	69
+sensitive	accuracy	0.5234375	otherclones	True	69
 resistant	avg_precision	1.0	otherclones	True	69
 sensitive	avg_precision		otherclones	True	69
-resistant	accuracy	0.5125	otherclones	True	70
-sensitive	accuracy	0.45625	otherclones	True	70
+resistant	accuracy	0.4444444444444444	otherclones	True	70
+sensitive	accuracy	0.53125	otherclones	True	70
 resistant	avg_precision	1.0	otherclones	True	70
 sensitive	avg_precision		otherclones	True	70
-resistant	accuracy	0.58125	otherclones	True	71
-sensitive	accuracy	0.490625	otherclones	True	71
+resistant	accuracy	0.4826388888888889	otherclones	True	71
+sensitive	accuracy	0.552734375	otherclones	True	71
 resistant	avg_precision	1.0	otherclones	True	71
 sensitive	avg_precision		otherclones	True	71
-resistant	accuracy	0.48125	otherclones	True	72
-sensitive	accuracy	0.440625	otherclones	True	72
+resistant	accuracy	0.5069444444444444	otherclones	True	72
+sensitive	accuracy	0.56640625	otherclones	True	72
 resistant	avg_precision	1.0	otherclones	True	72
 sensitive	avg_precision		otherclones	True	72
-resistant	accuracy	0.54375	otherclones	True	73
-sensitive	accuracy	0.471875	otherclones	True	73
+resistant	accuracy	0.4270833333333333	otherclones	True	73
+sensitive	accuracy	0.521484375	otherclones	True	73
 resistant	avg_precision	1.0	otherclones	True	73
 sensitive	avg_precision		otherclones	True	73
-resistant	accuracy	0.5125	otherclones	True	74
-sensitive	accuracy	0.45625	otherclones	True	74
+resistant	accuracy	0.4791666666666667	otherclones	True	74
+sensitive	accuracy	0.55078125	otherclones	True	74
 resistant	avg_precision	1.0	otherclones	True	74
 sensitive	avg_precision		otherclones	True	74
-resistant	accuracy	0.525	otherclones	True	75
-sensitive	accuracy	0.4625	otherclones	True	75
+resistant	accuracy	0.4965277777777778	otherclones	True	75
+sensitive	accuracy	0.560546875	otherclones	True	75
 resistant	avg_precision	1.0	otherclones	True	75
 sensitive	avg_precision		otherclones	True	75
-resistant	accuracy	0.5125	otherclones	True	76
-sensitive	accuracy	0.45625	otherclones	True	76
+resistant	accuracy	0.5243055555555556	otherclones	True	76
+sensitive	accuracy	0.576171875	otherclones	True	76
 resistant	avg_precision	1.0	otherclones	True	76
 sensitive	avg_precision		otherclones	True	76
-resistant	accuracy	0.4625	otherclones	True	77
-sensitive	accuracy	0.43125	otherclones	True	77
+resistant	accuracy	0.4375	otherclones	True	77
+sensitive	accuracy	0.52734375	otherclones	True	77
 resistant	avg_precision	1.0	otherclones	True	77
 sensitive	avg_precision		otherclones	True	77
-resistant	accuracy	0.5375	otherclones	True	78
-sensitive	accuracy	0.46875	otherclones	True	78
+resistant	accuracy	0.4444444444444444	otherclones	True	78
+sensitive	accuracy	0.53125	otherclones	True	78
 resistant	avg_precision	1.0	otherclones	True	78
 sensitive	avg_precision		otherclones	True	78
-resistant	accuracy	0.55625	otherclones	True	79
-sensitive	accuracy	0.478125	otherclones	True	79
+resistant	accuracy	0.46875	otherclones	True	79
+sensitive	accuracy	0.544921875	otherclones	True	79
 resistant	avg_precision	1.0	otherclones	True	79
 sensitive	avg_precision		otherclones	True	79
-resistant	accuracy	0.56875	otherclones	True	80
-sensitive	accuracy	0.484375	otherclones	True	80
+resistant	accuracy	0.4340277777777778	otherclones	True	80
+sensitive	accuracy	0.525390625	otherclones	True	80
 resistant	avg_precision	1.0	otherclones	True	80
 sensitive	avg_precision		otherclones	True	80
-resistant	accuracy	0.53125	otherclones	True	81
-sensitive	accuracy	0.465625	otherclones	True	81
+resistant	accuracy	0.4444444444444444	otherclones	True	81
+sensitive	accuracy	0.53125	otherclones	True	81
 resistant	avg_precision	1.0	otherclones	True	81
 sensitive	avg_precision		otherclones	True	81
-resistant	accuracy	0.5375	otherclones	True	82
-sensitive	accuracy	0.46875	otherclones	True	82
+resistant	accuracy	0.46875	otherclones	True	82
+sensitive	accuracy	0.544921875	otherclones	True	82
 resistant	avg_precision	1.0	otherclones	True	82
 sensitive	avg_precision		otherclones	True	82
-resistant	accuracy	0.4875	otherclones	True	83
-sensitive	accuracy	0.44375	otherclones	True	83
+resistant	accuracy	0.4652777777777778	otherclones	True	83
+sensitive	accuracy	0.54296875	otherclones	True	83
 resistant	avg_precision	1.0	otherclones	True	83
 sensitive	avg_precision		otherclones	True	83
-resistant	accuracy	0.6125	otherclones	True	84
-sensitive	accuracy	0.50625	otherclones	True	84
+resistant	accuracy	0.4548611111111111	otherclones	True	84
+sensitive	accuracy	0.537109375	otherclones	True	84
 resistant	avg_precision	1.0	otherclones	True	84
 sensitive	avg_precision		otherclones	True	84
-resistant	accuracy	0.50625	otherclones	True	85
-sensitive	accuracy	0.453125	otherclones	True	85
+resistant	accuracy	0.4618055555555556	otherclones	True	85
+sensitive	accuracy	0.541015625	otherclones	True	85
 resistant	avg_precision	1.0	otherclones	True	85
 sensitive	avg_precision		otherclones	True	85
-resistant	accuracy	0.56875	otherclones	True	86
-sensitive	accuracy	0.484375	otherclones	True	86
+resistant	accuracy	0.4548611111111111	otherclones	True	86
+sensitive	accuracy	0.537109375	otherclones	True	86
 resistant	avg_precision	1.0	otherclones	True	86
 sensitive	avg_precision		otherclones	True	86
-resistant	accuracy	0.51875	otherclones	True	87
-sensitive	accuracy	0.459375	otherclones	True	87
+resistant	accuracy	0.4722222222222222	otherclones	True	87
+sensitive	accuracy	0.546875	otherclones	True	87
 resistant	avg_precision	1.0	otherclones	True	87
 sensitive	avg_precision		otherclones	True	87
-resistant	accuracy	0.55	otherclones	True	88
-sensitive	accuracy	0.475	otherclones	True	88
+resistant	accuracy	0.4513888888888889	otherclones	True	88
+sensitive	accuracy	0.53515625	otherclones	True	88
 resistant	avg_precision	1.0	otherclones	True	88
 sensitive	avg_precision		otherclones	True	88
-resistant	accuracy	0.51875	otherclones	True	89
-sensitive	accuracy	0.459375	otherclones	True	89
+resistant	accuracy	0.4409722222222222	otherclones	True	89
+sensitive	accuracy	0.529296875	otherclones	True	89
 resistant	avg_precision	1.0	otherclones	True	89
 sensitive	avg_precision		otherclones	True	89
-resistant	accuracy	0.475	otherclones	True	90
-sensitive	accuracy	0.4375	otherclones	True	90
+resistant	accuracy	0.4444444444444444	otherclones	True	90
+sensitive	accuracy	0.53125	otherclones	True	90
 resistant	avg_precision	1.0	otherclones	True	90
 sensitive	avg_precision		otherclones	True	90
-resistant	accuracy	0.5125	otherclones	True	91
-sensitive	accuracy	0.45625	otherclones	True	91
+resistant	accuracy	0.4930555555555556	otherclones	True	91
+sensitive	accuracy	0.55859375	otherclones	True	91
 resistant	avg_precision	1.0	otherclones	True	91
 sensitive	avg_precision		otherclones	True	91
-resistant	accuracy	0.4875	otherclones	True	92
-sensitive	accuracy	0.44375	otherclones	True	92
+resistant	accuracy	0.4375	otherclones	True	92
+sensitive	accuracy	0.52734375	otherclones	True	92
 resistant	avg_precision	1.0	otherclones	True	92
 sensitive	avg_precision		otherclones	True	92
-resistant	accuracy	0.5625	otherclones	True	93
-sensitive	accuracy	0.48125	otherclones	True	93
+resistant	accuracy	0.4409722222222222	otherclones	True	93
+sensitive	accuracy	0.529296875	otherclones	True	93
 resistant	avg_precision	1.0	otherclones	True	93
 sensitive	avg_precision		otherclones	True	93
-resistant	accuracy	0.525	otherclones	True	94
-sensitive	accuracy	0.4625	otherclones	True	94
+resistant	accuracy	0.46875	otherclones	True	94
+sensitive	accuracy	0.544921875	otherclones	True	94
 resistant	avg_precision	1.0	otherclones	True	94
 sensitive	avg_precision		otherclones	True	94
-resistant	accuracy	0.525	otherclones	True	95
-sensitive	accuracy	0.4625	otherclones	True	95
+resistant	accuracy	0.4548611111111111	otherclones	True	95
+sensitive	accuracy	0.537109375	otherclones	True	95
 resistant	avg_precision	1.0	otherclones	True	95
 sensitive	avg_precision		otherclones	True	95
-resistant	accuracy	0.54375	otherclones	True	96
-sensitive	accuracy	0.471875	otherclones	True	96
+resistant	accuracy	0.4409722222222222	otherclones	True	96
+sensitive	accuracy	0.529296875	otherclones	True	96
 resistant	avg_precision	1.0	otherclones	True	96
 sensitive	avg_precision		otherclones	True	96
-resistant	accuracy	0.5375	otherclones	True	97
-sensitive	accuracy	0.46875	otherclones	True	97
+resistant	accuracy	0.4722222222222222	otherclones	True	97
+sensitive	accuracy	0.546875	otherclones	True	97
 resistant	avg_precision	1.0	otherclones	True	97
 sensitive	avg_precision		otherclones	True	97
-resistant	accuracy	0.49375	otherclones	True	98
-sensitive	accuracy	0.446875	otherclones	True	98
+resistant	accuracy	0.46875	otherclones	True	98
+sensitive	accuracy	0.544921875	otherclones	True	98
 resistant	avg_precision	1.0	otherclones	True	98
 sensitive	avg_precision		otherclones	True	98
-resistant	accuracy	0.55625	otherclones	True	99
-sensitive	accuracy	0.478125	otherclones	True	99
+resistant	accuracy	0.4236111111111111	otherclones	True	99
+sensitive	accuracy	0.51953125	otherclones	True	99
 resistant	avg_precision	1.0	otherclones	True	99
 sensitive	avg_precision		otherclones	True	99

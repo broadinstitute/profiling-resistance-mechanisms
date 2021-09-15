@@ -130,7 +130,7 @@ roc_gg <- (
     + coord_fixed()
     + xlab("False positive rate")
     + ylab("True positive rate")
-    + annotation_custom(table_gg, ymin = -0.82, xmin = 0.42)
+    + annotation_custom(table_gg, ymin = -0.82, xmin = 1.6)
     + custom_theme
     + theme(legend.position = "bottom")
     + guides(col = guide_legend(nrow = 2, byrow = TRUE), linetype = guide_legend(nrow = 2, byrow = TRUE))
@@ -166,7 +166,7 @@ box_plot_gg <- (
          ymin = min_val,
          ymax = max_val,
          xmin = 0.3,
-         xmax = 11,
+         xmax = 15,
          alpha = 0.2,
          color = "red",
          linetype = "dashed",
@@ -186,5 +186,3 @@ output_fig_file <- file.path("figures", "newbatch_validation_boxplot.png")
 ggsave(output_fig_file, box_plot_gg, dpi = 500, height = 6, width = 7)
 
 box_plot_gg
-
-

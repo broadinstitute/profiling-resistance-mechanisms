@@ -139,7 +139,3 @@ sing_score_results_df %>% readr::write_tsv(output_results_file)
 
 print(dim(sing_score_results_df))
 head(sing_score_results_df)
-
-
-
-

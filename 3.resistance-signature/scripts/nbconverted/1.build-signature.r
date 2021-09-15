@@ -218,5 +218,3 @@ anova_results_df %>% readr::write_tsv(anova_output_file)
 tukey_results_df %>% readr::write_tsv(tukey_output_file)
 cell_count_results %>% readr::write_tsv(cell_count_output_file)
 signature_summary_df %>% readr::write_tsv(signature_output_file)
-
-

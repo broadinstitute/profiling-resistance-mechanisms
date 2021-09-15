@@ -11,7 +11,7 @@
 # 
 # How well is a bortezomib specific classifier able to separate WT and BZ clone types?
 # 
-# I did not make any major changes to Greg's original script of 10.0, except changing variable names to load in the new batch data results from scripts 8.1 and 9.1. Commented out/removed all lines associated with 'split'. 
+# Copied from Greg's original script of 10.0; Changed variable names to load in the new batch data results from scripts 8.1 and 9.1. Commented out/removed all lines associated with 'split'. 
 
 # In[1]:
 
@@ -136,6 +136,12 @@ roc_curve_data_df.head()
 
 
 # In[11]:
+
+
+roc_scores_df
+
+
+# In[12]:
 
 
 # Output performance results
