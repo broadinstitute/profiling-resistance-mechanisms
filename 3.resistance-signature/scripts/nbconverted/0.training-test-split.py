@@ -42,7 +42,9 @@
 # Yu Han, 2021
 # 
 # https://github.com/broadinstitute/profiling-resistance-mechanisms/issues/116 
-# We dropped the inference set (batch 3) because of overly confluent plates and suboptimal plate design. In the notebook, I still need to output the bortezomib signature analytical set, but I can also include the new batches of data, which will serve as a better experimentally designed inference set as included in pull request #114
+# We dropped the inference set (batch 3) because of overly confluent plates and suboptimal plate design. 
+# 
+# In the notebook, I still need to output the bortezomib signature analytical set, but I can also include the new batches of data, which will serve as a better experimentally designed inference set as included in pull request #114
 # 
 # 
 

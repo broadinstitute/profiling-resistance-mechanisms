@@ -38,11 +38,7 @@ sig_cols <- readr::cols(
     max_permuted_value = readr::col_double()
 )
 
-#inference_df <- readr::read_tsv(sig_results_file, col_types = sig_cols) %>%
-    #dplyr::filter(Metadata_model_split == "inference")
-
-signature_df <- readr::read_tsv(sig_results_file, col_types = sig_cols) %>%
-    #dplyr::filter(Metadata_model_split != "inference")
+signature_df <- readr::read_tsv(sig_results_file, col_types = sig_cols) 
 
 print(dim(signature_df))
 head(signature_df, 4)
@@ -87,19 +83,13 @@ roc_cols <- readr::cols(
     shuffled = readr::col_character()
 )
 
-roc_df <- readr::read_tsv(roc_auc_file, col_types=roc_cols) %>%
+roc_df <- readr::read_tsv(roc_auc_file, col_types=roc_cols) 
     dplyr::arrange(shuffled) %>%
     dplyr::mutate(roc_auc = round(roc_auc, 3))
 
 roc_df <- roc_df[, c("shuffled", "roc_auc")]
 colnames(roc_df) <- c("AUROC\nShuffled:", "roc_auc")
 
-#roc_df <- roc_df %>%
-    #tidyr::spread(`AUROC\nShuffled:`, roc_auc, sep="") %>%
-    #dplyr::arrange(desc(Split))
-
-#roc_df$Split <- dplyr::recode(roc_df$Split, !!!legend_labels)
-#roc_df
 
 table_theme <- gridExtra::ttheme_default(
     core = list(fg_params=list(cex = 0.3)),
@@ -111,14 +101,10 @@ table_gg <- gridExtra::tableGrob(roc_df,
                                  theme = table_theme,
                                  rows = NULL)
 
-threshold_points_df <- roc_curve_df %>%
-    dplyr::filter(shuffled == "False") %>%
-    #dplyr::group_by(model_split) %>%
-    dplyr::filter(abs(threshold) == min(abs(threshold))) %>%
+threshold_points_df <- roc_curve_df 
+    dplyr::filter(shuffled == "False") 
+    dplyr::filter(abs(threshold) == min(abs(threshold))) 
     dplyr::ungroup()
-
-#legend_colors <- c("#D41159")
-#legend_labels <- c("WT" = "WT", "BZ" = "BZ")
 
 roc_gg <- (
     ggplot(roc_curve_df, aes(x = fpr, y = tpr))
@@ -150,10 +136,6 @@ box_plot_gg <- (
         shape = 21,
         lwd = 0.5
     )
-    #+ facet_wrap(
-       # "~Metadata_dataset",
-       # ncol = 1,
-       # scales = "free_y")
     
     + xlab("")
     + ylab("Signature score\n(singscore)")

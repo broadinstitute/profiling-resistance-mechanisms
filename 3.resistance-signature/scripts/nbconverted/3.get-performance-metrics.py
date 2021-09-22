@@ -161,9 +161,3 @@ roc_scores_df.to_csv(output_file, sep="\t", index=False)
 output_file = pathlib.Path(f"{output_dir}/{dataset}_roc_curve.tsv")
 roc_curve_data_df.to_csv(output_file, sep="\t", index=False)
 
-
-# In[ ]:
-
-
-
-
