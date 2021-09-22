@@ -441,3 +441,5 @@ output_fig_file <- file.path("figures", "bortezomib_performance_metrics_bar_bypl
 ggsave(output_fig_file, bar_chart_gg, dpi = 500, height = 5, width = 3)
 
 bar_chart_gg
+
+

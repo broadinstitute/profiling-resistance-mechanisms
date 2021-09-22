@@ -36,6 +36,15 @@
 # 5. Perform feature selection using the training data only
 #   * Remove low variance, outlier, and blocklist features only
 # 6. Also load the batch 3 data and add to the analytical set as full holdout, inference set
+# 
+# 
+# ### Enhancement
+# Yu Han, 2021
+# 
+# https://github.com/broadinstitute/profiling-resistance-mechanisms/issues/116 
+# We dropped the inference set (batch 3) because of overly confluent plates and suboptimal plate design. In the notebook, I still need to output the bortezomib signature analytical set, but I can also include the new batches of data, which will serve as a better experimentally designed inference set as included in pull request #114
+# 
+# 
 
 # In[1]:
 
@@ -267,54 +276,10 @@ all_selected_features.head()
 # In[12]:
 
 
-# Load inference data (a different hold out)
-inference_batch = "2019_06_25_Batch3"
-inference_file = pathlib.Path(f"../3.bulk-signatures/data/{inference_batch}_combined_normalized.csv.gz")
-inference_df = pd.read_csv(inference_file)
+# Drop the inference data
+bortezomib_df = full_df.query("Metadata_dataset == 'bortezomib'").reset_index(drop=True)
 
-inference_df = inference_df.assign(
-    Metadata_dataset="untreated_mystery_clones",
-    Metadata_batch=inference_batch,
-    Metadata_clone_type="resistant",
-    Metadata_clone_type_indicator=1,
-    Metadata_model_split="inference"
-)
-
-inference_df.loc[inference_df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type"] = "sensitive"
-inference_df.loc[inference_df.Metadata_clone_number.str.contains("WT"), "Metadata_clone_type_indicator"] = 0
-inference_df = inference_df.assign(
-    Metadata_unique_sample_name=[f"profile_{x}_inference" for x in range(0, inference_df.shape[0])]
-)
-
-inference_df.Metadata_clone_number.value_counts()
-
-
-# In[13]:
-
-
-# Combine profiles into a single dataset and output
-bortezomib_df = pd.concat(
-    [
-        full_df.query("Metadata_dataset == 'bortezomib'"),
-        inference_df
-    ],
-    axis="rows",
-    sort=False
-).reset_index(drop=True)
-
+# Output file
 output_file = pathlib.Path(f"{output_dir}/bortezomib_signature_analytical_set.tsv.gz")
 bortezomib_df.to_csv(output_file, sep="\t", index=False)
-
-
-# In[14]:
-
-
-print(bortezomib_df.shape)
-bortezomib_df.head()
-
-
-# In[15]:
-
-
-assert len(bortezomib_df.Metadata_unique_sample_name.unique()) == bortezomib_df.shape[0]
 

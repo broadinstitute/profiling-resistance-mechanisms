@@ -104,6 +104,12 @@ full_df = pd.concat(full_df, axis="rows", sort=False).reset_index(drop=True)
 # In[6]:
 
 
+full_df
+
+
+# In[7]:
+
+
 # Reorder features
 common_metadata = infer_cp_features(full_df, metadata=True)
 morph_features = infer_cp_features(full_df)
@@ -114,21 +120,33 @@ print(full_df.shape)
 full_df.head()
 
 
-# In[7]:
+# In[8]:
 
 
 pd.crosstab(full_df.Metadata_dataset, full_df.Metadata_model_split)
 
 
-# In[8]:
+# In[9]:
 
 
 pd.crosstab(full_df.Metadata_clone_number, full_df.Metadata_model_split)
 
 
-# In[9]:
+# In[10]:
 
 
 output_file = pathlib.Path(f"{output_dir}/otherclones_normalized_profiles.tsv.gz")
 full_df.to_csv(output_file, sep="\t", index=False)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
