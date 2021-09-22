@@ -138,15 +138,3 @@ pd.crosstab(full_df.Metadata_clone_number, full_df.Metadata_model_split)
 output_file = pathlib.Path(f"{output_dir}/otherclones_normalized_profiles.tsv.gz")
 full_df.to_csv(output_file, sep="\t", index=False)
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
