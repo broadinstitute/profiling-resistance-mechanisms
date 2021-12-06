@@ -22,7 +22,7 @@ lgd_label_fontsize = 6.5
 anno_name_height = 0.45
 
 # Load profiles
-dataset_file <- file.path(data_dir, paste0(dataset, "_signature_analytical_set.tsv.gz"))
+dataset_file <- file.path(data_dir, paste0(dataset, "_signature_analytical_full_set.csv"))
 
 data_cols <- readr::cols(
     .default = readr::col_double(),
@@ -43,7 +43,7 @@ data_cols <- readr::cols(
     Metadata_time_to_adhere = readr::col_character()
 )
 
-dataset_df <- readr::read_tsv(dataset_file, col_types=data_cols)
+dataset_df <- readr::read_csv(dataset_file, col_types=data_cols)
 
 print(dim(dataset_df))
 head(dataset_df, 3)
@@ -79,7 +79,7 @@ head(features_df, 3)
 
 # Load signature scores
 score_dir <- file.path("results", "singscore")
-score_file <- file.path(score_dir, paste0("singscore_results", dataset, ".tsv.gz"))
+score_file <- file.path(score_dir, paste0("singscore_results_", dataset, "_full_set.csv"))
 
 score_cols <- readr::cols(
     .default = readr::col_character(),
@@ -98,13 +98,21 @@ score_cols <- readr::cols(
     max_permuted_value = readr::col_double()
 )
 
-score_df <- readr::read_tsv(score_file, col_types = score_cols)
-
+score_df <- readr::read_csv(score_file, col_types = score_cols)
 print(dim(score_df))
 head(score_df, 3)
 
 # Set colors
 legend_scale_cols = circlize::colorRamp2(c(-1, 0, 1), c("blue", "white", "red"))
+
+legend_colors = c(
+        "otherclone"="#66C2A5",
+        "test"="#FC8D62",
+        "training"="#8DA0CB",
+        "validation"="#E78AC3",
+        "holdout"="#A6D854"
+        )
+
 
 plate_col = c(
     "219901" = "#E1DAAE",
@@ -113,8 +121,14 @@ plate_col = c(
     "219973" = "#058ED9",
     "220039" = "#848FA2",
     "220040" = "#2D3142",
-    "220055" = "#FFC857"
+    "220055" = "#FFC857",
+    "221093" = "#E495A5",
+    "221094" = "#ABB065",
+    "221058" = "#39BEB1",
+    "221057" = "#ACA4E2"
+    
 )
+
 clonetype_col = c("Clone" = "#785EF0", "Parental" = "#DC267F")
 
 # From colorbrewer2.org
@@ -138,8 +152,9 @@ spectral_breaks <- seq(spectral_limits[1] * 100, spectral_limits[2] * 100, lengt
 signature_col = circlize::colorRamp2(rev(spectral_breaks), spectral_palette)
 sensitivity_col = c("resistant" = "#332a2a", "sensitive" = "#c3c7c9")
 
-for (feature_select_type in c("selected", "signature")) {
+#for (feature_select_type in c("selected", "signature")) {
     
+    feature_select_type <- "signature"
     # Determine features that were selected for the dataset
     if (feature_select_type == "signature") {
         # Signature only features
@@ -166,94 +181,36 @@ for (feature_select_type in c("selected", "signature")) {
         dplyr::left_join(subset_score_df, by = "Metadata_unique_sample_name") %>%
         dplyr::mutate(Metadata_parental = "Clone")
 
-    # Identify parental lines
-    subset_data_df[grepl("parental", subset_data_df$Metadata_clone_number), "Metadata_parental"] = "Parental"
 
-    # Obtain correlation matrix
-    correlation_matrix_df <- t(subset_data_df %>% dplyr::select(!!!selected_features)) %>% cor() 
-    
-    # Generate the heatmap
-    ht <- Heatmap(
-        correlation_matrix_df,
-        name = "Correlation",
-        column_dend_side = "top",
-        # To generate heatmaps sorted by signature score
-        # row_order = order(subset_data_df$TotalScore),
-        # column_order = order(subset_data_df$TotalScore),
-        clustering_method_columns = "average",
-        clustering_method_rows = "average",
+total_score<-subset_data_df$TotalScore
+subset_data_df = subset(subset_data_df, select = -c(TotalScore) )
+subset_data_df[order(as.character(subset_data_df$Metadata_clone_type)),]
 
-        top_annotation = HeatmapAnnotation(
-            Sensitivity = subset_data_df$Metadata_clone_type,
-            BortezomibSig = subset_data_df$TotalScore,
-            CloneType = subset_data_df$Metadata_parental,
-            Plate = subset_data_df$Metadata_Plate,
-            ModelSplit = subset_data_df$Metadata_model_split,
-            CellCount = anno_barplot(
-                subset_data_df$Metadata_cell_count,
-                height = unit(anno_name_height * 1.5, "cm")
-            ),
-
-            annotation_legend_param = list(
-                ModelSplit = list(
-                    title_gp = gpar(fontsize = lgd_title_fontsize),
-                    labels_gp = gpar(fontsize = lgd_label_fontsize),
-                    title = "Model split"
-                ),
-                Sensitivity = list(
-                    title_gp = gpar(fontsize = lgd_title_fontsize),
-                    labels_gp = gpar(fontsize = lgd_label_fontsize)
-                ),
-                Plate = list(
-                    title_gp = gpar(fontsize = lgd_title_fontsize),
-                    labels_gp = gpar(fontsize = lgd_label_fontsize)
-                ),
-                CloneType = list(
-                    title_gp = gpar(fontsize = lgd_title_fontsize),
-                    labels_gp = gpar(fontsize = lgd_label_fontsize),
-                    title = "Clone type"
-                ),
-                BortezomibSig = list(
-                    title_gp = gpar(fontsize = lgd_title_fontsize),
-                    labels_gp = gpar(fontsize = lgd_label_fontsize),
-                    col_fun = signature_col,
-                    title = "Bortezomib\nsignature",
-                    at = c(-0.7, -0.35, 0, 0.35, 0.7)
-                )
-            ),
-
-            col = list(
-                ModelSplit = legend_colors,
-                BortezomibSig = signature_col,
-                Plate = plate_col,
-                CloneType = clonetype_col,
-                Sensitivity = sensitivity_col
-            ),
-
-            simple_anno_size = unit(anno_name_height, "cm"),
-            annotation_name_gp = gpar(fontsize = lgd_label_fontsize)
-        ),
-        
-        heatmap_legend_param = list(
-            title = "Pearson\ncorrelation",
+ht=
+Heatmap(
+   subset_data_df%>% select(-matches("Metadata")) %>% select(1:45) %>% as.matrix() %>% t(),
+       top_annotation = HeatmapAnnotation(
+       resistance_type = subset_data_df %>% pull(Metadata_clone_type),
+       model_split= subset_data_df %>% pull(Metadata_model_split),
+       total_score=total_score
+      ),
+      
+       heatmap_legend_param = list(
+            title = "Normalized\nfeature\nvalue",
             color_bar = "continuous",
-            col_fun = legend_scale_cols,
             title_gp = gpar(fontsize = lgd_title_fontsize),
             title_position = "topleft",
-            labels_gp = gpar(fontsize = lgd_label_fontsize),
-            at = c(-1, 0, 1)
-        )
+            col_fun = legend_scale_cols,
+            labels_gp = gpar(fontsize = lgd_label_fontsize)
+            
+      ),
+    row_names_gp = gpar(fontsize = 5),
+    clustering_method_columns = "average",
+    clustering_method_rows = "average",
+    column_split = subset_data_df %>% pull(Metadata_clone_type)
     )
+    
 
-    # Save heatmap to file
-    fig_file <- file.path(
-        output_dir, paste0("heatmap_", dataset, "_features_",  feature_select_type, ".pdf")
-    )
-    pdf(fig_file)
-    draw(ht)
-    dev.off()
-
-    draw(ht)
-}
+draw(ht,annotation_legend_side = "left", heatmap_legend_side = "left")
 
 
