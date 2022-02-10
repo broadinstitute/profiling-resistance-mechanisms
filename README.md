@@ -1,6 +1,6 @@
 # Discovering Morphological Markers of Drug Resistance
 
-**Gregory Way, Shantanu Singh, Beth Cimini, and Anne Carpenter, 2019**
+**Gregory Way, Yu Han, Shantanu Singh, Beth Cimini, and Anne Carpenter, 2019**
 
 _(A collaboration with Adi Berman, Megan Elizabeth Kelley, and Tarun Kapoor)_
 
