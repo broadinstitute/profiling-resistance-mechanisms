@@ -22,6 +22,7 @@ summary_file <- file.path(signature_dir, paste0("signature_summary_", dataset, "
 data_file <- file.path(data_dir, "bortezomib_signature_analytical_set.tsv.gz")
 
 output_fig_dir <- file.path("figures", "signature_features")
+output_clone_id_unique_file <- file.path("data", "unique_clone_id_detail_clonecomparisonsubset.tsv")
 
 # Load data
 anova_cols <- readr::cols(
@@ -172,6 +173,9 @@ clone_id_feature_drop <- no_status_subset_df %>%
 clone_id_unique_df <- no_status_subset_df %>%
     dplyr::filter(term == "Within same clone type") %>%
     dplyr::filter(!(feature %in% clone_id_feature_drop))
+
+# Save clone_id_unique_df to file
+clone_id_unique_df %>% readr::write_tsv(output_clone_id_unique_file)
 
 # Remove the within same clone type term from the no_status_subset (to be visualized separately)
 no_status_subset_df <- no_status_subset_df %>%
