@@ -22,6 +22,7 @@ summary_file <- file.path(signature_dir, paste0("signature_summary_", dataset, "
 data_file <- file.path(data_dir, "bortezomib_signature_analytical_set.tsv.gz")
 
 output_fig_dir <- file.path("figures", "signature_features")
+output_clone_id_unique_file <- file.path("data", "unique_clone_id_detail_clonecomparisonsubset.tsv")
 
 # Load data
 anova_cols <- readr::cols(
@@ -121,7 +122,8 @@ final_sig <- summary_df %>%
     ) %>%
     dplyr::pull(features)
 
-# Split features into categories
+# 1. Split features into categories
+# 2. Create a variable that distinguishes signature features
 tukey_subset_df <- tukey_df %>%
     tidyr::separate(
         feature,
@@ -136,9 +138,7 @@ tukey_subset_df <- tukey_df %>%
         sep = "_",
         remove = FALSE
     ) %>%
-    dplyr::mutate(compartment_feature_group = paste(compartment, feature_group, channel, sep=" - "))
-
-tukey_subset_df <- tukey_subset_df %>%
+    dplyr::mutate(compartment_feature_group = paste(compartment, feature_group, channel, sep=" - ")) %>%
     dplyr::mutate(in_signature = feature %in% final_sig)
 
 # Call infinite values the max (for plotting only)
@@ -149,27 +149,35 @@ tukey_subset_df[is.infinite(tukey_subset_df$neg_log_adj_p), "neg_log_adj_p"] <- 
 status_subset_df <- tukey_subset_df %>% dplyr::filter(term == "Resistance status")
 no_status_subset_df <- tukey_subset_df %>% dplyr::filter(term != "Resistance status")
 
-# Determine if the clone number comparison is between like-clones
+# Count the number of times the substring "WT" appears in the within same clone comparison
+# This will help us to determine if the clone type comparison is between like-clones (e.g. WT vs. WT)
+# We want to remove features from the signature that have intra-clone-type differences, but retain 
+# features that are different between individual clones of different clone types (e.g. WT vs. sensitive)
 wt_clone_count <- stringr::str_count(
     no_status_subset_df %>%
     dplyr::filter(term == "Within same clone type") %>%
     dplyr::pull("comparison"), "WT"
 )
 
+# Identify features that are consistently and significantly different within same clone-type comparisons
 clone_id_feature_drop <- no_status_subset_df %>%
     dplyr::filter(term == "Within same clone type") %>%
     dplyr::mutate(wt_clone_count = wt_clone_count) %>%
     dplyr::filter(neg_log_adj_p > !!signif_line, wt_clone_count != 1) %>%
     dplyr::count(feature) %>%
     dplyr::arrange(desc(n)) %>%
-    dplyr::filter(n > 1) %>%
+    dplyr::filter(n > 1) %>%  # Must be different in more than one same clone-type comparisons
     dplyr::pull(feature)
 
+# Separate within same clone type term and remove features identified above
 clone_id_unique_df <- no_status_subset_df %>%
     dplyr::filter(term == "Within same clone type") %>%
-    dplyr::mutate(wt_clone_count = wt_clone_count) %>%
     dplyr::filter(!(feature %in% clone_id_feature_drop))
 
+# Save clone_id_unique_df to file
+clone_id_unique_df %>% readr::write_tsv(output_clone_id_unique_file)
+
+# Remove the within same clone type term from the no_status_subset (to be visualized separately)
 no_status_subset_df <- no_status_subset_df %>%
     dplyr::filter(term != "Within same clone type")
 
@@ -225,20 +233,20 @@ point_size = 0.05
 point_alpha = 0.3
 point_shape <- 1
 
+# Specifiy points for individual facets (split later by "term") separately
 covariate_gg <- (
+    # Each plot will include x=tukey fold change estimate and y=negative log 10 adjusted p value
     ggplot(no_status_subset_df, aes(x = estimate, y = neg_log_adj_p))
-    + geom_point(
-        aes(color = in_signature),
-        size = point_size,
-        alpha = 0,
-        shape = point_shape
-    )
+    
+    # Plot all features not in the signature
     + geom_point(
         data = no_status_subset_df %>% dplyr::filter(!(feature %in% final_sig)),
         size = point_size,
         alpha = point_alpha,
         shape = point_shape
     )
+    
+    # Plot all features in the signature in red
     + geom_point(
         data = no_status_subset_df %>% dplyr::filter(feature %in% final_sig),
         color = "red",
@@ -247,12 +255,15 @@ covariate_gg <- (
         shape = point_shape
     )
     
+    # Plot the within-clone comparison features not in the final signature
     + geom_point(
         data = clone_id_unique_df %>% dplyr::filter(!(feature %in% final_sig)),
         size = point_size,
         alpha = point_alpha,
         shape = point_shape
     )
+    
+    # Plot the within-clone comparison points in the final signature red
     + geom_point(
         data = clone_id_unique_df %>% dplyr::filter(feature %in% final_sig),
         color = "red",
@@ -260,6 +271,8 @@ covariate_gg <- (
         alpha = point_alpha,
         shape = point_shape
     )
+    
+    # Plot the cell count subset features not in the final signature
     + geom_point(
         data = cell_count_subset_df %>% dplyr::filter(!(feature %in% final_sig)),
         aes(x = estimate, y = neg_log_p),
@@ -267,6 +280,8 @@ covariate_gg <- (
         alpha = point_alpha,
         shape = point_shape
     )
+    
+    # Plot the cell count subset features in the final signature red
     + geom_point(
         data = cell_count_subset_df %>% dplyr::filter(feature %in% final_sig),
         aes(x = estimate, y = neg_log_p),
@@ -382,5 +397,3 @@ heatmap3::heatmap3(
     margins = c(2, 2)
 )
 dev.off()
-
-
