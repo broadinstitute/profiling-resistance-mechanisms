@@ -1,4 +1,5 @@
 clear all; close all
+% tsv files converted to csv for analysis
 
 % load data file
 file="H:\profiling-resistance-mechanisms\3.resistance-signature\results\performance\total_bortezomib_shuffle_metric_performance.csv";
