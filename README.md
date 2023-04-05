@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/182295433.svg)](https://zenodo.org/badge/latestdoi/182295433)
+
 # Discovering Morphological Markers of Drug Resistance
 
 **Gregory Way, Yu Han, Shantanu Singh, Beth Cimini, and Anne Carpenter, 2019**
