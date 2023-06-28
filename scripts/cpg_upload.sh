@@ -1,23 +1,23 @@
-TOP_LEVEL_FOLDER=s3://imaging-platform/projects/2021_04_26_Production/2021_04_26_Batch1/images
-LIST_OF_PLATES_FROM_SAME_BATCH=plate_list.txt # each line in this text file contains a plate name (they must not contain a space; please rename if they do)
-PROJECT_DIRECTORY=jump
-PROJECT_NESTING=source_4
-BATCH=2021_04_26_Batch1
+TOP_LEVEL_FOLDER=s3://imaging-platform/projects/2018_05_30_ResistanceMechanisms_Kapoor
+PROJECT_DIRECTORY=cpg0028-kelley-resistance
+LIST_OF_BATCHES=batches.txt
+PROJECT_NESTING=broad
 
-mkdir -p log/${BATCH} # to log the output
+mkdir -p log # to log the output
+
+# sync the images
 
 parallel \
-  -a ${LIST_OF_PLATES_FROM_SAME_BATCH} \
+  -a ${LIST_OF_BATCHES} \
   --max-procs 4 \
   --eta \
-  --joblog log/${BATCH}/upload.log \
-  --results log/${BATCH}/upload \
+  --joblog log/upload.log \
+  --results log/upload \
   --files \
   --keep-order \
   aws s3 sync \
-  --profile jump-cp-role \
   --acl bucket-owner-full-control \
   --metadata-directive REPLACE \
-  "${TOP_LEVEL_FOLDER}"/{1} \
+  "${TOP_LEVEL_FOLDER}"/{1}/images/ \
   s3://cellpainting-gallery/${PROJECT_DIRECTORY}/${PROJECT_NESTING}/images/${BATCH}/images/{1}
   
