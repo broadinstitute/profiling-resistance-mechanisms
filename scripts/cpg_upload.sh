@@ -19,5 +19,5 @@ parallel \
   --acl bucket-owner-full-control \
   --metadata-directive REPLACE \
   "${TOP_LEVEL_FOLDER}"/{1}/ \
-  s3://cellpainting-gallery/${PROJECT_DIRECTORY}/${PROJECT_NESTING}/images/${BATCH}/
+  s3://cellpainting-gallery/${PROJECT_DIRECTORY}/${PROJECT_NESTING}/images/{1}/
   
