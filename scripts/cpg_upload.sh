@@ -5,7 +5,7 @@ PROJECT_NESTING=broad
 
 mkdir -p log # to log the output
 
-# sync the images
+# 1. images
 
 parallel \
   -a ${LIST_OF_BATCHES} \
@@ -21,3 +21,8 @@ parallel \
   "${TOP_LEVEL_FOLDER}"/{1}/ \
   s3://cellpainting-gallery/${PROJECT_DIRECTORY}/${PROJECT_NESTING}/images/{1}/
   
+# 2. workspace/{analysis,backend,load_data_csv}
+
+# 3. workspace/metadata
+
+
