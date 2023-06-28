@@ -18,6 +18,6 @@ parallel \
   aws s3 sync \
   --acl bucket-owner-full-control \
   --metadata-directive REPLACE \
-  "${TOP_LEVEL_FOLDER}"/{1}/images/ \
-  s3://cellpainting-gallery/${PROJECT_DIRECTORY}/${PROJECT_NESTING}/images/${BATCH}/images/{1}
+  "${TOP_LEVEL_FOLDER}"/{1}/ \
+  s3://cellpainting-gallery/${PROJECT_DIRECTORY}/${PROJECT_NESTING}/images/${BATCH}/
   
