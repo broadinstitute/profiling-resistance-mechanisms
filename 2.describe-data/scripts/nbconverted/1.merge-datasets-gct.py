@@ -91,6 +91,9 @@ cp_cols = infer_cp_features(all_profiles_df, metadata=False)
 
 all_profiles_df = all_profiles_df.reindex(meta_features + cp_cols, axis="columns")
 
+output_file = os.path.join(output_dir, "all_merged_profiles_before_feature_selection.csv.gz")
+all_profiles_df.to_csv(output_file, index=False, compression="gzip")
+
 print(all_profiles_df.shape)
 all_profiles_df.head()
 
