@@ -1,0 +1,19 @@
+name: resistance-mechanisms-figures
+channels:
+- conda-forge
+dependencies:
+- conda-forge::jupyter
+- conda-forge::jupyterlab
+- conda-forge::r-irkernel
+- conda-forge::nb_conda_kernels
+- conda-forge::widgetsnbextension
+- conda-forge::jupyter_contrib_nbextensions
+- conda-forge::r-dplyr>=0.8.3
+- conda-forge::r-tidyr>=0.8.3
+- conda-forge::r-readr
+- conda-forge::r-readxl
+- conda-forge::r-ggplot2>=3.2.1
+- conda-forge::r-cowplot>=1.0.0
+- conda-forge::r-patchwork
+- conda-forge::r-ggrepel>=0.8.1
+- conda-forge::r-svglite>=1.2.2
