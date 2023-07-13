@@ -106,7 +106,14 @@ ks_test_group_mean_df <- ks_test_df %>%
 
 ks_test_group_mean_df$feature_group <- factor(
     ks_test_group_mean_df$feature_group,
-    levels = rev(c("AreaShape", "Texture", "RadialDistribution", "Intensity", "Granularity", "Correlation"))
+    levels = rev(c(
+        "AreaShape",
+        "Texture",
+        "RadialDistribution",
+        "Intensity",
+        "Granularity",
+        "Correlation"
+    ))
 )
 
 ks_test_group_mean_df$channel_cleaned <- factor(
@@ -161,7 +168,10 @@ ks_test_gg <- (
         color = "black"
     )
     + theme_bw()
-    + labs(x = "Wildtype KS test statistic", y = "Resistant KS test statistic")
+    + labs(
+        x = "Misclassified wildtype\nKS test statistic",
+        y = "Misclassified resistant\nKS test statistic"
+    )
     + geom_abline(intercept = 0, slope = 1, linetype = "dashed", color = "blue")
     + scale_fill_manual(
         name = "Channel",
@@ -202,6 +212,6 @@ patchwork_plot <- (
     + plot_layout(heights = c(0.28, 1))
 )
 
-ggsave(output_file, patchwork_plot, height = 5.9, width = 10, dpi = 500)
+ggsave(output_file, patchwork_plot, height = 6.1, width = 10, dpi = 500)
 
 patchwork_plot
