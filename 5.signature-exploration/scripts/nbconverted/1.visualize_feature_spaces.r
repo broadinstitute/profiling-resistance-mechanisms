@@ -47,18 +47,25 @@ umap_df$Metadata_umap_category <- dplyr::recode(
 )
 
 umap_df$Metadata_umap_category <- factor(
-    umap_df$Metadata_umap_category, levels = c("All features", "Feature selected", "All except BZ", "BZ features")
+    umap_df$Metadata_umap_category,
+    levels = c("All features", "Feature selected", "All except BZ", "BZ features")
 )
 
 print(dim(umap_df))
 head(umap_df, 3)
 
-# Load the clustering results
+# Load the clustering results and process for plotting
 cluster_file <- file.path("results", "clustering_feature_summary.tsv.gz")
 
 cluster_df <- readr::read_tsv(
     cluster_file, show_col_types = FALSE
-)
+) %>%
+    dplyr::select(!average_p_value) %>%
+    tidyr::pivot_longer(
+        cols = c("silhouette_width", "average_enrichment", "maximum_enrichment"),
+        names_to = "clustering_metric",
+        values_to = "clustering_metric_value"
+    ) 
 
 cluster_df$feature_category <- dplyr::recode(
     cluster_df$feature_category,
@@ -73,18 +80,20 @@ cluster_df$feature_category <- factor(
     levels = c("All features", "Feature selected", "All except BZ", "BZ features")
 )
 
+cluster_df$clustering_metric <- dplyr::recode(
+    cluster_df$clustering_metric,
+    silhouette_width = "Silhouette width",
+    average_enrichment = "Average odds ratio",
+    maximum_enrichment = "Max cluster odds ratio"
+)
+
+cluster_df$clustering_metric <- factor(
+    cluster_df$clustering_metric,
+    levels = c("Average odds ratio", "Max cluster odds ratio", "Silhouette width")
+)
+
 print(dim(cluster_df))
 head(cluster_df, 3)
-
-cluster_summary_df <- cluster_df %>%
-    dplyr::filter(feature_category %in% c("BZ features", "Feature selected")) %>%
-    dplyr::group_by(k) %>%
-    dplyr::select(k, silhouette_width, feature_category) %>%
-    tidyr::spread(key = feature_category, value = silhouette_width) %>%
-    dplyr::mutate(sw_diff = `Feature selected` - `BZ features`) %>%
-    dplyr::mutate(better_cluster_bz_feature = sw_diff < 0)
-
-table(cluster_summary_df$better_cluster_bz_feature)
 
 panel_status_gg <- (
     ggplot(
@@ -152,7 +161,7 @@ cluster_gg <- (
         cluster_df,
         aes(
             x = k,
-            y = silhouette_width,
+            y = clustering_metric_value,
             fill = feature_category,
             color = feature_category
         )
@@ -164,6 +173,7 @@ cluster_gg <- (
         size = 3
     )
     + theme_bw()
+    + facet_wrap("~clustering_metric", nrow = 3, scales = "free")
     + scale_fill_manual(
         name = "Feature space",
         labels = c(
@@ -200,12 +210,16 @@ cluster_gg <- (
     + scale_x_continuous(breaks = seq(min(cluster_df$k), max(cluster_df$k), 1))
     # Decrease spacing in legend
     + theme(
+        strip.background = element_rect(
+            colour = "black",
+            fill = "#fdfff4"
+        ),
         legend.spacing.y = unit(0.1, "cm"),
         legend.box.spacing = unit(0.5, "cm"),
         legend.key.size = unit(1, "lines"),
         legend.key.width = unit(1, "lines")
     )
-    + labs(x = "KMeans k", y = "Silhouette width")
+    + labs(x = "KMeans number of clusters (k)", y = "Clustering metric score")
 )
 
 cluster_gg
@@ -221,9 +235,9 @@ patchwork_plot <- (
 patchwork_plot <- (
     patchwork_plot 
     + plot_annotation(tag_levels = "A")
-    + plot_layout(heights = c(1, 1))
+    + plot_layout(heights = c(0.5, 1))
 )
 
-ggsave(output_file, patchwork_plot, height = 8, width = 10, dpi = 500)
+ggsave(output_file, patchwork_plot, height = 9, width = 9, dpi = 500)
 
 patchwork_plot

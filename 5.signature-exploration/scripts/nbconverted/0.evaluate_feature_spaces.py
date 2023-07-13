@@ -27,6 +27,7 @@ import pandas as pd
 
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
+from sklearn.decomposition import PCA
 from scipy.stats import fisher_exact
 
 from typing import List, Union
@@ -93,6 +94,7 @@ def process_umap(
 def perform_clustering(
         df: pd.DataFrame,
         features: Union[str, List[str]],
+        pca_n_components: int,
         class_column: str,
         positive_class: Union[int, str],
         feature_category: str,
@@ -110,6 +112,8 @@ def perform_clustering(
         The input dataframe. Should include feature columns and a class column.
     features : list of str
         The names of the feature columns to use for clustering.
+    pca_n_components : int
+        The number of principal coponents to use for PCA transformation
     class_column : str
         The name of the class column.
     positive_class : int or str
@@ -129,7 +133,16 @@ def perform_clustering(
 
     """
     # Prepare output dataframe
-    results = pd.DataFrame(columns=["k", "silhouette_width", "average_enrichment", "average_p_value", "feature_category"])
+    results = pd.DataFrame(
+        columns=[
+            "k",
+            "silhouette_width",
+            "average_enrichment",
+            "maximum_enrichment",
+            "average_p_value",
+            "feature_category"
+        ]
+    )
 
     # Subset dataframe
     if features == "infer":
@@ -137,6 +150,10 @@ def perform_clustering(
         subset_df = df.drop(metadata_cols, axis="columns")
     else:
         subset_df = df.loc[:, features]
+
+    # Transform data into PCA space to account for differential feature numbers influencing distance metrics
+    pca = PCA(n_components=pca_n_components)
+    subset_df = pca.fit_transform(subset_df)
 
     # Get boolean series indicating whether each sample belongs to the positive class
     is_in_class = df.loc[:, class_column] == positive_class
@@ -170,6 +187,7 @@ def perform_clustering(
 
         # Calculate average enrichment
         average_enrichment = sum(enrichments) / len(enrichments)
+        maximum_enrichment = np.max(enrichments)
         average_p_value = sum(p_values) / len(p_values)
 
        # Append results
@@ -177,6 +195,7 @@ def perform_clustering(
             "k": [k],
             "silhouette_width": [silhouette_width],
             "average_enrichment": [average_enrichment],
+            "maximum_enrichment": [maximum_enrichment],
             "average_p_value": [average_p_value],
             "feature_category": [feature_category]
         })
@@ -303,11 +322,13 @@ umap_df.head()
 
 low_k = 2
 high_k = 14
+pca_n_components = 30
 
 # 1) All feature clustering
 all_feature_cluster_df = perform_clustering(
     df = profile_df,
     features = "infer",
+    pca_n_components=pca_n_components,
     class_column = "Metadata_clone_type",
     positive_class = "wildtype",
     feature_category = "all_features",
@@ -319,6 +340,7 @@ all_feature_cluster_df = perform_clustering(
 fs_feature_cluster_df = perform_clustering(
     df = profile_feature_select_df,
     features = "infer",
+    pca_n_components=pca_n_components,
     class_column = "Metadata_clone_type",
     positive_class = "wildtype",
     feature_category = "feature_selected",
@@ -330,6 +352,7 @@ fs_feature_cluster_df = perform_clustering(
 bz_feature_cluster_df = perform_clustering(
     df = profile_df,
     features = bz_sig_features,
+    pca_n_components=pca_n_components,
     class_column = "Metadata_clone_type",
     positive_class = "wildtype",
     feature_category = "bortezomib_signature_features",
@@ -341,6 +364,7 @@ bz_feature_cluster_df = perform_clustering(
 non_bz_feature_cluster_df = perform_clustering(
     df = profile_df,
     features = all_features_except_bz_sig_features,
+    pca_n_components=pca_n_components,
     class_column = "Metadata_clone_type",
     positive_class = "wildtype",
     feature_category = "all_except_bortezomib_signature_features",
@@ -352,7 +376,7 @@ non_bz_feature_cluster_df = perform_clustering(
 # In[12]:
 
 
-# Output umap summary
+# Output clustering summary
 clustering_df = pd.concat(
     [
         all_feature_cluster_df,
