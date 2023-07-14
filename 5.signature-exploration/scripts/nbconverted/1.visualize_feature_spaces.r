@@ -51,7 +51,7 @@ umap_df$Metadata_umap_category <- dplyr::recode(
     feature_selected = "Feature selected",
     all_except_bortezomib_signature_features = "All except BZ",
     bortezomib_signature_features = "BZ features",
-    random_45_features = "Random 45 features"
+    random_45_features = "Random features"
 )
 
 umap_df <- umap_df %>%
@@ -59,7 +59,7 @@ umap_df <- umap_df %>%
 
 umap_df$Metadata_umap_category <- factor(
     umap_df$Metadata_umap_category,
-    levels = c("All features", "Feature selected", "Random 45 features", "BZ features")
+    levels = c("All features", "Feature selected", "Random features", "BZ features")
 )
 
 print(dim(umap_df))
