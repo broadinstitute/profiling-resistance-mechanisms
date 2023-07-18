@@ -22,6 +22,7 @@
 
 import umap
 import pathlib
+import random
 import numpy as np
 import pandas as pd
 
@@ -259,14 +260,21 @@ bz_sig_df.head()
 
 
 # Get all features except those in the signature
-all_features_except_bz_sig_features = infer_cp_features(profile_df)
-all_features_except_bz_sig_features = [x for x in all_features_except_bz_sig_features if x not in bz_sig_features]
+all_features = infer_cp_features(profile_df)
+all_features_except_bz_sig_features = [x for x in all_features if x not in bz_sig_features]
 len(all_features_except_bz_sig_features)
+
+
+# In[9]:
+
+
+# Get random features
+random_features = random.sample(all_features_except_bz_sig_features, len(bz_sig_features))
 
 
 # ## Step 1: Calculate UMAP coordinates using four different feature spaces:
 
-# In[9]:
+# In[10]:
 
 
 # 1) All feature umap
@@ -295,8 +303,15 @@ umap_non_bz_sig_df = process_umap(
     umap_category="all_except_bortezomib_signature_features"
 )
 
+# 5) 45 random CellProfiler features
+umap_random_sig_df = process_umap(
+    profile_df,
+    features=random_features,
+    umap_category="random_45_features"
+)
 
-# In[10]:
+
+# In[11]:
 
 
 # Output umap summary
@@ -305,7 +320,8 @@ umap_df = pd.concat(
         umap_all_feature_df,
         umap_fs_feature_df,
         umap_bz_sig_df,
-        umap_non_bz_sig_df
+        umap_non_bz_sig_df,
+        umap_random_sig_df
     ]
 ).reset_index(drop=True)
 
@@ -317,7 +333,7 @@ umap_df.head()
 
 # ## Step 2: Perform clustering and calculate enrichment and silhouette scores for the four feature spaces
 
-# In[11]:
+# In[12]:
 
 
 low_k = 2
@@ -372,8 +388,20 @@ non_bz_feature_cluster_df = perform_clustering(
     high_k = high_k
 )
 
+# 5) Random features clustering
+random_feature_cluster_df = perform_clustering(
+    df = profile_df,
+    features = random_features,
+    pca_n_components=pca_n_components,
+    class_column = "Metadata_clone_type",
+    positive_class = "wildtype",
+    feature_category = "random_45_features",
+    low_k = low_k, 
+    high_k = high_k
+)
 
-# In[12]:
+
+# In[13]:
 
 
 # Output clustering summary
@@ -382,7 +410,8 @@ clustering_df = pd.concat(
         all_feature_cluster_df,
         fs_feature_cluster_df,
         bz_feature_cluster_df,
-        non_bz_feature_cluster_df
+        non_bz_feature_cluster_df,
+        random_feature_cluster_df
     ]
 ).reset_index(drop=True)
 

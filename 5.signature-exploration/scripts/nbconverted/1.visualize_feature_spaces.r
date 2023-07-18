@@ -17,13 +17,20 @@ singscore_df <- readr::read_tsv(
         TotalScore = "d"
     )
 ) %>%
-    dplyr::select(Metadata_Plate, Metadata_Well, Metadata_batch, Metadata_dataset, TotalScore)
+    dplyr::select(
+        Metadata_Plate,
+        Metadata_Well,
+        Metadata_batch,
+        Metadata_dataset,
+        TotalScore
+    )
 
 print(dim(singscore_df))
 head(singscore_df, 3)
 
 # Load umap summary and process
 umap_file <- file.path("results", "umap_feature_summary.tsv.gz")
+
 umap_df <- readr::read_tsv(
     umap_file,
     col_types = readr::cols(
@@ -43,12 +50,16 @@ umap_df$Metadata_umap_category <- dplyr::recode(
     all_features = "All features",
     feature_selected = "Feature selected",
     all_except_bortezomib_signature_features = "All except BZ",
-    bortezomib_signature_features = "BZ features"
+    bortezomib_signature_features = "BZ features",
+    random_45_features = "Random features"
 )
+
+umap_df <- umap_df %>%
+    dplyr::filter(Metadata_umap_category != "All except BZ")
 
 umap_df$Metadata_umap_category <- factor(
     umap_df$Metadata_umap_category,
-    levels = c("All features", "Feature selected", "All except BZ", "BZ features")
+    levels = c("All features", "Feature selected", "Random features", "BZ features")
 )
 
 print(dim(umap_df))
@@ -72,12 +83,16 @@ cluster_df$feature_category <- dplyr::recode(
     all_features = "All features",
     feature_selected = "Feature selected",
     all_except_bortezomib_signature_features = "All except BZ",
-    bortezomib_signature_features = "BZ features"
+    bortezomib_signature_features = "BZ features",
+    random_45_features = "Random 45 features"
 )
+
+cluster_df <- cluster_df %>%
+    dplyr::filter(feature_category != "All except BZ")
 
 cluster_df$feature_category <- factor(
     cluster_df$feature_category,
-    levels = c("All features", "Feature selected", "All except BZ", "BZ features")
+    levels = c("All features", "Feature selected", "Random 45 features", "BZ features")
 )
 
 cluster_df$clustering_metric <- dplyr::recode(
@@ -179,13 +194,13 @@ cluster_gg <- (
         labels = c(
             "All features" =  "All features",
             "Feature selected" = "Feature selected",
-            "All except BZ" = "All except BZ",
+            "Random 45 features" = "Random features",
             "BZ features" = "BZ features"
         ),
         values = c(
             "All features" =  "#1f78b4",
             "Feature selected" = "#33a02c",
-            "All except BZ" = "#a6cee3",
+            "Random 45 features" = "#a6cee3",
             "BZ features" = "#b2df8a"
         )
     )
@@ -194,13 +209,13 @@ cluster_gg <- (
         labels = c(
             "All features" =  "All features",
             "Feature selected" = "Feature selected",
-            "All except BZ" = "All except BZ",
+            "Random 45 features" = "Random features",
             "BZ features" = "BZ features"
         ),
         values = c(
             "All features" =  "#1f78b4",
             "Feature selected" = "#33a02c",
-            "All except BZ" = "#a6cee3",
+            "Random 45 features" = "#a6cee3",
             "BZ features" = "#b2df8a"
         )
     )
