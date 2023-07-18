@@ -123,8 +123,8 @@ ks_test_group_mean_df$channel_cleaned <- factor(
 
 ks_test_group_mean_df$clone_type <- dplyr::recode(
     ks_test_group_mean_df$clone_type,
-    resistant = "Misclassified resistant",
-    wildtype = "Misclassified wildtype",
+    resistant = "Resistant",
+    wildtype = "Wildtype",
     prop_accurate = "Accurate",
     prop_inaccurate = "Inaccurate"
 )
@@ -149,7 +149,7 @@ misclassified_summary_gg <- (
         legend.key.width = unit(1, "lines")
     )
     + labs(x = "Channel", y = "Feature group")
-    + scale_fill_viridis_c(name = "KS\nstatistic\n(mean)", option = "magma")
+    + scale_fill_viridis_c(name = "mean KS\nstatistic\n(wrong vs.\nhigh\nconfident\nsamples)", option = "magma")
 )
 
 misclassified_summary_gg
@@ -209,9 +209,9 @@ patchwork_plot <- (
 patchwork_plot <- (
     patchwork_plot 
     + plot_annotation(tag_levels = "A")
-    + plot_layout(heights = c(0.28, 1))
+    + plot_layout(heights = c(0.36, 1))
 )
 
-ggsave(output_file, patchwork_plot, height = 6.1, width = 10, dpi = 500)
+ggsave(output_file, patchwork_plot, height = 5.8, width = 10, dpi = 500)
 
 patchwork_plot
