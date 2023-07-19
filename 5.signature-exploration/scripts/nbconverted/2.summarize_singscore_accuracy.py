@@ -144,6 +144,22 @@ full_singscore_df = full_singscore_df.assign(incorrect = full_singscore_df.pass_
 full_singscore_df.incorrect = ~(full_singscore_df.incorrect > 0)
 full_singscore_df.incorrect = full_singscore_df.incorrect.astype(int)
 
+# Recode many of the samples to the correct/consistent number
+clone_recode_dict = {
+    "WT clone 01": "WT001",
+    "WT clone 02": "WT002",
+    "WT clone 03": "WT003",
+    "WT clone 04": "WT004",
+    "WT clone 05": "WT005",
+    "WT clone 10": "WT010",
+    "WT clone 12": "WT012",
+    "WT clone 13": "WT013",
+    "WT clone 14": "WT014",
+    "WT clone 15": "WT015",
+}
+
+full_singscore_df.Metadata_clone_number = full_singscore_df.Metadata_clone_number.replace(clone_recode_dict)
+
 # Output to file
 full_singscore_df.to_csv(output_singscore_file, index=False, sep="\t")
 

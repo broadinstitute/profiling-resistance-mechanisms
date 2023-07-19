@@ -99,8 +99,8 @@ correct_samples
 # Manually define these samples in specific dictionaries
 sample_comparison_dict = {
     "wildtype": {
-        "correct": ["WT clone 02", "WT clone 12", "WT clone 13", "WT clone 14"],
-        "incorrect": ["WT clone 15", "WT clone 10"]
+        "correct": ["WT002", "WT012", "WT013", "WT014"],
+        "incorrect": ["WT015", "WT010"]
     },
     "resistant": {
         "correct": ["BZ003", "BZ007"],

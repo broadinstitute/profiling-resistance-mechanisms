@@ -5,13 +5,48 @@ suppressPackageStartupMessages(library(patchwork))
 # Output file
 output_file <- file.path("figures", "singscore_misclassified_samples.png")
 
+# Clones for manuscript
+# We selected these clones as our initial training, test, holdout and validation sets
+# for the manuscript. We selected these after a period of data collection where we
+# classified proliferation under Bortezomib and other drugs to determine
+# bortezomib and multi-drug resistance. We do not have proliferation values for
+# clones not included in this set
+select_clones <- c(
+    "WT_parental",
+    "CloneA",
+    "CloneE",
+    "WT001",
+    "WT002",
+    "WT003",
+    "WT004",
+    "WT005",
+    "WT006",
+    "WT007",
+    "WT010",
+    "WT012",
+    "WT013",
+    "WT014",
+    "WT015",
+    "BZ001",
+    "BZ002",
+    "BZ003",
+    "BZ004",
+    "BZ005",
+    "BZ006",
+    "BZ007",
+    "BZ008",
+    "BZ009",
+    "BZ010"
+)
+
 # Load singscore summary
 accuracy_summary_file <- file.path("results", "singscore_accuracy_summary.tsv")
 
 summary_df <- readr::read_tsv(
     accuracy_summary_file, show_col_types = FALSE
 ) %>%
-    dplyr::arrange(prop_high_confidence, desc(prop_inaccurate))
+    dplyr::arrange(prop_high_confidence, desc(prop_inaccurate)) %>%
+    dplyr::filter(Metadata_clone_number %in% select_clones)
 
 clone_number_order <- unique(summary_df$Metadata_clone_number)
 
@@ -42,15 +77,15 @@ summary_df$Metadata_clone_number <- factor(
 
 summary_df$category <- dplyr::recode(
     summary_df$category,
-    prop_completely_incorrect = "Completely wrong",
-    prop_high_confidence = "High confidence",
-    prop_accurate = "Accurate",
-    prop_inaccurate = "Inaccurate"
+    prop_completely_incorrect = "High incorrect",
+    prop_high_confidence = "High correct",
+    prop_accurate = "Low correct",
+    prop_inaccurate = "Low incorrect"
 )
 
 summary_df$category <- factor(
     summary_df$category,
-    levels = rev(c("High confidence", "Accurate", "Inaccurate", "Completely wrong"))
+    levels = rev(c("High correct", "Low correct", "Low incorrect", "High incorrect"))
 )
 
 print(dim(summary_df))
@@ -123,8 +158,8 @@ ks_test_group_mean_df$channel_cleaned <- factor(
 
 ks_test_group_mean_df$clone_type <- dplyr::recode(
     ks_test_group_mean_df$clone_type,
-    resistant = "Misclassified resistant",
-    wildtype = "Misclassified wildtype",
+    resistant = "Resistant",
+    wildtype = "Wildtype",
     prop_accurate = "Accurate",
     prop_inaccurate = "Inaccurate"
 )
@@ -149,7 +184,7 @@ misclassified_summary_gg <- (
         legend.key.width = unit(1, "lines")
     )
     + labs(x = "Channel", y = "Feature group")
-    + scale_fill_viridis_c(name = "KS\nstatistic\n(mean)", option = "magma")
+    + scale_fill_viridis_c(name = "mean KS\nstatistic\n(wrong vs.\nhigh\nconfident\nsamples)", option = "magma")
 )
 
 misclassified_summary_gg
@@ -197,21 +232,26 @@ ks_test_gg <- (
 ks_test_gg
 
 patchwork_plot <- (
-    accuracy_summary_gg /
+    (
+        (
+            accuracy_summary_gg | plot_spacer()
+        ) + plot_layout(widths = c(1, 0.25))
+    )
+    /
     (
         (
             misclassified_summary_gg
             + ks_test_gg
-        ) + plot_layout(widths = c(1, 0.5))
+        ) + plot_layout(widths = c(1, 0.55))
     )
     )
 
 patchwork_plot <- (
     patchwork_plot 
     + plot_annotation(tag_levels = "A")
-    + plot_layout(heights = c(0.28, 1))
+    + plot_layout(heights = c(0.36, 1))
 )
 
-ggsave(output_file, patchwork_plot, height = 6.1, width = 10, dpi = 500)
+ggsave(output_file, patchwork_plot, height = 5.8, width = 10, dpi = 500)
 
 patchwork_plot
