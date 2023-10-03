@@ -6,7 +6,7 @@ In this repository we analyze [Cell Painting](https://doi.org/10.1038/nprot.2016
 
 ## Citation
 
-> Kelley ME, Berman AY, Stirling DR, Cimini BA, Han Y, Singh S, Carpenter AE, Kapoor TM, Way GP. High-content microscopy reveals a morphological signature of bortezomib resistance. bioRxiv [Preprint]. 2023 May 2:2023.05.02.539137. doi: 10.1101/2023.05.02.539137. PMID: 37205516; PMCID: PMC10187224.
+> Kelley ME, Berman AY, Stirling DR, Cimini BA, Han Y, Singh S, Carpenter AE, Kapoor TM, Way GP. High-content microscopy reveals a morphological signature of bortezomib resistance. (2023) eLife; 12:e91362. DOI: https://doi.org/10.7554/eLife.91362.
 
 ## Data collection and processing
 
